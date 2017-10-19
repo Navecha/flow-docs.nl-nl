@@ -1,30 +1,20 @@
 
-# Contributing
-This project welcomes contributions and suggestions.  Most contributions require you to agree to a
-Contributor License Agreement (CLA) declaring that you have the right to, and actually do, grant us
-the rights to use your contribution. For details, visit https://cla.microsoft.com.
+# <a name="contributing"></a>Bijdragen
+Wij verwelkomen bijdragen en suggesties voor dit project.  Voor de meeste bijdragen moet u instemmen met een licentieovereenkomst voor bijdragers (CLA: Contributor License Agreement) waarin u verklaart dat u gerechtigd bent ons het recht te geven uw bijdrage te gebruiken, en dat u dit ook doet. Zie https://cla.microsoft.com (Engelstalig) voor details.
 
-When you submit a pull request, a CLA-bot will automatically determine whether you need to provide
-a CLA and decorate the PR appropriately (e.g., label, comment). Simply follow the instructions
-provided by the bot. You will only need to do this once across all repos using our CLA.
+Wanneer u een pull-aanvraag indient, wordt met een CLA-bot automatisch bepaald of u een CLA moet verschaffen en wordt de pull-aanvraag dienovereenkomstig opgemaakt (bijvoorbeeld met een label of commentaar). Volg gewoon de instructies van de bot. U hoeft dit maar eenmaal te doen voor alle repo's waar gebruik wordt gemaakt van onze CLA.
 
-This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).
-For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or
-contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
+Voor dit project geldt de [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/) (Open source-gedragscode van Microsoft).
+Zie voor meer informatie de [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) (Veelgestelde vragen over de gedragscode) of neem contact op met [opencode@microsoft.com](mailto:opencode@microsoft.com) als u meer vragen of opmerkingen hebt.
 
-# Legal Notices
-Microsoft and any contributors grant you a license to the Microsoft documentation and other content
-in this repository under the [Creative Commons Attribution 4.0 International Public License](https://creativecommons.org/licenses/by/4.0/legalcode),
-see the [LICENSE](LICENSE.md) file, and grant you a license to any code in the repository under the [MIT License](https://opensource.org/licenses/MIT), see the
-[LICENSE-CODE](LICENSE-CODE.md) file.
+# <a name="legal-notices"></a>Juridische kennisgevingen
+Microsoft en alle bijdragers verlenen u een licentie voor de documentatie van Microsoft en andere inhoud in deze opslagplaats onder de [Creative Commons Naamsvermelding 4.0 Internationale Publieke Licentie](https://creativecommons.org/licenses/by/4.0/legalcode) (zie het (Engelstalige) [LICENTIE](LICENSE.md) -bestand) en verleent u een licentie voor de code in de opslagplaats onder de [MIT-licentie](https://opensource.org/licenses/MIT) (zie het (Engelstalige) [LICENTIECODE](LICENSE-CODE.md)-bestand.
 
-Microsoft, Windows, Microsoft Azure and/or other Microsoft products and services referenced in the documentation
-may be either trademarks or registered trademarks of Microsoft in the United States and/or other countries.
-The licenses for this project do not grant you rights to use any Microsoft names, logos, or trademarks.
-Microsoft's general trademark guidelines can be found at http://go.microsoft.com/fwlink/?LinkID=254653.
+In de documentatie genoemde Microsoft, Windows, Microsoft Azure en/of andere Microsoft-producten en -services kunnen handelsmerken of gedeponeerde handelsmerken van Microsoft zijn in de Verenigde Staten en/of andere landen.
+De licenties voor dit project geven u niet het recht namen, logo's of handelsmerken van Microsoft te gebruiken.
+De algemene richtlijnen voor handelsmerken van Microsoft bevinden zich op http://go.microsoft.com/fwlink/?LinkID=254653.
 
-Privacy information can be found at https://privacy.microsoft.com/en-us/
+Privacy-informatie is te vinden op https://privacy.microsoft.com/nl-nl/
 
-Microsoft and any contributors reserve all others rights, whether under their respective copyrights, patents,
-or trademarks, whether by implication, estoppel or otherwise.
+Microsoft en eventuele inzenders behouden zich alle andere rechten voor, onder hun respectievelijke auteursrechten, patenten of handelsmerken, hetzij bij implicatie of volgens het estoppelbeginsel dan wel uit anderen hoofde.
 
