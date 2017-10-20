@@ -1,0 +1,41 @@
+### YamlMime:YamlDocument
+documentType: LandingData
+title: Begeleide training voor Microsoft Flow
+metadata:
+  title: Begeleide training voor Microsoft Flow
+  meta.description: 'Start your learning journey with this sequenced collection of courses, and understand the extensive and powerful capabilities of Microsoft Flow.'
+  author: MSFTMan
+  manager: anneta
+  layout: LandingPage
+  ms.assetid: null
+  ms.service: flow
+  ms.tgt_pltfrm: na
+  ms.devlang: na
+  ms.topic: landing-page
+  ms.date: 10/13/2017
+  ms.author: deonhe
+abstract:
+  description: Start uw trainingstraject met deze reeks cursussen voor inzicht in de uitgebreide en krachtige mogelijkheden van Microsoft Flow.
+sections:
+  - items:
+      - type: list
+        style: cards
+        className: cardsF
+        columns: 2
+        items:
+          - html: '<p><a href="get-started#step-1">Basisbeginselen van Microsoft Flow</a> - 14 min</p><p><a href="get-started#step-2">Een stroom maken met een sjabloon</a> - 9 min</p><p><a href="get-started#step-3">De mobiele app van Microsoft Flow gebruiken</a> - 8 min</p>'
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_get-started.svg'
+            title: Aan de slag
+          - html: '<p><a href="build-flows#step-1">Een knopstroom maken</a> - 11 min</p><p><a href="build-flows#step-2">Meldingen ontvangen</a> - 6 min</p><p><a href="build-flows#step-3">Bestanden kopiëren</a> - 4 min</p><p><a href="build-flows#step-4">Gegevens verzamelen</a> - 5 min</p><p><a href="build-flows#step-5">Tweets plaatsen vanuit een stroom</a> - 15 min</p><p><a href="build-flows#step-6">Geplande stromen maken</a> - 9 min</p><p><a href="build-flows#step-7">Documenten converteren en opslaan</a> - 14 min</p>'
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_build.svg'
+            title: Stromen bouwen
+          - html: '<p><a href="work-with-approvals#step-1">Een goedkeuringsaanvraag maken</a> - 4 min</p><p><a href="work-with-approvals#step-2">Een goedkeuringsaanvraag verwerken</a> - 7 min</p>'
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_tasks.svg'
+            title: Werken met goedkeuringen
+          - html: '<p><a href="administer-flows#step-1">Omgevingen gebruiken om stromen te beheren</a> - 8 min</p><p><a href="administer-flows#step-2">Beleid voor preventie van gegevensverlies (DLP) gebruiken</a> - 6 min</p>'
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_management.svg'
+            title: Stromen beheren

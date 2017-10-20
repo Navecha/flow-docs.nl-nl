@@ -1,0 +1,11 @@
+- name: Docs
+  href: /
+  topicHref: /
+  items:
+    - name: Stroom
+      tocHref: /flow/
+      topicHref: /flow/
+      items:
+        - name: Begeleide training
+          tocHref: /flow/guided-learning/
+          topicHref: /flow/guided-learning/

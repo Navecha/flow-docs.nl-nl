@@ -1,0 +1,138 @@
+- name: Aan de slag
+  items:
+    - name: Aan de slag
+      href: getting-started.md
+    - name: Registreren
+      href: sign-up-sign-in.md
+    - name: Een stroom maken met een sjabloon
+      href: get-started-logic-template.md
+    - name: Een volledig nieuwe stroom maken
+      href: get-started-logic-flow.md
+    - name: Een teamstroom maken
+      href: create-team-flows.md
+    - name: Overzicht van omgevingen
+      href: environments-overview-maker.md
+    - name: Veelgestelde vragen
+      href: frequently-asked-questions.md
+- name: Een stroom bouwen
+  items:
+    - name: Een actie toevoegen
+      href: multi-step-logic-flow.md
+    - name: Een voorwaarde toevoegen
+      href: add-condition.md
+    - name: Een stroom volgens planning uitvoeren
+      href: run-scheduled-tasks.md
+    - name: Een stroom activeren met e-mail
+      href: email-triggers.md
+    - name: Een lijst met items verwerken
+      href: apply-to-each.md
+    - name: Gegevensbewerkingen gebruiken
+      href: data-operations.md
+    - name: Gegevens filteren en kopiëren
+      href: odata-filters.md
+    - name: Een stroom maken met Dynamics 365
+      href: connection-dynamics365.md
+    - name: Gegevens toevoegen aan de Common Data Service
+      href: common-data-model-intro.md
+    - name: Een stroom bekijken
+      href: see-a-flow-run.md
+    - name: Een sjabloon publiceren
+      href: publish-a-template.md
+    - name: Problemen met een stroom oplossen
+      href: fix-flow-failures.md
+- name: Goedkeuringsstromen maken
+  items:
+    - name: Eenmalige goedkeuringen
+      href: modern-approvals.md
+    - name: Opeenvolgende goedkeuringen
+      href: sequential-modern-approvals.md
+    - name: Parallelle goedkeuringen
+      href: parallel-modern-approvals.md
+    - name: Geïntegreerde goedkeuringen
+      href: common-data-model-approve.md
+- name: De mobiele app gebruiken
+  items:
+    - name: Een stroom maken
+      href: mobile-create-flow.md
+    - name: Een knopstroom maken
+      href: introduction-to-button-flows.md
+    - name: Een knopstroom met triggertokens maken
+      href: introduction-to-button-trigger-tokens.md
+    - name: Een knopstroom met gebruikersinvoer maken
+      href: button-flow-with-user-input-tokens.md
+    - name: Een knop delen
+      href: share-buttons.md
+    - name: Stroomactiviteit controleren
+      href: mobile-monitor-activity.md
+    - name: Uw stromen beheren
+      href: mobile-manage-flows.md
+- name: Fysieke apparaten gebruiken
+  items:
+    - name: Een Flic gebruiken
+      href: flic-button-flows.md
+    - name: Een bttn gebruiken
+      href: bttn-button-flows.md
+- name: Verbindingen
+  items:
+    - name: Beschikbare verbindingen
+      href: 'https://go.microsoft.com/fwlink/?linkid=832211'
+    - name: Verbindingen beheren
+      href: add-manage-connections.md
+    - name: Gateways beheren
+      href: gateway-manage.md
+    - name: Gateways begrijpen
+      href: gateway-reference.md
+- name: 'Ontwikkelen: ontwikkelaars in organisaties'
+  items:
+    - name: Microsoft Flow voor ontwikkelaars in organisaties
+      href: dev-enterprise-intro.md
+    - name: Aangepaste connectors registeren en gebruiken
+      href: register-custom-api.md
+    - name: Een aangepaste connector met Postman beschrijven
+      href: postman-collection.md
+    - name: OpenAPI-extensies voor aangepaste connectors
+      href: customapi-how-to-swagger.md
+    - name: Azure Active Directory gebruiken met een aangepaste connector
+      href: customapi-azure-resource-manager-tutorial.md
+    - name: Een aangepaste connector ontwikkelen voor een Web API
+      href: customapi-web-api-tutorial.md
+    - name: Een webhook gebruiken voor het activeren van een stroom
+      href: customapi-webhooks.md
+- name: 'Ontwikkelen: partners en ISV''s'
+  items:
+    - name: Microsoft Flow voor Microsoft-partners en ISV's
+      href: dev-isv-partner-intro.md
+    - name: Overzicht van het certificeren van API-connectors
+      href: api-connector-overview.md
+    - name: API-connectors voor certificering ontwikkelen
+      href: api-connector-dev.md
+    - name: API-connectors voor certificering indienen
+      href: api-connector-submission.md
+    - name: Veelgestelde vragen over het certificeren van API-connectors
+      href: api-connector-faq.md
+    - name: Integreren met websites en andere technologieën
+      href: embed-flow-dev.md
+    - name: Laat klanten uw stromen uitproberen
+      href: dev-appsource-test-drive.md
+- name: Beheer
+  items:
+    - name: Vragen en antwoorden over stromen in uw organisatie
+      href: organization-q-and-a.md
+    - name: Prijzen
+      href: billing-questions.md
+    - name: Inleiding tot het beheercentrum
+      href: admin-center-introduction.md
+    - name: Omgevingen beheren
+      href: environments-overview-admin.md
+    - name: Een beleid instellen om te voorkomen dat gegevens verloren gaan
+      href: prevent-data-loss.md
+    - name: Inleiding tot gegevensgroepen
+      href: introduction-to-data-groups.md
+- name: Verwijzing
+  items:
+    - name: Overzicht van de regio's
+      href: regions-overview.md
+    - name: Limieten en configuratie
+      href: limits-and-config.md
+    - name: Releaseopmerkingen
+      href: release-notes.md

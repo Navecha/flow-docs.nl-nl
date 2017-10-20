@@ -1,0 +1,8 @@
+- name: Aan de slag
+  href: 'get-started.yml#step-1'
+- name: Stromen bouwen
+  href: 'build-flows.yml#step-1'
+- name: Werken met goedkeuringen
+  href: 'work-with-approvals.yml#step-1'
+- name: Stromen beheren
+  href: 'administer-flows.yml#step-1'

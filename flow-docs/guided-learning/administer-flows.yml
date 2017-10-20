@@ -1,0 +1,33 @@
+### YamlMime:YamlDocument
+documentType: Tutorial
+title: Stromen beheren
+metadata:
+  title: Stromen beheren | Microsoft Flow
+  description: Informatie over het gebruik van omgevingen en beleidsregels voor gegevensbeveiliging voor het beheren van gegevensbronnen en stromen.
+  audience: Business User
+  level: Beginner
+  displayType: one-column
+  author: MSFTMan
+  manager: anneta
+  ms.service: flow
+  ms.topic: get-started-article
+  ms.date: 10/04/2017
+  ms.author: deonhe
+items:
+  - durationInMinutes: 1
+    content: |
+      Informatie over het gebruik van omgevingen en beleidsregels voor gegevensbeveiliging voor het beheren van gegevensbronnen en stromen.
+  - title: Omgevingen gebruiken om stromen te beheren
+    durationInMinutes: 8
+    content: |
+      > [!Video https://www.youtube.com/embed/wnScBLz7css?rel=0]
+
+      [!INCLUDE [learning-environments](../includes/learning-environments.md)]
+  - title: Beleid voor preventie van gegevensverlies (DLP) gebruiken
+    durationInMinutes: 6
+    content: |
+      > [!Video https://www.youtube.com/embed/vls4RPVP5xE?rel=0]
+
+      [!INCLUDE [learning-data-loss-prevention](../includes/learning-data-loss-prevention.md)]
+  - content: |
+      U hebt de sectie **Stromen beheren** van de Begeleide training van Microsoft Flow voltooid.
