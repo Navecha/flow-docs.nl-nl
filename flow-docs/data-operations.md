@@ -49,7 +49,7 @@ Wanneer u de inhoud van de actie Opstellen nodig hebt, kan dit via het token **U
 2. Selecteer het besturingselement waaraan u de inhoud wilt toevoegen die u hebt opgeslagen in de actie Opstellen.
    
     U ziet de lijst **Voeg dynamische inhoud toe van de apps en connectors in deze stroom**.
-3. Selecteer**** in deze lijst het token **Uitvoer** (onder de categorie **Opstellen** van het tabblad **Dynamische inhoud**.
+3. Selecteer in de lijst **Voeg dynamische inhoud toe van de apps en connectors in deze stroom** het token **Uitvoer** (onder de categorie **Opstellen** van het tabblad **Dynamische inhoud**).
    
     ![uitvoer van de actie Opstellen gebruiken](./media/data-operations/use-compose-output.png)
 
