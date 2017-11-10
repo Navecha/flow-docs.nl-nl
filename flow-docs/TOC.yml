@@ -30,6 +30,8 @@
       href: data-operations.md
     - name: Gegevens filteren en kopiëren
       href: odata-filters.md
+    - name: Expressies gebruiken in voorwaarden
+      href: use-expressions-in-conditions.md
     - name: Een stroom maken met Dynamics 365
       href: connection-dynamics365.md
     - name: Gegevens toevoegen aan de Common Data Service

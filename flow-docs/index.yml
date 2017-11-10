@@ -45,7 +45,7 @@ sections:
             image:
               src: 'https://docs.microsoft.com/media/common/i_api-reference.svg'
             title: Informatie over knoppen
-          - href: 'https://flow.microsoft.com/blog/automation-for-recruiters'
+          - href: 'https://aka.ms/flowoftheweek'
             html: <p>Inspiratie opdoen met de stroom van de week</p>
             image:
               src: 'https://docs.microsoft.com/media/common/i_api-reference.svg'
