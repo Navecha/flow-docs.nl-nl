@@ -1,4 +1,3 @@
-### YamlMime:YamlDocument
 documentType: Tutorial
 title: Stromen beheren
 metadata:
@@ -14,20 +13,26 @@ metadata:
   ms.date: 10/04/2017
   ms.author: deonhe
 items:
-  - durationInMinutes: 1
-    content: |
-      Informatie over het gebruik van omgevingen en beleidsregels voor gegevensbeveiliging voor het beheren van gegevensbronnen en stromen.
-  - title: Omgevingen gebruiken om stromen te beheren
-    durationInMinutes: 8
-    content: |
-      > [!Video https://www.youtube.com/embed/wnScBLz7css?rel=0]
+- durationInMinutes: 1
+  content: >
+    Informatie over het gebruik van omgevingen en beleidsregels voor gegevensbeveiliging voor het beheren van gegevensbronnen en stromen.
+  ms.openlocfilehash: 52eb25087beb258481be25a560c84093d025021a
+  ms.sourcegitcommit: 01325305b9d2cf964acac9feb6cca0af66db7440
+  ms.translationtype: HT
+  ms.contentlocale: nl-NL
+  ms.lasthandoff: 11/07/2017
+- title: Omgevingen gebruiken om stromen te beheren
+  durationInMinutes: 8
+  content: >
+    > [!Video https://www.youtube.com/embed/wnScBLz7css?rel=0]
 
-      [!INCLUDE [learning-environments](../includes/learning-environments.md)]
-  - title: Beleid voor preventie van gegevensverlies (DLP) gebruiken
-    durationInMinutes: 6
-    content: |
-      > [!Video https://www.youtube.com/embed/vls4RPVP5xE?rel=0]
 
-      [!INCLUDE [learning-data-loss-prevention](../includes/learning-data-loss-prevention.md)]
-  - content: |
-      U hebt de sectie **Stromen beheren** van de Begeleide training van Microsoft Flow voltooid.
+    [!INCLUDE [learning-environments](../includes/learning-environments.md)]
+- title: Beleid voor preventie van gegevensverlies (DLP) gebruiken
+  durationInMinutes: 6
+  content: >
+    > [!Video https://www.youtube.com/embed/vls4RPVP5xE?rel=0]
+
+
+    [!INCLUDE [learning-data-loss-prevention](../includes/learning-data-loss-prevention.md)]
+- content: "U hebt de sectie **Stromen beheren** van de Begeleide training van Microsoft Flow voltooid.\0"

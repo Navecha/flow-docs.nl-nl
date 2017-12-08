@@ -1,9 +1,8 @@
-### YamlMime:YamlDocument
 documentType: Tutorial
 title: Aan de slag
 metadata:
   title: Aan de slag | Microsoft Flow
-  description: 'Welkom bij Begeleide training voor Microsoft Flow. In deze online cursus die u in eigen tempo kunt volgen, wordt Microsoft Flow op sequentiële wijze verklaard, zodat u uw kennis vanaf de basis kunt opbouwen.'
+  description: "Welkom bij Begeleide training voor Microsoft Flow. In deze online cursus die u in eigen tempo kunt volgen, wordt Microsoft Flow op sequentiële wijze verklaard, zodat u uw kennis vanaf de basis kunt opbouwen."
   audience: Business User
   level: Beginner
   nextTutorialHref: build-flows
@@ -16,26 +15,32 @@ metadata:
   ms.date: 10/04/2017
   ms.author: deonhe
 items:
-  - durationInMinutes: 1
-    content: |
-      Welkom bij Begeleide training voor Microsoft Flow. In deze online cursus die u in eigen tempo kunt volgen, wordt Microsoft Flow op sequentiële wijze verklaard, zodat u uw kennis vanaf de basis kunt opbouwen.
-  - title: Basisbeginselen van Microsoft Flow
-    durationInMinutes: 14
-    content: |
-      > [!Video https://www.youtube.com/embed/CYR-fZc5Maw?rel=0]
+- durationInMinutes: 1
+  content: "Welkom bij Begeleide training voor Microsoft Flow. In deze online cursus die u in eigen tempo kunt volgen, wordt Microsoft Flow op sequentiële wijze verklaard, zodat u uw kennis vanaf de basis kunt opbouwen.\n"
+  ms.openlocfilehash: 7b5bcbbe1a53feb773b940aae32b295cec5feba8
+  ms.sourcegitcommit: 01325305b9d2cf964acac9feb6cca0af66db7440
+  ms.translationtype: HT
+  ms.contentlocale: nl-NL
+  ms.lasthandoff: 11/07/2017
+- title: Basisbeginselen van Microsoft Flow
+  durationInMinutes: 14
+  content: >
+    > [!Video https://www.youtube.com/embed/CYR-fZc5Maw?rel=0]
 
-      [!INCLUDE [learning-introduce-flow](../includes/learning-introduce-flow.md)]
-  - title: Een stroom maken met een sjabloon
-    durationInMinutes: 9
-    content: |
-      > [!Video https://www.youtube.com/embed/D46qE7FuShM?rel=0]
 
-      [!INCLUDE [learning-create-a-flow](../includes/learning-create-a-flow.md)]
-  - title: De mobiele app van Microsoft Flow gebruiken
-    durationInMinutes: 8
-    content: |
-      > [!Video https://www.youtube.com/embed/o80hRMpb0_4?rel=0]
+    [!INCLUDE [learning-introduce-flow](../includes/learning-introduce-flow.md)]
+- title: Een stroom maken met een sjabloon
+  durationInMinutes: 9
+  content: >
+    > [!Video https://www.youtube.com/embed/D46qE7FuShM?rel=0]
 
-      [!INCLUDE [learning-mobile-app](../includes/learning-mobile-app.md)]
-  - content: |
-      U hebt de sectie **Aan de slag** van de Begeleide training van Microsoft Flow voltooid.
+
+    [!INCLUDE [learning-create-a-flow](../includes/learning-create-a-flow.md)]
+- title: De mobiele app van Microsoft Flow gebruiken
+  durationInMinutes: 8
+  content: >
+    > [!Video https://www.youtube.com/embed/o80hRMpb0_4?rel=0]
+
+
+    [!INCLUDE [learning-mobile-app](../includes/learning-mobile-app.md)]
+- content: "U hebt de sectie **Aan de slag** van de Begeleide training van Microsoft Flow voltooid.\0"
