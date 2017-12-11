@@ -104,7 +104,7 @@ Nu de AAD-toepassing is geconfigureerd, gaan we de aangepaste connector toevoege
    
     ![OAuth-instellingen](./media/customapi-azure-resource-manager-tutorial/oauth-settings.png)
    
-    Klik na het invoeren van beveiligingsgegevens op het vinkje (**& #x 2713;**) naast de naam van de stroom boven aan deze pagina om de aangepaste connector te maken.
+    Klik na het invoeren van beveiligingsgegevens op het vinkje (**&#x2713;**) naast de naam van de stroom boven aan deze pagina om de aangepaste connector te maken.
 4. Uw aangepaste connector wordt nu weergegeven onder **Aangepaste connectors**.
    
     ![Beschikbare API's](./media/customapi-azure-resource-manager-tutorial/list-custom-apis.png)  
