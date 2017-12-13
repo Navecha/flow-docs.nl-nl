@@ -1,4 +1,4 @@
-documentType: Tutorial
+### YamlMime:Tutorial
 title: Stromen beheren
 metadata:
   title: Stromen beheren | Microsoft Flow
@@ -12,15 +12,15 @@ metadata:
   ms.topic: get-started-article
   ms.date: 10/04/2017
   ms.author: deonhe
+  ms.openlocfilehash: 234d245f42ef76864709890a3d27724a68834109
+  ms.sourcegitcommit: 9057be8df53d1c763fbf5ecd0d23cd1daf42c471
+  ms.translationtype: HT
+  ms.contentlocale: nl-NL
+  ms.lasthandoff: 12/08/2017
 items:
 - durationInMinutes: 1
   content: >
-    Informatie over het gebruik van omgevingen en beleidsregels voor gegevensbeveiliging voor het beheren van gegevensbronnen en stromen.
-  ms.openlocfilehash: 52eb25087beb258481be25a560c84093d025021a
-  ms.sourcegitcommit: 01325305b9d2cf964acac9feb6cca0af66db7440
-  ms.translationtype: HT
-  ms.contentlocale: nl-NL
-  ms.lasthandoff: 11/07/2017
+    Learn about using environments and data protection policies to manage data sources and flows.
 - title: Omgevingen gebruiken om stromen te beheren
   durationInMinutes: 8
   content: >
@@ -35,4 +35,4 @@ items:
 
 
     [!INCLUDE [learning-data-loss-prevention](../includes/learning-data-loss-prevention.md)]
-- content: "U hebt de sectie **Stromen beheren** van de Begeleide training van Microsoft Flow voltooid.\0"
+- content: "You've completed the **Administer flows** section of Microsoft Flow Guided Learning.\0"
