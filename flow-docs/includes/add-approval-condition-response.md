@@ -1,10 +1,10 @@
 1. Selecteer **Nieuwe stap** en vervolgens **Een voorwaarde toevoegen**.
    
-    ![voorwaarde toevoegen](includes/media/modern-approvals/add-response-condition.png)
+    ![voorwaarde toevoegen](media/modern-approvals/add-response-condition.png)
 2. Schakel het selectievakje **Objectnaam** in en geef vervolgens de tekst **antwoord** op in het zoekvak op de kaart **Voeg dynamische inhoud toe van de apps en services in deze stroom**.
 3. Selecteer het token **Antwoord**.
    
-    ![het antwoordtoken selecteren](includes/media/modern-approvals/search-for-response.png)
+    ![het antwoordtoken selecteren](media/modern-approvals/search-for-response.png)
 4. Schakel het selectievakje **Waarde** in en voer in het vak vervolgens de tekst **Goedkeuren** in.
    
    > [!NOTE]
@@ -13,5 +13,5 @@
    > 
 5. De kaart **Voorwaarde** moet er nu uitzien als de volgende afbeelding:
    
-    ![](includes/media/modern-approvals/response-condition-test.png)
+    ![](media/modern-approvals/response-condition-test.png)
 
