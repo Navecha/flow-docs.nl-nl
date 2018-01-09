@@ -13,13 +13,13 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 08/25/2017
+ms.date: 01/01/2018
 ms.author: stepsic
-ms.openlocfilehash: 37bab7ccd54ecc7976a42df2e215daa19916fc85
-ms.sourcegitcommit: 4f2cb27d392f46aa1d8680d6278876780ed3871b
+ms.openlocfilehash: 8bdfafff5fbf3a5491809063e92607cd8e10167c
+ms.sourcegitcommit: 7bf01167913038b3ad3527592013eefdd3ee9200
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/15/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="release-notes"></a>Releaseopmerkingen
 ## <a name="top-questions"></a>Belangrijkste vragen
@@ -28,11 +28,11 @@ ms.lasthandoff: 10/15/2017
    1. Spoor de fout op. Ga eerst naar het meldingenpictogram boven aan het webportal of selecteer het tabblad **Activiteit** in de mobiele app. U kunt hier uw stroom zien en deze selecteren.
    2. U ziet nu de details van de stroom. Zoek de stap met het pictogram met het rode uitroepteken. Hier moet u het foutbericht voor uw stroom zien.
    3. Afhankelijk van het foutbericht moet u de stroom kunnen **Bewerken** en herstellen. [Lees meer over het oplossen van gangbare stroomfouten](fix-flow-failures.md).
-2. Hoe gebruik ik een geavanceerde voorwaarden of een formule?
+2. Hoe gebruik ik geavanceerde voorwaarden of een expressie?
    
-   * Meer informatie over het [toevoegen van voorwaarden](add-a-condition.md).
+   * Meer informatie over het [toevoegen van voorwaarden](add-condition.md).
    * Als u meerdere voorwaarden aan een stroom wilt toevoegen, klikt of tikt u vanuit een bestaande voorwaarde op **Voorwaarde toevoegen**.
-   * Maak een geavanceerde formule door te verwijzen naar [een functie in Logic Apps](https://docs.microsoft.com/rest/api/logic/definition-language).
+   * Maak een geavanceerde expressie door te verwijzen naar [een functie in Logic Apps](https://docs.microsoft.com/rest/api/logic/definition-language).
 3. Hoe werkt licentieverlening voor Office 365?
    
    * Als u Office 365 gebruikt, hebt u volledige toegang tot Microsoft Flow via het Office 365-abonnement. Zie de [prijzen en abonnementen voor Microsoft Flow](https://flow.microsoft.com/pricing/) voor meer informatie.
@@ -40,11 +40,110 @@ ms.lasthandoff: 10/15/2017
 
 ## <a name="known-issues-and-resolutions"></a>Bekende problemen en oplossingen
 1. SharePoint-lijsten op Mijn sites en SharePoint-lijsten die niet van het type *Aangepaste lijst* zijn, worden niet ondersteund. U kunt als tijdelijke oplossing voor dit probleem een aangepaste lijst maken op een standaard-SharePoint-site.
-2. Documentmetagegevens worden niet geretourneerd van triggers in SharePoint-documentbibliotheken.
-3. Stromen kunnen niet schrijven naar taxonomievelden in SharePoint-lijsten. Het beste is om een eenvoudig tekenreeksveld te gebruiken tot dit is opgelost.
-4. Bestandstriggers worden niet gestart voor bestanden die worden toegevoegd in geneste mappen in de map die u selecteert.
+2. Stromen kunnen niet schrijven naar taxonomievelden in SharePoint-lijsten. Het beste is om een eenvoudig tekenreeksveld te gebruiken tot dit is opgelost.
+3. Bestandstriggers worden niet gestart voor bestanden die worden toegevoegd in geneste mappen in de map die u selecteert.
 
 ## <a name="whats-new"></a>Wat is er nieuw?
+
+### <a name="release-2017-12-20"></a>Versie van 20-12-2017
+
+Microsoft Flow Analytics is nu beschikbaar in alle Microsoft Flow-regio's, wat betekent dat u meer inzicht kunt krijgen in de status van stromen die binnen uw omgeving worden uitgevoerd.
+
+[Lees meer informatie en stel vragen](https://flow.microsoft.com/blog/announcing-microsoft-flow-analytics/) over deze release.
+
+
+### <a name="release-2017-12-14"></a>Versie van 14-12-2017
+
+- **Verbeteringen in Outlook connector**: u kunt een e-mailbericht opslaan als '.eml'-bestand, automatisch reageren op kalenderuitnodigingen en stromen activeren wanneer u in een e-mailthread wordt genoemd.
+- **Verbeteringen van verbindingen**: Microsoft Flow onthoudt uw meest recent gebruikte verbindingen en toon alle nieuwe toegevoegde connectors.
+- **Vijf nieuwe connectors**: er zijn exemplaren van Azure Container, Azure Kusto Metatask, Microsoft To-Do en Plumsail Documents toegevoegd.
+- **HTTP-verbeteringen**: de HTTP-actie ondersteunt nu gesegmenteerde codering.
+
+[Lees meer informatie en stel vragen](https://flow.microsoft.com/blog/outlook-connector-more/) over deze release.
+
+### <a name="release-2017-12-05"></a>Versie van 05-12-2017
+
+Het startpaneel van Microsoft Flow is nu in alle regio’s beschikbaar. In dit deelvenster kunt u waarden aan een stroom toevoegen wanneer u deze binnen uw SharePoint-lijst of documentenbibliotheek uitvoert.
+
+[Lees meer informatie en stel vragen](https://flow.microsoft.com/blog/introducing-flow-launch-panel-in-sharepoint-lists-and-libraries/) over deze release.
+
+
+### <a name="release-2017-11-28"></a>Versie van 28-11-2017
+
+- **Beheerde metagegevens**: lees gegevens van en schrijf gegevens naar kolommen in SharePoint die gebruikmaken van het type Beheerde metagegevens (oftewel taxonomie).
+- **Toevoegen aan matrices**: voeg items toe aan het einde van matrices met behulp van de nieuwe actie Toevoegen aan een matrixvariabele.
+- **Tago**: een nieuwe connector voor Tago, voor een eenvoudige verbinding tussen elektronische apparaten en externe gegevens voor het stimuleren van slimmere beslissingen op basis van contextuele analyse.
+- **iPhone X**: een nieuwe versie van de Microsoft Flow-app die gebruikmaakt van het volledige scherm van de iPhone X en waarin afbeeldingen sneller worden geüpload.
+
+[Lees meer informatie en stel vragen](https://flow.microsoft.com/blog/managed-metadata-tago/) over deze release.
+
+### <a name="release-2017-11-09"></a>Versie van 09-11-2017
+
+- **Integratie van OneDrive voor Bedrijven**: er is [nu een stroomknop in OneDrive voor Bedrijven](https://flow.microsoft.com/blog/microsoft-flow-integration-in-one-drive-for-business-and-new-connector-actions/) waarmee u stromen op geselecteerde bestanden of mappen kunt maken of activeren.
+- **Abonnementstriggers**: hiermee worden stromen gestart zodra een nieuwe taak is gemaakt, een taak aan u is toegewezen of een taak is voltooid.
+- **SharePoint-bijlagen**: werk met bijlagen bij SharePoint-lijstitems: u kunt bijlagen weergeven, downloaden, toevoegen of verwijderen.
+- **Stroombeheerconnector**: maak stromen die het beheer van andere stromen in uw omgeving automatiseren (voeg bijvoorbeeld automatisch machtigingen aan stromen toe).
+- **Vier nieuwe connectors**: Azure Custom Vision Service, D&B Optimizer, Enadoc en Derdak SIGNL4 zijn toegevoegd. 
+- **Meer connectoracties**: voer SQL-query’s uit, krijg snellere e-mailtriggers, gebruik een willekeurige methode met HTTP met Azure AD, etc.
+
+[Lees meer informatie en stel vragen](https://flow.microsoft.com/blog/planner-triggers-connector-improvements/) over deze release.
+
+### <a name="release-2017-11-02"></a>Versie van 02-11-2017
+
+- **Auditlogboeken maken**: Microsoft Flow-auditgebeurtenissen zijn nu voor alle tenants beschikbaar in het Beveiligings- en nalevingscentrum van Office 365.
+- **Oplossingen van problemen met stroomwidgets**: er is een probleem opgelost in de Flow Mobile-app dat ervoor zorgde dat knoppen niet werden geladen in de widget.
+
+[Lees meer informatie en stel vragen](https://flow.microsoft.com/blog/security-and-compliance-center/) over deze release.
+
+### <a name="release-2017-10-19"></a>Versie van 19-10-2017
+
+- **Genest op elke toepassen**: u kunt Toepassen op elk(e)-acties toevoegen, filteren en selecteren in andere Toepassen op elke container.
+- **Datum/tijd-acties**: nieuwe acties voor het ophalen van de lokale tijd of het optellen, aftrekken of formatteren van tijden.
+- **Vier nieuwe connectors**: Content Moderator, Docparser, Microsoft Kaizala en Pitney Bowes Data Validation zijn toegevoegd.
+- **Verbeterde verbindingservaring**: u vindt meldingen in het stroomportal wanneer een verbinding wordt verbroken. Ook krijgt u uitgebreidere verbindingsdetails.
+- **Mobiele verzameling**: een nieuwe sjabloonverzameling voor [werknemers die onderweg zijn](https://flow.microsoft.com/collections/onthego/).
+- **Invoer van de knop E-mailadressen**: verzamel e-mailadressen van gebruikers wanneer ze op een knop drukken.
+- **Invoer van de knop Bestand**: haal geüploade bestanden zoals foto’s van gebruikers op wanneer ze op een knop drukken.
+- **Eerste uitvoering en automatisch aanmelden**: verbeterde ervaring bij eerste uitvoering op de mobiele app, inclusief automatisch aanmelden.
+- **Snellere Microsoft Forms-triggers**: in Forms worden stromen veel sneller geactiveerd dan voorheen (dit duurde eerder een uur).
+- **Knopinvoer over meerdere sessies**: knoppen die op uw mobiele telefoon worden geactiveerd, onthouden eerdere invoer.
+- **Feed over mobiele activiteit**: verbeterde activiteitenfeed zodat u gedetailleerdere samenvattingen van uitvoeringen en details over probleemoplossing kunt krijgen.
+
+[Lees meer informatie en stel vragen](https://flow.microsoft.com/blog/nested-apply-to-each/) over deze release.
+
+### <a name="release-2017-10-03"></a>Versie van 03-10-2017
+
+- **Iedereen moet goedkeuren**: vereis dat er een goedkeuringsverzoek naar meerdere personen moet worden verzonden zodat iedereen die het verzoek heeft ontvangen, dit moet goedkeuren.
+- **Nieuw acties van OneDrive voor Bedrijven**: genereer PDF’s voor bestanden die op OneDrive voor Bedrijven is opgeslagen en vier andere nieuwe acties.
+- **Apache Impala-connector**: Apache Impala (in ontwikkeling) is de open source, systeemeigen analysedatabase voor Apache Hadoop.
+- **Stroombeschrijvingen toevoegen**: geef uw stromen een beschrijving, zodat uw collega’s een samenvatting krijgen van de mogelijkheden van de stroom wanneer u de stroom met anderen deelt.
+
+[Lees meer informatie en stel vragen](https://flow.microsoft.com/blog/all-must-approve-and-onedrive/) over deze release.
+
+### <a name="release-2017-09-25---q3-update-for-microsoft-flow"></a>Versie van 25-09-2017 - Update derde kwartaal voor Microsoft Flow
+
+- **Diepere SharePoint-integratie in eerste versie**: er zijn nieuwe ‘ingesloten’ stromen voor verzenden ter beoordeling en een stroomdeelvenster voor het verzamelen van invoer wanneer u een stroom voor tenants van de eerste versie uitvoert.
+- **Dynamics 365 voor Customer Engagement**: Flow is nu geïntegreerd in de gebruikersinterface voor Dynamics 365 voor Customer Engagement.
+- **Microsoft Trust Center**: Flow wordt vermeld in het Microsoft Trust Center. Hierbij worden certificeringen zoals HIPAA, ISO en SOC weergegeven.
+- **Gebruiksanalyse**: elke stroom beschikt over een ingebouwd Power BI-dashboard met basale analysegegevens over het gebruik.
+- **Auditlogboeken maken voor eerste versie**: alle stroombeheergebeurtenissen worden vastgelegd in het Beveiligings- en nalevingscentrum van Office 365 voor tenants van de eerste versie.
+- **Zes nieuwe connectors**: LinkedIn, Office 365 Groups, Skype voor Bedrijven, Adobe Sign, Bizzy en Azure Log Analytics Data Collection zijn toegevoegd.
+- **SQL-triggers**: voer stromen uit wanneer een nieuwe rij wordt toegevoegd of een rij wordt bijgewerkt in een SQL-tabel.
+- **Aangepaste connectors op locatie**: aangepaste connectors kunnen nu gebruikmaken van de gegevensgateway op locatie om verbinding te maken met interne eindpunten in uw netwerk.
+
+[Lees meer informatie en stel vragen](https://flow.microsoft.com/blog/q3-2017-update/) over deze release.
+
+### <a name="release-2017-09-21"></a>Versie van 21-09-2017
+
+- **Geschiedenis van stromen downloaden**: download de uitvoeringsgeschiedenis van een stroom als CSV-bestand om het in Excel te kunnen openen.
+- **Geavanceerd terugkeerpatroon**: bouw terugkeerschema’s om uw stromen te activeren, bijvoorbeeld alleen op werkdagen.
+- **IntelliSense**: wanneer u expressies invoert, biedt IntelliSense suggesties voor parameters.
+- **Vier nieuwe connectors**: er zijn connectors toegevoegd voor Azure AD HTTP services, Amazon Redshift, Azure Event Grid Publish en FlowForma.
+- **Koppelingen delen**: een nieuwe actie voor het genereren van deelbare koppelingen voor OneDrive-bestanden of Azure Storage-blobs.
+
+[Lees meer informatie en stel vragen](https://flow.microsoft.com/blog/download-history-recurrence/) over deze release.
+
+
 ### <a name="release-2017-08-25"></a>Release 25-08-2017
 * **Documenteigenschappen en meer voor SharePoint** - [Eigenschappen van documentbibliotheek lezen en instellen in SharePoint](https://flow.microsoft.com/blog/support-for-sharepoint-document-library-properties/), en aanvullende velden gebruiken zoals koppelingen naar het SharePoint-item.
 * **Flow-collecties** - Flow-collecties bestaan uit een set sjablooncollecties die zijn gesorteerd op rol of verticale bedrijfstak.
@@ -155,7 +254,7 @@ U kunt nu de status bekijken van alle openstaande goedkeuringsaanvragen die u he
 [Lees meer informatie en stel vragen](https://flow.microsoft.com/blog/parallel-actions/) over deze release.
 
 ### <a name="release-2017-04-17---q1-update-for-microsoft-flow"></a>Release van 17-04-2017 - K1: update voor Microsoft Flow
-* **Moderne goedkeuringservaringen**: u kunt nu werkstromen maken waarmee fiatteurs veilig in de mobiele Microsoft Flow-app of via het geïntegreerde goedkeuringencentrum op de Microsoft Flow-website aanvragen kunnen goedkeuren.
+* **Moderne goedkeuringservaringen**: u kunt nu werkstromen maken waarmee fiatteurs veilig in de mobiele Microsoft Flow-app of via het geïntegreerde goedkeuringencentrum op de Microsoft-Flow-website aanvragen kunnen goedkeuren.
 * **Algemene beschikbaarheid van teamstromen**: de teamstromen, waarmee meerdere mensen gezamenlijk een stroom in eigendom kunnen hebben en kunnen beheren, zijn nu algemeen beschikbaar.
 * **Connectors voor Microsoft Flow maken**: iedereen kan gratis een eigen Microsoft Flow-connector indienen zodat de rest van de wereld de connector kan gebruiken.
 * **Een vereenvoudigde versie van de ontwerpfunctie**: voor bepaalde sjablonen toont een nieuwe versie van de ontwerpfunctie alleen de velden die nodig zijn voor het maken van een stroom waardoor de ervaring wordt vereenvoudigd.
@@ -183,7 +282,7 @@ U kunt nu de status bekijken van alle openstaande goedkeuringsaanvragen die u he
 ### <a name="release-2017-03-15"></a>Release van 15-03-2017
 * **Knoppen delen met collega's**: u kunt nu stroomknoppen delen met andere personen zodat zakelijke gebruikers eenvoudig wordt om taken snel uit te voeren.
 * **Knoppen activeren vanaf het startscherm**: met snelkoppelingen naar stroomknoppen op de start- en vergrendelingsschermen van mobiele apparaten kunt u stromen sneller dan ooit activeren.
-* **Teamstromen in de Microsoft Flow-app**: u kunt in de Microsoft Flow-app voor iOS of Android nu stromen van andere eigenaren bekijken.
+* **Teamstromen in de Microsoft-Flow-app**: u kunt in de Microsoft-Flow-app voor iOS of Android nu stromen van andere eigenaren bekijken.
 
 [Lees meer informatie en stel vragen](https://flow.microsoft.com/blog/button-sharing/) over deze release.
 
@@ -406,8 +505,8 @@ Als u logische stromen gebruikt als onderdeel van [Microsoft PowerApps](https://
 * U kunt [uw eigen sjablonen publiceren](publish-a-template.md) in de galerie nadat u een stroom hebt aangepast.
 * U kunt de geschiedenis van elke controle en uitvoering van een stroom bekijken.
 * Wanneer u een stroom opslaat, kunt u deze [onmiddellijk in actie zien](see-a-flow-run.md) door de triggeractie uit te voeren.
-* In onze [nieuwe community](http://go.microsoft.com/fwlink/?LinkID=787467) kunt u Flow bespreken of [uw ideeën delen](https://go.microsoft.com/fwlink/?LinkID=787474).
+* In onze [nieuwe community](https://go.microsoft.com/fwlink/?LinkID=787467) kunt u Flow bespreken of [uw ideeën delen](https://go.microsoft.com/fwlink/?LinkID=787474).
 
 ## <a name="next-steps"></a>Volgende stappen
-Als u problemen ondervindt die niet worden besproken in deze releaseopmerkingen of in de [veelgestelde vragen](frequently-asked-questions.md), stel uw vraag dan aan [onze community](http://go.microsoft.com/fwlink/?LinkID=787467) of [neem contact op met het ondersteuningsteam](http://go.microsoft.com/fwlink/?LinkID=787479).
+Als u problemen ondervindt die niet worden besproken in deze releaseopmerkingen of in de [veelgestelde vragen](frequently-asked-questions.md), stel uw vraag dan aan [onze community](https://go.microsoft.com/fwlink/?LinkID=787467) of [neem contact op met het ondersteuningsteam](http://go.microsoft.com/fwlink/?LinkID=787479).
 
