@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 12/05/2016
 ms.author: stepsic
-ms.openlocfilehash: 6a05153864e37682ece83d8e5d90fa43a3ad01e1
-ms.sourcegitcommit: 4f2cb27d392f46aa1d8680d6278876780ed3871b
+ms.openlocfilehash: f8807ca0941761018c92a385c26f427e69ededcb
+ms.sourcegitcommit: 56d69fadcbc9169feb2e1a68d9e9361709084cf4
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/15/2017
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="flow-in-your-organization-qa"></a>Vragen en antwoorden over Flow in uw organisatie
 In dit onderwerp wordt beschreven hoe gebruikers in uw organisatie Flow kunnen gebruiken en hoe u de Flow-service kunt beheren.
@@ -101,12 +101,12 @@ Als u de Flow-licentie of -service van een gebruiker in uw organisatie verwijder
 Hiermee wordt standaard alleen de Flow-tegel verwijderd. Gebruikers kunnen er nog wel voor kiezen om Microsoft Flow persoonlijk te gebruiken.
 
 ### <a name="why-did-10000-licenses-for-microsoft-flow-show-up-in-my-office-365-tenant"></a>Waarom worden er 10.000 licenties voor Microsoft Flow weergegeven in mijn Office 365-tenant?
-Iedereen ter wereld kan 90 dagen gratis gebruikmaken van de proefversie voor Microsoft Flow-abonnement 1 of 2. Tijdens deze proefperiode is de capaciteit hetzelfde als voor nieuwe Flow-gebruikers in uw tenant. Er worden geen kosten doorberekend voor deze licenties. Er zijn twee mogelijke redenen waarom u ziet dat er 10.000 beschikbare (proef)licenties voor Flow worden weergegeven in de Office 365-beheerportal:
+Iedereen kan 90 dagen gratis gebruikmaken van de proefversie voor Microsoft Flow-abonnement 1 of 2. Tijdens deze proefperiode is de capaciteit hetzelfde als voor nieuwe Flow-gebruikers in uw tenant. Er worden geen kosten doorberekend voor deze licenties. Er zijn twee mogelijke redenen waarom u ziet dat er 10.000 beschikbare (proef)licenties voor Flow worden weergegeven in de Office 365-beheerportal:
 
 1. Als ten minste één gebruiker in uw tenant heeft gebruikgemaakt van de openbare previewversie van Flow in de periode van april 2016 tot oktober 2016, ziet u 10.000 licenties met de aanduiding Microsoft PowerApps and Logic flows (Microsoft PowerApps- en logische stromen)
    
     ![](./media/organization-q-and-a/licenses2.png)
-2. Als ten minste één gebruiker in uw tenant zich heeft geregistreerd voor een Flow-proefversie voor abonnement 2 via **optie 1**, zoals beschreven in de sectie [Hoe registreren gebruikers zich voor PowerApps?](#how-do-users-sign-up-for-powerapps), ziet u 10.000 licenties met de aanduiding Microsoft Power Apps & Flow (Microsoft PowerApps en Flow)
+2. Als ten minste één gebruiker in uw tenant zich heeft geregistreerd voor een Flow-proefversie voor abonnement 2 via **optie 1**, zoals beschreven in de sectie [Hoe registreren gebruikers zich voor PowerApps?](#how-do-people-sign-up-for-flow), ziet u 10.000 licenties met de aanduiding Microsoft Power Apps & Flow (Microsoft PowerApps en Flow)
    
     ![](./media/organization-q-and-a/licenses1.png)
 
