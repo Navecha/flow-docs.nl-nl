@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 08/02/2017
 ms.author: stepsic
-ms.openlocfilehash: 27e12df6ae5754f921d37992fa6759d152fd1afc
-ms.sourcegitcommit: 4f2cb27d392f46aa1d8680d6278876780ed3871b
+ms.openlocfilehash: c5fefde9bdd2f8e82052abfaa64a7188d768d8ea
+ms.sourcegitcommit: f3236f9f1ec050cda0d9c3e2b9c356132b2a2594
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/15/2017
+ms.lasthandoff: 01/18/2018
 ---
 # <a name="limits-and-configuration-in-microsoft-flow"></a>Limieten en configuratie in Microsoft Flow
 Dit onderwerp bevat informatie over de huidige limieten en configuratiegegevens voor stromen.
@@ -108,4 +108,16 @@ Aanroepen van een API (bijvoorbeeld de SQL API of de SharePoint API) waarmee via
 | Verenigde Staten (als eerste toegang) |52.161.26.191, 52.161.27.42, 52.161.29.40, 52.161.26.33, 13.66.213.240, 13.66.214.51, 13.66.210.166, 13.66.213.29 |
 
 Als u bijvoorbeeld IP-adressen aan de lijst met toegestane IP-adressen moet toevoegen voor uw Azure SQL-database, moet u deze adressen gebruiken.
+
+De volgende tabel vermeldt de services waarmee Microsoft Flow verbinding maakt. Zorg ervoor dat geen van deze services in uw netwerk wordt geblokkeerd.
+
+Domeinen | Protocollen | Gebruikt
+--------|  ---------| -----
+management.azure.com|https|Toegang tot Azure Resource Manager
+login.microsoft.com</br>login.windows.net</br>login.microsoftonline.com</br>secure.aadcdn.microsoftonline-p.com|https|Toegang tot Active Directory Authentication Library (ADAL).
+graph.microsoft.com </br>graph.windows.net</br>|https|Toegang tot Microsoft Azure Active Directory Graph API - voor het ophalen van gebruikersgegevens, zoals een profielfoto.
+*.azure-apim.net|https|Toegang tot de Runtime for Connectors.
+*.flow.microsoft.com|https|Toegang tot de Microsoft Flow-website.
+*.powerapps.com|https|Toegang tot de website PowerApps.
+psux.azureedge.net|https|Toegang tot het Microsoft Flow-CDN.
 
