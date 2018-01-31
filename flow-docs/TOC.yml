@@ -84,34 +84,12 @@
       href: gateway-manage.md
     - name: Gateways begrijpen
       href: gateway-reference.md
-- name: 'Ontwikkelen: ontwikkelaars in organisaties'
+- name: Ontwikkelen voor Microsoft Flow
   items:
-    - name: Microsoft Flow voor ontwikkelaars in organisaties
+    - name: 'Microsoft Flow voor bedrijfsontwikkelaars, partners en ISV''s'
       href: dev-enterprise-intro.md
-    - name: Aangepaste connectors registeren en gebruiken
+    - name: Aangepaste connectors bouwen en certificeren
       href: register-custom-api.md
-    - name: Een aangepaste connector met Postman beschrijven
-      href: postman-collection.md
-    - name: OpenAPI-extensies voor aangepaste connectors
-      href: customapi-how-to-swagger.md
-    - name: Azure Active Directory gebruiken met een aangepaste connector
-      href: customapi-azure-resource-manager-tutorial.md
-    - name: Een aangepaste connector ontwikkelen voor een Web API
-      href: customapi-web-api-tutorial.md
-    - name: Een webhook gebruiken voor het activeren van een stroom
-      href: customapi-webhooks.md
-- name: 'Ontwikkelen: partners en ISV''s'
-  items:
-    - name: Microsoft Flow voor Microsoft-partners en ISV's
-      href: dev-isv-partner-intro.md
-    - name: Overzicht van het certificeren van API-connectors
-      href: api-connector-overview.md
-    - name: API-connectors voor certificering ontwikkelen
-      href: api-connector-dev.md
-    - name: API-connectors voor certificering indienen
-      href: api-connector-submission.md
-    - name: Veelgestelde vragen over het certificeren van API-connectors
-      href: api-connector-faq.md
     - name: Integreren met websites en andere technologieën
       href: embed-flow-dev.md
     - name: Laat klanten uw stromen uitproberen
