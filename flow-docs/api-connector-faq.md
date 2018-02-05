@@ -16,21 +16,21 @@ ms.workload: na
 ms.date: 09/19/2017
 ms.author: astay
 ms.openlocfilehash: 1715700fa6a94bb35733865556a2c9be0ba3ce9f
-ms.sourcegitcommit: 4f2cb27d392f46aa1d8680d6278876780ed3871b
+ms.sourcegitcommit: f3236f9f1ec050cda0d9c3e2b9c356132b2a2594
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/15/2017
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="api-connector-faq-microsoft-flow"></a>Veelgestelde vragen over API-connector (Microsoft Flow)
 ## <a name="requirements"></a>Vereisten
 **V:** Kan ik een connector zonder REST-API's maken? </br>
-**A:** Nee. Als u een connector wilt maken, moet u stabiele HTTP REST-API's voor uw service ondersteunen. 
+**A:** Nee, uw service moet stabiele HTTP REST-API's ondersteunen om een connector te kunnen maken. 
 
 **V:** Welke hulpprogramma's kan ik gebruiken om een connector te maken? </br>
 **A:** Azure bevat functionaliteit en services die u kunt gebruiken om services weer te geven als een API, zoals Azure App Service voor het hosten, API Management en meer.
 
 **V:** Welke verificatietypen worden ondersteund? </br>
-**A:** U kunt deze ondersteunde verificatiestandaarden gebruiken:
+**A:** U kunt de volgende ondersteunde verificatiestandaarden gebruiken:
 
 * [OAuth 2.0](https://oauth.net/2/), waaronder [Azure Active Directory](https://azure.microsoft.com/develop/identity/) of specifieke services, zoals Dropbox, GitHub en SalesForce
 * Algemene OAuth 2.0
@@ -43,7 +43,7 @@ ms.lasthandoff: 10/15/2017
 
 ## <a name="certification"></a>Certificering
 **V**: Ik ben niet een Microsoft-partner of onafhankelijke softwareleverancier. Kan ik toch connectors maken? </br>
-**A**: Ja, u kunt deze connectors registreren voor intern gebruik in uw organisatie. Als u een connector wilt certificeren en openbaar wilt maken, moet u eigenaar zijn van de onderliggende service of aantonen dat u expliciete rechten hebt voor het gebruik van de API.
+**A:** Ja, u kunt deze connectors registreren voor intern gebruik in uw organisatie. Als u een connector wilt certificeren en openbaar beschikbaar wilt maken, moet u eigenaar zijn van de onderliggende service of aantonen dat u expliciete rechten hebt voor het gebruik van de API.
 
 ## <a name="other"></a>Overig
 **V:** Mijn API's gebruiken een dynamische host. Hoe kan ik deze implementeren met OpenAPI? </br>
