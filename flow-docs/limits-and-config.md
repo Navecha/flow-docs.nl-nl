@@ -13,13 +13,13 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 08/02/2017
+ms.date: 01/31/2018
 ms.author: stepsic
-ms.openlocfilehash: c5fefde9bdd2f8e82052abfaa64a7188d768d8ea
-ms.sourcegitcommit: f3236f9f1ec050cda0d9c3e2b9c356132b2a2594
+ms.openlocfilehash: 60caaba88e825e97a49c3cf65d0ecceff586046c
+ms.sourcegitcommit: b943fa83d7ca2d1a313c0c7b2cf0d7e4a9528b85
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 02/05/2018
 ---
 # <a name="limits-and-configuration-in-microsoft-flow"></a>Limieten en configuratie in Microsoft Flow
 Dit onderwerp bevat informatie over de huidige limieten en configuratiegegevens voor stromen.
@@ -48,7 +48,7 @@ Dit zijn de limieten voor het uitvoeren van één stroom.
 
 | Naam | Limiet | Opmerkingen |
 | --- | --- | --- |
-| Uitvoeringsduur |30 dagen |Inclusief werkstromen met stappen in behandeling, zoals goedkeuringen. Na 30 dagen treedt een time-out op voor de stappen in behandeling. |
+| Uitvoeringsduur |30 dagen |Inclusief werkstromen met stappen in behandeling, zoals goedkeuringen. Na 30 dagen zijn alle stappen in behandeling verlopen. Verlopen goedkeuringen worden verwijderd uit het goedkeuringscentrum. Als iemand een verlopen aanvraag probeert goed te keuren, wordt er een foutbericht verzonden. |
 | Bewaarperiode |30 dagen |Dit is vanaf de begintijd van het uitvoeren. |
 | Minimaal terugkeerpatroon |1 minuut | |
 | Maximaal terugkeerpatroon |500 dagen | |
@@ -107,7 +107,7 @@ Aanroepen van een API (bijvoorbeeld de SQL API of de SharePoint API) waarmee via
 | Verenigde Staten |104.43.232.28, 104.43.232.242, 104.43.235.249, 104.43.234.211, 52.160.93.247, 52.160.91.66, 52.160.92.131, 52.160.95.100, 40.117.101.91, 40.117.98.246, 40.117.101.120, 40.117.100.191 |
 | Verenigde Staten (als eerste toegang) |52.161.26.191, 52.161.27.42, 52.161.29.40, 52.161.26.33, 13.66.213.240, 13.66.214.51, 13.66.210.166, 13.66.213.29 |
 
-Als u bijvoorbeeld IP-adressen aan de lijst met toegestane IP-adressen moet toevoegen voor uw Azure SQL-database, moet u deze adressen gebruiken.
+Als u bijvoorbeeld IP-adressen moet goedkeuren voor uw Azure SQL-database, moet u deze adressen gebruiken.
 
 De volgende tabel vermeldt de services waarmee Microsoft Flow verbinding maakt. Zorg ervoor dat geen van deze services in uw netwerk wordt geblokkeerd.
 
