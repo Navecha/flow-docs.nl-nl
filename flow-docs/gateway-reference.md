@@ -10,16 +10,16 @@ editor:
 tags: 
 ms.service: flow
 ms.devlang: na
-ms.topic: article
+ms.topic: get-started-article
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 09/15/2017
 ms.author: deonhe
-ms.openlocfilehash: 06b0198ffa75a3de673460dc13037205f58ad515
-ms.sourcegitcommit: 4f2cb27d392f46aa1d8680d6278876780ed3871b
+ms.openlocfilehash: 73567d4d553ceac1d2cee46feb07ad9a6e7ade33
+ms.sourcegitcommit: 0b7964058416fd8d5e355913eea27172f1c61992
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/15/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="understand-on-premises-data-gateways-for-microsoft-flow"></a>Over on-premises gegevensgateways voor Microsoft Flow
 Gebruik de on-premises gegevensgateway in combinatie met Microsoft Flow om beveiligde verbindingen tot stand te brengen met uw on-premises gegevensbronnen zoals Microsoft SQL Server.
@@ -28,7 +28,7 @@ Gebruik de on-premises gegevensgateway in combinatie met Microsoft Flow om bevei
 ### <a name="prerequisites"></a>Vereisten
 Minimum:
 
-* [.NET Framework 4.5](http://www.microsoft.com/download/details.aspx?id=30653)
+* [.NET Framework 4.6](https://www.microsoft.com/download/details.aspx?id=48130)
 * 64-bits versie van Windows 7 of Windows Server 2008 R2 (of hoger)
 
 Aanbevolen:
@@ -49,7 +49,7 @@ Relevante overwegingen:
 > 
 > 
 
-1. [Download het installatieprogramma](http://go.microsoft.com/fwlink/?LinkID=820931) en voer dit vervolgens uit.
+1. [Download het installatieprogramma](https://go.microsoft.com/fwlink/?LinkID=820931) en voer dit vervolgens uit.
    
     ![Het installatieprogramma uitvoeren](./media/gateway-reference/run-installer.png)
 2. Selecteer in het eerste scherm van de installatiewizard **Volgende** om aan te geven dat u de waarschuwing over het installeren van een gateway op een laptop hebt gelezen.
@@ -81,18 +81,25 @@ Relevante overwegingen:
 De gateway wordt uitgevoerd als een Windows-service en kan, net als alle andere Windows-services, op meerdere manieren worden gestart en gestopt. U kunt bijvoorbeeld een opdrachtprompt met verhoogde bevoegdheden openen op de computer waarop de gateway wordt uitgevoerd en vervolgens een van deze opdrachten invoeren:
 
 * Gebruik deze opdracht om de service te stoppen:
-  
-    ````net stop PBIEgwService````
+
+```batchfile
+    net stop PBIEgwService
+```
+
 * Gebruik deze opdracht om de service te starten:
-  
-    ````net start PBIEgwService````
+
+```batchfile
+    net start PBIEgwService
+```
 
 ## <a name="configure-a-firewall-or-proxy"></a>Een firewall of proxy configureren
 Zie [Configure proxy setting (Proxy-instellingen configureren)](https://powerbi.microsoft.com/documentation/powerbi-gateway-proxy/) voor meer informatie over het invoeren van proxy-informatie voor uw gateway.
 
 U kunt controleren of uw firewall of proxyserver verbindingen blokkeert door de volgende opdracht uit te voeren in een PowerShell-prompt. Met deze opdracht wordt de verbinding met de Azure Service Bus getest. Met deze opdracht wordt alleen de netwerkverbinding getest. De cloudserverservice en de gateway worden niet beïnvloed. Zo kunt u bepalen of uw computer verbinding met internet heeft.
 
-````Test-NetConnection -ComputerName watchdog.servicebus.windows.net -Port 9350````
+```powershell
+Test-NetConnection -ComputerName watchdog.servicebus.windows.net -Port 9350
+```
 
 De resultaten moeten eruitzien als in het volgende voorbeeld. Als **TcpTestSucceeded** niet *waar* is, wordt de verbinding mogelijk geblokkeerd door een firewall.
 
@@ -157,7 +164,7 @@ Dit is niet het account dat wordt gebruikt om verbinding te maken met on-premise
 **Antwoord:** Nee. De gateway gebruikt uitgaande verbindingen naar de Azure Service Bus.
 
 **Vraag:** Wat als uitgaande verbindingen worden geblokkeerd? Wat moet ik openstellen?
-**Antwoord:** Zie de [poorten](gateway-reference.md#ports) en hosts waarvan de gateway gebruikmaakt.
+**Antwoord:** Zie de [poorten](gateway-reference.md#configure-ports) en hosts waarvan de gateway gebruikmaakt.
 
 **Vraag:** Moet de gateway op dezelfde computer worden geïnstalleerd als de gegevensbron?
 **Antwoord:** Nee. De gateway maakt verbinding met de gegevensbron met behulp van de opgegeven verbindingsinformatie. Zie de gateway in dit opzicht als een clienttoepassing. De gateway hoeft alleen verbinding te kunnen maken met de opgegeven server.
