@@ -13,13 +13,13 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 01/01/2018
+ms.date: 02/12/2018
 ms.author: stepsic
-ms.openlocfilehash: 8bdfafff5fbf3a5491809063e92607cd8e10167c
-ms.sourcegitcommit: 7bf01167913038b3ad3527592013eefdd3ee9200
+ms.openlocfilehash: 3687266e84c06c37ac6ae0ee3d89aae0814158f3
+ms.sourcegitcommit: 28b6b09c9f3dd98a64492668d9a3b8c7bfbd6ce3
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 02/12/2018
 ---
 # <a name="release-notes"></a>Releaseopmerkingen
 ## <a name="top-questions"></a>Belangrijkste vragen
@@ -44,6 +44,30 @@ ms.lasthandoff: 01/03/2018
 3. Bestandstriggers worden niet gestart voor bestanden die worden toegevoegd in geneste mappen in de map die u selecteert.
 
 ## <a name="whats-new"></a>Wat is er nieuw?
+
+### <a name="release-2018-02-09"></a>Release 09-02-2018
+
+- **Hoge beschikbaarheid van gateway** - Maak maximaal beschikbare clusters van on-premises gegevensgateways om verbindingen in stand te houden wanneer één machine uitvalt.
+- **Verbetering van Op elke lus toepassen** - Met Flow-abonnement 1 of Flow-abonnement 2 kunt u tot 100.000 items in één uitvoering en 50 acties tegelijkertijd verwerken in Op elke lus toepassen. 
+
+[Lees meer informatie en stel vragen](https://flow.microsoft.com/blog/gateway-ha-increased-apply-to-each/) over deze release.
+
+### <a name="release-2018-01-29"></a>Release 29-01-2018
+
+- **Stroom binnen Microsoft Teams** - Vanuit Teams kunt u stromen maken en beheren, uw ontvangen en verzonden goedkeuringen bekijken en stromen rechtstreeks in de desktop-app van Teams of op teams.microsoft.com starten. [Klik hier voor meer informatie](https://flow.microsoft.com/blog/microsoft-flow-in-microsoft-teams/).
+- **Meldingen voor gedeelde bewerkingen** - Wanneer uw stroom door een collega wordt gewijzigd, krijgt u een e-mailbericht dat u vertelt wie welke stroom heeft gewijzigd.
+- **Nieuwe expressies** - Er zijn twee nieuwe sets met expressies toegevoegd: één om URL's te parseren en een andere om met JSON-objecten te werken.
+- **Drie nieuwe connectors** - Deze week zijn er twee nieuwe Plumsail-connectors bij gekomen: Plumsail SP en Plumsail Forms, plus een nieuwe connector voor kintone.
+
+[Lees meer informatie en stel vragen](https://flow.microsoft.com/blog/shared-notifications-and-expressions/) over deze release.
+
+### <a name="release-2018-01-17"></a>Release 17-01-2018
+
+- **Office 365-profielgegevens** - We hebben nieuwe acties toegevoegd aan de connector voor Office 365-gebruikers, die werken met gebruikersprofielen en -foto's.
+- **Toevoegen aan tekenreeksvariabelen** - U kunt dingen toevoegen aan tekenreeksen binnen lussen om tabellen of andere lijsten te maken.
+- **Infobip-connector** - Infobip is een service die communicatie op zakelijk niveau mogelijk maakt, inclusief spraakoproepen en activering van inkomende sms-berichten.
+
+[Lees meer informatie en stel vragen](https://flow.microsoft.com/blog/o365-profile-infobip/) over deze release.
 
 ### <a name="release-2017-12-20"></a>Versie van 20-12-2017
 
