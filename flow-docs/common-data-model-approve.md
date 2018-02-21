@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/22/2016
 ms.author: stepsic
-ms.openlocfilehash: 41c416557dbb491432448c33369767f9705278c9
-ms.sourcegitcommit: 4f2cb27d392f46aa1d8680d6278876780ed3871b
+ms.openlocfilehash: f56b109cc0263c8464d6d7475421ab32af8888d5
+ms.sourcegitcommit: f3261717768177e03e825c0dd2e3ba736dc9b94d
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/15/2017
+ms.lasthandoff: 02/15/2018
 ---
 # <a name="build-an-approval-loop-by-using-microsoft-flow-and-the-microsoft-common-data-service"></a>Maak een goedkeuringslus met Microsoft Flow en de Microsoft Common Data Service
 Met de Common Data Service hebt u een methode in handen waarmee u stromen kunt opzetten waarbij informatie is opgeslagen in een database die onafhankelijk is van een stroom. Dit kan het beste worden geïllustreerd met goedkeuringen. Als u de status van de goedkeuring in een entiteit opslaat, kan uw stroom daar boven op werken.
@@ -34,7 +34,7 @@ Door de stappen in dit gedeelte te volgen, maakt u het volgende:
 
 **Vereisten**
 
-* Registreren voor [Microsoft Flow](sign-up-sign-in.md) en [PowerApps](https://powerapps.microsoft.com/en-us/tutorials/signup-for-powerapps/).
+* Registreren voor [Microsoft Flow](sign-up-sign-in.md) en [PowerApps](https://powerapps.microsoft.com/tutorials/signup-for-powerapps/).
 * Verbinding maken met Dropbox en Office 365 Outlook, zoals beschreven in [Gegevensverbindingen beheren](https://powerapps.microsoft.com/tutorials/add-manage-connections/).
 
 ## <a name="build-the-entity"></a>De entiteit maken

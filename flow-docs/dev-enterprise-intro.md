@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 01/31/2018
 ms.author: mblythe
-ms.openlocfilehash: 3e6a6e0e369f8d89dcf834b4225dfd5aa4758dd7
-ms.sourcegitcommit: b943fa83d7ca2d1a313c0c7b2cf0d7e4a9528b85
+ms.openlocfilehash: d8886f0828ca3b8ccf7ae1ce9c46f6e9b8fcc766
+ms.sourcegitcommit: f3261717768177e03e825c0dd2e3ba736dc9b94d
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/05/2018
+ms.lasthandoff: 02/15/2018
 ---
 # <a name="microsoft-flow-for-enterprise-developers-isvs-and-partners"></a>Microsoft Flow voor ontwikkelaars in organisaties, ISV's en partners
 
@@ -51,7 +51,7 @@ Als Microsoft-partner of Independent Software Vendor (ISV) kunt u een snellere a
 
 ### <a name="1-connecting-to-your-apis-or-enabling-customers-to-connect-to-your-apis"></a>1. Verbinding maken met uw API's OF inschakelen dat klanten verbinding kunnen maken met uw API's
 
-Als ISV hebt u vaak eigen gegevens waartoe klanten toegang moeten krijgen via uw stromen. U kunt toegang tot uw gegevens beschikbaar maken door middel van een aangepaste connector. [Meer informatie](https://docs.microsoft.com/en-us/connectors/custom-connectors/)
+Als ISV hebt u vaak eigen gegevens waartoe klanten toegang moeten krijgen via uw stromen. U kunt toegang tot uw gegevens beschikbaar maken door middel van een aangepaste connector. [Meer informatie](https://docs.microsoft.com/connectors/custom-connectors/)
 
 Als de connector is gemaakt, kan deze op twee manieren beschikbaar worden gemaakt voor uw klanten:
 - De connector kan worden geïmplementeerd in de tenant van de klant via REST API's of PowerShell.
@@ -77,7 +77,7 @@ Als u eindgebruikers toegang wilt verlenen voor stromen die automatisch kunnen w
 
 Als uw klanten al werken met Office 365 of Dynamics 365 en de licenties zijn gekoppeld aan de identiteiten die worden gebruikt om met Azure AD aan te melden, hoeft u niet aan aanvullende licentievereisten te voldoen. Als uw klanten echter niet met Office 365 of Dynamics 365 werken, moet u namens uw klanten gebruiksrechten voor Microsoft Flow verkrijgen, zodat ze een licentie hebben om die ingesloten onderdelen in uw toepassing te gebruiken.
 
-Wij bieden het [Microsoft Cloud Solution Provider](https://partner.microsoft.com/en-US/cloud-solution-provider)-programma om licenties namens uw klanten te verkrijgen. Er zijn twee verschillende [prijsplannen](https://flow.microsoft.com/pricing/) beschikbaar voor Microsoft Flow. Raadpleeg deze voor informatie over de plannen en functies.
+Wij bieden het [Microsoft Cloud Solution Provider](https://partner.microsoft.com/cloud-solution-provider)-programma om licenties namens uw klanten te verkrijgen. Er zijn twee verschillende [prijsplannen](https://flow.microsoft.com/pricing/) beschikbaar voor Microsoft Flow. Raadpleeg deze voor informatie over de plannen en functies.
 
 ### <a name="7-list-on-appsource"></a>7. Vermelden op AppSource
 

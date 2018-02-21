@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/22/2016
 ms.author: stepsic
-ms.openlocfilehash: a63ccacb1e6d9bd63d5a11a8db6ea01a9fc37333
-ms.sourcegitcommit: 4f2cb27d392f46aa1d8680d6278876780ed3871b
+ms.openlocfilehash: e4e92bfdcf1ea65de272233b2056523641010cf2
+ms.sourcegitcommit: f3261717768177e03e825c0dd2e3ba736dc9b94d
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/15/2017
+ms.lasthandoff: 02/15/2018
 ---
 # <a name="create-a-flow-that-uses-the-common-data-service"></a>Een stroom maken die gebruikmaakt van de Common Data Service
 Verbeter uw bedrijfsefficiëntie met een geïntegreerde weergave van bedrijfsgegevens door een stroom te maken die gebruikmaakt van de [Common Data Service](https://powerapps.microsoft.com/tutorials/data-platform-intro/). U kunt deze beveiligde bedrijfsdatabase die bestaat uit juist opgemaakte standaardbedrijfsentiteiten (zoals Verkoop, Inkoop, Klantenservice en Productiviteit) in uw organisatie implementeren. U kunt de organisatiegegevens opslaan in een of meer [aangepaste entiteiten](https://powerapps.microsoft.com/tutorials/data-platform-create-entity/), die verschillende voordelen bieden via externe gegevensbronnen zoals Microsoft Excel en Salesforce.
@@ -37,7 +37,7 @@ Een voorbeeld: u kunt in Microsoft Flow op de volgende manieren gebruikmaken van
 
 * Registreren voor [Microsoft Flow](https://flow.microsoft.com) en [PowerApps](https://web.powerapps.com).
   
-    Als u problemen ondervindt, controleert u of [Microsoft Flow](sign-up-sign-in.md) en [PowerApps](https://powerapps.microsoft.com/en-us/tutorials/signup-for-powerapps/) ondersteuning bieden voor het type account dat u hebt en of aanmelding niet is geblokkeerd door uw organisatie.
+    Als u problemen ondervindt, controleert u of [Microsoft Flow](sign-up-sign-in.md) en [PowerApps](https://powerapps.microsoft.com/tutorials/signup-for-powerapps/) ondersteuning bieden voor het type account dat u hebt en of aanmelding niet is geblokkeerd door uw organisatie.
 * Als u de Common Data Service nog niet eerder hebt gebruikt, gaat u naar [powerapps.com](https://web.powerapps.com/#/entities), opent u het tabblad **Entiteiten** en klikt of tikt u op **Mijn database maken**.
 
 ## <a name="sign-in-to-your-environment"></a>Aanmelden bij uw omgeving

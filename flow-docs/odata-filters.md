@@ -15,16 +15,16 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 09/21/2017
 ms.author: deonhe
-ms.openlocfilehash: 37b53fa50afdc6865c5ba905957405f0e4b67520
-ms.sourcegitcommit: 4f2cb27d392f46aa1d8680d6278876780ed3871b
+ms.openlocfilehash: b266a953785b79c0dbc5e2d483330b239a7bf17f
+ms.sourcegitcommit: f3261717768177e03e825c0dd2e3ba736dc9b94d
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/15/2017
+ms.lasthandoff: 02/15/2018
 ---
 # <a name="filter-and-copy-data-with-microsoft-flow"></a>Gegevens filteren en kopiëren met Microsoft Flow
 In deze procedure ziet u hoe u een stroom kunt maken waarmee een bron wordt gecontroleerd op nieuwe of gewijzigde items en deze wijzigingen naar een doel worden gekopieerd. U kunt een dergelijke stroom maken als uw gebruikers gegevens op één locatie invoeren, maar uw team deze nodig hebben op een andere locatie of in een andere indeling.
 
-In deze procedure worden gegevens gekopieerd van een Microsoft SharePoint-[lijst](https://support.office.com/en-us/article/SharePoint-lists-I-An-introduction-f11cd5fe-bc87-4f9e-9bfe-bbd87a22a194) (bron) naar een [Azure SQL Database](https://docs.microsoft.com/azure/sql-database/sql-database-technical-overview)-tabel (doel), maar u kunt gegevens kopiëren tussen de meer dan [150 services](https://flow.microsoft.com/connectors/) die Microsoft Flow ondersteunt.
+In deze procedure worden gegevens gekopieerd van een Microsoft SharePoint-[lijst](https://support.office.com/article/SharePoint-lists-I-An-introduction-f11cd5fe-bc87-4f9e-9bfe-bbd87a22a194) (bron) naar een [Azure SQL Database](https://docs.microsoft.com/azure/sql-database/sql-database-technical-overview)-tabel (doel), maar u kunt gegevens kopiëren tussen de meer dan [150 services](https://flow.microsoft.com/connectors/) die Microsoft Flow ondersteunt.
 
 > [!IMPORTANT]
 > Wijzigingen die u in het doel aanbrengt, worden niet gekopieerd naar de bron omdat synchronisatie in twee richtingen niet wordt ondersteund. Als u toch synchronisatie in twee richtingen instelt, maakt u een oneindige lus waarin wijzigingen eindeloos worden verzonden tussen de bron en het doel.
@@ -35,7 +35,7 @@ In deze procedure worden gegevens gekopieerd van een Microsoft SharePoint-[lijst
 * Toegang tot een gegevensbron en een doel. Deze procedure bevat geen stappen voor het maken van de bron en het doel.
 * U moet toegang hebben tot [Microsoft Flow](https://flow.microsoft.com).
 * Basiskennis van hoe uw gegevens worden opgeslagen.
-* Bekendheid met de basisprincipes van het maken van stromen. U kunt nalezen hoe u [acties, triggers](multi-step-logic-flow.md#add-another-action) en [voorwaarden](add-a-condition.md) maakt. In de volgende stappen wordt ervan uitgegaan dat u weet hoe u deze acties uitvoert.
+* Bekendheid met de basisprincipes van het maken van stromen. U kunt nalezen hoe u [acties, triggers](multi-step-logic-flow.md#add-another-action) en [voorwaarden](add-condition.md) maakt. In de volgende stappen wordt ervan uitgegaan dat u weet hoe u deze acties uitvoert.
 
 > [!TIP]
 > Niet alle kolomnamen in de bron en het doel hoeven overeen te komen, maar u moet gegevens opgeven voor alle *vereiste* kolommen wanneer u een item invoegt of bijwerkt. In Microsoft Flow worden de vereiste velden voor u geïdentificeerd.

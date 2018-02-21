@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 09/22/2017
 ms.author: deonhe
-ms.openlocfilehash: 0e0309793cfcb45ca7ee72910803a4abc27d2f26
-ms.sourcegitcommit: 4f2cb27d392f46aa1d8680d6278876780ed3871b
+ms.openlocfilehash: 6b152f0ec85558889970db2784fe8c2dcbf526ed
+ms.sourcegitcommit: f3261717768177e03e825c0dd2e3ba736dc9b94d
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/15/2017
+ms.lasthandoff: 02/15/2018
 ---
 # <a name="create-an-approval-flow-that-requires-everyone-to-approve"></a>Een goedkeuringsstroom maken waarin iedereen goedkeuring moet verlenen
 In deze procedure ziet u hoe u een goedkeuringswerkstroom maakt waarbij iedereen (alle toegewezen goedkeurder) goedkeuring moet verlenen aan een vakantieaanvraag, maar er maar één goedkeurder nodig is om de hele aanvraag af te wijzen.
@@ -28,12 +28,12 @@ Dit type goedkeuringswerkstroom is nuttig in een organisatie waarin de manager e
 
 ## <a name="prerequisites"></a>Vereisten
 * Toegang tot [Microsoft Flow](https://flow.microsoft.com), Office 365 Outlook en Office 365-gebruikers.
-* Een SharePoint Online-[lijst](https://support.office.com/en-us/article/SharePoint-lists-I-An-introduction-f11cd5fe-bc87-4f9e-9bfe-bbd87a22a194).
+* Een SharePoint Online-[lijst](https://support.office.com/article/SharePoint-lists-I-An-introduction-f11cd5fe-bc87-4f9e-9bfe-bbd87a22a194).
   
     In deze procedure wordt ervan uitgegaan dat u al een SharePoint Online-lijst hebt gemaakt die wordt gebruikt voor het aanvragen van vakantie. Zie de procedure voor [parallelle goedkeuringen](parallel-modern-approvals.md) voor een uitgebreid voorbeeld waarin wordt uitgelegd hoe uw SharePoint-lijst eruit kan zien.
 * Bekendheid met de basisprincipes van het maken van stromen.
   
-    U kunt nalezen hoe u [acties, triggers](multi-step-logic-flow.md#add-another-action) en [voorwaarden](add-a-condition.md) maakt. In de volgende stappen wordt ervan uitgegaan dat u weet hoe u deze acties uitvoert.
+    U kunt nalezen hoe u [acties, triggers](multi-step-logic-flow.md#add-another-action) en [voorwaarden](add-condition.md) maakt. In de volgende stappen wordt ervan uitgegaan dat u weet hoe u deze acties uitvoert.
 
 > [!NOTE]
 > In deze procedure worden SharePoint Online en Office 365 Outlook gebruikt, maar u kunt ook andere services gebruiken, zoals Zendesk, Salesforce of Gmail of een van de andere meer dan [150 services](https://flow.microsoft.com/connectors/) waarvoor Microsoft Flow ondersteuning biedt.
