@@ -50,6 +50,8 @@
       href: sequential-modern-approvals.md
     - name: Parallelle goedkeuringen
       href: parallel-modern-approvals.md
+    - name: Iedereen moet goedkeuren
+      href: all-assigned-must-approve.md
     - name: Geïntegreerde goedkeuringen
       href: common-data-model-approve.md
 - name: De mobiele app gebruiken
