@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 02/12/2018
 ms.author: stepsic
-ms.openlocfilehash: 3687266e84c06c37ac6ae0ee3d89aae0814158f3
-ms.sourcegitcommit: 28b6b09c9f3dd98a64492668d9a3b8c7bfbd6ce3
+ms.openlocfilehash: 57a86fa86633e040cf788443d54bd60cfd340844
+ms.sourcegitcommit: 6308b1f4ec4ed18a8a7c89911a83cd2f12ed6dc4
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="release-notes"></a>Releaseopmerkingen
 ## <a name="top-questions"></a>Belangrijkste vragen
@@ -121,7 +121,7 @@ Het startpaneel van Microsoft Flow is nu in alle regio’s beschikbaar. In dit d
 
 ### <a name="release-2017-10-19"></a>Versie van 19-10-2017
 
-- **Genest op elke toepassen**: u kunt Toepassen op elk(e)-acties toevoegen, filteren en selecteren in andere Toepassen op elke container.
+- **Genest op elke toepassen**: u kunt acties van het type 'Toepassen op elke' toevoegen, filteren en selecteren in andere containeracties van het type 'Toepassen op elke'.
 - **Datum/tijd-acties**: nieuwe acties voor het ophalen van de lokale tijd of het optellen, aftrekken of formatteren van tijden.
 - **Vier nieuwe connectors**: Content Moderator, Docparser, Microsoft Kaizala en Pitney Bowes Data Validation zijn toegevoegd.
 - **Verbeterde verbindingservaring**: u vindt meldingen in het stroomportal wanneer een verbinding wordt verbroken. Ook krijgt u uitgebreidere verbindingsdetails.

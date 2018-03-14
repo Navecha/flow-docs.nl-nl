@@ -15,18 +15,18 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 07/20/2017
 ms.author: deonhe
-ms.openlocfilehash: fe05ce536b61887f52ea4e297457c71ead3e8bfd
-ms.sourcegitcommit: 4f2cb27d392f46aa1d8680d6278876780ed3871b
+ms.openlocfilehash: f6fc61a25dadba50c4906310b0562d32c11f8e73
+ms.sourcegitcommit: 22a883c30c859b6193fc2a619e753d71247f5e15
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/15/2017
+ms.lasthandoff: 02/27/2018
 ---
 # <a name="create-and-test-an-approval-workflow-with-microsoft-flow"></a>Een goedkeuringswerkstroom maken en testen met Microsoft Flow
 Met Microsoft Flow kunt u de goedkeuring van documenten of processen beheren binnen diverse services, waaronder SharePoint, Dynamics CRM, Salesforce, OneDrive voor Bedrijven, Zendesk of WordPress.
 
 U kunt een goedkeuringswerkstroom maken door de actie **Goedkeuringen - Een goedkeuring starten** aan een stroom toe te voegen. Nadat u deze actie hebt toegevoegd, kan uw stroom de goedkeuring van documenten of processen beheren. U kunt bijvoorbeeld goedkeuringsstromen voor documenten maken die facturen, werkorders of verkoopoffertes goedkeuren. U kunt ook goedkeuringsstromen voor processen maken, die vakantieaanvragen, overwerk of reisplannen goedkeuren.
 
-Fiatteurs beheren aanvragen via hun Postvak IN, [het goedkeuringscentrum](https://flow.microsoft.com/manage/approvals/received/) op de Microsoft Flow-website of de Microsoft Flow-app.
+Fiatteurs kunnen aanvragen beantwoorden via hun Postvak IN, het [goedkeuringscentrum](https://flow.microsoft.com/manage/approvals/received/) op de Microsoft Flow-website of de Microsoft-Flow-app.
 
 ## <a name="create-an-approval-flow"></a>Een goedkeuringswerkstroom maken
 Hier volgt een overzicht van de stroom die we gaan maken en testen:
@@ -129,4 +129,3 @@ U hebt nu uw stroom gemaakt en getest. Laat vervolgens aan anderen weten hoe ze 
 * [Sequentiële goedkeuringsstromen](sequential-modern-approvals.md) maken.
 * [Parallelle goedkeuringsstromen](parallel-modern-approvals.md) maken.
 * Installeer de mobiele app voor Microsoft Flow voor [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios) of [Windows Phone](https://aka.ms/flowmobilewindows).
-
