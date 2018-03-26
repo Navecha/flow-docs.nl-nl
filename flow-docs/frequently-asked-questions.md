@@ -1,13 +1,13 @@
 ---
 title: Veelgestelde vragen | Microsoft Docs
 description: Antwoorden op enkele veelgestelde vragen over Microsoft Flow
-services: 
+services: ''
 suite: flow
 documentationcenter: na
 author: stepsic-microsoft-com
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: flow
 ms.devlang: na
 ms.topic: article
@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 03/15/2017
 ms.author: stepsic
-ms.openlocfilehash: 5b8deda5f22bcc1fa7cfa37a0d4244f26c2004a4
-ms.sourcegitcommit: 4f2cb27d392f46aa1d8680d6278876780ed3871b
+ms.openlocfilehash: 99a66520b5a922b4945c9d3c94c7a5c053df98ee
+ms.sourcegitcommit: a0435b92fa7f5dedff3b0ff806836c7a07309fd2
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/15/2017
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="frequently-asked-questions"></a>Veelgestelde vragen
 ## <a name="audience-and-strategy"></a>Publiek en de strategie
@@ -99,10 +99,21 @@ Ga aan de slag met de volgende informatiebronnen:
 * [Weblog](https://flow.microsoft.com)
 * [YouTube-kanaal](https://youtube.com/playlist?list=PL8nfc9haGeb55I9wL9QnWyHp3ctU2_ThF)
 * [Onderwerp](getting-started.md)
-* [Community](http://powerusers.microsoft.com)
+* [Community](https://powerusers.microsoft.com)
 
 ### <a name="what-operating-systems-does-the-mobile-app-for-microsoft-flow-support"></a>Welke besturingssystemen worden ondersteund door de mobiele Microsoft Flow-app?
 De mobiele app voor Microsoft Flow is beschikbaar op [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios) en [Windows Phone](https://aka.ms/flowmobilewindows).
+
+### <a name="can-flows-be-turned-off-or-disabled"></a>Kunnen stromen worden uitgezet of uitgeschakeld?
+
+Ja, elke stroom heeft een aan/uit-schakelaar, waarmee u het verwerken van aanvragen door de stroom kan stopzetten.
+
+In de volgende tabel kunt u zien hoe uw stroom reageert wanneer deze opnieuw wordt ingeschakeld.
+
+Type trigger|Beschrijving
+-------|--------
+Polling, zoals de trigger voor **herhaling**|Wanneer de stroom weer wordt ingeschakeld, worden alle gebeurtenissen verwerkt die onverwerkt of in behandeling zijn.
+Webhook|Wanneer de stroom weer wordt ingeschakeld, worden hierdoor alleen nieuwe gebeurtenissen verwerkt die worden gegenereerd nadat de stroom is ingeschakeld.
 
 ### <a name="what-regions-and-languages-does-microsoft-flow-support"></a>Welke regio's en talen ondersteunt Microsoft Flow?
 Microsoft Flow is beschikbaar in 42 talen, in [zes regio's](regions-overview.md).
