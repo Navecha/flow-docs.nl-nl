@@ -2,104 +2,109 @@
 documentType: LandingData
 title: Microsoft Flow-documenten
 metadata:
-  title: 'Microsoft Flow-documenten, video''s, verwijzingen en meer'
-  description: 'Begin met het maken, delen en beheren van stromen met behulp van de hier vermelde resources. U kunt beginnen met een eenvoudige knop of u kunt uw eigen goedkeuringsstromen maken.'
+  title: Microsoft Flow-documenten, video's, verwijzingen en meer
+  description: Begin met het maken, delen en beheren van stromen met behulp van de hier vermelde resources. U kunt beginnen met een eenvoudige knop of u kunt uw eigen goedkeuringsstromen maken.
   author: MSFTMan
   manager: anneta
   layout: LandingPage
-  ms.assetid: null
+  ms.assetid: 
   ms.service: flow
   ms.tgt_pltfrm: na
   ms.devlang: na
   ms.topic: landing-page
   ms.date: 10/18/2017
   ms.author: deonhe
+  ms.openlocfilehash: c741a66a0633eac14157c7f8716ae4231d1b494f
+  ms.sourcegitcommit: 753d52fa29d04f2eb774f7bec29b8d5793ccbb93
+  ms.translationtype: HT
+  ms.contentlocale: nl-NL
+  ms.lasthandoff: 03/28/2018
 sections:
-  - items:
-      - type: markdown
-        text: |
-          Begin met het maken, delen en beheren van stromen met behulp van de hier vermelde resources. U kunt beginnen met een eenvoudige knop of u kunt uw eigen goedkeuringsstromen maken.
-  - items:
-      - type: list
-        style: cards
-        className: cardsM
-        columns: 2
-        items:
-          - href: guided-learning/index
-            html: <p>Rondleiding Begeleide training</p>
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_get-started.svg'
-            title: Rondleiding volgen
-          - href: getting-started
-            html: <p>Een overzicht van Microsoft Flow</p>
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_get-started.svg'
-            title: Aan de slag
-          - href: mobile-create-flow
-            html: <p>Stromen op mobiele apparaten maken</p>
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_mobileapp.svg'
-            title: Kennismaking met de mobiele app
-          - href: introduction-to-button-flows
-            html: <p>Een knopstroom maken in 2 minuten tijd</p>
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_api-reference.svg'
-            title: Informatie over knoppen
-          - href: 'https://aka.ms/flowoftheweek'
-            html: <p>Inspiratie opdoen met de stroom van de week</p>
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_api-reference.svg'
-            title: Stroom van de week
-          - href: 'https://flow.microsoft.com/support/'
-            html: <p>Help en ondersteuning</p>
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_support.svg'
-            title: We zijn er om u te helpen
-  - title: Zelfstudies met stapsgewijze instructies
+- items:
+  - type: markdown
+    text: >
+      Begin met het maken, delen en beheren van stromen met behulp van de hier vermelde resources. U kunt beginnen met een eenvoudige knop of u kunt uw eigen goedkeuringsstromen maken.
+- items:
+  - type: list
+    style: cards
+    className: cardsM
+    columns: 2
     items:
-      - type: paragraph
-        text: Leer verschillende soorten stromen maken.
-      - type: list
-        style: cards
-        className: cardsM
-        columns: 3
-        items:
-          - href: get-started-logic-template
-            title: Een stroom maken met een sjabloon
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_guide.svg'
-          - href: get-started-logic-flow
-            title: Een volledig nieuwe stroom maken
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_build.svg'
-          - href: modern-approvals
-            title: Goedkeuringsstromen maken
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_tasks.svg'
-          - href: share-buttons
-            title: Laat anderen met uw knoppen werken
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_setup.svg'
-          - href: create-team-flows
-            title: Eigendom van uw stromen delen
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_configure-teams.svg'
-          - href: fix-flow-failures
-            title: Problemen met stromen oplossen
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_investigate.svg'
-  - title: Video-overzicht van Microsoft Flow
+    - href: guided-learning/index
+      html: <p>Rondleiding Begeleide training</p>
+      image:
+        src: https://docs.microsoft.com/media/common/i_get-started.svg
+      title: Rondleiding volgen
+    - href: getting-started
+      html: <p>Een overzicht van Microsoft Flow</p>
+      image:
+        src: https://docs.microsoft.com/media/common/i_get-started.svg
+      title: Aan de slag
+    - href: mobile-create-flow
+      html: <p>Stromen op mobiele apparaten maken</p>
+      image:
+        src: https://docs.microsoft.com/media/common/i_mobileapp.svg
+      title: Kennismaking met de mobiele app
+    - href: introduction-to-button-flows
+      html: <p>Een knopstroom maken in 2 minuten tijd</p>
+      image:
+        src: https://docs.microsoft.com/media/common/i_api-reference.svg
+      title: Informatie over knoppen
+    - href: https://aka.ms/flowoftheweek
+      html: <p>Inspiratie opdoen met de stroom van de week</p>
+      image:
+        src: https://docs.microsoft.com/media/common/i_api-reference.svg
+      title: Stroom van de week
+    - href: https://flow.microsoft.com/support/
+      html: <p>Help en ondersteuning</p>
+      image:
+        src: https://docs.microsoft.com/media/common/i_support.svg
+      title: We zijn er om u te helpen
+- title: Zelfstudies met stapsgewijze instructies
+  items:
+  - type: paragraph
+    text: Leer verschillende soorten stromen maken.
+  - type: list
+    style: cards
+    className: cardsM
+    columns: 3
     items:
-      - type: markdown
-        text: '<iframe width="560" height="315" src="https://www.youtube.com/embed/iMteXfAvDSE?list=PL8nfc9haGeb55I9wL9QnWyHp3ctU2_ThF" frameborder="0" allowfullscreen></iframe>'
-  - title: Geavanceerde zelfstudies
+    - href: get-started-logic-template
+      title: Een stroom maken met een sjabloon
+      image:
+        src: https://docs.microsoft.com/media/common/i_guide.svg
+    - href: get-started-logic-flow
+      title: Een volledig nieuwe stroom maken
+      image:
+        src: https://docs.microsoft.com/media/common/i_build.svg
+    - href: modern-approvals
+      title: Goedkeuringsstromen maken
+      image:
+        src: https://docs.microsoft.com/media/common/i_tasks.svg
+    - href: share-buttons
+      title: Laat anderen met uw knoppen werken
+      image:
+        src: https://docs.microsoft.com/media/common/i_setup.svg
+    - href: create-team-flows
+      title: Eigendom van uw stromen delen
+      image:
+        src: https://docs.microsoft.com/media/common/i_configure-teams.svg
+    - href: fix-flow-failures
+      title: Problemen met stromen oplossen
+      image:
+        src: https://docs.microsoft.com/media/common/i_investigate.svg
+- title: Video-overzicht van Microsoft Flow
+  items:
+  - type: markdown
+    text: <iframe width="560" height="315" src="https://www.youtube.com/embed/iMteXfAvDSE?list=PL8nfc9haGeb55I9wL9QnWyHp3ctU2_ThF" frameborder="0" allowfullscreen></iframe>
+- title: Geavanceerde zelfstudies
+  items:
+  - type: paragraph
+    text: Informatie over het gebruik van expressies, de REST-API, het maken van aangepaste connectors, en meer...
+  - type: list
+    style: unordered
     items:
-      - type: paragraph
-        text: 'Informatie over het gebruik van expressies, de REST-API, het maken van aangepaste connectors, en meer...'
-      - type: list
-        style: unordered
-        items:
-          - html: <a href="environments-overview-admin">Microsoft Flow voor een organisatie beheren</a>
-          - html: '<a href="https://flow.microsoft.com/blog/call-flow-restapi/">Informatie over het gebruik van REST-API''s met uw stromen</a>'
-          - html: <a href="customapi-web-api-tutorial">Een aangepaste connector maken</a>
-          - html: '<a href="https://flow.microsoft.com/blog/grow-up-to-logic-apps/">Uw stromen uitbreiden met Logic Apps</a>'
+    - html: <a href="environments-overview-admin">Microsoft Flow voor een organisatie beheren</a>
+    - html: <a href="https://flow.microsoft.com/blog/call-flow-restapi/">Informatie over het gebruik van REST-API's met uw stromen</a>
+    - html: <a href="customapi-web-api-tutorial">Een aangepaste connector maken</a>
+    - html: <a href="https://flow.microsoft.com/blog/grow-up-to-logic-apps/">Uw stromen uitbreiden met Logic Apps</a>
