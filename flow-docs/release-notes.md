@@ -1,13 +1,13 @@
 ---
 title: Opmerkingen bij de release | Microsoft Docs
 description: Veelvoorkomende problemen en nieuwe functies voor versies van Microsoft Flow
-services: 
+services: ''
 suite: flow
 documentationcenter: na
 author: stepsic-microsoft-com
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: flow
 ms.devlang: na
 ms.topic: article
@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 02/12/2018
 ms.author: stepsic
-ms.openlocfilehash: 57a86fa86633e040cf788443d54bd60cfd340844
-ms.sourcegitcommit: 6308b1f4ec4ed18a8a7c89911a83cd2f12ed6dc4
+ms.openlocfilehash: 4d88b0baee16fb0aeea24e2f2c84806595f21662
+ms.sourcegitcommit: 753d52fa29d04f2eb774f7bec29b8d5793ccbb93
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="release-notes"></a>Releaseopmerkingen
 ## <a name="top-questions"></a>Belangrijkste vragen
@@ -391,7 +391,7 @@ U kunt nu gebruikmaken van waardevolle informatie wanneer u een knopstroom start
 ### <a name="release-2016-11-23"></a>Release van 23-11-2016
 * **Ondersteuning voor Power BI-waarschuwingen in Flow**: onderneem actie op basis van statistieken door via Power BI-gegevenswaarschuwingen stromen te activeren.
 * **Verbeteringen voor de mobiele toepassing**: u beschikt al over de mogelijkheid om stromen op basis van een sjabloon te maken, maar u kunt u nu ook compleet nieuwe stromen maken. De prestaties tijdens het bekijken van stroomuitvoeringen is ook verbeterd.
-* **Acht nieuwe services**: u kunt u verbinding maken met Azure Resource Manager, Azure Queues, Chatter, Disqus, Azure DocumentDB, de Cognitive Services Face-API, HipChat en Wordpress.
+* **Acht nieuwe services**: u kunt u verbinding maken met Azure Resource Manager, Azure Queues, Chatter, Disqus, Azure Cosmos DB, de Cognitive Services Face-API, HipChat en Wordpress.
 
 [Lees meer informatie en stel vragen](https://flow.microsoft.com/blog/power-bi-and-eight-other-services/) over deze release.
 
