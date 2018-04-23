@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 11/22/2017
 ms.author: sunayv
-ms.openlocfilehash: 631c53aaa19e137e1df82f8070192f6f4271339e
-ms.sourcegitcommit: aee927ab32b5e28ee9b1880b4a292f9c15025f88
+ms.openlocfilehash: cf1a618b9e0ed76147eb4ede2aed42111c66b4a5
+ms.sourcegitcommit: d00c10759d4afb54517a0b1032f8d0a509006d5b
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="using-environments-within-microsoft-flow"></a>Omgevingen gebruiken in Microsoft Flow
 
@@ -45,7 +45,7 @@ Omgevingen bieden de volgende voordelen:
 
   * Gegevens invoegen in een Excel-bestand en het Excel-bestand opslaan in een cloudopslagaccount zoals OneDrive.
   * Een SQL-database maken en er vervolgens uw gegevens in opslaan.
-  * De Common Data Service gebruiken voor het opslaan van uw gegevens.
+  * Gebruik de Common Data Service voor het opslaan van uw gegevens.
 
     Voor elke omgeving kan de Common Data Service slechts één database voor uw stromen bevatten. Toegang tot de Common Data Service is afhankelijk van de licentie die u hebt aangeschaft. De Common Data Service is niet inbegrepen in de gratis licentie.
 
@@ -79,18 +79,20 @@ Ga naar [admin.flow.microsoft.com](https://admin.flow.microsoft.com) en meld u a
 ## <a name="create-an-environment"></a>Een omgeving maken
 
 1. Selecteer in het [Beheercentrum van Microsoft Flow](https://admin.flow.microsoft.com) de optie **Omgevingen**. U ziet alle bestaande omgevingen: ![Omgevingen](./media/environments-overview-admin/environments-list.png)
-1. Selecteer **Nieuwe omgeving** en geef vervolgens de vereiste gegevens op:
+2. Selecteer **Nieuwe omgeving** en geef vervolgens de vereiste gegevens op:
 
-   | Eigenschap | Beschrijving |
-   | --- | --- |
-   | Naam van omgeving |Voer de naam van uw omgeving in, zoals `Human Resources`, of `Europe flows`. |
-   | Regio |Kies de locatie voor het hosten van uw omgeving. Gebruik voor de beste prestaties de regio die het dichtst bij uw gebruikers ligt.|
-   |Type omgeving | Kies een type omgeving op basis van uw licentie: Productielicentie of Proeflicentie.| 
+
+   |     Eigenschap     |                                                 Beschrijving                                                 |
+   |------------------|-------------------------------------------------------------------------------------------------------------|
+   | Naam van omgeving |              Voer de naam van uw omgeving in, zoals `Human Resources`, of `Europe flows`.              |
+   |      Regio      | Kies de locatie voor het hosten van uw omgeving. Gebruik voor de beste prestaties de regio die het dichtst bij uw gebruikers ligt. |
+   | Type omgeving |                  Kies een type omgeving op basis van uw licentie: Productielicentie of Proeflicentie.                   |
+
      ![omgevingsinstellingen](./media/environments-overview-admin/new-environment-dialog.png)
-1. Klik op **Een omgeving maken**.
-1. U hebt nu de optie **Database maken** of **Overslaan**.
-1. Als u **Database maken** kiest, wordt u om een **Valuta** en **Taal** voor de database gevraagd. Bovendien kunt u er ook voor kiezen om voorbeeld-apps en -gegevens te laten implementeren.
-   
+3. Klik op **Een omgeving maken**.
+4. U hebt nu de optie **Database maken** of **Overslaan**.
+5. Als u **Database maken** kiest, wordt u om een **Valuta** en **Taal** voor de database gevraagd. Bovendien kunt u er ook voor kiezen om voorbeeld-apps en -gegevens te laten implementeren.
+
    ![configuratie-instellingen database](./media/environments-overview-admin/create-database-dialog2.png)
 
 

@@ -1,6 +1,7 @@
 U kunt voor steeds meer [services](https://flow.microsoft.com/services) werkstromen bouwen met [Microsoft Flow](https://flow.microsoft.com). Het kan daarom handig zijn om gevoelige of kritieke zakelijke gegevens veilig te stellen die zijn opgeslagen in bedrijfsservices zoals SharePoint of Salesforce. Mogelijk moet uw organisatie een beleid creëren waarmee u er zeker van bent dat gevoelige zakelijke gegevens niet worden gepubliceerd in consumentenservices zoals Twitter en Facebook. Met Microsoft Flow kunt u eenvoudig beleid voor **preventie van gegevensverlies** (DLP) maken om te bepalen met welke consumentenservices uw zakelijke gegevens mogen worden gedeeld wanneer uw gebruikers stromen maken.  
 
 ## <a name="terms-you-should-get-familiar-with"></a>Termen die u moet onthouden
+
 | Term | Beschrijving |
 | --- | --- |
 | **DLP** |Dit staat voor Data Loss Prevention: het voorkomen van gegevensverlies. U maakt DLP-beleid om het delen van gegevens tussen **services** te beheren. |

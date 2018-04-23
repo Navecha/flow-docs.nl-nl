@@ -2,6 +2,7 @@
 Een omgeving is een virtuele ruimte die wordt gebruikt om apps, stromen en zakelijke gegevens op te slaan, te beheren en te delen in Common Data Service. Omgevingen hebben een geografische locatie, dus dat geldt ook voor alle apps en gegevens die in de database van een omgeving worden opgeslagen.  
 
 ## <a name="terms-you-should-get-familiar-with"></a>Termen die u moet onthouden
+
 | **Term** | **Beschrijving** |
 | --- | --- |
 | **Beheercentrum** |Het beheercentrum is een [webportal](https://admin.flow.microsoft.com) voor het beheren van al uw omgevingen en al het beleid voor het voorkomen van gegevensverlies. |

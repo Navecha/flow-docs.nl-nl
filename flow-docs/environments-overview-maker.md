@@ -1,13 +1,13 @@
 ---
 title: Meer informatie over Microsoft Flow-omgevingen | Microsoft Docs
 description: Informatie over het gebruik van omgevingen voor het isoleren van uw stromen
-services: 
+services: ''
 suite: flow
 documentationcenter: na
 author: sunaysv
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: flow
 ms.devlang: na
 ms.topic: article
@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 11/27/2017
 ms.author: sunayv
-ms.openlocfilehash: 202167f833c6f5e1a8105db8bd44addc24dfdc3e
-ms.sourcegitcommit: 7bf01167913038b3ad3527592013eefdd3ee9200
+ms.openlocfilehash: e6667c1c1999c36177d40d52fa657edadd063516
+ms.sourcegitcommit: d00c10759d4afb54517a0b1032f8d0a509006d5b
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="choosing-an-environment"></a>Een omgeving kiezen
 
@@ -73,7 +73,7 @@ Volg deze stappen als u wilt schakelen tussen omgevingen:
 Voordat u een stroom maakt, selecteert u de omgeving waarin u de stroom en de bijbehorende resources gaat toevoegen.
 
 > [!NOTE]
-Als u een stroom in de verkeerde omgeving maakt, moet u deze verwijderen en vervolgens in de juiste omgeving maken.
+> Als u een stroom in de verkeerde omgeving maakt, moet u deze verwijderen en vervolgens in de juiste omgeving maken.
 
 Denk aan de volgende factoren als u een omgeving kiest die als host voor uw stromen moet fungeren:
 
@@ -82,7 +82,7 @@ Denk aan de volgende factoren als u een omgeving kiest die als host voor uw stro
 * U ziet alle omgevingen waarin u resources kunt bewerken. U moet echter een beheerder vragen u als maker toe te voegen aan alle omgevingen waarin u stromen wilt maken.
 
 > [!NOTE]
-U kunt altijd stromen maken in de standaardomgeving.
+> U kunt altijd stromen maken in de standaardomgeving.
 
 ## <a name="next-steps"></a>Volgende stappen
 
