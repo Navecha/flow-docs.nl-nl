@@ -13,13 +13,13 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 02/12/2018
+ms.date: 04/12/2018
 ms.author: stepsic
-ms.openlocfilehash: 4d88b0baee16fb0aeea24e2f2c84806595f21662
-ms.sourcegitcommit: 753d52fa29d04f2eb774f7bec29b8d5793ccbb93
+ms.openlocfilehash: ef14fd29dbf0b227acf4d5fef6233837514d4ab0
+ms.sourcegitcommit: d00c10759d4afb54517a0b1032f8d0a509006d5b
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/23/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="release-notes"></a>Releaseopmerkingen
 ## <a name="top-questions"></a>Belangrijkste vragen
@@ -44,6 +44,39 @@ ms.lasthandoff: 03/23/2018
 3. Bestandstriggers worden niet gestart voor bestanden die worden toegevoegd in geneste mappen in de map die u selecteert.
 
 ## <a name="whats-new"></a>Wat is er nieuw?
+
+### <a name="release-2018-04-12"></a>Release 12-04-2018
+
+- **Stuur gegevens terug naar PowerApps vanuit een stroom** - Bouw stromen die kunnen worden aangeroepen vanuit een app die is opgebouwd met PowerApps en stuur gegevens terug naar de app. Gebruik de visuele stroomontwerper met functionaliteit voor slepen en neerzetten om de logica te ontwerpen die u nodig hebt voor uw apps. 
+- **Voeg meerdere records toe aan matrixinvoer** - Er is een opbouwfunctie voor lijsten toegevoegd aan Microsoft Flow die bijvoorbeeld kan worden gebruikt voor het toevoegen van meerdere bijlagen aan een e-mailbericht,.
+- **Test stromen met gegevens van eerdere uitvoeringen** - Een nieuwe knop Stroom testen toegevoegd aan de ontwerpfunctie waarmee u uw stroom kunt testen met triggergegevens uit eerdere stroomuitvoeringen.
+- **Nieuwe workflow()-velden** - U kunt nu toegang krijgen tot de naam van de omgeving en de weergavenaam van de stroom met de workflow()-expressie.
+
+[Lees meer informatie en stel vragen](https://flow.microsoft.com/blog/return-data-to-powerapps/) over deze release.
+
+### <a name="release-2018-04-04"></a>Release 04-04-2018
+
+- **Goedkeuringen voor de Common Data Service** -Moderne goedkeuringen zijn gebouwd op de meest recente versie van de Common Data Service voor apps. Dit betekent dat u stromen kunt bouwen die de status van de goedkeuringen lezen die u verzendt of ontvangt met de CDS-connector.
+- **Zoek naar fouten in toepassen op alles** - Ga rechtstreeks naar fouten in lussen in de weergave met stroomuitvoeringen, zelfs als er honderden items in de lus zijn.
+- **Wijs goedkeuringen opnieuw toe** - U kunt goedkeuringen die u ontvangt, toewijzen aan een andere persoon in uw organisatie om de goedkeuring te delegeren. 
+- **Lijsten met ruimten** - De Office 365 Outlook-connector heeft acties toegevoegd om ruimtegegevens op te halen in uw organisatie.
+- **Bekijk details van stroomknoppen** - Wanneer u een stroom uitvoert die met u is gedeeld, kunt u nu alle acties zien die de stroom gebruikt.
+- **Regio Verenigd Koninkrijk** - Omgevingen kunnen nu worden gemaakt voor het opslaan van hun gegevens in het Verenigd Koninkrijk.
+- **Twee nieuwe connectors** - Ondersteuning toegevoegd voor AtBot Admin en Marketing Content Hub.
+- **Nieuwe startpagina voor documentatie** - De startpagina voor documentatie is bijgewerkt zodat inhoud is gegroepeerd op wie u bent: beginner, gevorderde gebruiker of een expert. 
+
+[Lees meer informatie en stel vragen](https://flow.microsoft.com/blog/approvals-in-cds-and-seven-updates/) over deze release.
+
+### <a name="release-2018-03-13"></a>Release 13-03-2018
+
+- **Goedkeuringsgeschiedenis** - Alle goedkeuringsverzoeken bekijken die u hebt verzonden, inclusief de reacties, de verzonden opmerkingen en de precieze tijd waarop ze hebben plaatsgevonden.
+- **Vier nieuwe connectors** - Excel Online (Business), Excel Online (OneDrive), Azure SQL Data Warehouse en Pitney Bowes Tax Calculator toegevoegd.
+- **Dynamische inhoud knopinfo** - Beweeg de muisaanwijzer over dynamische inhoud om te zien waar deze vandaan komt binnen acties en bekijk voorbeelden van expressies zonder de volledige expressie-editor te openen.
+- **Gelijktijdigheidsbeheer** - Schakel gelijktijdigheidsbeheer in om een bepaalde stroom slechts één keer per uitvoering uit te voeren.
+- **Exponentiële nieuwe pogingen** - Een nieuw type beleid voor opnieuw proberen waarmee nieuwe pogingen exponentieel worden verspreid over een bepaalde periode.
+- **Conformiteit voor toegankelijkheid** -Nieuwe documenten voor conformiteit uitgebracht waarin wordt beschreven hoe Microsoft Flow voldoet aan de toegankelijkheidsnormen.
+
+[Lees meer informatie en stel vragen](https://flow.microsoft.com/blog/approval-history-accessibility/) over deze release.
 
 ### <a name="release-2018-02-09"></a>Release 09-02-2018
 

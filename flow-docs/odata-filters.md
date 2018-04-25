@@ -1,13 +1,13 @@
 ---
-title: "Gegevens filteren en kopiëren | Microsoft Docs"
-description: "Informatie over het filteren en kopiëren van gegevens van een bron naar een doel met Microsoft Flow"
-services: 
+title: Gegevens filteren en kopiëren | Microsoft Docs
+description: Informatie over het filteren en kopiëren van gegevens van een bron naar een doel met Microsoft Flow
+services: ''
 suite: flow
 documentationcenter: na
 author: MSFTMan
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: flow
 ms.devlang: na
 ms.topic: article
@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 09/21/2017
 ms.author: deonhe
-ms.openlocfilehash: b266a953785b79c0dbc5e2d483330b239a7bf17f
-ms.sourcegitcommit: f3261717768177e03e825c0dd2e3ba736dc9b94d
+ms.openlocfilehash: 7c182328c341043ffc155a679f39bcbc2130a0bc
+ms.sourcegitcommit: d00c10759d4afb54517a0b1032f8d0a509006d5b
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="filter-and-copy-data-with-microsoft-flow"></a>Gegevens filteren en kopiëren met Microsoft Flow
 In deze procedure ziet u hoe u een stroom kunt maken waarmee een bron wordt gecontroleerd op nieuwe of gewijzigde items en deze wijzigingen naar een doel worden gekopieerd. U kunt een dergelijke stroom maken als uw gebruikers gegevens op één locatie invoeren, maar uw team deze nodig hebben op een andere locatie of in een andere indeling.
@@ -106,7 +106,7 @@ Op de voorwaardekaart:
     ![een voorwaarde configureren](media/odata-filters/configure-condition.png)
 5. Selecteer **Bewerken in geavanceerde modus**.
    
-    Wanneer de geavanceerde modus wordt geopend, ziet u de expressie **@equals(body('Get_rows')?['value'], 0)** in het vak. Bewerk deze expressie door **length()** toe te voegen rond de functie **body('Get_items')?['value']**. De hele expressie ziet er nu als volgt uit: **@equals(length(body('Get_rows')?['value']), 0)**
+    Wanneer de geavanceerde modus wordt geopend, ziet u de expressie **\@equals(body('Get_rows')?['value'], 0)** in het vak. Bewerk deze expressie door **length()** toe te voegen rond de functie **body('Get_items')?['value']**. De hele expressie ziet er nu als volgt uit: **@equals(length(body('Get_rows')?['value']), 0)**
    
     De **Voorwaarde**-kaart lijkt nu op deze afbeelding:
    

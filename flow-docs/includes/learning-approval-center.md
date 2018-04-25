@@ -54,7 +54,7 @@ Standaard wordt met deze sjabloon een goedkeuringsproces gestart wanneer er een 
 12. Selecteer **Goedkeuringsstatus** en stel de waarde in op **Ja**. Selecteer daarna **Opmerkingen van goedkeurder** en stel de waarde in op **Opmerkingen** vanuit de lijst met dynamische inhoud. 
     
      ![Status en opmerkingen](./media/learning-approval-center/approver-status.png)
-13. Selecteer **Een actie toevoegen** onderaan het vak **ZO NEE, *NIETS DOEN***.
+13. Selecteer **Een actie toevoegen** onderaan het vak **ZO NEE, NIETS DOEN**.
     
      ![Een nee-actie toevoegen](./media/learning-approval-center/add-a-no-action.png)
 14. Met dezelfde stappen die u hebt gebruikt voor de configuratie van **ZO JA**, maakt u een actie **SharePoint - Item bijwerken** en configureert u de velden met dezelfde waarden, maar stelt u **Goedkeuringsstatus** nu in op **Nee**. 

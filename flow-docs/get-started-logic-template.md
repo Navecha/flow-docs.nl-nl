@@ -1,13 +1,13 @@
 ---
 title: Een stroom maken op basis van een sjabloon | Microsoft Docs
 description: U kunt een stroom maken op basis van een van de ingebouwde sjablonen.
-services: 
+services: ''
 suite: flow
 documentationcenter: na
 author: aftowen
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: flow
 ms.devlang: na
 ms.topic: article
@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 02/07/2017
 ms.author: anneta
-ms.openlocfilehash: 876723b62274f3a306c0a8472095b131e223408b
-ms.sourcegitcommit: 4f2cb27d392f46aa1d8680d6278876780ed3871b
+ms.openlocfilehash: b755d9abe70740a97ad85aaa60b8a3f4685a7b26
+ms.sourcegitcommit: d00c10759d4afb54517a0b1032f8d0a509006d5b
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/15/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="create-a-flow-from-a-template-in-microsoft-flow"></a>een stroom maken op basis van een sjabloon in Microsoft Flow
 U kunt een stroom maken op basis van een van de vele ingebouwde sjablonen, bijvoorbeeld de sjabloon waarmee u een Slack-bericht ontvangt wanneer uw manager u een e-mail stuurt in Office 365.
@@ -54,7 +54,7 @@ U kunt een stroom maken op basis van een van de vele ingebouwde sjablonen, bijvo
 1. Selecteer de titelbalk van een gebeurtenis om deze uit te vouwen en pas de gebeurtenis vervolgens aan (bijvoorbeeld door een filter op te geven voor het e-mailbericht waarin u bent geïnteresseerd).
 2. Acties waarvoor invoer nodig is, worden automatisch uitgevouwen.
    
-    Zo wordt de actie **Bericht posten** uitgevouwen omdat u een kanaal moet invoeren, bijvoorbeeld *@username*. U kunt ook de inhoud van het bericht aanpassen. Standaard bevat het bericht alleen het onderwerp, maar u kunt ook andere informatie opnemen.
+    Zo wordt de actie **Bericht posten** uitgevouwen omdat u een kanaal moet invoeren, bijvoorbeeld *\@gebruikersnaam*. U kunt ook de inhoud van het bericht aanpassen. Standaard bevat het bericht alleen het onderwerp, maar u kunt ook andere informatie opnemen.
    
     ![Kanaal voor Slack opgeven](./media/get-started-logic-template/specify-keyword.png)
 3. Ga naar de bovenkant van het scherm, geef uw stroom een naam en selecteer vervolgens **Stroom maken**.

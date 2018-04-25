@@ -1,57 +1,65 @@
 ---
-title: Beginnen met bouwen | Microsoft Docs
+title: Aangepaste connectors maken en stromen insluiten | Microsoft Docs
 description: Maak een aangepaste connector, deel deze, sluit deze in een stoom in, en doe nog veel meer.
-services: 
+services: ''
 suite: flow
 documentationcenter: na
 author: bbarath
-manager: erikre
-editor: 
-tags: 
+manager: anneta
+editor: ''
+tags: ''
 ms.service: flow
 ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 10/22/2016
+ms.date: 11/22/2017
 ms.author: barathb
-ms.openlocfilehash: d22193ac40b6eb8f90abf2ae5ced91b39c2faad9
-ms.sourcegitcommit: 4f2cb27d392f46aa1d8680d6278876780ed3871b
+ms.openlocfilehash: a3f1e21cfbf00749a0ef09c0363da162f0419f42
+ms.sourcegitcommit: aee927ab32b5e28ee9b1880b4a292f9c15025f88
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/15/2017
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="start-to-build-with-microsoft-flow"></a>Beginnen met bouwen met Microsoft Flow
-U kunt uw toepassing met Microsoft Flow op onder meer de volgende manieren uitbreiden:
 
-* Maak een aangepaste connector en maak hiermee verbinding
-* Deel deze API met alle gebruikers van Microsoft Flow
-* Sluit de stroomervaring in vanuit een app
-* Stel alle API's van ontwikkelaars beschikbaar, zodat gebruikers met Microsoft Flow kunnen werken op de manier die voor hen het beste werkt
+Dit zijn een aantal manieren waarop u uw toepassing kunt uitbreiden met Microsoft Flow:
+
+* Een aangepaste connector maken en verbinding maken.
+* Uw aangepaste connector delen met alle Microsoft Flow-gebruikers.
+* De stroomervaring insluiten in een app.
+* Alle aangepaste connectors markeren zodat gebruikers met Microsoft Flow kunnen werken op de manier die voor hen het beste werkt
 
 ## <a name="prerequisites"></a>Vereisten
-* Een account op [flow.microsoft.com](https://flow.microsoft.com)
+
+* Een [Microsoft Flow](https://flow.microsoft.com)-account.
 
 ## <a name="create-a-custom-connector"></a>Een aangepaste connector maken
-Wanneer u een webservice hebt die u wilt automatiseren met Microsoft Flow, moet u eerst een aangepaste connector bouwen. Als u een aangepaste connector registreert, geeft u aan Microsoft Flow door wat de kenmerken van uw Web-API zijn, zoals welke verificatie vereist is, welke triggers en acties worden ondersteund en wat de parameters en uitvoer voor alle acties zijn.
 
-Volg [deze zelfstudie](https://powerapps.microsoft.com/tutorials/register-custom-api/) om een aangepaste connector te registreren. Nadat u de aangepaste API hebt geregistreerd, kunt u deze in uw organisatie delen, zodat anderen u kunnen helpen met het testen van de API.
+Als u een webservice hebt waarmee u verbinding wilt maken vanuit Microsoft Flow, moet u eerst een aangepaste connector maken. Als u een aangepaste connector registreert, geeft u aan Microsoft Flow door wat de kenmerken van uw webservice zijn, zoals welke verificatie vereist ervoor is, welke triggers en acties worden ondersteund en wat de parameters en uitvoer voor alle acties zijn.
+
+Volg deze zelfstudie om [aangepaste connectors te registreren en gebruiken](https://powerapps.microsoft.com/tutorials/register-custom-api/). Nadat u uw aangepaste connector hebt geregistreerd, kunt u deze delen binnen uw organisatie om te worden getest.
 
 ## <a name="share-a-custom-connector-with-all-microsoft-flow-users"></a>Een aangepaste connector delen met alle Microsoft Flow-gebruikers
-Nadat u uw aangepaste connector volledig hebt getest, start u het beoordelingsproces zoals beschreven in [dit blogbericht](https://flow.microsoft.com/blog/calling-all-saas-apps-now-you-can-build-your-own-connector-for-flow-and-logic-apps/):
 
-* Een OpenAPI-bestand met uw API en de verificatiegegevens
-* Een pictogram voor de connector
-* Een beschrijving van de API
-* Ongeveer tien ideeën waarmee wordt uitgelegd hoe uw API andere gebruikers kan helpen via sjablonen
+Nadat u uw aangepaste connector volledig hebt getest, start u het [controleproces](https://flow.microsoft.com/blog/calling-all-saas-apps-now-you-can-build-your-own-connector-for-flow-and-logic-apps/) om de connector te laten goedkeuren door Microsoft om deze te delen met alle andere Microsoft Flow-gebruikers.
+
+Dit is wat u nodig hebt voor het controleproces:
+
+* Een OpenAPI-bestand met uw API en de verificatiegegevens.
+* Een pictogram voor uw connector.
+* Een beschrijving van uw connector.
+* Ongeveer tien ideeën waarmee wordt uitgelegd hoe uw connector andere gebruikers kan helpen via sjablonen.
 
 Nadat u deze gegevens hebt verzonden, wordt de functie van uw API in Microsoft Flow en Microsoft PowerApps beoordeeld door Microsoft.
 
-## <a name="embed-the-flow-experience-in-your-website-or-app"></a>De stroomervaring insluiten in uw website of app
-Tot slot kunt u Microsoft Flow vanuit uw app insluiten, om een diepgaande, integratie binnen de context in te schakelen tussen uw app en alle andere services die Microsoft Flow ondersteunt. U kunt bijvoorbeeld het volgende doen:
+## <a name="embed-the-flow-experience-into-your-website-or-app"></a>De stroomervaring insluiten in uw website of app
 
-* Door alle sjablonen bladeren die betrekking hebben op uw service en gebruikers een sjabloon laten selecteren
-* De stromen beheren die gebruikers aan uw app hebben gekoppeld
+U kunt Microsoft Flow in uw app [insluiten](embed-flow-dev.md) om een diepgaande integratie binnen de context in te schakelen tussen uw app en alle andere services die Microsoft Flow ondersteunt. U kunt bijvoorbeeld het volgende doen:
 
-Volg [deze zelfstudie](embed-flow-dev.md) voor meer informatie over hoe u Microsoft Flow in een app kunt insluiten.
+* Door alle sjablonen bladeren die betrekking hebben op uw service en gebruikers een sjabloon laten selecteren.
+* De stromen beheren die gebruikers aan uw app hebben gekoppeld.
 
+## <a name="next-steps"></a>Volgende stappen
+
+Meer informatie over het [insluiten](embed-flow-dev.md) van Microsoft Flow in uw app.
