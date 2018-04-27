@@ -54,6 +54,8 @@
       href: all-assigned-must-approve.md
     - name: Geïntegreerde goedkeuringen
       href: common-data-model-approve.md
+    - name: Goedkeuringsaanvragen formatteren
+      href: approvals-markdown-support.md
 - name: De mobiele app gebruiken
   items:
     - name: Een stroom maken
@@ -110,6 +112,16 @@
       href: prevent-data-loss.md
     - name: Inleiding tot gegevensgroepen
       href: introduction-to-data-groups.md
+- name: Reageren op DSR-verzoeken
+  items:
+    - name: Overzicht
+      href: gdpr-dsr-summary.md
+    - name: Verzoeken ontdekken
+      href: gdpr-dsr-discovery.md
+    - name: Verzoeken exporteren
+      href: gdpr-dsr-export.md
+    - name: Aanvragen verwijderen
+      href: gdpr-dsr-delete.md
 - name: Verwijzing
   items:
     - name: Overzicht van de regio's
