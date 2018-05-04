@@ -14,15 +14,13 @@ ms.author: deonhe
 manager: kfile
 ms.date: 03/28/2018
 ms.topic: hub-page
-ms.prod: flow
-ms.technology: ''
 ms.reviewer:
 - karann-msft
-ms.openlocfilehash: 0fb3e966593c85d2a437614f9c34087fca3a06ab
-ms.sourcegitcommit: d00c10759d4afb54517a0b1032f8d0a509006d5b
+ms.openlocfilehash: 7a030259095667ed64c796c8c8ab68495d3d61dc
+ms.sourcegitcommit: 12fbfe22fedd780d42ef1d2febfd7a0769b4902e
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 <div id="main" class="v2">
 <div class="container">
@@ -152,7 +150,7 @@ ms.lasthandoff: 04/16/2018
             </ul>
         </li>
         <li>
-            <a href="#intermediate">Ik ben gevorderde</a>
+            <a href="#intermediate">Ik ben een gevorderde gebruiker</a>
             <ul id="intermediate">
                 <li>
                     <a href="#intermediate-all"></a>
@@ -370,6 +368,92 @@ ms.lasthandoff: 04/16/2018
                                         <div class="cardText">
                                             <h3>Uw stromen uitbreiden met Logic Apps</h3>
                                             <p>Azure Logic Apps biedt een uitgebreidere set mogelijkheden dan wat er in Microsoft Flow is inbegrepen. U kunt een stroom opslaan als Logic Apps-sjabloon en deze vervolgens beheren als elke andere Logic Apps-resource.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <a href="#admin">Ik ben beheerder</a>
+            <ul id="admin">
+                <li>
+                    <a href="#admin-all"></a>
+                    <ul id="admin-all" class="cardsC">
+                        <li>
+                            <a href="environments-overview-admin.md">
+                            <div class="cardSize">
+                                <div class="cardPadding">
+                                    <div class="card">
+                                        <div class="cardImageOuter">
+                                            <div class="cardImage  bgdAccent1">
+                                                <img src="media/index/environments_dlp.svg" alt="Manage environments." />
+                                            </div>
+                                        </div>
+                                        <div class="cardText">
+                                            <h3>Omgevingen beheren</h3>
+                                            <p>Beheer de omgevingen van uw organisatie.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="prevent-data-loss.md">
+                            <div class="cardSize">
+                                <div class="cardPadding">
+                                    <div class="card">
+                                        <div class="cardImageOuter">
+                                            <div class="cardImage  bgdAccent1">
+                                                <img src="media/index/environments_dlp.svg" alt="Define data policies." />
+                                            </div>
+                                        </div>
+                                        <div class="cardText">
+                                            <h3>Preventie van gegevensverlies</h3>
+                                            <p>Definieer beleid om de gegevens van uw organisatie te beveiligen.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://flow.microsoft.com/blog/accessing-office-365-security-compliance-center-logs-from-microsoft-flow/">
+                            <div class="cardSize">
+                                <div class="cardPadding">
+                                    <div class="card">
+                                        <div class="cardImageOuter">
+                                            <div class="cardImage  bgdAccent1">
+                                                <img src="media/index/manage_runs.svg" alt="Manage flow runs." />
+                                            </div>
+                                        </div>
+                                        <div class="cardText">
+                                            <h3>Stroomuitvoeringen beheren</h3>
+                                            <p>Onderzoek en beheer elke uitvoering van uw stromen.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://flow.microsoft.com/blog/announcing-microsoft-flow-analytics/">
+                            <div class="cardSize">
+                                <div class="cardPadding">
+                                    <div class="card">
+                                        <div class="cardImageOuter">
+                                            <div class="cardImage  bgdAccent1">
+                                                <img src="media/index/analytics_reporting.svg" alt="Gain insights into your flows" />
+                                            </div>
+                                        </div>
+                                        <div class="cardText">
+                                            <h3>Inzicht verkrijgen in uw stromen</h3>
+                                            <p>Krijg inzicht in de status van uw stromen via het analysedashboard.</p>
                                         </div>
                                     </div>
                                 </div>

@@ -1,13 +1,13 @@
 ---
 title: Over on-premises gegevensgateways | Microsoft Docs
 description: Referentie-, installatie- en probleemoplossingsinformatie voor on-premises gegevensgateways
-services: 
+services: ''
 suite: flow
 documentationcenter: na
 author: MSFTMan
-manager: anneta
-editor: 
-tags: 
+manager: KFile
+editor: ''
+tags: ''
 ms.service: flow
 ms.devlang: na
 ms.topic: get-started-article
@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 09/15/2017
 ms.author: deonhe
-ms.openlocfilehash: 73567d4d553ceac1d2cee46feb07ad9a6e7ade33
-ms.sourcegitcommit: 0b7964058416fd8d5e355913eea27172f1c61992
+ms.openlocfilehash: 3ff4148f88c145df1db5e8ec8468138fe7413a6a
+ms.sourcegitcommit: 12fbfe22fedd780d42ef1d2febfd7a0769b4902e
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="understand-on-premises-data-gateways-for-microsoft-flow"></a>Over on-premises gegevensgateways voor Microsoft Flow
 Gebruik de on-premises gegevensgateway in combinatie met Microsoft Flow om beveiligde verbindingen tot stand te brengen met uw on-premises gegevensbronnen zoals Microsoft SQL Server.
@@ -141,6 +141,10 @@ Gebruikers zullen zich aanmelden met een werk- of schoolaccount. Dit is uw organ
 De on-premises gegevensgateway is geconfigureerd om *NT SERVICE\PBIEgwService* te gebruiken als aanmeldingsreferenties voor de Windows-service. Standaard heeft deze rechten voor Aanmelden als service. Dit betreft specifiek de computer waarop u de gateway installeert.
 
 Dit is niet het account dat wordt gebruikt om verbinding te maken met on-premises gegevensbronnen, of het werk- of schoolaccount waarmee u zich aanmeldt bij cloudservices.
+
+## <a name="tenant-level-administration"></a>Beheer op tenantniveau
+
+Er is momenteel geen enkele locatie waar tenantbeheerders alle gateways kunnen beheren die andere gebruikers hebben geïnstalleerd en geconfigureerd.  Als u een tenantbeheerder bent, wordt u aangeraden de gebruikers in uw organisatie te vragen om u als beheerder toe te voegen aan elke gateway die ze installeren. Hiermee kunt u alle gateways in uw organisatie beheren via de pagina Gateway-instellingen of via [PowerShell-opdrachten](https://docs.microsoft.com/power-bi/service-gateway-high-availability-clusters#powershell-support-for-gateway-clusters).
 
 ## <a name="frequently-asked-questions"></a>Veelgestelde vragen
 ### <a name="general-questions"></a>Algemene vragen
