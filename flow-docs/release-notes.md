@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 04/12/2018
 ms.author: stepsic
-ms.openlocfilehash: ef14fd29dbf0b227acf4d5fef6233837514d4ab0
-ms.sourcegitcommit: d00c10759d4afb54517a0b1032f8d0a509006d5b
+ms.openlocfilehash: bae4991754de37ca9483d540891431e216ee74cd
+ms.sourcegitcommit: b6ac1562b3ed6601401d23f4009b7528c1ce8925
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="release-notes"></a>Releaseopmerkingen
 ## <a name="top-questions"></a>Belangrijkste vragen
@@ -44,6 +44,14 @@ ms.lasthandoff: 04/16/2018
 3. Bestandstriggers worden niet gestart voor bestanden die worden toegevoegd in geneste mappen in de map die u selecteert.
 
 ## <a name="whats-new"></a>Wat is er nieuw?
+
+### <a name="release-2014-05-01"></a>Release van 01-05-2014
+
+- **Tekst met opmaak in goedkeuringsberichten**: gebruik Markdown om de goedkeuringsdetails die u verzendt op te maken.
+- **Knoppen met invoer van meerdere selecties**: maak stroomknoppen die gebruikmaken van een lijst met meerdere selecties om meerdere waarden tegelijk te verzamelen.
+- **Werken met bredere stromen**: de mobiele app Microsoft Flow biedt nu ondersteuning voor liggende weergave en de Web Designer beschikt nu over een horizontale scrolbalk.
+
+[Lees meer informatie en stel vragen](https://flow.microsoft.com/blog/rich-approvals-text-and-multiselect/) over deze release.
 
 ### <a name="release-2018-04-12"></a>Release 12-04-2018
 
