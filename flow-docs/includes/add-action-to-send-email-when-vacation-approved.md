@@ -1,4 +1,4 @@
-1. Selecteer **Een actie toevoegen** in de vertakking **INDIEN JA, NIETS DOEN** van de voorwaarde.
+1. Selecteer **Een actie toevoegen** in de vertakking **INDIEN JA** van de voorwaarde.
    
     ![nieuwe stap toevoegen](media/modern-approvals/add-action-after-condition.png)
 2. Voer in het zoekvak op de kaart **Een actie kiezen** de tekst **e-mail verzenden** in.
@@ -9,7 +9,10 @@
     ![actie voor e-mail verzenden selecteren](media/modern-approvals/select-send-email-yes.png)
 4. Configureer de e-mailkaart op basis van uw behoeften.
    
-     Opmerking: de waarden voor **Aan**, **Onderwerp** en **Berichttekst** zijn vereist.
+     >[!NOTE]
+     > De waarden voor **Aan**, **Onderwerp** en **Hoofdtekst** zijn vereist.
+     >
+     >
    
      Deze kaart is een sjabloon voor het e-mailbericht dat wordt verzonden wanneer de status van de vakantieaanvraag wordt gewijzigd.
    

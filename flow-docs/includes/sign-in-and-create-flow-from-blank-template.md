@@ -8,3 +8,5 @@
    
     ![een stroom op basis van een lege stroom maken](media/modern-approvals/blank-template.png)
 
+4. Klik op de knop **Maken van lege**.
+
