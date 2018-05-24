@@ -1,13 +1,13 @@
 ---
 title: Een flow maken met Dynamics 365 (online) | Microsoft Docs
 description: Nuttige werkstromen maken met behulp van een Dynamics 365-verbinding en Microsoft Flow
-services: 
+services: ''
 suite: flow
 documentationcenter: na
 author: Mattp123
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: flow
 ms.devlang: na
 ms.topic: article
@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 02/06/2017
 ms.author: matp
-ms.openlocfilehash: 5ef3de417b1557644ce9bfcd935353e017ceb676
-ms.sourcegitcommit: 4f2cb27d392f46aa1d8680d6278876780ed3871b
+ms.openlocfilehash: 923fd1fc573586871d506a66aaa2b09d5b5dc9da
+ms.sourcegitcommit: f0202f74ba9a2282a670a1751462f598a5ea0ce5
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/15/2017
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="create-a-flow-by-using-dynamics-365-online"></a>Een stroom maken met behulp van Dynamics 365 (online)
 Met behulp van een Dynamics 365-connector kunt u stromen maken die worden gestart wanneer in Dynamics 365 of een andere service een gebeurtenis plaatsvindt, waardoor vervolgens een actie wordt uitgevoerd in Dynamics 365 of een andere service. 
@@ -73,7 +73,7 @@ Als geen gewenste sjabloon beschikbaar is, maakt u een volledig nieuwe stroom. I
 12. Klik of tik op **Stroom maken**.
 
 ## <a name="create-a-wunderlist-task-from-a-dynamics-365-task"></a>Een Wunderlist-taak maken vanuit een Dynamics 365-taak
-In dit scenario ziet u hoe u een taak maakt in [Wunderlist](http://www.wunderlist.com) telkens als een taak wordt gemaakt in Dynamics 365. Wunderlist is een Internet-service waarmee u takenlijsten kunt maken, herinneringen kunt toevoegen of boodschappen kunt bijhouden.
+In dit scenario ziet u hoe u een taak maakt in [Wunderlist](https://www.wunderlist.com) telkens als een taak wordt gemaakt in Dynamics 365. Wunderlist is een Internet-service waarmee u takenlijsten kunt maken, herinneringen kunt toevoegen of boodschappen kunt bijhouden.
 
 1. Meld u aan bij de [Microsoft Flow-website](https://flow.microsoft.com/).
 2. Klik of tik op **Mijn stromen** en klik of tik vervolgens op **Leeg item maken**.
@@ -129,7 +129,7 @@ In dit voorbeeld wordt de taak ook toegewezen aan een specifieke gebruiker op ba
 
   ![Record-id en type gebruiker voor stroom](./media/connection-dynamics365/flow-recordid-user.png)
 
-Zie [De record-id opzoeken](#find-the-record-id) verderop in dit onderwerp voor meer informatie over het opzoeken van record-id’s.
+Zie [De record-id opzoeken](#find-the-records-id) verderop in dit onderwerp voor meer informatie over het opzoeken van record-id’s.
 
 > **Belangrijk:** velden mogen geen waarde bevatten als ze de beschrijving Alleen voor intern gebruik hebben. Tot deze velden behoren **Afgelegd pad**, **Aanvullende parameters** en **Versienummer van tijdzoneregel**.
 > 

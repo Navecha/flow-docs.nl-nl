@@ -1,13 +1,13 @@
 ---
 title: Een moderne goedkeuringswerkstroom maken met meerdere goedkeurders | Microsoft Docs
 description: 'Een moderne goedkeuringswerkstroom maken met meerdere goedkeurders '
-services: 
+services: ''
 suite: flow
 documentationcenter: na
 author: MSFTMan
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: flow
 ms.devlang: na
 ms.topic: article
@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 06/08/2017
 ms.author: deonhe
 ms.openlocfilehash: 8620cd49f9e19f6641909fcab3103568d148e565
-ms.sourcegitcommit: 01325305b9d2cf964acac9feb6cca0af66db7440
+ms.sourcegitcommit: f0202f74ba9a2282a670a1751462f598a5ea0ce5
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="manage-sequential-approvals-with-microsoft-flow"></a>Opeenvolgende goedkeuringen beheren met Microsoft Flow
 Bij bepaalde werkstromen moet vooraf goedkeuring worden gegeven voordat de definitieve goedkeurder zijn goedkeuring geeft. Een bedrijf kan bijvoorbeeld een beleid voor opeenvolgende goedkeuring instellen waarbij facturen van meer dan € 1000,00 vooraf moeten worden goedgekeurd, voordat ze worden goedgekeurd door de financiële afdeling.

@@ -1,13 +1,13 @@
 ---
 title: Meer informatie over het automatiseren en uitvoeren van terugkerende taken met knopstromen voor het ophalen van gebruikersinvoer | Microsoft Docs
 description: Met Microsoft Flow kunt u terugkerende taken eenvoudig automatiseren. U kunt met uw stromen zelfs gebruikersinvoer ophalen bij het uitvoeren van een terugkerende taak.
-services: 
+services: ''
 suite: flow
 documentationcenter: na
 author: msftman
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: flow
 ms.devlang: na
 ms.topic: article
@@ -15,16 +15,16 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 02/15/2017
 ms.author: deonhe
-ms.openlocfilehash: 73feb90b3907ee8a7a192f16bc29c5893d0be4bb
-ms.sourcegitcommit: 4f2cb27d392f46aa1d8680d6278876780ed3871b
+ms.openlocfilehash: 483837a013b5fa0c8dfa27d2ed3a1e3481c36c5b
+ms.sourcegitcommit: 8bf92483780a5682777dd9fb73be8c2fb0e78dc4
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/15/2017
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="introducing-button-flows-with-user-input"></a>Inleiding voor knopstromen met gebruikersinvoer
 Een knopstroom maken om routinetaken uit te voeren door op een knop te tikken. De stroom aanpassen door de gebruiker de gelegenheid te geven specifieke details op te geven die worden gebruikt als de stroom wordt uitgevoerd. In dit onderwerp wordt u begeleid bij het maken van een knopstroom die invoer van de gebruiker opneemt en vervolgens de knopstroom uitvoert, met de nadruk op het leveren van de invoer van de gebruiker.
 
-U kunt een knopstroom maken in de Microsoft Flow-website of met de mobiele app voor Microsoft Flow. In dit onderwerp gebruikt u de website.
+U kunt een knopstroom maken in de Microsoft Flow-website of met de mobiele app voor Microsoft-Flow. In dit onderwerp gebruikt u de website.
 
 ### <a name="prerequisites"></a>Vereisten
 * Een account bij de Microsoft Flow-website.
@@ -52,7 +52,7 @@ U kunt een knopstroom maken in de Microsoft Flow-website of met de mobiele app v
 1. Selecteer **Bewerken** in de kaart voor de trigger:
    
     ![](./media/button-flow-with-user-input-tokens/6.png)  
-2. Selecteer het pictogram  **+**  om de pagina uit te breiden zodat u aangepaste invoervelden kunt toevoegen:
+2. Selecteer het pictogram **+** om de pagina uit te breiden zodat u aangepaste invoervelden kunt toevoegen:
    
     ![](./media/button-flow-with-user-input-tokens/7.png)
 3. Voer **Titel van invoer** en **Beschrijving van invoer** in voor elk aangepast veld dat u beschikbaar wilt stellen als iemand de stroom uitvoert.  
@@ -89,9 +89,9 @@ U kunt een knopstroom maken in de Microsoft Flow-website of met de mobiele app v
 4. Tik in het menu op **Stroom maken** om de stroom te maken:  ![](./media/button-flow-with-user-input-tokens/14.png)  
 
 ## <a name="run-your-flow"></a>De stroom uitvoeren
-In dit scenario voert u met de mobiele app voor Microsoft Flow de knopstroom uit die u zojuist hebt gemaakt. U geeft de gebruikersinvoer op die nodig is om een fout te maken, dat wil zeggen een titel, een beschrijving, stappen om te reproduceren en een ernstniveau.  
+In dit scenario voert u met de mobiele app voor Microsoft-Flow de knopstroom uit die u zojuist hebt gemaakt. U geeft de gebruikersinvoer op die nodig is om een fout te maken, dat wil zeggen een titel, een beschrijving, stappen om te reproduceren en een ernstniveau.  
 
-1. Tik in de mobiele app voor Microsoft Flow op het tabblad **Knoppen** en tik op de knop **Foutenrapport met stappen maken**.
+1. Tik in de mobiele app voor Microsoft-Flow op het tabblad **Knoppen** en tik op de knop **Foutenrapport met stappen maken**.
    
     ![](./media/button-flow-with-user-input-tokens/runmt1.png)  
 2. Voer de titel in voor de fout die u wilt rapporteren en tik vervolgens op **Volgende**. Bijvoorbeeld:
@@ -116,7 +116,7 @@ In dit scenario voert u met de mobiele app voor Microsoft Flow de knopstroom uit
 
 ## <a name="next-steps"></a>Volgende stappen
 * [Knopstromen delen](share-buttons.md)
-* [Meer informatie stromen](guided-learning/learning-introducing-flow.md)  
+* [Meer informatie stromen](guided-learning/get-started.yml?tutorial-step=1)  
 * [Meer informatie over knopstromen](introduction-to-button-flows.md)  
 * [Meer informatie over knopstromen met triggertokens](introduction-to-button-trigger-tokens.md)  
 

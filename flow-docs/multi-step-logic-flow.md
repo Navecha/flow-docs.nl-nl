@@ -1,13 +1,13 @@
 ---
 title: Een geavanceerde optie en meerdere acties toevoegen | Microsoft Docs
 description: Breid een stroom uit met een geavanceerde optie, zoals e-mail instellen op hoge prioriteit, en voeg nog een actie toe voor dezelfde gebeurtenis.
-services: 
+services: ''
 suite: flow
 documentationcenter: na
 author: stepsic-microsoft-com
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: flow
 ms.devlang: na
 ms.topic: article
@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 04/20/2017
 ms.author: stepsic
 ms.openlocfilehash: f6c936cbf5a2bd481adb52ec9b01545fb9ba7b0b
-ms.sourcegitcommit: 4f2cb27d392f46aa1d8680d6278876780ed3871b
+ms.sourcegitcommit: f0202f74ba9a2282a670a1751462f598a5ea0ce5
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/15/2017
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="add-multiple-actions-and-advanced-options-to-a-flow"></a>Meerdere acties en geavanceerde opties toevoegen aan een stroom
 Pas een stroom aan door een of meer geavanceerde opties en meerdere acties voor dezelfde trigger toe te voegen. Voeg bijvoorbeeld een geavanceerde optie toe waarmee een e-mailbericht met hoge prioriteit wordt verzonden. Verzend niet alleen een e-mail wanneer een item wordt toegevoegd aan een SharePoint-lijst, maar maak ook een bestand in Dropbox dat dezelfde informatie bevat.
@@ -30,7 +30,7 @@ Pas een stroom aan door een of meer geavanceerde opties en meerdere acties voor 
 ## <a name="add-another-action"></a>Nog een actie toevoegen
 In deze procedure voegt u een actie toe in het midden van de stroom. Met deze actie wordt een bestand opgeslagen in uw Dropbox en wordt het item in de lijst gearchiveerd.
 
-1. Ga naar [flow.microsoft.com](https://flow.microsoft.com) en selecteer **Mijn stromen** in de navigatiebalk bovenin.
+1. Ga naar [flow.microsoft.com](https://flow.microsoft.com) en selecteer **Mijn stromen** op de navigatiebalk bovenin.
 2. Selecteer in de lijst met stromen de stroom die u wilt bewerken.
 3. Selecteer de knop **Nieuwe stap** en vervolgens **Een actie toevoegen**.
    

@@ -1,13 +1,13 @@
 ---
 title: Activiteiten bekijken op uw telefoon | Microsoft Docs
 description: Zie hoe vaak elke stroom succesvol is uitgevoerd of is mislukt, wanneer die is uitgevoerd en hoelang dit duurde
-services: 
+services: ''
 suite: flow
 documentationcenter: na
 author: adiregev
 manager: erikre
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: flow
 ms.devlang: na
 ms.topic: article
@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 06/11/2016
 ms.author: adiregev
 ms.openlocfilehash: a9318a1571d46635babbb0b061ff65734ad172fe
-ms.sourcegitcommit: 4f2cb27d392f46aa1d8680d6278876780ed3871b
+ms.sourcegitcommit: f0202f74ba9a2282a670a1751462f598a5ea0ce5
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/15/2017
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="monitor-activity-in-microsoft-flow-from-your-phone"></a>Activiteiten in Microsoft Flow bekijken op uw telefoon
 Bekijk in een overzicht hoe vaak elke stroom vandaag, gisteren of op een eerdere dag is geslaagd of mislukt. Lees de details over elke uitvoering, bijvoorbeeld wanneer die plaatsvond, hoelang elke stap duurde en waarom een uitvoering is mislukt.

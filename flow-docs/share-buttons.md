@@ -1,13 +1,13 @@
 ---
 title: Uw knoppen delen met anderen. | Microsoft Docs
 description: Deel uw knoppen met anderen, zodat ze uw knoppen kunnen gebruiken en zo tijd kunnen besparen.
-services: 
+services: ''
 suite: flow
 documentationcenter: na
 author: msftman
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: flow
 ms.devlang: na
 ms.topic: article
@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 09/21/2017
 ms.author: deonhe
 ms.openlocfilehash: 2804c683defb94f87c40452a27382bc143c11f10
-ms.sourcegitcommit: 4f2cb27d392f46aa1d8680d6278876780ed3871b
+ms.sourcegitcommit: f0202f74ba9a2282a670a1751462f598a5ea0ce5
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/15/2017
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="share-button-flows-in-microsoft-flow"></a>Knopstromen delen met anderen in Microsoft Flow
 In de mobiele app van Microsoft Flow kunt u [knopstromen](introduction-to-button-flows.md) (knoppen) delen met andere gebruikers of groepen in uw organisatie. Wanneer u een knop deelt, kan de persoon of groep met wie u deelt, uw knop op dezelfde manier gebruiken als de eigen knoppen. U kunt ook [een koppeling delen](share-buttons.md#re-share-a-button) naar knoppen die een andere persoon met u heeft gedeeld. U kunt op elk gewenst moment [stoppen met het delen](share-buttons.md#stop-sharing-a-button) van uw knoppen.
