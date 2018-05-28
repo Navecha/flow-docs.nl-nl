@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 09/15/2017
 ms.author: deonhe
-ms.openlocfilehash: 3ff4148f88c145df1db5e8ec8468138fe7413a6a
-ms.sourcegitcommit: 12fbfe22fedd780d42ef1d2febfd7a0769b4902e
+ms.openlocfilehash: fc69517beb24d50432c1cbed216f28cfc0f862fb
+ms.sourcegitcommit: f0202f74ba9a2282a670a1751462f598a5ea0ce5
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="understand-on-premises-data-gateways-for-microsoft-flow"></a>Over on-premises gegevensgateways voor Microsoft Flow
 Gebruik de on-premises gegevensgateway in combinatie met Microsoft Flow om beveiligde verbindingen tot stand te brengen met uw on-premises gegevensbronnen zoals Microsoft SQL Server.
@@ -192,7 +192,7 @@ U kunt gebruik maken van de app [Azure Speed Test](http://azurespeedtest.azurewe
 
 ### <a name="high-availabilitydisaster-recovery"></a>Hoge beschikbaarheid en herstel na noodgevallen
 **Vraag:** Zijn er plannen voor het inschakelen van scenario's voor hoge beschikbaarheid van de gateway?
-**Antwoord:** Dit staat op de planning, maar hiervoor is nog geen tijdlijn beschikbaar.
+**Antwoord:** Ja, hoge beschikbaarheid is [nu beschikbaar](https://flow.microsoft.com/blog/gateway-ha-increased-apply-to-each).
 
 **Vraag:** Welke opties zijn beschikbaar voor herstel na noodgevallen?
 **Antwoord:** U kunt de herstelsleutel gebruiken om een gateway te herstellen of verplaatsen.

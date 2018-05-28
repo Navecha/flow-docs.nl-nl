@@ -1,13 +1,13 @@
 ---
 title: Aanvragen goedkeuren op een mobiel apparaat | Microsoft Docs
 description: Gebruik een mobiel apparaat om aanvragen goed te keuren die zijn gemaakt in Microsoft Flow.
-services: 
+services: ''
 suite: flow
 documentationcenter: na
 author: msftman
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: flow
 ms.devlang: na
 ms.topic: article
@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 07/20/2017
 ms.author: deonhe
-ms.openlocfilehash: 18546c044dc823d703544c48f5cda76a3581e99f
-ms.sourcegitcommit: 4f2cb27d392f46aa1d8680d6278876780ed3871b
+ms.openlocfilehash: 2b856dfa75e0acb7eb83525c4d64d070315b5735
+ms.sourcegitcommit: f0202f74ba9a2282a670a1751462f598a5ea0ce5
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/15/2017
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="approve-requests-on-your-mobile-device-by-using-microsoft-flow"></a>Aanvragen goedkeuren op uw mobiele apparaat met Microsoft Flow
 Als u voor een stroom bent aangewezen als fiatteur en de mobiele app voor Microsoft Flow hebt geïnstalleerd, ontvangt u een pushmelding wanneer u een aanvraag moet goedkeuren.
@@ -52,7 +52,7 @@ U hebt het volgende nodig om dit scenario te voltooien:
 Als u geen goedkeuringsaanvragen in behandeling hebt, maakt u een [goedkeuringsstroom](modern-approvals.md), stelt u uzelf in als fiatteur en activeert u de stroom. Goedkeuringsaanvragen worden een paar seconden nadat de stroom is geactiveerd en de aanvraag voor goedkeuring is verzonden, weergegeven in het goedkeuringscentrum.
 
 ## <a name="approve-requests-and-leave-an-optional-comment"></a>Aanvragen goedkeuren en een optionele opmerking toevoegen
-1. Voer de voorgaande stappen uit om [alle goedkeuringsaanvragen in behandeling weer te geven](mobile-approvals.md#view-pending-approval-requests) als u dit nog niet hebt gedaan.
+1. Voer de voorgaande stappen uit om [aanvragen in behandeling weer te geven](mobile-approvals.md#view-pending-requests) als u dit nog niet hebt gedaan.
 2. Selecteer **GOEDKEUREN** in de aanvraag die u wilt goedkeuren.
    
     ![goedkeuren selecteren](./media/mobile-approvals/select-approve.png)

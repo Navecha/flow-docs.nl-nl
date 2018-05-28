@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 01/31/2018
 ms.author: stepsic
-ms.openlocfilehash: 06e327963a44f74141492ec14f2bef7cab802b79
-ms.sourcegitcommit: 12fbfe22fedd780d42ef1d2febfd7a0769b4902e
+ms.openlocfilehash: 9b2447ce0a7c9bc353e47ee1edb4bea55f2c49f4
+ms.sourcegitcommit: f9be24c533003146d75e5a7fa6e40356d4ce47d7
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/25/2018
 ---
 # <a name="limits-and-configuration-in-microsoft-flow"></a>Limieten en configuratie in Microsoft Flow
 Dit onderwerp bevat informatie over de huidige limieten en configuratiegegevens voor stromen.
@@ -31,7 +31,8 @@ Er gelden limieten voor één uitgaande aanvraag.
 
 | Naam | Limiet |
 | --- | --- |
-| Time-out voor aanvraag |120 seconden |
+| Time-out aanvragen voor synchrone aanroepen |120 seconden |
+| Time-out aanvragen voor a-synchrone aanroepen|Kunnen worden geconfigureerd. Maximum is 30 dagen. |
 
 ### <a name="message-size"></a>Berichtgrootte
 
@@ -55,6 +56,7 @@ Dit zijn de limieten voor het uitvoeren van één stroom.
 | Bewaarperiode |30 dagen |Dit is vanaf de begintijd van het uitvoeren. |
 | Minimaal terugkeerpatroon |1 minuut | |
 | Maximaal terugkeerpatroon |500 dagen | |
+| Maximale bewaarperiode voor uitvoeringsgeschiedenis |28 dagen, volgens de AVG-regels. | |
 
 ## <a name="looping-and-debatching-limits"></a>Limieten voor lussen en debatching
 Dit zijn limieten voor het uitvoeren van één stroom.
