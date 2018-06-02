@@ -15,16 +15,20 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 02/06/2017
 ms.author: matp
-ms.openlocfilehash: 923fd1fc573586871d506a66aaa2b09d5b5dc9da
-ms.sourcegitcommit: f0202f74ba9a2282a670a1751462f598a5ea0ce5
+ms.openlocfilehash: d34cfd6632ca0e8c560c5af199877b13b210a64a
+ms.sourcegitcommit: a378fb36722ae4be9909fb453efa81808b509255
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/23/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34689371"
 ---
 # <a name="create-a-flow-by-using-dynamics-365-online"></a>Een stroom maken met behulp van Dynamics 365 (online)
 Met behulp van een Dynamics 365-connector kunt u stromen maken die worden gestart wanneer in Dynamics 365 of een andere service een gebeurtenis plaatsvindt, waardoor vervolgens een actie wordt uitgevoerd in Dynamics 365 of een andere service. 
 
 In Microsoft Flow kunt u geautomatiseerde werkstromen tussen uw favoriete apps en services instellen, onder andere om bestanden te synchroniseren, meldingen te ontvangen en gegevens te verzamelen. Zie [Aan de slag met Microsoft Flow](getting-started.md) voor meer informatie.
+
+> [!IMPORTANT] 
+> Als u een stroomtrigger wilt aanroepen, moet **Wijzigingen bijhouden** zijn ingeschakeld voor de entiteit van Dynamics 365 Customer Engagement die wordt gebruikt met de stroom. Meer informatie: [Bijhouden van wijzigingen inschakelen om gegevenssynchronisatie te beheren](https://docs.microsoft.com/dynamics365/customer-engagement/admin/enable-change-tracking-control-data-synchronization) 
 
 ## <a name="create-a-flow-from-a-template"></a>Een stroom maken met een sjabloon
 U kunt een stroom maken met een van de vele beschikbare sjablonen, zoals deze voorbeelden:
