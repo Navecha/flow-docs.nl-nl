@@ -1,13 +1,13 @@
 ---
 title: Gebruik de actie Op elk(e) toepassen om een matrix met items te doorlopen. | Microsoft Docs
 description: Gebruik Microsoft Flow om een matrix met items te doorlopen om meerdere voorwaarden te controleren en acties uit te voeren op basis van deze voorwaarden.
-services: 
+services: ''
 suite: flow
 documentationcenter: na
 author: msftman
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: flow
 ms.devlang: na
 ms.topic: article
@@ -16,10 +16,11 @@ ms.workload: na
 ms.date: 03/16/2017
 ms.author: deonhe
 ms.openlocfilehash: 37f1ce939db23694bcd92e7f1af75bf6c474be91
-ms.sourcegitcommit: 4f2cb27d392f46aa1d8680d6278876780ed3871b
+ms.sourcegitcommit: 945614d737d5909c40029a61e050302d96e1619d
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/15/2017
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "23440457"
 ---
 # <a name="use-the-apply-to-each-action-in-microsoft-flow-to-process-a-list-of-items-periodically"></a>Gebruik de actie Op elk(e) toepassen in Microsoft Flow om periodiek een lijst met items te verwerken
 Veel triggers kunnen direct een stroom starten op basis van een gebeurtenis, zoals de ontvangst van een nieuwe e-mail in uw postvak IN. Deze triggers zijn handig, maar soms wilt u een stroom uitvoeren die een query uitvoert op een gegevensbron volgens een vooraf gedefinieerd schema, waarbij bepaalde acties op basis van de eigenschappen van items in de gegevensbron worden uitgevoerd. U kunt hiervoor een stroom op basis van een schema laten starten (bijvoorbeeld een keer per dag) en een lusactie gebruiken, zoals **Op elk(e) toepassen** om een lijst met items te verwerken. U kunt bijvoorbeeld **Op elk(e) toepassen** gebruiken om records uit een database of een lijst met items van Microsoft SharePoint bij te werken.

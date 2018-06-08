@@ -1,13 +1,13 @@
 ---
 title: Een stroom maken op uw telefoon | Microsoft Docs
 description: U kunt een stroom maken op basis van een sjabloon waarmee bijvoorbeeld een pushmelding wordt verzonden wanneer u een e-mail ontvangt dat afkomstig is van een adres dat u opgeeft.
-services: 
+services: ''
 suite: flow
 documentationcenter: na
 author: adiregev
 manager: erikre
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: flow
 ms.devlang: na
 ms.topic: article
@@ -16,10 +16,11 @@ ms.workload: na
 ms.date: 09/18/2016
 ms.author: adiregev
 ms.openlocfilehash: 27a2001e3fa154f9354ef5ad888e194f30b3d6ab
-ms.sourcegitcommit: 4f2cb27d392f46aa1d8680d6278876780ed3871b
+ms.sourcegitcommit: 945614d737d5909c40029a61e050302d96e1619d
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/15/2017
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "23440295"
 ---
 # <a name="create-a-flow-from-your-phone-by-using-microsoft-flow"></a>Een stroom maken op uw telefoon met Microsoft Flow
 U kunt op uw telefoon een stroom maken door gebruik te maken van een sjabloon. Sjablonen vindt u door te zoeken in een lijst met services, door te bladeren door categorieën of door trefwoorden op te geven. Volg de stappen in dit onderwerp om een stroom te maken waarmee een pushmelding naar uw telefoon wordt verzonden wanneer u een e-mail van uw manager ontvangt.

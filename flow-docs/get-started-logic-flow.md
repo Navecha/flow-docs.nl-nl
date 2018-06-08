@@ -1,13 +1,13 @@
 ---
 title: Een stroom maken om taken te automatiseren | Microsoft Docs
 description: U kunt een stroom maken waarmee automatisch een of meer acties (bijvoorbeeld het verzenden van een e-mail) worden uitgevoerd wanneer een gebeurtenis plaatsvindt (bijvoorbeeld wanneer iemand een rij toevoegt aan een SharePoint-lijst).
-services: 
+services: ''
 suite: flow
 documentationcenter: na
 author: msftman
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: flow
 ms.devlang: na
 ms.topic: get-started-article
@@ -16,10 +16,11 @@ ms.workload: na
 ms.date: 02/28/2018
 ms.author: deonhe
 ms.openlocfilehash: 911be014dd6f57a80be7c65d87cb2d5d475c88e1
-ms.sourcegitcommit: 2dcb94f85c0029f920329c861b6a0f1f8972c191
+ms.sourcegitcommit: 945614d737d5909c40029a61e050302d96e1619d
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/01/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "29716273"
 ---
 # <a name="create-a-flow-in-microsoft-flow"></a>Een stroom maken in Microsoft Flow
 

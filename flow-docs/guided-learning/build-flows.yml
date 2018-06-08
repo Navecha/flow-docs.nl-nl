@@ -2,7 +2,7 @@
 title: Stromen bouwen
 metadata:
   title: Stromen bouwen | Microsoft Flow
-  description: "Informatie over het bouwen van stromen die gegevens kopiëren en verzamelen, en van stromen die meldingen verzenden. Voer uw stromen uit op basis van een planning of op aanvraag via een knop."
+  description: Informatie over het bouwen van stromen die gegevens kopiëren en verzamelen, en van stromen die meldingen verzenden. Voer uw stromen uit op basis van een planning of op aanvraag via een knop.
   audience: Business User
   level: Beginner
   nextTutorialHref: work-with-approvals
@@ -15,13 +15,15 @@ metadata:
   ms.date: 10/04/2017
   ms.author: deonhe
   ms.openlocfilehash: 6653c723ba9c3dfce8c953b86e3b54d5226cd258
-  ms.sourcegitcommit: b943fa83d7ca2d1a313c0c7b2cf0d7e4a9528b85
+  ms.sourcegitcommit: 945614d737d5909c40029a61e050302d96e1619d
   ms.translationtype: HT
   ms.contentlocale: nl-NL
-  ms.lasthandoff: 02/06/2018
+  ms.lasthandoff: 06/04/2018
+  ms.locfileid: "26580785"
 items:
 - durationInMinutes: 1
-  content: "Informatie over het bouwen van stromen die gegevens kopiëren en verzamelen, en van stromen die meldingen verzenden. Voer uw stromen uit op basis van een planning of op aanvraag via een knop.\n"
+  content: >
+    Informatie over het bouwen van stromen die gegevens kopiëren en verzamelen, en van stromen die meldingen verzenden. Voer uw stromen uit op basis van een planning of op aanvraag via een knop.
 - title: Een knopstroom maken
   durationInMinutes: 11
   content: >
@@ -36,7 +38,7 @@ items:
 
 
     [!INCLUDE [learning-get-notifications](../includes/learning-get-notifications.md)]
-- title: "Bestanden kopiëren"
+- title: Bestanden kopiëren
   durationInMinutes: 4
   content: >
     > [!Video https://www.youtube.com/embed/liL0IWNcRcc?rel=0]
@@ -71,4 +73,4 @@ items:
 
 
     [!INCLUDE [learning-create-pdf](../includes/learning-create-pdf.md)]
-- content: "U hebt de sectie **Stromen bouwen** van de Begeleide training van Microsoft Flow voltooid.\0"
+- content: U hebt de sectie **Stromen bouwen** van de Begeleide training van Microsoft Flow voltooid.

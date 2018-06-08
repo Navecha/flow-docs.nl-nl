@@ -1,13 +1,13 @@
 ---
 title: Een goedkeuringslus maken met de Common Data Service | Microsoft Docs
 description: Maak een entiteit, een stroom en een app die samenwerken, zodat revisoren bestanden die zijn toegevoegd aan Dropbox, kunnen goedkeuren of afwijzen.
-services: 
+services: ''
 suite: flow
 documentationcenter: na
 author: stepsic-microsoft-com
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: flow
 ms.devlang: na
 ms.topic: article
@@ -16,10 +16,11 @@ ms.workload: na
 ms.date: 10/22/2016
 ms.author: stepsic
 ms.openlocfilehash: f56b109cc0263c8464d6d7475421ab32af8888d5
-ms.sourcegitcommit: f3261717768177e03e825c0dd2e3ba736dc9b94d
+ms.sourcegitcommit: 945614d737d5909c40029a61e050302d96e1619d
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "29351335"
 ---
 # <a name="build-an-approval-loop-by-using-microsoft-flow-and-the-microsoft-common-data-service"></a>Maak een goedkeuringslus met Microsoft Flow en de Microsoft Common Data Service
 Met de Common Data Service hebt u een methode in handen waarmee u stromen kunt opzetten waarbij informatie is opgeslagen in een database die onafhankelijk is van een stroom. Dit kan het beste worden geïllustreerd met goedkeuringen. Als u de status van de goedkeuring in een entiteit opslaat, kan uw stroom daar boven op werken.

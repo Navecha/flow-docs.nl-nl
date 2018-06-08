@@ -8,7 +8,7 @@ Het is gemakkelijk om een stroom te maken waarmee pushmeldingen naar uw **mobiel
 Als u een niet-ondersteund mobiel apparaat gebruikt, kunt u **sms-berichten** gebruiken om meldingen in plaats van pushmeldingen te ontvangen.
 
 ## <a name="creating-flows-that-send-notifications"></a>Stromen maken waarmee meldingen worden verzonden
-U kunt **een sjabloon gebruiken**, zoals in de bovenstaande video, of kunt u de actie *Een pushmelding verzenden*  **gebruiken**  om **een volledig nieuwe** stroom te maken.  U kunt **dynamische inhoud** van andere acties of triggers opnemen.
+U kunt **een sjabloon gebruiken**, zoals in de bovenstaande video, of kunt u de actie *Een pushmelding verzenden* **gebruiken** om **een volledig nieuwe** stroom te maken.  U kunt **dynamische inhoud** van andere acties of triggers opnemen.
 
 ![Vanuit het niets](./media/learning-get-notifications/notification-action.png)
 

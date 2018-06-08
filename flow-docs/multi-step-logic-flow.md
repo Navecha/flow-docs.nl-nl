@@ -16,10 +16,11 @@ ms.workload: na
 ms.date: 04/20/2017
 ms.author: stepsic
 ms.openlocfilehash: f6c936cbf5a2bd481adb52ec9b01545fb9ba7b0b
-ms.sourcegitcommit: f0202f74ba9a2282a670a1751462f598a5ea0ce5
+ms.sourcegitcommit: 945614d737d5909c40029a61e050302d96e1619d
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/23/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "23442113"
 ---
 # <a name="add-multiple-actions-and-advanced-options-to-a-flow"></a>Meerdere acties en geavanceerde opties toevoegen aan een stroom
 Pas een stroom aan door een of meer geavanceerde opties en meerdere acties voor dezelfde trigger toe te voegen. Voeg bijvoorbeeld een geavanceerde optie toe waarmee een e-mailbericht met hoge prioriteit wordt verzonden. Verzend niet alleen een e-mail wanneer een item wordt toegevoegd aan een SharePoint-lijst, maar maak ook een bestand in Dropbox dat dezelfde informatie bevat.

@@ -16,10 +16,11 @@ ms.workload: na
 ms.date: 02/15/2017
 ms.author: deonhe
 ms.openlocfilehash: 483837a013b5fa0c8dfa27d2ed3a1e3481c36c5b
-ms.sourcegitcommit: 8bf92483780a5682777dd9fb73be8c2fb0e78dc4
+ms.sourcegitcommit: 945614d737d5909c40029a61e050302d96e1619d
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/19/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34308712"
 ---
 # <a name="introducing-button-flows-with-user-input"></a>Inleiding voor knopstromen met gebruikersinvoer
 Een knopstroom maken om routinetaken uit te voeren door op een knop te tikken. De stroom aanpassen door de gebruiker de gelegenheid te geven specifieke details op te geven die worden gebruikt als de stroom wordt uitgevoerd. In dit onderwerp wordt u begeleid bij het maken van een knopstroom die invoer van de gebruiker opneemt en vervolgens de knopstroom uitvoert, met de nadruk op het leveren van de invoer van de gebruiker.

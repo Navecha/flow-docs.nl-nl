@@ -1,13 +1,13 @@
 ---
 title: Meer informatie over het beheren van uw gegevens via verbindingen en on-premises gegevensgateways | Microsoft-Docs
 description: U kunt verbindingen toevoegen en beheren met SharePoint, SQL Server, OneDrive voor Bedrijven, Salesforce, Office 365, OneDrive, Dropbox, Twitter, Google Drive en meer.
-services: 
+services: ''
 suite: flow
 documentationcenter: na
 author: stepsic-microsoft-com
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: flow
 ms.devlang: na
 ms.topic: article
@@ -16,10 +16,11 @@ ms.workload: na
 ms.date: 02/15/2017
 ms.author: stepsic
 ms.openlocfilehash: c0e115732e26bdeb0d7e4c3c60e1aa6c63e0ffc1
-ms.sourcegitcommit: 4f2cb27d392f46aa1d8680d6278876780ed3871b
+ms.sourcegitcommit: 945614d737d5909c40029a61e050302d96e1619d
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/15/2017
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "23439773"
 ---
 # <a name="manage-connections-in-microsoft-flow"></a>Verbindingen beheren in Microsoft Flow
 Als u een verbinding maakt in Microsoft Flow, kunt u tijdens het maken van een stroom eenvoudig toegang krijgen tot uw gegevens. Microsoft Flow bevat veelgebruikte verbindingen, waaronder SharePoint, SQL Server, Office 365, OneDrive voor Bedrijven, Salesforce, Excel, Dropbox en Twitter. Verbindingen worden gedeeld met PowerApps. Als u een verbinding maakt in het ene product, wordt de verbinding ook weergegeven in het andere.
@@ -91,7 +92,7 @@ Als u een verbinding bijwerkt, wordt deze bijgewerkt voor PowerApps en voor Micr
 ## <a name="troubleshoot-a-connection"></a>Problemen met een verbinding oplossen
 Afhankelijk van het beleid van uw organisatie moet u mogelijk hetzelfde account gebruiken om u aan te melden bij Microsoft Flow en om een verbinding te maken met SharePoint, Office 365 of OneDrive voor Bedrijven.
 
-Mogelijk moet u zich bij Microsoft Flow bijvoorbeeld aanmelden met  *yourname@outlook.com* , maar wordt u geblokkeerd als u probeert verbinding maken met SharePoint met  *yourname@contoso.com* . U kunt zich in plaats daarvan bij Microsoft Flow aanmelden met  *yourname@contoso.com*  en dan verbinding maken met SharePoint.
+Mogelijk moet u zich bij Microsoft Flow bijvoorbeeld aanmelden met *yourname@outlook.com*, maar wordt u geblokkeerd als u probeert verbinding maken met SharePoint met *yourname@contoso.com*. U kunt zich in plaats daarvan bij Microsoft Flow aanmelden met *yourname@contoso.com* en dan verbinding maken met SharePoint.
 
 <!--Reference links in article-->
 [1]: https://flow.microsoft.com

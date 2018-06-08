@@ -1,6 +1,6 @@
 In dit onderwerp leert u hoe u **een knopstroom maakt** voor het bedrijf Contoso Flooring. 
 
-Knopstromen kunnen worden gebruikt om **e-mail**  te verzenden naar een team en **hen een melding te sturen over taken** die ze moeten uitvoeren. Het **eigendom** van de stromen  **kan worden toegewezen aan één** medewerker of worden **gedeeld door meerdere** leden van een team.  
+Knopstromen kunnen worden gebruikt om **e-mail**  te verzenden naar een team en **hen een melding te sturen over taken** die ze moeten uitvoeren. Het **eigendom** van de stromen **kan worden toegewezen aan één**medewerker of worden **gedeeld door meerdere** leden van een team.  
 
 1. Ga eerst naar de [Microsoft Flow-website](https://ms.flow.microsoft.com) en meld u aan.
 2. Wanneer u zich hebt aangemeld, selecteert u achtereenvolgens **Mijn stromen** en **Leeg item maken**.

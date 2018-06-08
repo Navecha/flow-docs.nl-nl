@@ -16,10 +16,11 @@ ms.workload: na
 ms.date: 06/08/2017
 ms.author: deonhe
 ms.openlocfilehash: 8620cd49f9e19f6641909fcab3103568d148e565
-ms.sourcegitcommit: f0202f74ba9a2282a670a1751462f598a5ea0ce5
+ms.sourcegitcommit: 945614d737d5909c40029a61e050302d96e1619d
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/23/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "23442311"
 ---
 # <a name="manage-sequential-approvals-with-microsoft-flow"></a>Opeenvolgende goedkeuringen beheren met Microsoft Flow
 Bij bepaalde werkstromen moet vooraf goedkeuring worden gegeven voordat de definitieve goedkeurder zijn goedkeuring geeft. Een bedrijf kan bijvoorbeeld een beleid voor opeenvolgende goedkeuring instellen waarbij facturen van meer dan € 1000,00 vooraf moeten worden goedgekeurd, voordat ze worden goedgekeurd door de financiële afdeling.
