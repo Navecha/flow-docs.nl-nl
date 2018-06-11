@@ -1,13 +1,13 @@
 ---
 title: Informatie over gegevensbewerkingen| Microsoft Docs
 description: Lees hier alles over het uitvoeren van bewerkingen, zoals HTML-tabel maken, CSV-tabel maken, Opstellen, Lid worden, Selecteren en Matrix filteren, met Microsoft Flow.
-services: 
+services: ''
 suite: flow
 documentationcenter: na
 author: MSFTMan
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: flow
 ms.devlang: na
 ms.topic: article
@@ -16,10 +16,11 @@ ms.workload: na
 ms.date: 08/02/2017
 ms.author: deonhe
 ms.openlocfilehash: aa3f61d09cb5e9b8d07124838883da9b5b9794ab
-ms.sourcegitcommit: 4f2cb27d392f46aa1d8680d6278876780ed3871b
+ms.sourcegitcommit: 945614d737d5909c40029a61e050302d96e1619d
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/15/2017
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "23440907"
 ---
 # <a name="use-data-operations-with-microsoft-flow"></a>Gegevensbewerkingen gebruiken met Microsoft Flow
 In dit scenario maakt u kennis met enkele populaire bewerkingen van Microsoft Flow, zoals Opstellen, Lid worden, Matrix filteren, Tabel maken en JSON parseren, die beschikbaar zijn voor het manipuleren van gegevens in een stroom.
