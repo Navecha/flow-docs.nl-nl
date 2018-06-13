@@ -13,13 +13,14 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 4/17/2018
+ms.date: 4/24/2018
 ms.author: keweare
-ms.openlocfilehash: 1e1fe346ba6ffb264985da0115714246a621ef5a
-ms.sourcegitcommit: 12fbfe22fedd780d42ef1d2febfd7a0769b4902e
+ms.openlocfilehash: 5b813bbd8ba9b4e5a778d9fa424704b61ed6dd31
+ms.sourcegitcommit: 945614d737d5909c40029a61e050302d96e1619d
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34552060"
 ---
 # <a name="responding-to-gdpr-data-subject-export-requests-for-microsoft-flow"></a>Reageren op exportverzoeken van betrokkenen in het kader van de AVG met Microsoft Flow
 
@@ -39,16 +40,15 @@ Microsoft Flow biedt de volgende mogelijkheden voor het zoeken of exporteren van
 |-----------------|------------------|-------------------|
 |Door het systeem gegenereerde logboeken|[Office 365 Service Trust Portal](https://servicetrust.microsoft.com/)|
 |Uitvoeringsgeschiedenis|Microsoft Flow Maker Portal||
-|Gebruikerstaken|| |
 |Stromen|Microsoft Flow Maker Portal||
 |Stroommachtigingen| Microsoft Flow Maker Portal en Microsoft Flow-beheercentrum||
-|Gebruikersdetails|| |
-|Verbindingen|Microsoft Flow Maker Portal| |
-|Verbindingsmachtigingen|Microsoft Flow Maker Portal| |
-|Aangepaste connectors|Microsoft Flow Maker Portal| |
-|Machtigingen voor aangepaste connectors|Microsoft Flow Maker Portal| |
-|Gateway|Microsoft Flow Maker Portal|PowerShell-cmdlets on-premises gateway|
-|Gatewaymachtigingen|Microsoft Flow Maker Portal|
+|Gebruikersdetails||PowerApps-cmdlets|
+|Verbindingen|Microsoft Flow Maker Portal|PowerApps-cmdlets |
+|Verbindingsmachtigingen|Microsoft Flow Maker Portal|PowerApps-cmdlets |
+|Aangepaste connectors|Microsoft Flow Maker Portal|PowerApps-cmdlets |
+|Machtigingen voor aangepaste connectors|Microsoft Flow Maker Portal|PowerApps-cmdlets |
+|Gateway|Microsoft Flow Maker Portal|PowerShell-cmdlets van on-premises gegevensgateway|
+|Gatewaymachtigingen|Microsoft Flow Maker Portal|PowerShell-cmdlets van on-premises gegevensgateway|
 
 ## <a name="export-a-flow"></a>Een stroom exporteren
 
@@ -105,10 +105,35 @@ Met verbindingen kunnen stromen verbinding maken met API's, SaaS-toepassingen en
     ![Verbindingen weergeven](./media/gdpr-dsr-export/show-connections.png)
 1. Kopieer de resultaten en plak deze in een documenteditor, zoals Microsoft Word.
 
+PowerApps Admin PowerShell-cmdlets
+
+```PowerShell
+Add-PowerAppsAccount
+
+#Retrieves all connections for the user 
+Add-PowerAppsAccount
+$userId = "7822bb68-7c24-49ce-90ce-1ec8deab99a7"
+Get-AdminConnection -CreateBy $userId | ConvertTo-Json |Out-File -FilePath "UserConnections.txt"
+```
+
 ## <a name="export-a-list-of-a-users-connection-permissions"></a>Een lijst met verbindingsmachtigingen van een gebruiker exporteren
 
 Een gebruiker kan de toewijzingen voor verbindingsrollen exporteren voor alle verbindingen waartoe de gebruiker toegang heeft via de functie Get-ConnectionRoleAssignment in de [PowerApps PowerShell-cdmlets](https://go.microsoft.com/fwlink/?linkid=871804).
-![Verbindingsmachtigingen exporteren](./media/gdpr-dsr-export/export-connection-permissions.png)
+
+```PowerShell
+Add-PowerAppsAccount
+Get-ConnectionRoleAssignment | ConvertTo-Json | Out-File -FilePath "ConnectionPermissions.txt"
+```
+PowerApps Admin PowerShell-cmdlets
+
+```PowerShell
+Add-PowerAppsAccount
+
+#Retrieves all connection permissions for the specified user 
+Add-PowerAppsAccount
+$userId = "7822bb68-7c24-49ce-90ce-1ec8deab99a7"
+Get-AdminConnectionRoleAssignment -PrincipalObjectId $userId | ConvertTo-Json | Out-File -FilePath "ConnectionPermissions.txt" 
+```
 
 ## <a name="export-a-users-custom-connectors"></a>Aangepaste connectors van een gebruiker exporteren
 
@@ -125,13 +150,41 @@ Volg deze stappen om een lijst met aangepaste connectors te exporteren:
 
 Naast de mogelijkheden die Microsoft Flow biedt, kunt u de functie Get-Connector uit de [PowerApps PowerShell-cmdlets](https://go.microsoft.com/fwlink/?linkid=871804) gebruiken om alle aangepaste connectors te exporteren.
 
-![Aangepaste connectors exporteren met PowerShell](./media/gdpr-dsr-export/export-custom-connectors-powershell.png)
+~~~~
+Add-PowerAppsAccount
+Get-Connector -FilterNonCustomConnectors | ConvertTo-Json | Out-File -FilePath "CustomConnectors.txt"
+~~~~
+
+PowerApps Admin PowerShell-cmdlets
+
+```PowerShell
+Add-PowerAppsAccount
+
+#Retrieves all custom connectors for user 
+Add-PowerAppsAccount
+$userId = "7822bb68-7c24-49ce-90ce-1ec8deab99a7"
+Get-AdminConnector -CreatedBy $userId | ConvertTo-Json | Out-File -FilePath "UserCustomConnectors.txt"  
+```
 
 ## <a name="export-a-users-custom-connector-permissions"></a>De machtigingen voor aangepaste connectors van een gebruiker exporteren
 
 Een gebruiker kan alle machtigingen voor aangepaste connectors exporteren die hij heeft gemaakt via de functie Get-ConnectorRoleAssignment in de [PowerApps PowerShell-cdmlets](https://go.microsoft.com/fwlink/?linkid=871804).
 
-![De machtigingen voor aangepaste connectors exporteren met PowerShell](./media/gdpr-dsr-export/export-connector-permissions.png)
+```PowerShell
+Add-PowerAppsAccount
+Get-ConnectorRoleAssignment | ConvertTo-Json | Out-File -FilePath "CustomConnectorPermissions.txt"
+```
+
+PowerApps Admin PowerShell-cmdlets
+
+```PowerShell
+Add-PowerAppsAccount
+
+#Retrieves all connection permissions for the specified user 
+Add-PowerAppsAccount
+$userId = "7822bb68-7c24-49ce-90ce-1ec8deab99a7"
+Get-AdminConnectorRoleAssignment -PrincipalObjectId $userId | ConvertTo-Json | Out-File -FilePath "CustomConnectorPermissions.txt"   
+```
 
 ## <a name="export-approval-history"></a>Goedkeuringsgeschiedenis exporteren
 
@@ -144,3 +197,18 @@ Microsoft Flow Approvals History legt een historisch overzicht vast van goedkeur
 1. Een lijst geeft goedkeuringen weer die de gebruiker heeft ontvangen. De gebruikers kunnen goedkeuringen bekijken die ze hebben verzonden door de pijl-omlaag naast **Ontvangen** te selecteren en vervolgens **Verzonden** te selecteren.
 
     ![Ontvangen goedkeuringen weergeven](./media/gdpr-dsr-export/view-received-approvals.png)
+
+## <a name="export-user-details"></a>Gebruikersgegevens exporteren
+Details van de gebruikers bieden een koppeling tussen een gebruiker en een specifieke tenant. Een beheerder kan deze informatie exporteren door de cmdlet **Get-AdminFlowUserDetails** aan te roepen en uit te voeren in de Object-id voor de gebruiker.
+
+PowerApps Admin PowerShell-cmdlets
+
+```PowerShell
+Add-PowerAppsAccount
+
+Get-AdminFlowUserDetails -UserId 1b6759b9-bbea-43b6-9f3e-1af6206e0e80
+```
+
+## <a name="export-gateway-settings"></a>Gateway-instellingen exporteren
+Informatie over het reageren op exportverzoeken van een betrokkene voor on-premises gegevensgateways vindt u [hier](https://docs.microsoft.com/en-us/power-bi/service-gateway-onprem#tenant-level-administration).
+

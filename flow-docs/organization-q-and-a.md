@@ -1,13 +1,13 @@
 ---
 title: Vragen en antwoorden over registreren voor Flow in uw organisatie | Microsoft Docs
 description: Veelgestelde vragen en antwoorden over licenties, beheer en registratie van gebruikers voor Flow in uw Office 365-tenant
-services: 
+services: ''
 suite: flow
 documentationcenter: na
 author: stepsic-microsoft-com
 manager: erikre
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: flow
 ms.devlang: na
 ms.topic: article
@@ -16,10 +16,11 @@ ms.workload: na
 ms.date: 12/05/2016
 ms.author: stepsic
 ms.openlocfilehash: f8807ca0941761018c92a385c26f427e69ededcb
-ms.sourcegitcommit: 56d69fadcbc9169feb2e1a68d9e9361709084cf4
+ms.sourcegitcommit: 945614d737d5909c40029a61e050302d96e1619d
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "23442491"
 ---
 # <a name="flow-in-your-organization-qa"></a>Vragen en antwoorden over Flow in uw organisatie
 In dit onderwerp wordt beschreven hoe gebruikers in uw organisatie Flow kunnen gebruiken en hoe u de Flow-service kunt beheren.
@@ -122,7 +123,7 @@ De gratis Microsoft Flow-licentie wordt alleen meegeleverd voor volgdoeleinden. 
 Gebruikers kunnen Microsoft Flow gebruiken als individu of als deel van hun organisatie. Licenties op het organisatieniveau van de worden altijd weergegeven in de Office 365-portal. De licentie wordt echter niet beheerd door de Office 365-beheerder als een gebruiker zich aanmeldt voor een proefversie als een individu en dan wordt de licentie ook niet weergegeven in de portal.
 
 ### <a name="how-does-an-individual-find-out-what-plan-they-are-on"></a>Waar kan een individu vonden welk abonnement ze hebben?
-Iedereen kan het abonnement dat ze hebben zien via de pagina met Flow-prijzen [https://flow.microsoft.com/pricing](https://flow.microsoft.com/pricing). Het abonnement of de proefversie die ze op dat moment hebben wordt daar weergegeven.
+Iedereen kan het abonnement dat ze hebben zien via de pagina met Flow-prijzen op [https://flow.microsoft.com/pricing](https://flow.microsoft.com/pricing). Het abonnement of de proefversie die ze op dat moment hebben wordt daar weergegeven.
 
 ### <a name="will-microsoft-flow-sign-up-impact-the-identities-in-my-organization"></a>Heeft de registratie bij Microsoft Flow invloed op de id’s in mijn organisatie?
 Als uw organisatie al een bestaande Office 365-omgeving heeft en alle gebruikers in uw organisatie een Office 365-account hebben, verandert er niets op het gebied van identiteitsbeheer.

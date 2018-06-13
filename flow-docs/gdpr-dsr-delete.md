@@ -15,11 +15,12 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 4/17/2018
 ms.author: keweare
-ms.openlocfilehash: d750ee2bc672d08bff940341349663b4721f9a57
-ms.sourcegitcommit: 12fbfe22fedd780d42ef1d2febfd7a0769b4902e
+ms.openlocfilehash: f7ceaa76ddf4e1980ad8144a6152fc8211c3880b
+ms.sourcegitcommit: 945614d737d5909c40029a61e050302d96e1619d
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34561305"
 ---
 # <a name="responding-to-gdpr-data-subject-delete-requests-for-microsoft-flow"></a>Reageren op AVG-verzoeken van betrokkenen voor het verwijderen van gegevens in Microsoft Flow
 
@@ -33,17 +34,17 @@ In de volgende tabel ziet u welke persoonsgegevens automatisch worden verwijderd
 |------|------|
 |Omgeving*|Door het systeem gegenereerde logboeken|
 |Omgevingsmachtigingen**|Uitvoeringsgeschiedenis|
-|Stromen|Gebruikerstaken|
+|Stromen|Activiteitsfeed|
 |Stroommachtigingen|Gateway |
-|Gebruikersdetails|Gatewaymachtigingen |
+|Gebruikersdetails|Gatewaymachtigingen|
 |Verbindingen*||
 |Verbindingsmachtigingen||
 |Aangepaste connector*||
 |Machtigingen voor aangepaste connectors||
 
-* Elk van deze bronnen bevat 'Gemaakt door'- en 'Gewijzigd door'-records die persoonsgegevens bevatten. Deze records worden uit veiligheidsoverwegingen bewaard totdat de resource wordt verwijderd.
+*Elk van deze resources bevat Gemaakt door- en Gewijzigd door-records die persoonsgegevens bevatten. Deze records worden uit veiligheidsoverwegingen bewaard totdat de resource wordt verwijderd.
 
-* In omgevingen met een Common Data Service For Apps-database worden omgevingsmachtigingen (bijvoorbeeld welke gebruikers zijn toegewezen aan de rollen Omgevingsmaker en Admin) opgeslagen als records in de Common Data Service-database. Zie [Executing DSRs against Common Data Service Customer Data](https://go.microsoft.com/fwlink/?linkid=872251) (Verzoeken van betrokkenen uitvoeren op basis van klantgegevens van Common Data Service) voor informatie over het reageren op verzoeken van betrokkenen voor gebruikers die gebruikmaken van Common Data Service.
+**In omgevingen met een Common Data Service For Apps-database worden omgevingsmachtigingen (bijvoorbeeld welke gebruikers zijn toegewezen aan de rollen Omgevingsmaker en Beheerder) opgeslagen als records in de Common Data Service-database. Zie [Executing DSRs against Common Data Service Customer Data](https://go.microsoft.com/fwlink/?linkid=872251) (Verzoeken van betrokkenen uitvoeren op basis van klantgegevens van Common Data Service) voor informatie over het reageren op verzoeken van betrokkenen voor gebruikers die gebruikmaken van Common Data Service.
 
 Voor de gegevens en resources die handmatig moeten worden bekeken, biedt Microsoft Flow de volgende ervaringen om persoonsgegevens voor een specifieke gebruiker te vinden of te wijzigen:
 
@@ -59,11 +60,11 @@ Hier volgt de uitsplitsing van ervaringen die een beheerder ter beschikking staa
 |Omgeving|Microsoft Flow-beheercentrum|PowerApps-cmdlets||
 |Omgevingsmachtigingen*|Microsoft Flow-beheercentrum|PowerApps-cmdlets||
 |Uitvoeringsgeschiedenis||| Verwijderd via een bewaarbeleid van 28 dagen|
-|Activiteitsfeed ||PowerApps-cmdlets||
+|Activiteitsfeed |||Verwijderd via een bewaarbeleid van 28 dagen|
 |Gebruikerstaken|| ||
 |Stromen|Microsoft Flow Maker Portal**|||
 |Stroommachtigingen|Microsoft Flow Maker Portal|||
-|Gebruikersdetails|| ||
+|Gebruikersdetails||PowerApps-cmdlets||
 |Verbindingen|Microsoft Flow Maker Portal| ||
 |Verbindingsmachtigingen|Microsoft Flow Maker Portal| ||
 |Aangepaste connector|Microsoft Flow Maker Portal| ||
@@ -76,7 +77,7 @@ Hier volgt de uitsplitsing van ervaringen die een beheerder ter beschikking staa
 
 ## <a name="manage-delete-requests"></a>Verwijderingsaanvragen beheren
 
-In de onderstaande stappen wordt beschreven hoe beheerfuncties bestaan voor het uitvoeren van verwijderingsaanvragen in het kader van de AVG.
+In de onderstaande stappen wordt beschreven hoe beheerfuncties bestaan voor het uitvoeren van verwijderingsaanvragen in het kader van de AVG. Deze stappen moeten worden uitgevoerd in de onderstaande volgorde.
 
 > [!IMPORTANT]
 > Volg deze stappen in de aangegeven volgorde, om beschadiging van gegevens te voorkomen.
@@ -124,6 +125,7 @@ Met deze stappen worden bestaande stromen voor een vertrekkende gebruiker gekopi
     ![Bevestiging voor verwijderen stroom](./media/gdpr-dsr-delete/delete-flow-confirmation.png)
 
 1. Schakel de kopie van de stroom in door **Mijn stromen** te openen en de schakeloptie op **Aan** te zetten.
+
     ![Stroom inschakelen](./media/gdpr-dsr-delete/toggle-on.png)
 
 1. De kopie voert nu dezelfde werkstroomlogica uit als de oorspronkelijke versie.
@@ -142,6 +144,7 @@ Met deze stappen worden bestaande stromen voor een vertrekkende gebruiker gekopi
 
 Zie [Executing DSRs against Common Data Service Customer Data](https://go.microsoft.com/fwlink/?linkid=872251) (Verzoeken van betrokkenen uitvoeren op basis van klantgegevens van Common Data Service) voor meer informatie over het reageren op verzoeken van betrokkenen voor gebruikers die gebruikmaken van Common Data Service.
 
+
 ## <a name="delete-connections-created-by-a-user"></a>Door een gebruiker gemaakte verbindingen verwijderen
 
 Verbindingen worden in combinatie met connectors gebruikt om verbinding te maken met andere API's en SaaS-systemen.  Verbindingen bevatten verwijzingen naar de gebruiker die ze heeft gemaakt en kunnen dus worden verwijderd om verwijzingen naar de gebruiker te verwijderen.
@@ -159,8 +162,14 @@ Get-Connection | Remove-Connection
 
 PowerApps Admin PowerShell-cmdlets
 
-Niet beschikbaar.
+```PowerShell
+Add-PowerAppsAccount
 
+$deleteDsrUserId = "7822bb68-7c24-49ce-90ce-1ec8deab99a7"
+#Retrieves all connections for the DSR user and deletes them 
+Get-AdminConnection -CreatedBy $deleteDsrUserId | Remove-AdminConnection 
+
+```
 ## <a name="delete-the-users-permissions-to-shared-connections"></a>De machtigingen van de gebruiker voor gedeelde verbindingen verwijderen
 
 PowerApps Maker PowerShell-cmdlets
@@ -174,14 +183,20 @@ Add-PowerAppsAccount
 Get-ConnectionRoleAssignment | Remove-ConnectionRoleAssignment
 ```
 
+PowerApps Admin PowerShell-cmdlets
+
+```PowerShell
+Add-PowerAppsAccount
+
+$deleteDsrUserId = "7822bb68-7c24-49ce-90ce-1ec8deab99a7"
+#Retrieves all shared connections for the DSR user and deletes their permissions 
+Get-AdminConnectionRoleAssignment -PrincipalObjectId $deleteDsrUserId | Remove-AdminConnectionRoleAssignment  
+
+```
 > [!NOTE]
 > Eigenaarsroltoewijzingen kunnen niet worden verwijderd zonder de verbindingsresource te verwijderen.
 >
 >
-
-PowerApps Admin PowerShell-cmdlets
-
-Niet beschikbaar.
 
 ## <a name="delete-custom-connectors-created-by-the-user"></a>Door de gebruiker gemaakte aangepaste connectors verwijderen
 
@@ -199,8 +214,14 @@ Get-Connector -FilterNonCustomConnectors | Remove-Connector
 ```
 
 PowerApps Admin PowerShell-cmdlets
+```PowerShell
+Add-PowerAppsAccount
 
-Niet beschikbaar.
+$deleteDsrUserId = "7822bb68-7c24-49ce-90ce-1ec8deab99a7"
+#Retrieves all custom connectors created by the DSR user and deletes them 
+Get-AdminConnector -CreatedBy $deleteDsrUserId | Remove-AdminConnector  
+
+```
 
 ## <a name="delete-the-users-permissions-to-shared-custom-connectors"></a>De machtigingen van de gebruiker voor gedeelde aangepaste verbindingen verwijderen
 
@@ -215,14 +236,21 @@ Add-PowerAppsAccount
 Get-ConnectorRoleAssignment | Remove-ConnectorRoleAssignment
 ```
 
+PowerApps Admin PowerShell-cmdlets
+```PowerShell
+Add-PowerAppsAccount
+
+$deleteDsrUserId = "7822bb68-7c24-49ce-90ce-1ec8deab99a7"
+#Retrieves all custom connector role assignments for the DSR user and deletes them 
+Get-AdminConnectorRoleAssignment -PrincipalObjectId $deleteDsrUserId | Remove-AdminConnectorRoleAssignment  
+
+```
+
 > [!NOTE]
 > Eigenaarsroltoewijzingen kunnen niet worden verwijderd zonder de verbindingsresource te verwijderen.
 >
 >
 
-PowerApps Admin PowerShell-cmdlets
-
-Niet beschikbaar.
 
 ## <a name="delete-or-reassign-all-environments-created-by-the-user"></a>Alle door de gebruiker gemaakte omgevingen verwijderen of opnieuw toewijzen
 
@@ -246,3 +274,43 @@ Gebruikers kunnen machtigingen (zoals Omgevingsbeheerder, Omgevingsmaker, enzovo
 Sinds de introductie van de Common Data Service for Apps worden, als er binnen de omgeving een database wordt gemaakt, deze roltoewijzingen als records in de database-instance van Common Data Service for Apps opgeslagen.
 
 Navigeer naar [Omgevingen gebruiken in Microsoft Flow](https://docs.microsoft.com/flow/environments-overview-admin) voor meer informatie over het verwijderen van de machtiging van een gebruiker in een omgeving.
+
+## <a name="delete-gateway-settings"></a>Gateway-instellingen verwijderen
+Informatie over het reageren op verwijderingsverzoeken van een betrokkene voor on-premises gegevensgateways vindt u [hier](https://docs.microsoft.com/en-us/power-bi/service-gateway-onprem#tenant-level-administration).
+
+## <a name="delete-user-details"></a>Gebruikersgegevens verwijderen
+Details van de gebruikers bieden een koppeling tussen een gebruiker en een specifieke tenant. Voordat u deze opdracht gaat uitvoeren, moet u ervoor zorgen dat alle stromen voor deze gebruiker opnieuw zijn toegewezen en/of verwijderd. Zodra die stap is voltooid, kan een beheerder gebruikersdetails verwijderen door de cmdlet **Remove-AdminFlowUserDetails** aan te roepen en uit te voeren in de Object-id voor de gebruiker.
+
+
+PowerApps Admin PowerShell-cmdlets
+```PowerShell
+Add-PowerAppsAccount
+Remove-AdminFlowUserDetails -UserId 1b6759b9-bbea-43b6-9f3e-1af6206e0e80
+```
+
+> [!IMPORTANT]
+> Als een gebruiker nog steeds de eigenaar is van afzonderlijke stromen of teamstromen, retourneert deze opdracht een fout. U kunt dit oplossen door alle resterende stromen of teamstromen voor deze gebruiker te verwijderen en de opdracht opnieuw uit te voeren.
+>
+>
+## <a name="delete-the-user-from-azure-active-directory"></a>De gebruiker verwijderen uit Azure Active Directory
+Zodra de bovenstaande stappen zijn voltooid, bestaat de laatste stap uit het verwijderen van het account van de gebruiker voor Azure Active Directory. Voer hiervoor de stappen uit die worden beschreven in de Azure-documentatie over aanvragen van betrokkenen in het kader van de AVG. U vindt deze in de [Office 365 Service Trust Portal](https://servicetrust.microsoft.com/ViewPage/GDPRDSR).
+
+## <a name="delete-the-user-from-unmanaged-tenant"></a>De gebruiker uit de onbeheerde tenant verwijderen
+In het geval u lid bent van een onbeheerde tenant, moet u de actie **Account sluiten** uitvoeren in de [portal voor privacy op het werk en op school](https://go.microsoft.com/fwlink/?linkid=873123).
+
+Als u wilt bepalen of u een gebruiker van een beheerde of onbeheerde tenant bent, voert u de volgende acties uit:
+1. Open de volgende URL in een browser en zorg ervoor dat u uw e-mailadres in de URL vervangt:[ https://login.windows.net/common/userrealm/foobar@contoso.com?api-version=2.1](https://login.windows.net/common/userrealm/foobar@contoso.com?api-version=2.1).
+1. Als u lid bent van een **onbeheerde tenant**, ziet u een `"IsViral": true` in het antwoord.
+
+    {
+
+     Login: foobar@unmanagedcontoso.com,
+
+    DomainName: unmanagedcontoso.com,
+
+    IsViral: **true**,
+    
+    }
+
+1. Anders maakt u deel uit van een beheerde tenant.
+

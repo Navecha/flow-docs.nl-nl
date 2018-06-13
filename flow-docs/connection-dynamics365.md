@@ -15,12 +15,12 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 02/06/2017
 ms.author: matp
-ms.openlocfilehash: d34cfd6632ca0e8c560c5af199877b13b210a64a
-ms.sourcegitcommit: a378fb36722ae4be9909fb453efa81808b509255
+ms.openlocfilehash: 2db995eafaf8e73af7cd29b8a2469d4abaab2356
+ms.sourcegitcommit: 7d04ee86361fe5d70ee89cde06d01754ada757b5
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34689371"
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34799666"
 ---
 # <a name="create-a-flow-by-using-dynamics-365-online"></a>Een stroom maken met behulp van Dynamics 365 (online)
 Met behulp van een Dynamics 365-connector kunt u stromen maken die worden gestart wanneer in Dynamics 365 of een andere service een gebeurtenis plaatsvindt, waardoor vervolgens een actie wordt uitgevoerd in Dynamics 365 of een andere service. 
@@ -91,6 +91,11 @@ In dit scenario ziet u hoe u een taak maakt in [Wunderlist](https://www.wunderli
 8. Selecteer **Postvak IN** onder **Lijst-id**.
 9. Selecteer **Onderwerp** onder **Titel** in het deelvenster met dynamische inhoud.
 10. Klik of tik op **Stroom maken**.  
+
+## <a name="trigger-based-logic"></a>Op triggers gebaseerde logica
+Door middel van triggers zoals **Wanneer een record wordt gemaakt**, **Wanneer een record wordt bijgewerkt** en **Wanneer een record wordt verwijderd** activeren uw stroom binnen enkele minuten na het begin van de gebeurtenis.  In zeldzame gevallen kan het tot twee uur duren voordat uw stroom wordt geactiveerd.
+
+Wanneer de trigger plaatsvindt, ontvangt de stroom een melding, maar de stroom wordt uitgevoerd aan de hand van gegevens die bestaan op het moment dat de actie wordt uitgevoerd.  Als uw stroom bijvoorbeeld wordt geactiveerd zodra een nieuwe record wordt gemaakt en u de record twee keer bijwerkt voordat de stroom wordt uitgevoerd, wordt uw stroom slechts één keer uitgevoerd met de meest recente gegevens.
 
 ## <a name="specify-advanced-options"></a>Geavanceerde opties opgeven
 Als u een stap aan een stroom toevoegt, kunt u op **Geavanceerde opties weergeven** klikken of tikken om een filter- of orderby-query toe te voegen die bepaalt hoe de gegevens in de stroom worden gefilterd.

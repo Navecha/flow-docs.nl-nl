@@ -13,13 +13,14 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 04/12/2018
+ms.date: 06/04/2018
 ms.author: stepsic
-ms.openlocfilehash: bae4991754de37ca9483d540891431e216ee74cd
-ms.sourcegitcommit: b6ac1562b3ed6601401d23f4009b7528c1ce8925
+ms.openlocfilehash: 61c6382a35a55ca18dbfbce5b5b6fe38dc6ee0f2
+ms.sourcegitcommit: 3f7f5a941466485cd16e78239fcfd89d71f501e0
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34755570"
 ---
 # <a name="release-notes"></a>Releaseopmerkingen
 ## <a name="top-questions"></a>Belangrijkste vragen
@@ -45,7 +46,17 @@ ms.lasthandoff: 05/08/2018
 
 ## <a name="whats-new"></a>Wat is er nieuw?
 
-### <a name="release-2014-05-01"></a>Release van 01-05-2014
+### <a name="release-2018-05-21"></a>Release 21-05-2018
+
+- **Stromen die ‘het eigendom zijn’ van SharePoint-lijsten en -bibliotheken**: stromen die werken met SharePoint-lijsten en -bibliotheken kunnen worden gedeeld met die lijsten of bibliotheken. Ze worden dus niet gedeeld met afzonderlijke personen of groepen, maar met iedereen die toegang tot de lijst heeft. Als gebruikers worden toegevoegd aan of verwijderd uit de lijst of bibliotheek, wordt hun lidmaatschap automatisch dienovereenkomstig aangepast.
+- **Analyse van foutdetails**: een nieuw geïntegreerd rapport dat informatie biedt over alle fouten die in een stroom optreden.
+- **Stromen delen met Office 365-groepen**: u kunt een moderne Office 365-groep aanwijzen als eigenaar van een stroom en knopstromen delen met Office 365-groepen zodat iedereen in de groep de stroom kan uitvoeren.
+- **Verbeteringen van de SharePoint-connector**: er zijn twee nieuwe SharePoint-connectormogelijkheden: het activeren van stromen wanneer items of bestanden worden verwijderd en het aanroepen van een willekeurig HTTP-eindpunt dat door de SharePoint REST API wordt ondersteund.
+- **Twee nieuwe connectors**: toegevoegde ondersteuning voor Azure Data Factory en MailParser
+
+[Lees meer informatie en stel vragen](https://flow.microsoft.com/blog/share-with-sharepoint-office-365/) over deze release.
+
+### <a name="release-2018-05-01"></a>Release 01-05-2018
 
 - **Tekst met opmaak in goedkeuringsberichten**: gebruik Markdown om de goedkeuringsdetails die u verzendt op te maken.
 - **Knoppen met invoer van meerdere selecties**: maak stroomknoppen die gebruikmaken van een lijst met meerdere selecties om meerdere waarden tegelijk te verzamelen.
