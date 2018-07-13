@@ -16,11 +16,11 @@ ms.workload: na
 ms.date: 07/15/2017
 ms.author: deonhe
 ms.openlocfilehash: 016673948ffaeaf98e81cc2c561d9ff9f5f627e4
-ms.sourcegitcommit: 945614d737d5909c40029a61e050302d96e1619d
+ms.sourcegitcommit: 4a8d11e1768cd0ca96a60b6f5548a68c0c8999e5
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "23439521"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38949437"
 ---
 # <a name="manage-approval-requests-in-microsoft-flow"></a>Goedkeuringsaanvragen beheren in Microsoft Flow
 Met Microsoft Flow kunt u [goedkeuringswerkstroomprocessen](modern-approvals.md) eenvoudig automatiseren. In dit scenario krijgt u informatie over het weergeven, goedkeuren en afwijzen van goedkeuringsaanvragen die vanuit Microsoft Flow zijn verstuurd.
