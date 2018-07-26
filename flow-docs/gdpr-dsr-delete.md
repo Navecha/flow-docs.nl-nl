@@ -15,12 +15,12 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 4/17/2018
 ms.author: keweare
-ms.openlocfilehash: f7ceaa76ddf4e1980ad8144a6152fc8211c3880b
-ms.sourcegitcommit: 945614d737d5909c40029a61e050302d96e1619d
+ms.openlocfilehash: 70206e0ed6c2b59d0dfffa0c4608ba47e0fac1dc
+ms.sourcegitcommit: ca875127f607034d7ef6a3fe270fc48e4f7eeee6
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34561305"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39175127"
 ---
 # <a name="responding-to-gdpr-data-subject-delete-requests-for-microsoft-flow"></a>Reageren op AVG-verzoeken van betrokkenen voor het verwijderen van gegevens in Microsoft Flow
 
@@ -258,10 +258,10 @@ Als beheerder moet u twee beslissingen nemen bij de verwerking van een verwijder
 
 1. Als u vaststelt dat de omgeving niet door iemand anders in uw organisatie wordt gebruikt, kunt u de omgeving verwijderen.
 1. Als u vaststelt dat de omgeving nog steeds nodig is, kunt u ervoor kiezen de omgeving niet te verwijderen en uzelf (of een andere gebruiker in uw organisatie) toe te voegen als omgevingsbeheerder.
-    > [!IMPORTANT]
-    > Door een omgeving te verwijderen worden alle resources in de omgeving definitief verwijderd, inclusief alle apps, stromen, verbindingen enzovoort. Vergeet dus niet de inhoud van een omgeving te bekijken voordat u deze verwijdert.
-    >
-    >
+> [!IMPORTANT]
+> Door een omgeving te verwijderen worden alle resources in de omgeving definitief verwijderd, inclusief alle apps, stromen, verbindingen enzovoort. Vergeet dus niet de inhoud van een omgeving te bekijken voordat u deze verwijdert.
+>
+>
 
 ## <a name="give-access-to-a-users-environments-from-the-microsoft-flow-admin-center"></a>Toegang verlenen tot de omgevingen van een gebruiker vanuit het Microsoft Flow-beheercentrum
 
