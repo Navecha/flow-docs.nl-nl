@@ -73,7 +73,7 @@ Hier volgt de uitsplitsing van ervaringen die een beheerder ter beschikking staa
 
 *Sinds de introductie van de Common Data Service for Apps worden, als er binnen de omgeving een database wordt gemaakt, omgevingsmachtigingen en modelgestuurde app-machtigingen als records in het database-exemplaar van Common Data Service for Apps opgeslagen. Zie [Executing DSRs against Common Data Service Customer Data](https://go.microsoft.com/fwlink/?linkid=872251) (Verzoeken van betrokkenen uitvoeren op basis van klantgegevens van Common Data Service) voor informatie over het reageren op verzoeken van betrokkenen voor gebruikers die gebruikmaken van Common Data Service.
 
-** Een beheerder heeft alleen toegang tot deze bronnen vanuit Microsoft Flow Maker Portal als de beheerder toegang toegewezen heeft gekregen vanuit het Microsoft Flow Admin Center.
+\*\*Een beheerder heeft alleen toegang tot deze bronnen vanuit Microsoft Flow Maker Portal als de beheerder toegang toegewezen heeft gekregen vanuit het Microsoft Flow Admin Center.
 
 ## <a name="manage-delete-requests"></a>Verwijderingsaanvragen beheren
 
