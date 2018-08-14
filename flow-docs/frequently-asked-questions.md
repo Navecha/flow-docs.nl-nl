@@ -15,12 +15,12 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 03/15/2017
 ms.author: stepsic
-ms.openlocfilehash: 4fa6af7557fdbae46db5eb74a82a9d30a991e93b
-ms.sourcegitcommit: 945614d737d5909c40029a61e050302d96e1619d
+ms.openlocfilehash: af179e30c3b8b7c6d4200f10f122f0d928526f1b
+ms.sourcegitcommit: 77aae180d972373d1f251fa6a5c8f484f08ffc15
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34453303"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39718299"
 ---
 # <a name="frequently-asked-questions"></a>Veelgestelde vragen
 ## <a name="audience-and-strategy"></a>Publiek en de strategie
@@ -80,7 +80,7 @@ Sjablonen zijn ingebouwde stromen voor populaire en veelvoorkomende scenario's. 
 U kunt verbinding maken met meer dan honderd standaardservices van Microsoft en derden, waaronder Office 365, Twitter, SharePoint, OneDrive, Dropbox en SQL Server. U kunt ook verbinding maken met premiumservices zoals Salesforce en de Microsoft Common Data-service voor PowerApps.
 
 ### <a name="how-do-i-connect-to-a-rest-api-in-my-flow"></a>Hoe kan ik verbinding maken met een REST API in mijn stroom?
-Door een [aangepaste connector](register-custom-api.md) te maken, kunt u verbinding maken met een REST API die gebruikmaakt van JSON en ondersteuning biedt voor ten minste één van de meer dan tien ondersteunde verificatiemethoden.
+Door een [aangepaste connector](developer/register-custom-api.md) te maken, kunt u verbinding maken met een REST API die gebruikmaakt van JSON en ondersteuning biedt voor ten minste één van de meer dan tien ondersteunde verificatiemethoden.
 
 ### <a name="how-do-i-connect-to-sql-server-and-other-on-premises-data-sources"></a>Hoe kan ik verbinding maken met SQL Server en andere on-premises gegevensbronnen?
 Met de [lokale gegevensgateway](gateway-manage.md) kunt u verbinding maken met services in uw lokale netwerk.

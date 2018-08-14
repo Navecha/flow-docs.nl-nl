@@ -15,12 +15,12 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 11/22/2017
 ms.author: barathb
-ms.openlocfilehash: a3f1e21cfbf00749a0ef09c0363da162f0419f42
-ms.sourcegitcommit: 945614d737d5909c40029a61e050302d96e1619d
+ms.openlocfilehash: 1bcdbf3772ab2481b15bd224523dff74afc53101
+ms.sourcegitcommit: 77aae180d972373d1f251fa6a5c8f484f08ffc15
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "23439701"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39718276"
 ---
 # <a name="start-to-build-with-microsoft-flow"></a>Beginnen met bouwen met Microsoft Flow
 
@@ -56,11 +56,11 @@ Nadat u deze gegevens hebt verzonden, wordt de functie van uw API in Microsoft F
 
 ## <a name="embed-the-flow-experience-into-your-website-or-app"></a>De stroomervaring insluiten in uw website of app
 
-U kunt Microsoft Flow in uw app [insluiten](embed-flow-dev.md) om een diepgaande integratie binnen de context in te schakelen tussen uw app en alle andere services die Microsoft Flow ondersteunt. U kunt bijvoorbeeld het volgende doen:
+U kunt Microsoft Flow in uw app [insluiten](developer/embed-flow-dev.md) om een diepgaande integratie binnen de context in te schakelen tussen uw app en alle andere services die Microsoft Flow ondersteunt. U kunt bijvoorbeeld het volgende doen:
 
 * Door alle sjablonen bladeren die betrekking hebben op uw service en gebruikers een sjabloon laten selecteren.
 * De stromen beheren die gebruikers aan uw app hebben gekoppeld.
 
 ## <a name="next-steps"></a>Volgende stappen
 
-Meer informatie over het [insluiten](embed-flow-dev.md) van Microsoft Flow in uw app.
+Meer informatie over het [insluiten](developer/embed-flow-dev.md) van Microsoft Flow in uw app.
