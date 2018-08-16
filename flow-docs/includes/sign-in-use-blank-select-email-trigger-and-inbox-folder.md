@@ -7,7 +7,8 @@
     ![e-mailtrigger](media/email-triggers/email-triggers-1.png)
 4. Selecteer de map die de stroom moet controleren op binnenkomende e-mailberichten en selecteer vervolgens **Geavanceerde opties weergeven**.
    
-     Opmerking: Als u alle e-mailmappen wilt weergeven, selecteert u het pictogram **Kiezer weergeven** aan de rechterkant van het vak **Map** op de kaart **Wanneer er een nieuwe e-mail binnenkomt**.
+     >[!NOTE]
+     > Als u alle e-mailmappen wilt weergeven, selecteert u het pictogram **Kiezer weergeven** aan de rechterkant van het vak **Map** op de kaart **Wanneer er een nieuwe e-mail binnenkomt**.
    
     ![mapeigenschap](media/email-triggers/email-triggers-subject-folder.png)
 

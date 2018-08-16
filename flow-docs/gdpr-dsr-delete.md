@@ -15,12 +15,12 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 4/17/2018
 ms.author: keweare
-ms.openlocfilehash: 70206e0ed6c2b59d0dfffa0c4608ba47e0fac1dc
-ms.sourcegitcommit: ca875127f607034d7ef6a3fe270fc48e4f7eeee6
+ms.openlocfilehash: 532d3c1affe899da3125e9f512b21bf3e39ca25e
+ms.sourcegitcommit: cd3cdcff3accb9a54f002fdc33d33935b4276249
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39175127"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39520072"
 ---
 # <a name="responding-to-gdpr-data-subject-delete-requests-for-microsoft-flow"></a>Reageren op AVG-verzoeken van betrokkenen voor het verwijderen van gegevens in Microsoft Flow
 
@@ -73,7 +73,7 @@ Hier volgt de uitsplitsing van ervaringen die een beheerder ter beschikking staa
 
 *Sinds de introductie van de Common Data Service for Apps worden, als er binnen de omgeving een database wordt gemaakt, omgevingsmachtigingen en modelgestuurde app-machtigingen als records in het database-exemplaar van Common Data Service for Apps opgeslagen. Zie [Executing DSRs against Common Data Service Customer Data](https://go.microsoft.com/fwlink/?linkid=872251) (Verzoeken van betrokkenen uitvoeren op basis van klantgegevens van Common Data Service) voor informatie over het reageren op verzoeken van betrokkenen voor gebruikers die gebruikmaken van Common Data Service.
 
-\*\*Een beheerder heeft alleen toegang tot deze bronnen vanuit Microsoft Flow Maker Portal als de beheerder toegang toegewezen heeft gekregen vanuit het Microsoft Flow Admin Center.
+\*\* Een beheerder heeft alleen toegang tot deze bronnen vanuit de Microsoft Flow Maker-portal als aan de beheerder toegang is toegewezen vanuit het Microsoft Flow-beheercentrum.
 
 ## <a name="manage-delete-requests"></a>Verwijderingsaanvragen beheren
 

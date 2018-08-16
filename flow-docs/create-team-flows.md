@@ -15,12 +15,12 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 04/21/2017
 ms.author: deonhe
-ms.openlocfilehash: d4e8de2f9f67c07861297e079948a5336ff66e7f
-ms.sourcegitcommit: 945614d737d5909c40029a61e050302d96e1619d
+ms.openlocfilehash: ec7801f249ce4f3a1e33a6092726a6574a2e6d4c
+ms.sourcegitcommit: cd3cdcff3accb9a54f002fdc33d33935b4276249
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "23439683"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39520003"
 ---
 # <a name="create-team-flows"></a>Teamstromen maken
 Maak een teamstroom door anderen in uw organisatie als eigenaren toe te voegen. Alle eigenaren van een teamstroom kunnen deze acties uitvoeren:
@@ -64,6 +64,10 @@ Voer deze stappen uit om een teamstroom te maken of meer eigenaren aan een teams
     ![nieuwe eigenaar](./media/create-team-flows/addowner4.png)
    
      U hebt nu een teamstroom gemaakt.
+
+##<a name="add-a-list-as-a-co-owner"></a>Een lijst toevoegen als een mede-eigenaar
+
+U kunt SharePoint-lijsten toevoegen als mede-eigenaren van een stroom, zodat iedereen met bewerkingstoegang tot de lijst automatisch bewerkingstoegang krijgt voor de stroom. Zodra de stroom wordt gedeeld, kunt u een koppeling naar de stroom distribueren.
 
 ## <a name="remove-an-owner"></a>Een eigenaar verwijderen
 > [!IMPORTANT]

@@ -15,12 +15,12 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 02/06/2017
 ms.author: matp
-ms.openlocfilehash: 2db995eafaf8e73af7cd29b8a2469d4abaab2356
-ms.sourcegitcommit: 7d04ee86361fe5d70ee89cde06d01754ada757b5
+ms.openlocfilehash: ffce0a2fcc77d2bf2ff132e589410cc032bf63fd
+ms.sourcegitcommit: cd3cdcff3accb9a54f002fdc33d33935b4276249
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34799666"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39519888"
 ---
 # <a name="create-a-flow-by-using-dynamics-365-online"></a>Een stroom maken met behulp van Dynamics 365 (online)
 Met behulp van een Dynamics 365-connector kunt u stromen maken die worden gestart wanneer in Dynamics 365 of een andere service een gebeurtenis plaatsvindt, waardoor vervolgens een actie wordt uitgevoerd in Dynamics 365 of een andere service. 
@@ -56,6 +56,8 @@ Als geen gewenste sjabloon beschikbaar is, maakt u een volledig nieuwe stroom. I
      Selecteer voor dit scenario **Potentiële klanten**.
    
     ![Stroomgegevens](./media/connection-dynamics365/flow-details.png)
+    > [BELANGRIJK] Als u wilt dat de Dynamics 365-entiteit wordt geactiveerd met de stroom, moet voor de definitie van de entiteit Wijzigingen bijhouden zijn ingeschakeld. Zie [Bijhouden van wijzigingen inschakelen om gegevenssynchronisatie te beheren](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/admin/enable-change-tracking-control-data-synchronization)
+    
 7. Klik of tik op **Nieuwe stap** en vervolgens op **Een actie toevoegen**.
 8. Klik of tik op **Dynamics 365 - een nieuwe record maken**.
 9. Selecteer onder **Organisatienaam** de Dynamics 365-instantie waarin de stroom de record moet maken. Dit hoeft niet dezelfde instantie te zijn vanwaar de gebeurtenis wordt geactiveerd.
