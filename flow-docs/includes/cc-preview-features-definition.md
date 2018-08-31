@@ -1,0 +1,1 @@
+Preview-functies zijn niet bedoeld voor gebruik in productie-omgevingen en hebben mogelijk een beperkte functionaliteit. Deze functies zijn beschikbaar voordat een officiële release plaatsvindt, zodat klanten vroegtijdig toegang kunnen krijgen en feedback kunnen geven.
