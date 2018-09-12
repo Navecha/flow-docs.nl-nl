@@ -13,14 +13,14 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 01/31/2018
+ms.date: 06/19/2018
 ms.author: stepsic
-ms.openlocfilehash: 0595fa9113d85c6517392149f510a3a11df36061
-ms.sourcegitcommit: cd3cdcff3accb9a54f002fdc33d33935b4276249
+ms.openlocfilehash: dcdd82b358737867372c1adece907158fa2ee77b
+ms.sourcegitcommit: 4489d9587bfb1ef197df7f4c0253a3ab4ecb1d1d
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39519865"
+ms.lasthandoff: 08/16/2018
+ms.locfileid: "43774228"
 ---
 # <a name="limits-and-configuration-in-microsoft-flow"></a>Limieten en configuratie in Microsoft Flow
 Dit onderwerp bevat informatie over de huidige limieten en configuratiegegevens voor stromen.
@@ -46,7 +46,9 @@ Er gelden limieten voor één uitgaande aanvraag.
 
 | Naam | Limiet |
 | --- | --- |
-| Nieuwe pogingen |4 |
+| Nieuwe pogingen |90 | De standaard is 4. Om de standaard gebruikte actie-instellingen te wijzigen | 
+| Maximale vertraging nieuwe poging |1 dag | |
+| Minimale vertraging nieuwe poging |5 seconden | |
 
 ## <a name="run-duration-and-retention"></a>Uitvoeringsduur en bewaarperiode
 Dit zijn de limieten voor het uitvoeren van één stroom.
@@ -64,10 +66,12 @@ Dit zijn limieten voor het uitvoeren van één stroom.
 
 | Naam | Limiet | Opmerkingen |
 | --- | --- | --- |
-| ForEach-items |5000 |Met de filteractie kunt u naar behoefte grotere matrices filteren. |
+| Op alle items toepassen |100.000 |100.000 is alleen beschikbaar bij Premium-abonnementen. Anders geldt er een limiet van 5000. Met de filteractie kunt u naar behoefte grotere matrices filteren. |
 | Until-iteraties |5000 | |
-| SplitOn-items |5000 | |
-| Parallelle uitvoering ForEach |1 | |
+| SplitOn-items |100.000 |Net als bij ‘Op alle toepassen’ is de limiet 5000, tenzij u een Premium-abonnement hebt. |
+| Op alle parallelle uitvoeringen toepassen |50 |Standaard worden lussen opeenvolgend uitgevoerd (parallelle uitvoering is in wezen 1) U kunt er maximaal 50 parallel configureren |
+| Actie-uitvoeringen per 5 minuten | 100.000 | Naar behoefte kunt u ook een werkbelasting over meer dan één stroom verdelen. |
+| Acties gelijktijdig met uitgaande aanroepen | ~2500 | Naar behoefte kunt u het aantal gelijktijdige aanvragen verminderen of de duur verkorten. | 
 
 ## <a name="definition-limits"></a>Definitielimieten
 Dit zijn limieten voor één stroom.

@@ -13,14 +13,14 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 06/04/2018
+ms.date: 07/21/2018
 ms.author: stepsic
-ms.openlocfilehash: 61c6382a35a55ca18dbfbce5b5b6fe38dc6ee0f2
-ms.sourcegitcommit: 3f7f5a941466485cd16e78239fcfd89d71f501e0
+ms.openlocfilehash: 063fd316f1c4e1679935fb7a83560441d2704701
+ms.sourcegitcommit: 4489d9587bfb1ef197df7f4c0253a3ab4ecb1d1d
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34755570"
+ms.lasthandoff: 08/16/2018
+ms.locfileid: "43774303"
 ---
 # <a name="release-notes"></a>Releaseopmerkingen
 ## <a name="top-questions"></a>Belangrijkste vragen
@@ -45,6 +45,35 @@ ms.locfileid: "34755570"
 3. Bestandstriggers worden niet gestart voor bestanden die worden toegevoegd in geneste mappen in de map die u selecteert.
 
 ## <a name="whats-new"></a>Wat is er nieuw?
+
+### <a name="release-2018-07-23"></a>Release 07-23-2018
+
+- **Stromen vanuit Excel maken en uitvoeren** - Met de nieuwe knop **Flow** (toegankelijk via het tabblad **Gegevens** op het lint), kunt u vanuit Flow automatiseringen maken en activeren voor uw tabelgegevens in Excel. Automatiseer de verwerking of het kopiëren/importeren van gegevens.
+- **Bedrijfsprocesstromen maken** - Een bedrijfsprocesstroom is een nieuwe type stateful en human-interactive stroom gebaseerd op de Common Data Service voor apps. Gebruik deze nieuwe stromen om een aantal fases en stappen te definiëren die mensen kunnen volgen. Naar behoefte kunnen zij daarbij naar vorige of volgende fasen/stappen gaan.
+- **Stromen voor Microsoft To-Do maken in de Outlook web-app** - Als iemand in de Outlook web-app wordt \@vermeld, zien zij een snelkoppeling voor het maken van een stroom. Deze stroom maakt automatisch taken voor de \@vermelde persoon in Microsoft To-Do op basis van de inhoud van het e-mailbericht.
+- **Ondersteuning voor SharePoint-weergaven** - De SharePoint-connector ondersteunt nu de selectie van een specifieke SharePoint-weergave van triggers en acties. Hierdoor worden de kolommen gefilterd tot enkel die velden die zich in de geselecteerde weergave bevinden.
+- **Vier nieuwe connectors** - Er zijn vier nieuw connectors toegevoegd: Azure IoT Central (een uiterst schaalbare SaaS-oplossing voor IoT), Survey 123, LMS365 en ProjectWise Design Integration.
+
+[Lees meer informatie en stel vragen](https://flow.microsoft.com/blog/excel-bpf-todo-and-more/) over deze release.
+
+### <a name="release-2018-06-29"></a>Release 06-29-2018
+
+- **Aanvraag voor afmelden stroom ingebouwd in SharePoint** - Wanneer u een bestand of item in SharePoint selecteert, ziet u de nieuwe functie **Aanvraag voor afmelden** stroom. Deze stroom vereist geen configuratie of instelling en verstuurt een afmeldingsaanvraag met een enkele muisklik.
+- **Twee nieuwe connectors** - er zijn twee nieuwe connectors toegevoegd: Cloud Connect Studio en PoliteMail.
+- **Verbeteringen aan geschiedenis en maakpagina** - De lijst voor Uitvoeringsgeschiedenis is aangevuld met exacte runtimes, en de maakpagina met een nieuwe stapsgewijze instructievideo.
+
+[Lees meer informatie en stel vragen](https://flow.microsoft.com/blog/request-sign-off-four-connectors/) over deze release.
+
+### <a name="release-2018-06-08"></a>Release 06-08-2018
+
+- **PowerShell-cmdlets** - Zowel makers van stromen als tenantbeheerders kunnen nu PowerShell gebruiken om hun stromen programmatisch te beheren.
+- **Verbeteringen aan de Flow-bot in Teams** - De Flow-bot in Microsoft Teams kan stroomknoppen uitvoeren en uw stromen beschrijven.
+- **Drie nieuwe connectors** - Vanaf nu worden ook Marketo, ElasticOCR, en DynamicSignal ondersteund. 
+- **Meer informatie bij delen** - Er is aanvullende informatie toegevoegd bij het delen van stromen (of het uitvoeren van gedeelde stromen). Zo weet u precies welke machtigen andere mensen krijgen.
+- **Automatische inkorting van SharePoint-URL’s** - Wanneer u een SharePoint-URL in de browser kopieert, kan de URL extra tekst naast de site bevatten. Deze tekst wordt nu automatisch verwijderd, zodat u doelgericht met de site kunt verbinden.
+- **Documentatie over AVG-verzoeken** - Voor bedrijven is er een uitgebreide handleiding en set hulpmiddelen opgesteld voor de behandeling van verzoeken inzake privacyrechten van betrokkenen.
+
+[Lees meer informatie en stel vragen](https://flow.microsoft.com/blog/powershell-flow-bot-marketo/) over deze release.
 
 ### <a name="release-2018-05-21"></a>Release 21-05-2018
 
