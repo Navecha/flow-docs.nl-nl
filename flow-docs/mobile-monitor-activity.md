@@ -15,12 +15,17 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 06/11/2016
 ms.author: adiregev
-ms.openlocfilehash: a9318a1571d46635babbb0b061ff65734ad172fe
-ms.sourcegitcommit: 945614d737d5909c40029a61e050302d96e1619d
+search.app:
+- Flow
+search.audienceType:
+- flowmaker
+- enduser
+ms.openlocfilehash: 3ba49aff12118d79d41a7b76f7c8a0f7e3f1d01b
+ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "23440151"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44689681"
 ---
 # <a name="monitor-activity-in-microsoft-flow-from-your-phone"></a>Activiteiten in Microsoft Flow bekijken op uw telefoon
 Bekijk in een overzicht hoe vaak elke stroom vandaag, gisteren of op een eerdere dag is geslaagd of mislukt. Lees de details over elke uitvoering, bijvoorbeeld wanneer die plaatsvond, hoelang elke stap duurde en waarom een uitvoering is mislukt.

@@ -15,12 +15,17 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 4/17/2018
 ms.author: keweare
-ms.openlocfilehash: 532d3c1affe899da3125e9f512b21bf3e39ca25e
-ms.sourcegitcommit: cd3cdcff3accb9a54f002fdc33d33935b4276249
+search.app:
+- Flow
+- Powerplatform
+search.audienceType:
+- admin
+ms.openlocfilehash: 77ce6e368c8cb54d360ebeaa32f1f649e30aa297
+ms.sourcegitcommit: 44bc9de9f06b64615731ceb60a4f46cfcd45b167
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39520072"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45727177"
 ---
 # <a name="responding-to-gdpr-data-subject-delete-requests-for-microsoft-flow"></a>Reageren op AVG-verzoeken van betrokkenen voor het verwijderen van gegevens in Microsoft Flow
 
@@ -276,7 +281,7 @@ Sinds de introductie van de Common Data Service for Apps worden, als er binnen d
 Navigeer naar [Omgevingen gebruiken in Microsoft Flow](https://docs.microsoft.com/flow/environments-overview-admin) voor meer informatie over het verwijderen van de machtiging van een gebruiker in een omgeving.
 
 ## <a name="delete-gateway-settings"></a>Gateway-instellingen verwijderen
-Informatie over het reageren op verwijderingsverzoeken van een betrokkene voor on-premises gegevensgateways vindt u [hier](https://docs.microsoft.com/en-us/power-bi/service-gateway-onprem#tenant-level-administration).
+Informatie over het reageren op verwijderingsverzoeken van een betrokkene voor on-premises gegevensgateways vindt u [hier](https://docs.microsoft.com/power-bi/service-gateway-onprem#tenant-level-administration).
 
 ## <a name="delete-user-details"></a>Gebruikersgegevens verwijderen
 Details van de gebruikers bieden een koppeling tussen een gebruiker en een specifieke tenant. Voordat u deze opdracht gaat uitvoeren, moet u ervoor zorgen dat alle stromen voor deze gebruiker opnieuw zijn toegewezen en/of verwijderd. Zodra die stap is voltooid, kan een beheerder gebruikersdetails verwijderen door de cmdlet **Remove-AdminFlowUserDetails** aan te roepen en uit te voeren in de Object-id voor de gebruiker.

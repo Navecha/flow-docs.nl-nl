@@ -15,12 +15,17 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 02/15/2017
 ms.author: stepsic
-ms.openlocfilehash: c0e115732e26bdeb0d7e4c3c60e1aa6c63e0ffc1
-ms.sourcegitcommit: 945614d737d5909c40029a61e050302d96e1619d
+search.app:
+- Flow
+search.audienceType:
+- flowmaker
+- enduser
+ms.openlocfilehash: bdfa1072bca2afc7c608a4dbf68b8f598dff89f1
+ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "23439773"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44689106"
 ---
 # <a name="manage-connections-in-microsoft-flow"></a>Verbindingen beheren in Microsoft Flow
 Als u een verbinding maakt in Microsoft Flow, kunt u tijdens het maken van een stroom eenvoudig toegang krijgen tot uw gegevens. Microsoft Flow bevat veelgebruikte verbindingen, waaronder SharePoint, SQL Server, Office 365, OneDrive voor Bedrijven, Salesforce, Excel, Dropbox en Twitter. Verbindingen worden gedeeld met PowerApps. Als u een verbinding maakt in het ene product, wordt de verbinding ook weergegeven in het andere.

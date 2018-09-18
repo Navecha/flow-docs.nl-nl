@@ -15,12 +15,17 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 07/20/2017
 ms.author: deonhe
-ms.openlocfilehash: 2b856dfa75e0acb7eb83525c4d64d070315b5735
-ms.sourcegitcommit: 945614d737d5909c40029a61e050302d96e1619d
+search.app:
+- Flow
+search.audienceType:
+- flowmaker
+- enduser
+ms.openlocfilehash: b41397d74c7396081154526ad2e248cb293e2460
+ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "23440187"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44689589"
 ---
 # <a name="approve-requests-on-your-mobile-device-by-using-microsoft-flow"></a>Aanvragen goedkeuren op uw mobiele apparaat met Microsoft Flow
 Als u voor een stroom bent aangewezen als fiatteur en de mobiele app voor Microsoft Flow hebt geïnstalleerd, ontvangt u een pushmelding wanneer u een aanvraag moet goedkeuren.

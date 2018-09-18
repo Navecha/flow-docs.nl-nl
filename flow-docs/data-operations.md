@@ -15,12 +15,17 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 08/02/2017
 ms.author: deonhe
-ms.openlocfilehash: aa3f61d09cb5e9b8d07124838883da9b5b9794ab
-ms.sourcegitcommit: 945614d737d5909c40029a61e050302d96e1619d
+search.app:
+- Flow
+search.audienceType:
+- flowmaker
+- enduser
+ms.openlocfilehash: c28fa7feb743db4616199246d6d517e2e1f6aff9
+ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "23440907"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44690992"
 ---
 # <a name="use-data-operations-with-microsoft-flow"></a>Gegevensbewerkingen gebruiken met Microsoft Flow
 In dit scenario maakt u kennis met enkele populaire bewerkingen van Microsoft Flow, zoals Opstellen, Lid worden, Matrix filteren, Tabel maken en JSON parseren, die beschikbaar zijn voor het manipuleren van gegevens in een stroom.

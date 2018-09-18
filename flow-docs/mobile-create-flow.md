@@ -15,12 +15,17 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 09/18/2016
 ms.author: adiregev
-ms.openlocfilehash: 27a2001e3fa154f9354ef5ad888e194f30b3d6ab
-ms.sourcegitcommit: 945614d737d5909c40029a61e050302d96e1619d
+search.app:
+- Flow
+search.audienceType:
+- flowmaker
+- enduser
+ms.openlocfilehash: f87320c61427957c02ff75675e4e15b938ac99f4
+ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "23440295"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44688324"
 ---
 # <a name="create-a-flow-from-your-phone-by-using-microsoft-flow"></a>Een stroom maken op uw telefoon met Microsoft Flow
 U kunt op uw telefoon een stroom maken door gebruik te maken van een sjabloon. Sjablonen vindt u door te zoeken in een lijst met services, door te bladeren door categorieën of door trefwoorden op te geven. Volg de stappen in dit onderwerp om een stroom te maken waarmee een pushmelding naar uw telefoon wordt verzonden wanneer u een e-mail van uw manager ontvangt.

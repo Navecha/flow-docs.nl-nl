@@ -15,12 +15,17 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 09/15/2017
 ms.author: deonhe
-ms.openlocfilehash: fc69517beb24d50432c1cbed216f28cfc0f862fb
-ms.sourcegitcommit: 945614d737d5909c40029a61e050302d96e1619d
+search.app:
+- Flow
+search.audienceType:
+- flowmaker
+- enduser
+ms.openlocfilehash: 95081295bfe0fd6c904876aaf70974575a7986c1
+ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34453257"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44690900"
 ---
 # <a name="understand-on-premises-data-gateways-for-microsoft-flow"></a>Over on-premises gegevensgateways voor Microsoft Flow
 Gebruik de on-premises gegevensgateway in combinatie met Microsoft Flow om beveiligde verbindingen tot stand te brengen met uw on-premises gegevensbronnen zoals Microsoft SQL Server.
@@ -175,7 +180,7 @@ Er is momenteel geen enkele locatie waar tenantbeheerders alle gateways kunnen b
 **Antwoord:** Nee. De gateway maakt verbinding met de gegevensbron met behulp van de opgegeven verbindingsinformatie. Zie de gateway in dit opzicht als een clienttoepassing. De gateway hoeft alleen verbinding te kunnen maken met de opgegeven server.
 
 **Vraag:** Wat is de vertraging van de gateway voor het uitvoeren van query's op een gegevensbron? Wat is de beste architectuur?
-**Antwoord:** Installeer de gateway zo dicht mogelijk bij de gegevensbron om de netwerkvertraging te minimaliseren. Als u de gateway op de gegevensbron zelf kunt installeren, zorgt dit voor minimale vertraging. Houd ook rekening met de datacenters. Als uw service bijvoorbeeld gebruikmaakt van het datacentrum VS - west en u SQL Server in een Azure VM host, dient u de Azure VM ook in VS - west onder te brengen. Dit minimaliseert vertragingen en voorkomt kosten voor uitgaand verkeer voor de Azure VM.
+**Antwoord:** Installeer de gateway zo dicht mogelijk bij de gegevensbron om de netwerkvertraging te minimaliseren. Als u de gateway op de gegevensbron zelf kunt installeren, zorgt dit voor minimale vertraging. Houd ook rekening met de datacenters. Als uw service bijvoorbeeld het datacenter US - west gebruikt en u SQL Server host in een virtuele machine van Azure, kunt u de Azure VM het beste ook in US - west plaatsen. Dit minimaliseert vertragingen en voorkomt kosten voor uitgaand verkeer voor de Azure VM.
 
 **Vraag:** Zijn er vereisten wat betreft netwerkbandbreedte?
 **Antwoord:** Een netwerkverbinding met een goede doorvoersnelheid wordt aanbevolen. Elke omgeving is anders en de hoeveelheid gegevens die wordt verzonden is van invloed op de resultaten. Door ExpressRoute te gebruiken, kunt u een zekere mate van doorvoer garanderen tussen uw locatie en de Azure-datacenters.

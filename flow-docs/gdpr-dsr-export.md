@@ -15,12 +15,17 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 4/24/2018
 ms.author: keweare
-ms.openlocfilehash: 5b813bbd8ba9b4e5a778d9fa424704b61ed6dd31
-ms.sourcegitcommit: 945614d737d5909c40029a61e050302d96e1619d
+search.app:
+- Flow
+- Powerplatform
+search.audienceType:
+- admin
+ms.openlocfilehash: e0f9b8e5b345b4dbc226cff2f42850bb126c09b3
+ms.sourcegitcommit: 44bc9de9f06b64615731ceb60a4f46cfcd45b167
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34552060"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45727131"
 ---
 # <a name="responding-to-gdpr-data-subject-export-requests-for-microsoft-flow"></a>Reageren op exportverzoeken van betrokkenen in het kader van de AVG met Microsoft Flow
 
@@ -210,5 +215,5 @@ Get-AdminFlowUserDetails -UserId 1b6759b9-bbea-43b6-9f3e-1af6206e0e80
 ```
 
 ## <a name="export-gateway-settings"></a>Gateway-instellingen exporteren
-Informatie over het reageren op exportverzoeken van een betrokkene voor on-premises gegevensgateways vindt u [hier](https://docs.microsoft.com/en-us/power-bi/service-gateway-onprem#tenant-level-administration).
+Informatie over het reageren op exportverzoeken van een betrokkene voor on-premises gegevensgateways vindt u [hier](https://docs.microsoft.com/power-bi/service-gateway-onprem#tenant-level-administration).
 

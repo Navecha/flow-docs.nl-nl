@@ -15,12 +15,17 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/22/2016
 ms.author: stepsic
-ms.openlocfilehash: f56b109cc0263c8464d6d7475421ab32af8888d5
-ms.sourcegitcommit: 945614d737d5909c40029a61e050302d96e1619d
+search.app:
+- Flow
+search.audienceType:
+- flowmaker
+- enduser
+ms.openlocfilehash: 6c48d79138dfdafa94e56380343840d6aa0fcbb5
+ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "29351335"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44690854"
 ---
 # <a name="build-an-approval-loop-by-using-microsoft-flow-and-the-microsoft-common-data-service"></a>Maak een goedkeuringslus met Microsoft Flow en de Microsoft Common Data Service
 Met de Common Data Service hebt u een methode in handen waarmee u stromen kunt opzetten waarbij informatie is opgeslagen in een database die onafhankelijk is van een stroom. Dit kan het beste worden geïllustreerd met goedkeuringen. Als u de status van de goedkeuring in een entiteit opslaat, kan uw stroom daar boven op werken.

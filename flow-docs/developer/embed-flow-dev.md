@@ -15,12 +15,16 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 05/09/2017
 ms.author: barathb
-ms.openlocfilehash: 1dee6ba5cfd41edb1218e7246ce329265b9ce1d2
-ms.sourcegitcommit: 77aae180d972373d1f251fa6a5c8f484f08ffc15
+search.app:
+- Flow
+search.audienceType:
+- developer
+ms.openlocfilehash: aa5e0a7d143e0e1486533131f90d6b04c6fbc20c
+ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39719206"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44690003"
 ---
 # <a name="integrate-microsoft-flow-with-websites-and-apps"></a>Microsoft Flow integreren met websites en apps
 Sluit Microsoft Flow in uw app of website in om gebruikers een eenvoudige manier te bieden om hun persoonlijke of werktaken te automatiseren.
