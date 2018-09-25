@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 4746fa74911126f3e23ed009dd109a2766dae12a
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
+ms.openlocfilehash: dc1b93553938221c3f1c995b63b984cfff913c06
+ms.sourcegitcommit: ffed9f02092fbd19fc4108aee05dd40d1a2a3755
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44690923"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "46711606"
 ---
 # <a name="get-started-with-button-trigger-tokens"></a>Aan de slag met knoptriggertokens
 ## <a name="what-are-button-trigger-tokens"></a>Wat zijn de knoptriggertokens?
@@ -97,6 +97,4 @@ U hebt zojuist een knopstroom gemaakt waarin triggertokens voor zowel de datum a
 
 ## <a name="next-steps"></a>Volgende stappen
 * [Knopstromen delen](share-buttons.md)
-* [Meer informatie over knopstromen](introduction-to-button-flows.md)  
-* [Meer informatie stromen](guided-learning/get-started.yml?tutorial-step=1)
-
+* [Meer informatie over knopstromen](introduction-to-button-flows.md)

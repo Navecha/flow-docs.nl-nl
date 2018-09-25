@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: f0e075a63331a70c32fd87a25ad0b3fdb7cf043b
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
+ms.openlocfilehash: f87b0d93b912799a4977f347d89b12421cf42e70
+ms.sourcegitcommit: ffed9f02092fbd19fc4108aee05dd40d1a2a3755
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44689957"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "46711560"
 ---
 # <a name="introducing-button-flows-with-user-input"></a>Inleiding voor knopstromen met gebruikersinvoer
 Een knopstroom maken om routinetaken uit te voeren door op een knop te tikken. De stroom aanpassen door de gebruiker de gelegenheid te geven specifieke details op te geven die worden gebruikt als de stroom wordt uitgevoerd. In dit onderwerp wordt u begeleid bij het maken van een knopstroom die invoer van de gebruiker opneemt en vervolgens de knopstroom uitvoert, met de nadruk op het leveren van de invoer van de gebruiker.
@@ -122,7 +122,6 @@ In dit scenario voert u met de mobiele app voor Microsoft-Flow de knopstroom uit
 
 ## <a name="next-steps"></a>Volgende stappen
 * [Knopstromen delen](share-buttons.md)
-* [Meer informatie stromen](guided-learning/get-started.yml?tutorial-step=1)  
 * [Meer informatie over knopstromen](introduction-to-button-flows.md)  
 * [Meer informatie over knopstromen met triggertokens](introduction-to-button-trigger-tokens.md)  
 
