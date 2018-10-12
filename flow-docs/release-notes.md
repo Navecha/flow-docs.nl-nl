@@ -13,14 +13,19 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 07/21/2018
+ms.date: 08/31/2018
 ms.author: stepsic
-ms.openlocfilehash: 063fd316f1c4e1679935fb7a83560441d2704701
-ms.sourcegitcommit: 4489d9587bfb1ef197df7f4c0253a3ab4ecb1d1d
+search.app:
+- Flow
+search.audienceType:
+- flowmaker
+- enduser
+ms.openlocfilehash: 244f3f072dd0250d4c9c4a8c62760009f54a6a45
+ms.sourcegitcommit: 44bc9de9f06b64615731ceb60a4f46cfcd45b167
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/16/2018
-ms.locfileid: "43774303"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45727246"
 ---
 # <a name="release-notes"></a>Releaseopmerkingen
 ## <a name="top-questions"></a>Belangrijkste vragen
@@ -45,6 +50,29 @@ ms.locfileid: "43774303"
 3. Bestandstriggers worden niet gestart voor bestanden die worden toegevoegd in geneste mappen in de map die u selecteert.
 
 ## <a name="whats-new"></a>Wat is er nieuw?
+
+### <a name="release-2018-08-31"></a>Release 31-08-2018
+
+- **Uw stroom testen met voorbeeldgegevens** - Gebruik voorbeeldgegevens van connectoren voor het testen van uw stroom tijdens de ontwikkeling ervan vanuit de Microsoft Flow-ontwerpfunctie. Wanneer u de stroom met voorbeeldgegevens test, bevestigt u dat de stroom wordt uitgevoerd zoals verwacht na implementatie naar productie.
+- **Vijf nieuwe connectors**: er zijn vier nieuwe connectors voor beheer toegevoegd: PowerApps voor App-ontwerpers, Power-platform voor beheerders, PowerApps voor beheerders, Microsoft Flow voor beheerders en Microsoft School Data Sync.
+
+[Lees meer informatie en stel vragen](https://flow.microsoft.com/blog/test-data-management-connectors/) over deze release.
+
+### <a name="release-2018-08-24"></a>Release 24-08-2018
+
+- **Nieuwe synchronisatiesjablonen voor agenda**: nieuwe sjablonen waarin gebeurtenissen tussen Google Agenda en Office 365 of Outlook.com worden gekopieerd.
+- **Ondersteuning voor meerdere waarden voor SharePoint**: lezen en schrijven voor velden met meerdere waarden in SharePoint van het type Choice, Person of Lookup.
+- **Verzenden van goedkeuringen namens andere gebruikers in uw organisatie**: goedkeuringen verzenden namens andere gebruikers in uw organisatie,bijvoorbeeld: de persoon die het bestand in de SharePoint-lijst heeft geüpload, in plaats van de persoon die de stroom hebt gemaakt.
+- **Meer Knopinvoertypen**: knoppen beschikken over twee nieuwe invoertypen: Getal en Ja/Nee.
+- **Updates van connectors**: een nieuwe NetDocuments-connector, verbeteringen in de Azure-connectors en meer.
+
+[Lees meer informatie en stel vragen](https://flow.microsoft.com/blog/button-types-more/) over deze release.
+
+### <a name="release-2018-08-02"></a>Release 02-08-2018
+
+Het Microsoft Flow Preview-programma is de manier om vroegtijdige toegang tot de toekomstige functionaliteit en updates voor Microsoft Flow te krijgen. U hoeft voor het verkrijgen van vroegtijdige toegang tot de nieuwste functies alleen maar een omgeving in de Preview-regio te maken en deze vervolgens te gebruiken.
+
+[Lees meer informatie en stel vragen](https://flow.microsoft.com/blog/flow-preview-program/) over deze release.
 
 ### <a name="release-2018-07-23"></a>Release 07-23-2018
 

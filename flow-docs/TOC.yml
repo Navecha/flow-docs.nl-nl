@@ -1,49 +1,101 @@
-- name: Aan de slag
+items:
+- name: Overzicht
   items:
-    - name: Aan de slag
-      href: getting-started.md
-    - name: Registreren
-      href: sign-up-sign-in.md
-    - name: Een stroom maken met een sjabloon
-      href: get-started-logic-template.md
-    - name: Een volledig nieuwe stroom maken
-      href: get-started-logic-flow.md
-    - name: Een teamstroom maken
-      href: create-team-flows.md
-    - name: Overzicht van omgevingen
-      href: environments-overview-maker.md
-    - name: Veelgestelde vragen
-      href: frequently-asked-questions.md
-- name: Een stroom bouwen
+  - name: Registreren
+    href: sign-up-sign-in.md
+  - name: Aan de slag
+    href: getting-started.md
+  - name: Begeleide training
+    href: https://docs.microsoft.com/learn/paths/automate-process-using-flow
+  - name: Een stroom maken in de browser
+    href: get-started-logic-template.md
+  - name: Een stroom maken op een telefoon
+    href: mobile-create-flow.md
+  - name: Een teamstroom maken
+    href: create-team-flows.md
+  - name: Een stroom maken die gebruikmaakt van Common Data Service
+    href: common-data-model-intro.md
+- name: Geautomatiseerde stromen
   items:
-    - name: Een actie toevoegen
-      href: multi-step-logic-flow.md
-    - name: Een voorwaarde toevoegen
-      href: add-condition.md
-    - name: Een stroom volgens planning uitvoeren
-      href: run-scheduled-tasks.md
-    - name: Een stroom activeren met e-mail
-      href: email-triggers.md
-    - name: Een lijst met items verwerken
-      href: apply-to-each.md
-    - name: Gegevensbewerkingen gebruiken
-      href: data-operations.md
-    - name: Gegevens filteren en kopiëren
-      href: odata-filters.md
-    - name: Expressies gebruiken in voorwaarden
-      href: use-expressions-in-conditions.md
-    - name: Een stroom maken met Dynamics 365
-      href: connection-dynamics365.md
-    - name: Gegevens toevoegen aan de Common Data Service
-      href: common-data-model-intro.md
-    - name: Een stroom bekijken
-      href: see-a-flow-run.md
-    - name: Een sjabloon publiceren
-      href: publish-a-template.md
-    - name: Problemen met een stroom oplossen
-      href: fix-flow-failures.md
-- name: Goedkeuringsstromen maken
+  - name: Een volledig nieuwe stroom maken
+    href: get-started-logic-flow.md
+  - name: Een stroom activeren met e-mail
+    href: email-triggers.md
+  - name: Een stroom maken met Dynamics 365
+    href: connection-dynamics365.md
+  - name: Gegevens filteren en kopiëren
+    href: odata-filters.md
+  - name: Een Flic gebruiken
+    href: flic-button-flows.md
+  - name: Een bttn gebruiken
+    href: bttn-button-flows.md
+- name: Knopstromen
   items:
+  - name: Een knopstroom maken
+    href: introduction-to-button-flows.md
+  - name: Een knopstroom met triggertokens maken
+    href: introduction-to-button-trigger-tokens.md
+  - name: Een knopstroom met gebruikersinvoer maken
+    href: button-flow-with-user-input-tokens.md
+  - name: Een knop delen
+    href: share-buttons.md
+- name: Geplande stromen
+  items:
+  - name: Een stroom volgens planning uitvoeren
+    href: run-scheduled-tasks.md
+  - name: Een lijst met items verwerken
+    href: apply-to-each.md
+- name: Bedrijfsprocesstromen
+  items:
+  - name: Overzicht bedrijfsprocesstromen
+    href: business-process-flows-overview.md
+  - name: Een bedrijfsprocesstroom maken om processen te standaardiseren
+    href: create-business-process-flow.md
+  - name: Bedrijfsprocesstromen verbeteren met vertakkingen
+    href: enhance-business-process-flows-branching.md
+- name: Common Data Service (CDS) for Apps
+  items:
+  - name: Klassieke CDS for Apps-werkstromen
+    href: workflow-processes.md
+    items:
+    - name: Werkstroomfasen en -stappen configureren
+      href: configure-workflow-steps.md
+    - name: Werkstroomprocessen controleren en beheren
+      href: monitor-manage-processes.md
+    - name: Best practices voor werkstroomprocessen
+      href: best-practices-workflow-processes.md
+  - name: Klassieke CDS for Apps-acties
+    items:
+    - name: Acties gebruiken
+      href: actions.md
+    - name: Een aangepaste actie maken
+      href: create-actions.md
+    - name: Aangepaste acties op basis van een werkstroom configureren
+      href: configure-actions.md
+    - name: Aangepaste acties op basis van een werkstroom aanroepen
+      href: invoke-custom-actions-workflow-dialog.md
+  - name: Klassieke CDS for Apps-taakstromen
+    items:
+    - name: Mobiele taakstromen maken
+      href: create-mobile-task-flow.md
+  - name: Klassieke CDS for Apps-dialoogvensters
+    items:
+    - name: Klassieke CDS for Apps-dialoogvensters gebruiken
+      href: use-cds-for-apps-dialogs.md
+    - name: Klassieke CDS for Apps-dialoogvensters vervangen
+      href: replace-dialogs.md
+- name: Procedures
+  items:
+  - name: Een actie toevoegen
+    href: multi-step-logic-flow.md
+  - name: Een voorwaarde toevoegen
+    href: add-condition.md
+  - name: Gegevensbewerkingen gebruiken
+    href: data-operations.md
+  - name: Expressies gebruiken in voorwaarden
+    href: use-expressions-in-conditions.md
+  - name: Goedkeuringsstromen
+    items:
     - name: Eenmalige goedkeuringen
       href: modern-approvals.md
     - name: Opeenvolgende goedkeuringen
@@ -56,64 +108,61 @@
       href: common-data-model-approve.md
     - name: Goedkeuringsaanvragen formatteren
       href: approvals-markdown-support.md
-- name: De mobiele app gebruiken
+  - name: Stromen op een telefoon beheren
+    href: mobile-manage-flows.md
+  - name: Een sjabloon publiceren
+    href: publish-a-template.md
+- name: Probleem oplossen
   items:
-    - name: Een stroom maken
-      href: mobile-create-flow.md
-    - name: Een knopstroom maken
-      href: introduction-to-button-flows.md
-    - name: Een knopstroom met triggertokens maken
-      href: introduction-to-button-trigger-tokens.md
-    - name: Een knopstroom met gebruikersinvoer maken
-      href: button-flow-with-user-input-tokens.md
-    - name: Een knop delen
-      href: share-buttons.md
-    - name: Stroomactiviteit controleren
-      href: mobile-monitor-activity.md
-    - name: Uw stromen beheren
-      href: mobile-manage-flows.md
-- name: Fysieke apparaten gebruiken
+  - name: Een stroom bekijken
+    href: see-a-flow-run.md
+  - name: Stroomactiviteit op een telefoon controleren
+    href: mobile-monitor-activity.md
+  - name: Problemen met een stroom oplossen
+    href: fix-flow-failures.md
+- name: Verbinding maken met gegevens
   items:
-    - name: Een Flic gebruiken
-      href: flic-button-flows.md
-    - name: Een bttn gebruiken
-      href: bttn-button-flows.md
-- name: Verbindingen
+  - name: Beschikbare verbindingen
+    href: https://go.microsoft.com/fwlink/?linkid=832211
+  - name: Verbindingen beheren
+    href: add-manage-connections.md
+  - name: Gateways beheren
+    href: gateway-manage.md
+  - name: Gateways begrijpen
+    href: gateway-reference.md
+- name: Voor ontwikkelaars
   items:
-    - name: Beschikbare verbindingen
-      href: 'https://go.microsoft.com/fwlink/?linkid=832211'
-    - name: Verbindingen beheren
-      href: add-manage-connections.md
-    - name: Gateways beheren
-      href: gateway-manage.md
-    - name: Gateways begrijpen
-      href: gateway-reference.md
-- name: Ontwikkelen voor Microsoft Flow
-  items:
-    - name: 'Microsoft Flow voor bedrijfsontwikkelaars, partners en ISV''s'
-      href: dev-enterprise-intro.md
-    - name: Aangepaste connectors bouwen en certificeren
-      href: register-custom-api.md
-    - name: Integreren met websites en andere technologieën
-      href: embed-flow-dev.md
-    - name: Laat klanten uw stromen uitproberen
-      href: dev-appsource-test-drive.md
+  - name: Microsoft Flow voor bedrijfsontwikkelaars, partners en ISV's
+    href: ./developer/dev-enterprise-intro.md
+  - name: Aangepaste connectors bouwen en certificeren
+    href: ./developer/register-custom-api.md
+  - name: Integreren met websites en andere technologieën
+    href: ./developer/embed-flow-dev.md
+  - name: Laat klanten uw stromen uitproberen
+    href: ./developer/dev-appsource-test-drive.md
+  - name: Werken met bedrijfsprocesstromen met behulp van code
+    href: ./developer/business-process-flows-code.md
+    items:
+    - name: 'Voorbeeld: Werken met bedrijfsprocesstromen'
+      href: ./developer/sample-work-business-process-flows.md
+  - name: Aangepaste CDS for Apps-werkstroomactiviteiten
+    href: ./developer/custom-cds-for-apps-workflow-activities.md
 - name: Beheer
   items:
-    - name: Vragen en antwoorden over stromen in uw organisatie
-      href: organization-q-and-a.md
-    - name: Prijzen
-      href: billing-questions.md
-    - name: Inleiding tot het beheercentrum
-      href: admin-center-introduction.md
-    - name: Omgevingen beheren
-      href: environments-overview-admin.md
-    - name: Een beleid instellen om te voorkomen dat gegevens verloren gaan
-      href: prevent-data-loss.md
-    - name: Inleiding tot gegevensgroepen
-      href: introduction-to-data-groups.md
-- name: Reageren op DSR-verzoeken
-  items:
+  - name: Vragen en antwoorden over stromen in uw organisatie
+    href: organization-q-and-a.md
+  - name: Prijzen
+    href: billing-questions.md
+  - name: Inleiding tot het beheercentrum
+    href: admin-center-introduction.md
+  - name: Omgevingen beheren
+    href: environments-overview-admin.md
+  - name: Een beleid instellen om te voorkomen dat gegevens verloren gaan
+    href: prevent-data-loss.md
+  - name: Inleiding tot gegevensgroepen
+    href: introduction-to-data-groups.md
+  - name: Reageren op DSR-verzoeken
+    items:
     - name: Overzicht
       href: gdpr-dsr-summary.md
     - name: Verzoeken ontdekken
@@ -122,8 +171,8 @@
       href: gdpr-dsr-export.md
     - name: Aanvragen verwijderen
       href: gdpr-dsr-delete.md
-- name: DSR-aanvragen voor Microsoft-accounts
-  items:
+  - name: DSR-aanvragen voor Microsoft-accounts
+    items:
     - name: Overzicht
       href: gdpr-dsr-summary-msa.md
     - name: Verzoeken ontdekken
@@ -136,9 +185,25 @@
       href: gdpr-dsr-accountclose-msa.md
 - name: Verwijzing
   items:
-    - name: Overzicht van de regio's
-      href: regions-overview.md
-    - name: Limieten en configuratie
-      href: limits-and-config.md
-    - name: Releaseopmerkingen
-      href: release-notes.md
+  - name: Overzicht van de regio's
+    href: regions-overview.md
+  - name: Limieten en configuratie
+    href: limits-and-config.md
+  - name: Releaseopmerkingen
+    href: release-notes.md
+  - name: Veelgestelde vragen
+    href: frequently-asked-questions.md
+- name: Leren van anderen
+  items:
+  - name: Webinars
+    href: https://flow.microsoft.com/blog/category/webinars/
+  - name: Blog
+    href: https://flow.microsoft.com/blog/
+  - name: Forums
+    href: https://powerusers.microsoft.com/t5/Microsoft-Flow-Community/ct-p/FlowCommunity
+ms.openlocfilehash: 0ea74141e1c80b2f550ca5f43191a40c1b5aad58
+ms.sourcegitcommit: f7985b96afe68b079b7fd4a6d04cd0a042d893e0
+ms.translationtype: HT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47188519"
