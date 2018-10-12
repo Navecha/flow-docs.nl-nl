@@ -5,7 +5,7 @@ services: ''
 suite: flow
 documentationcenter: na
 author: stepsic-microsoft-com
-manager: anneta
+manager: kvivek
 editor: ''
 tags: ''
 ms.service: flow
@@ -15,18 +15,27 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/31/2017
 ms.author: stepsic
-ms.openlocfilehash: 11c8d9846982cfd372df787b6a7c9e6584d61ae5
-ms.sourcegitcommit: 945614d737d5909c40029a61e050302d96e1619d
+search.app:
+- Flow
+search.audienceType:
+- flowmaker
+- enduser
+ms.openlocfilehash: cfd337180d1517df67864e239b611f6283e3af14
+ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "23439989"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44689773"
 ---
 # <a name="get-started-with-microsoft-flow"></a>Aan de slag met Microsoft Flow #
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/iMteXfAvDSE?list=PL8nfc9haGeb55I9wL9QnWyHp3ctU2_ThF" frameborder="0" allowfullscreen></iframe>
 
 Welkom! Microsoft Flow is een service die u helpt om geautomatiseerde werkstromen tussen uw favoriete apps en services te maken om onder andere bestanden te synchroniseren, meldingen te ontvangen en gegevens te verzamelen.
+
+De belangrijkste typen stromen zijn [geautomatiseerde stromen](get-started-logic-flow.md), [knopstromen](introduction-to-button-flows.md), [geplande stromen](run-scheduled-tasks.md) en [bedrijfsprocesstromen](business-process-flows-overview.md).
+
+Als u een aanpasser voor Dynamics 365 voor klantcontacten bent, bent u mogelijk ook bekend met klassieke Common Data Service voor Apps-processen met onder andere, [werkstromen](configure-workflow-steps.md), [acties](create-actions.md), [mobiele taakstromen](create-mobile-task-flow.md) en [dialoogvensters](use-cds-for-apps-dialogs.md).
 
 De eerste stap is u [registreren](sign-up-sign-in.md). Als u al een account bij Microsoft Flow hebt, [meldt u zich aan](https://flow.microsoft.com/signin) op uw tablet, computer of zelfs uw telefoon.
 

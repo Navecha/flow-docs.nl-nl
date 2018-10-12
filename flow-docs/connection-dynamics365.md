@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 9a054ab8179d4c2a06cbab95cd2633088bbf7458
-ms.sourcegitcommit: 44bc9de9f06b64615731ceb60a4f46cfcd45b167
+ms.openlocfilehash: c780b3d305fbd5549f9c7ffc2a23571007dac7a7
+ms.sourcegitcommit: f7985b96afe68b079b7fd4a6d04cd0a042d893e0
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45727200"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47188611"
 ---
 # <a name="create-a-flow-by-using-dynamics-365-online"></a>Een stroom maken met behulp van Dynamics 365 (online)
 Met behulp van een Dynamics 365-connector kunt u stromen maken die worden gestart wanneer in Dynamics 365 of een andere service een gebeurtenis plaatsvindt, waardoor vervolgens een actie wordt uitgevoerd in Dynamics 365 of een andere service. 
@@ -61,7 +61,7 @@ Als geen gewenste sjabloon beschikbaar is, maakt u een volledig nieuwe stroom. I
      Selecteer voor dit scenario **Potentiële klanten**.
    
     ![Stroomgegevens](./media/connection-dynamics365/flow-details.png)
-    > [BELANGRIJK] Als u wilt dat de Dynamics 365-entiteit wordt geactiveerd met de stroom, moet voor de definitie van de entiteit Wijzigingen bijhouden zijn ingeschakeld. Zie [Bijhouden van wijzigingen inschakelen om gegevenssynchronisatie te beheren](https://docs.microsoft.com/dynamics365/customer-engagement/admin/enable-change-tracking-control-data-synchronization)
+    > [BELANGRIJK] Als u wilt dat de Dynamics 365-entiteit wordt geactiveerd met de stroom, moet voor de definitie van de entiteit **Wijzigingen bijhouden** zijn ingeschakeld. Zie [Bijhouden van wijzigingen inschakelen om gegevenssynchronisatie te beheren](https://docs.microsoft.com/dynamics365/customer-engagement/admin/enable-change-tracking-control-data-synchronization)
     
 7. Klik of tik op **Nieuwe stap** en vervolgens op **Een actie toevoegen**.
 8. Klik of tik op **Dynamics 365 - een nieuwe record maken**.

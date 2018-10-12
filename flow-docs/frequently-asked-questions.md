@@ -15,12 +15,17 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 03/15/2017
 ms.author: stepsic
-ms.openlocfilehash: af179e30c3b8b7c6d4200f10f122f0d928526f1b
-ms.sourcegitcommit: 77aae180d972373d1f251fa6a5c8f484f08ffc15
+search.app:
+- Flow
+search.audienceType:
+- flowmaker
+- enduser
+ms.openlocfilehash: 15f7a58f6cee58d588cf10976cabf55b800f28ce
+ms.sourcegitcommit: ffed9f02092fbd19fc4108aee05dd40d1a2a3755
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39718299"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "46711652"
 ---
 # <a name="frequently-asked-questions"></a>Veelgestelde vragen
 ## <a name="audience-and-strategy"></a>Publiek en de strategie
@@ -43,8 +48,23 @@ Microsoft Flow is onderdeel van een krachtig en flexibel platform voor zakelijke
 ### <a name="what-do-i-need-to-use-microsoft-flow"></a>Wat heb ik nodig om met Microsoft Flow te kunnen werken?
 Als u Microsoft Flow wilt gebruiken, hebt u alleen een webbrowser en een e-mailadres nodig.
 
-### <a name="what-browsers-does-microsoft-flow-support"></a>Welke browsers worden ondersteund door Microsoft Flow?
-Microsoft Flow ondersteunt Microsoft Edge en de huidige versie van Chrome en Safari.
+### <a name="what-browsers-and-devices-can-i-use-with-microsoft-flow"></a>Welke browsers en apparaten kan ik gebruiken met Microsoft Flow?
+
+U kunt Microsoft Flow uitvoeren op alle moderne apparaten en browsers.
+
+#### <a name="supported-devices"></a>Ondersteunde apparaten
+
+Microsoft Flow draait moeiteloos op moderne apparaten. Als u Microsoft Flow moet beheren vanaf een mobiel apparaat, wordt aanbevolen de mobiele Microsoft Flow-app te proberen die beschikbaar is op [iPhone](https://itunes.apple.com/app/microsoft-flow/id1094928825?ls=1&mt=8), [Android](https://play.google.com/store/apps/details?id=com.microsoft.flow) en [Windows Phone](https://www.microsoft.com/p/microsoft-flow/9nkn0p5l9n84?rtc=1#activetab=pivot:overviewtab).
+
+#### <a name="supported-browsers"></a>Ondersteunde browsers
+
+U wordt aangeraden om de meest recente browser te gebruiken die compatibel is met het besturingssysteem. De volgende browsers worden ondersteund:
+
+* Microsoft Edge
+* Internet Explorer 11
+* Safari
+* Chrome
+* Firefox
 
 ### <a name="which-email-addresses-are-supported"></a>Welke e-mailadressen worden ondersteund?
 Microsoft Flow biedt ondersteuning voor alle e-mailadressen, behalve adressen die op .gov en .mil eindigen.  
@@ -125,6 +145,10 @@ Microsoft Flow is de opvolger van SharePoint Designer voor veel gangbare bedrijf
 ### <a name="how-does-microsoft-flow-ensure-that-corporate-data-isnt-accidentally-released-to-social-media-services"></a>Hoe zorgt Microsoft Flow ervoor dat bedrijfsgegevens niet per ongeluk terechtkomen bij sociale mediaservices?
 Beheerders kunnen een [beleid ter preventie van gegevensverlies](prevent-data-loss.md) maken om ervoor te zorgen dat in Microsoft Flow alleen goedgekeurde services worden gebruikt.
 
+### <a name="does-microsoft-flow-support-service-accounts"></a>Worden serviceaccounts ondersteund door Microsoft Flow?
+
+Hoewel u met een serviceaccount stromen kunt maken, wordt afgeraden dit te doen als de referenties voor de serviceaccount worden gedeeld.
+
 ## <a name="licensing"></a>Licentieverlening
 ### <a name="will-microsoft-flow-still-have-a-free-or-trial-option"></a>Blijft de gratis versie of proefversie behouden voor Microsoft Flow?
 Ja. U kunt gebruikmaken van een gratis versie met beperkte gebruikersrechten of u kunt zich registreren voor een gratis proefversie van Microsoft Flow van 90 dagen. U kunt op elk moment tijdens de proefperiode uw abonnement activeren.
@@ -134,5 +158,5 @@ Microsoft Flow heeft zowel gratis als betaalde serviceniveaus. [Meer informatie 
 
 ## <a name="learn-more"></a>Meer informatie
 
-* Volg de [begeleide training](guided-learning/index.yml) voor Microsoft Flow
+* Volg de [begeleide training](https://docs.microsoft.com/learn/paths/automate-process-using-flow) voor Microsoft Flow
 * Leer de basisbeginselen van Microsoft Flow in [Aan de slag](getting-started.md)
