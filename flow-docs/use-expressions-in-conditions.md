@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 430d29c4520cbe28801b6912b58a5819a59b5168
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
+ms.openlocfilehash: 81aa718837fa14615459f3688a282c25cb99bab6
+ms.sourcegitcommit: dc188618c36583b20af3e838d72bd7b020575d7d
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44690532"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48874432"
 ---
 # <a name="use-expressions-in-conditions-to-check-multiple-values"></a>Gebruik expressies in voorwaarden om meerdere waarden te controleren
 In dit overzicht leert u hoe u expressies en **Voorwaarden** kunt gebruiken om in de **Geavanceerde modus** meerdere waarden te vergelijken.
@@ -44,7 +44,7 @@ Expressie|Beschrijving|Voorbeeld
 |[greater](#use-the-greater-expression)|Neemt twee argumenten en retourneert 'true' als het eerste argument groter is dan het tweede argument. <br><b>Opmerking</b>: De ondersteunde typen zijn geheel getal, float en tekenreeks.|Deze expressie retourneert 'false':<br>greater(10,10)
 |greaterOrEquals|Neemt twee argumenten en retourneert 'true' als het eerste argument groter is dan of gelijk is aan het tweede argument. <br><b>Opmerking</b>: De ondersteunde typen zijn geheel getal, float en tekenreeks.|Deze expressie retourneert 'false':<br>greaterOrEquals(10,100)
 |[empty](#use-the-empty-expression)|Retourneert 'true' als het object, de matrix of de tekenreeks leeg is.|Deze expressie retourneert 'true':<br>empty('')
-|not|Neemt twee argumenten en retourneert 'true' als beide argumenten onwaar zijn. <br><b>Opmerking</b>: Beide argumenten moeten Booleaanse waarden zijn.|Deze expressie retourneert 'true':<br>not(contains('200 Success','Fail'))
+|not|Retourneert het tegenovergestelde van een Booleaanse waarde. |Deze expressie retourneert 'true':<br>not(contains('200 Success','Fail'))
 |if|Retourneert een specifieke waarde als de expressie tot 'true' of 'false' leidt.|Deze expressie retourneert 'ja':<br>if(equals(1, 1), 'ja', 'nee')
 
 ## <a name="prerequisites"></a>Vereisten
