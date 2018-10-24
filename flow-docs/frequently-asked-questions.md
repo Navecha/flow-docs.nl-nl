@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 15f7a58f6cee58d588cf10976cabf55b800f28ce
-ms.sourcegitcommit: ffed9f02092fbd19fc4108aee05dd40d1a2a3755
+ms.openlocfilehash: 1d2560a2a15a77a516701bce977c5bed9fbbe1cf
+ms.sourcegitcommit: c8646cff9ca510203cd0414d1be93a7d12e6018d
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "46711652"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48892399"
 ---
 # <a name="frequently-asked-questions"></a>Veelgestelde vragen
 ## <a name="audience-and-strategy"></a>Publiek en de strategie
@@ -133,7 +133,7 @@ In de volgende tabel kunt u zien hoe uw stroom reageert wanneer deze opnieuw wor
 
 Type trigger|Beschrijving
 -------|--------
-Polling, zoals de trigger voor **herhaling**|Wanneer de stroom weer wordt ingeschakeld, worden alle gebeurtenissen verwerkt die onverwerkt of in behandeling zijn.
+Polling, zoals de trigger voor **herhaling**|Wanneer de stroom weer wordt ingeschakeld, worden alle gebeurtenissen verwerkt die onverwerkt of in behandeling zijn. Verwijder de stroom als u in behandeling zijnde items niet wilt verwerken.
 Webhook|Wanneer de stroom weer wordt ingeschakeld, worden hierdoor alleen nieuwe gebeurtenissen verwerkt die worden gegenereerd nadat de stroom is ingeschakeld.
 
 ### <a name="what-regions-and-languages-does-microsoft-flow-support"></a>Welke regio's en talen ondersteunt Microsoft Flow?
