@@ -22,12 +22,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 94c38a54fec91e6a480cd90d0a72f19ca56ae51c
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
+ms.openlocfilehash: bba5b203782cfa813de6ddc509a8be604e5e146b
+ms.sourcegitcommit: 50ea1cdd763863a2cbc88f9f965bdf9351f1059c
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44689520"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51225535"
 ---
 # <a name="best-practices-for-workflow-processes"></a>Aanbevolen procedures voor werkstroomprocessen
 
@@ -61,7 +61,7 @@ Voor werkstromen die niet op de achtergrond worden uitgevoerd (synchroon) wordt 
 ![De optie Logboeken bijhouden voor mislukte werkstromen](media/keep-logs-for-workflows.png)
 
 ## <a name="limit-the-number-of-workflows-that-update-the-same-entity"></a>Beperk het aantal werkstromen waarmee dezelfde entiteit wordt bijgewerkt
-Meer dan één werkstroom uitvoeren waarmee dezelfde entiteit wordt bijgewerkt, kan problemen veroorzaken in verband met het vergrendelen van resources. Stelt u zich verschillende werkstromen voor die worden uitgevoerd waarbij elke update voor een verkoopkans een update activeert voor het gekoppelde account. Meerdere exemplaren van deze werkstromen die op hetzelfde moment worden uitgevoerd en pogen hetzelfde accountrecord bij te werken, kunnen resulteren in problemen in verband met het vergrendelen van resources. Er treden werkstroomstoringen op en er wordt een foutbericht vastgelegd, zoals ** SQL time-out: kan de resource * resourcenaam *** niet vergrendelen. 
+Meer dan één werkstroom uitvoeren waarmee dezelfde entiteit wordt bijgewerkt, kan problemen veroorzaken in verband met het vergrendelen van resources. Stelt u zich verschillende werkstromen voor die worden uitgevoerd waarbij elke update voor een verkoopkans een update activeert voor het gekoppelde account. Meerdere exemplaren van deze werkstromen die op hetzelfde moment worden uitgevoerd en pogen hetzelfde accountrecord bij te werken, kunnen resulteren in problemen in verband met het vergrendelen van resources. Er treden werkstroomstoringen op en er wordt een foutbericht vastgelegd, zoals **SQL time-out: kan de resource _resourcenaam_** niet vergrendelen. 
 
   
 <a name="BKMK_DocumentChangesUsingNotes"></a>   
