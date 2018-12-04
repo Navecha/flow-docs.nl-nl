@@ -15,10 +15,10 @@ search.app:
 search.audienceType:
 - developer
 ms.openlocfilehash: ae3633047bda556058c8e2ec94e6411e7f277e76
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
+ms.sourcegitcommit: 50ea1cdd763863a2cbc88f9f965bdf9351f1059c
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/12/2018
+ms.lasthandoff: 11/28/2018
 ms.locfileid: "44691061"
 ---
 # <a name="work-with-business-process-flows-using-code"></a>Werken met bedrijfsprocesstromen met behulp van code
@@ -354,7 +354,7 @@ De standaardinstelling is dat voor een entiteit waarvoor meerdere bedrijfsproces
 1. Identificeer alle bedrijfsprocesstromen die van toepassing zijn op de nieuwe entiteitsrecord, op basis van het kenmerk **Workflow.PrimaryEntity** van de records met de definitie van de bedrijfsprocesstromen.
 2. Identificeer de definities van de bedrijfsprocesstromen waartoe de huidige gebruiker toegang heeft. Zie [Beveiliging beheren voor bedrijfsprocesstromen](#BPFSecurity) eerder in dit onderwerp voor informatie over hoe de toegang tot een bedrijfsprocesstroom wordt bepaald en beheerd.<br/>  
 3. Alle definities van bedrijfsprocesstromen in het systeem zijn onderhevig aan een globale volgorde per entiteit. De volgorde van de bedrijfsprocesstromen wordt opgeslagen in het kenmerk **Workflow.ProcessOrder**. De definities van de bedrijfsprocesstroom voor een entiteit worden op basis van deze volgorde gesorteerd en de definitie met de laagste positie wordt geselecteerd.
-4. Als de entiteitsrecord wordt gemaakt van een bedrijfs-app (app-module), is het zo dat er nog één filterniveau wordt toegepast om de bedrijfsprocesstroom te kiezen die automatisch wordt toegepast op de nieuwe entiteitsrecord. Als gebruikers werken in een app, hebben ze alleen toegang tot relevante entiteiten, bedrijfsprocesstromen, weergaven en formulieren waartoe ze toegang hebben op basis van de beveiligingsrollen die aan de bedrijfs-app zijn toegewezen. 
+4. Als de entiteitsrecord wordt gemaakt van een bedrijfs-app (app-module), is het zo dat er nog één filterniveau wordt toegepast om de bedrijfsprocesstroom te kiezen die automatisch wordt toegepast op de nieuwe entiteitsrecord. Als gebruikers werken in een app, hebben ze alleen toegang tot relevante entiteiten, bedrijfsprocesstromen, weergaven en formulieren waartoe ze toegang hebben op basis van de beveiligingsrollen die aan de bedrijfs-app zijn toegewezen. 
     - Als de bedrijfs-app geen bedrijfsprocesstroom bevat, wordt een bedrijfsprocesstroom toegepast zoals wordt beschreven tot stap 3.
     - Als de bedrijfs-app een of meer bedrijfsprocesstromen heeft, zijn alleen de bedrijfsprocesstromen die aanwezig zijn in de app van toepassing. Wanneer de gebruiker werkt in de context van een bedrijfs-app, wordt de lijst met bedrijfsprocesstromen uit stap 3 in dit geval verder gefilterd op de stromen die deel uitmaken van de bedrijfs-app die aanwezig zijn in de app-module, en worden deze gesorteerd op de procesvolgorde. 
     - Als in een bedrijfs-app geen bedrijfsprocesstroom beschikbaar is voor de entiteit of alleen een stroom waartoe de gebruiker geen toegang heeft, wordt er geen bedrijfsprocesstroom toegepast voor de nieuwe entiteitsrecord.
