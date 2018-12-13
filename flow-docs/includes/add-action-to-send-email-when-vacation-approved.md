@@ -16,5 +16,5 @@
    
      Deze kaart is een sjabloon voor het e-mailbericht dat wordt verzonden wanneer de status van de vakantieaanvraag wordt gewijzigd.
    
-     Opmerking: gebruik in het vak **Berichttekst** op de kaart **Een e-mail verzenden** het token **Opmerkingen** van de actie **Goedkeuringen: Een goedkeuring starten**.
+     Opmerking: Gebruik in het vak **Hoofdtekst** op de kaart **Een e-mail verzenden** het token **Opmerkingen** van de actie **Goedkeuringen: Een goedkeuring starten**.
 

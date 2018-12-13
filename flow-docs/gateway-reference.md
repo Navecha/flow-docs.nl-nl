@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 95081295bfe0fd6c904876aaf70974575a7986c1
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
+ms.openlocfilehash: 8baaf85ae07d2763886eb1ffda0141e4804cb630
+ms.sourcegitcommit: 8a36a3211e76b2b1a4a3154bc41e12a87dc3c288
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44690900"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53179812"
 ---
 # <a name="understand-on-premises-data-gateways-for-microsoft-flow"></a>Over on-premises gegevensgateways voor Microsoft Flow
 Gebruik de on-premises gegevensgateway in combinatie met Microsoft Flow om beveiligde verbindingen tot stand te brengen met uw on-premises gegevensbronnen zoals Microsoft SQL Server.
@@ -123,14 +123,14 @@ Als u grondig wilt zijn, kunt u de waarden **ComputerName** en **Port** vervange
 Het is ook mogelijk dat de firewall de verbindingen van de Azure Service Bus naar de Azure-datacenters blokkeert. Als dat het geval is, moet u alle [IP-adressen](https://www.microsoft.com/download/details.aspx?id=41653) van deze datacenters voor uw regio whitelisten (de blokkering opheffen).
 
 ## <a name="configure-ports"></a>Poorten configureren
-De gateway maakt een uitgaande verbinding naar de Azure Service Bus. Er wordt gecommuniceerd via de volgende uitgaande poorten: TCP 443 (standaard), 5671, 5672 en 9350 t/m 9354. De gateway vereist geen inkomende poorten.
+De gateway maakt een uitgaande verbinding naar de Azure Service Bus. Er wordt gecommuniceerd via de volgende uitgaande poorten: TCP 443 (standaard), 5671, 5672, 9350 t/m 9354. De gateway vereist geen inkomende poorten.
 
 Meer informatie over [hybride oplossingen](https://azure.microsoft.com/documentation/articles/service-bus-fundamentals-hybrid-solutions/).
 
 | Domeinnamen | Uitgaande poorten | Beschrijving |
 | --- | --- | --- |
 | *.analysis.windows.net |443 |HTTPS |
-| *.login.windows.net |443 |HTTPS |
+| *.login.microsoftonline.com |443 |HTTPS |
 | *.servicebus.windows.net |5671-5672 |Advanced Message Queuing Protocol (AMQP) |
 | *.servicebus.windows.net |443, 9350-9354 |Listeners op Service Bus Relay via TCP (443 vereist voor ophalen Access Control-token) |
 | *.frontend.clouddatahub.net |443 |HTTPS |
@@ -167,23 +167,23 @@ Er is momenteel geen enkele locatie waar tenantbeheerders alle gateways kunnen b
 **Vraag:** Heb ik een gateway nodig voor gegevensbronnen in de cloud, zoals SQL Azure?
 **Antwoord:** Nee. Een gateway maakt alleen verbinding met on-premises gegevensbronnen.
 
-**Vraag:** Hoe heet de Windows-service zelf?
-**Antwoord:** In Services wordt de gateway weergegeven als **Power BI Enterprise-gatewayservice**.
+**Vraag:** Wat is de werkelijke naam van de gateway als Windows-service?
+**Antwoord:** In Services heet de gateway **Power BI Enterprise-gatewayservice**.
 
 **Vraag:** Zijn er inkomende verbindingen naar de gateway vanuit de cloud?
 **Antwoord:** Nee. De gateway gebruikt uitgaande verbindingen naar de Azure Service Bus.
 
-**Vraag:** Wat als uitgaande verbindingen worden geblokkeerd? Wat moet ik openstellen?
+**Vraag:** Stel dat er uitgaande verbindingen worden geblokkeerd. Wat moet ik openstellen?
 **Antwoord:** Zie de [poorten](gateway-reference.md#configure-ports) en hosts waarvan de gateway gebruikmaakt.
 
 **Vraag:** Moet de gateway op dezelfde computer worden geïnstalleerd als de gegevensbron?
 **Antwoord:** Nee. De gateway maakt verbinding met de gegevensbron met behulp van de opgegeven verbindingsinformatie. Zie de gateway in dit opzicht als een clienttoepassing. De gateway hoeft alleen verbinding te kunnen maken met de opgegeven server.
 
-**Vraag:** Wat is de vertraging van de gateway voor het uitvoeren van query's op een gegevensbron? Wat is de beste architectuur?
-**Antwoord:** Installeer de gateway zo dicht mogelijk bij de gegevensbron om de netwerkvertraging te minimaliseren. Als u de gateway op de gegevensbron zelf kunt installeren, zorgt dit voor minimale vertraging. Houd ook rekening met de datacenters. Als uw service bijvoorbeeld het datacenter US - west gebruikt en u SQL Server host in een virtuele machine van Azure, kunt u de Azure VM het beste ook in US - west plaatsen. Dit minimaliseert vertragingen en voorkomt kosten voor uitgaand verkeer voor de Azure VM.
+**Vraag:** Wat is de latentie voor het uitvoeren van query's op een gegevensbron vanuit de gateway? Wat is de beste architectuur?
+**Antwoord:**  U kunt netwerklatentie beperken door de gateway zo dicht mogelijk bij de gegevensbron te installeren. Als u de gateway op de gegevensbron zelf kunt installeren, zorgt dit voor minimale vertraging. Houd ook rekening met de datacenters. Als uw service bijvoorbeeld het datacenter US - west gebruikt en u SQL Server host in een virtuele machine van Azure, kunt u de Azure VM het beste ook in US - west plaatsen. Dit minimaliseert vertragingen en voorkomt kosten voor uitgaand verkeer voor de Azure VM.
 
-**Vraag:** Zijn er vereisten wat betreft netwerkbandbreedte?
-**Antwoord:** Een netwerkverbinding met een goede doorvoersnelheid wordt aanbevolen. Elke omgeving is anders en de hoeveelheid gegevens die wordt verzonden is van invloed op de resultaten. Door ExpressRoute te gebruiken, kunt u een zekere mate van doorvoer garanderen tussen uw locatie en de Azure-datacenters.
+**Vraag:** Zijn er vereisten voor de netwerkbandbreedte?
+**Antwoord:** Het is aan te raden een netwerkverbinding met een goede doorvoer te gebruiken. Elke omgeving is anders en de hoeveelheid gegevens die wordt verzonden is van invloed op de resultaten. Door ExpressRoute te gebruiken, kunt u een zekere mate van doorvoer garanderen tussen uw locatie en de Azure-datacenters.
 
 U kunt gebruik maken van de app [Azure Speed Test](http://azurespeedtest.azurewebsites.net/), een hulpprogramma van derden, om te bepalen wat de doorvoersnelheid is.
 
@@ -193,25 +193,25 @@ U kunt gebruik maken van de app [Azure Speed Test](http://azurespeedtest.azurewe
 **Vraag:** Hoe worden de resultaten verzonden naar de cloud?
 **Antwoord:** De resultaten worden verzonden via Azure Service Bus. Zie [hoe het werkt](gateway-reference.md#how-the-gateway-works) voor meer informatie.
 
-**Vraag:** Waar zijn mijn referenties opgeslagen?
+**Vraag:** Waar worden mijn referenties opgeslagen?
 **Antwoord:** De referenties die u voor een gegevensbron invoert, worden versleuteld en opgeslagen in de gateway-cloudservice. De referenties worden bij de gateway on-premises ontsleuteld.
 
 ### <a name="high-availabilitydisaster-recovery"></a>Hoge beschikbaarheid en herstel na noodgevallen
-**Vraag:** Zijn er plannen voor het inschakelen van scenario's voor hoge beschikbaarheid van de gateway?
+**Vraag:** Zijn er plannen om scenario's voor van hoge beschikbaarheid mogelijk te maken met de gateway?
 **Antwoord:** Ja, hoge beschikbaarheid is [nu beschikbaar](https://flow.microsoft.com/blog/gateway-ha-increased-apply-to-each).
 
-**Vraag:** Welke opties zijn beschikbaar voor herstel na noodgevallen?
-**Antwoord:** U kunt de herstelsleutel gebruiken om een gateway te herstellen of verplaatsen.
+**Vraag:** Welke opties zijn er beschikbaar voor herstel na noodgevallen?
+**Antwoord:** U kunt de herstelsleutel gebruiken om een gateway te herstellen of te verplaatsen.
 
 **Vraag:** Wat is het voordeel van de herstelsleutel?
-**Antwoord:** De herstelsleutel biedt een manier om uw gateway te migreren of de gateway-instellingen te herstellen.
+**Antwoord:** De herstelsleutel biedt een manier om uw gateway-instellingen te migreren of te herstellen.
 
 ### <a name="troubleshooting-questions"></a>Vragen over probleemoplossing
-**Vraag:** Waar vind ik de logboeken van de gateway?
-**Antwoord:** Zie [Hulpprogramma’s](gateway-reference.md#tools) verderop in dit onderwerp.
+**Vraag:** Waar worden de logboeken van de gateway opgeslagen?
+**Antwoord:** Zie [Hulpprogramma's](gateway-reference.md#tools) verderop in dit onderwerp.
 
-**Vraag:** Hoe kan ik zien wat voor query's worden verzonden naar de on-premises gegevensbron?
-**Antwoord:** U kunt querytracering inschakelen, waarmee u ook bijhoudt wat voor query's worden verzonden. Vergeet niet om dit weer uit te schakelen wanneer u klaar bent met het oplossen van problemen. Als u querytracering ingeschakeld laat, worden de logboeken groter.
+**Vraag:** Hoe kan ik zien welke query's er worden verzonden naar de on-premises gegevensbron?
+**Antwoord:** U kunt querytracering inschakelen, waarmee onder andere wordt bijgehouden welke query's er worden verzonden. Vergeet niet om dit weer uit te schakelen wanneer u klaar bent met het oplossen van problemen. Als u querytracering ingeschakeld laat, worden de logboeken groter.
 
 U kunt ook kijken wat voor hulpprogramma's uw gegevensbron biedt voor het traceren van query's. U kunt bijvoorbeeld Extended Events of SQL Profiler gebruiken voor SQL Server en Analysis Services.
 
@@ -231,7 +231,7 @@ Wanneer een gebruiker gebruikmaakt van een element dat is verbonden met een on-p
 ### <a name="update-to-the-latest-version"></a>Bijwerken naar de nieuwste versie
 Als de gatewayversie verouderd is, kunnen er allerlei problemen optreden. Zorg ervoor dat u de nieuwste versie gebruikt.  Als u de gateway niet onlangs hebt bijgewerkt, kunt u overwegen de nieuwste versie te installeren en vervolgens te controleren of het probleem zich nog steeds voordoet.
 
-#### <a name="error-failed-to-add-user-to-group---2147463168---pbiegwservice---performance-log-users---"></a>Fout: kan gebruiker niet toevoegen aan groep.  (-2147463168   PBIEgwService   Prestatielogboekgebruikers)
+#### <a name="error-failed-to-add-user-to-group---2147463168---pbiegwservice---performance-log-users---"></a>Fout: Kan gebruiker niet toevoegen aan groep.  (-2147463168   PBIEgwService   Prestatielogboekgebruikers)
 Deze fout kan optreden als u probeert de gateway te installeren op een domeincontroller. Dit wordt niet ondersteund. U moet de gateway installeren op een computer die geen domeincontroller is.
 
 ## <a name="tools"></a>Hulpprogramma 's

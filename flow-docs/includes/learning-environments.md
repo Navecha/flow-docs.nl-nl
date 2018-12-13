@@ -24,12 +24,12 @@ Omgevingen kunnen worden gemaakt met verschillende doeleinden. Enkele voorbeelde
 * U kunt ervoor kiezen om voor verschillende typen apps en stromen een afzonderlijke omgeving te maken. U kunt bijvoorbeeld een omgeving maken voor het testen en een andere omgeving voor productie.  
 * U kunt er ook voor kiezen om omgevingen te maken op basis van uw organisatiestructuur of zelfs op basis van de geografische locatie van uw teams of afdelingen. Als u bijvoorbeeld teams hebt in Australië, Mexico en Europa, kunt u voor elke locatie een omgeving maken en deze omgevingen afzonderlijk beheren.  
 
-**Opmerking**: omgevingen zijn niet zichtbaar voor gebruikers en zij hoeven zich dus niet bezig te houden met de omgevingen waarin ze zich bevinden. Met omgevingen kunnen beheerders organisatie-apps en -stromen categoriseren, beheren en delen.  
+**Opmerking**: Omgevingen zijn niet zichtbaar voor gebruikers. Zij hoeven zich dus geen zorgen te maken over de omgevingen waarin ze zich bevinden. Met omgevingen kunnen beheerders organisatie-apps en -stromen categoriseren, beheren en delen.  
 
 ## <a name="what-are-roles"></a>Wat zijn rollen?
 Een persoon met toegang tot een omgeving moet de rol **Omgevingsbeheerder** of **Omgevingsmaker** krijgen. Beheerders van omgevingen kunnen alle mogelijke administratieve taken uitvoeren voor een omgeving. Makers van omgevingen kunnen resources maken in een bestaande omgeving. Personen kunnen ook over beide rollen beschikken.  
 
-**Opmerking**: alle gebruikers hebben toegang tot een standaardomgeving wanneer ze toegang tot Microsoft Flow hebben gekregen. Gebruikers kunnen toegang hebben tot meerdere omgevingen.  
+**Opmerking**: Alle gebruikers hebben toegang tot een standaardomgeving wanneer ze toegang hebben gekregen tot Microsoft Flow. Gebruikers kunnen toegang hebben tot meerdere omgevingen.  
 
 ## <a name="create-an-environment"></a>Een omgeving maken
 U kunt met deze stappen omgevingen maken vanuit het [beheercentrum van Microsoft Flow](https://admin.flow.microsoft.com):  

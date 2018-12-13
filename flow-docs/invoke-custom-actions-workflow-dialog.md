@@ -2,7 +2,7 @@
 title: Aangepaste acties vanuit een werkstroom aanroepen | MicrosoftDocs
 description: Meer informatie over het aanroepen van een aangepaste actie vanuit een werkstroom
 ms.custom: ''
-ms.date: 06/27/2018
+ms.date: 11/22/2018
 ms.reviewer: ''
 ms.service: crm-online
 ms.suite: ''
@@ -22,21 +22,21 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 8b2904632f4b3bf097275906d917e686cace67ba
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
+ms.openlocfilehash: e4dbedbd8157f2dd1814bbbbd080a6b366c04938
+ms.sourcegitcommit: a505b0aac796960d57fccee92eb18c6566ac9c35
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44688509"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "53006973"
 ---
 # <a name="invoke-custom-actions-from-a-workflow"></a>Aangepaste acties vanuit een werkstroom aanroepen
 
-Werkstromen hebben talloze mogelijkheden voor de ondersteuning bedrijfsscenario's. Elementaire SDK-acties aanroepen voor een record, zoals Maken, Bijwerken en Verwijderen, vanuit een werkstroom zorgt voor een oplossing voor een groot aantal bedrijfsscenario's. Als u de mogelijkheden van de werkstromen koppelt aan de kracht van de aangepaste acties die rechtstreeks vanuit de werkstroom worden aangeroepen, voegt u echter een geheel nieuwe serie bedrijfsscenario's aan uw toepassing toe zonder code te hoeven schrijven.  
+Werkstromen hebben talloze mogelijkheden voor de ondersteuning bedrijfsscenario's. Elementaire gegevensbewerkingsacties aanroepen voor een record, zoals Maken, Bijwerken en Verwijderen, vanuit een werkstroom zorgt voor een oplossing voor een groot aantal bedrijfsscenario's. Als u de mogelijkheden van de werkstromen koppelt aan de kracht van de aangepaste acties die rechtstreeks vanuit de werkstroom worden aangeroepen, voegt u echter een geheel nieuwe serie bedrijfsscenario's aan uw toepassing toe zonder code te hoeven schrijven.  
   
  Bekijk het scenario waarin een aangepaste actie wordt aangeroepen vanuit een werkstroom. Er wordt een aangepaste actie aangeroepen voor het aanvragen van goedkeuring van de manager wanneer de korting voor een specifieke verkoopkans groter is dan 20%.  
   
 <a name="action"></a>   
-## <a name="dynamics-365-customer-engagement-example-create-a-custom-action-using-the-opportunity-entity"></a>Voorbeeld van de Dynamics 365 Customer Engagement: een aangepaste actie maken met behulp van de entiteit Verkoopkans
+## <a name="dynamics-365-customer-engagement-example-create-a-custom-action-using-the-opportunity-entity"></a>Voorbeeld van Dynamics 365 Customer Engagement: Een aangepaste actie maken met de entiteit Verkoopkans
   
 1. Selecteer in [Oplossingsverkenner](/powerapps/maker/model-driven-apps/advanced-navigation#solution-explorer) **Processen**.  
   

@@ -5,7 +5,7 @@ Een aanvraag goedkeuren:
 ### <a name="from-email"></a>Via e-mail
 1. Selecteer **Goedkeuren** in de e-mail die u ontvangt wanneer een item aan de SharePoint Online-lijst wordt toegevoegd.
    
-     Opmerking: als u een mobiele telefoon gebruikt waarop de Microsoft-Flow-app is geïnstalleerd, wordt de Microsoft Flow-app gestart. Anders wordt het goedkeuringscentrum geopend in uw browser.
+     Opmerking: Als u een mobiele telefoon gebruikt waarop de Microsoft Flow-app is geïnstalleerd, wordt de Microsoft Flow-app gestart. Anders wordt het goedkeuringscentrum geopend in uw browser.
    
     ![e-mail van aanvraag](media/modern-approvals/email-approval-request.png)
 2. Voer een opmerking in en selecteer vervolgens de knop **Bevestigen**.
@@ -35,5 +35,5 @@ Een aanvraag goedkeuren:
    
     ![voltooiingspagina](media/modern-approvals/mobile-approval-confirmation.png)
 
-Opmerking: de schermen kunnen bij Android, iOS en Windows Phone enigszins verschillen, maar de functionaliteit is op alle apparaten gelijk.
+Opmerking: De schermen kunnen bij Android, iOS en Windows Phone enigszins afwijken, maar de functionaliteit is op alle apparaten gelijk.
 
