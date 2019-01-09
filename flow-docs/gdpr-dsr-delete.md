@@ -20,12 +20,12 @@ search.app:
 - Powerplatform
 search.audienceType:
 - admin
-ms.openlocfilehash: 77ce6e368c8cb54d360ebeaa32f1f649e30aa297
-ms.sourcegitcommit: 44bc9de9f06b64615731ceb60a4f46cfcd45b167
+ms.openlocfilehash: 9edad8ef0aa4e51292bddc5dc59c90ae84223de2
+ms.sourcegitcommit: ade400bab38f85071d4c8bf6a5380f561f12f2f5
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45727177"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53248840"
 ---
 # <a name="responding-to-gdpr-data-subject-delete-requests-for-microsoft-flow"></a>Reageren op AVG-verzoeken van betrokkenen voor het verwijderen van gegevens in Microsoft Flow
 
@@ -55,7 +55,7 @@ Voor de gegevens en resources die handmatig moeten worden bekeken, biedt Microso
 
 * **Webtoegang:** aanmelden bij het [PowerApps-beheercentrum](https://admin.powerapps.com/) of het [Microsoft Flow-beheercentrum](https://admin.flow.microsoft.com/)
 
-* **PowerShell-toegang:**  [PowerApps Admin PowerShell-cmdlets](https://go.microsoft.com/fwlink/?linkid=871804) 
+* **PowerShell-toegang:**  [PowerShell-cmdlets voor PowerApps-beheerders](https://go.microsoft.com/fwlink/?linkid=871804) 
 
 Hier volgt de uitsplitsing van ervaringen die een beheerder ter beschikking staan voor het verwijderen van elk type persoonsgegevens binnen elk type resource:
 
@@ -175,6 +175,7 @@ $deleteDsrUserId = "7822bb68-7c24-49ce-90ce-1ec8deab99a7"
 Get-AdminConnection -CreatedBy $deleteDsrUserId | Remove-AdminConnection 
 
 ```
+
 ## <a name="delete-the-users-permissions-to-shared-connections"></a>De machtigingen van de gebruiker voor gedeelde verbindingen verwijderen
 
 PowerApps Maker PowerShell-cmdlets
@@ -281,11 +282,12 @@ Sinds de introductie van de Common Data Service for Apps worden, als er binnen d
 Navigeer naar [Omgevingen gebruiken in Microsoft Flow](https://docs.microsoft.com/flow/environments-overview-admin) voor meer informatie over het verwijderen van de machtiging van een gebruiker in een omgeving.
 
 ## <a name="delete-gateway-settings"></a>Gateway-instellingen verwijderen
+
 Informatie over het reageren op verwijderingsverzoeken van een betrokkene voor on-premises gegevensgateways vindt u [hier](https://docs.microsoft.com/power-bi/service-gateway-onprem#tenant-level-administration).
 
 ## <a name="delete-user-details"></a>Gebruikersgegevens verwijderen
-Details van de gebruikers bieden een koppeling tussen een gebruiker en een specifieke tenant. Voordat u deze opdracht gaat uitvoeren, moet u ervoor zorgen dat alle stromen voor deze gebruiker opnieuw zijn toegewezen en/of verwijderd. Zodra die stap is voltooid, kan een beheerder gebruikersdetails verwijderen door de cmdlet **Remove-AdminFlowUserDetails** aan te roepen en uit te voeren in de Object-id voor de gebruiker.
 
+Details van de gebruikers bieden een koppeling tussen een gebruiker en een specifieke tenant. Voordat u deze opdracht gaat uitvoeren, moet u ervoor zorgen dat alle stromen voor deze gebruiker opnieuw zijn toegewezen en/of verwijderd. Zodra die stap is voltooid, kan een beheerder gebruikersdetails verwijderen door de cmdlet **Remove-AdminFlowUserDetails** aan te roepen en uit te voeren in de Object-id voor de gebruiker.
 
 PowerApps Admin PowerShell-cmdlets
 ```PowerShell
@@ -297,14 +299,18 @@ Remove-AdminFlowUserDetails -UserId 1b6759b9-bbea-43b6-9f3e-1af6206e0e80
 > Als een gebruiker nog steeds de eigenaar is van afzonderlijke stromen of teamstromen, retourneert deze opdracht een fout. U kunt dit oplossen door alle resterende stromen of teamstromen voor deze gebruiker te verwijderen en de opdracht opnieuw uit te voeren.
 >
 >
+
 ## <a name="delete-the-user-from-azure-active-directory"></a>De gebruiker verwijderen uit Azure Active Directory
+
 Zodra de bovenstaande stappen zijn voltooid, bestaat de laatste stap uit het verwijderen van het account van de gebruiker voor Azure Active Directory. Voer hiervoor de stappen uit die worden beschreven in de Azure-documentatie over aanvragen van betrokkenen in het kader van de AVG. U vindt deze in de [Office 365 Service Trust Portal](https://servicetrust.microsoft.com/ViewPage/GDPRDSR).
 
 ## <a name="delete-the-user-from-unmanaged-tenant"></a>De gebruiker uit de onbeheerde tenant verwijderen
+
 In het geval u lid bent van een onbeheerde tenant, moet u de actie **Account sluiten** uitvoeren in de [portal voor privacy op het werk en op school](https://go.microsoft.com/fwlink/?linkid=873123).
 
 Als u wilt bepalen of u een gebruiker van een beheerde of onbeheerde tenant bent, voert u de volgende acties uit:
-1. Open de volgende URL in een browser en zorg ervoor dat u uw e-mailadres in de URL vervangt:[ https://login.windows.net/common/userrealm/foobar@contoso.com?api-version=2.1](https://login.windows.net/common/userrealm/foobar@contoso.com?api-version=2.1).
+
+1. Open de volgende URL in een browser en zorg ervoor dat u uw e-mailadres in de URL vervangt:[https://login.microsoftonline.com/common/userrealm/foobar@contoso.com?api-version=2.1](https://login.microsoftonline.com/common/userrealm/foobar@contoso.com?api-version=2.1).
 1. Als u lid bent van een **onbeheerde tenant**, ziet u een `"IsViral": true` in het antwoord.
 
     {
@@ -318,4 +324,3 @@ Als u wilt bepalen of u een gebruiker van een beheerde of onbeheerde tenant bent
     }
 
 1. Anders maakt u deel uit van een beheerde tenant.
-
