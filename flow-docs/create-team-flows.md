@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 238ef8eac80d3259981cb11cc21e3b05eb83e0ec
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
+ms.openlocfilehash: fb9f95845a6b516bfb83ed476929d8682098601f
+ms.sourcegitcommit: 4bd9fa4a9549a1830644f68cbf9ba50ed0ef8e19
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44689727"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55204934"
 ---
 # <a name="create-team-flows"></a>Teamstromen maken
 Maak een teamstroom door anderen in uw organisatie als eigenaren toe te voegen. Alle eigenaren van een teamstroom kunnen deze acties uitvoeren:
@@ -70,11 +70,12 @@ Voer deze stappen uit om een teamstroom te maken of meer eigenaren aan een teams
    
      U hebt nu een teamstroom gemaakt.
 
-##<a name="add-a-list-as-a-co-owner"></a>Een lijst toevoegen als een mede-eigenaar
+## <a name="add-a-list-as-a-co-owner"></a>Een lijst toevoegen als een mede-eigenaar
 
 U kunt SharePoint-lijsten toevoegen als mede-eigenaren van een stroom, zodat iedereen met bewerkingstoegang tot de lijst automatisch bewerkingstoegang krijgt voor de stroom. Zodra de stroom wordt gedeeld, kunt u een koppeling naar de stroom distribueren.
 
 ## <a name="remove-an-owner"></a>Een eigenaar verwijderen
+
 > [!IMPORTANT]
 > Als u een eigenaar verwijdert waarvan de referenties worden gebruikt voor toegang tot Microsoft Flow-services, moet u de referenties voor die verbindingen bijwerken om ervoor te zorgen dat de stroom correct blijft werken.
 > 
@@ -93,7 +94,20 @@ U kunt SharePoint-lijsten toevoegen als mede-eigenaren van een stroom, zodat ied
    
     ![gebruiker verwijderd](./media/create-team-flows/removeowner4.png)
 
+
+## <a name="update-connection-owner"></a>Eigenaar van verbinding bijwerken
+
+Mogelijk moet u de eigenaar van een verbinding in een stroom wijzigen als u de bestaande eigenaar verwijdert. Volg deze stappen als u de eigenaar van een stroom wilt wijzigen:
+
+1. Selecteer in de lijst met **Teamstromen** de stroom die de verbinding bevat die u wilt bijwerken.
+1. Selecteer **Alles weergeven** in de lijst met **EIGENAREN**.
+1. Selecteer **Verbindingen beheren** in de lijst **Verbindingen in gebruik**.
+1. Zoek de verbinding die u wilt bijwerken en selecteer deze.
+1. Selecteer **...** (meer opdrachten) en selecteer vervolgens **Account wisselen**.
+1. Volg de stappen om een ander account te gebruiken voor de verbinding.
+
 ## <a name="embedded-and-other-connections"></a>Ingesloten en andere verbindingen
+
 De verbinding die worden gebruikt in een stroom, worden onderverdeeld in twee categorieën:
 
 * **Ingesloten verbindingen**: deze verbindingen worden gebruikt in de stroom.

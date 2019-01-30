@@ -20,16 +20,16 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 0d948cdf5bce01aa5c18955645774dbcf455ba1b
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
+ms.openlocfilehash: 50466c2cf51593a4e34796fdf1d7a285eb63d462
+ms.sourcegitcommit: 31b578972f00e6ab2e50ea0b674142199b3b7a35
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44690829"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54905664"
 ---
 # <a name="create-and-test-an-approval-workflow-with-microsoft-flow"></a>Een goedkeuringswerkstroom maken en testen met Microsoft Flow
 
-Met Microsoft Flow kunt u de goedkeuring van documenten of processen beheren binnen diverse services, waaronder SharePoint, Dynamics CRM, Salesforce, OneDrive voor Bedrijven, Zendesk of WordPress.
+Met Microsoft Flow kunt u de goedkeuring van documenten of processen beheren binnen diverse services, waaronder SharePoint, Dynamics 365, Salesforce, OneDrive voor Bedrijven, Zendesk en WordPress.
 
 U kunt een goedkeuringswerkstroom maken door de actie **Goedkeuringen - Een goedkeuring starten** aan een stroom toe te voegen. Nadat u deze actie hebt toegevoegd, kan uw stroom de goedkeuring van documenten of processen beheren. U kunt bijvoorbeeld goedkeuringsstromen voor documenten maken die facturen, werkorders of verkoopoffertes goedkeuren. U kunt ook goedkeuringsstromen voor processen maken, die vakantieaanvragen, overwerk of reisplannen goedkeuren.
 

@@ -19,12 +19,12 @@ search.app:
 - Flow
 search.audienceType:
 - developer
-ms.openlocfilehash: aa5e0a7d143e0e1486533131f90d6b04c6fbc20c
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
+ms.openlocfilehash: 00f802a1776ed36755f73437e272c6ca975ac8bd
+ms.sourcegitcommit: 31b578972f00e6ab2e50ea0b674142199b3b7a35
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44690003"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54905663"
 ---
 # <a name="integrate-microsoft-flow-with-websites-and-apps"></a>Microsoft Flow integreren met websites en apps
 Sluit Microsoft Flow in uw app of website in om gebruikers een eenvoudige manier te bieden om hun persoonlijke of werktaken te automatiseren.
@@ -43,7 +43,7 @@ Als u wilt starten, voegt u deze code toe om de stroomsjablonen rechtstreeks in 
 &pagesize={number of templates}&destination={destination}"></iframe>
 ```
 
-**Opmerking**: er is een regeleinde toegevoegd zodat de code beter op de pagina wordt weergegeven.
+**Opmerking**: Er is een regeleinde toegevoegd, zodat de code beter op de pagina wordt weergegeven.
 
 | Parameter | Beschrijving |
 | --- | --- |
@@ -142,7 +142,7 @@ GET https://management.azure.com/providers/Microsoft.ProcessSimple/environments
 ?api-version=2016-11-01 
 ```
 
-Hiermee wordt een JSON-antwoord geretourneerd dat bestaat uit een lijst met omgevingen, waaruit u om het even welke omgeving kunt kiezen. Als u de standaard gebruikersomgeving zoekt, kunt u die vinden door eigenschap `properties.isDefault=true` te onderzoeken.
+Hiermee wordt een JSON-antwoord geretourneerd dat bestaat uit een lijst met omgevingen, waaruit u om het even welke omgeving kunt kiezen. Als u de standaardgebruikersomgeving zoekt, kunt u deze vinden door de eigenschap `properties.isDefault=true` te raadplegen.
 
 In dit voorbeeld wordt `requestParam` gedefinieerd als:
 

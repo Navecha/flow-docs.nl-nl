@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 244f3f072dd0250d4c9c4a8c62760009f54a6a45
-ms.sourcegitcommit: 44bc9de9f06b64615731ceb60a4f46cfcd45b167
+ms.openlocfilehash: db8a8c99344b93ad981a26d5174e99385d2a3f82
+ms.sourcegitcommit: 31b578972f00e6ab2e50ea0b674142199b3b7a35
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45727246"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54905741"
 ---
 # <a name="release-notes"></a>Releaseopmerkingen
 ## <a name="top-questions"></a>Belangrijkste vragen
@@ -37,24 +37,43 @@ ms.locfileid: "45727246"
 2. Hoe gebruik ik geavanceerde voorwaarden of een expressie?
    
    * Meer informatie over het [toevoegen van voorwaarden](add-condition.md).
-   * Als u meerdere voorwaarden aan een stroom wilt toevoegen, klikt of tikt u vanuit een bestaande voorwaarde op **Voorwaarde toevoegen**.
+   * Als u meerdere scenario's in een stroom wilt opnemen, selecteert u **Voorwaarde toevoegen** vanuit een bestaande voorwaarde.
    * Maak een geavanceerde expressie door te verwijzen naar [een functie in Logic Apps](https://docs.microsoft.com/rest/api/logic/definition-language).
 3. Hoe werkt licentieverlening voor Office 365?
    
    * Als u Office 365 gebruikt, hebt u volledige toegang tot Microsoft Flow via het Office 365-abonnement. Zie de [prijzen en abonnementen voor Microsoft Flow](https://flow.microsoft.com/pricing/) voor meer informatie.
    * Als u een beheerder bent, raadpleegt u de informatie over de [licentieverlening voor Microsoft Flow](organization-q-and-a.md) voor onder andere Office 365.
 
-## <a name="known-issues-and-resolutions"></a>Bekende problemen en oplossingen
+## <a name="known-issues"></a>Bekende problemen
 1. SharePoint-lijsten op Mijn sites en SharePoint-lijsten die niet van het type *Aangepaste lijst* zijn, worden niet ondersteund. U kunt als tijdelijke oplossing voor dit probleem een aangepaste lijst maken op een standaard-SharePoint-site.
-2. Stromen kunnen niet schrijven naar taxonomievelden in SharePoint-lijsten. Het beste is om een eenvoudig tekenreeksveld te gebruiken tot dit is opgelost.
-3. Bestandstriggers worden niet gestart voor bestanden die worden toegevoegd in geneste mappen in de map die u selecteert.
+2. Bestandstriggers worden niet gestart voor bestanden die worden toegevoegd in geneste mappen in de map die u selecteert.
 
 ## <a name="whats-new"></a>Wat is er nieuw?
+
+> [!IMPORTANT]
+>
+> **Aankondiging van de releaseopmerkingen**
+>
+> Bent u benieuwd naar de toekomstige en nieuwe mogelijkheden in Microsoft Flow?
+>[Bekijk de releaseopmerkingen van oktober 2018](https://docs.microsoft.com/business-applications-release-notes/October18/microsoft-flow/). We hebben alle details, van begin tot eind en van boven naar beneden, vastgelegd. Hiervan kunt u gebruikmaken bij de planning. Voor meer informatie raadpleegt u [alle wekelijkse releases](https://docs.microsoft.com/business-applications-release-notes/powerplatform/released-versions/flow) en de bijbehorende functies en verbeteringen.
+>
+> De releaseopmerkingen van vóór de release van oktober 2018 blijven hier staan voor toekomstig gebruik, maar alle nieuwe releases worden alleen opgenomen op de bovenstaande locaties en niet op deze pagina.
+
+### <a name="release-2018-09-24"></a>Release 24-09-2018
+
+- **Beheerderstoegang tot Help en ondersteuning** - Open ondersteuningstickets voor Microsoft Flow in het beheercentrum van het Power-platform en geef aanvullende informatie op over fouten in uw werkstroom.
+- **Verbeterde Flow-community** - Het is eenvoudiger geworden om in de Flow-community te vinden wat u nodig hebt.
+- **Verbeteringen in de Microsoft Teams-connector**  - Nieuwe triggers voor Microsoft Teams, waarmee u een stoom kunt uitvoeren wanneer er nieuwe berichten zijn in een kanaal.
+- **Meer SharePoint-acties** - In de SharePoint-connector zijn nieuwe acties opgenomen voor het verplaatsen van bestanden en meer.
+- **Nieuwe analyserapporten voor beheerders** - Er zijn analytische gegevens voor de gehele omgeving en de hele tenant toegevoegd aan het beheercentrum van het Business Application-platform.
+- **Integratie van Power Query** - Er wordt een Power Query-ervaring gebouwd waarmee makers mashups van gegevens van SQL Server kunnen vormgeven.
+
+[Lees meer informatie en stel vragen](https://flow.microsoft.com/blog/support-tickets-teams-sharepoint/) over deze release.
 
 ### <a name="release-2018-08-31"></a>Release 31-08-2018
 
 - **Uw stroom testen met voorbeeldgegevens** - Gebruik voorbeeldgegevens van connectoren voor het testen van uw stroom tijdens de ontwikkeling ervan vanuit de Microsoft Flow-ontwerpfunctie. Wanneer u de stroom met voorbeeldgegevens test, bevestigt u dat de stroom wordt uitgevoerd zoals verwacht na implementatie naar productie.
-- **Vijf nieuwe connectors**: er zijn vier nieuwe connectors voor beheer toegevoegd: PowerApps voor App-ontwerpers, Power-platform voor beheerders, PowerApps voor beheerders, Microsoft Flow voor beheerders en Microsoft School Data Sync.
+- **Vijf nieuwe connectors** - We hebben vier nieuwe connectors voor beheer toegevoegd: PowerApps voor app-ontwerpers, Power-platform voor beheerders, PowerApps voor beheerders, Microsoft Flow voor beheerders en Microsoft School Data Sync.
 
 [Lees meer informatie en stel vragen](https://flow.microsoft.com/blog/test-data-management-connectors/) over deze release.
 
@@ -63,7 +82,7 @@ ms.locfileid: "45727246"
 - **Nieuwe synchronisatiesjablonen voor agenda**: nieuwe sjablonen waarin gebeurtenissen tussen Google Agenda en Office 365 of Outlook.com worden gekopieerd.
 - **Ondersteuning voor meerdere waarden voor SharePoint**: lezen en schrijven voor velden met meerdere waarden in SharePoint van het type Choice, Person of Lookup.
 - **Verzenden van goedkeuringen namens andere gebruikers in uw organisatie**: goedkeuringen verzenden namens andere gebruikers in uw organisatie,bijvoorbeeld: de persoon die het bestand in de SharePoint-lijst heeft geüpload, in plaats van de persoon die de stroom hebt gemaakt.
-- **Meer Knopinvoertypen**: knoppen beschikken over twee nieuwe invoertypen: Getal en Ja/Nee.
+- **Meer knopinvoertypen** - Knoppen beschikken over twee nieuwe invoertypen: Getal en Ja/Nee.
 - **Updates van connectors**: een nieuwe NetDocuments-connector, verbeteringen in de Azure-connectors en meer.
 
 [Lees meer informatie en stel vragen](https://flow.microsoft.com/blog/button-types-more/) over deze release.
@@ -76,7 +95,7 @@ Het Microsoft Flow Preview-programma is de manier om vroegtijdige toegang tot de
 
 ### <a name="release-2018-07-23"></a>Release 07-23-2018
 
-- **Stromen vanuit Excel maken en uitvoeren** - Met de nieuwe knop **Flow** (toegankelijk via het tabblad **Gegevens** op het lint), kunt u vanuit Flow automatiseringen maken en activeren voor uw tabelgegevens in Excel. Automatiseer de verwerking of het kopiëren/importeren van gegevens.
+- **Stromen maken en uitvoeren vanuit Excel** - Met de nieuwe knop **Stroom** (toegankelijk via het tabblad **Gegevens** op het lint), kunt u vanuit Microsoft Flow automatiseringen maken en activeren voor uw tabelgegevens in Excel. Automatiseer de verwerking of het kopiëren/importeren van gegevens.
 - **Bedrijfsprocesstromen maken** - Een bedrijfsprocesstroom is een nieuwe type stateful en human-interactive stroom gebaseerd op de Common Data Service voor apps. Gebruik deze nieuwe stromen om een aantal fases en stappen te definiëren die mensen kunnen volgen. Naar behoefte kunnen zij daarbij naar vorige of volgende fasen/stappen gaan.
 - **Stromen voor Microsoft To-Do maken in de Outlook web-app** - Als iemand in de Outlook web-app wordt \@vermeld, zien zij een snelkoppeling voor het maken van een stroom. Deze stroom maakt automatisch taken voor de \@vermelde persoon in Microsoft To-Do op basis van de inhoud van het e-mailbericht.
 - **Ondersteuning voor SharePoint-weergaven** - De SharePoint-connector ondersteunt nu de selectie van een specifieke SharePoint-weergave van triggers en acties. Hierdoor worden de kolommen gefilterd tot enkel die velden die zich in de geselecteerde weergave bevinden.
@@ -166,7 +185,7 @@ Het Microsoft Flow Preview-programma is de manier om vroegtijdige toegang tot de
 - **Stroom binnen Microsoft Teams** - Vanuit Teams kunt u stromen maken en beheren, uw ontvangen en verzonden goedkeuringen bekijken en stromen rechtstreeks in de desktop-app van Teams of op teams.microsoft.com starten. [Klik hier voor meer informatie](https://flow.microsoft.com/blog/microsoft-flow-in-microsoft-teams/).
 - **Meldingen voor gedeelde bewerkingen** - Wanneer uw stroom door een collega wordt gewijzigd, krijgt u een e-mailbericht dat u vertelt wie welke stroom heeft gewijzigd.
 - **Nieuwe expressies** - Er zijn twee nieuwe sets met expressies toegevoegd: één om URL's te parseren en een andere om met JSON-objecten te werken.
-- **Drie nieuwe connectors** - Deze week zijn er twee nieuwe Plumsail-connectors bij gekomen: Plumsail SP en Plumsail Forms, plus een nieuwe connector voor kintone.
+- **Drie nieuwe connectors** - Deze week zijn er twee nieuwe Plumsail-connectors bij gekomen: Plumsail SP en Plumsail Forms. Ook is er een nieuwe connector voor kintone.
 
 [Lees meer informatie en stel vragen](https://flow.microsoft.com/blog/shared-notifications-and-expressions/) over deze release.
 
@@ -233,7 +252,7 @@ Het startpaneel van Microsoft Flow is nu in alle regio’s beschikbaar. In dit d
 - **Genest op elke toepassen**: u kunt acties van het type 'Toepassen op elke' toevoegen, filteren en selecteren in andere containeracties van het type 'Toepassen op elke'.
 - **Datum/tijd-acties**: nieuwe acties voor het ophalen van de lokale tijd of het optellen, aftrekken of formatteren van tijden.
 - **Vier nieuwe connectors**: Content Moderator, Docparser, Microsoft Kaizala en Pitney Bowes Data Validation zijn toegevoegd.
-- **Verbeterde verbindingservaring**: u vindt meldingen in het stroomportal wanneer een verbinding wordt verbroken. Ook krijgt u uitgebreidere verbindingsdetails.
+- **Verbeterde verbindingservaring** - U ziet voortaan een melding in de Microsoft Flow-portal wanneer een verbinding wordt verbroken. Ook krijgt u uitgebreidere verbindingsdetails.
 - **Mobiele verzameling**: een nieuwe sjabloonverzameling voor [werknemers die onderweg zijn](https://flow.microsoft.com/collections/onthego/).
 - **Invoer van de knop E-mailadressen**: verzamel e-mailadressen van gebruikers wanneer ze op een knop drukken.
 - **Invoer van de knop Bestand**: haal geüploade bestanden zoals foto’s van gebruikers op wanneer ze op een knop drukken.
@@ -257,7 +276,7 @@ Het startpaneel van Microsoft Flow is nu in alle regio’s beschikbaar. In dit d
 
 - **Diepere SharePoint-integratie in eerste versie**: er zijn nieuwe ‘ingesloten’ stromen voor verzenden ter beoordeling en een stroomdeelvenster voor het verzamelen van invoer wanneer u een stroom voor tenants van de eerste versie uitvoert.
 - **Dynamics 365 voor Customer Engagement**: Flow is nu geïntegreerd in de gebruikersinterface voor Dynamics 365 voor Customer Engagement.
-- **Microsoft Trust Center**: Flow wordt vermeld in het Microsoft Trust Center. Hierbij worden certificeringen zoals HIPAA, ISO en SOC weergegeven.
+- **Microsoft Trust Center** - Microsoft Flow wordt vermeld in het Microsoft Trust Center. Hierbij worden certificeringen zoals HIPAA, ISO en SOC weergegeven.
 - **Gebruiksanalyse**: elke stroom beschikt over een ingebouwd Power BI-dashboard met basale analysegegevens over het gebruik.
 - **Auditlogboeken maken voor eerste versie**: alle stroombeheergebeurtenissen worden vastgelegd in het Beveiligings- en nalevingscentrum van Office 365 voor tenants van de eerste versie.
 - **Zes nieuwe connectors**: LinkedIn, Office 365 Groups, Skype voor Bedrijven, Adobe Sign, Bizzy en Azure Log Analytics Data Collection zijn toegevoegd.
@@ -268,7 +287,7 @@ Het startpaneel van Microsoft Flow is nu in alle regio’s beschikbaar. In dit d
 
 ### <a name="release-2017-09-21"></a>Versie van 21-09-2017
 
-- **Geschiedenis van stromen downloaden**: download de uitvoeringsgeschiedenis van een stroom als CSV-bestand om het in Excel te kunnen openen.
+- **Geschiedenis van stromen downloaden** - Download de uitvoeringsgeschiedenis van een stroom als CSV-bestand om deze in Excel te kunnen openen.
 - **Geavanceerd terugkeerpatroon**: bouw terugkeerschema’s om uw stromen te activeren, bijvoorbeeld alleen op werkdagen.
 - **IntelliSense**: wanneer u expressies invoert, biedt IntelliSense suggesties voor parameters.
 - **Vier nieuwe connectors**: er zijn connectors toegevoegd voor Azure AD HTTP services, Amazon Redshift, Azure Event Grid Publish en FlowForma.
@@ -375,13 +394,13 @@ U kunt nu de status bekijken van alle openstaande goedkeuringsaanvragen die u he
 * **Aangepaste API-webhooks maken** - ontwikkelaars kunnen nu aangepaste connectors toevoegen aan hun aangepaste API's met webhooks.
 * **Eigenaars van stromen beheren in het beheercentrum** - beheerders van omgevingen kunnen eigenaars van stromen beheren in het beheercentrum van Microsoft Flow.
 * **Referentiemateriaal over connectors** - er is nu een [complete reeks referentiemateriaal over connectors beschikbaar op docs.microsoft.com](https://docs.microsoft.com/Connectors/).
-* **Twee partnerservices** - er zijn twee nieuwe partnerservices uitgebracht: Nexmo en Paylocity.
+* **Twee partnerservices** - Er zijn twee nieuwe partnerservices uitgebracht: Nexmo en Paylocity.
 
 [Lees meer informatie en stel vragen](https://flow.microsoft.com/blog/canada-mailboxes-aad) over deze release.
 
 ### <a name="release-2017-04-27"></a>Release van 27-04-2017
 * **Stromen met parallelle stappen maken**: u kunt stromen met parallelle uitvoering maken om tegelijkertijd twee of meer stappen uit te voeren.
-* **Ondersteuning van vijf nieuwe services**: er zijn vijf nieuwe services toegevoegd: Approvals, Benchmark Email, Capsule CRM, LiveChat en Outlook Customer Manager.
+* **Er worden vijf nieuwe services ondersteund** - Vijf nieuwe services: Approvals, Benchmark Email, Capsule CRM, LiveChat en Outlook Customer Manager.
 * **Nieuwe controlepogingen voor acties**: Wanneer er fouten met services optreden, worden er met Microsoft Flow nieuwe pogingen gedaan. U kunt nu het aantal automatische nieuwe pogingen en de details van wat er is gebeurd, weergeven.
 
 [Lees meer informatie en stel vragen](https://flow.microsoft.com/blog/parallel-actions/) over deze release.
@@ -404,7 +423,7 @@ U kunt nu de status bekijken van alle openstaande goedkeuringsaanvragen die u he
 ### <a name="release-2017-04-03"></a>Release 03-04-2017
 * **Windows Phone Beta**: de bètaversie van de Windows Phone-app is beschikbaar voor een voorbeeld van de app op uw Windows Phone. [Meer informatie](https://flow.microsoft.com/blog/windows-phone-app-beta-is-now-available/).
 * **Muhimbi PDF**: u kunt nu Microsoft Word-bestanden naar PDF converteren, watermerken toevoegen, documenten samenvoegen en meer met Muhimbi PDF. [Meer informatie](https://flow.microsoft.com/blog/convert-files-using-muhimbi/).
-* **Stromen activeren van fysieke knoppen**: samenwerkingsverband met twee vooraanstaande producten op het gebied van fysieke knoppen: Flic van Shortcut Labs en Bttn van The Button Corporation. [Meer informatie](https://flow.microsoft.com/blog/physical-buttons/)
+* **Stromen activeren via fysieke knoppen** - Aankondiging van een samenwerkingsverband met twee vooraanstaande producten op het gebied van fysieke knoppen: Flic van Shortcut Labs en Bttn van The Button Corporation. [Meer informatie](https://flow.microsoft.com/blog/physical-buttons/)
 
 ### <a name="release-2017-03-22"></a>Release 22-03-2017
 * **Een kopie maken van uw stroom**: u kunt nu een kopie van uw werkstroom maken om aan proefversies te werken of een stroom te dupliceren die u voorheen hebt gemaakt.
@@ -426,7 +445,7 @@ U kunt nu de status bekijken van alle openstaande goedkeuringsaanvragen die u he
 [Lees meer informatie en stel vragen](https://flow.microsoft.com/blog/new-updates-custom-api/) over deze release.
 
 ### <a name="release-2017-02-27"></a>Release van 27-02-2017
-* **Stroomknoppen activeren**: U kunt stroomknoppen nu rechtstreeks vanaf de website van Microsoft Flow activeren. Ga hiervoor naar uw lijst met stromen en kies in het menu '...' de opdracht Nu uitvoeren.
+* **Stroomknoppen activeren** - U kunt stroomknoppen nu rechtstreeks vanuit Microsoft Flow activeren. Ga hiervoor naar uw lijst met stromen en kies in het menu '...' de opdracht Nu uitvoeren.
 * **Vijf nieuwe services**: er is ondersteuning toegevoegd voor Oracle Database, Intercom, FreshBooks, LeanKit en WebMerge.
 
 [Lees meer informatie en stel vragen](https://flow.microsoft.com/blog/trigger-flow-buttons-web/) over deze release.
@@ -506,7 +525,7 @@ U kunt nu gebruikmaken van waardevolle informatie wanneer u een knopstroom start
 
 ### <a name="release-2016-11-15"></a>Release van 15-11-2016
 * **Microsoft Flow-partnerprogramma**: Microsoft Flow is nu voorzien van een gecertificeerd partnerprogramma om met anderen in contact te komen. Zo kunt u met Microsoft Flow overal ter wereld profiteren van de talenten en ervaringen van verschillende bedrijven.
-* **Zes nieuwe services**: er worden deze week ook zes nieuwe services geïntroduceerd: Asana, Campfire, EasyRedmine, JIRA, Redmine en Vimeo.
+* **Zes nieuwe services** - Deze week introduceren we ook zes services: Asana, Campfire, EasyRedmine, JIRA, Redmine en Vimeo.
 
 [Lees meer informatie en stel vragen](https://flow.microsoft.com/blog/partner-program-six-new-services/) over deze release.
 

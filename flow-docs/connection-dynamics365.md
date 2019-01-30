@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: c780b3d305fbd5549f9c7ffc2a23571007dac7a7
-ms.sourcegitcommit: f7985b96afe68b079b7fd4a6d04cd0a042d893e0
+ms.openlocfilehash: e5abf1dd6f1f1d1dd6853aa552460694aebddd61
+ms.sourcegitcommit: 31b578972f00e6ab2e50ea0b674142199b3b7a35
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47188611"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54905665"
 ---
 # <a name="create-a-flow-by-using-dynamics-365-online"></a>Een stroom maken met behulp van Dynamics 365 (online)
 Met behulp van een Dynamics 365-connector kunt u stromen maken die worden gestart wanneer in Dynamics 365 of een andere service een gebeurtenis plaatsvindt, waardoor vervolgens een actie wordt uitgevoerd in Dynamics 365 of een andere service. 
@@ -78,7 +78,7 @@ Als geen gewenste sjabloon beschikbaar is, maakt u een volledig nieuwe stroom. I
     
     ![Onderwerp toevoegen aan stroom](./media/connection-dynamics365/flow-addtopic.png)
     
-    > **Tip:** klik of tik in het deelvenster met dynamische inhoud op **Meer weergeven** om meer velden weer te geven die zijn gekoppeld aan de entiteit. U kunt het veld **Onderwerp** van de taak bijvoorbeeld ook vullen met het veld **Bedrijfsnaam**, **Klant**, **Beschrijving** of **E-mail** van de potentiële klant.
+    > **Tip:** Klik of tik in het deelvenster met dynamische inhoud op **Meer weergeven** om meer velden weer te geven die zijn gekoppeld aan de entiteit. U kunt het veld **Onderwerp** van de taak bijvoorbeeld ook vullen met het veld **Bedrijfsnaam**, **Klant**, **Beschrijving** of **E-mail** van de potentiële klant.
     > 
     > 
 12. Klik of tik op **Stroom maken**.
@@ -100,7 +100,7 @@ In dit scenario ziet u hoe u een taak maakt in [Wunderlist](https://www.wunderli
 10. Klik of tik op **Stroom maken**.  
 
 ## <a name="trigger-based-logic"></a>Op triggers gebaseerde logica
-Door middel van triggers zoals **Wanneer een record wordt gemaakt**, **Wanneer een record wordt bijgewerkt** en **Wanneer een record wordt verwijderd** activeren uw stroom binnen enkele minuten na het begin van de gebeurtenis.  In zeldzame gevallen kan het tot twee uur duren voordat uw stroom wordt geactiveerd.
+Door triggers zoals **Wanneer een record wordt gemaakt**, **Wanneer een record wordt bijgewerkt** en **Wanneer een record wordt verwijderd** wordt uw stroom binnen enkele minuten na het begin van de gebeurtenis geactiveerd.  In zeldzame gevallen kan het tot twee uur duren voordat uw stroom wordt geactiveerd.
 
 Wanneer de trigger plaatsvindt, ontvangt de stroom een melding, maar de stroom wordt uitgevoerd aan de hand van gegevens die bestaan op het moment dat de actie wordt uitgevoerd.  Als uw stroom bijvoorbeeld wordt geactiveerd zodra een nieuwe record wordt gemaakt en u de record twee keer bijwerkt voordat de stroom wordt uitgevoerd, wordt uw stroom slechts één keer uitgevoerd met de meest recente gegevens.
 
@@ -147,7 +147,7 @@ In dit voorbeeld wordt de taak ook toegewezen aan een specifieke gebruiker op ba
 
 Zie [De record-id opzoeken](#find-the-records-id) verderop in dit onderwerp voor meer informatie over het opzoeken van record-id’s.
 
-> **Belangrijk:** velden mogen geen waarde bevatten als ze de beschrijving Alleen voor intern gebruik hebben. Tot deze velden behoren **Afgelegd pad**, **Aanvullende parameters** en **Versienummer van tijdzoneregel**.
+> **Belangrijk:** Velden mogen geen waarde bevatten als deze de beschrijving ‘Alleen voor intern gebruik’ hebben. Tot deze velden behoren **Afgelegd pad**, **Aanvullende parameters** en **Versienummer van tijdzoneregel**.
 > 
 > 
 
