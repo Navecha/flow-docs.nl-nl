@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 8baaf85ae07d2763886eb1ffda0141e4804cb630
-ms.sourcegitcommit: 8a36a3211e76b2b1a4a3154bc41e12a87dc3c288
+ms.openlocfilehash: af2e113278f480eb3c748cb1a2f9a81e34d32258
+ms.sourcegitcommit: a35abc6a2148cbfb48ca36d4af09bfd90eaffa42
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53179812"
+ms.lasthandoff: 02/01/2019
+ms.locfileid: "55647847"
 ---
 # <a name="understand-on-premises-data-gateways-for-microsoft-flow"></a>Over on-premises gegevensgateways voor Microsoft Flow
 Gebruik de on-premises gegevensgateway in combinatie met Microsoft Flow om beveiligde verbindingen tot stand te brengen met uw on-premises gegevensbronnen zoals Microsoft SQL Server.
@@ -166,6 +166,9 @@ Er is momenteel geen enkele locatie waar tenantbeheerders alle gateways kunnen b
 
 **Vraag:** Heb ik een gateway nodig voor gegevensbronnen in de cloud, zoals SQL Azure?
 **Antwoord:** Nee. Een gateway maakt alleen verbinding met on-premises gegevensbronnen.
+
+**Vraag:** Moet ik een gateway installeren in de standaardomgeving?
+**Antwoord:** Ja, Microsoft Flow ondersteunt alleen gateways die zijn geïnstalleerd in de standaardomgeving.
 
 **Vraag:** Wat is de werkelijke naam van de gateway als Windows-service?
 **Antwoord:** In Services heet de gateway **Power BI Enterprise-gatewayservice**.

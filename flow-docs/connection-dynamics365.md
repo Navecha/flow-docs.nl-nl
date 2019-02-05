@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: e5abf1dd6f1f1d1dd6853aa552460694aebddd61
-ms.sourcegitcommit: 31b578972f00e6ab2e50ea0b674142199b3b7a35
+ms.openlocfilehash: 64dc59bc53dfdc1d09dbb80be4f32a33c7259415
+ms.sourcegitcommit: 20a151bc5ef94c1ecde22934cbd878710ffb312c
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54905665"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55504502"
 ---
 # <a name="create-a-flow-by-using-dynamics-365-online"></a>Een stroom maken met behulp van Dynamics 365 (online)
 Met behulp van een Dynamics 365-connector kunt u stromen maken die worden gestart wanneer in Dynamics 365 of een andere service een gebeurtenis plaatsvindt, waardoor vervolgens een actie wordt uitgevoerd in Dynamics 365 of een andere service. 
@@ -120,6 +120,7 @@ Als u een waarde toevoegt aan een veld, moet deze overeenkomen met het veldtype.
 | Velden voor gehele getallen |Voor sommige velden is een geheel getal of dynamische inhoud uit een veld van het type geheel getal vereist. Voorbeelden zijn onder meer **Percentage voltooid** en **Duur**. |**Instellingen** > **Aanpassingen** > **Het systeem aanpassen** > **Entiteiten** > **Taak** > **Velden** |**percentcomplete** |**Geheel getal** |
 | Datumvelden |Voor sommige velden is een datum in de notatie dd-mm-jjjj of dynamische inhoud uit een veld van het datumtype vereist. Voorbeelden zijn onder meer **Gemaakt op**, **Begindatum**, **Werkelijke begindatum**, **Laatste tijd in de wacht**, **Werkelijke einddatum**, en **Vervaldatum**. |**Instellingen** > **Aanpassingen** > **Het systeem aanpassen** > **Entiteiten** > **Taak** > **Velden** |**createdon** |**Datum en tijd** |
 | Velden waarvoor een record-id en een opzoektype zijn vereist |Voor sommige velden die verwijzen naar een andere entiteitsrecord, zijn de record-id en het opzoektype vereist. |**Instellingen** > **Aanpassingen** > **Het systeem aanpassen** > **Entiteiten** > **Account** > **Velden** |**accountid** |**Primaire sleutel** |
+|Optieset|Velden voor een Optieset vereisen dat er een bekend geheel getal wordt doorgegeven aan dit type veld.  In het gebied voor Dynamics 365-aanpassingen kunt u de optiesets weergeven voor de overeenkomstige velden met gehele getallen en het desbetreffende label.|Instellingen > Aanpassing > Het systeem aanpassen > Entiteiten > Account > Velden | Voorkeursmethode voor contact| Geheel getal|
 
 ### <a name="more-examples-of-fields-that-require-both-a-record-id-and-lookup-type"></a>Meer voorbeelden van velden waarvoor een record-id en een opzoektype zijn vereist
 U vindt hier als aanvulling op de vorige tabel meer voorbeelden van velden waarvoor geen waarden uit de lijst met dynamische inhoud kunnen worden gebruikt. In plaats daarvan moeten voor deze velden een record-id en een opzoektype worden ingevoerd in PowerApps.

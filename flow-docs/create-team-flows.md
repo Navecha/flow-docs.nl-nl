@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: fb9f95845a6b516bfb83ed476929d8682098601f
-ms.sourcegitcommit: 4bd9fa4a9549a1830644f68cbf9ba50ed0ef8e19
+ms.openlocfilehash: 29d6532593719bef147cdacf1c0e2576ec734837
+ms.sourcegitcommit: c4cfb0a9b668c958755b3cdeae99eabf83651710
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "55204934"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55479414"
 ---
 # <a name="create-team-flows"></a>Teamstromen maken
 Maak een teamstroom door anderen in uw organisatie als eigenaren toe te voegen. Alle eigenaren van een teamstroom kunnen deze acties uitvoeren:
@@ -74,6 +74,10 @@ Voer deze stappen uit om een teamstroom te maken of meer eigenaren aan een teams
 
 U kunt SharePoint-lijsten toevoegen als mede-eigenaren van een stroom, zodat iedereen met bewerkingstoegang tot de lijst automatisch bewerkingstoegang krijgt voor de stroom. Zodra de stroom wordt gedeeld, kunt u een koppeling naar de stroom distribueren.
 
+> [!TIP]
+> Gebruik een lijst wanneer de stroom is verbonden met SharePoint en gebruik in andere gevallen een groep.
+>
+
 ## <a name="remove-an-owner"></a>Een eigenaar verwijderen
 
 > [!IMPORTANT]
@@ -114,6 +118,8 @@ De verbinding die worden gebruikt in een stroom, worden onderverdeeld in twee ca
 * **Andere verbindingen**: deze verbinding zijn gedefinieerd voor een stroom, maar worden niet in de stroom gebruikt.
 
 Als u een verbinding niet meer gebruikt in een stroom, wordt die verbinding verplaatst naar de lijst **Andere verbindingen** waar de verbinding blijft staan totdat een eigenaar de verbinding opnieuw opneemt in de stroom.
+
+Volg de stappen voor het [bijwerken van de eigenaar van een verbinding](./create-team-flows.md#update-connection-owner) om in ingesloten verbindingen te wijzigen.
 
 De lijst met verbindingen wordt weergegeven onder de lijst met eigenaren bij de eigenschappen van een stroom:
 

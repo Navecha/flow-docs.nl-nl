@@ -22,12 +22,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 1e765d4c7c11354e382c3ff74ac66103345ff39f
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
+ms.openlocfilehash: 93d0e035ed3661bd78c55a246106e604f2866b2e
+ms.sourcegitcommit: 29045ac95102af371a358b79b345b54a130fcab0
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44691022"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55501429"
 ---
 # <a name="tutorial-create-a-business-process-flow-to-standardize-processes"></a>Zelfstudie: Een bedrijfsprocesstroom maken om processen te standaardiseren
 
@@ -40,7 +40,12 @@ In deze zelfstudie leert u hoe u een bedrijfsprocesstroom maakt met PowerApps. Z
  > [!TIP]
  >  Nadat u een definitie hebt gemaakt voor een bedrijfsprocesstroom, kunt u bepalen wie de instantie van de bedrijfsprocesstroom kan maken, lezen, bijwerken of verwijderen. Zo kunt u voor servicegerelateerde processen klantenservicemedewerkers volledige toegang verlenen om de instantie van de bedrijfsprocesstroom te wijzigen, maar verkopers alleen-lezentoegang tot de instantie geven zodat ze de activiteiten na de verkoop kunnen volgen voor hun voor klanten. Als u beveiliging wilt instellen voor een bedrijfsprocesstroomdefinitie die u maakt, selecteert u **Beveiligingsrollen inschakelen** op de actiebalk.  
   
-<a name="BKMK_Createbusinessprocessflows"></a>   
+<a name="BKMK_Createbusinessprocessflows"></a>
+
+## <a name="prerequisites"></a>Vereisten
+
+U hebt [Flow-abonnement 2](https://preview.flow.microsoft.com/pricing/) nodig om stromen voor bedrijfsprocessen te kunnen maken. Sommige licentieabonnementen voor Dynamics 365 bevatten Flow-abonnement 2.
+
 ## <a name="create-a-business-process-flow"></a>Een bedrijfsprocesstroom maken  
   
 1. Open [Solution Explorer](/powerapps/maker/model-driven-apps/advanced-navigation#solution-explorer).
