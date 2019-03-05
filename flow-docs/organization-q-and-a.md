@@ -20,12 +20,12 @@ search.app:
 - Powerplatform
 search.audienceType:
 - admin
-ms.openlocfilehash: f62bbf9e508c269c17284382b674a07221a2d568
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
+ms.openlocfilehash: ef3f6c98d16733977482c5cb3c0c23e168f5eeca
+ms.sourcegitcommit: 8debf0041094f32fa221f5da3dbbcbc4f7815ff8
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44690555"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56885499"
 ---
 # <a name="flow-in-your-organization-qa"></a>Vragen en antwoorden over Flow in uw organisatie
 In dit onderwerp wordt beschreven hoe gebruikers in uw organisatie Flow kunnen gebruiken en hoe u de Flow-service kunt beheren.
@@ -46,6 +46,10 @@ Iedereen kan zich registreren op [flow.microsoft.com](https://flow.microsoft.com
 Wanneer een gebruiker in uw organisatie zich voor Flow registreert met optie 2, wordt aan deze gebruiker automatisch een gratis Flow-licentie toegewezen.
 
 [Aanmelden voor Flow](sign-up-sign-in.md) bevat meer details.
+
+### <a name="what-is-the-microsoft-flow-free-plan"></a>Wat is het gratis Microsoft Flow-abonnement?
+
+Het gratis Microsoft Flow-abonnement wordt alleen gebruikt voor volgdoeleinden. Activeren of deactiveren van het abonnement heeft geen invloed op het vermogen van de gebruiker om stromen te maken. Als u het gratis Microsoft Flow-abonnement deactiveert, wordt het weer geactiveerd wanneer een gebruiker zich aanmeldt. Dit is normaal gedrag.
 
 ### <a name="can-i-block-another-person-from-signing-up-for-flow"></a>Kan ik ervoor zorgen dat bepaalde personen zich niet kunnen registreren voor Flow?
 Microsoft Flow is een volledig openbare cloudservice. Iedereen in de hele wereld kan zich registreren en Flow gebruiken om de dagelijkse taken te automatiseren. Voor het gebruik van Microsoft Flow is het niet vereist dat gebruikers een Office 365-account hebben of gebruiken. Daarom is er op dit moment geen manier om te voorkomen dat een persoon Flow gebruikt (iedereen in de hele wereld kan Flow gebruiken, ongeacht het e-mailadres).
@@ -147,7 +151,7 @@ Als er een nieuwe tenant is gemaakt door Microsoft Flow, voert u de volgende sta
    2. Selecteer het startpictogram voor de app in de linkerbovenhoek en kies Admin (Beheer).
    3. Lees de instructies op de pagina **Become the admin** (Beheerder worden) en kies vervolgens **Yes, I want to be the admin** (Ja, ik wil beheerder worden).  
       
-       **OPMERKING**: als deze optie niet wordt weergegeven, is er al een Office 365-beheerder aangewezen.
+       **OPMERKING**: Als deze optie niet wordt weergegeven, is er al een Office 365-beheerder aangewezen.
 
 ### <a name="if-i-have-multiple-domains-can-i-control-the-office-365-tenant-that-users-are-added-to"></a>Als ik meerdere domeinen heb, kan ik dan de Office 365-tenant beheren waaraan gebruikers worden toegevoegd?
 Als u niets doet, wordt voor elk e-maildomein en -subdomein voor gebruikers een tenant gemaakt.
@@ -156,7 +160,7 @@ Als u wilt dat alle gebruikers aan dezelfde tenant worden toegevoegd, ongeacht d
 
 * Maak vooraf een doeltenant of gebruik een bestaande tenant. Voeg alle bestaande domeinen en subdomeinen toe die u binnen deze tenant wilt consolideren. Vervolgens worden alle gebruikers met een e-mailadres dat eindigt op deze domeinen en subdomeinen wanneer zij zich aanmelden automatisch lid van de doeltenant.
 
-**BELANGRIJK**: Er is geen ondersteunde geautomatiseerde methode om gebruikers van de ene tenant naar de andere te schuiven nadat deze zijn gemaakt. Zie [Add your users and domain to Office 365](https://support.office.com/article/Add-your-users-and-domain-to-Office-365-ffdb2216-330d-4d73-832b-3e31bcb5b2a7) (Uw gebruikers en domein toevoegen aan Office 365) voor meer informatie over het toevoegen van domeinen aan een enkele Office 365-tenant.
+**BELANGRIJK:** Er bestaat geen ondersteunde geautomatiseerde methode om gebruikers van de ene tenant naar de andere te verplaatsen nadat ze zijn gemaakt. Zie [Add your users and domain to Office 365](https://support.office.com/article/Add-your-users-and-domain-to-Office-365-ffdb2216-330d-4d73-832b-3e31bcb5b2a7) (Uw gebruikers en domein toevoegen aan Office 365) voor meer informatie over het toevoegen van domeinen aan een enkele Office 365-tenant.
 
 ### <a name="how-can-i-restrict-my-users-ability-to-access-my-organizations-business-data"></a>Hoe kan ik instellen dat mijn gebruikers beperkt toegang hebben tot de zakelijke gegevens van mijn bedrijf?
 Met Microsoft Flow kunt u gegevenszones maken voor zakelijke en niet-zakelijke gegevens, zoals hieronder wordt weergegeven. Zodra het beleid voor het voorkomen van gegevensverlies is geïmplementeerd, kunnen gebruikers geen stromen meer ontwerpen of uitvoeren waarin zowel zakelijke als niet-zakelijke gegevens worden gebruikt. Zie [Beleid voor preventie van gegevensverlies (DLP)](prevent-data-loss.md) voor meer informatie.
