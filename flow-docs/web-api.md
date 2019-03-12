@@ -1,3 +1,22 @@
+---
+title: Stromen worden nu opgeslagen in Common Data Service for Apps en gebruiken de uitgebreide Web-API
+description: Stromen worden nu opgeslagen in Common Data Service for Apps en gebruiken de uitgebreide Web-API.
+author: stepsic-microsoft-com
+ms.reviewer: deonhe
+ms.date: 03/05/2019
+ms.topic: article
+ms.prod: ''
+ms.service: business-applications
+ms.technology: ''
+ms.author: stepsic
+audience: Power user
+ms.openlocfilehash: 111fb191c6963e02d7bf54b419fd7088ce7605fc
+ms.sourcegitcommit: 9ecf4956320d465a3bf618b79a9023b729d33c89
+ms.translationtype: HT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57463002"
+---
 # <a name="microsoft-flow-web-api"></a>Web-API voor Microsoft Flow
 
 Van nu af aan worden alle stromen opgeslagen in de Common Data Service (CDS) for Apps en wordt er gebruikgemaakt van [de uitgebreide Web-API](https://docs.microsoft.com/dynamics365/customer-engagement/developer/webapi/perform-operations-web-api).
