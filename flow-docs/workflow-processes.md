@@ -14,12 +14,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 137cfd02ef3ba41cc9fffacc0aa23dc88e31fcef
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
+ms.openlocfilehash: 5f3e2145741c96d20f73ff74f5fd6cc6c1cbb52e
+ms.sourcegitcommit: 9ecf4956320d465a3bf618b79a9023b729d33c89
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44690969"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57462897"
 ---
 # <a name="classic-common-data-service-cds-for-apps-workflows"></a>Klassieke Common Data Service (CDS) for Apps-werkstromen 
 
@@ -74,7 +74,7 @@ Ontwikkelaars kunnen werkstromen maken met behulp van gegevens in de [Dynamics 3
  ![Tabblad Algemeen in een werkstroom](media/create-workflow-general-tab.PNG "Tabblad Algemeen in een werkstroom")  
   
  **Activeren als**  
- U kunt kiezen voor **Processjabloon** om een geavanceerd startpunt te maken voor andere sjablonen. Als u deze optie kiest na activering van de werkstroom, wordt deze niet toegepast. De optie kan wel worden geselecteerd in het dialoogvenster **Proces maken** als u het volgende selecteert: **Type**: **Nieuw proces vanuit een bestaande sjabloon (selecteer in de lijst)**  
+ U kunt kiezen voor **Processjabloon** om een geavanceerd startpunt te maken voor andere sjablonen. Als u deze optie kiest na activering van de werkstroom, wordt deze niet toegepast. De optie kan wel worden geselecteerd in het dialoogvenster **Proces maken** als u het volgende selecteert: **Type**: **Nieuw proces van een bestaande sjabloon (selecteer in de lijst)**  
   
  Processjablonen zijn handig wanneer u een aantal soortgelijke werkstroomprocessen hebt en deze zonder dezelfde logica te dupliceren wilt definiëren.  
   
@@ -103,7 +103,7 @@ Ontwikkelaars kunnen werkstromen maken met behulp van gegevens in de [Dynamics 3
 >  De werkstroomtaken worden niet onmiddellijk na voltooiing verwijderd, maar even erna, via een batchproces.  
   
  **Bereik**  
- Voor entiteiten die eigendom zijn van gebruikers zijn de opties **Organisatie**, **Bovenliggende business unit: Onderliggende business unit**, **Business unit** of **Gebruiker**. Voor entiteiten die eigendom zijn van een organisatie is de enige optie **Organisatie**.  
+ Voor entiteiten waarvan de gebruiker eigenaar is, zijn de opties **Organisatie**, **Bovenliggend item: onderliggende business units**, **Business unit** of **Gebruiker**. Voor entiteiten die eigendom zijn van een organisatie is de enige optie **Organisatie**.  
   
  Als het bereik **Organisatie** is, kan de werkstroomlogica worden toegepast op elk record in de organisatie. Anders kan de werkstroom alleen worden toegepast op een subset van de records die binnen het bereik vallen.  
   
@@ -111,7 +111,7 @@ Ontwikkelaars kunnen werkstromen maken met behulp van gegevens in de [Dynamics 3
 >  De standaardwaarde van het bereik is **Gebruiker**. Zorg ervoor dat u controleert of de waarde voor het bereik juist is voordat u de werkstroom activeert.  
   
  **Starten wanneer**  
- Gebruik de opties in deze sectie om op te geven wanneer een werkstroom automatisch moet worden gestart. U kunt een realtimewerkstroom zo configureren dat deze wordt uitgevoerd voorafgaand aan bepaalde gebeurtenissen. Dit is een zeer krachtige functie, omdat de werkstroom de actie kan stoppen voordat deze plaatsvindt. Meer informatie: [Realtimewerkstromen gebruiken](configure-workflow-steps.md#BKMK_SynchronousWorkflows). De opties zijn:  
+ Gebruik de opties in deze sectie om op te geven wanneer een werkstroom automatisch moet worden gestart. U kunt een realtimewerkstroom zo configureren dat deze wordt uitgevoerd voorafgaand aan bepaalde gebeurtenissen. Dit is een zeer krachtige functie, omdat de werkstroom de actie kan stoppen voordat deze plaatsvindt. Meer informatie: [Realtime-werkstromen gebruiken](configure-workflow-steps.md#BKMK_SynchronousWorkflows). De opties zijn:  
   
 - **Record wordt gemaakt**  
   

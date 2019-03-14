@@ -3,7 +3,7 @@ title: Acties voor werkstromen configureren in PowerApps | Microsoft Docs
 ms.custom: ''
 ms.date: 06/27/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: flow
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -21,16 +21,16 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 7bd236368e572c7204309094982b2868db0bce8f
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
+ms.openlocfilehash: c1b8686000b7723f2d942f3c6c5ebe685d98429d
+ms.sourcegitcommit: 9ecf4956320d465a3bf618b79a9023b729d33c89
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44690661"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57462905"
 ---
 # <a name="configure-custom-actions-from-a-workflow"></a>Aangepaste acties in een werkstroom configureren
 
-U kunt een aangepaste actie inschakelen vanuit een werkstroom zonder code te schrijven. Meer informatie: [Aangepaste acties aanroepen vanuit een werkstroom](invoke-custom-actions-workflow-dialog.md).  
+U kunt een aangepaste actie inschakelen vanuit een werkstroom zonder code te schrijven. Meer informatie: [Aangepaste acties op basis van een werkstroom aanroepen](invoke-custom-actions-workflow-dialog.md).  
   
  U kunt ook een actie maken zodat een ontwikkelaar deze kan gebruiken in code of mogelijk moet u een actie aanpassen die eerder is gedefinieerd. Net als bij werkstroomprocessen moet u rekening houden met het volgende:  
   
@@ -41,11 +41,11 @@ U kunt een aangepaste actie inschakelen vanuit een werkstroom zonder code te sch
  
 In tegenstelling tot werkstroomprocessen hoeft u de volgende opties niet in te stellen:  
   
-- **Wanneer starten**: acties starten wanneer code het bericht aanroept dat voor de acties is gegenereerd.  
+- **Starten wanneer**: Acties starten wanneer code het bericht aanroept dat voor de acties is gegenereerd.  
   
-- **Bereik**: acties worden altijd uitgevoerd in de context van de aanroepende gebruiker.  
+- **Bereik**: Acties worden altijd uitgevoerd in de context van de aanroepende gebruiker.  
   
-- **Op de achtergrond uitvoeren**: acties zijn altijd realtime-werkstromen.  
+- **Op de achtergrond uitvoeren**: Acties zijn altijd realtime-werkstromen.  
   
 Acties hebben ook iets dat werkstroomprocessen niet hebben: invoer- en uitvoerargumenten. Meer informatie: [Procesargumenten definiëren](configure-actions.md#BKMK_DefineProcessArgs)  
   

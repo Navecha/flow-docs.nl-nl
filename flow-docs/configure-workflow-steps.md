@@ -4,7 +4,7 @@ description: Informatie over het configureren van werkstroomstappen
 ms.custom: ''
 ms.date: 06/27/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: flow
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -18,12 +18,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 8e34f8ef8847ab08e14c91ee6d7871697b0275ce
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
+ms.openlocfilehash: 9ebdb1eddaea1f2fd7918c968879f5da37c287fe
+ms.sourcegitcommit: 9ecf4956320d465a3bf618b79a9023b729d33c89
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44690440"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57462836"
 ---
 # <a name="configure-workflow-stages-and-steps"></a>Werkstroomfasen en -stappen configureren
 
@@ -76,7 +76,7 @@ Bij het ontwerpen van werkstromen hebt u de mogelijkheid om de logica op te neme
   
 |Type voorwaarde|Beschrijving|  
 |--------------------|-----------------|  
-|**Voorwaarde controleren**|Een logische 'if-\<voorwaarde>then'-instructie.<br /><br /> U kunt de huidige waarden controleren van de record waarop de werkstroom wordt uitgevoerd, van een record die aan deze record is gekoppeld in een N:1-relatie of van een record die in eerdere stappen is gemaakt. Op basis van deze waarden kunt u extra stappen definiëren wanneer aan de voorwaarde wordt voldaan.<br /><br /> In de 'if-\<voorwaarde> then'-instructie kunt u de volgende operatoren gebruiken: **Equals**, **Does Not Equal**, **Contains Data**, **Does Not Contain Data**, **Under** en **Not Under**. **Opmerking:** **Under** en **Not Under** zijn hiërarchische operatoren. Deze kunnen alleen worden gebruikt op de entiteiten waarvoor een hiërarchische relatie is gedefinieerd. Als u deze operatoren probeert te gebruiken op de entiteiten waarvoor geen hiërarchische relatie is gedefinieerd, ziet u een foutbericht met de mededeling dat u een hiërarchische operator gebruikt voor een entiteit waarvoor geen hiërarchische relatie is gedefinieerd. U wordt geadviseerd om de entiteit hiërarchisch te maken (door een relatie als hiërarchisch te markeren) of een andere operator te gebruiken. Zie [Hiërarchische gegevens definiëren en opvragen](/powerapps/maker/common-data-service/define-query-hierarchical-data) voor meer informatie over hiërarchische relaties. In een schermafbeelding onder de tabel ziet u een voorbeeld van de definitie van het werkstroomproces waarin de operatoren **Under** en **Not Under** worden gebruikt.|  
+|**Voorwaarde controleren**|Een logische 'if-\<voorwaarde>then'-instructie.<br /><br /> U kunt de huidige waarden controleren van de record waarop de werkstroom wordt uitgevoerd, van een record die aan deze record is gekoppeld in een N:1-relatie of van een record die in eerdere stappen is gemaakt. Op basis van deze waarden kunt u extra stappen definiëren wanneer aan de voorwaarde wordt voldaan.<br /><br /> In de 'if-\<condition> then'-opdracht kunt u de volgende operators gebruiken: **Equals**, **Does Not Equal**, **Contains Data**, **Does Not Contain Data**, **Under** en **Not Under**. **Opmerking**:  **Under** en **Not Under** zijn hiërarchische operatoren. Deze kunnen alleen worden gebruikt op de entiteiten waarvoor een hiërarchische relatie is gedefinieerd. Als u deze operators probeert te gebruiken op de entiteiten waarvoor geen hiërarchische relatie is gedefinieerd, ziet u het volgende foutbericht: 'U gebruikt een hiërarchische operator op een entiteit waarvoor geen hiërarchische relatie is gedefinieerd. U wordt geadviseerd om de entiteit hiërarchisch te maken (door een relatie als hiërarchisch te markeren) of een andere operator te gebruiken. Zie [Hiërarchische gegevens definiëren en opvragen](/powerapps/maker/common-data-service/define-query-hierarchical-data) voor meer informatie over hiërarchische relaties. In een schermafbeelding onder de tabel ziet u een voorbeeld van de definitie van het werkstroomproces waarin de operatoren **Under** en **Not Under** worden gebruikt.|  
 |**Voorwaardelijke branche**|Een logische 'else-if-then'-instructie; in de editor wordt de tekst 'Otherwise, if \<condition> then:' gebruikt.<br /><br /> Selecteer een controlevoorwaarde die u eerder hebt gedefinieerd en u kunt een voorwaardelijke vertakking toevoegen voor het definiëren van extra stappen wanneer de controlevoorwaarde onwaar is.|  
 |**Standaardactie**|Een logische 'else'-instructie. In de editor wordt de tekst 'Otherwise:' gebruikt.<br /><br /> Selecteer een controlevoorwaarde, voorwaardelijke vertakking, een wachtvoorwaarde of een parallelle wachtvertakking die u eerder hebt gedefinieerd en u kunt een standaardactie gebruiken voor het definiëren van stappen voor alle gevallen die niet voldoen aan de criteria die zijn gedefinieerd in voorwaarde- of vertakkingselementen.|  
 |**Wachtvoorwaarde**|Hiermee kunt u een achtergrondwerkstroom zichzelf laten onderbreken totdat is voldaan aan de criteria die zijn gedefinieerd door de voorwaarde. De werkstroom wordt verder uitgevoerd zodra aan de criteria in de wachtvoorwaarde is voldaan.<br /><br /> U kunt geen wachtvoorwaarden gebruiken in realtime-werkstromen.|  

@@ -3,7 +3,7 @@ title: Dialoogvensters vervangen door bedrijfsprocesstromen of canvas-apps | Mic
 ms.custom: ''
 ms.date: 08/02/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: flow
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: get-started-article
@@ -21,12 +21,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 87a12345c72fd3dd3e93c1afecd282a688e4d4d1
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
+ms.openlocfilehash: 498efb98a4c89ca6c2a01e345f5593beae4dbcca
+ms.sourcegitcommit: 9ecf4956320d465a3bf618b79a9023b729d33c89
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44691084"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57463003"
 ---
 # <a name="replace-dialogs-with-business-process-flows-or-canvas-apps"></a>Dialoogvensters vervangen door bedrijfsprocesstromen of canvas-apps
 
@@ -84,7 +84,7 @@ Configureer ten slotte uw bedrijfsprocesstroomfasen en -stappen in combinatie me
 
 Als u wilt dat deze bedrijfsprocesstroom beschikbaar is voor gebruikers, moet u ervoor zorgen dat de juiste gebruikers de bevoegdheden hebben voor de bedrijfsprocesstroom en moet u deze vervolgens activeren.
 
-Zie [Zelfstudie: Een bedrijfsprocesstroom maken om processen te standaardiseren](create-business-process-flow.md) voor meer informatie over het maken van een bedrijfsprocesstroom.
+Zie voor meer informatie over het maken van een bedrijfsprocesstroom [Zelfstudie: Een bedrijfsprocesstroom maken om processen te standaardiseren](create-business-process-flow.md).
 
 ## <a name="dialog-replacement-using-canvas-app-scenario"></a>Scenario voor vervanging van een dialoogvenster met behulp van canvas-app
 

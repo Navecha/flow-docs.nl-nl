@@ -3,7 +3,7 @@ title: Overzicht bedrijfsprocesstromen | MicrosoftDocs
 ms.custom: ''
 ms.date: 06/27/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: flow
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: baefae21e605b0e54e32b09dfaee8f2980d73c13
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
+ms.openlocfilehash: b1e23a3ddfd4302c4a5429029ea4fb47f0ab9808
+ms.sourcegitcommit: 9ecf4956320d465a3bf618b79a9023b729d33c89
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44690302"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57462988"
 ---
 # <a name="business-process-flows-overview"></a>Overzicht bedrijfsprocesstromen
 
@@ -92,7 +92,7 @@ Bedrijfsprocesstromen bieden een handvat voor personen om hun werkzaamheden uit 
  U kunt bedrijfsprocesstromen alleen definiëren voor entiteiten die de stromen ondersteunen. U moet ook rekening houden met de limieten voor het aantal processen, fasen en stappen dat kan worden toegevoegd.  
   
 ### <a name="business-process-flows-that-call-a-workflow"></a>Bedrijfsprocesstromen die een werkstroom aanroepen  
- U kunt werkstromen op aanvraag aanroepen vanuit een bedrijfsprocesstroom. U kunt dit configureren vanuit de nieuwe bedrijfsprocesstroomontwerper door een werkstroomonderdeel naar een procesfase of naar de sectie Algemene werkstromen te slepen. Zie de blog [Business process flow automation in Dynamics 365](https://blogs.msdn.microsoft.com/crm/2017/03/28/business-process-flow-automation-in-dynamics-365/) (Automatisering van bedrijfsprocesstroom in Dynamics 365) voor meer informatie over het gebruik van werkstromen in bedrijfsprocesstromen.  
+ U kunt werkstromen op aanvraag aanroepen vanuit een bedrijfsprocesstroom. U kunt dit configureren vanuit de nieuwe bedrijfsprocesstroomontwerper door een werkstroomonderdeel naar een procesfase of naar de sectie Algemene werkstromen te slepen. Zie voor meer informatie over het gebruik van werkstromen in bedrijfsprocesstromen [Blog: Automatisering van bedrijfsprocesstromen in Dynamics 365](https://blogs.msdn.microsoft.com/crm/2017/03/28/business-process-flow-automation-in-dynamics-365/).  
   
  Als u een werkstroom opneemt die u wilt activeren bij het afsluiten van een fase in uw bedrijfsprocesstroom en die fase is de laatste fase in de stroom, dan geeft de ontwerper de indruk dat de werkstroom wordt geactiveerd wanneer die fase wordt voltooid. De werkstroom wordt echter niet geactiveerd omdat er geen faseovergang plaatsvindt. U ontvangt geen waarschuwing of foutmelding om te voorkomen dat u de werkstroom in de fase opneemt. Wanneer een gebruiker interactie met de bedrijfsprocesstroom heeft, resulteert het voltooien of afbreken van het proces niet in een faseovergang en daarom wordt de werkstroom niet geactiveerd. Bekijk de volgende voorbeelden:  
   
@@ -137,7 +137,7 @@ Bedrijfsprocesstromen bieden een handvat voor personen om hun werkzaamheden uit 
  Als u een aangepaste entiteit voor bedrijfsprocesstromen wilt inschakelen, schakelt u het selectievakje **Bedrijfsprocesstromen (velden worden gemaakt)** in de entiteitsdefinitie in. Let op: u kunt deze actie niet ongedaan maken.  
   
 > [!NOTE]
->  Als u naar de fase van de bedrijfsprocesstroom navigeert die de entiteit `Social Activity` bevat en de knop **Volgende fase** kiest, ziet u de optie **Maken**. Als u **Maken** kiest, wordt het formulier **Sociale activiteit** geladen. Omdat `Social Activity` niet geldig is voor `Create` vanuit de gebruikersinterface van de app, kunt u het formulier echter niet opslaan en ziet u het foutbericht: 'Onverwachte fout'.  
+>  Als u naar de fase van de bedrijfsprocesstroom navigeert die de entiteit `Social Activity` bevat en de knop **Volgende fase** kiest, ziet u de optie **Maken**. Als u **Maken** kiest, wordt het formulier **Sociale activiteit** geladen. Omdat `Social Activity` niet geldig is voor `Create` vanuit de gebruikersinterface van de app, kunt u het formulier echter niet opslaan en ziet u het foutbericht: Onverwachte fout.  
   
 <a name="BPF_MaxNumbers"></a>   
 ### <a name="maximum-number-of-processes-stages-and-steps"></a>Maximum aantal processen, fasen en stappen  

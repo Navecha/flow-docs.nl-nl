@@ -1,10 +1,10 @@
 ---
-title: Aanbevolen procedures voor werkstroomprocessen in PowerApps | MicrosoftDocs
+title: Aanbevolen procedures voor werkstroomprocessen | Microsoft Docs
 description: Inzicht krijgen in de aanbevolen manieren waarop u werkstromen kunt gebruiken
 ms.custom: ''
 ms.date: 06/27/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: flow
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -22,12 +22,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: bba5b203782cfa813de6ddc509a8be604e5e146b
-ms.sourcegitcommit: 50ea1cdd763863a2cbc88f9f965bdf9351f1059c
+ms.openlocfilehash: c0a59a625f4d43d125bde6ddf6edd5da5b6f6430
+ms.sourcegitcommit: 9ecf4956320d465a3bf618b79a9023b729d33c89
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51225535"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57462781"
 ---
 # <a name="best-practices-for-workflow-processes"></a>Aanbevolen procedures voor werkstroomprocessen
 
@@ -61,7 +61,7 @@ Voor werkstromen die niet op de achtergrond worden uitgevoerd (synchroon) wordt 
 ![De optie Logboeken bijhouden voor mislukte werkstromen](media/keep-logs-for-workflows.png)
 
 ## <a name="limit-the-number-of-workflows-that-update-the-same-entity"></a>Beperk het aantal werkstromen waarmee dezelfde entiteit wordt bijgewerkt
-Meer dan één werkstroom uitvoeren waarmee dezelfde entiteit wordt bijgewerkt, kan problemen veroorzaken in verband met het vergrendelen van resources. Stelt u zich verschillende werkstromen voor die worden uitgevoerd waarbij elke update voor een verkoopkans een update activeert voor het gekoppelde account. Meerdere exemplaren van deze werkstromen die op hetzelfde moment worden uitgevoerd en pogen hetzelfde accountrecord bij te werken, kunnen resulteren in problemen in verband met het vergrendelen van resources. Er treden werkstroomstoringen op en er wordt een foutbericht vastgelegd, zoals **SQL time-out: kan de resource _resourcenaam_** niet vergrendelen. 
+Meer dan één werkstroom uitvoeren waarmee dezelfde entiteit wordt bijgewerkt, kan problemen veroorzaken in verband met het vergrendelen van resources. Stelt u zich verschillende werkstromen voor die worden uitgevoerd waarbij elke update voor een verkoopkans een update activeert voor het gekoppelde account. Meerdere exemplaren van deze werkstromen die op hetzelfde moment worden uitgevoerd en pogen hetzelfde accountrecord bij te werken, kunnen resulteren in problemen in verband met het vergrendelen van resources. Er treden werkstroomfouten op en er wordt een foutbericht vastgelegd, zoals **SQL-time-out: kan geen vergrendeling verkrijgen op resource _naam van resource_**. 
 
   
 <a name="BKMK_DocumentChangesUsingNotes"></a>   
