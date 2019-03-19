@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 4d8be06222a0ed64290772d168def85720877f28
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
+ms.openlocfilehash: 32301a87c33e5586280d822df8f6c381dbbf96a9
+ms.sourcegitcommit: 3d0aecc89ed12b58f4b424c1c5a0654350f07d08
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44689566"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57885156"
 ---
 # <a name="faq-for-regions-in-microsoft-flow"></a>Veelgestelde vragen voor regio's in Microsoft Flow
 Dit document bevat een lijst met veelgestelde vragen over Microsoft Flow.
@@ -45,6 +45,8 @@ Beheerders kunnen de regio bepalen wanneer ze zich aanmelden bij het [beheercent
 * India
 * Japan
 * Canada
+* Zuid-Amerika
+* Verenigd Koninkrijk
 
 ## <a name="what-features-are-specific-to-a-given-region"></a>Welke functies gelden alleen voor een bepaalde regio?
 Omgevingen kunnen in verschillende regio's worden gemaakt en zijn gebonden aan die geografische locatie. Wanneer u een stroom in een omgeving maakt, wordt die stroom geïmplementeerd in datacenters op die geografische locatie. Dit geldt voor alle items die u in die omgeving maakt, waaronder Common Data Model, stromen, verbindingen, gateways, apps en aangepaste connectors.
