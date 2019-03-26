@@ -69,18 +69,18 @@ items:
     href: edit-solution-aware-flow.md
   - name: Een oplossingsbewuste stroom verwijderen
     href: remove-solution-aware-flow.md
-- name: Common Data Service (CDS) for Apps
+- name: Common Data Service
   items:
-  - name: Klassieke CDS for Apps-werkstromen
+  - name: Klassieke Common Data Service-werkstromen
     href: workflow-processes.md
     items:
     - name: Werkstroomfasen en -stappen configureren
       href: configure-workflow-steps.md
     - name: Werkstroomprocessen controleren en beheren
       href: monitor-manage-processes.md
-    - name: Best practices voor werkstroomprocessen
+    - name: Aanbevolen procedures voor werkstroomprocessen
       href: best-practices-workflow-processes.md
-  - name: Klassieke CDS for Apps-acties
+  - name: Klassieke Common Data Service-acties
     items:
     - name: Acties gebruiken
       href: actions.md
@@ -88,17 +88,17 @@ items:
       href: create-actions.md
     - name: Aangepaste acties op basis van een werkstroom configureren
       href: configure-actions.md
-    - name: Aangepaste acties op basis van een werkstroom aanroepen
+    - name: Aangepaste acties vanuit een werkstroom aanroepen
       href: invoke-custom-actions-workflow-dialog.md
-  - name: Klassieke CDS for Apps-taakstromen
+  - name: Klassieke Common Data Service-taakstromen
     items:
     - name: Mobiele taakstromen maken
       href: create-mobile-task-flow.md
-  - name: Klassieke CDS for Apps-dialoogvensters
+  - name: Klassieke Common Data Service-dialoogvensters
     items:
-    - name: Klassieke CDS for Apps-dialoogvensters gebruiken
+    - name: Klassieke Common Data Service-dialoogvensters gebruiken
       href: use-cds-for-apps-dialogs.md
-    - name: Klassieke CDS for Apps-dialoogvensters vervangen
+    - name: Klassieke Common Data Service-dialoogvensters vervangen
       href: replace-dialogs.md
 - name: Procedures
   items:
@@ -161,7 +161,7 @@ items:
     items:
     - name: 'Voorbeeld: Werken met bedrijfsprocesstromen'
       href: ./developer/sample-work-business-process-flows.md
-  - name: Aangepaste CDS for Apps-werkstroomactiviteiten
+  - name: Aangepaste Common Data Service-werkstroomactiviteiten
     href: ./developer/custom-cds-for-apps-workflow-activities.md
 - name: Beheer
   items:
@@ -221,9 +221,9 @@ items:
     href: https://flow.microsoft.com/blog/
   - name: Forums
     href: https://powerusers.microsoft.com/t5/Microsoft-Flow-Community/ct-p/FlowCommunity
-ms.openlocfilehash: e5b09261b0c46b8019fbb58e058c3a11720c2028
-ms.sourcegitcommit: 3c7822c7207cfa51d0274e9647ef02e5ea1d999f
+ms.openlocfilehash: 160466a0a616661993237e70007072efded33c9c
+ms.sourcegitcommit: 24da014ea8db8e59f097c4622d1e2cca9a4d1709
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58321359"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58352729"
