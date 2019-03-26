@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 2515b64629436ccb96de497eaf928b83f281dc5f
-ms.sourcegitcommit: b41b45f6fa29a22e9a9a4d3c726a2321b2ff3cbf
+ms.openlocfilehash: 8b0e64317b868dc32ede173329fa2f88ed53de76
+ms.sourcegitcommit: 24da014ea8db8e59f097c4622d1e2cca9a4d1709
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51025634"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58352985"
 ---
 # <a name="overview"></a>Overzicht
 
@@ -40,7 +40,7 @@ Stromen die u binnen een oplossing maakt, worden ook wel *oplossingsbewuste* str
 
 U hebt de volgende onderdelen nodig om oplossingen en oplossingsbewuste stromen te maken:
 
-- [Common Data Service for Apps 2.0](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro)
+- [Common Data Service](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro)
 - Een omgeving met versie 9.1.0.267 of nieuwer.
 
   Als u uw versie wilt controleren, gaat u naar het [Microsoft Flow-beheercentrum](https://admin.flow.microsoft.com), selecteert u **Omgevingen** en de omgeving waarin u bent geïnteresseerd en vervolgens selecteert u het tabblad **Details**.
