@@ -1,6 +1,6 @@
 ---
-title: Aangepaste CDS for Apps-werkstroomactiviteiten (werkstroomassembly's) | Microsoft Docs
-description: Lees hier alles over registratie en uitvoering van aangepaste CDS for Apps-werkstroomactiviteiten, naast de out-of-box-activiteiten die door Windows Workflow Foundation worden aangeboden.
+title: Aangepaste Common Data Service-werkstroomactiviteiten (werkstroomassembly's) | Microsoft Docs
+description: Lees hier alles over registratie en uitvoering van aangepaste Common Data Service-werkstroomactiviteiten, naast de out-of-box-activiteiten die door Windows Workflow Foundation worden aangeboden.
 ms.custom: ''
 ms.date: 08/08/2018
 ms.reviewer: ''
@@ -14,16 +14,16 @@ search.app:
 - Flow
 search.audienceType:
 - developer
-ms.openlocfilehash: 335b43eabf97cf0f7d8f1e35ccf00780bc6f39b4
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
+ms.openlocfilehash: 1cda3fb99dac66bcb675db031573be682c6e85ba
+ms.sourcegitcommit: 24da014ea8db8e59f097c4622d1e2cca9a4d1709
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44688830"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58352936"
 ---
-# <a name="custom-cds-for-apps-workflow-activities-workflow-assemblies"></a>Aangepaste CDS for Apps-werkstroomactiviteiten (werkstroomassembly's)
+# <a name="custom-common-data-service-workflow-activities-workflow-assemblies"></a>Custom Common Data Service-werkstroomactiviteiten (werkstroomassembly's)
 
-Common Data Service (CDS) for Apps-werkstroomactiviteiten ondersteunt de registratie en uitvoering van aangepaste werkstroomactiviteiten, naast de out-of-box-activiteiten die door [Windows Workflow Foundation](https://docs.microsoft.com/dotnet/framework/windows-workflow-foundation/) worden aangeboden. 
+Common Data Service ondersteunt de registratie en uitvoering van aangepaste werkstroomactiviteiten, naast de out-of-box-activiteiten die door [Windows Workflow Foundation](https://docs.microsoft.com/dotnet/framework/windows-workflow-foundation/) worden aangeboden. 
 
 Windows Workflow Foundation bevat een activiteitenbibliotheek met activiteiten voor het regelen van de stroom, het verzenden en ontvangen van berichten, het gelijktijdig uitvoeren van werk en nog veel meer. Het is echter mogelijk dat u voor het bouwen van toepassingen die voldoen aan de vereisten van uw bedrijf activiteiten nodig hebt die taken uitvoeren specifiek zijn voor die toepassing. Om dit mogelijk te maken, ondersteunt Windows Workflow Foundation het maken van aangepaste werkstroomactiviteiten.
 
@@ -31,7 +31,7 @@ Meer informatie: [Een werkstroomextensie maken](/powerapps/developer/common-data
   
 ## <a name="related-topics"></a>Verwante onderwerpen
 
-[CDS for Apps: overzicht voor ontwikkelaars](/powerapps/developer/common-data-service/overview)
+[Overzicht van Common Data Service Developer](/powerapps/developer/common-data-service/overview)
   
 [Een invoegtoepassing maken](/powerapps/developer/common-data-service/apply-business-logic-with-code#create-a-plug-in) 
   

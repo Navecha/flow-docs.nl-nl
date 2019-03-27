@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: bb623e84f309303557d05d82422d2419f8d3ccbe
-ms.sourcegitcommit: 300829df88dfa1d0049ea506f949b29d6bd52e42
+ms.openlocfilehash: 9ab3594f540129eb9caf8900c87420c08c1f7037
+ms.sourcegitcommit: 24da014ea8db8e59f097c4622d1e2cca9a4d1709
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57251809"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58352989"
 ---
 # <a name="get-started-with-microsoft-flow"></a>Aan de slag met Microsoft Flow #
 
@@ -35,7 +35,7 @@ Welkom! Microsoft Flow is een service die u helpt om geautomatiseerde werkstrome
 
 De belangrijkste typen stromen zijn [geautomatiseerde stromen](get-started-logic-flow.md), [knopstromen](introduction-to-button-flows.md), [geplande stromen](run-scheduled-tasks.md) en [bedrijfsprocesstromen](business-process-flows-overview.md).
 
-Als u een aanpasser voor Dynamics 365 voor klantcontacten bent, bent u mogelijk ook bekend met klassieke Common Data Service voor Apps-processen met onder andere, [werkstromen](configure-workflow-steps.md), [acties](create-actions.md), [mobiele taakstromen](create-mobile-task-flow.md) en [dialoogvensters](use-cds-for-apps-dialogs.md).
+Als u een aanpasser voor Dynamics 365 voor klantcontacten bent, bent u mogelijk ook bekend met klassieke Common Data Service-processen met onder andere, [werkstromen](configure-workflow-steps.md), [acties](create-actions.md), [mobiele taakstromen](create-mobile-task-flow.md) en [dialoogvensters](use-cds-for-apps-dialogs.md).
 
 De eerste stap is u [registreren](sign-up-sign-in.md). Als u al een account bij Microsoft Flow hebt, [meldt u zich aan](https://flow.microsoft.com/signin) op uw tablet, computer of zelfs uw telefoon.
 

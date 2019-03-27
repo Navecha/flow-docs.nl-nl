@@ -1,6 +1,6 @@
 ---
-title: Geautomatiseerde stromen maken met Common Data Service for Apps | Microsoft Docs
-description: Werkstromen maken met Common Data Service for Apps-verbindingen en Microsoft Flow
+title: Geautomatiseerde stromen maken met Common Data Service | Microsoft Docs
+description: Werkstromen maken met Common Data Service-verbindingen en Microsoft Flow
 services: ''
 suite: flow
 documentationcenter: na
@@ -20,18 +20,18 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: f9a417f99b6ea4105a451b65f7ccabbf36922d78
-ms.sourcegitcommit: 61f0eb1fdc54da02eb57dadf09899fa6f308b00d
+ms.openlocfilehash: 6dba013481983d0b8c43c82c7bc6eed800fccc2e
+ms.sourcegitcommit: 24da014ea8db8e59f097c4622d1e2cca9a4d1709
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57524492"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58352890"
 ---
-# <a name="create-an-automated-flow-by-using-common-data-service-for-apps"></a>Geautomatiseerde stromen maken met Common Data Service for Apps
+# <a name="create-an-automated-flow-by-using-common-data-service"></a>Geautomatiseerde stromen maken met Common Data Service
 
-Met de Common Data Service for Apps-connector kunt u stromen maken die door maak- en bijwerkgebeurtenissen in uw Common Data Service-database zijn geïnitieerd. Daarnaast kunt u de acties maken, bijwerken, ophalen en verwijderen uitvoeren op records in de Common Data Service for Apps-database.
+Met de Common Data Service-connector kunt u stromen maken die door maak- en bijwerkgebeurtenissen in uw Common Data Service-database zijn geïnitieerd. Daarnaast kunt u de acties maken, bijwerken, ophalen en verwijderen uitvoeren op records in de Common Data Service-database.
 
-## <a name="initiate-a-flow-from-common-data-service-for-apps"></a>Stromen initiëren vanuit Common Data Service for Apps
+## <a name="initiate-a-flow-from-common-data-service"></a>Stromen initiëren vanuit Common Data Service
 
 U kunt eender welke van de volgende triggers gebruiken om uw stroom te initiëren:
 
@@ -75,9 +75,9 @@ Deze stroom wordt telkens geactiveerd wanneer de voor- of achternaam wordt bijge
 
 Als gebruikers een stroom willen maken die wordt geactiveerd op basis van het maken, bijwerken of verwijderen van een record, moeten ze over machtigingen op gebruikersniveau voor het maken, lezen, schrijven en verwijderen op de entiteit Terugbelregistratie beschikken. Daarnaast hebben gebruikers, afhankelijk van de gedefinieerde bereiken, mogelijk ten minste datzelfde leesniveau nodig op die entiteit.  [Meer informatie](https://docs.microsoft.com/power-platform/admin/database-security) over de beveiliging van omgevingen.
 
-## <a name="write-data-into-common-data-service-for-apps"></a>Gegevens naar Common Data Service for Apps schrijven
+## <a name="write-data-into-common-data-service"></a>Gegevens naar Common Data Service schrijven
 
-Gebruik een van de volgende acties om gegevens naar Common Data Service for Apps te schrijven:
+Gebruik een van de volgende acties om gegevens naar Common Data Service te schrijven:
 
 - Een nieuwe record maken
 - Een record bijwerken

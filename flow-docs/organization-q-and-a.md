@@ -20,12 +20,12 @@ search.app:
 - Powerplatform
 search.audienceType:
 - admin
-ms.openlocfilehash: ef3f6c98d16733977482c5cb3c0c23e168f5eeca
-ms.sourcegitcommit: 8debf0041094f32fa221f5da3dbbcbc4f7815ff8
+ms.openlocfilehash: 6e05c24aa00c29dff4ca07432277ca7b907ebbb0
+ms.sourcegitcommit: e17963065b72ddaba7b2605908c62768acb8c16c
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56885499"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58327085"
 ---
 # <a name="flow-in-your-organization-qa"></a>Vragen en antwoorden over Flow in uw organisatie
 In dit onderwerp wordt beschreven hoe gebruikers in uw organisatie Flow kunnen gebruiken en hoe u de Flow-service kunt beheren.
@@ -38,7 +38,7 @@ Microsoft Flow is een openbare cloudservice waarmee personen en teams geautomati
 Er zijn twee manieren waarop personen zich voor Flow kunnen registreren via de webportal:
 
 #### <a name="option-1"></a>Mogelijkheid 1
-Iedereen kan zich registreren op [flow.microsoft.com](https://flow.microsoft.com). Klik daarvoor op **Registreer u gratis** en voltooi vervolgens het registratieproces voor Flow via [portal.office.com](https://portal.office.com/Start?sku=flow_free) of [signup.live.com](https://signup.live.com).
+Iedereen kan zich registreren op [flow.microsoft.com](https://flow.microsoft.com). Klik daarvoor op **Registreer u gratis** en voltooi vervolgens het registratieproces voor Flow via [admin.microsoft.com](https://admin.microsoft.com/Start?sku=flow_free) of [signup.live.com](https://signup.live.com).
 
 #### <a name="option-2"></a>Mogelijkheid 2
 Iedereen kan zich registreren op [flow.microsoft.com](https://flow.microsoft.com). Klik daarvoor op **Aanmelden**, meld u aan met uw werk-, school- of persoonlijke e-mailadres en accepteer de gebruiksvoorwaarden van Flow.    
@@ -147,7 +147,7 @@ Als er een nieuwe tenant is gemaakt door Microsoft Flow, voert u de volgende sta
 1. Word lid van de tenant door u aan te melden voor Flow met een e-mailadresdomein dat overeenkomt met het tenantdomein dat u wilt beheren. Als Microsoft bijvoorbeeld de tenant contoso.com heeft gemaakt, wordt u lid van de tenant met een e-mailadres dat eindigt op @contoso.com.
 2. Claim de controle over het beheer door het domeineigendom te verifiëren: zodra u bent aangemeld bij de tenant, kunt u aan uzelf de rol van beheerder toewijzen door het domeineigendom te verifiëren. Volg hiervoor de onderstaande stappen:    
    
-   1. Ga naar [https://portal.office.com](https://portal.office.com/Start?sku=flow_free).
+   1. Ga naar [https://admin.microsoft.com](https://admin.microsoft.com/Start?sku=flow_free).
    2. Selecteer het startpictogram voor de app in de linkerbovenhoek en kies Admin (Beheer).
    3. Lees de instructies op de pagina **Become the admin** (Beheerder worden) en kies vervolgens **Yes, I want to be the admin** (Ja, ik wil beheerder worden).  
       

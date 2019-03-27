@@ -18,24 +18,24 @@ search.app:
 - Flow
 search.audienceType:
 - developer
-ms.openlocfilehash: 6fe2b6d600d86dfd807dbb1ef794a1f428f26fbf
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
+ms.openlocfilehash: 6f3543b666e471d1f7fa0fe24fc718e50d35aec8
+ms.sourcegitcommit: 24da014ea8db8e59f097c4622d1e2cca9a4d1709
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44690047"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58352959"
 ---
 # <a name="sample-work-with-business-process-flows"></a>Voorbeeld: Werken met bedrijfsprocesstromen
 
 Dit voorbeeld laat zien hoe u programmatisch kunt werken met bedrijfsprocesstromen, zoals het ophalen van de exemplaren van bedrijfsprocesstromen voor een entiteitsrecord, het ophalen van het actieve pad voor een exemplaar van een bedrijfsprocesstroom en de bijbehorende procesfasen, en wijzigen van de actieve fase. Meer informatie over deze concepten vindt u in [Work with business process flows using code](business-process-flows-code.md) (Werken met bedrijfsprocesstromen met behulp van code).  
 
- U kunt dit voorbeeld downloaden van de Engelstalige site [Work with business process flows in Dynamics 365](https://go.microsoft.com/fwlink/p/?LinkId=846108).  
+ Dit voorbeeld kan worden gedownload via [Voorbeeld: Werken met bedrijfsprocesstromen](https://go.microsoft.com/fwlink/p/?LinkId=846108).  
 
 <a name="BKMK_Prerequisites"></a>   
 ## <a name="prerequisites"></a>Vereisten  
  Voordat u het voorbeeld kunt uitvoeren:  
 
-1. U moet toegang hebben tot een Common Data Service for Apps-omgeving.  
+1. U moet toegang hebben tot een Common Data Service-omgeving.  
 
 2. U moet beschikken over de juiste machtigingen voor de entiteiten Lead, Opportunity en Workflow, en entiteitsrecords voor de definitie van de bedrijfsprocesstroom die worden gebruikt in dit voorbeeld.  
 
@@ -70,7 +70,7 @@ Dit voorbeeld laat zien hoe u programmatisch kunt werken met bedrijfsprocesstrom
 
 2. Zoek het bestand `WorkWithBPF.sln` in de uitgepakte map en open het in Visual Studio.  
 
-3. Het voorbeeldproject maakt gebruik van NuGet-pakketten, die moeten worden hersteld voordat u het voorbeeld uitvoert. Zorg er daarom voor dat het automatisch herstellen van NuGet-pakketten is ingeschakeld in Visual Studio. Meer informatie: [Enabling and disabling package restore](https://go.microsoft.com/fwlink/?linkid=846106) (Herstellen van pakketten in- en uitschakelen).  
+3. Het voorbeeldproject maakt gebruik van NuGet-pakketten, die moeten worden hersteld voordat u het voorbeeld uitvoert. Zorg er daarom voor dat het automatisch herstellen van NuGet-pakketten is ingeschakeld in Visual Studio. Meer informatie: [Enabling and disabling NuGet package restore](https://go.microsoft.com/fwlink/?linkid=846106) (Herstellen van NuGet-pakketten in- en uitschakelen).  
 
     U kunt ook **Project** > **Manage NuGet Packages** selecteren en vervolgens **Restore** om de pakketten die worden gebruikt in het voorbeeld handmatig te herstellen.  
 

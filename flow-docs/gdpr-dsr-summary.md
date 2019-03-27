@@ -20,16 +20,16 @@ search.app:
 - Powerplatform
 search.audienceType:
 - admin
-ms.openlocfilehash: 6e4763fd3851276d647a302747342a6980293c33
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
+ms.openlocfilehash: 1eaa98b674e78f46988d253e2be76a5d92283a76
+ms.sourcegitcommit: 24da014ea8db8e59f097c4622d1e2cca9a4d1709
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44690785"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58353120"
 ---
 # <a name="responding-to-gdpr-data-subject-requests-for-microsoft-flow"></a>Reageren op AVG-verzoeken van betrokkenen voor Microsoft Flow
 
-Dit artikel bereidt u en uw organisatie voor op de Algemene verordening gegevensbescherming (AVG) van de Europese Unie. In dit artikel wordt niet alleen beschreven wat Microsoft doet ter voorbereiding op de AVG, maar er zijn ook voorbeelden van hoe u vandaag al AVG-naleving kunt ondersteunen bij gebruik van PowerApps, Microsoft Flow en Common Data Service voor Apps.
+Dit artikel bereidt u en uw organisatie voor op de Algemene verordening gegevensbescherming (AVG) van de Europese Unie. In dit artikel wordt niet alleen beschreven wat Microsoft doet ter voorbereiding op de AVG, maar er zijn ook voorbeelden van hoe u vandaag al AVG-naleving kunt ondersteunen bij gebruik van PowerApps, Microsoft Flow en Common Data Service.
 
 ## <a name="prerequisites"></a>Vereisten
 
@@ -58,23 +58,23 @@ De AVG verleent rechten aan personen (in de AVG aangeduid als betrokkenen) voor 
 
 In dit artikel wordt beschreven hoe u Microsoft-producten, -services en -beheerprogramma's gebruikt om verantwoordelijken te helpen bij het zoeken naar en verwerken van persoonsgegevens als reactie op een verzoek van een betrokkene. Dit artikel laat met name zien hoe persoonsgegevens die zich in de cloud van Microsoft bevinden, kunnen worden gevonden, geopend en verwerkt. Hier volgt een kort overzicht van de processen die in deze handleiding worden beschreven:
 
-1. Ontdekken: gebruik zoek- en detectieprogramma's om gemakkelijker te zoeken naar klantgegevens die het onderwerp van een verzoek van een betrokkene kunnen zijn. Nadat mogelijk responsieve documenten zijn verzameld, kunt u een of meer van de acties voor verzoeken van betrokkenen uitvoeren die worden beschreven in de volgende stappen om te reageren op het verzoek. U kunt ook vaststellen dat het verzoek niet voldoet aan de richtlijnen van uw organisatie voor het reageren op verzoeken van betrokkenen. [Microsoft Flow: detectiedocumentatie voor verzoeken van betrokkenen](gdpr-dsr-discovery.md)
+1. Ontdekken: Gebruik zoek- en detectieprogramma's om gemakkelijker te zoeken naar klantgegevens die het onderwerp van een verzoek van een betrokkene kunnen zijn. Nadat mogelijk responsieve documenten zijn verzameld, kunt u een of meer van de acties voor verzoeken van betrokkenen uitvoeren die worden beschreven in de volgende stappen om te reageren op het verzoek. U kunt ook vaststellen dat het verzoek niet voldoet aan de richtlijnen van uw organisatie voor het reageren op verzoeken van betrokkenen. [Microsoft Flow: detectiedocumentatie voor verzoeken van betrokkenen](gdpr-dsr-discovery.md)
 
-1. Toegang: haal persoonsgegevens op die zich in de Microsoft-cloud bevinden en, als daarom wordt verzocht, maakt u er een kopie van die beschikbaar kan worden gesteld aan betrokkene.
+1. Toegang: Haal persoonsgegevens op die zich in de Microsoft-cloud bevinden en, als daarom wordt verzocht, maakt u er een kopie van die beschikbaar kan worden gesteld aan betrokkene.
 
-1. Rectificatie: breng waar van toepassing wijzigingen aan of implementeer andere aangevraagde acties voor de persoonsgegevens.
+1. Rectificeren: Breng waar van toepassing wijzigingen aan of implementeer andere aangevraagde acties voor de persoonsgegevens.
 
     Als een betrokkene u vraagt om rectificatie van diens persoonsgegevens die zich in uw organisatie bevinden, moeten u en uw organisatie bepalen of aan dat verzoek kan worden voldaan.  Rectificatie van de gegevens kan betrekking hebben op het uitvoeren van acties zoals bewerken, redigeren of verwijderen van persoonlijke gegevens.
 
     U kunt Azure Active Directory gebruiken voor het beheren van de identiteit van Microsoft Flow-gebruikers. Enterprise-klanten kunnen inzageverzoeken voor rectificatie beheren, met inbegrip van beperkte bewerkingsfuncties, naar gelang de aard van een bepaalde Microsoft-service.  Als gegevensverwerker biedt Microsoft niet de mogelijkheid om door een systeem gegenereerde logboeken te corrigeren omdat deze logboeken feitelijke activiteiten weerspiegelen en een historisch overzicht vormen van gebeurtenissen in Microsoft-services.  [Meer informatie over verzoeken van betrokkenen](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-azure).
 
-1. Beperken: beperk de verwerking van persoonsgegevens, hetzij door het verwijderen van licenties voor verschillende online services, hetzij door het waar mogelijk uitschakelen van de gewenste services. U kunt ook gegevens uit de Microsoft-cloud verwijderen en deze lokaal of op een andere locatie bewaren.
+1. Beperken: Beperk de verwerking van persoonsgegevens, hetzij door het verwijderen van licenties voor verschillende onlineservices, hetzij door het waar mogelijk uitschakelen van de gewenste services. U kunt ook gegevens uit de Microsoft-cloud verwijderen en deze lokaal of op een andere locatie bewaren.
 
     Betrokkenen kunnen u verzoeken de verwerking van hun persoonsgegevens te beperken.  Microsoft biedt Application Programming Interfaces (API's) en gebruikersinterfaces (UI's) voor dit doel.  Met deze interfaces kan de tenantbeheerder van de Enterprise-klant dergelijke inzageverzoeken beheren door het exporteren en verwijderen van gegevens te combineren. Een klant kan (1) een digitale kopie van de persoonsgegevens van de gebruiker exporteren, inclusief account(s), door het systeem gegenereerde logboeken en bijbehorende logboeken, gevolgd door (2) de verwijdering van het account en de bijbehorende gegevens die zich binnen de Microsoft-systemen bevinden.
 
-1. Verwijderen: verwijder definitief persoonsgegevens in de Microsoft-cloud. [Meer informatie over het verwijderen van persoonsgegevens](gdpr-dsr-delete.md).
+1. Verwijderen: Verwijder definitief persoonsgegevens in de Microsoft-cloud. [Meer informatie over het verwijderen van persoonsgegevens](gdpr-dsr-delete.md).
 
-1. Exporteren: verstrek een digitale kopie (in een voor machines leesbare indeling) van persoonsgegevens aan de betrokkene. Elke sectie in dit artikel bevat een overzicht van de technische procedures die een organisatie als verwerkingsverantwoordelijke kan uitvoeren om te reageren op een verzoek van een betrokkene voor persoonsgegevens in de Microsoft-cloud. [Meer informatie over het exporteren van persoonsgegevens](gdpr-dsr-export.md).
+1. Exporteren: Verstrek een digitale kopie (in een voor machines leesbare indeling) van persoonsgegevens aan de betrokkene. Elke sectie in dit artikel bevat een overzicht van de technische procedures die een organisatie als verwerkingsverantwoordelijke kan uitvoeren om te reageren op een verzoek van een betrokkene voor persoonsgegevens in de Microsoft-cloud. [Meer informatie over het exporteren van persoonsgegevens](gdpr-dsr-export.md).
 
 ## <a name="system-generated-logs"></a>Door het systeem gegenereerde logboeken
 

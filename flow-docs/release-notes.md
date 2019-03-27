@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: db8a8c99344b93ad981a26d5174e99385d2a3f82
-ms.sourcegitcommit: 31b578972f00e6ab2e50ea0b674142199b3b7a35
+ms.openlocfilehash: 392a869d6b25bb16ee02a6bb3373d6edcf81621b
+ms.sourcegitcommit: 24da014ea8db8e59f097c4622d1e2cca9a4d1709
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54905741"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58353143"
 ---
 # <a name="release-notes"></a>Releaseopmerkingen
 ## <a name="top-questions"></a>Belangrijkste vragen
@@ -96,7 +96,7 @@ Het Microsoft Flow Preview-programma is de manier om vroegtijdige toegang tot de
 ### <a name="release-2018-07-23"></a>Release 07-23-2018
 
 - **Stromen maken en uitvoeren vanuit Excel** - Met de nieuwe knop **Stroom** (toegankelijk via het tabblad **Gegevens** op het lint), kunt u vanuit Microsoft Flow automatiseringen maken en activeren voor uw tabelgegevens in Excel. Automatiseer de verwerking of het kopiëren/importeren van gegevens.
-- **Bedrijfsprocesstromen maken** - Een bedrijfsprocesstroom is een nieuwe type stateful en human-interactive stroom gebaseerd op de Common Data Service voor apps. Gebruik deze nieuwe stromen om een aantal fases en stappen te definiëren die mensen kunnen volgen. Naar behoefte kunnen zij daarbij naar vorige of volgende fasen/stappen gaan.
+- **Bedrijfsprocesstromen maken** - Een bedrijfsprocesstroom is een nieuwe type stateful en human-interactive stroom gebaseerd op de Common Data Service. Gebruik deze nieuwe stromen om een aantal fases en stappen te definiëren die mensen kunnen volgen. Naar behoefte kunnen zij daarbij naar vorige of volgende fasen/stappen gaan.
 - **Stromen voor Microsoft To-Do maken in de Outlook web-app** - Als iemand in de Outlook web-app wordt \@vermeld, zien zij een snelkoppeling voor het maken van een stroom. Deze stroom maakt automatisch taken voor de \@vermelde persoon in Microsoft To-Do op basis van de inhoud van het e-mailbericht.
 - **Ondersteuning voor SharePoint-weergaven** - De SharePoint-connector ondersteunt nu de selectie van een specifieke SharePoint-weergave van triggers en acties. Hierdoor worden de kolommen gefilterd tot enkel die velden die zich in de geselecteerde weergave bevinden.
 - **Vier nieuwe connectors** - Er zijn vier nieuw connectors toegevoegd: Azure IoT Central (een uiterst schaalbare SaaS-oplossing voor IoT), Survey 123, LMS365 en ProjectWise Design Integration.
@@ -151,7 +151,7 @@ Het Microsoft Flow Preview-programma is de manier om vroegtijdige toegang tot de
 
 ### <a name="release-2018-04-04"></a>Release 04-04-2018
 
-- **Goedkeuringen voor de Common Data Service** -Moderne goedkeuringen zijn gebouwd op de meest recente versie van de Common Data Service voor apps. Dit betekent dat u stromen kunt bouwen die de status van de goedkeuringen lezen die u verzendt of ontvangt met de CDS-connector.
+- **Goedkeuringen voor de Common Data Service** -Moderne goedkeuringen zijn gebouwd op de meest recente versie van de Common Data Service. Dit betekent dat u stromen kunt bouwen die de status van de goedkeuringen lezen die u verzendt of ontvangt met de Common Data Service-connector.
 - **Zoek naar fouten in toepassen op alles** - Ga rechtstreeks naar fouten in lussen in de weergave met stroomuitvoeringen, zelfs als er honderden items in de lus zijn.
 - **Wijs goedkeuringen opnieuw toe** - U kunt goedkeuringen die u ontvangt, toewijzen aan een andere persoon in uw organisatie om de goedkeuring te delegeren. 
 - **Lijsten met ruimten** - De Office 365 Outlook-connector heeft acties toegevoegd om ruimtegegevens op te halen in uw organisatie.

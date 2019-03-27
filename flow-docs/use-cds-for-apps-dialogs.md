@@ -1,5 +1,5 @@
 ---
-title: Dialoogvensters van CDS for Apps gebruiken voor begeleide processen (afgeschaft) gebruiken | Microsoft Docs
+title: Dialoogvensters van Common Data Service gebruiken voor begeleide processen (afgeschaft) | Microsoft Docs
 description: Dialoogvensters zijn de synchrone of interactieve processen die gegevens verzamelen en verwerken met behulp van stapsgewijze scripts om gebruikers door een proces te leiden
 ms.custom: ''
 ms.date: 10/31/2017
@@ -15,22 +15,22 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: f8b2e87bdb9aed63e9f180d446349779cd37c25c
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
+ms.openlocfilehash: 90bdbc0ecf9b778ec6da3e4cac2b32b44e361fb0
+ms.sourcegitcommit: 24da014ea8db8e59f097c4622d1e2cca9a4d1709
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44689658"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58352913"
 ---
-# <a name="use-cds-for-apps-dialogs-for-guided-processes-deprecated"></a>Dialoogvensters van CDS for Apps gebruiken voor begeleide processen (afgeschaft) gebruiken
+# <a name="use-common-data-service-dialogs-for-guided-processes-deprecated"></a>Dialoogvensters van Common Data Service gebruiken voor begeleide processen (afgeschaft)
 
 [Dialoogvensters zijn afgeschaft](/dynamics365/get-started/whats-new/customer-engagement/important-changes-coming#dialogs-are-deprecated). U moet dialoogvensters vervangen door bedrijfsprocesstromen of canvas-apps Meer informatie: [Dialoogvensters vervangen door bedrijfsprocesstromen of canvas-apps](replace-dialogs.md) 
 
-Dialoogvensters zijn de synchrone of interactieve processen in CDS for Apps (Common Data Service) die gegevens verzamelen en verwerken met behulp van stapsgewijze scripts om gebruikers door een proces te leiden. U kunt bijvoorbeeld dialoogvensters maken als richtlijn voor servicemedewerkers om incidenten op te lossen of te escaleren. Een vergelijkbare toepassing is het maken van dialoogvensters voor het standaardiseren van verkoopprocessen, zoals de kwalificatie van verkoopkansen en het beoordelen van potentiële klanten. Zie voor meer informatie [Use dialogs for guided processes](/dynamics365/customer-engagement/developer/use-dialogs-guided-processes) (Dialoogvensters gebruiken voor begeleide processen) in de handleiding voor ontwikkelaars van Dynamics 365 Customer Engagement.
+Dialoogvensters zijn de synchrone of interactieve processen in Common Data Service die gegevens verzamelen en verwerken met behulp van stapsgewijze scripts om gebruikers door een proces te leiden. U kunt bijvoorbeeld dialoogvensters maken als richtlijn voor servicemedewerkers om incidenten op te lossen of te escaleren. Een vergelijkbare toepassing is het maken van dialoogvensters voor het standaardiseren van verkoopprocessen, zoals de kwalificatie van verkoopkansen en het beoordelen van potentiële klanten. Zie voor meer informatie [Use dialogs for guided processes](/dynamics365/customer-engagement/developer/use-dialogs-guided-processes) (Dialoogvensters gebruiken voor begeleide processen) in de handleiding voor ontwikkelaars van Dynamics 365 Customer Engagement.
 
 ## <a name="differences-between-workflows-and-dialogs"></a>Verschillen tussen werkstromen en dialoogvensters
 
-De volgende tabel bevat informatie over de verschillen tussen werkstromen en dialoogvensters van CDS for Apps.  
+De volgende tabel bevat informatie over de verschillen tussen werkstromen en dialoogvensters van Common Data Service.  
 
 
 | Werkstromen     |    Dialoogvensters      |

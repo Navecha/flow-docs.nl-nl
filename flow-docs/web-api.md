@@ -1,6 +1,6 @@
 ---
-title: Stromen worden nu opgeslagen in Common Data Service for Apps en gebruiken de uitgebreide Web-API
-description: Stromen worden nu opgeslagen in Common Data Service for Apps en gebruiken de uitgebreide Web-API.
+title: Stromen worden nu opgeslagen in Common Data Service en gebruiken de uitgebreide Web-API
+description: Stromen worden nu opgeslagen in Common Data Service en gebruiken de uitgebreide Web-API.
 author: stepsic-microsoft-com
 ms.reviewer: deonhe
 ms.date: 03/05/2019
@@ -10,16 +10,16 @@ ms.service: business-applications
 ms.technology: ''
 ms.author: stepsic
 audience: Power user
-ms.openlocfilehash: 111fb191c6963e02d7bf54b419fd7088ce7605fc
-ms.sourcegitcommit: 9ecf4956320d465a3bf618b79a9023b729d33c89
+ms.openlocfilehash: ede20606d1d5ba2a97217dfbcfb3c9fffec2c017
+ms.sourcegitcommit: 24da014ea8db8e59f097c4622d1e2cca9a4d1709
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57463002"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58353051"
 ---
 # <a name="microsoft-flow-web-api"></a>Web-API voor Microsoft Flow
 
-Van nu af aan worden alle stromen opgeslagen in de Common Data Service (CDS) for Apps en wordt er gebruikgemaakt van [de uitgebreide Web-API](https://docs.microsoft.com/dynamics365/customer-engagement/developer/webapi/perform-operations-web-api).
+Van nu af aan worden alle stromen opgeslagen in de Common Data Service en wordt er gebruikgemaakt van [de uitgebreide Web-API](https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/perform-operations-web-api).
 
 Deze inhoud bevat informatie over het beheren van stromen op het tabblad **Oplossingen** in Microsoft Flow. Op dit moment worden de stromen bij **Mijn stromen** niet ondersteund door deze API's.
 
@@ -52,7 +52,7 @@ U kunt de lijst met beschikbare exemplaren ook programmatisch ophalen met de met
 
 Voor elke aanvraag voor de Web-API moeten de `Accept`- en `Content-type`-headers worden ingesteld op `application/json`.
 
-Plaats tot slot de Azure AD Bearer-token in de `Authorization`-header. U kunt ook zelf [leren](https://docs.microsoft.com/dynamics365/customer-engagement/developer/authenticate-users) hoe u een Azure AD Bearer-token ophaalt voor CDS for Apps. Kijk bijvoorbeeld eens naar deze aanvraag:
+Plaats tot slot de Azure AD Bearer-token in de `Authorization`-header. U kunt ook zelf [leren](https://docs.microsoft.com/powerapps/developer/common-data-service/authenticate-oauth) hoe u een Azure AD Bearer-token ophaalt voor Common Data Service. Kijk bijvoorbeeld eens naar deze aanvraag:
 
 ```http
 GET https://org00000000.crm0.dynamics.com/api/data/v9.1/workflows
@@ -79,7 +79,7 @@ Het antwoord bevat de lijst met stromen uit die omgeving:
         "_modifiedby_value": "00000000-0000-0000-0000-000000000003",
         "_createdby_value": "00000000-0000-0000-0000-000000000003",
         "type": 1,
-        "description": "This flow updates some data in CDS for Apps.",
+        "description": "This flow updates some data in Common Data Service.",
         "clientdata": "{\"properties\":{\"connectionReferences\":{\"shared_commondataservice\":{\"source\":\"NotSpecified\",\"id\":\"/providers/Microsoft.PowerApps/apis/shared_commondataservice\",\"tier\":\"NotSpecified\"}},\"definition\":{...}},\"schemaVersion\":\"1.0.0.0\"}"
     }]
 }
@@ -91,22 +91,22 @@ Zoals hierboven is beschreven, kunt u de lijst met werkstromen ophalen door `GET
 
 | Naam van eigenschap     | Beschrijving                                              |
 | ----------------- | -------------------------------------------------------- |
-| category          | De categorie van de stroom. De verschillende typen zijn: 0 - klassieke CDS for Apps-werkstromen, 1 - klassieke CDS for Apps-dialoogvensters, 2 - bedrijfsregels, 3 - klassieke CDS for Apps-acties, 4 - zakelijke processtromen en 5 - geautomatiseerde, direct uit te voeren of geplande stromen. |
+| category          | De categorie van de stroom. De verschillende typen zijn: 0 - klassieke Common Data Service-werkstromen, 1 - klassieke Common Data Service-dialoogvensters, 2 - bedrijfsregels, 3 - klassieke Common Data Service-acties, 4 - zakelijke processtromen en 5 - geautomatiseerde, direct uit te voeren of geplande stromen. |
 | statecode         | De status van de stroom. De status kan **0** zijn (uit) of **1** (aan).|
 | workflowuniqueid  | De unieke id van deze installatie van de stroom. |
 | workflowid        | De unieke id van een stroom binnen alle invoer. |
 | createdon         | De datum waarop de stroom is gemaakt. |
-| _ownerid_value    | De unieke id van de gebruiker of het team dat eigenaar is van de stroom. Dit is een id uit de entiteit systemusers van CDS for Apps. |
+| _ownerid_value    | De unieke id van de gebruiker of het team dat eigenaar is van de stroom. Dit is een id uit de entiteit systemusers van Common Data Service. |
 | modifiedon        | De laatste keer dat de stroom is bijgewerkt. |
 | ismanaged         | Geeft aan of de stroom is geïnstalleerd via een beheerde oplossing. |
 | name              | De weergavenaam die u de stroom hebt gegeven. |
-| _modifiedby_value | De laatste gebruiker die de stroom heeft bijgewerkt. Dit is een id uit de entiteit systemusers van CDS for Apps. |
-| _createdby_value  | De gebruiker die de stroom heeft gemaakt. Dit is een id uit de entiteit systemusers van CDS for Apps. |
+| _modifiedby_value | De laatste gebruiker die de stroom heeft bijgewerkt. Dit is een id uit de entiteit systemusers van Common Data Service. |
+| _createdby_value  | De gebruiker die de stroom heeft gemaakt. Dit is een id uit de entiteit systemusers van Common Data Service. |
 | type              | Geeft aan of een stroom actief is, of dat het een sjabloon is dat kan worden gebruikt voor het maken van aanvullende stromen. 1 - stroom, 2 - activering 3 - sjabloon. |
 | beschrijving       | De door de gebruiker opgegeven beschrijving van de stroom. |
 | clientdata        | De JSON van een object met tekenreekscodering. De JSON bevat de connectionReferences en de definitie van een stroom. |
 
-U kunt ook specifieke eigenschappen aanvragen, de lijst stromen filteren en nog veel meer. Dit wordt beschreven in de [CDS for Apps-API-documentatie voor het opvragen van gegevens](https://docs.microsoft.com/dynamics365/customer-engagement/developer/webapi/query-data-web-api). Met deze query worden bijvoorbeeld alleen geautomatiseerde, direct uit te voeren en geplande stromen geretourneerd die zich momenteel hier bevinden:
+U kunt ook specifieke eigenschappen aanvragen, de lijst stromen filteren en nog veel meer. Dit wordt beschreven in de [Common Data Service-API-documentatie voor het opvragen van gegevens](https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/query-data-web-api). Met deze query worden bijvoorbeeld alleen geautomatiseerde, direct uit te voeren en geplande stromen geretourneerd die zich momenteel hier bevinden:
 
 ```http
 GET https://org00000000.crm0.dynamics.com/api/data/v9.1/workflows?$filter=category eq 5 and statecode eq 1
@@ -130,7 +130,7 @@ Content-type: application/json
         "statecode": 0,
         "name": "Sample flow name",
         "type": 1,
-        "description": "This flow reads some data from CDS for Apps.",
+        "description": "This flow reads some data from Common Data Service.",
         "primaryentity":"none",
         "clientdata": "{\"properties\":{\"connectionReferences\":{\"shared_commondataservice\":{\"connectionName\":\"shared-commondataser-00000000-0000-0000-0000-000000000004\",\"source\":\"Invoker\",\"id\":\"/providers/Microsoft.PowerApps/apis/shared_commondataservice\"}},\"definition\":{\"$schema\": \"https:\/\/schema.management.azure.com\/providers\/Microsoft.Logic\/schemas\/2016-06-01\/workflowdefinition.json#\",\"contentVersion\": \"1.0.0.0\",\"parameters\": {\"$connections\": {\"defaultValue\": {},\"type\": \"Object\"},\"$authentication\": {\"defaultValue\": {},\"type\": \"SecureObject\"}},\"triggers\": {\"Recurrence\": {\"recurrence\": {\"frequency\": \"Minute\",\"interval\": 1},\"type\": \"Recurrence\"}},\"actions\": {\"List_records\": {\"runAfter\": {},\"metadata\": {\"flowSystemMetadata\": {\"swaggerOperationId\": \"GetItems_V2\"}},\"type\": \"ApiConnection\",\"inputs\": {\"host\": {\"api\": {\"runtimeUrl\": \"https:\/\/firstrelease-001.azure-apim.net\/apim\/commondataservice\"},\"connection\": {\"name\": \"@parameters('$connections')['shared_commondataservice']['connectionId']\"}},\"method\": \"get\",\"path\": \"\/v2\/datasets\/@{encodeURIComponent(encodeURIComponent('default.cds'))}\/tables\/@{encodeURIComponent(encodeURIComponent('accounts'))}\/items\",\"queries\": {\"$top\": 1},\"authentication\": \"@parameters('$authentication')\"}}},\"outputs\": {}}},\"schemaVersion\":\"1.0.0.0\"}"
 }
@@ -193,7 +193,7 @@ Authorization: Bearer ey...
 
 ## <a name="get-all-users-with-whom-a-flow-is-shared"></a>Alle gebruikers ophalen waarmee een stroom wordt gedeeld
 
-Als u een lijst met gebruikers met toegang wilt bekijken, gebruikt u een *functie* uit CDS for Apps. Met deze functie wordt één parameter uit `Target` gebruikt:
+Als u een lijst met gebruikers met toegang wilt bekijken, gebruikt u een *functie* uit Common Data Service. Met deze functie wordt één parameter uit `Target` gebruikt:
 
 ```http
 GET https://org00000000.crm0.dynamics.com/api/data/v9.1/RetrieveSharedPrincipalsAndAccess(Target=@tid)?@tid={'@odata.id':'workflows(00000000-0000-0000-0000-000000000002)'}
@@ -310,8 +310,8 @@ Roep de actie `ImportSolution` aan om een oplossing te importeren.
 
 | Naam van eigenschap                    | Beschrijving                               |
 | -------------------------------- | ----------------------------------------- |
-| OverwriteUnmanagedCustomizations | Als er bestaande exemplaren van deze stromen aanwezig zijn in CDS for Apps, moet deze markering op `true` worden ingesteld om ze te importeren. Als u dit niet doet, worden ze niet overschreven. |
-| PublishWorkflows                 | Hiermee wordt aangegeven of er klassieke CDS for Apps-werkstromen worden geactiveerd bij het importeren. Deze instelling geldt niet voor andere typen stromen. |
+| OverwriteUnmanagedCustomizations | Als er bestaande exemplaren van deze stromen aanwezig zijn in Common Data Service, moet deze markering op `true` worden ingesteld om ze te importeren. Als u dit niet doet, worden ze niet overschreven. |
+| PublishWorkflows                 | Hiermee wordt aangegeven of er klassieke Common Data Service-werkstromen worden geactiveerd bij het importeren. Deze instelling geldt niet voor andere typen stromen. |
 | ImportJobId                      | Biedt een nieuwe, unieke GUID om de importeertaak te volgen. |
 | CustomizationFile                | Een op basis van base 64 gecodeerd ZIP-bestand dat de oplossing bevat. |
 

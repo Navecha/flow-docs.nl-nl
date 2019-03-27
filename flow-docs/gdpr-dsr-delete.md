@@ -20,12 +20,12 @@ search.app:
 - Powerplatform
 search.audienceType:
 - admin
-ms.openlocfilehash: 9edad8ef0aa4e51292bddc5dc59c90ae84223de2
-ms.sourcegitcommit: ade400bab38f85071d4c8bf6a5380f561f12f2f5
+ms.openlocfilehash: 523e46269522d50eebe34fc559d69f4c146a2c3f
+ms.sourcegitcommit: 24da014ea8db8e59f097c4622d1e2cca9a4d1709
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53248840"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58353074"
 ---
 # <a name="responding-to-gdpr-data-subject-delete-requests-for-microsoft-flow"></a>Reageren op AVG-verzoeken van betrokkenen voor het verwijderen van gegevens in Microsoft Flow
 
@@ -49,7 +49,7 @@ In de volgende tabel ziet u welke persoonsgegevens automatisch worden verwijderd
 
 *Elk van deze resources bevat Gemaakt door- en Gewijzigd door-records die persoonsgegevens bevatten. Deze records worden uit veiligheidsoverwegingen bewaard totdat de resource wordt verwijderd.
 
-**In omgevingen met een Common Data Service For Apps-database worden omgevingsmachtigingen (bijvoorbeeld welke gebruikers zijn toegewezen aan de rollen Omgevingsmaker en Beheerder) opgeslagen als records in de Common Data Service-database. Zie [Executing DSRs against Common Data Service Customer Data](https://go.microsoft.com/fwlink/?linkid=872251) (Verzoeken van betrokkenen uitvoeren op basis van klantgegevens van Common Data Service) voor informatie over het reageren op verzoeken van betrokkenen voor gebruikers die gebruikmaken van Common Data Service.
+**In omgevingen met een Common Data Service-database worden omgevingsmachtigingen (bijvoorbeeld welke gebruikers zijn toegewezen aan de rollen Omgevingsmaker en Beheerder) opgeslagen als records in de Common Data Service-database. Zie [Executing DSRs against Common Data Service Customer Data](https://go.microsoft.com/fwlink/?linkid=872251) (Verzoeken van betrokkenen uitvoeren op basis van klantgegevens van Common Data Service) voor informatie over het reageren op verzoeken van betrokkenen voor gebruikers die gebruikmaken van Common Data Service.
 
 Voor de gegevens en resources die handmatig moeten worden bekeken, biedt Microsoft Flow de volgende ervaringen om persoonsgegevens voor een specifieke gebruiker te vinden of te wijzigen:
 
@@ -76,7 +76,7 @@ Hier volgt de uitsplitsing van ervaringen die een beheerder ter beschikking staa
 |Machtigingen voor aangepaste connectors|Microsoft Flow Maker Portal| ||
 |Goedkeuringsgeschiedenis|Microsoft PowerApps Maker Portal*|||
 
-*Sinds de introductie van de Common Data Service for Apps worden, als er binnen de omgeving een database wordt gemaakt, omgevingsmachtigingen en modelgestuurde app-machtigingen als records in het database-exemplaar van Common Data Service for Apps opgeslagen. Zie [Executing DSRs against Common Data Service Customer Data](https://go.microsoft.com/fwlink/?linkid=872251) (Verzoeken van betrokkenen uitvoeren op basis van klantgegevens van Common Data Service) voor informatie over het reageren op verzoeken van betrokkenen voor gebruikers die gebruikmaken van Common Data Service.
+*Sinds de introductie van de Common Data Service worden, als er binnen de omgeving een database wordt gemaakt, omgevingsmachtigingen en modelgestuurde app-machtigingen als records in het database-exemplaar van Common Data Service opgeslagen. Zie [Executing DSRs against Common Data Service Customer Data](https://go.microsoft.com/fwlink/?linkid=872251) (Verzoeken van betrokkenen uitvoeren op basis van klantgegevens van Common Data Service) voor informatie over het reageren op verzoeken van betrokkenen voor gebruikers die gebruikmaken van Common Data Service.
 
 \*\* Een beheerder heeft alleen toegang tot deze bronnen vanuit de Microsoft Flow Maker-portal als aan de beheerder toegang is toegewezen vanuit het Microsoft Flow-beheercentrum.
 
@@ -137,7 +137,7 @@ Met deze stappen worden bestaande stromen voor een vertrekkende gebruiker gekopi
 
 ## <a name="delete-approval-history-from-microsoft-flow"></a>Goedkeuringsgeschiedenis verwijderen uit Microsoft Flow
 
- Goedkeuringsgegevens voor Microsoft-Flow worden opgeslagen in de huidige of de vorige versie van de Common Data Service for Apps. Een goedkeuring bevat persoonsgegevens in de vorm van goedkeuringstoewijzingen en commentaar in een goedkeuringsantwoord. Beheerders hebben toegang tot die gegevens met de volgende stappen:
+ Goedkeuringsgegevens voor Microsoft-Flow worden opgeslagen in de huidige of de vorige versie van de Common Data Service. Een goedkeuring bevat persoonsgegevens in de vorm van goedkeuringstoewijzingen en commentaar in een goedkeuringsantwoord. Beheerders hebben toegang tot die gegevens met de volgende stappen:
 
 1. Meld u aan bij [PowerApps](https://web.powerapps.com/).
 
@@ -277,7 +277,7 @@ Een beheerder kan beheerderstoegang verlenen tot een omgeving die is gemaakt doo
 
 Gebruikers kunnen machtigingen (zoals Omgevingsbeheerder, Omgevingsmaker, enzovoort) krijgen toegewezen in een omgeving, die in de Microsoft Flow-service worden opgeslagen als 'roltoewijzing'.
 
-Sinds de introductie van de Common Data Service for Apps worden, als er binnen de omgeving een database wordt gemaakt, deze roltoewijzingen als records in de database-instance van Common Data Service for Apps opgeslagen.
+Sinds de introductie van de Common Data Service worden, als er binnen de omgeving een database wordt gemaakt, deze roltoewijzingen als records in de database-instance van Common Data Service opgeslagen.
 
 Navigeer naar [Omgevingen gebruiken in Microsoft Flow](https://docs.microsoft.com/flow/environments-overview-admin) voor meer informatie over het verwijderen van de machtiging van een gebruiker in een omgeving.
 
