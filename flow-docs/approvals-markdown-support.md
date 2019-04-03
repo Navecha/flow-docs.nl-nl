@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: a6c06fc564334eeacd01e54ab3b71046d229d033
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
+ms.openlocfilehash: 7611ccb8bba9f2647402df46753de284016d7cd4
+ms.sourcegitcommit: 014f64bcc4aed27794d5c7efc2eca241d271518e
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44690017"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58656126"
 ---
 # <a name="use-markdown-in-microsoft-flow-approval-requests"></a>Markdown gebruiken in Microsoft Flow-goedkeuringsaanvragen
 
@@ -57,10 +57,8 @@ Maak uw tekst gemakkelijker te lezen door deze op te splitsen met alinea's of re
    
 **Voorbeeld**
 
-<pre>
-Add lines between your text with the Enter key.
-This spaces your text better and makes it easier to read.
-</pre>
+Voeg regels tussen uw tekst in met behulp van de Enter-toets.
+Dat maakt de tekst overzichtelijker en gemakkelijker te lezen.
 
 **Resultaat:**   
 Voeg regels tussen uw tekst in met behulp van de Enter-toets.      
@@ -69,10 +67,8 @@ Dat maakt de tekst overzichtelijker en gemakkelijker te lezen.
 
 **Voorbeeld 2**
 
-<pre>
-Add two spaces prior to the end of the line.(space, space)     
-This adds space in between paragraphs.
-</pre>
+Voeg twee spaties toe vóór het einde van de regel (spatie, spatie).     
+Hiermee wordt ruimte tussen de alinea's gecreëerd.
 
 **Resultaat:**  
 Voeg twee spaties toe vóór het einde van de regel.   
