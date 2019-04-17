@@ -57,23 +57,23 @@ Maak uw tekst gemakkelijker te lezen door deze op te splitsen met alinea's of re
    
 **Voorbeeld**
 
-Voeg regels tussen uw tekst in met behulp van de Enter-toets.
-Dat maakt de tekst overzichtelijker en gemakkelijker te lezen.
+Add lines between your text with the Enter key.
+This spaces your text better and makes it easier to read.
 
 **Resultaat:**   
-Voeg regels tussen uw tekst in met behulp van de Enter-toets.      
-Dat maakt de tekst overzichtelijker en gemakkelijker te lezen.
+Add lines between your text with the Enter key.      
+This spaces your text better and makes it easier to read.
 
 
 **Voorbeeld 2**
 
-Voeg twee spaties toe vóór het einde van de regel (spatie, spatie).     
-Hiermee wordt ruimte tussen de alinea's gecreëerd.
+Add two spaces prior to the end of the line.(space, space)     
+This adds space in between paragraphs.
 
 **Resultaat:**  
-Voeg twee spaties toe vóór het einde van de regel.   
+Add two spaces prior to the end of the line.   
 
-Hiermee wordt ruimte tussen de alinea's gecreëerd.
+This adds space in between paragraphs.
   
 
 ## <a name="lists"></a>Lijsten
@@ -94,9 +94,9 @@ Geordende lijsten beginnen met een getal gevolgd door een punt voor elk lijstite
 
 **Resultaat:**
 
-1. Eerste item.
-2. Tweede item.
-3. Derde item.
+1. First item.
+2. Second item.
+3. Third item.
 
 ### <a name="bullet-lists"></a>Lijsten met opsommingstekens
 
@@ -134,15 +134,15 @@ Geordende lijsten beginnen met een getal gevolgd door een punt voor elk lijstite
 
 **Resultaat:**  
 
-1. Eerste item.
+1. First item.
 
     - Item 1
     - Item 2
     - Item 3
-2. Tweede item.
-    - Genest item 1
-    - Genest item 2
-    - Genest item 3
+2. Second item.
+    - Nested item 1
+    - Nested item 2
+    - Nested item 3
 
 
 ## <a name="links"></a>Koppelingen
@@ -212,10 +212,10 @@ Deel gestructureerde gegevens in met tabellen.
 
 **Resultaat:**  
 
-| Kop 1 | Kop 2 | Kop 3 |  
+| Heading 1 | Heading 2 | Heading 3 |  
 |-----------|:---------:|-----------:|  
-| Cel A1 | Cel A2 | Cel A3 |  
-| Cel B1 | Cel B2 | Cel B3<br/>tweede tekstregel |  
+| Cell A1 | Cell A2 | Cell A3 |  
+| Cell B1 | Cell B2 | Cell B3<br/>second line of text |  
 
  
 ## <a name="emphasis-bold-italics-strikethrough"></a>Nadruk (vet, cursief, doorhalen)  
@@ -239,9 +239,9 @@ Use _emphasis_ in comments to express **strong** opinions and point out ~~correc
 
 **Resultaat:**
 
-Gebruik _nadruk_ in opmerkingen om een **krachtige** mening en <s>correcties</s>  aan te geven  
-**_Vette, cursieve tekst_**   
-**~~Vette, doorgehaalde tekst~~**  
+Use _emphasis_ in comments to express **strong** opinions and point out <s>corrections</s>   
+**_Bold, italicized text_**   
+**~~Bold, strike-through text~~**  
 
 
 ## <a name="special-characters"></a>Speciale tekens
