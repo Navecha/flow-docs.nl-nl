@@ -6,26 +6,24 @@ suite: flow
 documentationcenter: na
 author: msftman
 manager: anneta
-editor: ''
-tags: ''
 ms.service: flow
 ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 08/01/2017
+ms.date: 04/15/2019
 ms.author: deonhe
 search.app:
 - Flow
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 81aa718837fa14615459f3688a282c25cb99bab6
-ms.sourcegitcommit: dc188618c36583b20af3e838d72bd7b020575d7d
+ms.openlocfilehash: d6ad21cace7643abeb19de185c247f17ec9a2b35
+ms.sourcegitcommit: dfd9b4994aa9cb877ac4136460e011a344e27cb2
 ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48874432"
+ms.lasthandoff: 04/16/2019
+ms.locfileid: "59614529"
 ---
 # <a name="use-expressions-in-conditions-to-check-multiple-values"></a>Gebruik expressies in voorwaarden om meerdere waarden te controleren
 In dit overzicht leert u hoe u expressies en **Voorwaarden** kunt gebruiken om in de **Geavanceerde modus** meerdere waarden te vergelijken.
@@ -93,7 +91,7 @@ Laten we de stroom maken.
     ![nieuwe stap](includes/media/new-step/action.png)
 2. Zoek naar **rijen** en selecteer vervolgens **Excel - Rijen ophalen**.
 
-    Opmerking: selecteer de actie 'rijen ophalen' die overeenkomt met het werkblad dat u gebruikt. Als u bijvoorbeeld Google Sheets gebruikt, selecteert u **Google Sheets - Rijen ophalen**.
+    Opmerking: Selecteer de actie 'rijen ophalen' die overeenkomt met het werkblad dat u gebruikt. Als u bijvoorbeeld Google Sheets gebruikt, selecteert u **Google Sheets - Rijen ophalen**.
 
     ![Rijen ophalen](includes/media/new-step/get-excel-rows.png)
 3. Selecteer het mappictogram in het vak **Bestandsnaam**, blader en selecteer vervolgens het werkblad dat uw gegevens bevat.
@@ -214,6 +212,6 @@ Hier volgt de implementatie van de **and**-expressie die alle personen in kaart 
 
 ````@and(greater(item()?['Due'], item()?['Paid']), less(item()?['dueDate'], addDays(utcNow(),1)))````
 
-## <a name="learn-more"></a>Meer informatie
-Meer informatie over andere [expressies](https://docs.microsoft.com/azure/logic-apps/logic-apps-workflow-definition-language#functions)
+## <a name="use-functions-in-expressions"></a>Functies gebruiken in expressies
 
+Sommige expressies ontlenen hun waarden aan runtime-acties die mogelijk nog niet bestaan als een stroom wordt uitgevoerd. U kunt functies gebruiken die de taal van de werkstroomdefinitie biedt om naar deze waarden te verwijzen of om ze te gebruiken in expressies. Meer informatie: [Functiereferentie voor de taal van werkstroomdefinities in Microsoft Flow](https://docs.microsoft.com/azure/logic-apps/workflow-definition-language-functions-reference)
