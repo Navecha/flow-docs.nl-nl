@@ -21,16 +21,16 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: 52aae570f65eaae537f548e686f437592eb5ef03
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
-ms.translationtype: HT
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44689451"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64461205"
 ---
 # <a name="create-a-flow-from-a-template-in-microsoft-flow"></a>een stroom maken op basis van een sjabloon in Microsoft Flow
 U kunt een stroom maken op basis van een van de vele ingebouwde sjablonen, bijvoorbeeld de sjabloon waarmee u een Slack-bericht ontvangt wanneer uw manager u een e-mail stuurt in Office 365.
 
-**Opmerking:** als u al een proces in gedachte hebt en hiervoor geen bijpassende sjabloon kunt vinden, kunt u [een volledig nieuwe stroom maken](get-started-logic-flow.md).
+**Opmerking**: [Een stroom maken helemaal](get-started-logic-flow.md) als u al een proces in gedachte hebt en kan een sjabloon voor het niet vinden.
 
 **Vereisten**
 

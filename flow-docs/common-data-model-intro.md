@@ -21,11 +21,11 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: b2cf6c52a2cbaf06fc638fe8fc898689e6d523c4
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
-ms.translationtype: HT
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44690800"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64460137"
 ---
 # <a name="create-a-flow-that-uses-the-common-data-service"></a>Een stroom maken die gebruikmaakt van de Common Data Service
 Verbeter uw bedrijfsefficiëntie met een geïntegreerde weergave van bedrijfsgegevens door een stroom te maken die gebruikmaakt van de [Common Data Service](https://powerapps.microsoft.com/tutorials/data-platform-intro/). U kunt deze beveiligde bedrijfsdatabase die bestaat uit juist opgemaakte standaardbedrijfsentiteiten (zoals Verkoop, Inkoop, Klantenservice en Productiviteit) in uw organisatie implementeren. U kunt de organisatiegegevens opslaan in een of meer [aangepaste entiteiten](https://powerapps.microsoft.com/tutorials/data-platform-create-entity/), die verschillende voordelen bieden via externe gegevensbronnen zoals Microsoft Excel en Salesforce.
@@ -85,12 +85,12 @@ Een voorbeeld: u kunt in Microsoft Flow op de volgende manieren gebruikmaken van
     ![Dynamics 365-exemplaar opgeven](./media/common-data-model-intro/specify-instance.png)
 2. Typ eventueel een andere naam voor de stroom die u maakt boven in het scherm.
    
-    **Opmerking**: als het browservenster niet is gemaximaliseerd, kan de gebruikersinterface er enigszins anders uitzien.
+    **Opmerking**: Als het browservenster niet is gemaximaliseerd, kan de gebruikersinterface van iets anders uitzien.
    
     ![De stroom een naam geven](./media/common-data-model-intro/name-flow.png)
 3. Klik of tik op **Stroom maken**.
    
-    **Opmerking**: als het browservenster niet is gemaximaliseerd, wordt mogelijk alleen het vinkje weergegeven.
+    **Opmerking**: Als het browservenster niet is gemaximaliseerd, wordt alleen het vinkje weergegeven.
    
     ![Stroom maken](./media/common-data-model-intro/create-flow.png)
 

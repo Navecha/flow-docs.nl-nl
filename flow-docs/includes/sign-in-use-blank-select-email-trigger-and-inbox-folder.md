@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: ad185613e48273fd16a2b9cf8ec2b7302e7d757f
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64458791"
+---
 1. Meld u aan bij [Microsoft Flow](https://flow.microsoft.com) en selecteer het tabblad **Mijn stromen**.
 2. Selecteer **Maken van lege**.
    

@@ -21,11 +21,11 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: 3ba49aff12118d79d41a7b76f7c8a0f7e3f1d01b
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
-ms.translationtype: HT
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44689681"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64468077"
 ---
 # <a name="monitor-activity-in-microsoft-flow-from-your-phone"></a>Activiteiten in Microsoft Flow bekijken op uw telefoon
 Bekijk in een overzicht hoe vaak elke stroom vandaag, gisteren of op een eerdere dag is geslaagd of mislukt. Lees de details over elke uitvoering, bijvoorbeeld wanneer die plaatsvond, hoelang elke stap duurde en waarom een uitvoering is mislukt.
@@ -47,7 +47,7 @@ Wanneer de stroom wordt uitgevoerd, wordt er een aangepaste pushmelding naar uw 
 
 ![Pushmelding verzenden](./media/mobile-monitor-activity/create-event.png)
 
-**Opmerking:** u kunt [uw stromen ook beheren](mobile-manage-flows.md) vanaf de mobiele app.
+**Opmerking**: U kunt ook [uw stromen beheren](mobile-manage-flows.md) vanuit de mobiele app.
 
 ## <a name="display-a-summary-of-activity"></a>Een overzicht van activiteiten weergeven
 <iframe width="560" height="315" src="https://www.youtube.com/embed/nVCGJamOw6s?list=PL8nfc9haGeb55I9wL9QnWyHp3ctU2_ThF" frameborder="0" allowfullscreen></iframe>

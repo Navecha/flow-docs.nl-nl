@@ -17,11 +17,11 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: aa061d5e2f668e8950a6cdab89992996f64c6fe8
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
-ms.translationtype: HT
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44689612"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64460972"
 ---
 # <a name="add-an-on-demand-workflow-to-a-business-process-flow"></a>Een werkstroom op aanvraag toevoegen aan een bedrijfsprocesstroom
 
@@ -32,8 +32,8 @@ Een werkstroom wordt geactiveerd op basis van waar u de werkstroom neerzet in de
 - Algemene processen voor werkstromen op aanvraag. Wanneer de werkstroom wordt toegevoegd aan het gebied **Algemene werkstromen**, wordt de werkstroom geactiveerd op het moment van procesactivering of procesarchivering (wanneer de status verandert in toegepast, voltooid, opnieuw geactiveerd of afgebroken). 
 
 Let op de volgende vereisten bij het toevoegen van een werkstroom aan een bedrijfsprocesstroom.
-- Voor werkstromen die zijn toegevoegd aan een fase: u kunt alleen actieve werkstromen op aanvraag gebruiken die ook zijn gemaakt voor de entiteit van de fase waaraan u de werkstroom toevoegt.  
-- Voor algemene werkstromen: u kunt alleen actieve werkstromen op aanvraag gebruiken die zijn gemaakt voor de primaire entiteit van de bedrijfsprocesstroom.
+- Voor werkstromen die zijn toegevoegd aan een fase: U kunt alleen gebruiken bij actieve en on-demand werkstromen die zijn gemaakt voor dezelfde entiteit van de fase waarin u de werkstroom toevoegen.  
+- Voor algemene werkstromen: U kunt alleen op aanvraag, actieve werkstromen die zijn gemaakt voor de primaire entiteit van de zakelijke processtroom gebruiken.
 
 ## <a name="add-an-on-demand-workflow-to-a-business-process-flow-stage"></a>Een werkstroom op aanvraag toevoegen aan een fase van een bedrijfsprocesstroom
 

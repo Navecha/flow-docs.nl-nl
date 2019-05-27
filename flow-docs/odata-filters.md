@@ -21,11 +21,11 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: 702fd695a91fdf267f166d5162570b39505dbc91
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
-ms.translationtype: HT
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44690417"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64465964"
 ---
 # <a name="filter-and-copy-data-with-microsoft-flow"></a>Gegevens filteren en kopiëren met Microsoft Flow
 In deze procedure ziet u hoe u een stroom kunt maken waarmee een bron wordt gecontroleerd op nieuwe of gewijzigde items en deze wijzigingen naar een doel worden gekopieerd. U kunt een dergelijke stroom maken als uw gebruikers gegevens op één locatie invoeren, maar uw team deze nodig hebben op een andere locatie of in een andere indeling.

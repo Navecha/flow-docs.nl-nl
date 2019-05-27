@@ -20,12 +20,12 @@ search.app:
 - Powerplatform
 search.audienceType:
 - admin
-ms.openlocfilehash: d03b2fff23fc313ebb7f8c12ce2835687f589516
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
-ms.translationtype: HT
+ms.openlocfilehash: 6f181a66453573c2f636cbe5130b7fc003a3b151
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44690762"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "65035011"
 ---
 # <a name="responding-to-gdpr-data-subject-export-requests-for-microsoft-flow"></a>Reageren op exportverzoeken van betrokkenen in het kader van de AVG met Microsoft Flow
 
@@ -33,7 +33,7 @@ In het kader van onze inzet om met u samen te werken nu de Algemene verordening 
 
 ## <a name="manage-export-requests"></a>Exportverzoeken beheren
 
-Met het *recht op gegevensportabiliteit* kunnen betrokkenen een verzoek indienen om een kopie te ontvangen van hun persoonsgegevens in digitale vorm (dat wil zeggen een 'gestructureerde, gangbare, door een machine leesbare en interoperabele indeling'), die kan worden overgedragen aan een andere verwerkingsverantwoordelijke.
+De *rechts overdraagbaarheid van gegevens* kunnen betrokkenen om aan te vragen van hun persoonsgegevens in elektronische vorm (dat wil zeggen een 'gestructureerde, gangbare machine leesbare en interoperabele indeling') die kan worden overgedragen aan een andere verwerkingsverantwoordelijke.
 
 Gebruik het [Microsoft-privacydashboard](https://account.microsoft.com/privacy/) of [Microsoft Flow](https://flow.microsoft.com/) om persoonsgegevens voor een specifieke gebruiker te zoeken of te exporteren.
 
@@ -98,7 +98,7 @@ De uitvoeringsgeschiedenis wordt gedownload als een CSV-bestand zodat u het kunt
 
 ## <a name="export-a-users-activity-feed"></a>De activiteitsfeed van een gebruiker exporteren
 
-In [Microsoft Flow](https://flow.microsoft.com/) geeft de activiteitsfeed de geschiedenis van activiteiten, fouten en meldingen van een gebruiker weer. Gebruikers kunnen hun eigen activiteitenfeed zien door de volgende stappen uit te voeren:
+In [Microsoft Flow](https://flow.microsoft.com/) geeft de activiteitsfeed de geschiedenis van activiteiten, fouten en meldingen van een gebruiker weer. Gebruikers kunnen bekijken eigen activiteitsfeed door de volgende stappen:
 
 1. Meld u aan bij [Microsoft Flow](http://flow.microsoft.com/), selecteer het belpictogram rechtsboven en selecteer vervolgens **Alle activiteiten weergeven**.
 

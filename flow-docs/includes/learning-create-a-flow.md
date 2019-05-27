@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: f5fd6ecb3ace5d2e11f4929fe94124b231cccf2a
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64463744"
+---
 Welkom terug bij Begeleide training voor Microsoft Flow. In deze les ziet u meer van de Microsoft Flow-omgeving en kunt u **uw eerste stroom maken**.
 
 U kunt eenvoudig aan de slag gaan met Microsoft-Flow omdat u uit zeer veel **sjablonen kunt kiezen**, waarmee u op een zinvollere manier verbinding kunt maken met de services die u al gebruikt.  

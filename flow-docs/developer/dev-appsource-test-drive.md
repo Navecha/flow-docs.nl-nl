@@ -20,11 +20,11 @@ search.app:
 search.audienceType:
 - developer
 ms.openlocfilehash: ac71b9b2d991496121d910e9e74b83e69d74c098
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
-ms.translationtype: HT
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44689497"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64460365"
 ---
 # <a name="let-customers-test-drive-your-flows-on-appsource"></a>Laat klanten uw stromen uitproberen op AppSource
 Bent u er trots op om te kunnen laten zien hoe uw app is geïntegreerd met Microsoft Flow? We bieden u nu de mogelijkheid om op [AppSource.com](https://appsource.microsoft.com) uw klanten oplossingen te laten uitproberen die met Microsoft Flow zijn geïntegreerd; zo genereert u tegelijkertijd leads voor uw bedrijf.

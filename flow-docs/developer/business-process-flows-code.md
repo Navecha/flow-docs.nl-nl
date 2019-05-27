@@ -14,12 +14,12 @@ search.app:
 - Flow
 search.audienceType:
 - developer
-ms.openlocfilehash: 4fcbca859d167e82229aa60f96f5122912e5cca3
-ms.sourcegitcommit: c7c9add30d5bf1ab6bd5b55b802fd28618b38411
-ms.translationtype: HT
+ms.openlocfilehash: dde9b4328319e0cbfec7df1ba0bb52f403901989
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54362973"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "65054083"
 ---
 # <a name="work-with-business-process-flows-using-code"></a>Werken met bedrijfsprocesstromen met behulp van code
 
@@ -131,7 +131,7 @@ U kunt de naam van de entiteit van uw bedrijfsprocesstroom op de volgende manier
 
 De aangepaste entiteit die automatisch wordt gemaakt bij het activeren van een bedrijfsprocesstroom voor het opslaan van bedrijfsprocesstroominstanties voldoet aan het standaardbeveiligingsmodel voor elke andere aangepaste entiteit in Customer Engagement. Dit betekent dat de runtime-machtigingen voor gebruikers voor bedrijfsprocesstromen worden gedefinieerd door de machtigingen die voor deze entiteiten worden verleend.
 
-De aangepaste bedrijfsprocesstroomentiteit heeft organisatiebereik. De machtiging die de gebruiker zou hebben op basis van de rollen die aan de gebruiker zijn toegewezen, wordt gedefinieerd door de standaardmachtigingen voor het maken, ophalen, bijwerken en verwijderen voor deze entiteit. Bij het maken van de aangepaste bedrijfsprocesstroomentiteit krijgen standaard alleen de beveiligingsrollen **systeembeheerder** en **systeemaanpasser** er toegang toe en moet u zo nodig expliciet machtigingen verlenen aan de nieuwe bedrijfsprocesstroomentiteit (bijvoorbeeld **My Custom BPF**) voor andere beveiligingsrollen.
+De aangepaste bedrijfsprocesstroomentiteit heeft organisatiebereik. De reguliere maken, ophalen, bijwerken en verwijderen van de bevoegdheden voor deze entiteit definieert de machtiging gebruikers zou hebben op basis van hun rollen. Bij het maken van de aangepaste bedrijfsprocesstroomentiteit krijgen standaard alleen de beveiligingsrollen **systeembeheerder** en **systeemaanpasser** er toegang toe en moet u zo nodig expliciet machtigingen verlenen aan de nieuwe bedrijfsprocesstroomentiteit (bijvoorbeeld **My Custom BPF**) voor andere beveiligingsrollen.
 
 ![](media/bpf-privileges.png)
 

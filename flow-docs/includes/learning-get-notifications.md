@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 2780850e521e208c3ab047543f00cab0b9a17f69
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64463357"
+---
 **Microsoft Flow** wordt vaak gebruikt om een **melding** te ontvangen wanneer er iets gebeurt.  Meldingen kunnen **e-mailberichten**, **sms-berichten** of **pushmeldingen op uw telefoon** zijn.
 
 ![Vanuit een sjabloon](./media/learning-get-notifications/template-notifications.png)

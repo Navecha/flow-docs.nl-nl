@@ -21,11 +21,11 @@ search.app:
 search.audienceType:
 - admin
 ms.openlocfilehash: 3742ac7afed24b0a1523a6038978589d293ba00b
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
-ms.translationtype: HT
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44688485"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64460295"
 ---
 # <a name="respond-to-gdpr-data-subject-rights-dsrs-requests"></a>Reageren op aanvragen van betrokkenen in het kader van de AVG
 
@@ -54,14 +54,14 @@ Microsoft biedt producten, services en hulpprogramma's om verwerkingsverantwoord
 
 Hier volgt een kort overzicht van de processen die in deze handleiding worden beschreven:
 
-1. **Ontdekken**: gebruik zoek- en detectieprogramma's om gemakkelijker te zoeken naar klantgegevens die het onderwerp van een verzoek van een betrokkene kunnen zijn. Als u vaststelt dat u conform de richtlijnen van uw verwerkingsverantwoordelijke stappen moet ondernemen met betrekking tot de documenten die u verzamelt, kunt u een of meer van de acties voor aanvragen van betrokkenen uitvoeren die in de volgende stappen worden beschreven. Raadpleeg de [Microsoft Flow DSR Discovery-documentatie voor Microsoft-accounts](gdpr-dsr-discovery-msa.md) voor meer informatie. U kunt ook vaststellen dat de aanvraag niet voldoet aan de richtlijnen van uw verwerkingsverantwoordelijke voor het reageren op aanvragen van betrokkenen.
+1. **Ontdek**: Zoek- en detectieprogramma's gebruiken om eenvoudig zoeken naar klantgegevens die mogelijk het onderwerp van een DSR-aanvraag. Als u vaststelt dat u conform de richtlijnen van uw verwerkingsverantwoordelijke stappen moet ondernemen met betrekking tot de documenten die u verzamelt, kunt u een of meer van de acties voor aanvragen van betrokkenen uitvoeren die in de volgende stappen worden beschreven. Raadpleeg de [Microsoft Flow DSR Discovery-documentatie voor Microsoft-accounts](gdpr-dsr-discovery-msa.md) voor meer informatie. U kunt ook vaststellen dat de aanvraag niet voldoet aan de richtlijnen van uw verwerkingsverantwoordelijke voor het reageren op aanvragen van betrokkenen.
 
-1. **Toegang**: haal persoonsgegevens op die zich in de Microsoft-cloud bevinden en, als daarom wordt verzocht, maakt u er een kopie van die beschikbaar kan worden gesteld aan betrokkene.
+1. **Toegang tot**: Ophalen persoonlijke gegevens die zich in de Microsoft cloud bevinden en, indien aangevraagd, maakt u een kopie van deze, zodat die gesteld aan de betrokkene worden kan.
 
-1. **Rectificeren**: breng waar van toepassing wijzigingen aan of implementeer andere aangevraagde acties voor de persoonsgegevens.
+1. **Rectificatie**: Breng waar van toepassing wijzigingen aan of implementeer andere aangevraagde acties voor de persoonsgegevens.
 
-1. **Beperken**: beperk de verwerking van persoonsgegevens, hetzij door het verwijderen van licenties voor verschillende onlineservices, hetzij door het waar mogelijk uitschakelen van de gewenste services. U kunt ook gegevens uit de Microsoft-cloud verwijderen en deze lokaal of op een andere locatie bewaren.
+1. **Beperken**: Beperk de verwerking van persoonsgegevens, hetzij door het verwijderen van licenties voor verschillende onlineservices, hetzij door het waar mogelijk uitschakelen van de gewenste services. U kunt ook gegevens uit de Microsoft-cloud verwijderen en deze lokaal of op een andere locatie bewaren.
 
-1. **Verwijderen**: verwijder definitief persoonsgegevens in de Microsoft-cloud. Meer informatie over het [verwijderen van persoonsgegevens voor Microsoft-accounts](gdpr-dsr-delete-msa.md). Meer informatie over [het sluiten van een Microsoft-account](gdpr-dsr-accountclose-msa.md).
+1. **Verwijder**: Verwijder definitief persoonsgegevens in de Microsoft-cloud. Meer informatie over het [verwijderen van persoonsgegevens voor Microsoft-accounts](gdpr-dsr-delete-msa.md). Meer informatie over [het sluiten van een Microsoft-account](gdpr-dsr-accountclose-msa.md).
 
-1. **Exporteren**: verstrek een digitale kopie (in een voor machines leesbare indeling) van persoonsgegevens. [Meer informatie over het exporteren van persoonsgegevens voor Microsoft-accounts](gdpr-dsr-export-msa.md).
+1. **Exporteren**: Verstrek een digitale kopie (in een machineleesbare indeling) van persoonsgegevens. [Meer informatie over het exporteren van persoonsgegevens voor Microsoft-accounts](gdpr-dsr-export-msa.md).

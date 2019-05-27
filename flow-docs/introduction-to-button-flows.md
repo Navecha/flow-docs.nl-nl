@@ -21,11 +21,11 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: cbcbce51bb950ef9154f356ce44a651f25ce55bd
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
-ms.translationtype: HT
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44690074"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64464560"
 ---
 # <a name="introducing-button-flows"></a>Kennismaken met knopstromen
 ## <a name="what-are-button-flows"></a>Wat zijn knopstromen?
@@ -65,14 +65,14 @@ In deze walkthrough maken we een knop waarmee een VSO-build (Visual Studio Onlin
    ![Overzichtsafbeelding](./media/introduction-to-button-flows/create-button-8.png)  
 9. Configureer vervolgens de eigenschappen van de pushmelding op de kaart **Send a push notification** (Een pushmelding verzenden). Deze pushmelding is standaard geconfigureerd voor het verzenden van een HTML-koppeling naar een webpagina waarop de status van de build wordt weergegeven:  
    ![Overzichtsafbeelding](./media/introduction-to-button-flows/create-button-9.png)  
-10. Selecteer de knop **Stroom maken** om uw knopstroom op te slaan: ![Overzichtsafbeelding](./media/introduction-to-button-flows/create-button-10.png)  
+10. Selecteer de **stroom maken** om op te slaan van de knopstroom: ![Overzichtsafbeelding](./media/introduction-to-button-flows/create-button-10.png)  
 11. Binnen enkele ogenblikken ziet u dit bericht:  
     ![Overzichtsafbeelding](./media/introduction-to-button-flows/create-button-11.png)  
 
 U hebt een knopstroom gemaakt. U kunt deze knopstroom nu altijd en overal uitvoeren, vanaf het tabblad **Knoppen** in de Flow-app. Druk op de 'knop' en de stroom wordt uitgevoerd. De mobiele app voor Microsoft Flow is beschikbaar voor [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios) en [Windows Phone](https://aka.ms/flowmobilewindows).
 
 ### <a name="from-your-mobile-device"></a>Op uw mobiele apparaat
-**Opmerking**: in dit overzicht worden schermafbeeldingen weergegeven van een Android-apparaat. De schermen en ervaring op een iOS-apparaat zijn vergelijkbaar.
+**Opmerking**: Dit overzicht worden schermafbeeldingen weergegeven van een Android-apparaat, zijn de schermen en ervaring op een iOS-apparaat vergelijkbaar.
 
 In de Flow-app:
 
@@ -117,7 +117,7 @@ U ontvangt nu de pushmelding waarin wordt aangegeven dat het e-mailbericht is ve
 U kunt knopstromen bewaken vanaf het tabblad **Activiteit** van de Flow-app:   
 ![Overzichtsafbeelding](./media/introduction-to-button-flows/create-button-from-mobile-13.png)  
 
-**Opmerking**: tik op elke activiteit om te zoomen op de resultaten van de uitvoering voor meer informatie over de uitvoering.  
+**Opmerking**: Tik op elke activiteit om te zoomen op de resultaten van de uitvoering voor meer informatie over de uitvoering.  
 
 ![Overzichtsafbeelding](./media/introduction-to-button-flows/activity-details-1.png)  
 

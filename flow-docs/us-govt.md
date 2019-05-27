@@ -14,12 +14,12 @@ search.app:
 - Powerplatform
 search.audienceType:
 - admin
-ms.openlocfilehash: 705051668c4e25d5bddc3e6f92e445f3474baad1
-ms.sourcegitcommit: 3d0aecc89ed12b58f4b424c1c5a0654350f07d08
-ms.translationtype: HT
+ms.openlocfilehash: a32b80ce9dba28f0c94c13989e4892fe6533813f
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "58059797"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "65035177"
 ---
 # <a name="microsoft-flow-us-government"></a>Microsoft Flow voor de Amerikaanse overheid
 
@@ -143,7 +143,7 @@ De services van Microsoft Flow voor de Amerikaanse overheid worden geïmplemente
 
 Wanneer een gebruiker van een organisatie die gebruikmaakt van ADFS probeert toegang te krijgen tot Microsoft Flow voor de Amerikaanse overheid, wordt de gebruiker omgeleid naar een aanmeldingspagina in de ADFS-server van de organisatie.
 
-De gebruiker geeft zijn of haar referenties op bij de ADFS-server van de organisatie. De ADFS-server van de organisatie probeert de referenties te verifiëren via de Active Directory-infrastructuur van de organisatie.
+De gebruiker levert referenties aan de ADFS-server van hun organisatie. De ADFS-server van de organisatie probeert de referenties te verifiëren via de Active Directory-infrastructuur van de organisatie.
 
 Als de verificatie slaagt, verzendt de ADFS-server van de organisatie een SAML-ticket (Security Assertion Markup Language) met informatie over de identiteit en het groepslidmaatschap van de gebruiker.
 

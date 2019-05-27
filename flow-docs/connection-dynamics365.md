@@ -21,11 +21,11 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: 64dc59bc53dfdc1d09dbb80be4f32a33c7259415
-ms.sourcegitcommit: 20a151bc5ef94c1ecde22934cbd878710ffb312c
-ms.translationtype: HT
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55504502"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64457286"
 ---
 # <a name="create-a-flow-by-using-dynamics-365-online"></a>Een stroom maken met behulp van Dynamics 365 (online)
 Met behulp van een Dynamics 365-connector kunt u stromen maken die worden gestart wanneer in Dynamics 365 of een andere service een gebeurtenis plaatsvindt, waardoor vervolgens een actie wordt uitgevoerd in Dynamics 365 of een andere service. 

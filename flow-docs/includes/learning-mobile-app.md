@@ -1,4 +1,12 @@
-In deze les wordt de mobiele app van Microsoft Flow en de mogelijkheden hiervan beschreven. Vanuit de mobiele app hebt u toegang tot de volgende functies: **Activiteitsfeed**, **Bladeren**, **Knoppen** en **Stromen beheren**.
+---
+ms.openlocfilehash: af3b0e4171e49cc918d8a18985136ffb760c1473
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64462789"
+---
+In deze les wordt de mobiele app van Microsoft Flow en de mogelijkheden hiervan beschreven. Vanuit de mobiele app, kunt u toegang tot deze functies: **Activiteitsfeed**, **Bladeren**, **knoppen**, en **beheren van stromen**.
 
 Eerst moet u de Microsoft Flow-app **downloaden** en **installeren** vanuit uw App Store.
 

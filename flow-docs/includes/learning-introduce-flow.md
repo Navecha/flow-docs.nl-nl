@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 09f1d3ca4cfb79cb73c91aa77d18be07c047c028
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64462795"
+---
 Welkom bij Begeleide training voor Microsoft Flow. In deze **onlinecursus die u in eigen tempo** kunt volgen, wordt Microsoft Flow stapsgewijs beschreven, zodat u uw kennis vanaf de basis kunt opbouwen. De cursus is zo ontworpen dat u **stapsgewijs wordt begeleid** met veel **visuele elementen en voorbeelden**, waarbij een logische opbouw wordt aangehouden om u te helpen bij het leren van de basisbeginselen en details.
 
 In deze cursus leert u meer over Microsoft Flow en de concepten hiervan, ziet u hoe u **stromen maakt** en **deze** **beheert** en in uw omgeving. In de cursus wordt gewerkt met informatie en scenario's voor het fictieve bedrijf Contoso Flooring, maar u ziet hoe u dezelfde scenario's kunt gebruiken in uw bedrijf of de bedrijven van uw klanten.

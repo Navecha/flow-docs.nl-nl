@@ -21,11 +21,11 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: 6c48d79138dfdafa94e56380343840d6aa0fcbb5
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
-ms.translationtype: HT
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44690854"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64471282"
 ---
 # <a name="build-an-approval-loop-by-using-microsoft-flow-and-the-microsoft-common-data-service"></a>Maak een goedkeuringslus met Microsoft Flow en de Microsoft Common Data Service
 Met de Common Data Service hebt u een methode in handen waarmee u stromen kunt opzetten waarbij informatie is opgeslagen in een database die onafhankelijk is van een stroom. Dit kan het beste worden geïllustreerd met goedkeuringen. Als u de status van de goedkeuring in een entiteit opslaat, kan uw stroom daar boven op werken.
@@ -148,7 +148,7 @@ Door de stappen in dit gedeelte te volgen, maakt u het volgende:
     ![Token Bestandsnaam toevoegen](./media/common-data-model-approve/add-filename-token.png)
 5. Onder **Goedkeurder** typt of plakt u het e-mailadres van degene die de bestanden zal beoordelen.
    
-    **Opmerking**: geef uw eigen adres op om het testen van de stroom gemakkelijker te maken. U kunt dit later wijzigen wanneer de stroom gereed is voor werkelijk gebruik.
+    **Opmerking**: Als u de stroom gemakkelijker te testen, moet u uw eigen adres opgeven. U kunt dit later wijzigen wanneer de stroom gereed is voor werkelijk gebruik.
    
     ![Goedkeurder toevoegen](./media/common-data-model-approve/add-approver.png)
 6. Onder **Status** typt of plakt u **In behandeling**.
@@ -166,7 +166,7 @@ Door de stappen in dit gedeelte te volgen, maakt u het volgende:
    
     ![Een waarde kiezen](./media/common-data-model-approve/choose-value.png)
    
-    **Opmerking**: als het browservenster niet is gemaximaliseerd, klikt of tikt u in het bovenste vak op **Een waarde kiezen**.
+    **Opmerking**: Als het browservenster niet is gemaximaliseerd, klik of tik in het bovenste vak **een waarde kiezen**.
 3. Onder **Uitvoer van Object maken** klikt of tikt u op **Status** om dit parametertoken toe te voegen aan het veld.
    
     ![Token Status toevoegen](./media/common-data-model-approve/add-status.png)
@@ -177,7 +177,7 @@ Door de stappen in dit gedeelte te volgen, maakt u het volgende:
    
     ![Te volgen status specificeren](./media/common-data-model-approve/do-until-not-pending.png)
    
-    **Opmerking**: als het browservenster niet is gemaximaliseerd, klikt of tikt u in het onderste vak op **Een waarde kiezen**.
+    **Opmerking**: Als het browservenster niet is gemaximaliseerd, klik of tik in het onderste vak waarin **een waarde kiezen**.
 6. Klik of tik onder aan de actie **Do until** op **Een actie toevoegen**.
    
     ![Actie toevoegen aan een item voor do until](./media/common-data-model-approve/add-action-in-dountil.png)
@@ -200,7 +200,7 @@ Door de stappen in dit gedeelte te volgen, maakt u het volgende:
    
     ![Linksboven in voorwaarde](./media/common-data-model-approve/condition-upper-left.png)
    
-    **Opmerking**: als het browservenster niet is gemaximaliseerd, klikt of tikt u in het bovenste vak op **Een waarde kiezen**.
+    **Opmerking**: Als het browservenster niet is gemaximaliseerd, klik of tik in het bovenste vak **een waarde kiezen**.
 3. Onder **Uitvoer van Object ophalen** klikt of tikt u op het parametertoken **Status** om dit toe te voegen aan het veld.
    
     ![Status toevoegen aan voorwaarde](./media/common-data-model-approve/add-status-to-condition.png)
@@ -208,7 +208,7 @@ Door de stappen in dit gedeelte te volgen, maakt u het volgende:
    
     ![Controleren of de status is ingesteld op Goedgekeurd](./media/common-data-model-approve/status-equals-approved.png)
    
-    **Opmerking**: als het browservenster niet is gemaximaliseerd, typt of plakt u **Goedgekeurd** in het onderste vak waarin **Een waarde kiezen** staat.
+    **Opmerking**: Als het browservenster niet is gemaximaliseerd, typt of plakt **goedgekeurd** in het onderste vak waarin **een waarde kiezen**.
 
 ## <a name="send-notification-mail"></a>E-mailmelding verzenden
 1. Onder **Zo ja, niets doen** klikt of tikt u op **Een actie toevoegen**.
@@ -219,7 +219,7 @@ Door de stappen in dit gedeelte te volgen, maakt u het volgende:
     ![Zo ja, e-mail verzenden](./media/common-data-model-approve/if-yes-send-mail.png)
 3. Onder **Aan** typt of plakt u het adres van degene aan wie u een melding wilt sturen wanneer een item is geaccepteerd.
    
-    **Opmerking**: geef uw eigen adres op om het testen van de stroom gemakkelijker te maken. U kunt dit later wijzigen wanneer de stroom gereed is voor werkelijk gebruik.
+    **Opmerking**: Als u de stroom gemakkelijker te testen, moet u uw eigen adres opgeven. U kunt dit later wijzigen wanneer de stroom gereed is voor werkelijk gebruik.
    
     ![Ontvanger goedkeuring](./media/common-data-model-approve/approval-recipient.png)
 4. Onder **Onderwerp** klikt of tikt u in het vak en vervolgens op het parametertoken **Bestandsnaam** om dit toe te voegen aan het veld.

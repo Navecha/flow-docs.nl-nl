@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: f87b0d93b912799a4977f347d89b12421cf42e70
-ms.sourcegitcommit: ffed9f02092fbd19fc4108aee05dd40d1a2a3755
-ms.translationtype: HT
+ms.openlocfilehash: 5c1aed64ad5ac8fc1cced9290b376cb54f97e65a
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "46711560"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64992319"
 ---
 # <a name="introducing-button-flows-with-user-input"></a>Inleiding voor knopstromen met gebruikersinvoer
 Een knopstroom maken om routinetaken uit te voeren door op een knop te tikken. De stroom aanpassen door de gebruiker de gelegenheid te geven specifieke details op te geven die worden gebruikt als de stroom wordt uitgevoerd. In dit onderwerp wordt u begeleid bij het maken van een knopstroom die invoer van de gebruiker opneemt en vervolgens de knopstroom uitvoert, met de nadruk op het leveren van de invoer van de gebruiker.
@@ -118,7 +118,28 @@ In dit scenario voert u met de mobiele app voor Microsoft-Flow de knopstroom uit
     ![](./media/button-flow-with-user-input-tokens/runmt5.png)  
 7. (optioneel) Geef de gedetailleerde resultaten van de stroomuitvoering weer door op de stap **Een nieuw werkitem maken** te tikken.
    
-    ![](./media/button-flow-with-user-input-tokens/runmt6.png)  
+    ![](./media/button-flow-with-user-input-tokens/runmt6.png)
+
+
+## <a name="use-different-input-types"></a>Gebruik verschillende invoertypen
+
+Uw knopstromen kunnen ook uitgebreide gegevenstypen accepteren. Hier volgt de lijst met gegevens invoertypen die knopstromen accepteren: 
+
+- Tekst
+- Vervolgkeuzelijsten (zoals keuzerondjes)
+- E-mailadres
+- Bestand (bijvoorbeeld een foto op uw telefoon)
+- Ja of Nee selectievakje
+- Aantal
+- Datum (met een datumkiezer kalender)
+
+Voor het gebruik van deze invoertypen, voeg de **handmatig een stroom activeren** activeren en een van deze typen vervolgens toevoegen aan uw stroom:
+
+![Opties voor invoer](media/button-flow-with-user-input-tokens/input-options.png)
+
+U wilt ook enkele invoer zoals vereist en anderen aanwijzen als optioneel. Gebruik het actiemenu (...) aan de rechterkant) op elke invoerveld. Er is een limiet van vijf invoer per knop.
+
+![Optionele tokens selecteren](media/button-flow-with-user-input-tokens/required-optional.png)
 
 ## <a name="next-steps"></a>Volgende stappen
 * [Knopstromen delen](share-buttons.md)

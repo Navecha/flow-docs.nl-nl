@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 253acf6677bf244c1719000c332102aa58c2e805
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64463702"
+---
 In dit onderwerp ziet u hoe Contoso Flooring Microsoft Flow gebruikt om documenten automatisch te converteren naar een standaardindeling en deze vervolgens op te slaan in SharePoint Online, zodat deze veilig worden opgeslagen in de cloud. U maakt een stroom waarmee wordt gedetecteerd wanneer er een nieuw bestand is toegevoegd aan een OneDrive voor Bedrijven-map. Vervolgens wordt dit bestand geconverteerd naar PDF en opgeslagen in een SharePoint Online-map. 
 
 ## <a name="prerequisites"></a>Vereisten
@@ -35,9 +43,9 @@ Eerst moet u de bron- en doelmappen maken in OneDrive voor Bedrijven en SharePoi
        ![](./media/learning-create-pdf/tenant-id.png)
 7. Stel de volgende waarden in de actie **Document converteren** in:
    
-   * **Naam van bronbestand**: selecteer **Bestandsnaam** in de lijst met dynamische inhoud.
-   * **Inhoud van bronbestand**: selecteer **Bestandsinhoud** in de lijst met dynamische inhoud.
-   * **Uitvoerindeling**: selecteer **PDF** in de vervolgkeuzelijst.
+   * **De naam van bronbestand**: Selecteer in de lijst met dynamische inhoud, **bestandsnaam**.
+   * **Inhoud van bronbestand**: Selecteer in de lijst met dynamische inhoud, **bestandsinhoud**.
+   * **De indeling van uitvoer**: Selecteer in de vervolgkeuzelijst **PDF**.
      
      ![](./media/learning-create-pdf/muhimbi-configuration.png)
 
@@ -53,10 +61,10 @@ Voor de laatste stap voegt u een actie toe waarmee het PDF-document wordt verpla
     ![](./media/learning-create-pdf/sharepoint-create-file.png)
 2. Stel de volgende waarden in de actie **Bestand maken** in:
    
-   * **Siteadres**: de URL van uw SharePoint-site.  
-   * **Mappad**: selecteer het mappictogram en ga naar de map **PDF - Voltooide bestanden**.
-   * **Bestandsnaam**: selecteer in de lijst met dynamische inhoud voor **Document converteren** de optie **Basisbestandsnaam** , voeg '**.pdf**' toe, zodat het bestand wordt opgeslagen in SharePoint met de bestandsextensie. 
-   * **Bestandsinhoud**: selecteer in de lijst met dynamische inhoud voor **Document converteren** de optie **Verwerkte bestandsinhoud**.
+   * **Siteadres**: De URL van uw SharePoint-site.  
+   * **Het pad naar map**: Selecteer het mappictogram en Ga naar de **PDF - voltooide bestanden** map.
+   * **Bestandsnaam**: Uit de lijst met dynamische inhoud voor **document converteren**, selecteer **basisbestandsnaam**, voegt u "**.pdf**', zodat deze worden opgeslagen in SharePoint met de bestandsextensie. 
+   * **Bestandsinhoud**: Uit de lijst met dynamische inhoud voor **document converteren**, selecteer **verwerkte bestandsinhoud**.
 3. Selecteer **Stroom maken** bovenaan de pagina om uw werk op te slaan.
    
     ![](./media/learning-create-pdf/sharepoint-configure-file.png)

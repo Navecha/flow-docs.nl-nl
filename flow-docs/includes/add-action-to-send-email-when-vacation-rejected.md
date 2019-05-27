@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 05c2f4add521300687b1a7bf21580977a161e241
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64471608"
+---
 1. Selecteer **Een actie toevoegen** in de vertakking **INDIEN NEE, NIETS DOEN**.
 2. Voer in het zoekvak op de kaart **Een actie kiezen** de tekst **E-mail verzenden** in.
    

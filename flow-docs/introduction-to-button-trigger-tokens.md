@@ -21,11 +21,11 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: dc1b93553938221c3f1c995b63b984cfff913c06
-ms.sourcegitcommit: ffed9f02092fbd19fc4108aee05dd40d1a2a3755
-ms.translationtype: HT
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "46711606"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64462765"
 ---
 # <a name="get-started-with-button-trigger-tokens"></a>Aan de slag met knoptriggertokens
 ## <a name="what-are-button-trigger-tokens"></a>Wat zijn de knoptriggertokens?
@@ -84,7 +84,7 @@ Laten we beginnen:
    ![knoptriggertoken](./media/introduction-to-button-trigger-tokens/9.png)  
 
 ## <a name="run-the-button-flow"></a>De knopstroom uitvoeren
-**OPMERKING**: met deze knopstroom wordt uw huidige locatie via e-mail verzonden.  
+**OPMERKING**: Deze knopstroom wordt uw huidige locatie via e-mail verzonden.  
 
 1. Tik op de categorie **Buttons** aan de onderkant van het scherm. U ziet een lijst met de knoppen die u mag gebruiken. Tik op de knop van de knopstroom die u zojuist hebt gemaakt:  
    ![knoptriggertoken](./media/introduction-to-button-trigger-tokens/10.png)  

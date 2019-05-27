@@ -21,11 +21,11 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: af2e113278f480eb3c748cb1a2f9a81e34d32258
-ms.sourcegitcommit: a35abc6a2148cbfb48ca36d4af09bfd90eaffa42
-ms.translationtype: HT
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 02/01/2019
-ms.locfileid: "55647847"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64454614"
 ---
 # <a name="understand-on-premises-data-gateways-for-microsoft-flow"></a>Over on-premises gegevensgateways voor Microsoft Flow
 Gebruik de on-premises gegevensgateway in combinatie met Microsoft Flow om beveiligde verbindingen tot stand te brengen met uw on-premises gegevensbronnen zoals Microsoft SQL Server.

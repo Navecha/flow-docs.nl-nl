@@ -21,11 +21,11 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: 77b46d10ec3856054dcc8e1734b327bac9a01596
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
-ms.translationtype: HT
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44690318"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64465700"
 ---
 # <a name="share-button-flows-in-microsoft-flow"></a>Knopstromen delen met anderen in Microsoft Flow
 In de mobiele app van Microsoft Flow kunt u [knopstromen](introduction-to-button-flows.md) (knoppen) delen met andere gebruikers of groepen in uw organisatie. Wanneer u een knop deelt, kan de persoon of groep met wie u deelt, uw knop op dezelfde manier gebruiken als de eigen knoppen. U kunt ook [een koppeling delen](share-buttons.md#re-share-a-button) naar knoppen die een andere persoon met u heeft gedeeld. U kunt op elk gewenst moment [stoppen met het delen](share-buttons.md#stop-sharing-a-button) van uw knoppen.

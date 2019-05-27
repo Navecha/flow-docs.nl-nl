@@ -21,11 +21,11 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: ec3c6725ca6c0b1e03738f50132464b00c1f8695
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
-ms.translationtype: HT
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44690667"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64469947"
 ---
 # <a name="create-parallel-approval-workflows-with-microsoft-flow"></a>Parallelle moderne goedkeuringswerkstromen maken met Microsoft Flow
 
@@ -147,7 +147,7 @@ Laten we verdergaan:
 
 Voer de volgende stappen uit aan de zijde **INDIEN JA** van de vertakking **Voorwaarde**.
 
-   Opmerking: Uw stroom gebruikt deze stappen om een e-mailbericht te verzenden wanneer de aanvraag is goedgekeurd:
+   Opmerking: Uw stroom gebruikt deze stappen voor het verzenden van een e-mailbericht wanneer de aanvraag is goedgekeurd:
 
 [!INCLUDE [add-action-to-send-email-when-vacation-approved](includes/add-action-to-send-email-when-vacation-approved.md)]
 
@@ -161,7 +161,7 @@ Herhaal de voorgaande stappen op de vertakkingen **Een goedkeuring starten 2** (
 
 Voer de volgende stappen uit om SharePoint bij te werken wanneer beslissingen zijn genomen.
 
-   Opmerking: Zorg ervoor dat u deze stappen uitvoert op zowel de zijde **INDIEN JA** als de zijde **INDIEN NEE** van de vertakking.
+   Opmerking: Zorg ervoor dat deze stappen uitvoeren op beide worden de **Indien Ja** en de **indien Nee** zijden van de vertakking.
 
 [!INCLUDE [add-action-to-update-sharepoint-with-approval](includes/add-action-to-update-sharepoint-with-approval.md)]
 

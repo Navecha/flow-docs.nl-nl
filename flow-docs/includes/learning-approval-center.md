@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 431bb579e19f89132f5ea0ca772a89ea17988de2
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64463415"
+---
 In een vorig onderwerp is beschreven hoe u uw Twitter-feed eenvoudig kunt activeren met behulp van een SharePoint-lijst. In dit onderwerp leert u hoe u een scenario voor bedrijven maakt met goedkeuringen. Op die manier kan iedereen met toegang tot de SharePoint-lijst bijdragen aan de tweets en kan het sociale-mediateam deze tweets goedkeuren of afwijzen. Het team houdt de controle over het account en de inhoud die naar klanten wordt verzonden. 
 
 ## <a name="create-an-approval-request-flow"></a>Een goedkeuringsaanvraagstroom maken
@@ -21,7 +29,7 @@ Standaard wordt met deze sjabloon een goedkeuringsproces gestart wanneer er een 
 2. Voer in **Microsoft Flow** de volgende waarden in bij de actie **Wanneer een nieuw item is gemaakt**:
    
    * **Siteadres**: de SharePoint-URL van uw team
-   * **Lijstnaam**: ContosoTweets
+   * **Naam**: ContosoTweets
      
      ![Site en lijst](./media/learning-approval-center/site-address.png)
 3. Selecteer in de actie **Een goedkeuring starten** de optie **Bewerken** om alle velden weer te geven. 

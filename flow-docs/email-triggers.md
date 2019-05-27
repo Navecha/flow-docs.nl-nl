@@ -21,11 +21,11 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: 94af3389301f40aa5caaa46eda98c8b1c9be0228
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
-ms.translationtype: HT
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44689796"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64459158"
 ---
 # <a name="trigger-a-flow-based-on-email-properties"></a>Activeer een stroom op basis van e-maileigenschappen.
 Gebruik de trigger **Wanneer er een nieuwe e-mail binnenkomt** om een stroom te maken die wordt uitgevoerd wanneer één of meer van de volgende e-maileigenschappen overeenkomen met criteria die u opgeeft:

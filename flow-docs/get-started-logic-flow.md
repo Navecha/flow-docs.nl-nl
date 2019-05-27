@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: db0d7003017eb9929b03a89f697defb40c5ed6e4
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
-ms.translationtype: HT
+ms.openlocfilehash: 4ea24ed12ab12d2d52502477cdb7a4a9eb822076
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44690815"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64992580"
 ---
 # <a name="create-a-flow-in-microsoft-flow"></a>Een stroom maken in Microsoft Flow
 
@@ -88,6 +88,11 @@ Eerst moet u selecteren door welke gebeurtenis, of *trigger*, de stroom wordt ge
 1. Verzend een tweet met het trefwoord dat u hebt opgegeven of wacht totdat iemand anders een tweet met het trefwoord post.
 
      Binnen een minuut na het posten van de tweet wordt u via een e-mailbericht op de hoogte gebracht van de nieuwe tweet.
+
+> [!TIP]
+> Gebruik de **e-mail verzenden (V2)** actie om de opmaak van e-mailadres waarop u het lettertype, gebruik vet, cursief of onderstreping aanpassen de kleur aanpassen en markeren en maak lijsten of koppelingen en meer.
+
+![Uitgebreide bewerken e-mail](media/get-started-logic-flow/email-rich-text.png)
 
 ## <a name="manage-a-flow"></a>Een stroom beheren
 

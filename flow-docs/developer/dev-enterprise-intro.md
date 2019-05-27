@@ -20,11 +20,11 @@ search.app:
 search.audienceType:
 - developer
 ms.openlocfilehash: f510d387b594bb11306f8bc2530573b775e5f08e
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
-ms.translationtype: HT
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44690394"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64455912"
 ---
 # <a name="microsoft-flow-for-enterprise-developers-isvs-and-partners"></a>Microsoft Flow voor ontwikkelaars in organisaties, ISV's en partners
 
@@ -34,11 +34,11 @@ Als ontwikkelaar kunt u Microsoft Flow uitbreiden zodat u nog krachtigere oploss
 
 Als ontwikkelaar in een organisatie kunt u uw organisatie in staat stellen om robuuste, op maat gemaakte oplossingen te maken met Microsoft Flow:
 
-- **Maak aangepaste connectors**: Ontwikkel aangepaste connectors om gegevens en webservices van uw organisatie te koppelen via Microsoft Flow. [Meer informatie](https://docs.microsoft.com/connectors/custom-connectors/)
+- **Aangepaste connectors bouwen**: Maak aangepaste connectors op een wijze dat de gegevens en webservices van uw organisatie met elkaar zijn verbonden via Microsoft Flow. [Meer informatie](https://docs.microsoft.com/connectors/custom-connectors/)
 
-- **Maak Azure Functions**: Ontwikkel Azure Functions om apps uit te breiden met aangepaste logica aan de serverzijde. [Meer informatie](https://docs.microsoft.com/azure/azure-functions/functions-flow-scenario)
+- **Azure Functions bouwen**: Ontwikkel Azure Functions als u apps wilt uitbreiden met aangepaste serverlogica. [Meer informatie](https://docs.microsoft.com/azure/azure-functions/functions-flow-scenario)
 
-- **Sluit Microsoft Flow in**: Maak geïntegreerde oplossingen door Microsoft Flow rechtstreeks in de website-ervaring in te sluiten en maak duidelijk zichtbaar bij welke werkstromen of processen mensen in uw organisatie met hun werk betrokken zijn. [Meer informatie](embed-flow-dev.md)
+- **Microsoft Flow insluiten**: Maak geïntegreerde oplossingen door Microsoft Flow rechtstreeks in de website-ervaring in te sluiten, en maak duidelijk zichtbaar bij welke werkstromen of processen mensen in uw organisatie met hun werk betrokken zijn. [Meer informatie](embed-flow-dev.md)
 
 ## <a name="microsoft-flow-for-isvs-and-microsoft-partners"></a>Microsoft Flow voor ISV's en Microsoft-partners
 

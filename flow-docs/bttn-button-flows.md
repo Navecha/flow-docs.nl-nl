@@ -21,11 +21,11 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: 813ad16dbc9514975daadac456b73d98fc30db79
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
-ms.translationtype: HT
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44689060"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64462196"
 ---
 # <a name="run-your-flows-with-physical-buttons-bttns-from-the-button-corporation-preview"></a>Uw stromen uitvoeren met fysieke knoppen (bttns) van The Button Corporation (preview)
 Activeer uw stromen door op een bttn te drukken (een fysieke knop die is gemaakt door [The Button Corporation](https://my.bt.tn/)). Druk bijvoorbeeld op een bttn die een stroom activeert om de volgende taken uit te voeren:
@@ -56,7 +56,7 @@ U kunt een van deze sjablonen kiezen om snel stromen voor uw bttn te maken en ve
 
 ![bttn-sjablonen](./media/bttn-button-flows/bttn-templates.png)
 
-Tip: Geef uw bttn voor het doel van dit scenario de naam van een vergaderruimte in een typisch kantoorgebouw.
+Tip: Geef een naam die een in een typisch kantoorgebouw vergaderruimte-uw bttn voor het doel van dit scenario.
 
 De instellingen voor uw bttn moeten eruitzien zoals in dit voorbeeld (van de bttn-website):
 
@@ -69,7 +69,7 @@ Nu u bent geregistreerd en uw bttn hebt geconfigureerd, kunt u een stroom gaan m
    
     ![aanmelden](./media/bttn-button-flows/sign-into-flow.png)
    
-    Opmerking: Als alternatief kunt u stromen maken in de mobiele app voor Microsoft Flow voor [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios) of [Windows Phone](https://aka.ms/flowmobilewindows).
+    Opmerking: Als alternatief kunt u stromen kunt maken in de mobiele Microsoft Flow-app voor [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios), of [Windows Phone](https://aka.ms/flowmobilewindows).
 2. Typ **bttn** in het zoekvak en selecteer het zoekpictogram.
    
     ![zoeken](./media/bttn-button-flows/bttn-search-template.png)
@@ -85,7 +85,7 @@ Nu u bent geregistreerd en uw bttn hebt geconfigureerd, kunt u een stroom gaan m
     ![referenties](./media/bttn-button-flows/bttn-provide-credentials.png)
 2. Wanneer u zich aanmeldt bij de bttn-service, moet u toestaan dat Microsoft Flow uw bttns gebruikt.
    
-    **Belangrijk**: Als u Microsoft Flow geen toestemming geeft om uw bttns te gebruiken, kunt u ze niet zien of er verbinding mee maken via Microsoft Flow.
+    **Belangrijke**: Als u geen toestemming Microsoft Flow uw bttns gebruikt geeft, kan u zien of maak er verbinding mee in Microsoft Flow.
    
     ![autoriseren](./media/bttn-button-flows/authorize-bttn.png)
 3. Nadat u zich bij beide services hebt aangemeld, selecteert u **Doorgaan**.
@@ -110,7 +110,7 @@ Nu u bent geregistreerd en uw bttn hebt geconfigureerd, kunt u een stroom gaan m
    
     U kunt de uitvoeringsgeschiedenis controleren op de website van Microsoft Flow of op uw mobiele apparaat.
    
-    Opmerking: De uitvoeringsstatus is ingesteld op **uitvoeren** totdat iemand **Bevestigen** selecteert in de e-mail met de ondersteuningsaanvraag.
+    Opmerking: De uitvoeringsstatus is ingesteld op **met** totdat iemand selecteert **bevestigen** in het verzoek om ondersteuning e-mailbericht.
 3. U kunt ook bevestigen dat het e-mailbericht is verzonden naar het ondersteuningsteam.
    
     Als u het scenario hebt gevolgd, lijkt de e-mail met de ondersteuningsaanvraag op het volgende voorbeeld:

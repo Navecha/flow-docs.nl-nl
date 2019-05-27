@@ -20,16 +20,16 @@ search.app:
 - Powerplatform
 search.audienceType:
 - admin
-ms.openlocfilehash: be12491490cac51a0b91906b1a663522c2a7658f
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
-ms.translationtype: HT
+ms.openlocfilehash: 6480fe6a7e6ca26a7dbad3952b6608a9e0a880ae
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44688761"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "65035066"
 ---
 # <a name="responding-to-gdpr-data-subject-account-close-requests-for-microsoft-flow"></a>Reageren op AVG-verzoeken van betrokkenen voor het sluiten van accounts in Microsoft Flow
 
-Het **recht op vergetelheid**, het recht om persoonsgegevens te laten verwijderen, is een belangrijke beschermingsmaatregel in de AVG. Dit recht omvat het verwijderen van alle persoonsgegevens, behalve gegevens van auditlogboeken. Wanneer een gebruiker besluit zijn of haar Microsoft-account (MSA) te sluiten, worden de onderliggende gegevens van de gebruiker ook verwijderd.
+Het **recht op vergetelheid**, het recht om persoonsgegevens te laten verwijderen, is een belangrijke beschermingsmaatregel in de AVG. Dit recht omvat het verwijderen van alle persoonsgegevens, behalve gegevens van auditlogboeken. Wanneer gebruikers besluiten hun Microsoft-Account (MSA) sluiten, wordt de onderliggende gegevens van de gebruiker ook verwijderd.
 
 Deze resources bevatten persoonsgegevens die automatisch worden verwijderd wanneer een gebruiker een MSA sluit:
 

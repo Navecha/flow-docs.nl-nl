@@ -21,11 +21,11 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: dce9fa4bb838f931acdcd95710d82d15bdc7dd24
-ms.sourcegitcommit: 3bdd6c6b9df40f53e52c31130abaa93ba09a0e9b
-ms.translationtype: HT
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60120713"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64464942"
 ---
 # <a name="faq-for-regions-in-microsoft-flow"></a>Veelgestelde vragen voor regio's in Microsoft Flow
 Dit document bevat een lijst met veelgestelde vragen over Microsoft Flow.

@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: d48ba29d932bc3d9b0d631b4646eb68d89134271
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "65035163"
+---
 In dit onderwerp leert u hoe u **een knopstroom maakt** voor het bedrijf Contoso Flooring. 
 
 Knopstromen kunnen worden gebruikt om **e-mail**  te verzenden naar een team en **hen een melding te sturen over taken** die ze moeten uitvoeren. Het **eigendom** van de stromen **kan worden toegewezen aan één**medewerker of worden **gedeeld door meerdere** leden van een team.  
@@ -48,7 +56,7 @@ Knopstromen kunnen worden gebruikt om **e-mail**  te verzenden naar een team en 
      ![Stroom maken](./media/learning-create-button-flow/12-create-flow.png)
 
 ## <a name="create-a-team-flow"></a>Een teamstroom maken
-U kunt deze knopstroom gebruiken als voorbeeld van het maken van een teamstroom. En wat nu als de maker van deze stroom ziek is? Of als de maker het bedrijf verlaat? U wilt ervoor zorgen dat deze stroom actief blijft. Hiervoor voegt u mede-eigenaars toe.
+U kunt deze knopstroom gebruiken als voorbeeld van het maken van een teamstroom. En wat nu als de maker van deze stroom ziek is? Wat gebeurt er als de persoon die het bedrijf verlaat? U wilt ervoor zorgen dat deze stroom actief blijft. Hiervoor voegt u mede-eigenaars toe.
 
 1. Selecteer het **teampictogram** in uw stroom om een mede-eigenaar toe te voegen.
    
@@ -66,9 +74,9 @@ U kunt deze knopstroom gebruiken als voorbeeld van het maken van een teamstroom.
 ## <a name="summary"></a>Overzicht
 In deze les hebt u gezien hoe u **een knopstroom maakt**. 
 
-Via de stroom kon een magazijnmedewerker in een paar minuten **een melding sturen naar het team** over de **komst van een levering**, zodat het team niet onnodig hoefde te wachten en aan andere taken kon werken. 
+Binnen enkele minuten, de stroom heeft een magazijnmedewerker kunnen **het team waarschuwen** naar een **komst van een levering**, zodat het team hoefde te wachten, is niet hebben verspillen kostbare tijd kan besteden aan andere taken . 
 
-De medewerker deelde deze knop vervolgens met het team, zodat anderen dezelfde stroom konden activeren wanneer ze niet aanwezig was.
+De werknemer vervolgens deelde deze knop aan het team, zodat anderen dezelfde stroom activeren kunnen als deze persoon niet aanwezig was.
 
 ## <a name="next-lesson"></a>Volgende les
 Bekijk de volgende les om te zien hoe u een stroom maakt waarin **pushmeldingen** worden gebruikt.

@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 5d3a4df4ac575f42790a2748aa9cebad05348da1
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64469641"
+---
 1. Selecteer **Een actie toevoegen** in de vertakking **INDIEN JA** van de voorwaarde.
    
     ![nieuwe stap toevoegen](media/modern-approvals/add-action-after-condition.png)

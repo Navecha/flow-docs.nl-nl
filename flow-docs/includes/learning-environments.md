@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 0e46ba9a9ff1044e72b8550b47d126e2999cfb71
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64461074"
+---
 ## <a name="what-is-an-environment"></a>Wat is een omgeving?
 Een omgeving is een virtuele ruimte die wordt gebruikt om apps, stromen en zakelijke gegevens op te slaan, te beheren en te delen in Common Data Service. Omgevingen hebben een geografische locatie, dus dat geldt ook voor alle apps en gegevens die in de database van een omgeving worden opgeslagen.  
 

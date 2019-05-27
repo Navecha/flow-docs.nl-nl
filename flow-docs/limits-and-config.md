@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 8a8a6561840f91ab61b8d7440f1620c2e7cd0076
-ms.sourcegitcommit: a505b0aac796960d57fccee92eb18c6566ac9c35
-ms.translationtype: HT
+ms.openlocfilehash: 615d13adaee8b5db302065b3c21a488504f39398
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 12/06/2018
-ms.locfileid: "53006950"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64906402"
 ---
 # <a name="limits-and-configuration-in-microsoft-flow"></a>Limieten en configuratie in Microsoft Flow
 Dit onderwerp bevat informatie over de huidige limieten en configuratiegegevens voor stromen.
@@ -65,18 +65,37 @@ Dit zijn de limieten voor het uitvoeren van één stroom.
 | Minimaal terugkeerpatroon |1 minuut | |
 | Maximaal terugkeerpatroon |500 dagen | |
 | Maximale bewaarperiode voor uitvoeringsgeschiedenis |28 dagen, volgens de AVG-regels. | |
+|Minimale postone interval - vrij en plannen van 1-licentie|5 seconden||
+|Minimaal interval - abonnement 2-licentie uitstellen|1 seconde||
 
 ## <a name="looping-and-debatching-limits"></a>Limieten voor lussen en debatching
 Dit zijn limieten voor het uitvoeren van één stroom.
 
 | Naam | Limiet | Opmerkingen |
 | --- | --- | --- |
-| Op alle items toepassen |100.000 |100.000 is alleen beschikbaar bij Premium-abonnementen. Anders geldt er een limiet van 5000. Met de filteractie kunt u naar behoefte grotere matrices filteren. |
+| Toepassen op elke items - gratis licentie|5000 |Met de filteractie kunt u naar behoefte grotere matrices filteren. |
+| Toepassen op elke items - abonnement 1 en abonnement 2-licentie|100.000 |Met de filteractie kunt u naar behoefte grotere matrices filteren. |
 | Until-iteraties |5000 | |
-| SplitOn-items |100.000 |Net als bij ‘Op alle toepassen’ is de limiet 5000, tenzij u een Premium-abonnement hebt. |
+| SplitOn-items: gratis licentie |5000 ||
+| SplitOn-items - abonnement 1 en abonnement 2-licentie |100.000 ||
 | Op alle parallelle uitvoeringen toepassen |50 |Standaard worden lussen opeenvolgend uitgevoerd (parallelle uitvoering is in wezen 1) U kunt er maximaal 50 parallel configureren |
-| Actie-uitvoeringen per 5 minuten | 100.000 | Naar behoefte kunt u ook een werkbelasting over meer dan één stroom verdelen. |
-| Acties gelijktijdig met uitgaande aanroepen | ~2500 | Naar behoefte kunt u het aantal gelijktijdige aanvragen verminderen of de duur verkorten. | 
+| Acties uitvoeringen per vijf minuten: gratis en licentie-abonnement 1 | 2,000 | Naar behoefte kunt u ook een werkbelasting over meer dan één stroom verdelen. |
+|Uitvoeringen van acties per vijf minuten - abonnement 2-licentie|100.000|Naar behoefte kunt u ook een werkbelasting over meer dan één stroom verdelen.|
+| Acties gelijktijdige uitgaande gesprekken - vrij en plannen van 1-licentie | ~500 | Naar behoefte kunt u het aantal gelijktijdige aanvragen verminderen of de duur verkorten. |
+| Acties gelijktijdige uitgaande gesprekken - vrij en plannen van 1-licentie | ~2500 | Naar behoefte kunt u het aantal gelijktijdige aanvragen verminderen of de duur verkorten. | 
+
+## <a name="throughput-limits"></a>Doorvoerlimieten
+
+|Naam|Limiet|Opmerkingen|
+|---|---|---|
+|Eindpunt van de runtime - aantal gelezen aanroepen toegestaan per vijf minuten: gratis en licentie-abonnement 1|6,000||
+|Eindpunt van de runtime - lezen toegestane aantal aanvragen per vijf minuten - abonnement 2-licentie|60,000||
+|Runtime-eindpunt: Invoke-aanroepen per vijf minuten: gratis en licentie-abonnement 1|4,500||
+|Runtime-eindpunt: Aantal invoke-aanroepen per vijf minuten - abonnement 2-licentie|45,000||
+|Hoeveelheid doorvoer toegestaan per vijf minuten: gratis en licentie-abonnement 1|600 MB||
+|Hoeveelheid doorvoer toegestaan per vijf minuten - abonnement 2-licentie|6 GB||
+|Hoeveelheid inhoud stromen kunnen produceren (acties invoer/uitvoer) per uur: gratis, abonnement 1 en abonnement 2-licentie|200 GB||
+
 
 ## <a name="definition-limits"></a>Definitielimieten
 Dit zijn limieten voor één stroom.
@@ -95,6 +114,9 @@ Er gelden [beperkingen](https://powerapps.microsoft.com/tutorials/connection-sha
 ## <a name="ip-address-configuration"></a>IP-adresconfiguratie
 Het IP-adres dat wordt gebruikt om Microsoft Flow-aanvragen te verzenden, is afhankelijk van de [regio](regions-overview.md) waarin de [omgeving](environments-overview-admin.md) die de stroom bevat zich bevindt. Er worden momenteel geen FQDN's gepubliceerd die beschikbaar zijn voor stroomscenario's.
 
+>[!IMPORTANT]
+> Aantal aanroepen van een stroom maakt afkomstig van IP zijn kunnen-adressen die worden vermeld in de [Logic apps](https://docs.microsoft.com/azure/logic-apps/logic-apps-limits-and-config#configuration-ip-addresses) documentatie. Enkele voorbeelden van deze aanroepen zijn HTTP of HTTP + OpenAPI.
+
 ### <a name="logic-apps"></a>Logic Apps
 Aanroepen die vanuit een stroom worden gedaan, verlopen direct via de service Logische app van Azure. Enkele voorbeelden van deze aanroepen zijn HTTP of HTTP + OpenAPI. Raadpleeg [de documentatie voor Logic Apps](https://docs.microsoft.com/azure/logic-apps/logic-apps-limits-and-config#configuration-ip-addresses) voor de IP-adressen die door deze service worden gebruikt.
 
@@ -103,16 +125,16 @@ Aanroepen vanuit een connector in een stroom (bijvoorbeeld de SQL-API of de Shar
 
 | Regio | Uitgaande IP |
 | --- | --- |
-| Azië en Stille Oceaan | 13.75.36.64 - 13.75.36.79, 13.67.8.240 - 13.67.8.255, 52.175.23.169, 52.187.68.19, 52.163.91.227, 52.163.89.40, 52.163.89.65, 52.163.95.29, 52.187.53.78, 13.75.89.9, 13.75.91.198, 13.75.92.202, 13.75.92.124, 23.97.72.250  |
-| Australië  | 13.70.72.192 - 13.70.72.207, 13.72.243.10, 13.77.50.240 - 13.77.50.255, 13.70.136.174, 13.77.7.172, 13.70.191.49, 13.70.189.7, 13.70.187.251, 13.70.188.38, 13.70.82.210, 13.73.203.158, 13.73.207.42, 13.73.205.35, 13.70.88.23 |
-| Canada | 13.71.170.208 - 13.71.170.223, 13.71.170.224 - 13.71.170.239, 52.237.24.126, 40.69.106.240 - 40.69.106.255, 52.242.35.152, 52.233.30.222, 52.233.30.148, 52.233.30.199, 52.233.29.254, 52.232.130.205, 52.229.126.118, 52.229.126.28, 52.229.123.56, 52.229.123.161, 52.233.27.68 |
-| Europa | 13.69.227.208 - 13.69.227.223, 52.178.150.68, 13.69.64.208 - 13.69.64.223, 52.174.88.118, 52.166.241.149, 52.166.244.232, 52.166.245.173, 52.166.243.169, 52.178.37.42, 40.69.45.126, 40.69.45.11, 40.69.45.93, 40.69.42.254, 52.164.249.26, 137.117.161.181 |
-| India  | 104.211.81.192 - 104.211.81.207, 52.172.211.12, 40.78.194.240 - 40.78.194.255, 13.71.125.22, 104.211.146.224 - 104.211.146.239, 104.211.189.218, 52.172.54.172, 52.172.55.107, 52.172.55.84, 52.172.51.70, 52.172.49.180, 52.172.158.185, 52.172.159.100, 52.172.158.2, 52.172.155.245, 52.172.153.107 |
-| Japan | 13.78.108.0 - 13.78.108.15, 13.71.153.19, 40.74.100.224 - 40.74.100.239, 104.215.61.248, 104.214.137.186, 104.214.139.29, 104.214.140.23, 104.214.138.174, 104.214.151.229, 13.78.85.193, 13.78.84.73, 13.78.85.200, 13.78.86.229, 13.78.121.151 |
+| Azië en Stille Oceaan | 13.75.36.64 - 13.75.36.79, 13.67.8.240 - 13.67.8.255, 52.175.23.169, 52.187.68.19 |
+| Australië  | 13.70.72.192 - 13.70.72.207, 13.72.243.10, 13.77.50.240 - 13.77.50.255, 13.70.136.174 |
+| Canada | 13.71.170.208 - 13.71.170.223, 13.71.170.224 - 13.71.170.239, 52.237.24.126, 40.69.106.240 - 40.69.106.255, 52.242.35.152|
+| Europa | 13.69.227.208 - 13.69.227.223, 52.178.150.68, 13.69.64.208 - 13.69.64.223, 52.174.88.118, 137.117.161.181 |
+| India  | 104.211.81.192 - 104.211.81.207, 52.172.211.12, 40.78.194.240 - 40.78.194.255, 13.71.125.22, 104.211.146.224 - 104.211.146.239, 104.211.189.218 |
+| Japan | 13.78.108.0 - 13.78.108.15, 13.71.153.19, 40.74.100.224 - 40.74.100.239, 104.215.61.248 |
 | Zuid-Amerika | 191.233.203.192 - 191.233.203.207, 104.214.19.48 - 104.214.19.63, 13.65.86.57, 104.41.59.51 |
 | Verenigd Koninkrijk | 51.140.148.0 - 51.140.148.15, 51.140.80.51, 51.140.211.0 - 51.140.211.15, 51.141.47.105 |
-| Verenigde Staten | 13.89.171.80 - 13.89.171.95, 52.173.245.164, 40.71.11.80 - 40.71.11.95, 40.71.249.205, 40.70.146.208 - 40.70.146.223, 52.232.188.154, 52.162.107.160 - 52.162.107.175, 52.162.242.161, 40.112.243.160 - 40.112.243.175, 104.42.122.49, 104.43.232.28, 104.43.232.242, 104.43.235.249, 104.43.234.211, 52.160.93.247, 52.160.91.66, 52.160.92.131, 52.160.95.100, 40.117.101.91, 40.117.98.246, 40.117.101.120, 40.117.100.191 |
-| Preview (Verenigde Staten)  | 13.71.195.32 - 13.71.195.47, 52.161.102.22, 13.66.140.128 - 13.66.140.143, 52.183.78.157, 52.161.26.191, 52.161.27.42, 52.161.29.40, 52.161.26.33, 52.161.31.35, 13.66.213.240, 13.66.214.51, 13.66.210.166, 13.66.213.29, 13.66.208.24 |
+| Verenigde Staten | 13.89.171.80 - 13.89.171.95, 52.173.245.164, 40.71.11.80 - 40.71.11.95, 40.71.249.205, 40.70.146.208 - 40.70.146.223, 52.232.188.154, 52.162.107.160 - 52.162.107.175, 52.162.242.161, 40.112.243.160 - 40.112.243.175, 104.42.122.49|
+| Preview (Verenigde Staten)  | 13.71.195.32 - 13.71.195.47, 52.161.102.22, 13.66.140.128 - 13.66.140.143, 52.183.78.157 |
 
 Als u bijvoorbeeld IP-adressen moet goedkeuren voor uw Azure SQL-database, moet u deze adressen gebruiken.
 

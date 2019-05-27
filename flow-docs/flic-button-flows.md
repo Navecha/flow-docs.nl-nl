@@ -21,11 +21,11 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: bbcb6c8950e8ac5959880727604e0355b3150c6f
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
-ms.translationtype: HT
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44690465"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64455342"
 ---
 # <a name="run-your-flows-by-pressing-a-flic-smart-button-preview"></a>Stromen starten door op een slimme Flic-knop te drukken (preview)
 Activeer uw stromen door op een fysieke knop, ook wel een Flic, van Shortcut Labs te drukken. Druk bijvoorbeeld op een Flic om de werkuren bij te houden, uw agenda te blokkeren, bezoekers van een evenement te tellen of om geografische locaties op te slaan.
@@ -57,7 +57,7 @@ Zodra u een Flic-gebeurtenis aan Microsoft Flow hebt gekoppeld, kunt u die Flic 
 ## <a name="create-a-flow-thats-triggered-by-a-flic"></a>Een stroom maken die wordt geactiveerd door een Flic
 In dit scenario wordt er een stroom met de Flic uitgevoerd die registreert hoeveel tijd een consultant bij een klant doorbrengt. De consultant drukt bij aankomst één keer op de Flic en vlak voor vertrek nogmaals. Telkens wanneer op de Flic wordt gedrukt, wordt de gekoppelde stroom uitgevoerd. Zodra de stroom wordt gestart, wordt de huidige tijd opgeslagen in Google Spreadsheets en wordt er vervolgens een e-mailmelding verzonden. De e-mail bevat informatie over de stroomuitvoering.
 
-Opmerking: zorg ervoor dat u minimaal één **klikactie** met de mobiele Flic-app hebt gekoppeld en geconfigureerd om Microsoft Flow te activeren. In deze schermopname is de **klikactie** geconfigureerd om Microsoft Flow te openen. Verderop in dit scenario zullen we de stroom zodanig configureren dat deze wordt geactiveerd wanneer de Flic één keer wordt ingedrukt (klikken).
+Opmerking: Zorg ervoor dat u bekend bent met de mobiele app van Flic te koppelen, en configureert ten minste één **klikt u op** actie aan Microsoft Flow-trigger. In deze schermopname is de **klikactie** geconfigureerd om Microsoft Flow te openen. Verderop in dit scenario zullen we de stroom zodanig configureren dat deze wordt geactiveerd wanneer de Flic één keer wordt ingedrukt (klikken).
 
    ![flic configureren](./media/flic-button-flows/flic-configured-for-flow.png)
 
@@ -80,11 +80,11 @@ Laten we de stroom maken.
    ![de sjabloondetails controleren](./media/flic-button-flows/flic-template-details.png)
 2. Maak een spreadsheet in Google Spreadsheets met de kolommen **ClickType** en **TimeStamp**.
    
-      Tip: u kunt de kolommen in Google Spreadsheets een naam geven door boven aan de kolom een kolomnaam in te voeren. Uw sheet moet overeenkomen met deze schermopname:
+      Tip: U naam kolommen in Google spreadsheets door in te voeren van de naam van de kolom aan de bovenkant van de kolom. Uw sheet moet overeenkomen met deze schermopname:
    
    ![Google-spreadsheet](./media/flic-button-flows/flic-google-sheet.png)
    
-   Opmerking: u hebt deze sheet later in dit scenario nog nodig.
+   Opmerking: U gebruikt dit blad verderop in dit scenario.
 
 ### <a name="add-the-flic-trigger-to-your-flow"></a>De Flic-trigger toevoegen aan uw stroom
 1. Meld u aan bij de services van de sjabloon en selecteer vervolgens **Doorgaan**.
@@ -112,7 +112,7 @@ Laten we de stroom maken.
 1. Selecteer de spreadsheet die u eerder op basis van de lijst **Bestand** hebt gemaakt.
 2. Selecteer de sheet in de lijst **Werkblad**.
    
-   Opmerking: er worden twee extra vakken op de kaart **Rij invoegen** weergegeven nadat u deze sheet hebt geselecteerd. Deze vakken vertegenwoordigen de twee kolommen in de sheet die u eerder hebt gemaakt.
+   Opmerking: Twee extra vakken op de **rij invoegen** kaart nadat u deze sheet hebt geselecteerd. Deze vakken vertegenwoordigen de twee kolommen in de sheet die u eerder hebt gemaakt.
 3. Selecteer het vak **ClickType** en selecteer vervolgens het token **Click type**.
 4. Selecteer het vak **Timestamp** en selecteer vervolgens het token **Click time**.
    

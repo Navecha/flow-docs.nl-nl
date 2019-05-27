@@ -17,12 +17,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: a7e1dc8d366ac9f23682362c8a673eb67df65975
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
-ms.translationtype: HT
+ms.openlocfilehash: f8911c828b216d8f65210b4c54603fd8838e848b
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44690509"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "65054109"
 ---
 # <a name="tutorial-enhance-business-process-flows-with-branching"></a>Zelfstudie: Bedrijfsprocesstromen verbeteren met vertakkingen
 
@@ -58,10 +58,10 @@ Bedrijfsprocesstromen begeleiden u door verschillende fasen van verkoop-, market
 > - Een entiteit die wordt gebruikt in het proces kan verschillende keren worden bezocht (meerdere gesloten entiteitslussen).  
 > - Een proces kan teruggaan naar de vorige fase, ongeacht het type entiteit. Als de actieve fase bijvoorbeeld **Deliver Quote** is voor een offerterecord, kunnen procesgebruikers de actieve fase wijzigen in de eerdere fase **Propose** voor een verkoopkansrecord.  
 >   
->   Een ander voorbeeld. Stel dat een proces zich momenteel in de fase **Present Proposal** bevindt in de processtroom: **Qualify Lead** > **Identify Needs** > **Create Proposal** > **Present Proposal** > **Close**. Als het voorstel dat is gepresenteerd aan de klant meer onderzoek vereist om de behoeften van de klant in kaart te brengen, kunnen gebruikers de fase **Identify Needs** van het proces selecteren en **Instellen op actief** kiezen.  
+>   Stel dat een proces is momenteel in een ander voorbeeld: de **voorstel presenteren** fase in de processtroom: **Potentiële** > **behoeften aan identificeren** > **voorstel maken** > **voorstel**  >  **Sluiten**. Als het voorstel dat is gepresenteerd aan de klant meer onderzoek vereist om de behoeften van de klant in kaart te brengen, kunnen gebruikers de fase **Identify Needs** van het proces selecteren en **Instellen op actief** kiezen.  
   
 <a name="CarSelling365"></a>   
-## <a name="dynamics-365-customer-engagement-example-car-selling-process-flow-with-two-branches"></a>Voorbeeld van Dynamics 365-klantcontacten: processtroom voor verkoop van auto's met twee vertakkingen
+## <a name="dynamics-365-customer-engagement-example-car-selling-process-flow-with-two-branches"></a>Voorbeeld van Dynamics 365 Customer Engagement: Auto processtroom met twee vertakkingen verkopen
  
 Laten we eens kijken naar het voorbeeld van een bedrijfsprocesstroom met twee vertakkingen, voor het verkopen van nieuwe en tweedehands auto's.  
   
@@ -104,11 +104,11 @@ Laten we eens kijken naar het voorbeeld van een bedrijfsprocesstroom met twee ve
   
  ![Stroomdiagram van de stappen in een voorbeeldproces om openbaarmaking van informatie te voorkomen](media/example-car-sales-flow-chart-process-prevent-information-disclosure.png "Stroomdiagram van de stappen in een voorbeeldproces om openbaarmaking van informatie te voorkomen")  
   
- In dit scenario moet de bankmedewerker die de aanvraag gaat beoordelen de aanvraagrecord (Request) raadplegen, maar ze mag geen weet hebben van het onderzoek (Investigation) van de aanvraag. Op het eerste gezicht lijkt het dat we dit eenvoudig kunnen realiseren door de medewerker een beveiligingsrol te geven die geen toegang heeft tot de entiteit Investigation. Maar laten we het voorbeeld eens wat beter bestuderen en kijken of dat inderdaad zo is.  
+ In dit scenario, de bank lening officer moet toegang hebben tot de aanvraag-record, maar de lening officer al dan niet mogen inzicht hebben in het onderzoek van de aanvraag. Op het eerste gezicht lijkt het dat we dit eenvoudig kunnen realiseren door de medewerker een beveiligingsrol te geven die geen toegang heeft tot de entiteit Investigation. Maar laten we het voorbeeld eens wat beter bestuderen en kijken of dat inderdaad zo is.  
   
- Stel dat een klant een aanvraag heeft ingediend bij de bank voor een lening van meer dan € 60.000. De medewerker beoordeelt de aanvraag in de eerste fase. Als wordt voldaan aan de vertakkingsregel die controleert of het gewenste bedrag hoger is dan € 50.000, is de volgende fase van het proces het onderzoeken of de aanvraag frauduleus is. Als wordt vastgesteld dat dit inderdaad een geval van fraude is, wordt het proces verplaatst naar de fase voor het opstarten van juridische stappen tegen de aanvrager. De medewerker mag geen beeld hebben van de twee onderzoeksfasen, aangezien ze geen toegang heeft tot de entiteit Investigation.  
+ Stel dat een klant een aanvraag heeft ingediend bij de bank voor een lening van meer dan € 60.000. De medewerker beoordeelt de aanvraag in de eerste fase. Als wordt voldaan aan de vertakkingsregel die controleert of het gewenste bedrag hoger is dan € 50.000, is de volgende fase van het proces het onderzoeken of de aanvraag frauduleus is. Als wordt vastgesteld dat dit inderdaad een geval van fraude is, wordt het proces verplaatst naar de fase voor het opstarten van juridische stappen tegen de aanvrager. De lening officer mag geen zichtbaarheid in de twee resulterend fasen bevatten als u de functionaris heeft geen toegang tot de entiteit onderzoek.  
   
- Als de medewerker echter de aanvraagrecord (Request) opent, zou ze het proces helemaal van begin tot eind kunnen zien. Ze heeft dan niet alleen inzage in de onderzoeksfase, maar ze kan ook het resultaat van het onderzoek inzien door de fase van juridische stappen (Legal Action) te bekijken. Daarnaast kan ze een voorbeeld inzien van de stappen in de onderzoeksfasen door de fase te kiezen. Hoewel ze niet de gegevens of de voltooiingsstatus van de stap kan zien, kan ze wel de mogelijke acties afleiden die zijn genomen tegen de indiener van de aanvraag tijdens de fasen voor onderzoek en juridische stappen.  
+ Echter, als de lening officer wordt geopend de record van de aanvraag, alle zou kunnen om te zien van het gehele end-to-end-proces. Niet alleen de lening officer zich om te zien van de fase van fraude onderzoek, maar ze waarschijnlijk ook het resultaat van het onderzoek identificeren door te kunnen zien van de fase juridische actie in het proces zijn. Ook is de officer mogelijk om een voorbeeld van de stappen in de fasen van de door het kiezen van de fase. Terwijl u de functionaris lening is niet mogelijk om te zien van de gegevens of de status van de stap voltooid, is het waarschijnlijk dat ze kunnen de mogelijke acties die zijn uitgevoerd tegen de indiener van de aanvraag tijdens het onderzoek en -fasen van de juridische actie identificeren.  
   
  In deze processtroom kan de medewerker de fasen Fraud Investigation en Legal Action raadplegen, wat neerkomt op een onjuiste openbaarmaking van informatie. Het is dan ook belangrijk dat u zeer goed kijkt welke informatie kan worden vrijgegeven in een bedrijfsprocesstroom met vertakkingen. In ons voorbeeld kan dit probleem worden opgelost door het proces op te splitsen in twee afzonderlijke processen, één voor de verwerking van de aanvraag en een andere voor het fraudeonderzoek. Op deze manier wordt onjuiste openbaarmaking van informatie voorkomen. Dit is dan het proces voor de medewerker die de aanvraag beoordeelt:  
   

@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: d45bf5974c24a8258f3f4e51e1e4c89b9c74fba7
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64460370"
+---
 Voor deze stroom maakt u een **SharePoint**-lijst waarin het marketingteam van **Contoso Flooring** hun **Twitter-berichten** en publicatiedatums opslaat. Daarna maakt u een stroom waarmee de inhoud automatisch voor hen wordt getweet. 
 
 ## <a name="connect-microsoft-flow-services"></a>Verbinding maken met Microsoft Flow-services
@@ -81,7 +89,7 @@ De trigger is nu klaar.
 3. Stel de waarde voor de vertraging in.
    
    1. Klik of tik in het veld **Tijdstempel**. 
-   2. Wanneer het vak met dynamische inhoud wordt geopend, schuift u helemaal naar beneden, waarna u de drie kolommen van de SharePoint-lijst ziet: **Titel**, **Datum tweet** en **Inhoud tweet**.
+   2. Wanneer het vak met dynamische inhoud wordt geopend, schuif naar beneden, en u ziet dat de drie kolommen van de SharePoint-lijst: **Titel**, **datum Tweet**, en **inhoud Tweet**.
    3. Selecteer **Datum tweet**. 
       
        ![Vertragen tot tijdstempel](./media/learning-push-notifications/14-delay-until-timestamp.png)

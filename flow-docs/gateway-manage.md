@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: b25f63a3980d21e60b26a0783ac4bf5eb6030cd3
-ms.sourcegitcommit: 282059c82bfcf5896d06043476c34641906e20e3
-ms.translationtype: HT
+ms.openlocfilehash: b8b14f720736a60b04cbd9ae23dec5c0524ff03c
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49087903"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "65054071"
 ---
 # <a name="manage-an-on-premises-data-gateway-in-microsoft-flow"></a>Een on-premises gegevensgateway beheren in Microsoft Flow
 
@@ -60,7 +60,13 @@ Met een gateway kunt u verbinding maken met on-premises gegevens via de volgende
 > [!NOTE]
 > U kunt een gateway en een on-premises verbinding alleen maken in uw [standaardomgeving](environments-overview-maker.md).
 
+## <a name="install-a-gateway"></a>Een gateway installeren
 
+1. Download de [wizard voor gatewayinstallatie](https://go.microsoft.com/fwlink/?LinkID=820580&clcid=0x409).
+
+1. Voer de wizard uit en geef de referenties op waarmee u zich ook bij Microsoft Flow aanmeldt.
+
+    Als u de gateway hebt geregistreerd en geconfigureerd, wordt deze weergegeven in de lijst **Gateways** in Microsoft Flow.
 
 ## <a name="view-your-gateways"></a>Uw gateways weergeven
 
@@ -72,14 +78,22 @@ Selecteer rechtsboven in de hoek van de [Microsoft Flow-website](https://flow.mi
 > Als u een gateway hebt gemaakt in PowerApps of toegang tot een dergelijke gateway hebt gekregen, wordt die gateway weergegeven in de lijst **Mijn gateways** in Microsoft Flow.
 
 
+## <a name="cluster-your-gateways"></a>Uw gateways van cluster
 
-## <a name="install-a-gateway"></a>Een gateway installeren
+U kunt maken *clusters met hoge beschikbaarheid van on-premises data gateway installaties* om te voorkomen dat single point of failure bij het openen van on-premises gegevensbronnen. 
 
-1. Download de [wizard voor gatewayinstallatie](https://go.microsoft.com/fwlink/?LinkID=820580&clcid=0x409).
+Microsoft Flow maakt standaard gebruik van de primaire gateway in het cluster. Als de primaire gateway niet beschikbaar is, wordt de service schakelt over naar de volgende gateway in het cluster, enzovoort.
 
-1. Voer de wizard uit en geef de referenties op waarmee u zich ook bij Microsoft Flow aanmeldt.
+Wanneer u een gateway-cluster hebt ingesteld, kunt u verkeer wordt verdeeld over alle gateways in het cluster. 
 
-    Als u de gateway hebt geregistreerd en geconfigureerd, wordt deze weergegeven in de lijst **Gateways** in Microsoft Flow.
+Volg deze stappen voor het verkeer verdelen over uw gateways:
+
+1. Selecteer **gegevens** op de navigatiebalk aan de linkerkant.
+1. Selecteer **Gateways**.
+1. Selecteer een van uw gateways.
+1. Selecteer **aanvragen verdelen over alle actieve gateways in dit cluster**.
+1. Selecteer **toepassen** uw wijzigingen op te slaan.
+
 
 Zie [Gateways](gateway-reference.md) voor meer informatie.
 

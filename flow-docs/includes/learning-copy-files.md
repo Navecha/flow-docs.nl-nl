@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: b2f825ccd318897c408c56f457ad76788ef1cc91
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64462805"
+---
 Het gebruik van een **bestandsopslagservice**, zoals **OneDrive** of **Google Drive**, is tegenwoordig zeer gebruikelijk.  Hebt u wel eens **bestanden van de ene opslagservice naar de andere moeten kopiëren**?  Met Microsoft Flow kunt u eenvoudig automatisch bestanden tussen twee verschillende services verplaatsen en kopiëren.
 
 ## <a name="creating-flows-that-copy-files"></a>Stromen maken waarmee bestanden worden gekopieerd

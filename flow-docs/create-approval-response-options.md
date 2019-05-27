@@ -22,9 +22,9 @@ search.audienceType:
 - maker
 ms.openlocfilehash: d1f4b6d6dad3138bf935947076be4fe75661e36e
 ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/06/2019
+ms.lasthandoff: 05/25/2019
 ms.locfileid: "65061705"
 ---
 # <a name="create-custom-response-options-for-approval-flows"></a>Aangepast antwoordopties voor goedkeuringsstromen maken

@@ -20,12 +20,12 @@ search.app:
 - Powerplatform
 search.audienceType:
 - admin
-ms.openlocfilehash: b9dd1fd2f3c00870b0a713f50cc567d5d79385d8
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
-ms.translationtype: HT
+ms.openlocfilehash: 43f6f36cc32ec40088bd9b4c61e2895a7de78589
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44690624"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "65035056"
 ---
 # <a name="using-environments-within-microsoft-flow"></a>Omgevingen gebruiken in Microsoft Flow
 
@@ -33,21 +33,21 @@ ms.locfileid: "44690624"
 
 Omgevingen bieden de volgende voordelen:
 
-* **Gegevenslocatie**: omgevingen kunnen in verschillende regio's worden gemaakt en zijn gebonden aan die geografische locatie. Wanneer u een stroom in een omgeving maakt, wordt de stroom gerouteerd naar alle datacenters op die geografische locatie. Dit biedt tevens prestatievoordelen.
+* **Gegevenslocatie**: Omgevingen kunnen in verschillende regio's worden gemaakt en zijn gebonden aan die geografische locatie. Wanneer u een stroom in een omgeving maakt, wordt de stroom gerouteerd naar alle datacenters op die geografische locatie. Dit biedt tevens prestatievoordelen.
 
     Maak en gebruik de omgeving in de regio Europa als uw gebruikers zich in Europa bevinden. Maak en gebruik de omgeving in de Verenigde Staten als uw gebruikers zich in de Verenigde Staten bevinden. 
 
     > [!IMPORTANT]
     > Als u de omgeving verwijdert, worden ook alle stromen binnen die omgeving verwijderd. Dit geldt voor alle items die u in de omgeving maakt, inclusief verbindingen, gateways, PowerApps en meer.
-* **Preventie van gegevensverlies**: als beheerder wilt u niet dat stromen die gegevens van een interne locatie krijgen (zoals *OneDrive voor Bedrijven* of een SharePoint-lijst met salarisinformatie), deze gegevens vervolgens openbaar publiceren (bijvoorbeeld op *Twitter*). Gebruik de functionaliteit voor preventie van gegevensverlies om te controleren welke services gegevens kunnen delen binnen uw Microsoft Flow-implementatie.
+* **Preventie van gegevensverlies**: Als beheerder kunt u niet wilt dat stromen die gegevens van een interne locatie krijgen (zoals *OneDrive voor bedrijven* of een SharePoint-lijst met salarisinformatie), en die gegevens vervolgens openbaar gepost (bijvoorbeeld op  *Twitter-*). Gebruik de functionaliteit voor preventie van gegevensverlies om te controleren welke services gegevens kunnen delen binnen uw Microsoft Flow-implementatie.
 
     U kunt bijvoorbeeld de services van *SharePoint* en *OneDrive voor Bedrijven* toevoegen aan een beleid voor uitsluitend zakelijke gegevens. Alle stromen die in deze omgeving worden gemaakt, kunnen de services van *SharePoint* en *OneDrive voor Bedrijven* gebruiken. Ze kunnen echter geen gegevens delen met services die niet zijn opgenomen in het beleid voor uitsluitend zakelijke gegevens.
 
   > [!NOTE]
   > Preventie van gegevensverlies is beschikbaar bij SKU’s van bepaalde licenties, waaronder de P2-licentie.
 
-* **Isolatiegrens voor alle resources**: alle stromen, gateways, verbindingen, aangepaste connectors enz. bevinden zich in een specifieke omgeving. Ze bestaan niet in andere omgevingen.
-* **Common Data Service**: als u een stroom wilt maken waarmee gegevens in een service worden ingevoegd, hebt u diverse opties. U kunt:
+* **Isolatiegrens voor alle resources**: Alle stromen, gateways, verbindingen, aangepaste connectors, enzovoort bevinden zich in een specifieke omgeving. Ze bestaan niet in andere omgevingen.
+* **Common Data Service**: Hier zijn de opties als u wilt een stroom maken die gegevens in een service invoegt:
 
   * Gegevens invoegen in een Excel-bestand en het Excel-bestand opslaan in een cloudopslagaccount zoals OneDrive.
   * Een SQL-database maken en er vervolgens uw gegevens in opslaan.
@@ -70,7 +70,7 @@ De **standaardomgeving** wordt gedeeld door alle gebruikers. In de **standaardom
 
 Als u beheerdersrechten hebt, kunt u het beheercentrum gebruiken om omgevingen te maken en te beheren. Er zijn twee manieren om het beheercentrum te openen:
 
-### <a name="option-1-select-settings"></a>Optie 1: selecteer Instellingen
+### <a name="option-1-select-settings"></a>Optie 1: Instellingen selecteren
 
 1. Meld u aan bij [flow.microsoft.com](https://flow.microsoft.com).
 1. Selecteer het tandwiel Instellingen en kies **Beheercentrum** in de lijst:
@@ -78,13 +78,13 @@ Als u beheerdersrechten hebt, kunt u het beheercentrum gebruiken om omgevingen t
    ![Instellingen en Beheerdersportal](./media/environments-overview-admin/settings.png)
 1. Het beheercentrum wordt geopend.
 
-### <a name="option-2-open-adminflowmicrosoftcom"></a>Optie 2: open admin.flow.microsoft.com
+### <a name="option-2-open-adminflowmicrosoftcom"></a>Optie 2: Open admin.flow.microsoft.com
 
 Ga naar [admin.flow.microsoft.com](https://admin.flow.microsoft.com) en meld u aan met uw werkaccount.
 
 ## <a name="create-an-environment"></a>Een omgeving maken
 
-1. Selecteer in het [Beheercentrum van Microsoft Flow](https://admin.flow.microsoft.com) de optie **Omgevingen**. U ziet alle bestaande omgevingen: ![Omgevingen](./media/environments-overview-admin/environments-list.png)
+1. Selecteer in het [Beheercentrum van Microsoft Flow](https://admin.flow.microsoft.com) de optie **Omgevingen**. Hier ziet u alle bestaande omgevingen: ![Omgevingen](./media/environments-overview-admin/environments-list.png)
 2. Selecteer **Nieuwe omgeving** en geef vervolgens de vereiste gegevens op:
 
 
@@ -92,7 +92,7 @@ Ga naar [admin.flow.microsoft.com](https://admin.flow.microsoft.com) en meld u a
    |------------------|-------------------------------------------------------------------------------------------------------------|
    | Naam van omgeving |              Voer de naam van uw omgeving in, zoals `Human Resources`, of `Europe flows`.              |
    |      Regio      | Kies de locatie voor het hosten van uw omgeving. Gebruik voor de beste prestaties de regio die het dichtst bij uw gebruikers ligt. |
-   | Type omgeving |                  Kies een type omgeving op basis van uw licentie: Productielicentie of Proeflicentie.                   |
+   | Type omgeving |                  Kies een omgevingstype op basis van uw licentie: Productie- of proefversie.                   |
 
      ![omgevingsinstellingen](./media/environments-overview-admin/new-environment-dialog.png)
 3. Klik op **Een omgeving maken**.
@@ -115,14 +115,14 @@ U kunt nu gebruikers toevoegen aan de omgeving.
    ![tabblad details](./media/environments-overview-admin/open-environment.png)
 1. Selecteer **Security**.
 
-    Als in de vorige stappen niet hebt gekozen voor **Database maken**, ziet u in **Rollen van de omgeving** twee opties: **Omgevingsbeheerder** en **Omgevingsmaker**.
+    Als u niet hebt geselecteerd **Create Database** in de vorige stappen in **omgevingsrollen**, er zijn twee opties: **Omgevingsbeheerder** en **Omgevingsmaker**:
 
     ![de beheerrollen](./media/environments-overview-admin/environment-roles.png)
 
     Een **maker** kan in een omgeving nieuwe resources maken, zoals stromen, gegevensverbindingen en gateways.
 
    > [!NOTE]
-   > Een gebruiker hoeft geen **maker** te zijn om in een omgeving resources te *bewerken*. Een maker bepaalt zelf wie zijn of haar resources kan bewerken door toestemmingen te verlenen aan gebruikers die geen makers voor de omgeving zijn.
+   > Een gebruiker hoeft geen **maker** te zijn om in een omgeving resources te *bewerken*. Een Maker bepaalt zelf wie hun resources kan bewerken door machtigingen te verlenen aan gebruikers die geen Makers van een omgeving.
    > 
    > 
 

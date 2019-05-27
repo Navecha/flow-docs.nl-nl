@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 9ab3594f540129eb9caf8900c87420c08c1f7037
-ms.sourcegitcommit: 24da014ea8db8e59f097c4622d1e2cca9a4d1709
-ms.translationtype: HT
+ms.openlocfilehash: f667401774e49505009cd416f6975ff38683a5c7
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58352989"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "65035240"
 ---
 # <a name="get-started-with-microsoft-flow"></a>Aan de slag met Microsoft Flow #
 
@@ -94,6 +94,38 @@ Wanneer u een volledig nieuwe stroom maakt, hebt u controle over de gehele werks
 - [Een stroom in actie bekijken](see-a-flow-run.md).
 - [Een sjabloon publiceren](publish-a-template.md).
 - [Stromen maken op basis van een Microsoft Teams-sjabloon](https://flow.microsoft.com/connectors/shared_teams/microsoft-teams/).
+
+
+## <a name="peek-at-the-code"></a>De code bekijken
+
+U hoeft te worden van een ontwikkelaar van het maken van stromen, maar Microsoft Flow biedt een **code bekijken** -functie waarmee iedereen kan een nader bekijken de code die wordt gegenereerd voor alle acties en triggers in een stroom. De code inzien kan geven u een beter begrip van de gegevens die wordt gebruikt door triggers en acties. Volg deze stappen voor het bekijken van de code die wordt gegenereerd voor uw stromen in de ontwerpfunctie voor Microsoft Flow: 
+
+1. Selecteer de **...**  menu-item in de rechterbovenhoek van een **actie** of **trigger**. 
+1. Selecteer **code bekijken**.
+
+    ![Code bekijken](media/getting-started/peek-code.png)
+
+1. U ziet de volledige JSON-weergave van de acties en triggers. Dit omvat alle invoer, zoals de tekst die u rechtstreeks invoeren en expressies die worden gebruikt. U kunt hier expressies selecteert en plak deze in de **dynamische inhoud** expressie-editor. Dit kan ook geven u een manier om te controleren of de verwachte gegevens aanwezig zijn in de stroom is.
+
+    ![Code bekijken](media/getting-started/peek-code-details.png)
+   
+
+## <a name="find-your-flows-easily"></a>Uw stromen gemakkelijk kunt vinden
+
+Wanneer uw creative sappen start *stromen*, kunt u veel stromen maken. Geen zorgen, zoeken naar uw stromen is eenvoudig: u kunt het zoekvak van gebruiken de **mijn stromen**, **Teamstromen**, **verbindingen**, of **oplossingen** scherm om weer te geven stromen alleen die overeenkomen met de zoektermen die u invoert.
+
+![Stromen filteren of zoeken](media/getting-started/filter-search-box.png)
+ 
+> [!NOTE]
+> Het zoekfilter vindt alleen stromen die op de pagina zijn geladen. Als u de stroom niet kunt vinden, probeert u **meer laden** aan de onderkant van de pagina.
+
+## <a name="get-notifications-when-somethings-wrong"></a>Meldingen ontvangen wanneer er iets mis is
+
+Het meldingencentrum van Microsoft Flow gebruiken (bevindt in de rechterbovenhoek van de designer) om te snel Zie een lijst met stromen zijn mislukt onlangs. Het meldingencentrum wordt een getal dat aangeeft van het aantal stromen die niet recent weergegeven.
+
+In het meldingencentrum, u kunt navigeren naar de **activiteit** pagina van Microsoft Flow om te zien van al uw stromen die onlangs is uitgevoerd, meldingen of is mislukt.
+
+![Meldingencentrum](media/getting-started/notification-center.png)
 
 ## <a name="use-the-mobile-app"></a>De mobiele app gebruiken ##
 

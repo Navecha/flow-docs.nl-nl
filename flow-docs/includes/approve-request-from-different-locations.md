@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 0422f774f18fd7ac49bed005755be251a7f24c1f
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64462466"
+---
 Als u de goedkeurder in een goedkeuringsstroom bent, ontvangt u een e-mail wanneer iemand een aanvraag maakt. De goedkeuringsaanvraag wordt ook naar het goedkeuringscentrum verzonden. U kunt aanvragen vervolgens goedkeuren of weigeren via de e-mail, het goedkeuringscentrum of de Microsoft Flow-app.
 
 Een aanvraag goedkeuren:

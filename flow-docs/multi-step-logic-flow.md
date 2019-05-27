@@ -21,11 +21,11 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: 9dd2aed8b8cdb1f0a8e673c5466291f60baaf41d
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
-ms.translationtype: HT
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44689382"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64466584"
 ---
 # <a name="add-multiple-actions-and-advanced-options-to-a-flow"></a>Meerdere acties en geavanceerde opties toevoegen aan een stroom
 Pas een stroom aan door een of meer geavanceerde opties en meerdere acties voor dezelfde trigger toe te voegen. Voeg bijvoorbeeld een geavanceerde optie toe waarmee een e-mailbericht met hoge prioriteit wordt verzonden. Verzend niet alleen een e-mail wanneer een item wordt toegevoegd aan een SharePoint-lijst, maar maak ook een bestand in Dropbox dat dezelfde informatie bevat.
@@ -76,7 +76,7 @@ In deze procedure voegt u een actie toe in het midden van de stroom. Met deze ac
   
     ![Het menu Verwijderen](./media/multi-step-logic-flow/deletemenu.png)
   
-     **Opmerking:** u kunt een actie niet verwijderen als u ergens in de stroom gebruikmaakt van uitvoer van deze actie. Verwijder eerst velden die gebruikmaken van deze uitvoer. Vervolgens kunt u de actie verwijderen.
+     **Opmerking**: U kunt een actie niet verwijderen als u van uitvoer van deze ergens in de stroom gebruikmaakt. Verwijder eerst velden die gebruikmaken van deze uitvoer. Vervolgens kunt u de actie verwijderen.
 
 ## <a name="add-advanced-options"></a>Geavanceerde opties toevoegen
 Begin met een stroom met een actie voor **E-mail verzenden**.

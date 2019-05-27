@@ -13,19 +13,19 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 02/28/2018
+ms.date: 04/30/2019
 ms.author: deonhe
 search.app:
 - Flow
 - Powerplatform
 search.audienceType:
 - admin
-ms.openlocfilehash: 8a6ece8d2233703da2cd6eb6ed48d2334d076c39
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
-ms.translationtype: HT
+ms.openlocfilehash: f019a6ca5856c0fb3c5360642b4f3fcb23594b16
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44690118"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64950489"
 ---
 # <a name="data-loss-prevention-dlp-policies"></a>Beleid voor preventie van gegevensverlies (DLP)
 
@@ -182,6 +182,36 @@ Als u geen beheerdersmachtigingen hebt en graag meer wilt weten over DLP-beleids
 ## <a name="dlp-policy-permissions"></a>Machtigingen voor DLP-beleid
 
 Alleen tenant- en omgevingsbeheerders kunnen DLP-beleid maken en wijzigen. In het artikel over [omgevingen](environments-overview-admin.md) vindt u meer informatie over machtigingen.
+
+
+## <a name="custom-and-http-connectors"></a>Aangepaste en HTTP-connectors
+
+Aangepaste en HTTP-connectors moeten worden toegevoegd aan DLPs met behulp van een Microsoft Flow-sjabloon of een PowerShell.
+
+> [!TIP]
+> U kunt niet downgraden van schemaversie 2018-01-11. HTTP-ondersteuning kan niet worden verwijderd uit een beleid. Als u probeert te verwijderen van HTTP-ondersteuning, kunt u het DLP-beleid mogelijk beschadigd. Bovendien wordt als een DLP-beleid wordt bijgewerkt ter ondersteuning van HTTP-connectors, kunnen huidige stromen met behulp van deze HTTP-mogelijkheden worden afgesloten.
+
+Hier volgen de HTTP-connectors die u aan een beleid toevoegen kunt:
+
+- HTTP (and HTTP + Swagger)
+- HTTP-Webhook
+- HTTP-aanvraag
+
+## <a name="add-connectors-custom-and-http-connectors-with-templates"></a>Aangepaste connectors en HTTP-connectors met sjablonen toevoegen
+
+Een aangepaste connector toevoegen aan een beleid met een [sjabloon](https://flow.microsoft.com/galleries/public/templates/ae9683086770420e902c043e5ed4b363/), voert u de naam van het beleid, de groep waarnaar u wilt toevoegen van de connector en de naam van de connector-ID en type. De stroom eenmaal uitvoeren voor de aangepaste connector toevoegen aan het beleid en de groep die is opgegeven.
+
+De HTTP-connectors toevoegen aan een bestaand beleid via de [sjabloon](https://flow.microsoft.com/galleries/public/templates/834eb1366aa54335a5f979014a9e0477/), voer de naam van het beleid dat u wilt toevoegen aan en voer vervolgens de stroom.
+
+## <a name="add-custom-and-http-connectors-with-powershell"></a>Toevoegen van aangepaste en HTTP-connectors met PowerShell
+
+Ondersteuning voor aangepaste connectors en/of HTTP-connectors toevoegen aan een beleid met behulp van PowerShell, [downloaden](https://docs.microsoft.com/powerapps/administrator/powerapps-powershell) en importeren van de meest recente PowerApps PowerShell-scripts en gebruik vervolgens deze cmdlets:  'Nieuwe AdminDlpPolicy', 'Set-AdminDlpPolicy', 'Add-CustomConnectorToPolicy' en 'Remove-CustomConnectorFromPolicy' om te wijzigen van het beleid. Gebruik de ' Get-Help-gedetailleerde ' cmdlet als uitgangspunt.
+
+
+> [!IMPORTANT]
+> De schemaversie 2018-01-11 gebruiken bij het maken of bijwerken van een DLP-beleid om op te nemen van HTTP-connectors. Toevoegen van HTTP, ondersteuning voor het gebruik van de sjabloon of PowerShell wordt alleen van invloed op het opgegeven beleid. Nieuwe beleidsregels die zijn gemaakt via het beheercentrum bevat niet de HTTP-connectors.
+
+
 
 ## <a name="next-steps"></a>Volgende stappen
 

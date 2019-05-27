@@ -21,11 +21,11 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: c28fa7feb743db4616199246d6d517e2e1f6aff9
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
-ms.translationtype: HT
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44690992"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64457679"
 ---
 # <a name="use-data-operations-with-microsoft-flow"></a>Gegevensbewerkingen gebruiken met Microsoft Flow
 In dit scenario maakt u kennis met enkele populaire bewerkingen van Microsoft Flow, zoals Opstellen, Lid worden, Matrix filteren, Tabel maken en JSON parseren, die beschikbaar zijn voor het manipuleren van gegevens in een stroom.
@@ -145,7 +145,7 @@ Gebruik de actie **Gegevensbewerkingen - CSV-tabel maken** (CSV-tabel maken) om 
    
     ![De actie CSV-tabel maken configureren](./media/data-operations/create-csv-table.png)
    
-    Opmerking: Het token **Body (Hoofdtekst)** in deze afbeelding is afkomstig van een actie **Aanvraag/antwoord - antwoord**. U kunt de invoer voor de actie **CSV-tabel maken** echter opvragen uit de uitvoer van iedere voorgaande actie in de stroom, of u kunt de invoer rechtstreeks opnemen in het vak **Van**.
+    Opmerking: De **hoofdtekst** token in deze afbeelding is afkomstig uit een **aanvraag / antwoord – antwoord** actie, maar u kunt krijgen de invoer voor de **CSV-tabel maken** actie uit de uitvoer van een vorige actie in de stroom, of u kunt invoer rechtstreeks opnemen in de **van** vak.
 2. Sla de stroom op en voer deze vervolgens uit.
    
     Wanneer de stroom wordt uitgevoerd, ziet de uitvoer van **CSV-tabel maken** eruit zoals in deze afbeelding:

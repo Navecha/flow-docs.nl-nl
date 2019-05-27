@@ -19,11 +19,11 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: d6ad21cace7643abeb19de185c247f17ec9a2b35
-ms.sourcegitcommit: dfd9b4994aa9cb877ac4136460e011a344e27cb2
-ms.translationtype: HT
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/16/2019
-ms.locfileid: "59614529"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64467136"
 ---
 # <a name="use-expressions-in-conditions-to-check-multiple-values"></a>Gebruik expressies in voorwaarden om meerdere waarden te controleren
 In dit overzicht leert u hoe u expressies en **Voorwaarden** kunt gebruiken om in de **Geavanceerde modus** meerdere waarden te vergelijken.

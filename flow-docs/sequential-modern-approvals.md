@@ -20,17 +20,21 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: f75f9b822078fcec8701bf06c3dcb8be0e07d874
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
-ms.translationtype: HT
+ms.openlocfilehash: dd30051425906fdc305be536342eeb7e1762d1eb
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44690722"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "65019870"
 ---
 # <a name="manage-sequential-approvals-with-microsoft-flow"></a>Opeenvolgende goedkeuringen beheren met Microsoft Flow
 Bij bepaalde werkstromen moet vooraf goedkeuring worden gegeven voordat de definitieve goedkeurder zijn goedkeuring geeft. Een bedrijf kan bijvoorbeeld een beleid voor opeenvolgende goedkeuring instellen waarbij facturen van meer dan € 1000,00 vooraf moeten worden goedgekeurd, voordat ze worden goedgekeurd door de financiële afdeling.
 
 In dit scenario maken we een werkstroom met opeenvolgende goedkeuring voor vakantieaanvragen van werknemers.
+
+> [!NOTE]
+> SharePoint wordt hier alleen als voorbeeld. het is niet vereist om goedkeuringsstromen te maken. U kunt een van de meer dan 200 services waarmee Microsoft Flow kan worden geïntegreerd om uw stromen gebruiken.
+
 
 ## <a name="detailed-steps-in-the-flow"></a>Gedetailleerde stappen in de stroom
 De stroom:
@@ -40,7 +44,7 @@ De stroom:
 3. Stuurt de beslissing van degene die vooraf goedkeuring moet geven via e-mail naar de werknemer.
 4. Werkt de SharePoint Online-lijst bij met de beslissing en eventuele opmerkingen van degene die vooraf goedkeuring moet geven.
    
-   Opmerking: Als de aanvraag vooraf is goedgekeurd, voert de stroom de volgende stappen uit:
+   Opmerking: Als de aanvraag goedgekeurd is, wordt de stroom wordt voortgezet met deze stappen:
 5. Stuurt de aanvraag naar de definitieve goedkeurder.
 6. Stuurt het definitieve besluit via e-mail naar de werknemer.
 7. Werkt de SharePoint-lijst bij met de definitieve beslissing.
@@ -52,7 +56,7 @@ Deze afbeelding bevat een overzicht van de voorgaande stappen:
 ## <a name="prerequisites"></a>Vereisten
 [!INCLUDE [prerequisites-for-modern-approvals](includes/prerequisites-for-modern-approvals.md)]
 
-De SharePoint Online lijst die u maakt, moet de volgende kolommen bevatten:
+Voor het doel van dit scenario, moet de SharePoint Online-lijst die u maakt de volgende kolommen bevatten:
 
    ![Kolommen van de SharePoint-lijst](./media/sequential-modern-approvals/sharepoint-columns.png)
 
@@ -85,7 +89,7 @@ Nadat u alle bewerkingen hebt opgeslagen, selecteert u **Stroom bewerken** boven
 ## <a name="add-an-approval-action-for-pre-approvals"></a>Een goedkeuringsactie voor goedkeuring vooraf toevoegen
 [!INCLUDE [add-an-approval-action](includes/add-an-approval-action.md)]
 
-Opmerking: Deze actie verzendt de aanvraag om voorafgaande goedkeuring naar het e-mailadres in het vak **Toegewezen aan**.
+Opmerking: Deze actie wordt de voorafgaande goedkeuring aanvraag verzonden naar e-mailadres in de **toegewezen aan** vak.
 
 ## <a name="add-a-condition"></a>Een voorwaarde toevoegen
 [!INCLUDE [add-approval-condition-response](includes/add-approval-condition-response.md)]
@@ -137,7 +141,7 @@ Opmerking: Deze actie verzendt de aanvraag om voorafgaande goedkeuring naar het 
 
    ![configuratie voor geweigerde aanvragen](./media/sequential-modern-approvals/configure-rejected-email.png)
 
-Opmerking: Deze actie moet worden toegevoegd aan de vertakking **INDIEN NEE, NIETS DOEN** onder de kaart **Voorwaarde**.
+Opmerking: Deze actie moet worden toegevoegd aan de **indien Nee, niets doen** vertakking hieronder de **voorwaarde** kaart.
 
 ## <a name="update-sharepoint-with-pre-approval-rejection"></a>SharePoint bijwerken met afwijzing van voorafgaande goedkeuring
 [!INCLUDE [add-action-to-update-sharepoint-with-rejection](includes/add-action-to-update-sharepoint-with-rejection.md)]
@@ -147,7 +151,7 @@ Opmerking: Deze actie moet worden toegevoegd aan de vertakking **INDIEN NEE, NIE
 ## <a name="send-email-with-final-rejection"></a>E-mailbericht met de definitieve afwijzing verzenden
 1. Gebruik de stappen bij [E-mailbericht met afwijzing van voorafgaande goedkeuring verzenden](sequential-modern-approvals.md#send-email-with-pre-approval-rejection) om een actie toe te voegen en te configureren waarbij een e-mailbericht wordt verzonden wanneer de vakantieaanvraag is afgewezen door de definitieve goedkeurder.
    
-    Opmerking: Deze actie moet worden toegevoegd aan de vertakking **INDIEN NEE, NIETS DOEN** onder de kaart **Voorwaarde 2**.
+    Opmerking: Deze actie moet worden toegevoegd aan de **indien Nee, niets doen** vertakking hieronder de **voorwaarde 2** kaart.
 2. Wanneer u klaar bent, moet de kaart lijken op deze afbeelding:
    
    ![configuratie voor geweigerde aanvragen](./media/sequential-modern-approvals/final-rejection-email-card.png)
@@ -183,7 +187,7 @@ Uw aanvraag moet eruitzien als deze afbeelding:
 ## <a name="approve-the-request"></a>De aanvraag goedkeuren
 De stappen voor het goedkeuren van een aanvraag zijn identiek aan de stappen voor het [Vooraf goedkeuren van een aanvraag](sequential-modern-approvals.md#pre-approve-a-request)
 
-Opmerking: De definitieve goedkeurder ontvangt de vakantieaanvraag pas nadat de aanvraag vooraf is goedgekeurd.
+Opmerking: De definitieve goedkeurder haalt de vakantieaanvraag pas nadat de aanvraag goedgekeurd is.
 
 ## <a name="reject-a-request"></a>Een aanvraag weigeren
 [!INCLUDE [reject-a-request](includes/reject-a-request.md)]

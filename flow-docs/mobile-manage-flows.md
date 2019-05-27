@@ -21,11 +21,11 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: 4a35166ec57e81b957f7659e0e670e80bbf510ca
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
-ms.translationtype: HT
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44689543"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64467826"
 ---
 # <a name="manage-flows-in-microsoft-flow-from-your-phone"></a>Stromen in Microsoft Flow beheren op uw telefoon
 U kunt een lijst weergeven met alle stromen die u hebt gemaakt en voor elke stroom de gebeurtenissen en acties weergeven, de stromen in- of uitschakelen en de uitvoeringsgeschiedenis verkennen.
@@ -45,7 +45,7 @@ Wanneer de stroom wordt uitgevoerd, wordt een aangepaste pushmelding (met deze s
 
 ![Bericht verzenden naar Slack](./media/mobile-manage-flows/create-event.png)
 
-**Opmerking**: u kunt ook de [stroomactiviteit controleren](mobile-monitor-activity.md) via de mobiele app.
+**Opmerking**: U kunt ook [stroomactiviteit controleren](mobile-monitor-activity.md) vanuit de mobiele app.
 
 ## <a name="manage-a-flow"></a>Een stroom beheren
 1. Open de mobiele app en tik op **Mijn stromen** aan de onderkant van het scherm om alle stromen weer te geven.

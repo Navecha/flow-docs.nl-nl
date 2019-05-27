@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: d886fb55c8cafb50020547c912a8207f335f04ad
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64463380"
+---
 Naast het **ontvangen van meldingen** en het **kopiëren van bestanden** kunt u met **Microsoft Flow** ook **gegevens verzamelen**.  Dit kan nuttig zijn voor **analysedoeleinden**, bijvoorbeeld met **Power BI**.  
 
 ## <a name="sources-and-destinations-triggers-and-actions"></a>Bronnen en bestemmingen, triggers en acties
