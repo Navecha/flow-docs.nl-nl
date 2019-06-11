@@ -109,6 +109,10 @@
           href: use-cds-for-apps-dialogs.md
         - name: Klassieke Common Data Service-dialoogvensters vervangen
           href: replace-dialogs.md
+- name: AI Builder
+  items:
+    - name: AI Builder gebruiken in Microsoft Flow
+      href: use-ai-builder.md
 - name: Procedures
   items:
     - name: Een actie toevoegen
