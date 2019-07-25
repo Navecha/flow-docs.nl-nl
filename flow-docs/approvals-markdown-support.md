@@ -21,11 +21,11 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: 7611ccb8bba9f2647402df46753de284016d7cd4
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
-ms.translationtype: MT
+ms.sourcegitcommit: 014f64bcc4aed27794d5c7efc2eca241d271518e
+ms.translationtype: HT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "64455156"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58656126"
 ---
 # <a name="use-markdown-in-microsoft-flow-approval-requests"></a>Markdown gebruiken in Microsoft Flow-goedkeuringsaanvragen
 
@@ -57,23 +57,23 @@ Maak uw tekst gemakkelijker te lezen door deze op te splitsen met alinea's of re
    
 **Voorbeeld**
 
-Add lines between your text with the Enter key.
-This spaces your text better and makes it easier to read.
+Voeg regels tussen uw tekst toe met Enter.
+Deze ruimten maken uw tekst beter en gemakkelijker te lezen.
 
-**Resultaat:**   
-Add lines between your text with the Enter key.      
-This spaces your text better and makes it easier to read.
+**Resultaat:**    
+Voeg regels tussen uw tekst toe met Enter.      
+Deze ruimten maken uw tekst beter en gemakkelijker te lezen.
 
 
 **Voorbeeld 2**
 
-Voeg twee spaties toe vóór het einde van de regel (spatie, spatie).     
-This adds space in between paragraphs.
+Voeg twee spaties toe voor het einde van de regel (spatie, spatie).     
+Zo voegt u tussen alinea's ruimte toe.
 
 **Resultaat:**  
-Add two spaces prior to the end of the line.   
+Voeg twee spaties toe voor het einde van de regel.   
 
-This adds space in between paragraphs.
+Zo voegt u tussen alinea's ruimte toe.
   
 
 ## <a name="lists"></a>Lijsten
@@ -240,7 +240,7 @@ Use _emphasis_ in comments to express **strong** opinions and point out ~~correc
 **Resultaat:**
 
 Use _emphasis_ in comments to express **strong** opinions and point out <s>corrections</s>   
-**_Bold, italicized text_**   
+**_Bold, italicized text_**    
 **~~Bold, strike-through text~~**  
 
 
