@@ -81,14 +81,17 @@
 - name: Common Data Service
   items:
     - name: Klassieke Common Data Service-werkstromen
-      href: workflow-processes.md
       items:
+        - name: Overzicht
+          href: workflow-processes.md
         - name: Werkstroomfasen en -stappen configureren
           href: configure-workflow-steps.md
         - name: Werkstroomprocessen controleren en beheren
           href: monitor-manage-processes.md
         - name: Aanbevolen procedures voor werkstroomprocessen
           href: best-practices-workflow-processes.md
+        - name: Werkstromen vervangen door stromen
+          href: replace-workflows-with-flows.md
     - name: Klassieke Common Data Service-acties
       items:
         - name: Acties gebruiken
@@ -123,7 +126,7 @@
       href: data-operations.md
     - name: Expressies gebruiken in voorwaarden
       href: use-expressions-in-conditions.md
-    - name: 'Referentie: Functies gebruiken in expressies'
+    - name: 'Referentie: functies gebruiken in expressies'
       href: 'https://docs.microsoft.com/azure/logic-apps/workflow-definition-language-functions-reference'
     - name: Goedkeuringsstromen
       items:
