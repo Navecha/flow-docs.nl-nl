@@ -32,6 +32,8 @@
       href: connection-cds.md
     - name: Een stroom maken met Dynamics 365
       href: connection-dynamics365.md
+    - name: Een stroom maken met OneDrive voor Bedrijven
+      href: onedrive-business-launch-panel.md
     - name: Gegevens filteren en kopiëren
       href: odata-filters.md
     - name: Een Flic gebruiken
@@ -126,6 +128,8 @@
       href: data-operations.md
     - name: Expressies gebruiken in voorwaarden
       href: use-expressions-in-conditions.md
+    - name: Visio gebruiken om stromen te modelleren
+      href: visio-flows.md
     - name: 'Referentie: functies gebruiken in expressies'
       href: 'https://docs.microsoft.com/azure/logic-apps/workflow-definition-language-functions-reference'
     - name: Goedkeuringsstromen
