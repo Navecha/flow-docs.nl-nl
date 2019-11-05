@@ -1,6 +1,6 @@
 ---
-title: Gebruik het beheercentrum om omgevingen en gegevensbeleid te beheren. | Microsoft Docs
-description: Het beheercentrum van Microsoft Flow wordt gebruikt door tenant- en omgevingsbeheerders om beleidsregels voor omgevingen voor Microsoft Flow-implementaties te beheren.
+title: Gebruik het beheer centrum om omgevingen en gegevens beleid te beheren. | Microsoft Docs
+description: Het Microsoft Flow-beheer centrum wordt gebruikt door Tenant-en omgevings beheerders om gegevens beleid en-omgevingen voor Microsoft Flow-implementaties te beheren.
 services: ''
 suite: flow
 documentationcenter: na
@@ -20,30 +20,31 @@ search.app:
 - Powerplatform
 search.audienceType:
 - admin
-ms.openlocfilehash: 60688ef8290caae516793326bd487c291f1f0a83
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.openlocfilehash: 669097f5519ad8bfcecac666984102f67629e433
+ms.sourcegitcommit: 510706f5699b6cf9dda9dcafbed715f9f6d559e8
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "64456058"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73545156"
 ---
-# <a name="the-admin-center"></a>Het beheercentrum
+# <a name="the-admin-center"></a>Het beheer centrum
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
-Het beheercentrum is de centrale locatie waar tenantbeheerders en omgevingsbeheerders beleidsregels en omgevingen beheren voor een organisatie. Wijzigingen die u in het admin center aanbrengt, zijn onmiddellijk beschikbaar voor gebruikers binnen de organisatie.
+Het beheer centrum is de centrale locatie waar Tenant beheerders en omgevings beheerders het gegevens beleid en de omgevingen van een organisatie beheren. Alle wijzigingen die u in het beheer centrum aanbrengt, zijn onmiddellijk beschikbaar voor gebruikers binnen de organisatie.
 
-![overzicht](./media/admin-center-introduction/overview.png)
+![Krijgt](./media/admin-center-introduction/overview.png)
 
-## <a name="access-the-admin-center"></a>Het beheercentrum openen
+## <a name="access-the-admin-center"></a>Het beheer centrum openen
 
-* Blader naar https://admin.flow.microsoft.com voor toegang tot het Microsoft Flow-beheercentrum.
+* Ga naar https://admin.flow.microsoft.com om toegang te krijgen tot het Microsoft Flow-beheer centrum.
 
-## <a name="environments"></a>Omgevingen
+## <a name="environments"></a>verschillend
 
-Meer informatie over [omgevingen](environments-overview-admin.md) gebruiken voor het beheren van gebruikers, machtigingen en rollen.
+Meer informatie over het gebruik van [omgevingen](environments-overview-admin.md) voor het beheren van gebruikers, machtigingen en rollen.
 
-## <a name="data-policies"></a>Gegevensbeleid
+## <a name="data-policies"></a>Gegevens beleid
 
-Meer informatie over [gegevensbeleid](prevent-data-loss.md) gebruiken om regels te maken om te beheren hoe bedrijfsgegevens worden gedeeld tussen services in stromen.
+Meer informatie over het gebruik van [gegevens beleid](prevent-data-loss.md) voor het maken van regels die beheren hoe Bedrijfs gegevens worden gedeeld tussen services in stromen.
 
 ## <a name="next-steps"></a>Volgende stappen
 

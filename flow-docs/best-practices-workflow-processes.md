@@ -1,6 +1,6 @@
 ---
-title: Aanbevolen procedures voor werkstroomprocessen | Microsoft Docs
-description: Inzicht krijgen in de aanbevolen manieren waarop u werkstromen kunt gebruiken
+title: Aanbevolen procedures voor het beheren van werk stroom processen | MicrosoftDocs
+description: Meer informatie over de aanbevolen manieren om werk stromen te gebruiken
 ms.custom: ''
 ms.date: 06/27/2018
 ms.reviewer: ''
@@ -22,54 +22,55 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: c0a59a625f4d43d125bde6ddf6edd5da5b6f6430
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.openlocfilehash: ad9935b171568b62376232f450a62dbda4752cac
+ms.sourcegitcommit: 510706f5699b6cf9dda9dcafbed715f9f6d559e8
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "64460628"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73546018"
 ---
-# <a name="best-practices-for-workflow-processes"></a>Aanbevolen procedures voor werkstroomprocessen
+# <a name="best-practices-for-workflow-processes"></a>Aanbevolen procedures voor werk stroom processen
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
-Dit onderwerp bevat aanbevolen procedures voor het maken en beheren van werkstroomprocessen.  
+Dit onderwerp bevat aanbevolen procedures voor het maken en beheren van werk stroom processen.  
   
 <a name="BKMK_AvoidInfiniteLoops"></a>   
-## <a name="avoid-infinite-loops"></a>Oneindige lussen voorkomen  
- Het is mogelijk om logica te maken in een werkstroom waarmee een oneindige lus in werking wordt gesteld, wat serverbronnen verbruikt en van invloed is op prestaties. De typische situatie waarbij een oneindige lus optreedt, vindt plaats als u een werkstroom hebt die is geconfigureerd om te starten wanneer een kenmerk wordt bijgewerkt en vervolgens dat kenmerk bijwerkt in de logica van de werkstroom. Met de updateactie wordt dezelfde werkstroom geactiveerd als waarmee het record is bijgewerkt, waarmee de werkstroom steeds opnieuw wordt geactiveerd.  
+## <a name="avoid-infinite-loops"></a>Oneindige lussen voor komen  
+ Het is mogelijk om logica te maken in een werk stroom die een oneindige lus initieert, waarbij Server bronnen worden verbruikt en de prestaties van invloed zijn. De typische situatie waarin een oneindige lus kan optreden, is als u een werk stroom hebt geconfigureerd die moet worden gestart wanneer een kenmerk wordt bijgewerkt en vervolgens dat kenmerk in de logica van de werk stroom wordt bijgewerkt. Met de actie bijwerken wordt dezelfde werk stroom geactiveerd waarmee de record wordt bijgewerkt en de werk stroom opnieuw wordt geactiveerd.  
   
- De werkstromen die u maakt, bevatten logica voor het detecteren en stoppen van oneindige lussen. Als een werkstroomproces meer dan een bepaald aantal keren binnen een korte tijd wordt uitgevoerd op een bepaald record, mislukt het proces met de volgende fout: **Deze werkstroomtaak is geannuleerd omdat de werkstroom waarmee deze is gestart een oneindige lus bevat. Corrigeer de werkstroomlogica en probeer het opnieuw**. Het aantal keren is beperkt tot 16.  
+ De werk stromen die u maakt, bevatten logica voor het detecteren en stoppen van oneindige lussen. Als een werk stroom proces in korte tijd meer dan een bepaald aantal keer wordt uitgevoerd, mislukt het proces met de volgende fout: **deze werk stroom taak is geannuleerd omdat er een oneindige lus is opgenomen in de werk stroom die is gestart. Corrigeer de werk stroom logica en probeer het opnieuw**. De maximale tijd is 16.  
   
 <a name="BKMK_UseWorkflowTemplates"></a>   
-## <a name="use-workflow-templates"></a>Werkstroomsjablonen gebruiken  
- Als u werkstromen hebt die vergelijkbaar zijn en u verwacht meer werkstromen te maken die hetzelfde patroon volgen, moet u uw werkstroom opslaan als werkstroomsjabloon. Op deze manier kunt u de volgende keer dat u een soortgelijke werkstroom wilt maken een werkstroom maken met behulp van de sjabloon en zo voorkomen dat u de voorwaarden en acties helemaal opnieuw moet invoeren.  
+## <a name="use-workflow-templates"></a>Werk stroom sjablonen gebruiken  
+ Als u werk stromen hebt die vergelijkbaar zijn en u verwacht meer werk stromen te maken die hetzelfde patroon volgen, slaat u uw werk stroom op als een werk stroom sjabloon. Op deze manier kunt u de volgende keer dat u een vergelijk bare werk stroom moet maken, de werk stroom maken met behulp van de sjabloon en voor komen dat alle voor waarden en acties helemaal volledig worden ingevoerd.  
   
- Kies in het dialoogvenster **Proces maken** **Nieuw proces van een bestaande sjabloon (selecteer in de lijst)**.  
+ Kies in het dialoog venster **proces maken** de optie **nieuw proces op basis van een bestaande sjabloon (selecteren in de lijst)** .  
   
 <a name="BKMK_UseChildWorkflows"></a>   
-## <a name="use-child-workflows"></a>Onderliggende werkstromen gebruiken  
- Als u dezelfde logica toepast in verschillende werkstromen of voorwaardelijke vertakkingen, moet u die logica definiëren als een onderliggende werkstroom, zodat u die logica niet handmatig hoeft te repliceren in elke werkstroom of voorwaardelijke vertakking. Dit helpt u om uw werkstromen gemakkelijker te onderhouden. In plaats van veel werkstromen te controleren die dezelfde logica toepassen, hoeft u slechts één werkstroom bij te werken.  
+## <a name="use-child-workflows"></a>Onderliggende werk stromen gebruiken  
+ Als u dezelfde logica toepast in verschillende werk stromen of voorwaardelijke vertakkingen, definieert u die logica als een onderliggende werk stroom, zodat u die logica niet hand matig hoeft te repliceren in elke werk stroom of voorwaardelijke vertakking. Zo kunt u uw werk stromen eenvoudiger maken. In plaats van veel werk stromen te controleren die dezelfde logica kunnen Toep assen, kunt u slechts één werk stroom bijwerken.  
   
-## <a name="automatically-delete-completed-workflow-jobs"></a>Automatisch voltooide werkstroomtaken verwijderen
-Voor (asynchrone) achtergrondwerkstromen wordt u geadviseerd de optie **Automatisch voltooide werkstroomtaken verwijderen (om schijfruimte te besparen)** te selecteren in de werkstroomdefinitie. Als u dit selectievakje inschakelt, kan het systeem werkstroomlogboeken van geslaagde uitvoeringen verwijderen om ruimte te besparen. U ziet dat de logboeken van mislukte werkstroomuitvoeringen altijd worden opgeslagen voor het oplossen van problemen.  
+## <a name="automatically-delete-completed-workflow-jobs"></a>Voltooide werk stroom taken automatisch verwijderen
+Voor achtergrond werk stromen (asynchroon) kunt u het beste de optie **voltooide werk stroom taken automatisch verwijderen (om schijf ruimte te besparen)** selecteren in de werk stroom definitie. Als u dit selectie vakje inschakelt, kan het systeem werk stroom logboeken verwijderen voor geslaagde uitvoeringen om ruimte te besparen. Houd er rekening mee dat Logboeken van mislukte werk stroom uitvoeringen altijd worden opgeslagen voor probleem oplossing.  
 
-![Vasthouden van werkstroomtaken](media/workflow-job-retention.png)
+![Bewaren van werk stroom taken](media/workflow-job-retention.png)
 
 <a name="BKMK_AutoDeleteCompletedWorkflowJobs"></a>   
-## <a name="keep-logs-for-workflow-jobs-that-encountered-errors"></a>Logboeken bijhouden voor werkstroomtaken waarin fouten zijn opgetreden  
-Voor werkstromen die niet op de achtergrond worden uitgevoerd (synchroon) wordt u geadviseerd de optie **Logboeken bijhouden voor werkstroomtaken waarin fouten zijn opgetreden** in de werkstroomdefinitie te selecteren. Door de selectie van deze optie kunnen logboeken van mislukte werkstroomuitvoeringen worden opgeslagen voor het oplossen van problemen. Logboeken van geslaagde synchrone werkstroomuitvoeringen worden altijd verwijderd om ruimte te besparen.   
+## <a name="keep-logs-for-workflow-jobs-that-encountered-errors"></a>Logboeken voor werk stroom taken die fouten hebben aangetroffen, hand haven  
+Voor werk stromen die niet op de achtergrond worden uitgevoerd (synchroon), raden we u aan om de optie **Logboeken voor werk stroom taken met fouten gevonden** in de werk stroom definitie in te scha kelen. Als u deze optie selecteert, worden logboeken van mislukte werk stroom uitvoeringen opgeslagen voor probleem oplossing. Logboeken van voltooide synchrone werk stroom uitvoeringen worden altijd verwijderd om ruimte te besparen.   
 
-![De optie Logboeken bijhouden voor mislukte werkstromen](media/keep-logs-for-workflows.png)
+![Logboeken voor mislukte werk stromen gebruiken](media/keep-logs-for-workflows.png)
 
-## <a name="limit-the-number-of-workflows-that-update-the-same-entity"></a>Beperk het aantal werkstromen waarmee dezelfde entiteit wordt bijgewerkt
-Meer dan één werkstroom uitvoeren waarmee dezelfde entiteit wordt bijgewerkt, kan problemen veroorzaken in verband met het vergrendelen van resources. Stelt u zich verschillende werkstromen voor die worden uitgevoerd waarbij elke update voor een verkoopkans een update activeert voor het gekoppelde account. Meerdere exemplaren van deze werkstromen die op hetzelfde moment worden uitgevoerd en pogen hetzelfde accountrecord bij te werken, kunnen resulteren in problemen in verband met het vergrendelen van resources. Er treden werkstroomfouten op en er wordt een foutbericht vastgelegd, zoals **SQL-time-out: kan geen vergrendeling verkrijgen op resource _naam van resource_**. 
+## <a name="limit-the-number-of-workflows-that-update-the-same-entity"></a>Het aantal werk stromen beperken dat dezelfde entiteit bijwerkt
+Het uitvoeren van meer dan één werk stroom waarmee dezelfde entiteit wordt bijgewerkt, kan problemen met bron vergrendeling veroorzaken. Stel dat er meerdere werk stromen worden uitgevoerd waarbij elke update van de verkoop kans een update activeert op het gekoppelde account. Meerdere exemplaren van deze werk stromen die worden uitgevoerd en proberen dezelfde account record op hetzelfde moment bij te werken, kunnen leiden tot het vergren delen van problemen. Er treden werk stroom fouten op en een fout bericht, zoals **SQL-time-out: de vergren deling van de resource _bron naam_kan niet worden**genoteerd. 
 
   
 <a name="BKMK_DocumentChangesUsingNotes"></a>   
-## <a name="use-notes-to-keep-track-of-changes"></a>Gebruik Notities voor het bijhouden van wijzigingen  
- Tijdens het bewerken van werkstromen moet u het tabblad Notities gebruiken en typt u wat u hebt gedaan en waarom u dit hebt gedaan. Hierdoor kan iemand anders de wijzigingen begrijpen die u hebt gemaakt.  
+## <a name="use-notes-to-keep-track-of-changes"></a>Notities gebruiken om wijzigingen bij te houden  
+ Wanneer u werk stromen bewerkt, moet u het tabblad notities gebruiken en typen wat u hebt gedaan. Hierdoor kan iemand anders de aangebrachte wijzigingen begrijpen.  
   
 ## <a name="next-steps"></a>Volgende stappen  
- [Overzicht van werkstroomprocessen](workflow-processes.md)   
- [Werkstroomprocessen configureren](configure-workflow-steps.md)   
- [Werkstroomprocessen controleren en beheren](monitor-manage-processes.md)
+ [Overzicht van werk stroom processen](workflow-processes.md)   
+ [Werk stroom processen configureren](configure-workflow-steps.md)   
+ [Werk stroom processen bewaken en beheren](monitor-manage-processes.md)
    

@@ -1,6 +1,6 @@
 ---
-title: Inleiding tot beleid voor preventie van gegevensverlies (DLP). | Microsoft Docs
-description: Inleiding tot beleid voor preventie van gegevensverlies voor Microsoft Flow.
+title: Inleiding tot beleid voor preventie van gegevens verlies (DLP). | Microsoft Docs
+description: Inleiding tot beleid voor preventie van gegevens verlies voor Microsoft Flow.
 services: ''
 suite: flow
 documentationcenter: na
@@ -20,196 +20,197 @@ search.app:
 - Powerplatform
 search.audienceType:
 - admin
-ms.openlocfilehash: f019a6ca5856c0fb3c5360642b4f3fcb23594b16
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.openlocfilehash: 46f646fb81fcf7043ff612a240528fed72638048
+ms.sourcegitcommit: 510706f5699b6cf9dda9dcafbed715f9f6d559e8
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "64950489"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73548529"
 ---
-# <a name="data-loss-prevention-dlp-policies"></a>Beleid voor preventie van gegevensverlies (DLP)
+# <a name="data-loss-prevention-dlp-policies"></a>Beleid voor preventie van gegevens verlies (DLP)
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
-In dit document vindt u een inleiding tot het beleid voor preventie van gegevensverlies. Als u een dergelijk beleid gebruikt, kunt u voorkomen dat uw bedrijfsgegevens worden gedeeld met de lijst met connectors die u definieert.
+Dit document bevat informatie over het beleid voor preventie van gegevens verlies, waarmee u uw bedrijfs gegevens kunt beveiligen met een lijst van connectors die u definieert.
 
-## <a name="whats-a-data-loss-prevention-policy"></a>Wat is beleid voor preventie van gegevensverlies?
+## <a name="whats-a-data-loss-prevention-policy"></a>Wat is beleid voor preventie van gegevens verlies?
 
-De gegevens van een organisatie zijn essentieel voor het succes. De gegevens moeten direct beschikbaar zijn voor de besluitvorming, maar moeten worden beveiligd, zodat ze niet worden gedeeld met doelgroepen die geen toegang mogen hebben. Voor het beveiligen van deze gegevens biedt Microsoft Flow de mogelijkheid om beleidsregels te maken en af te dwingen op basis waarvan wordt bepaald welke consumentconnectors toegang kunnen krijgen tot uw zakelijke gegevens en welke connectors deze gegevens mogen delen. Deze beleidsregels waarin wordt gedefinieerd hoe gegevens kunnen worden gedeeld, worden beleid voor preventie van gegevensverlies (DLP) genoemd.
+De gegevens van een organisatie zijn essentieel voor het slagen. De gegevens moeten direct beschikbaar zijn voor de besluit vorming, maar moeten worden beveiligd zodat ze niet worden gedeeld met doel groepen die geen toegang mogen hebben. Microsoft Flow biedt u de mogelijkheid om een beleid te maken en af te dwingen dat bepaalt welke Consumer-connectors toegang hebben tot en delen van zakelijke gegevens om deze gegevens te beveiligen. Deze beleids regels die definiëren hoe gegevens kunnen worden gedeeld, worden het beleid voor preventie van gegevens verlies (DLP) genoemd.
 
-## <a name="why-create-a-dlp-policy"></a>Waarom maakt u een DLP-beleid?
+## <a name="why-create-a-dlp-policy"></a>Waarom een DLP-beleid maken?
 
-U maakt een DLP-beleid om duidelijk te definiëren welke consumentconnectors toegang kunnen krijgen tot uw zakelijke gegevens en deze gegevens mogen delen. Mogelijk wil een organisatie die gebruikmaakt van Microsoft Flow niet dat de zakelijke gegevens in SharePoint automatisch worden gepubliceerd naar de Twitter-feed. Om dit te voorkomen, maakt u een DLP-beleid waarmee het gebruik van SharePoint-gegevens als bron voor tweets wordt geblokkeerd.
+U maakt DLP-beleid om duidelijk te definiëren welke Consumer-connectors toegang hebben tot uw zakelijke gegevens en deze kunnen delen. Een organisatie die bijvoorbeeld Microsoft Flow gebruikt, wil niet dat de zakelijke gegevens in share point automatisch worden gepubliceerd naar de Twitter-feed. U kunt dit voor komen door een DLP-beleid te maken waarmee share point-gegevens worden geblokkeerd voor gebruik als de bron voor tweets.
 
-## <a name="benefits-of-a-dlp-policy"></a>Voordelen van een DLP-beleid
+## <a name="benefits-of-a-dlp-policy"></a>Voor delen van een DLP-beleid
 
-* Zorgt ervoor dat gegevens in de hele organisatie op een uniforme wijze worden beheerd.
-* Voorkomt dat belangrijke zakelijke gegevens per ongeluk wordt gepubliceerd naar connectors zoals socialemediasites.
+* Zorgt ervoor dat gegevens in de hele organisatie op een uniforme manier worden beheerd.
+* Hiermee voor komt u dat belang rijke Bedrijfs gegevens per ongeluk worden gepubliceerd naar connectors zoals sites voor sociale media.
 
 ## <a name="managing-dlp-policies"></a>DLP-beleid beheren
 
-### <a name="prerequisites-for-managing-dlp-policies"></a>Vereisten voor het beheren van een DLP-beleid
+### <a name="prerequisites-for-managing-dlp-policies"></a>Vereisten voor het beheren van het DLP-beleid
 
-* Machtigingen voor omgevingsbeheerders of tenantbeheerders.
+* De machtigingen voor de omgevings beheerder of Tenant beheerder.
 
-    In het [artikel over omgevingen](environments-overview-admin.md) vindt u meer informatie over machtigingen.
-* Een [Microsoft Flow P2-licentie](billing-questions.md).
+    Meer informatie over machtigingen vindt u in het [artikel omgevingen](environments-overview-admin.md).
+* Een [Microsoft flow P2-licentie](billing-questions.md).
 
 ## <a name="create-a-dlp-policy"></a>Een DLP-beleid maken
 
-### <a name="prerequisites-for-creating-dlp-policies"></a>Vereisten voor het maken van een DLP-beleid
+### <a name="prerequisites-for-creating-dlp-policies"></a>Vereisten voor het maken van DLP-beleid
 
 Als u een DLP-beleid wilt maken, moet u machtigingen hebben voor ten minste één omgeving.
 
-Volg de onderstaande stappen om een DLP-beleid te maken waarmee wordt voorkomen dat gegevens op de SharePoint-site van uw bedrijf worden gepubliceerd naar Twitter:
+Volg deze stappen om een DLP-beleid te maken waarmee wordt voor komen dat gegevens in de share point-site van uw bedrijf worden gepubliceerd naar Twitter:
 
-1. Meld u aan bij het [Microsoft Flow-beheercentrum](https://admin.flow.microsoft.com).
+1. Meld u aan bij het [Microsoft flow-beheer centrum](https://admin.flow.microsoft.com) (beheer centrum).
 
-1. Selecteer het tabblad Gegevensbeleid en selecteer vervolgens de koppeling **Nieuw beleid**:
+1. Selecteer het tabblad gegevens beleid en selecteer vervolgens de koppeling **Nieuw beleid** :
 
     ![Aanmelden](./media/prevent-data-loss/create-policy-1.png)
-1. Selecteer het tabblad **Gegevensgroepen**.
+1. Selecteer het tabblad **gegevens groepen** .
 
-1. Voer de naam in voor het DLP-beleid als *Beveiligde gegevenstoegang voor Contoso* in het label **Naam gegevensbeleid** boven aan de pagina:
+1. Voer de naam van het DLP-beleid in als *beveiligde gegevens toegang voor contoso* in het label **naam gegevens beleid** boven aan de pagina:
 
     ![Aanmelden](./media/prevent-data-loss/create-policy-2.png)
 
-1. Selecteer de [omgeving](environments-overview-admin.md) op het tabblad **Omgevingen**.
+1. Selecteer de [omgeving](environments-overview-admin.md) op het tabblad **omgevingen** .
 
     > [!NOTE]
-    > Als omgevingsbeheerder kunt u alleen beleidsregels maken die betrekking hebben op één omgeving. Als tenantbeheerder kunt u beleidsregels maken die betrekking hebben op meerdere omgevingen:
+    > Als omgevings beheerder kunt u beleids regels maken die alleen van toepassing zijn op één omgeving. Als Tenant beheerder kunt u beleids regels maken die van toepassing zijn op een wille keurige combi natie van omgevingen:
     >
     >
 
     ![Omgeving selecteren](./media/prevent-data-loss/create-policy-3.png)
 
-1. Selecteer het tabblad **Gegevensgroepen**:
+1. Selecteer het tabblad **gegevens groepen** :
 
-    ![Gegevensgroepen selecteren](./media/prevent-data-loss/create-policy-4.png)
+    ![gegevens groepen selecteren](./media/prevent-data-loss/create-policy-4.png)
 
-1. Selecteer de koppeling **Toevoegen** binnen het groepsvak **Alleen bedrijfsgegevens**:
+1. Selecteer de koppeling **toevoegen** die zich in de groep **alleen zakelijke gegevens** bevindt:
 
-    ![Toevoegen selecteren](./media/prevent-data-loss/create-policy-5.png)
+    ![Selecteer toevoegen](./media/prevent-data-loss/create-policy-5.png)
 
-1. Selecteer de **SharePoint**- en **Salesforce**-connectors op de pagina **Connectors toevoegen**:
+1. Selecteer de **share point-** en **Sales Force** -connectors op de pagina **connectors toevoegen** :
 
-   ![Connectors selecteren](./media/prevent-data-loss/create-policy-6.png)
+   ![connectors selecteren](./media/prevent-data-loss/create-policy-6.png)
 
-1. Selecteer de knop **Connectors toevoegen** om de connectors toe te voegen die zakelijke gegevens mogen delen.
+1. Selecteer de knop **connectors toevoegen** om de connectors toe te voegen die zakelijke gegevens kunnen delen.
 
-1. Selecteer **Beleid opslaan** in de rechterbovenhoek van het scherm.
+1. Selecteer **beleid opslaan** in de rechter bovenhoek van het scherm.
 
-1. Na enkele ogenblikken wordt uw nieuwe DLP-beleid weergegeven in de lijst met beleidsregels voor preventie van gegevensverlies:
+1. Na enkele ogen blikken wordt uw nieuwe DLP-beleid weer gegeven in de lijst met beleids regels voor preventie van gegevens verlies:
 
     ![DLP-lijst](./media/prevent-data-loss/create-policy-9.png)
 
-1. **Optioneel**: verzendt een e-mail of ander bericht naar uw team waarin u hen erop attent maakt dat er een nieuw DLP-beleid beschikbaar is.
+1. **Optioneel** Een e-mail bericht of andere communicatie naar uw team verzenden, zodat u wordt gewaarschuwd dat er nu een nieuw DLP-beleid beschikbaar is.
 
-U hebt nu een DLP-beleid gemaakt waarmee de app gegevens mag delen tussen SharePoint en Saleforce en waarmee het delen van gegevens met andere services wordt geblokkeerd.
+Gefeliciteerd, u hebt nu een DLP-beleid gemaakt waarmee de app gegevens kan delen tussen share point en Sales Force en het delen van gegevens met andere services blokkeert.
 
 > [!NOTE]
-> Als u een service toevoegt aan een gegevensgroep, wordt deze automatisch uit de andere gegevensgroep verwijderd. Als Twitter zich bijvoorbeeld momenteel bevindt in de gegevensgroep met **alleen zakelijke gegevens**, en u niet wilt dat zakelijke gegevens met Twitter worden gedeeld, voegt u de Twitter-service toe aan de gegevensgroep waarin **geen zakelijke gegevens zijn toegestaan**. Hiermee wordt Twitter verwijderd uit de gegevensgroep met alleen zakelijke gegevens.
+> Als u een service toevoegt aan één gegevens groep, wordt deze automatisch uit de andere gegevens groep verwijderd. Als Twitter zich momenteel in de gegevens groep **alleen zakelijke gegevens** bevindt en u niet wilt toestaan dat bedrijfs gegevens worden gedeeld met Twitter, moet u de Twitter-service gewoon toevoegen aan de gegevens groep **geen zakelijke gegevens toegestaan** . Hiermee wordt Twitter verwijderd uit de gegevens groep met alleen zakelijke gegevens.
 >
 >
 
-## <a name="data-sharing-violations"></a>Fouten bij het delen van gegevens
+## <a name="data-sharing-violations"></a>Schendingen van gegevens deling
 
-Als u het hierboven beschreven DLP-beleid hebt gemaakt, ontvangt een gebruiker die een stroom maakt waarmee de gegevens worden gedeeld tussen Salesforce (in de gegevensgroep met **alleen zakelijke gegevens**) en Twitter (in de gegevensgroep waarin **geen zakelijke gegevens zijn toegestaan**) de melding dat de stroom tijdelijk is **onderbroken** vanwege een conflict met het beleid voor preventie van gegevensverlies.
+Ervan uitgaande dat u het hierboven beschreven DLP-beleid hebt gemaakt, als een gebruiker een stroom maakt die gegevens deelt tussen Sales Force (in de gegevens groep **alleen zakelijke gegevens** ) en Twitter (in de gegevens groep **geen zakelijke gegevens toegestaan** ), wordt de gebruiker Er wordt op de hoogte gebracht dat de stroom is **onderbroken** vanwege een conflict met het beleid voor preventie van gegevens verlies dat u hebt gemaakt.
 
-![Stroom maken](./media/prevent-data-loss/10.png)
+![stroom maken](./media/prevent-data-loss/10.png)
 
-Als uw gebruikers contact met u opnemen over de onderbroken stromen, kunt u het volgende overwegen:
+Als uw gebruikers contact met u opnemen over onderbroken stromen, kunt u het volgende overwegen:
 
-1. Voor dit voorbeeld geldt dat u het DLP-beleid kunt bewerken wanneer er een geldige zakelijke reden is om zakelijke gegevens te delen tussen SharePoint en Twitter.
+1. Als er in dit voor beeld een geldige zakelijke reden is om zakelijke gegevens te delen tussen share point en Twitter, kunt u het DLP-beleid bewerken.
 
-1. Vraag de gebruiker om de stroom te bewerken zodat de stroom voldoet aan het DLP-beleid.
+1. Vraag de gebruiker om de stroom te bewerken om te voldoen aan het DLP-beleid.
 
-1. Vraag de gebruiker de onderbroken status van stroom te handhaven totdat er een beslissing is genomen over het delen van gegevens tussen deze twee entiteiten.
+1. Vraag de gebruiker om de stroom in de onderbroken status te laten totdat er een beslissing wordt genomen over het delen van gegevens tussen deze twee entiteiten.
 
-## <a name="find-a-dlp-policy"></a>Een DLP-beleid vinden
+## <a name="find-a-dlp-policy"></a>Een DLP-beleid zoeken
 
 ### <a name="admins"></a>Beheerders
 
-Beheerders kunnen de zoekfunctie gebruiken in het Beheercentrum om specifiek DLP-beleid te vinden.
+Beheerders kunnen de zoek functie van het beheer centrum gebruiken om een specifiek DLP-beleid te vinden.
 
 > [!NOTE]
-> Beheerders moeten alle DLP-beleidsregels publiceren zodat gebruikers in de organisatie zich bewust zijn van de beleidsregels voordat ze stromen maken.
+> Beheerders moeten alle DLP-beleids regels publiceren zodat gebruikers in de organisatie zich bewust zijn van de beleids regels voordat ze stromen maken.
 >
 >
 
 ### <a name="makers"></a>Makers
 
-Als u geen beheerdersmachtigingen hebt en graag meer wilt weten over DLP-beleidsregels in uw organisatie, neemt u contact op met de beheerder. Ook in het [artikel over makersomgevingen](environments-overview-maker.md) vindt u meer informatie.
+Als u geen beheerders machtigingen hebt en u meer wilt weten over het DLP-beleid in uw organisatie, neemt u contact op met de beheerder. Meer informatie vindt u in het artikel van de [Maker-omgeving](environments-overview-maker.md) .
 
 > [!NOTE]
-> Alleen beheerders mogen een DLP-beleid bewerken of verwijderen.
+> Alleen beheerders kunnen DLP-beleid bewerken of verwijderen.
 >
 >
 
 ## <a name="edit-a-dlp-policy"></a>Een DLP-beleid bewerken
 
-1. Start het [beheercentrum](https://admin.flow.microsoft.com).
+1. Start het [beheer centrum](https://admin.flow.microsoft.com).
 
-1. Selecteer in het beheercentrum dat wordt gestart de koppeling **Gegevensbeleid** aan de linkerkant.
+1. Selecteer in het beheer centrum dat wordt gestart de koppeling **gegevens beleid** aan de linkerkant.
 
-    ![Gegevensbeleid selecteren](./media/prevent-data-loss/2.png)
+    ![gegevens beleid selecteren](./media/prevent-data-loss/2.png)
 
-1. Zoek in de lijst met bestaande DLP-beleidsregels en selecteer de knop Bewerken naast het beleid dat u wilt bewerken.
+1. Zoek in de lijst met bestaand DLP-beleid en selecteer de knop Bewerken naast het beleid dat u wilt bewerken.
 
-1. Breng de gewenste wijzigingen in het beleid aan. U kunt bijvoorbeeld de omgeving of de services in de gegevensgroepen wijzigen.
+1. Breng de benodigde wijzigingen aan in het beleid. U kunt bijvoorbeeld de omgeving of de services in de gegevens groepen wijzigen.
 
-1. Selecteer **Beleid opslaan** om uw wijzigingen op te slaan.
+1. Selecteer **beleid opslaan** om uw wijzigingen op te slaan.
 
 > [!NOTE]
-> DLP-beleidsregels die zijn gemaakt door tenantbeheerders kunnen worden bekeken door omgevingsbeheerders, maar kunnen niet worden bewerkt door deze omgevingsbeheerders.
+> DLP-beleid dat is gemaakt door Tenant beheerders kan worden weer gegeven door omgevings beheerders, maar kan niet worden bewerkt door omgevings beheerders.
 >
 >
 
 ## <a name="delete-a-dlp-policy"></a>Een DLP-beleid verwijderen
 
-1. Start het [beheercentrum](https://admin.flow.microsoft.com).
+1. Start het [beheer centrum](https://admin.flow.microsoft.com).
 
-1. Selecteer het tabblad **Gegevensbeleid** aan de linkerkant.
+1. Selecteer het tabblad **gegevens beleid** aan de linkerkant.
 
-    ![Tabblad Gegevensbeleid selecteren](./media/prevent-data-loss/2.png)
+    ![tabblad gegevens beleid selecteren](./media/prevent-data-loss/2.png)
 
-1. Zoek in de lijst met bestaande DLP-beleidsregels en selecteer de knop Verwijderen naast het beleid dat u wilt verwijderen.
+1. Zoek in de lijst met bestaande DLP-beleids regels en selecteer vervolgens de knop verwijderen naast het beleid dat u wilt verwijderen:
 
-    ![De knop Verwijderen selecteren](./media/prevent-data-loss/3-delete.png)
+    ![Selecteer de knop verwijderen](./media/prevent-data-loss/3-delete.png)
 
-1. Bevestig dat u het beleid echt verwijderen door de knop **Verwijderen** te selecteren:
+1. Bevestig dat u het beleid echt wilt verwijderen door de knop **verwijderen** te selecteren:
 
-    ![Bevestigen dat u het beleid daadwerkelijk wilt verwijderen](./media/prevent-data-loss/4.png)
+    ![Bevestig dat u het beleid echt wilt verwijderen](./media/prevent-data-loss/4.png)
 
-## <a name="dlp-policy-permissions"></a>Machtigingen voor DLP-beleid
+## <a name="dlp-policy-permissions"></a>DLP-beleids machtigingen
 
-Alleen tenant- en omgevingsbeheerders kunnen DLP-beleid maken en wijzigen. In het artikel over [omgevingen](environments-overview-admin.md) vindt u meer informatie over machtigingen.
+Alleen Tenant-en omgevings beheerders kunnen DLP-beleid maken en wijzigen. Meer informatie over machtigingen vindt u in het artikel [omgevingen](environments-overview-admin.md) .
 
 
 ## <a name="custom-and-http-connectors"></a>Aangepaste en HTTP-connectors
 
-Aangepaste en HTTP-connectors moeten worden toegevoegd aan DLPs met behulp van een Microsoft Flow-sjabloon of een PowerShell.
+Aangepaste en HTTP-connectors moeten worden toegevoegd aan DLPs met behulp van een Microsoft Flow sjabloon of een Power shell.
 
 > [!TIP]
-> U kunt niet downgraden van schemaversie 2018-01-11. HTTP-ondersteuning kan niet worden verwijderd uit een beleid. Als u probeert te verwijderen van HTTP-ondersteuning, kunt u het DLP-beleid mogelijk beschadigd. Bovendien wordt als een DLP-beleid wordt bijgewerkt ter ondersteuning van HTTP-connectors, kunnen huidige stromen met behulp van deze HTTP-mogelijkheden worden afgesloten.
+> U kunt geen downgrade uitvoeren van schema versie 2018-11-01. HTTP-ondersteuning kan niet uit een beleid worden verwijderd. Als u HTTP-ondersteuning probeert te verwijderen, is het DLP-beleid mogelijk beschadigd. Als er nog een DLP-beleid wordt bijgewerkt ter ondersteuning van HTTP-connectors, kunnen de huidige stromen die gebruikmaken van deze HTTP-mogelijkheden, worden afgesloten.
 
-Hier volgen de HTTP-connectors die u aan een beleid toevoegen kunt:
+Hier vindt u de HTTP-Connect oren die u aan een beleid kunt toevoegen:
 
-- HTTP (and HTTP + Swagger)
-- HTTP-Webhook
+- HTTP (en HTTP + Swagger)
+- HTTP-webhook
 - HTTP-aanvraag
 
-## <a name="add-connectors-custom-and-http-connectors-with-templates"></a>Aangepaste connectors en HTTP-connectors met sjablonen toevoegen
+## <a name="add-connectors-custom-and-http-connectors-with-templates"></a>Aangepaste en HTTP-connectors voor connectors toevoegen met sjablonen
 
-Een aangepaste connector toevoegen aan een beleid met een [sjabloon](https://flow.microsoft.com/galleries/public/templates/ae9683086770420e902c043e5ed4b363/), voert u de naam van het beleid, de groep waarnaar u wilt toevoegen van de connector en de naam van de connector-ID en type. De stroom eenmaal uitvoeren voor de aangepaste connector toevoegen aan het beleid en de groep die is opgegeven.
+Als u een aangepaste connector wilt toevoegen aan een beleid met behulp van een [sjabloon](https://flow.microsoft.com/galleries/public/templates/ae9683086770420e902c043e5ed4b363/), voert u de naam van het beleid, de groep waaraan u de connector wilt toevoegen en de naam, id en type van de connector. Voer de stroom opnieuw uit om de aangepaste connector toe te voegen aan het beleid en de opgegeven groep.
 
-De HTTP-connectors toevoegen aan een bestaand beleid via de [sjabloon](https://flow.microsoft.com/galleries/public/templates/834eb1366aa54335a5f979014a9e0477/), voer de naam van het beleid dat u wilt toevoegen aan en voer vervolgens de stroom.
+Als u de HTTP-connectors via de [sjabloon](https://flow.microsoft.com/galleries/public/templates/834eb1366aa54335a5f979014a9e0477/)wilt toevoegen aan een bestaand beleid, voert u de naam in van het beleid waaraan u deze wilt toevoegen en voert u vervolgens de stroom uit.
 
-## <a name="add-custom-and-http-connectors-with-powershell"></a>Toevoegen van aangepaste en HTTP-connectors met PowerShell
+## <a name="add-custom-and-http-connectors-with-powershell"></a>Aangepaste en HTTP-connectors toevoegen met Power shell
 
-Ondersteuning voor aangepaste connectors en/of HTTP-connectors toevoegen aan een beleid met behulp van PowerShell, [downloaden](https://docs.microsoft.com/powerapps/administrator/powerapps-powershell) en importeren van de meest recente PowerApps PowerShell-scripts en gebruik vervolgens deze cmdlets:  'Nieuwe AdminDlpPolicy', 'Set-AdminDlpPolicy', 'Add-CustomConnectorToPolicy' en 'Remove-CustomConnectorFromPolicy' om te wijzigen van het beleid. Gebruik de ' Get-Help-gedetailleerde ' cmdlet als uitgangspunt.
+Als u ondersteuning wilt toevoegen voor aangepaste connectors en/of HTTP-connectors met behulp van de Power shell, [downloadt](https://docs.microsoft.com/powerapps/administrator/powerapps-powershell) en importeert u de nieuwste PowerApps Power shell-scripts en gebruikt u vervolgens de volgende cmdlets: New-AdminDlpPolicy, set-AdminDlpPolicy, Add-CustomConnectorToPolicy ' en ' Remove-CustomConnectorFromPolicy ' om het beleid te wijzigen. Gebruik de cmdlet Get-Help-detailed als referentie.
 
 
 > [!IMPORTANT]
-> De schemaversie 2018-01-11 gebruiken bij het maken of bijwerken van een DLP-beleid om op te nemen van HTTP-connectors. Toevoegen van HTTP, ondersteuning voor het gebruik van de sjabloon of PowerShell wordt alleen van invloed op het opgegeven beleid. Nieuwe beleidsregels die zijn gemaakt via het beheercentrum bevat niet de HTTP-connectors.
+> Gebruik de schema versie 2018-11-01 bij het maken of bijwerken van een DLP-beleid om HTTP-connectors op te stellen. Het toevoegen van HTTP-ondersteuning via de sjabloon of Power Shell heeft alleen invloed op het opgegeven beleid. Nieuwe beleids regels die zijn gemaakt via het beheer centrum bevatten geen HTTP-connectors.
 
 
 
@@ -217,5 +218,5 @@ Ondersteuning voor aangepaste connectors en/of HTTP-connectors toevoegen aan een
 
 * [Meer informatie over omgevingen](environments-overview-admin.md)
 * [Meer informatie over Microsoft Flow](getting-started.md)
-* [Meer informatie over het beheercentrum](admin-center-introduction.md)
-* [Meer informatie over gegevensintegratie](https://docs.microsoft.com/common-data-service/entity-reference/dynamics-365-integration)
+* [Meer informatie over het beheer centrum](admin-center-introduction.md)
+* [Meer informatie over gegevens integratie](https://docs.microsoft.com/common-data-service/entity-reference/dynamics-365-integration)

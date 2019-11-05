@@ -1,13 +1,13 @@
 ---
-title: Aangepaste bedrijfslogica maken via processen met PowerApps | MicrosoftDocs
-description: Lees hier informatie over de verschillende typen bedrijfslogica die u kunt gebruiken in uw app
+title: Aangepaste bedrijfs logica maken via processen met PowerApps | MicrosoftDocs
+description: Meer informatie over de verschillende typen bedrijfs logica die u kunt gebruiken in uw app
 ms.custom: ''
 ms.date: 05/01/2018
 ms.reviewer: ''
 ms.service: flow
 ms.suite: ''
 ms.tgt_pltfrm: ''
-ms.topic: get-started-article
+ms.topic: conceptual
 applies_to:
 - Dynamics 365 (online)
 - Dynamics 365 Version 9.x
@@ -22,113 +22,112 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 5e123fa2abc8955d90fad2c9b09da76e449bf4b1
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.openlocfilehash: b3072cc5897b8a2ef5a2a92ec3a07a0e31b57898
+ms.sourcegitcommit: 510706f5699b6cf9dda9dcafbed715f9f6d559e8
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "64460319"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73545334"
 ---
-# <a name="create-custom-business-logic-through-processes"></a>Aangepaste bedrijfslogica maken met processen
+# <a name="create-custom-business-logic-through-processes"></a>Aangepaste bedrijfs logica maken via processen
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
-Het definiëren en afdwingen van consistente bedrijfsprocessen is een van de belangrijkste redenen voor het gebruiken van modelgestuurde apps. Consistente processen zorgen ervoor dat gebruikers van het systeem zich op hun werk kunnen concentreren en niet op het onthouden van een set handmatige stappen. Processen kunnen eenvoudig of complex zijn en kunnen in de loop van de tijd veranderen.  
+Het definiëren en afdwingen van consistente bedrijfs processen is een van de belangrijkste redenen voor het gebruik van op modellen gebaseerde apps. Consistente processen zorgen ervoor dat mensen die het systeem gebruiken zich kunnen concentreren op hun werk en niet op het onthouden van het uitvoeren van een set hand matige stappen. Processen kunnen eenvoudig of complex zijn en kunnen worden gewijzigd in de loop van de tijd.  
   
-PowerApps bevat verschillende soorten processen, die allemaal zijn ontworpen voor een ander doel:  
+PowerApps bevat verschillende typen processen, die elk zijn ontworpen voor een ander doel:  
   
--   Bedrijfsprocesstromen  
+-   Bedrijfs proces stromen  
   
--   Mobiele taakstromen  
+-   Mobiele taak stromen  
   
--   Werkstromen  
+-   stroom  
   
--   Acties  
+-   Regelen  
   
- Net als bij processen, kunt u ook bedrijfsregels en aanbevelingen maken. Zie [Maak bedrijfsregels en aanbevelingen om logica in een formulier toe te passen](/powerapps/maker/model-driven-apps/create-business-rules-recommendations-apply-logic-form) voor meer informatie.  
+ Net als bij processen kunt u ook bedrijfs regels en aanbevelingen maken. Zie [bedrijfs regels en aanbevelingen maken voor het Toep assen van logica in een formulier](/powerapps/maker/model-driven-apps/create-business-rules-recommendations-apply-logic-form) voor meer informatie.  
 
 > [!NOTE]
->  Het toepassen van processen kan invloed hebben op de licentievereisten voor PowerApps en stromen. Zie [Licentievereisten voor entiteiten](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-entity-licenses) voor meer informatie. 
+>  Het gebruik van processen kan invloed hebben op de licentie vereisten voor PowerApps en stromen. Zie voor meer informatie [entiteits licentie vereisten](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-entity-licenses). 
 
 
 <a name="BKMK_BP"></a>   
-## <a name="when-to-use-business-process-flows"></a>Wanneer bedrijfsprocesstromen gebruiken  
- Gebruik een bedrijfsprocesstroom als u wilt dat medewerkers dezelfde fasen doorlopen en dezelfde stappen volgen voor interactie met een klant. Gebruik bijvoorbeeld een bedrijfsprocesstroom als u wilt dat iedereen aanvragen voor klantenservice op dezelfde manier verwerkt of om te vereisen dat medewerkers goedkeuring moeten vragen voor een factuur voordat ze een order plaatsen.  
+## <a name="when-to-use-business-process-flows"></a>Wanneer bedrijfs proces stromen worden gebruikt  
+ Gebruik een bedrijfs proces stroom wanneer u wilt dat de mede werkers in dezelfde fasen door lopen en volg dezelfde stappen om met een klant te communiceren. U kunt bijvoorbeeld een bedrijfsproces stroom gebruiken als u wilt dat iedereen de verzoeken van de klanten service op dezelfde manier afhandelt, of als u wilt dat mede werkers goed keuring voor een factuur krijgen voordat ze een bestelling indienen.  
   
- Uw omgeving bevat al enkele kant-en-klare bedrijfsprocesstromen voor algemene verkoop-, service- en marketingtaken die u met weinig of geen wijzigingen kunt gebruiken. Maar u kunt natuurlijk ook uw eigen processtromen maken. Zie het volgende onderwerp voor meer informatie over bedrijfsprocesstromen:  
+ Uw omgeving bevat verschillende kant-en-klare bedrijfs proces stromen voor veelvoorkomende verkoop-, service-en marketing taken die u kunt gebruiken met weinig of geen wijzigingen vereist. U kunt ook uw eigen maken. Zie het volgende onderwerp voor meer informatie over bedrijfsproces stromen:  
   
--   [Een bedrijfsprocesstroom maken](create-business-process-flow.md)  
+-   [Een bedrijfs proces stroom maken](create-business-process-flow.md)  
   
 <a name="BKMK_WF"></a>   
-## <a name="when-to-use-workflows"></a>Wanneer werkstromen gebruiken  
- Gebruik werkstromen om bedrijfsprocessen achter de schermen te automatiseren. Werkstromen worden meestal opgestart door systeemgebeurtenissen, zodat de gebruiker niet eens hoeft te weten dat ze worden uitgevoerd. Werkstromen die op de achtergrond worden uitgevoerd, zijn 'asynchroon'. Werkstromen kunnen ook worden geconfigureerd voor handmatig opstarten door gebruikers, bijvoorbeeld als u algemene taken wilt automatiseren, zoals het automatisch verzenden van een bevestigingsmail naar een klant wanneer een order wordt verzonden. Werkstromen die in realtime werken, zijn 'synchroon'. Zie [Werkstroomprocessen](workflow-processes.md) voor meer informatie over werkstromen.  
+## <a name="when-to-use-workflows"></a>Wanneer moet u werk stromen gebruiken?  
+ Gebruik werk stromen voor het automatiseren van bedrijfs processen achter de schermen. Werk stromen worden meestal geïnitieerd door systeem gebeurtenissen, zodat de gebruiker niet hoeft te weten dat ze worden uitgevoerd. Werk stromen die op de achtergrond worden uitgevoerd, zijn asynchroon. Werk stromen kunnen ook worden geconfigureerd voor personen om deze hand matig te initiëren. Wanneer u veelvoorkomende taken wilt automatiseren, zoals het automatisch verzenden van een bevestigings-e-mail naar een klant wanneer een order wordt verzonden. Werk stromen die in realtime worden gebruikt, zijn ' synchroon '. Zie [werk stroom processen](workflow-processes.md) voor meer informatie over werk stromen  
 
 <a name="BKMK_Actions"></a>   
-## <a name="when-to-use-actions"></a>Wanneer acties gebruiken  
- Gebruik acties als u een reeks opdrachten in het systeem wilt automatiseren. Acties zijn een uitbreiding op het arsenaal waaruit ontwikkelaars kunnen putten om bedrijfsprocessen uit te drukken. De belangrijkste bewerkingen zoals Create, Update, Delete en Assign zijn standaard beschikbaar in het systeem. Gebruik een actie in combinatie met deze bewerkingen voor het maken van meer expressieve bewerkingen zoals Approve, Escalate, Route of Schedule. Als de definitie van een bedrijfsproces wordt gewijzigd, kan iemand die geen ontwikkelaar is de actie bewerken zodat de code niet hoeft te worden gewijzigd.  Zie [Acties](create-actions.md) voor meer informatie over acties.  
+## <a name="when-to-use-actions"></a>Wanneer moet u acties gebruiken?  
+ Gebruik acties wanneer u een reeks opdrachten in het systeem wilt automatiseren. Acties breiden de beschik bare woorden lijst voor ontwikkel aars uit om bedrijfs processen te expresseren. Met kern woorden als Create, update, DELETE en Assign die door het systeem worden aangelegd, gebruikt een actie die kern woorden om meer inzichten-termen te maken, zoals goed keuren, escaleren, route ring of planning. Als de definitie van een bedrijfs proces verandert, kan iemand die geen ontwikkelaar is de actie bewerken zodat de code niet hoeft te worden gewijzigd.  Zie [acties](create-actions.md) voor meer informatie over acties  
   
 <a name="useMSFlow"></a>   
-## <a name="when-to-use-microsoft-flow"></a>Wanneer Microsoft Flow gebruiken  
- Gebruik Microsoft Flow als u geautomatiseerde werkstromen wilt maken die acties uitvoeren tussen uw omgeving en een favoriete app of service, zoals Dynamics 365, Twitter, Dropbox, Google Services, Office 365 en SharePoint. U kunt een stroom activeren op basis van een specifieke actie of aanroepen vanuit uw app. Meer informatie: [Microsoft Flow gebruiken om processen voor services te automatiseren](https://docs.microsoft.com/dynamics365/customer-engagement/basics/use-flow-automate-processes-across-services
+## <a name="when-to-use-microsoft-flow"></a>Wanneer moet ik Microsoft Flow gebruiken?  
+ Gebruik Microsoft Flow wanneer u geautomatiseerde werk stromen wilt maken die acties uitvoeren tussen uw omgeving en uw favoriete app of service, zoals Dynamics 365, Twitter, Dropbox, Google services, Office 365 en share point. U kunt een stroom activeren op basis van een specifieke actie of vanuit uw app aanroepen. Meer informatie: [Microsoft flow gebruiken om processen in Services te automatiseren](https://docs.microsoft.com/dynamics365/customer-engagement/basics/use-flow-automate-processes-across-services
 )  
   
 <a name="BKMK_Where"></a>   
-## <a name="where-do-i-go-to-create-processes"></a>Waar kan ik processen maken?  
- Er zijn twee paden om naar het onderdeel Processen te gaan:  
+## <a name="where-do-i-go-to-create-processes"></a>Waar ga ik naar processen maken?  
+ Er zijn twee paden om naar processen te navigeren:  
   
-- Open [Solution Explorer](/powerapps/maker/model-driven-apps/advanced-navigation#solution-explorer) en ga naar **Onderdelen > Processen.** Dit pad biedt een gemakkelijke toegang als u bezig bent met andere aanpassingswerkzaamheden in de hulpprogramma's voor aanpassing.  
+- Open [Solution Explorer](/powerapps/maker/model-driven-apps/advanced-navigation#solution-explorer) en ga naar **onderdelen > processen.** Dit pad biedt handige toegang wanneer u andere aanpassingen doorwerkt in de aanpassings hulpprogramma's.  
 
-- **[Instellingen](/powerapps/maker/model-driven-apps/advanced-navigation#settings) > Processen.** Dit pad biedt de mogelijkheid om weergaven te gebruiken die zijn gedefinieerd voor de entiteit Proces, inclusief eventuele aangepaste weergaven.  
+- **[Instellingen](/powerapps/maker/model-driven-apps/advanced-navigation#settings) > processen.** Met dit pad kunt u weer gaven gebruiken die zijn gedefinieerd voor de entiteit proces, inclusief eventuele aangepaste weer gaven.  
   
- Specifieke bedrijfsprocesstromen kunnen ook worden bewerkt met behulp van de knop **Proces bewerken** op de opdrachtbalk voor het formulier waarop de bedrijfsprocesstroom actief is.  
+ Afzonderlijke bedrijfs proces stromen kunnen ook worden bewerkt met behulp van de knop **proces bewerken** in de opdracht balk van het formulier waarin de bedrijfs proces stroom actief is.  
   
 <a name="BKMK_WhoCreate"></a>   
 ## <a name="who-can-create-processes"></a>Wie kan processen maken?  
- Alleen gebruikers met de beveiligingsrol Systeembeheerder, Systeemaanpasser of Algemeen directeur-bedrijfsleider kan processen maken die betrekking hebben op de hele omgeving. Gebruikers met andere rollen kunnen processen met een beperkt toegangsniveau maken. Zo kunnen gebruikers met het toegangsniveau Gebruiker werkstromen voor eigen gebruik maken met records waarvan ze eigenaar zijn.  
+ Alleen personen met de beveiligingsrol systeem beheerder, systeemaanpasser of CEO-Business Manager kunnen processen maken die van toepassing zijn op de hele omgeving. Personen met andere rollen kunnen processen met beperkte toegangs niveau maken. Personen met het toegangs niveau gebruiker kunnen bijvoorbeeld werk stromen maken voor hun eigen gebruik met records waarvan ze eigenaar zijn.  
   
- In de volgende tabel ziet u het toegangsniveau van processen op basis van standaardbeveiligingsrollen.  
+ De volgende tabel toont het toegangs niveau van processen op basis van standaard beveiligings rollen.  
   
 |||  
 |-|-|  
-|**Beveiligingsrol**|**Toegangsniveau**|  
-|Algemeen directeur-bedrijfsleider|Organisatie|  
-|Systeembeheerder|Organisatie|  
+|**Beveiligingsrol**|**Toegangs niveau**|  
+|CEO-Business Manager|Organisatie|  
+|Systeem beheerder|Organisatie|  
 |Systeemaanpasser|Organisatie|  
-|Adjunct-directeur marketing|Bovenliggend item: Onderliggende Business Units|  
-|Adjunct-directeur verkoop|Bovenliggend item: Onderliggende Business Units|  
-|Servicemanager|Business Unit|  
-|Marketingmanager|Business Unit|  
-|Verkoopmanager|Business Unit|  
-|Planningbeheer|Business Unit|  
-|Medewerker van de klantenservice|Gebruiker|  
-|Marketingprofessional|Gebruiker|  
+|Vice president marketing|Bovenliggend item: onderliggende Business Units|  
+|Adjunct-directeur van verkoop|Bovenliggend item: onderliggende Business Units|  
+|Service Manager|Bedrijfs eenheid|  
+|Marketing Manager|Bedrijfs eenheid|  
+|Verkoop Manager|Bedrijfs eenheid|  
+|Plannings Manager|Bedrijfs eenheid|  
+|Mede werker van de klanten service|Gebruiker|  
+|Marketing Professional|Gebruiker|  
 |Verkoper|Gebruiker|  
-|Planner|Gebruiker|  
+|Scheduler|Gebruiker|  
   
 > [!NOTE]
->  Gebruikers die bevoegd zijn om bedrijfsprocesstromen, realtime-werkstromen of actieprocessen te maken, hebben de bevoegdheid **Bedrijfsprocesstromen activeren** of **Realtime-processen activeren** nodig om die onderdelen te activeren.  
+>  Hoewel mensen mogelijk een bedrijfsproces stroom, realtime werk stroom of actie processen kunnen maken, moeten ze de **bedrijfs proces stromen activeren** of **realtime-** proces bevoegdheden activeren om ze te activeren.  
   
 <a name="BKMK_WhatCanProcessesDo"></a>   
-## <a name="more-about-workflows-and-actions"></a>Meer informatie over werkstromen en acties  
- Processen kunnen voorwaarden controleren, vertakkingslogica toepassen en acties uitvoeren. Deze acties worden uitgevoerd in een reeks stappen. De volgende tabel beschrijft de beschikbare stappen in werkstroom- en actieprocessen. Zie de onderwerpen voor elk type proces voor meer informatie.  
+## <a name="more-about-workflows-and-actions"></a>Meer informatie over werk stromen en acties  
+ Processen kunnen voor waarden controleren, vertakkings logica Toep assen en acties uitvoeren. Ze voeren deze acties uit in een reeks stappen. In de volgende tabel worden de beschik bare stappen in werk stroom-en actie processen beschreven. Zie de onderwerpen voor elk type proces voor meer informatie.  
   
-|Stap|Type proces|Beschrijving|  
+|Wizardstap|Proces type|Beschrijvingen|  
 |----------|------------------|-----------------|  
-|**Fase**|Werkstroom, Actie|Fasen maken de logica van een werkstroom gemakkelijker te lezen en beschrijven de werkstroomlogica. Fasen hebben echter geen invloed op de logica of het gedrag van werkstromen. Als een proces bestaat uit fasen, moeten alle stappen in het proces zijn opgenomen in een fase.|  
-|**Voorwaarde controleren**|Werkstroom, Actie|Een logische 'if-\<voorwaarde>then'-instructie.<br /><br /> U kunt waarden controleren voor de record waarop de werkstroom wordt uitgevoerd, voor een record die aan deze record is gekoppeld in een N:1-relatie of voor een record die in eerdere stappen is gemaakt. Op basis van deze waarden kunt u extra stappen definiëren wanneer aan de voorwaarde `true` is.|  
-|**Voorwaardelijke branche**|Werkstroom, Actie|Een logische 'else-if-then'-instructie; in de editor wordt de tekst 'Otherwise, if \<condition> then:' gebruikt.<br /><br /> Selecteer een controlevoorwaarde die u eerder hebt gedefinieerd en u kunt een voorwaardelijke vertakking toevoegen voor het definiëren van extra stappen wanneer de controlevoorwaarde `false` is.|  
-|**Standaardactie**|Werkstroom, Actie|Een logische 'else'-instructie. In de editor wordt de tekst 'Otherwise:' gebruikt.<br /><br /> Selecteer een controlevoorwaarde, voorwaardelijke vertakking, een wachtvoorwaarde of een parallelle wachtvertakking die u eerder hebt gedefinieerd en u kunt een standaardactie gebruiken voor het definiëren van stappen voor alle gevallen die niet voldoen aan de criteria die zijn gedefinieerd in voorwaarde- of vertakkingselementen.|  
-|**Wachtvoorwaarde**|Alleen achtergrondwerkstroom|Hiermee kunt u een achtergrondwerkstroom zichzelf laten onderbreken totdat is voldaan aan de criteria die zijn gedefinieerd door de voorwaarde. De werkstroom wordt verder uitgevoerd zodra aan de criteria in de wachtvoorwaarde is voldaan.|  
-|**Parallelle wachtbranche**|Alleen achtergrondwerkstroom|Hiermee definieert u een alternatieve wachtvoorwaarde voor een achtergrondwerkstroom met een bijbehorende set extra stappen die alleen worden uitgevoerd als aan het eerste criterium wordt voldaan. U kunt parallelle wachtvertakkingen gebruiken om tijdslimieten in te bouwen in uw werkstroomlogica. U voorkomt zo dat de werkstroom oneindig lang blijft wachten totdat is voldaan aan de criteria die zijn gedefinieerd in een wachtvoorwaarde.|  
-|**Waarde toewijzen**|Actie|Hiermee stelt u een waarde in op een variabele of uitvoerparameter in het proces.|  
-|**Record maken**|Werkstroom, Actie|Hiermee maakt u een nieuwe record voor een entiteit en worden waarden toegewezen aan kenmerken.|  
-|**Record bijwerken**|Werkstroom, Actie|U kunt de record bijwerken waarop de werkstroom wordt uitgevoerd, een record die aan deze record is gekoppeld in een N:1-relatie of een record die in eerdere stappen is gemaakt.|  
-|**Record toewijzen**|Werkstroom, Actie|U kunt de record toewijzen waarop de werkstroom wordt uitgevoerd, een record die aan deze record is gekoppeld met een N:1-relatie of een record die in eerdere stappen is gemaakt.|  
-|**E-mail verzenden**|Werkstroom, Actie|Hiermee verstuurt u een e-mail. U kunt een nieuw e-mailbericht maken of een e-mailsjabloon gebruiken die is geconfigureerd voor de entiteit van de record waarop de werkstroom wordt uitgevoerd, een entiteit met een N:1-relatie met die entiteit of de entiteit voor een record die in eerdere stappen is gemaakt.|  
-|**Onderliggende werkstroom starten**|Werkstroom, Actie|Hiermee start u een werkstroomproces dat is geconfigureerd als een onderliggende werkstroom.|  
-|**Status wijzigen**|Werkstroom, Actie|Hiermee wijzigt u de status van de record waarop de werkstroom wordt uitgevoerd, een record die aan deze record is gekoppeld met een N:1-relatie of een record die in eerdere stappen is gemaakt.|  
-|**Werkstroom stoppen**|Werkstroom, Actie|Hiermee stopt u de huidige werkstroom of actie. U kunt de status instellen op **Succeeded** of **Canceled** en een statusbericht opgeven.|  
-|**Aangepaste stap**|Werkstroom, Actie|Hiermee kunt u de logische elementen uitbreiden die standaard beschikbaar zijn. Stappen kunnen bestaan uit voorwaarden, acties, andere stappen of een combinatie van deze elementen. Ontwikkelaars kunnen aangepaste werkstroomstappen maken. Er zijn standaard geen aangepaste stappen beschikbaar.|
+|**Budgetplanningfase**|Werk stroom, actie|Met fasen wordt de werk stroom logica eenvoudiger te lezen en wordt de werk stroom logica uitgelegd. De stappen zijn echter niet van invloed op de logica of het gedrag van werk stromen. Als een proces fasen heeft, moeten alle stappen in het proces deel uitmaken van een fase.|  
+|**Controle voorwaarde**|Werk stroom, actie|Een logische ' If-\<condition >-instructie.<br /><br /> U kunt waarden controleren voor de record waarop de werk stroom wordt uitgevoerd, een van de records die zijn gekoppeld aan deze record in een N:1-relatie of records die zijn gemaakt door eerdere stappen. Op basis van deze waarden kunt u extra stappen definiëren wanneer de voor waarde is `true`.|  
+|**Voorwaardelijke vertakking**|Werk stroom, actie|Een logische ' Else-If-then '-instructie, de editor gebruikt de tekst ' anders als \<voor waarde > dan: '<br /><br /> Selecteer een voor waarde die u eerder hebt gedefinieerd en u kunt een voorwaardelijke tak toevoegen om extra stappen te definiëren wanneer de controle voorwaarde `false`retourneert.|  
+|**Standaard actie**|Werk stroom, actie|Een logische else-instructie. de editor gebruikt de tekst "anderszins:"<br /><br /> Selecteer een controle voorwaarde, voorwaardelijke vertakking, wacht voorwaarde of parallelle wait-vertakking die u eerder hebt gedefinieerd. u kunt een standaard actie gebruiken om de stappen te definiëren voor alle cases die niet overeenkomen met de criteria die zijn gedefinieerd in voor waarde of vertakkings elementen.|  
+|**Wacht voorwaarde**|Alleen achtergrond werk stroom|Hiermee kan een werk stroom op de achtergrond zichzelf onderbreken totdat aan de criteria die zijn gedefinieerd door de voor waarde is voldaan. De werk stroom wordt automatisch opnieuw gestart wanneer aan de criteria in de wacht voorwaarde is voldaan.|  
+|**Parallelle wait-vertakking**|Alleen achtergrond werk stroom|Definieert een alternatieve wacht tijd voor een werk stroom op de achtergrond met een bijbehorende set extra stappen die alleen worden uitgevoerd wanneer aan het eerste criterium wordt voldaan. U kunt parallelle wachtende vertakkingen gebruiken om tijds limieten in uw werk stroom logica te maken. Ze helpen te voor komen dat de werk stroom oneindig wacht totdat aan de criteria die zijn gedefinieerd in een wacht voorwaarde is voldaan.|  
+|**Waarde toewijzen**|Optreden|Hiermee stelt u een waarde in voor een variabele of uitvoer parameter in het proces.|  
+|**Record maken**|Werk stroom, actie|Hiermee wordt een nieuwe record voor een entiteit gemaakt en worden waarden aan kenmerken toegewezen.|  
+|**Record bijwerken**|Werk stroom, actie|U kunt de record waarop de werk stroom wordt uitgevoerd, bijwerken naar een van de records die zijn gekoppeld aan deze record in een N:1-relatie, of records die zijn gemaakt door eerdere stappen.|  
+|**Record toewijzen**|Werk stroom, actie|U kunt de record waarop de werk stroom wordt uitgevoerd, toewijzen aan een van de records die zijn gekoppeld aan deze record met een N:1-relatie, of records die zijn gemaakt door eerdere stappen.|  
+|**E-mail verzenden**|Werk stroom, actie|Hiermee verzendt u een e-mail bericht. U kunt ervoor kiezen om een nieuw e-mail bericht te maken of een e-mail sjabloon te gebruiken die is geconfigureerd voor de entiteit van de record waarop de werk stroom wordt uitgevoerd, of entiteiten die een N:1-relatie hebben met de entiteit, of de entiteit voor records die door eerdere stappen zijn gemaakt.|  
+|**Onderliggend werk stroom starten**|Werk stroom, actie|Start een werk stroom proces dat is geconfigureerd als een onderliggende werk stroom.|  
+|**Status wijzigen**|Werk stroom, actie|Wijzigt de status van de record waarop het proces wordt uitgevoerd, een van de records die aan deze record zijn gekoppeld met een N:1-relatie of records die zijn gemaakt door eerdere stappen.|  
+|**Werk stroom stoppen**|Werk stroom, actie|Hiermee wordt de huidige werk stroom of actie gestopt. U kunt de status **geslaagd** of **geannuleerd** instellen en een status bericht opgeven.|  
+|**Aangepaste stap**|Werk stroom, actie|Voorziet in uitbrei dingen van de logische elementen die standaard beschikbaar zijn. De stappen kunnen voor waarden, acties, andere stappen of een combi natie van deze elementen bevatten. Ontwikkel aars kunnen aangepaste werk stroom stappen maken. Standaard zijn er geen aangepaste stappen beschikbaar.|
 
-Meer informatie voor ontwikkelaars kunt u lezen in dit onderwerp in de handleiding voor ontwikkelaars: [Automate your business processes in Customer Engagement](https://docs.microsoft.com/dynamics365/customer-engagement/developer/automate-business-processes-customer-engagement
-) (Bedrijfsprocessen automatiseren in Customer Engagement).
   
 

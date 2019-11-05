@@ -1,6 +1,6 @@
 ---
-title: Automatiseer gemakkelijk goedkeuringswerkstromen. | Microsoft Docs
-description: Automatiseer goedkeuringswerkstromen die kunnen worden geïntegreerd met SharePoint, Dynamics CRM, Salesforce, OneDrive voor Bedrijven, Zendesk of WordPress.
+title: Eenvoudig goedkeurings werk stromen automatiseren. | Microsoft Docs
+description: Automatiseer goedkeurings werk stromen die kunnen worden geïntegreerd met share point, Dynamics CRM, Sales Force, OneDrive voor bedrijven, Zendesk of WordPress.
 services: ''
 suite: flow
 documentationcenter: na
@@ -20,138 +20,166 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 50466c2cf51593a4e34796fdf1d7a285eb63d462
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.openlocfilehash: c46ac3dc65b6e1a3970bd0b9b4ef17df5bef16f8
+ms.sourcegitcommit: 510706f5699b6cf9dda9dcafbed715f9f6d559e8
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "64471574"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73548700"
 ---
-# <a name="create-and-test-an-approval-workflow-with-microsoft-flow"></a>Een goedkeuringswerkstroom maken en testen met Microsoft Flow
+# <a name="create-and-test-an-approval-workflow-with-microsoft-flow"></a>Een goedkeurings werk stroom met Microsoft Flow maken en testen
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
-Met Microsoft Flow kunt u de goedkeuring van documenten of processen beheren binnen diverse services, waaronder SharePoint, Dynamics 365, Salesforce, OneDrive voor Bedrijven, Zendesk en WordPress.
+Met Microsoft Flow kunt u de goed keuring van documenten of processen in verschillende services beheren, waaronder share point, Dynamics 365, Sales Force, OneDrive voor bedrijven, Zendesk of WordPress.
 
-U kunt een goedkeuringswerkstroom maken door de actie **Goedkeuringen - Een goedkeuring starten** aan een stroom toe te voegen. Nadat u deze actie hebt toegevoegd, kan uw stroom de goedkeuring van documenten of processen beheren. U kunt bijvoorbeeld goedkeuringsstromen voor documenten maken die facturen, werkorders of verkoopoffertes goedkeuren. U kunt ook goedkeuringsstromen voor processen maken, die vakantieaanvragen, overwerk of reisplannen goedkeuren.
+Als u een goedkeurings werk stroom wilt maken, voegt u de actie **goed keuringen-een goed keuring starten** aan een stroom toe. Nadat u deze actie hebt toegevoegd, kan uw stroom de goed keuring van documenten of processen beheren. U kunt bijvoorbeeld goedkeurings stromen voor documenten maken die facturen, werk orders of verkoop offertes goed keuren. U kunt ook goedkeurings stromen voor processen maken die vakantie aanvragen, overwerk werk of reis plannen goed keuren.
 
-Fiatteurs kunnen aanvragen beantwoorden via hun Postvak IN, het [goedkeuringscentrum](https://flow.microsoft.com/manage/approvals/received/) op de Microsoft Flow-website of de Microsoft-Flow-app.
+Goed keurders kunnen reageren op aanvragen vanuit hun postvak in, [het goedkeurings centrum](https://flow.microsoft.com/manage/approvals/received/) op de Microsoft flow-website of de Microsoft flow-app.
 
-## <a name="create-an-approval-flow"></a>Een goedkeuringswerkstroom maken
+## <a name="create-an-approval-flow"></a>Een goedkeurings stroom maken
 Hier volgt een overzicht van de stroom die we gaan maken en testen:
 
-   ![overzicht van stroom](./media/modern-approvals/create-flow-overview.png)
+   ![overzicht van flow](./media/modern-approvals/create-flow-overview.png)
 
 De stroom voert de volgende stappen uit:
 
-1. Start wanneer iemand een vakantieaanvraag maakt in een SharePoint Online-lijst.
-2. Voegt de vakantieaanvraag toe aan het goedkeuringscentrum en verzendt de aanvraag per e-mail naar de fiatteur.
-3. Verzendt een e-mail met de beslissing van de fiatteur naar de persoon die vakantie heeft aangevraagd.
-4. Werkt de SharePoint Online-lijst bij met opmerkingen van de fiatteur over de beslissing.
+1. Wordt gestart wanneer iemand een vakantie aanvraag maakt in een share point online-lijst.
+2. Voegt de vakantie aanvraag toe aan het goedkeurings centrum en stuurt deze vervolgens per e-mail naar de goed keurder.
+3. Hiermee wordt een e-mail met de beslissing van de fiatteur verzonden naar de persoon die vakantie heeft aangevraagd.
+4. Werkt de share point online-lijst bij met de beslissings opmerkingen van de fiatteur.
 
 ## <a name="prerequisites"></a>Vereisten
-Om dit scenario te voltooien, moet u toegang hebben tot:
+Als u deze procedure wilt uitvoeren, moet u toegang hebben tot:
 
 [!INCLUDE [prerequisites-for-modern-approvals](includes/prerequisites-for-modern-approvals.md)]
 
-Maak deze kolommen in uw SharePoint Online-lijst:
+Deze kolommen maken in uw share point online-lijst:
 
-   ![Kolommen voor SharePoint Online-lijst](./media/modern-approvals/sharepoint-list-fields.png)
+   ![Share point online-lijst kolommen](./media/modern-approvals/sharepoint-list-fields.png)
 
-Noteer de naam en de URL van de SharePoint Online-lijst. U hebt deze items later nodig om de trigger **SharePoint: wanneer een item wordt gemaakt** te configureren.
+Noteer de naam en de URL van de share point online-lijst. U hebt deze items later nodig bij het configureren van de trigger **share point-wanneer een item is gemaakt** .
 
-## <a name="create-your-flow-from-the-blank-template"></a>De stroom maken op basis van een lege sjabloon
+## <a name="create-your-flow-from-the-blank-template"></a>Uw stroom maken op basis van de lege sjabloon
 [!INCLUDE [sign-in-and-create-flow-from-blank-template](includes/sign-in-and-create-flow-from-blank-template.md)]
 
 ## <a name="add-a-trigger"></a>Een trigger toevoegen
 
 [!INCLUDE [add-trigger-when-sharepoint-item-created](includes/add-trigger-when-sharepoint-item-created.md)]
 
-Het **Siteadres** en de **Lijstnaam** zijn de items die u eerder in dit scenario hebt genoteerd.
+Het **site adres** en de **lijst naam** zijn de items die u eerder in dit overzicht hebt genoteerd.
 
-![SharePoint-gegevens](./media/modern-approvals/select-sharepoint-site-info.png)
+![Share point-info](./media/modern-approvals/select-sharepoint-site-info.png)
 
-## <a name="add-a-profile-action"></a>Een profielactie toevoegen
+## <a name="add-a-profile-action"></a>Een profiel actie toevoegen
 
-1. Selecteer de knop **Nieuwe stap** en vervolgens **Een actie toevoegen**.
+1. Selecteer **nieuwe stap**en selecteer vervolgens **een actie toevoegen**.
    
-    ![nieuwe stap](./media/modern-approvals/select-sharepoint-add-action.png)
-2. Voer in het zoekvak **Een actie kiezen** de tekst **profiel** in.
+    ![Nieuwe stap](./media/modern-approvals/select-sharepoint-add-action.png)
+2. Geef het **profiel** op in het zoekvak **een actie kiezen** .
    
-    ![zoeken naar profiel](./media/modern-approvals/search-for-profile.png)
-3. Zoek en selecteer vervolgens de actie **Office 365-gebruikers: Mijn profiel ophalen**.
+    ![Profiel zoeken](./media/modern-approvals/search-for-profile.png)
+3. Zoek en selecteer de actie **Office 365-gebruikers-mijn profiel ophalen** .
    
-    ![office-gebruikers selecteren](./media/modern-approvals/select-my-profile.png)
-4. Geef een naam voor de stroom op en selecteer vervolgens **Stroom maken** om het werk op te slaan dat u tot nu toe hebt gedaan.
+    ![Office-gebruikers selecteren](./media/modern-approvals/select-my-profile.png)
+4. Geef een naam op voor uw stroom en selecteer **stroom maken** om het werk dat we tot nu toe hebben gedaan, op te slaan.
    
     ![stroom opslaan](./media/modern-approvals/save.png)
 
-## <a name="add-an-approval-action"></a>Een goedkeuringsactie toevoegen
+## <a name="add-an-approval-action"></a>Een goedkeurings actie toevoegen
 
 [!INCLUDE [add-an-approval-action](includes/add-an-approval-action.md)]
 
 > [!NOTE]
-> Deze actie verzendt de goedkeuringsaanvraag naar het e-mailadres in het vak **Toegewezen aan**.
+> Met deze actie wordt de goedkeurings aanvraag verzonden naar het e-mail adres in het vak **toegewezen aan** .
 >
 >
 
-## <a name="add-a-condition"></a>Een voorwaarde toevoegen
+## <a name="add-a-condition"></a>Een voor waarde toevoegen
 
 [!INCLUDE [add-approval-condition-response](includes/add-approval-condition-response.md)]
 
-## <a name="add-an-email-action-for-approvals"></a>Een e-mailactie voor goedkeuringen toevoegen
+## <a name="add-an-email-action-for-approvals"></a>Een e-mail actie voor goed keuringen toevoegen
 
-Gebruik deze stappen om een e-mail te verzenden als de vakantieaanvraag wordt goedgekeurd:
+Volg deze stappen om een e-mail bericht te verzenden als de vakantie aanvraag is goedgekeurd:
 
 [!INCLUDE [add-action-to-send-email-when-vacation-approved](includes/add-action-to-send-email-when-vacation-approved.md)]
 
-   ![goedgekeurde e-mailsjabloon configureren](./media/sequential-modern-approvals/yes-email-config.png)
+   ![goedgekeurde e-mail sjabloon configureren](./media/sequential-modern-approvals/yes-email-config.png)
 
-## <a name="add-an-update-action-for-approved-requests"></a>Een bijwerkactie voor goedgekeurde aanvragen toevoegen
+## <a name="add-an-update-action-for-approved-requests"></a>Een bijwerk actie voor goedgekeurde aanvragen toevoegen
 
 [!INCLUDE [add-action-to-update-sharepoint-with-approval](includes/add-action-to-update-sharepoint-with-approval.md)]
 
 > [!NOTE]
-> **Siteadres**, **Lijstnaam**, **Id** en **Titel** zijn vereist.
+> **Site adres**, **lijst naam**, **id**en **titel** zijn vereist.
 >
 >
 
-![configuratie van item bijwerken](./media/modern-approvals/configure-update-item.png)
+![artikel configuratie bijwerken](./media/modern-approvals/configure-update-item.png)
 
-## <a name="add-an-email-action-for-rejections"></a>Een e-mailactie voor weigering toevoegen
+## <a name="add-an-email-action-for-rejections"></a>Een e-mail actie voor afwijzingen toevoegen
 
 [!INCLUDE [add-action-to-send-email-when-vacation-rejected](includes/add-action-to-send-email-when-vacation-rejected.md)]
 
 ![configuratie voor geweigerde aanvragen](./media/modern-approvals/configure-rejected-email.png)
 
-## <a name="add-update-action-for-rejected-requests"></a>Een bijwerkactie voor geweigerde aanvragen toevoegen
+## <a name="add-update-action-for-rejected-requests"></a>Update-actie voor geweigerde aanvragen toevoegen
 
 [!INCLUDE [add-action-to-update-sharepoint-with-rejection](includes/add-action-to-update-sharepoint-with-rejection.md)]
 
    > [!NOTE]
-   > **Siteadres**, **Lijstnaam**, **Id** en **Titel** zijn vereist.
+   > **Site adres**, **lijst naam**, **id**en **titel** zijn vereist.
    >
    >
 
-![de kaart item bijwerken](./media/modern-approvals/configure-update-item-no.png)
+![artikel kaart bijwerken](./media/modern-approvals/configure-update-item-no.png)
 
-1. Selecteer **Stroom bijwerken** om uw werk op te slaan.
+1. Selecteer **stroom bijwerken** om het werk dat we hebben uitgevoerd, op te slaan.
    
-    ![bijwerkactie selecteren](./media/modern-approvals/update.png)
+    ![Update-actie selecteren](./media/modern-approvals/update.png)
 
-Als u de stappen tot zover hebt gevolgd, moet uw stroom eruitzien als deze schermopname:
+Als u de volgende stap hebt gevolgd, moet uw stroom eruitzien als deze scherm afbeelding:
 
-![overzicht van stroom](./media/modern-approvals/completed-flow.png)
+![overzicht van flow](./media/modern-approvals/completed-flow.png)
 
-U hebt de stroom nu gemaakt en het is tijd om deze te testen.
+Nu u de stroom hebt gemaakt, is het tijd om te testen!
 
-## <a name="request-an-approval"></a>Een goedkeuring aanvragen
+## <a name="request-an-approval"></a>Een goed keuring aanvragen
 
 [!INCLUDE [request-vacation-approval](includes/request-vacation-approval.md)]
 
-U hebt nu uw stroom gemaakt en getest. Laat vervolgens aan anderen weten hoe ze deze kunnen gebruiken.
+
+## <a name="create-long-running-approvals"></a>Langlopende goed keuringen maken
+
+Als uw stroom waarschijnlijk langer dan 30 dagen wordt uitgevoerd, kunt u overwegen uw goed keuringen op te slaan in Common Data Service. Dit maakt het mogelijk om stromen te maken die reageren op Reacties op goedkeurings aanvragen, zelfs nadat de oorspronkelijke stroom een time-out heeft uitgevoerd. Hiervoor gebruikt u twee stromen, een om een goedkeurings aanvraag te verzenden en de andere om bedrijfs logica uit te voeren op de antwoorden op de goedkeurings aanvraag, op basis van de actie **een goed keuring maken (v2)** . Meer informatie over [langlopende goed keuringen](https://docs.microsoft.com/business-applications-release-notes/april19/microsoft-flow/long-lived-approvals-other-approval-improvements).
+
+>[!TIP]
+> Als u moderne e-mailclients gebruikt, hoeft u zich niet af te vragen als een aanvraag nog vereist is omdat Microsoft Flow de e-mail automatisch bijwerkt om aan te geven dat de goed keuring is voltooid.
+
+## <a name="cancel-an-approval-requests"></a>Een goedkeurings aanvraag annuleren
+
+Soms wilt u mogelijk een goedkeurings aanvraag annuleren die u hebt verzonden. Mogelijk hebt u een fout gemaakt in de aanvraag of is deze niet meer relevant. In beide gevallen kan de persoon die de aanvraag heeft verzonden deze annuleren door de volgende stappen uit te voeren:
+
+1. De goed keuring selecteren
+1. Selecteer **goed keuring annuleren** in het zijvenster.
+
+>[!TIP]
+>U kunt altijd het tabblad **geschiedenis** selecteren om de goedkeurings aanvragen weer te geven die u hebt geannuleerd.
+
+>[!NOTE]
+> De annulerings functie wordt ondersteund bij de actie **een goed keuring maken (v2)** .
+
+## <a name="request-approvals-from-guest-users"></a>Goed keuringen aanvragen bij gast gebruikers
+
+U kunt aanvragen voor goed keuring verzenden naar personen buiten uw organisatie. Gebruik hiervoor Azure Active Directory-gast gebruikers (Azure AD) door [gebruikers uit andere tenants als gasten uit te nodigen](https://docs.microsoft.com/azure/active-directory/b2b/add-user-without-invite).
+
+Wanneer u een rol toewijst aan een gast, krijgt de gast de benodigde machtiging om deel te nemen aan het goedkeurings proces.
+
+Nu u de stroom hebt gemaakt en getest, moet u ervoor zorgen dat anderen weten hoe ze deze kunnen gebruiken.
 
 ## <a name="learn-more"></a>Meer informatie
 
-* [Goedkeuringsaanvragen in behandeling](approve-reject-requests.md) weergeven en beheren
-* [Sequentiële goedkeuringsstromen](sequential-modern-approvals.md) maken.
-* [Parallelle goedkeuringsstromen](parallel-modern-approvals.md) maken.
-* Installeer de mobiele app voor Microsoft Flow voor [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios) of [Windows Phone](https://aka.ms/flowmobilewindows).
+* [In behandeling zijnde goedkeurings aanvragen](approve-reject-requests.md) weer geven en beheren
+* [Sequentiële goedkeurings stromen maken.](sequential-modern-approvals.md)
+* [Parallelle goedkeurings stromen maken.](parallel-modern-approvals.md)
+* Installeer de mobiele app voor Microsoft Flow voor [Android](https://aka.ms/flowmobiledocsandroid), [IOS](https://aka.ms/flowmobiledocsios)of [Windows Phone](https://aka.ms/flowmobilewindows).

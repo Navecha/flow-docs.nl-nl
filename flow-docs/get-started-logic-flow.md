@@ -1,130 +1,131 @@
 ---
-title: Een stroom maken om taken te automatiseren | Microsoft Docs
-description: U kunt een stroom maken waarmee automatisch een of meer acties (bijvoorbeeld het verzenden van een e-mail) worden uitgevoerd wanneer een gebeurtenis plaatsvindt (bijvoorbeeld wanneer iemand een rij toevoegt aan een SharePoint-lijst).
+title: Taken automatiseren door een stroom te maken | Microsoft Docs
+description: Maak een stroom waarmee automatisch een of meer acties worden uitgevoerd, zoals het verzenden van e-mail berichten, wanneer een gebruiker een rij toevoegt aan een share point-lijst.
 services: ''
 suite: flow
 documentationcenter: na
 author: msftman
-manager: anneta
+manager: KVivek
 editor: ''
 tags: ''
 ms.service: flow
 ms.devlang: na
-ms.topic: get-started-article
+ms.topic: conceptual
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 02/28/2018
+ms.date: 09/04/2019
 ms.author: deonhe
 search.app:
 - Flow
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 4ea24ed12ab12d2d52502477cdb7a4a9eb822076
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.openlocfilehash: 494a5f978b7792fa971a53cfda85addd9b78f929
+ms.sourcegitcommit: 510706f5699b6cf9dda9dcafbed715f9f6d559e8
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "64992580"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73548311"
 ---
 # <a name="create-a-flow-in-microsoft-flow"></a>Een stroom maken in Microsoft Flow
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
 > [!VIDEO https://www.youtube.com/embed/Gt3CMhLAQqE?list=PL8nfc9haGeb55I9wL9QnWyHp3ctU2_ThF]
 
-U kunt een stroom maken om een of meer taken automatisch uit te voeren nadat de stroom door een bepaalde trigger is geactiveerd. U kunt bijvoorbeeld een stroom maken waarmee u per e-mail wordt gewaarschuwd wanneer iemand een tweet verstuurt met daarin een trefwoord dat u opgeeft. In dit voorbeeld is het verzenden van de tweet de gebeurtenis en is het verzenden van de e-mail de actie.
+Een stroom maken waarmee een of meer taken automatisch worden uitgevoerd nadat deze is geactiveerd door een gebeurtenis. U kunt bijvoorbeeld een stroom maken waarmee u per e-mail wordt gewaarschuwd wanneer iemand een Tweet verzendt met een tref woord dat u opgeeft. In dit voor beeld is het verzenden van een Tweet de gebeurtenis en het verzenden van e-mail de actie.
 
 ## <a name="prerequisites"></a>Vereisten
 
-* Een account op [flow.microsoft.com](https://flow.microsoft.com)
+* Een account op [flow.Microsoft.com](https://flow.microsoft.com)
 * Een Twitter-account
 * Office 365-referenties
 
-## <a name="specify-an-event-to-start-the-flow"></a>Een gebeurtenis opgeven voor het starten van de stroom
+## <a name="specify-an-event-to-start-the-flow"></a>Geef een gebeurtenis op om de stroom te starten
 
-Eerst moet u selecteren door welke gebeurtenis, of *trigger*, de stroom wordt geactiveerd.
+Eerst moet u selecteren welke gebeurtenis, of *trigger*, de stroom start.
 
-1. Ga naar [flow.microsoft.com](https://flow.microsoft.com), selecteer **Mijn stromen** op de navigatiebalk bovenaan en selecteer **Een volledig nieuwe stroom maken**.
+1. Selecteer in [flow.Microsoft.com](https://flow.microsoft.com) **mijn stromen** in de bovenste navigatie balk en selecteer vervolgens leeg item **maken**.
 
-    ![De optie Stromen in de linkernavigatiebalk](./media/get-started-logic-flow/create-logic-flow.png)
-1. Selecteer het vak **Honderden connectors en triggers doorzoeken** aan de onderkant van het scherm, voer **Twitter** in het vak met de tekst **Alle connectors en triggers doorzoeken** in en selecteer vervolgens **Twitter - Wanneer een nieuwe tweet wordt gepost**.
+    ![De optie stromen in de linkernavigatiebalk](./media/get-started-logic-flow/create-logic-flow.png)
+1. Selecteer het vak **honderden connectors en triggers zoeken** onder aan het scherm, geef **Twitter** op in het vak met de tekst **alle connectors en triggers doorzoeken**en selecteer vervolgens **Twitter-wanneer er een nieuwe tweet wordt geplaatst**.
 
     ![Twitter-gebeurtenis](./media/get-started-logic-flow/twitter-search.png)
 
-1. Als u uw Twitter-account nog niet met Microsoft Flow hebt verbonden, selecteert u **Aanmelden bij Twitter** en geeft u uw referenties op.
+1. Als u uw Twitter-account nog niet hebt verbonden met Microsoft Flow, selecteert u **Aanmelden bij Twitter**en geeft u uw referenties op.
 
-1. Typ in het vak **Zoektekst** het trefwoord dat u wilt zoeken.
+1. Typ het tref woord dat u wilt zoeken in het tekstvak **zoeken** .
 
-    ![Twitter-trefwoord](./media/get-started-logic-flow/twitter-keyword.png)
+    ![Twitter-tref woord](./media/get-started-logic-flow/twitter-keyword.png)
 
 ## <a name="specify-an-action"></a>Een actie opgeven
 
-1. Selecteer de knop **Nieuwe stap** en vervolgens **Een actie toevoegen**.
+1. Selecteer **nieuwe stap**en selecteer vervolgens **een actie toevoegen**.
 
     ![Actie toevoegen](./media/get-started-logic-flow/add-action-icon.png)
 
-1. Typ of plak in het vak **Alle connectors en acties doorzoeken** de tekst **e-mail verzenden** en selecteer vervolgens **Office 365 Outlook - Een e-mail verzenden**.
+1. In het vak waarin **alle connectors en acties**worden weer gegeven, typt of plakt u **e-mail verzenden**en selecteert u vervolgens **Office 365 Outlook-een e-mail verzenden**.
 
     ![Lijst met acties](./media/get-started-logic-flow/send-email.png)
 
-1. Klik op de knop Aanmelden als u hierom wordt gevraagd en geef uw referenties op.
+1. Als u hierom wordt gevraagd, selecteert u de knop aanmelden en geeft u uw referenties op.
 
-1. Typt of plak uw e-mailadres in het vak **Aan** van het formulier dat verschijnt en selecteer vervolgens uw naam in de lijst met contactpersonen die wordt weergegeven.
+1. In het formulier dat wordt weer gegeven, typt of plakt u uw e-mail adres in het vak **aan** en selecteert u uw naam in de lijst met contact personen die wordt weer gegeven.
 
-    ![Leeg e-mailbericht](./media/get-started-logic-flow/blank-email.png)
-1. Typ of plak in het vak **Onderwerp** de tekst **Nieuwe tweet van:** en typ vervolgens een spatie.
+    ![Leeg e-mail bericht](./media/get-started-logic-flow/blank-email.png)
+1. Typ of plak in het vak **onderwerp** **nieuwe Tweet van:** en typ een spatie.
 
     ![Onderwerpregel met tijdelijke aanduiding](./media/get-started-logic-flow/message-token.png)
-1. Selecteer **Getweet door** in de lijst met parameters om een tijdelijke aanduiding voor de tweet toe te voegen.
+1. Selecteer in de lijst met tokens het **getweet per** token om een tijdelijke aanduiding voor de sleutel toe te voegen.
 
-    ![Parameter toevoegen](./media/get-started-logic-flow/add-parameter.png)
-1. Selecteer het vak **Hoofdtekst** en selecteer het token **Tekst van tweet** om een tijdelijke aanduiding voor de tekst van de tweet toe te voegen.
-1. (optioneel) Voeg meer tokens, andere inhoud of beide toe aan de hoofdtekst van het e-mailbericht.
-1. Ga naar de bovenkant van het scherm en geef uw stroom een naam. Selecteer vervolgens **Stroom maken**.
+    ![Para meter toevoegen](./media/get-started-logic-flow/add-parameter.png)
+1. Selecteer het vak **hoofd** tekst en selecteer vervolgens het token **tweet text** om een tijdelijke aanduiding voor de tekst toe te voegen.
+1. Beschrijving Voeg meer tokens, andere inhoud of beide toe aan de hoofd tekst van het e-mail bericht.
+1. Geef de stroom aan de bovenkant van het scherm en selecteer vervolgens **stroom maken**.
 
-    ![Selecteer de knop Stroom maken](./media/get-started-logic-flow/create-button.png)
-1. Selecteer **Gereed** om de lijst met stromen bij te werken.
+    ![Selecteer de knop stroom maken](./media/get-started-logic-flow/create-button.png)
+1. Selecteer **gereed** om de lijst met stromen bij te werken.
 
-     ![De knop Gereed selecteren](./media/get-started-logic-flow/done-button.png)
-1. Verzend een tweet met het trefwoord dat u hebt opgegeven of wacht totdat iemand anders een tweet met het trefwoord post.
+     ![Selecteer de knop gereed](./media/get-started-logic-flow/done-button.png)
+1. Verzend een tweet met het tref woord dat u hebt opgegeven of wacht tot iemand anders een dergelijke tweet post.
 
-     Binnen een minuut na het posten van de tweet wordt u via een e-mailbericht op de hoogte gebracht van de nieuwe tweet.
+     Binnen een minuut nadat de Tweet is gepost, ontvangt u een e-mail bericht van de nieuwe Tweet.
 
 > [!TIP]
-> Gebruik de **e-mail verzenden (V2)** actie om de opmaak van e-mailadres waarop u het lettertype, gebruik vet, cursief of onderstreping aanpassen de kleur aanpassen en markeren en maak lijsten of koppelingen en meer.
+> Gebruik de actie **E-mail verzenden (v2)** voor het opmaken van e-mail waarin u het letter type aanpast, vet, cursief of onderstreept, de kleur aanpassen en markeren, en lijsten of koppelingen maken, en meer.
 
-![Uitgebreide bewerken e-mail](media/get-started-logic-flow/email-rich-text.png)
+![E-mail met uitgebreide bewerkingen](media/get-started-logic-flow/email-rich-text.png)
 
 ## <a name="manage-a-flow"></a>Een stroom beheren
 
-1. Ga naar [flow.microsoft.com](https://flow.microsoft.com) en selecteer **Mijn stromen** op de navigatiebalk bovenin.
+1. Selecteer in [flow.Microsoft.com](https://flow.microsoft.com) **mijn stromen** in de bovenste navigatie balk.
 1. Ga op een van de volgende manieren te werk in de lijst met stromen:
 
-   * Als u een stroom wilt onderbreken, zet u de wisselknop op **Uit**.
+   * Als u een stroom wilt onderbreken, stelt u de wissel knop in op **uit**.
 
        ![Stroom onderbreken](./media/get-started-logic-flow/pause-flow.png)
-   * Als u een stroom wilt hervatten, zet u de wisselknop op **Aan**.
+   * Als u een stroom wilt hervatten, stelt u de wissel knop **in op**aan.
 
        ![Stroom hervatten](./media/get-started-logic-flow/resume-flow.png)
-   * Als u een stroom wilt bewerken, selecteert u het potloodpictogram bij de stroom die u wilt bewerken.
+   * Als u een stroom wilt bewerken, selecteert u het potlood pictogram dat overeenkomt met de stroom die u wilt bewerken.
 
        ![Stroom selecteren](./media/get-started-logic-flow/select-flow.png)
-   * Als u een stroom wilt verwijderen, selecteert u het pictogram **...** , selecteert u **Verwijderen** en selecteert u ten slotte **Verwijderen** in het bericht dat wordt weergegeven.
+   * Als u een stroom wilt verwijderen, selecteert u het pictogram **...** , selecteert u **verwijderen**en selecteert u **verwijderen** in het bericht venster dat wordt weer gegeven.
 
-       ![Pictogram Verwijderen](./media/get-started-logic-flow/delete-icon.png)
-   * Als u de uitvoeringsgeschiedenis van een stroom wilt weergeven, selecteert u de stroom op de pagina **Mijn stromen** en bekijkt u de geschiedenis in de sectie **Uitvoeringsgeschiedenis** op de pagina die wordt geopend.
+       ![Pictogram verwijderen](./media/get-started-logic-flow/delete-icon.png)
+   * Als u de uitvoerings geschiedenis van een stroom wilt weer geven, selecteert u de stroom op de pagina **mijn stromen** en bekijkt u de geschiedenis in het gedeelte **uitvoerings geschiedenis** van de pagina die wordt geopend.
 
-       ![uitvoeringsgeschiedenis](./media/get-started-logic-flow/run-history.png)
+       ![uitvoerings geschiedenis](./media/get-started-logic-flow/run-history.png)
 
-     Selecteer een stroomuitvoering in de lijst met uitvoeringen om de invoer en uitvoer van elke stap weer te geven.
+     Selecteer een stroom uitvoering in de lijst met uitvoeringen om de invoer en uitvoer van elke stap weer te geven.
 
 > [!NOTE]
-> Uw account kan maximaal vijftig stromen bevatten. Als u al vijftig stromen hebt en u een nieuwe stroom wilt maken, moet u eerst een stroom verwijderen.
+> Uw account kan Maxi maal 600 stromen bevatten. Als u al 600 stromen hebt, moet u er een verwijderen voordat u een andere stroom maakt.
 >
 >
 
 ## <a name="next-steps"></a>Volgende stappen
 
-* [Voeg stappen toe](multi-step-logic-flow.md) aan de stroom, bijvoorbeeld verschillende manieren om te worden gewaarschuwd.
-* [Voer taken uit op basis van een schema](run-scheduled-tasks.md) wanneer u een actie dagelijks, op een bepaalde datum of na een bepaald aantal minuten wilt uitvoeren.
-* [Voeg een stroom aan een app toe](https://powerapps.microsoft.com/tutorials/using-logic-flows/) om toe te staan dat de app een bepaalde logica in de cloud kan starten.
-* [Ga aan de slag met teamstromen](create-team-flows.md) en nodig anderen uit om samen met u stromen te ontwerpen.
+* [Voeg stappen toe](multi-step-logic-flow.md), zoals verschillende manieren om op de hoogte te worden gesteld, aan uw stroom.
+* [Voer taken uit volgens een planning](run-scheduled-tasks.md), wanneer u een actie dagelijks, op een bepaalde datum of na een bepaald aantal minuten wilt uitvoeren.
+* [Voeg een stroom toe aan een app](https://powerapps.microsoft.com/tutorials/using-logic-flows/) om de logica van de app in de cloud te laten starten.
+* Aan de [slag met team stromen](create-team-flows.md) en anderen uitnodigen om samen met u stromen te ontwerpen.

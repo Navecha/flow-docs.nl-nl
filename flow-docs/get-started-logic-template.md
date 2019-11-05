@@ -1,11 +1,12 @@
 ---
 title: Een stroom maken op basis van een sjabloon | Microsoft Docs
-description: U kunt een stroom maken op basis van een van de ingebouwde sjablonen.
+description: Een stroom maken op basis van een van de verschillende ingebouwde sjablonen.
 services: ''
 suite: flow
 documentationcenter: na
-author: aftowen
-manager: anneta
+author: MSFTMAN
+manager: KVIVEK
+ms.author: Deonhe
 editor: ''
 tags: ''
 ms.service: flow
@@ -14,65 +15,65 @@ ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 02/07/2017
-ms.author: anneta
 search.app:
 - Flow
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 52aae570f65eaae537f548e686f437592eb5ef03
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.openlocfilehash: 874a942c4422fb402bc564609aff6ea06449ef78
+ms.sourcegitcommit: 510706f5699b6cf9dda9dcafbed715f9f6d559e8
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "64461205"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73548231"
 ---
-# <a name="create-a-flow-from-a-template-in-microsoft-flow"></a>een stroom maken op basis van een sjabloon in Microsoft Flow
-U kunt een stroom maken op basis van een van de vele ingebouwde sjablonen, bijvoorbeeld de sjabloon waarmee u een Slack-bericht ontvangt wanneer uw manager u een e-mail stuurt in Office 365.
+# <a name="create-a-flow-from-a-template-in-microsoft-flow"></a>Een stroom maken op basis van een sjabloon in Microsoft Flow
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+Maak een stroom op basis van een van de vele ingebouwde sjablonen die bijvoorbeeld een bericht met een toegestane vertraging kunnen verzenden wanneer uw manager u een e-mail stuurt in Office 365.
 
-**Opmerking**: [Een stroom maken helemaal](get-started-logic-flow.md) als u al een proces in gedachte hebt en kan een sjabloon voor het niet vinden.
+**Opmerking:** [Maak een nieuwe stroom](get-started-logic-flow.md) als u al een proces in gedachte hebt en er geen sjabloon voor hebt gevonden.
 
 **Vereisten**
 
-* Een account op [flow.microsoft.com](https://flow.microsoft.com)
-* Een Slack-account
+* Een account op [flow.Microsoft.com](https://flow.microsoft.com)
+* Een toegestane vertragings account
 * Office 365-referenties
 
 ## <a name="choose-a-template"></a>Een sjabloon kiezen
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ZJK8cYdjAic?list=PL8nfc9haGeb55I9wL9QnWyHp3ctU2_ThF" frameborder="0" allowfullscreen></iframe>
 
-1. Ga naar [flow.microsoft.com](https://flow.microsoft.com) en selecteer **Sjablonen** bovenin op de navigatiebalk.
-2. Typ **Slack** op de zoekbalk en selecteer vervolgens het zoekpictogram.
-3. U ziet alleen de sjablonen die zijn gerelateerd aan Slack. Selecteer **Een bericht in Slack verzenden wanneer mijn manager mij een e-mail stuurt**.
+1. Selecteer in [flow.Microsoft.com](https://flow.microsoft.com)de optie **sjablonen** in de bovenste navigatie balk.
+2. Typ **toegestane vertraging**in de zoek balk en selecteer vervolgens het zoek pictogram.
+3. U ziet alleen sjablonen die betrekking hebben op toegestane vertraging, zodat u nu **een bericht verzenden in de toegestane vertraging kunt selecteren wanneer mijn manager mij een E-mail stuurt**.
    
-    ![Optie Nieuw in de linkernavigatiebalk](./media/get-started-logic-template/select-template.png)
-4. Controleer of deze sjabloon doet wat u wilt dat die doet en selecteer vervolgens **Deze sjabloon gebruiken**.
-5. Als u niet bent aangemeld bij Office of Slack, selecteert u **Aanmelden** en volgt u de prompts.
+    ![De optie Nieuw in de linkernavigatiebalk](./media/get-started-logic-template/select-template.png)
+4. Controleer of deze sjabloon is wat u wilt en selecteer vervolgens **deze sjabloon gebruiken**.
+5. Als u niet bent aangemeld bij Office of een toegestane vertraging, selecteert u **Aanmelden** en volgt u de aanwijzingen.
    
-    ![Lijst met verbindingen die nodig zijn voor de sjabloon](./media/get-started-logic-template/confirm-connections.png)
-6. Selecteer **Doorgaan** nadat u uw verbindingen hebt bevestigd.
+    ![Lijst met verbindingen die voor de sjabloon zijn vereist](./media/get-started-logic-template/confirm-connections.png)
+6. Nadat u uw verbindingen hebt bevestigd, selecteert u **door gaan**.
    
-    Uw stroom wordt weergegeven, met alle acties waarvoor een oranje titelbalk wordt afgebeeld.
+    Uw stroom wordt weer gegeven, met daarin elke actie met een oranje titel balk.
    
-    ![Standaardgebeurtenissen en -acties op basis van een sjabloon](./media/get-started-logic-template/template-default.png)
+    ![Standaard gebeurtenissen en acties op basis van een sjabloon](./media/get-started-logic-template/template-default.png)
 
 ## <a name="customize-your-flow"></a>Uw stroom aanpassen
-1. Selecteer de titelbalk van een gebeurtenis om deze uit te vouwen en pas de gebeurtenis vervolgens aan (bijvoorbeeld door een filter op te geven voor het e-mailbericht waarin u bent geïnteresseerd).
-2. Acties waarvoor invoer nodig is, worden automatisch uitgevouwen.
+1. Selecteer de titel balk voor een gebeurtenis om deze uit te vouwen en pas deze aan (bijvoorbeeld door een filter op te geven voor het e-mail bericht dat u interesset).
+2. Acties waarvoor invoer moet worden uitgevoerd, worden automatisch uitgevouwen.
    
-    Zo wordt de actie **Bericht posten** uitgevouwen omdat u een kanaal moet invoeren, bijvoorbeeld *\@gebruikersnaam*. U kunt ook de inhoud van het bericht aanpassen. Standaard bevat het bericht alleen het onderwerp, maar u kunt ook andere informatie opnemen.
+    Zo wordt de actie **bericht posten** uitgevouwen omdat u een kanaal moet invoeren, zoals uw *\@gebruikers naam*. U kunt ook de inhoud van het bericht aanpassen. Het bericht bevat standaard alleen het onderwerp, maar u kunt ook andere informatie opnemen.
    
-    ![Kanaal voor Slack opgeven](./media/get-started-logic-template/specify-keyword.png)
-3. Ga naar de bovenkant van het scherm, geef uw stroom een naam en selecteer vervolgens **Stroom maken**.
-4. Als u tevreden bent met de stroom, selecteert u **Gereed**.
+    ![Kanaal opgeven voor toegestane vertraging](./media/get-started-logic-template/specify-keyword.png)
+3. Geef aan de bovenkant van het scherm een naam voor de stroom op en selecteer vervolgens **stroom maken**.
+4. Ten slotte, als u tevreden bent met uw stroom, selecteert u **gereed**.
    
-    ![Knop Gereed](./media/get-started-logic-template/done.png)
+    ![Knop gereed](./media/get-started-logic-template/done.png)
 
-Wanneer uw manager u nu een e-mailbericht stuurt, ontvangt u een Slack-bericht met de informatie die u hebt opgegeven.
+Als uw manager u nu een e-mail stuurt, ontvangt u een bericht over de toegestane vertraging dat de door u opgegeven informatie bevat.
 
 ## <a name="next-steps"></a>Volgende stappen
-* [Uw stroom in actie zien](see-a-flow-run.md)
+* [Bekijk uw stroom in actie](see-a-flow-run.md)
 * [Uw eigen sjabloon publiceren](publish-a-template.md)
-* [Een sjabloon gebruiken voor de Microsoft Common Data-service](common-data-model-intro.md)
-* [Aan de slag gaan met teamstromen](create-team-flows.md) en anderen uitnodigen om samen met u stromen te ontwerpen.
+* [Een sjabloon gebruiken voor de Common Data Service](common-data-model-intro.md)
+* Aan de [slag met team stromen](create-team-flows.md) en anderen uitnodigen om samen met u stromen te ontwerpen.
 

@@ -1,6 +1,6 @@
 ---
-title: Gebruik de actie Op elk(e) toepassen om een matrix met items te doorlopen. | Microsoft Docs
-description: Gebruik Microsoft Flow om een matrix met items te doorlopen om meerdere voorwaarden te controleren en acties uit te voeren op basis van deze voorwaarden.
+title: Gebruik de Toep assen op elke actie om een matrix met items te door lopen. | Microsoft Docs
+description: Gebruik Microsoft Flow om een matrix met items te door lopen om meerdere voor waarden te controleren en acties uit te voeren op basis van deze voor waarden.
 services: ''
 suite: flow
 documentationcenter: na
@@ -20,161 +20,162 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 914fe6d84bb63e1f3e184794d34fbfd58ad30963
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.openlocfilehash: e2852de959f62d5c0ee76fabc9841e3fc9663f73
+ms.sourcegitcommit: 510706f5699b6cf9dda9dcafbed715f9f6d559e8
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "64459305"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73546008"
 ---
-# <a name="use-the-apply-to-each-action-in-microsoft-flow-to-process-a-list-of-items-periodically"></a>Gebruik de actie Op elk(e) toepassen in Microsoft Flow om periodiek een lijst met items te verwerken
-Veel triggers kunnen direct een stroom starten op basis van een gebeurtenis, zoals de ontvangst van een nieuwe e-mail in uw postvak IN. Deze triggers zijn handig, maar soms wilt u een stroom uitvoeren die een query uitvoert op een gegevensbron volgens een vooraf gedefinieerd schema, waarbij bepaalde acties op basis van de eigenschappen van items in de gegevensbron worden uitgevoerd. U kunt hiervoor een stroom op basis van een schema laten starten (bijvoorbeeld een keer per dag) en een lusactie gebruiken, zoals **Op elk(e) toepassen** om een lijst met items te verwerken. U kunt bijvoorbeeld **Op elk(e) toepassen** gebruiken om records uit een database of een lijst met items van Microsoft SharePoint bij te werken.
+# <a name="use-the-apply-to-each-action-in-microsoft-flow-to-process-a-list-of-items-periodically"></a>Gebruik de actie Toep assen op elke bewerking in Microsoft Flow om regel matig een lijst met items te verwerken
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+Veel triggers kunnen onmiddellijk een stroom starten op basis van een gebeurtenis, bijvoorbeeld wanneer er een nieuwe e-mail binnenkomt in uw postvak in. Deze triggers zijn geweldig, maar soms wilt u een stroom uitvoeren die een query uitvoert op een gegevens bron volgens een vooraf gedefinieerd schema, waarbij bepaalde acties worden uitgevoerd op basis van de eigenschappen van de items in de gegevens bron. Hiervoor kan uw stroom worden gestart volgens een schema (bijvoorbeeld eenmaal per dag) en moet er een lus worden gebruikt, zoals **Toep assen op elk** item om een lijst met items te verwerken. U kunt bijvoorbeeld **Toep assen op elke** record gebruiken om records uit een Data Base of lijst met items van micro soft share point bij te werken.
 
-Hier maken we een stroom die om de 15 minuten wordt uitgevoerd met de volgende actie:
+In dit overzicht maken we een stroom die elke 15 minuten wordt uitgevoerd en doet het volgende:
 
-1. Haalt de laatste 10 ongelezen berichten in uw postvak IN in Office 365 Outlook op.
-2. Controleert alle 10 berichten om te bevestigen of een van de berichten **Nu vergaderen** in het onderwerp heeft.
-3. Controleert of de e-mail afkomstig is van uw manager of met hoge urgentie is verzonden.
-4. Verstuurt een pushmelding en markeert berichten met **Nu vergaderen** in het onderwerp die afkomstig zijn van uw manager of met hoge urgentie zijn verzonden, als gelezen.
+1. Hiermee worden de laatste 10 ongelezen berichten in het postvak in van Office 365 Outlook opgehaald.
+2. Controleert elk van de 10 berichten om te bevestigen of er **nu aan wordt voldaan** in het onderwerp.
+3. Controleert of het e-mail bericht afkomstig is van uw chef of is verzonden met een hoge urgentie.
+4. Hiermee verzendt u een push melding en markeert u een e-mail bericht dat op dit **moment aan** het onderwerp is gekoppeld. het certificaat is afkomstig van uw chef of is met hoge urgentie verzonden.
 
-In dit diagram worden de details van de stroom weergegeven die we hier gaan maken:
+In dit diagram ziet u de details van de stroom die we in deze procedure gaan maken:
 
-![overzicht van de stroom die wordt gemaakt](./media/apply-to-each/foreach-flow-visio.png)
+![overzicht van de stroom die wordt gebouwd](./media/apply-to-each/foreach-flow-visio.png)
 
 ## <a name="prerequisites"></a>Vereisten
-Dit zijn de vereisten voor het uitvoeren van de stappen in dit overzicht:
+Hier volgen de vereisten voor het uitvoeren van de stappen in deze procedure:
 
-* Een account dat is geregistreerd voor het gebruik van [Microsoft Flow](https://flow.microsoft.com).
+* Een account dat is geregistreerd voor gebruik van [Microsoft flow](https://flow.microsoft.com).
 * Een Office 365 Outlook-account.
-* De mobiele app voor Microsoft Flow voor [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios) of [Windows Phone](https://aka.ms/flowmobilewindows).
-* Verbindingen met Office 365 Outlook en de service voor pushberichten.
+* De mobiele app Microsoft Flow voor [Android](https://aka.ms/flowmobiledocsandroid), [IOS](https://aka.ms/flowmobiledocsios)of [Windows Phone](https://aka.ms/flowmobilewindows).
+* Verbindingen met Office 365 Outlook en de Push Notification Service.
 
 ## <a name="create-a-flow"></a>Een stroom maken
-1. Aanmelden bij [Microsoft Flow](https://flow.microsoft.com):
-2. Selecteer het tabblad **Mijn stromen** en maak vervolgens een stroom op basis van een lege stroom:
+1. Aanmelden bij [Microsoft flow](https://flow.microsoft.com):
+2. Selecteer het tabblad **mijn stromen** en maak een stroom op basis van een leeg:
    
-    ![een stroom op basis van een lege stroom maken](./media/apply-to-each/foreach-1.png)
-3. Voer 'plannen' in het zoekvak in om te zoeken naar alle services en triggers die gerelateerd zijn aan de planning.
-4. Selecteer de trigger **Schema - Terugkeerpatroon** om aan te geven dat de stroom worden uitgevoerd op basis van een schema dat u vervolgens instelt:
+    ![leeg item maken](./media/apply-to-each/foreach-1.png)
+3. Voer ' schema ' in het zoekvak in om te zoeken naar alle services en triggers die zijn gerelateerd aan de planning.
+4. Selecteer de trigger **schema-terugkeer patroon** om aan te geven dat de stroom wordt uitgevoerd volgens een planning die u vervolgens volgende kunt opgeven:
    
-    ![actie voor schema terugkeerpatroon instellen](./media/apply-to-each/foreach-2.png)
+    ![terugkerende actie plannen](./media/apply-to-each/foreach-2.png)
 5. Stel in dat het schema om de 15 minuten wordt uitgevoerd:
    
-    ![schema voor uitvoering](./media/apply-to-each/foreach-3.png)
-6. Selecteer **+ Nieuwe stap**, **Een actie toevoegen** en typ vervolgens **outlook** in het zoekvak om te zoeken naar alle acties die zijn gerelateerd aan Microsoft Outlook.
-7. Selecteer de actie **Office 365 Outlook - E-mails ophalen**:
+    ![plannings uitvoeringen](./media/apply-to-each/foreach-3.png)
+6. Selecteer **+ nieuwe stap**, **Voeg een actie toe**en typ **Outlook** in het zoekvak om te zoeken naar alle acties met betrekking tot micro soft Outlook.
+7. Selecteer de actie **Office 365 Outlook-E-mails ophalen** :
    
-    ![de actie E-mails ophalen selecteren](./media/apply-to-each/foreach-4.png)
-8. Hiermee opent u de kaart **E-mails ophalen**. Configureer de kaart **E-mails ophalen** om de bovenste 10 ongelezen e-mails in het postvak IN op te halen. Neem geen bijlagen op, aangezien deze niet in de stroom worden gebruikt:
+    ![Selecteer de actie e-mails ophalen](./media/apply-to-each/foreach-4.png)
+8. Hiermee opent u de kaart **E-mails ophalen** . Configureer de kaart **E-mails ophalen** om de Top 10 ongelezen e-mail berichten in de map Postvak in te selecteren. Voeg geen bijlagen toe omdat deze niet in de stroom worden gebruikt:
    
-    ![e-mailkaart configureren](./media/apply-to-each/foreach-5.png)
+    ![e-mail kaart configureren](./media/apply-to-each/foreach-5.png)
    
    > [!NOTE]
-   > U hebt nu een eenvoudige stroom gemaakt waarmee bepaalde e-mails in uw postvak IN worden opgehaald. Deze e-mails worden geretourneerd in een matrix. Voor de actie **Op elk(e) toepassen** is namelijk een matrix vereist.
+   > Tot nu toe hebt u een eenvoudige stroom gemaakt waarmee e-mail berichten van uw postvak in worden opgehaald. Deze e-mail berichten worden in een matrix geretourneerd. **voor de Toep assen op elke** actie is een matrix vereist. Dit is dus precies wat er nodig is.
    > 
    > 
 
-## <a name="add-actions-and-conditions"></a>Acties en voorwaarden toevoegen
-1. Selecteer **+ Nieuwe stap**, **Meer** en vervolgens de actie **Een item voor toepassen toevoegen aan elk(e)**:
+## <a name="add-actions-and-conditions"></a>Acties en voor waarden toevoegen
+1. Selecteer **+ nieuwe stap**, **meer**en voeg vervolgens **een Toep assen op elke actie toe** :
    
-    ![de actie Op elk(e) toepassen selecteren](./media/apply-to-each/foreach-6.png)
-2. Plaats het token **Hoofdcode** in het vak **Een uitvoer selecteren uit de vorige stappen** op de kaart **Op elk(e) toepassen**. Hiermee wordt de hoofdtekst van de e-mails opgehaald voor gebruik in de actie **Op elk(e) toepassen**:
+    ![Selecteer Toep assen op elke](./media/apply-to-each/foreach-6.png)
+2. Plaats het token **Body** in het vak **Selecteer een uitvoer van de vorige stappen** op de kaart op elk van **toepassing** . Dit wordt opgehaald uit de hoofd tekst van de e-mail berichten die moeten worden gebruikt in de sectie **Toep assen op elke** actie:
    
-    ![hoofdcodeteken toevoegen](./media/apply-to-each/foreach-7.png)
-3. Selecteer **Een voorwaarde toevoegen**:
+    ![hoofdtekst token toevoegen](./media/apply-to-each/foreach-7.png)
+3. Selecteer **een voor waarde toevoegen**:
    
-    ![voorwaarde toevoegen](./media/apply-to-each/foreach-8.png)
-4. Configureer de kaart **Voorwaarde** om in het onderwerp van elke e-mail te zoeken op 'Nu vergaderen':
+    ![Voor waarde toevoegen](./media/apply-to-each/foreach-8.png)
+4. Configureer de **voorwaarde** kaart om het onderwerp van elke e-mail te doorzoeken op de woorden ' nu verg aderen ':
    
-   * Plaats het token **Onderwerp** in het vak **Objectnaam**.
-   * Selecteer **bevat** in de lijst **Relatie**.
-   * Voer **Nu vergaderen** in het vak **Waarde** in.
+   * Voeg het token **onderwerp** in het vak **object naam** in.
+   * Selecteer **bevat** in de lijst **relatie** .
+   * Voer **nu verg aderen** in het vak **waarde** in.
      
-     ![voorwaarde configureren](./media/apply-to-each/foreach-subject-condition.png)
-5. Selecteer **Meer** en selecteer vervolgens **Een voorwaarde toevoegen** van de vertakking **INDIEN JA, NIETS DOEN**. Hiermee opent u de kaart **Voorwaarde 2**. Configureer deze kaart als volgt:
+     ![voor waarde configureren](./media/apply-to-each/foreach-subject-condition.png)
+5. Selecteer **meer**en selecteer vervolgens **een voor waarde toevoegen** van de vertakking **Indien ja, niets doen** . Hiermee opent u de kaart **voor waarde 2** . Configureer deze kaart als volgt:
    
-   * Plaats het token **Urgentie** in het vak **Objectnaam**.
-   * Selecteer **is gelijk aan** in de lijst **Relatie**.
-   * Voer **Hoog** in het vak **Waarde** in.
+   * Voeg het **urgentie** token in het vak **object naam** in.
+   * Select **is gelijk aan** in de lijst **relatie** .
+   * Voer **hoog** in het vak **waarde** in.
      
-     ![voorwaarde toevoegen](./media/apply-to-each/foreach-importance-condition.png)
-6. Selecteer **Een actie toevoegen** in het gedeelte **INDIEN JA, NIETS DOEN**. Hiermee opent u de kaart **Kies een actie**, waarin u opgeeft wat er moet gebeuren als de zoekvoorwaarde (de e-mail met het onderwerp **Nu vergaderen** is verzonden met hoge urgentie) waar is:
+     ![Voor waarde toevoegen](./media/apply-to-each/foreach-importance-condition.png)
+6. Selecteer **een actie toevoegen** in het gedeelte **Indien ja, niets doen** . Hiermee opent u de kaart **een actie kiezen** , waar u kunt bepalen wat er moet gebeuren als de zoek voorwaarde (de e-mail met de status **nu aan** de slag is verzonden met hoge urgentie) waar is:
    
-    ![actie toevoegen](./media/apply-to-each/foreach-9.png)
-7. Zoek op **melding** en selecteer vervolgens de actie **Meldingen - Ik wil een mobiele melding ontvangen**:
+    ![Actie toevoegen](./media/apply-to-each/foreach-9.png)
+7. Zoek naar **melding**en selecteer vervolgens de actie **meldingen-ik wil een mobiele melding ontvangen** :
    
-    ![een melding zoeken en selecteren](./media/apply-to-each/foreach-10.png)
-8. Geef op de kaart **Ik wil een mobiele melding ontvangen** de details op voor de pushmelding die wordt verzonden als het onderwerp van een e-mail 'Nu vergaderen' bevat en selecteer vervolgens **Een actie toevoegen**:
+    ![Seach en selecteer een melding](./media/apply-to-each/foreach-10.png)
+8. Geef op de kaart **Ik wil een mobiele melding verzenden** de details op voor de push melding die wordt verzonden als het onderwerp van een e-mail bericht ' nu verg aderen ' bevat en selecteer vervolgens **een actie toevoegen**:
    
-    ![melding configureren](./media/apply-to-each/foreach-11.png)
-9. Voer **lezen** in als de zoekterm en selecteer vervolgens de actie **Office 365 Outlook - Markeren als gelezen**. Hiermee wordt elke e-mail als gelezen gemarkeerd nadat de pushmelding is verzonden:
+    ![Melding configureren](./media/apply-to-each/foreach-11.png)
+9. Voer **lezen** in als zoek term en selecteer vervolgens de actie **Office 365 Outlook-markeren als gelezen** . Hiermee wordt elke e-mail gemarkeerd als gelezen nadat de push melding is verzonden:
    
-    ![actie markeren als gelezen toevoegen](./media/apply-to-each/foreach-12.png)
-10. Voeg het token **Bericht-id** toe aan het vak **Bericht-id** van de kaart **Markeren als gelezen**. U moet mogelijk **Meer weergeven** selecteren om het token **Bericht-id** te vinden. Hiermee wordt de id weergegeven van het bericht dat wordt gemarkeerd als gelezen:
+    ![de actie markeren als gelezen toevoegen](./media/apply-to-each/foreach-12.png)
+10. Voeg het token **bericht-id** toe aan het vak **bericht-id** van de kaart **markeren als gelezen** . U moet mogelijk **meer weer geven** selecteren om het token **bericht-id** te vinden. Hiermee wordt de id aangegeven van het bericht dat als gelezen wordt gemarkeerd:
     
      ![bericht-id toevoegen](./media/apply-to-each/foreach-13.png)
-11. Teruggaan naar de **Voorwaarde 2**-kaart op de vertakking **INDIEN NEE, NIETS DOEN**:
+11. Ga terug naar de kaart **voor waarde 2** , op de vertakking **Indien nee, niets doen** :
     
-    * Selecteer **Een actie toevoegen** en typ vervolgens **manager ophalen** in het zoekvak.
-    * Selecteer de actie **Office 365-gebruikers - Manager ophalen** in de lijst met zoekresultaten.
-    * Voer uw *volledige* e-mailadres in het vak **Gebruiker** in van de kaart **Manager ophalen**.
+    * Selecteer **een actie toevoegen**en typ vervolgens **Manager ophalen** in het zoekvak.
+    * Selecteer de actie **Office 365-gebruikers-manager ophalen** in de lijst met zoek resultaten.
+    * Voer uw *volledige* e-mail adres in het vak **gebruiker** van de kaart **Manager ophalen** in.
       
-      ![actie manager ophalen toevoegen en configureren](./media/apply-to-each/foreach-get-manager.png)
-12. Selecteer **Meer** en selecteer vervolgens **Een voorwaarde toevoegen** van de vertakking **INDIEN NEE**. Hiermee opent u de kaart **Voorwaarde 3**. Configureer de kaart om te controleren of het e-mailadres van de afzender (het token Van) hetzelfde is als het e-mailadres van uw manager (het token E-mail):
+      ![actie Get Manager toevoegen en configureren](./media/apply-to-each/foreach-get-manager.png)
+12. Selecteer **meer**en selecteer vervolgens **een voor waarde toevoegen** van de vertakking **Indien nee** . Hiermee opent u de kaart **voor waarde 3** . Configureer de kaart om te controleren of het e-mail adres van de afzender van de e-mail (het token van) gelijk is aan het e-mail adres van uw chef (het e-mail token):
     
-    * Plaats het token **Van** in het vak **Objectnaam**.
-    * Selecteer **bevat** in de lijst **Relatie**.
-    * Voer het token **E-mail** in het vak **Waarde** in.
+    * Voeg het **from** -token in het vak **object naam** in.
+    * Selecteer **bevat** in de lijst **relatie** .
+    * Voer een **e-mail** token in het vak **waarde** in.
       
-      ![zoekvoorwaarde configureren](./media/apply-to-each/foreach-condition3-card.png)
-13. Selecteer **Een actie toevoegen** in het gedeelte **INDIEN JA, NIETS DOEN** van de kaart **Voorwaarde 3**. Hiermee opent u de kaart **INDIEN JA**, waarin u opgeeft wat er moet gebeuren als de zoekvoorwaarde (de e-mail is afkomstig van uw manager) waar is:
+      ![Zoek voorwaarde configureren](./media/apply-to-each/foreach-condition3-card.png)
+13. Selecteer **een actie toevoegen** in het gedeelte **Indien ja, niets doen** van de kaart **voor waarde 3** . Hiermee opent u de kaart **als ja** , waar u kunt bepalen wat er moet gebeuren als de zoek voorwaarde (de e-mail is verzonden door uw chef) waar is:
     
-     ![voorwaarde configureren](./media/apply-to-each/foreah-condition3-add-action.png)
-14. Zoek op **melding** en selecteer vervolgens de actie **Meldingen - Ik wil een mobiele melding ontvangen**:
+     ![voor waarde configureren](./media/apply-to-each/foreah-condition3-add-action.png)
+14. Zoek naar **melding**en selecteer vervolgens de actie **meldingen-ik wil een mobiele melding ontvangen** :
     
-     ![zoeken naar actie Meldingen](./media/apply-to-each/foreach-10.png)
-15. Geef op de kaart **Ik wil een mobiele melding ontvangen 2** de details op voor de pushmelding die wordt verzonden als de e-mail afkomstig is van uw manager en selecteer vervolgens **Een actie toevoegen**:
+     ![zoeken naar meldings actie](./media/apply-to-each/foreach-10.png)
+15. Geef op de kaart **Ik wil een mobiele melding 2 ontvangen** de details op voor de push melding die wordt verzonden als de e-mail afkomstig is van uw chef en selecteer vervolgens **een actie toevoegen**:
     
-     ![meldingskaart configureren](./media/apply-to-each/foreach-boss-notification.png)
-16. Voeg de actie **Office 365 Outlook - Markeren als gelezen** toe. Hiermee wordt elke e-mail als gelezen gemarkeerd nadat de pushmelding is verzonden:
+     ![meldingen kaart configureren](./media/apply-to-each/foreach-boss-notification.png)
+16. Voeg de **Office 365 Outlook-markering als Lees** actie toe. Hiermee wordt elke e-mail gemarkeerd als gelezen nadat de push melding is verzonden:
     
-     ![actie markeren als gelezen toevoegen](./media/apply-to-each/foreach-12.png)
-17. Voeg het token **Bericht-id** toe aan de kaart **Markeren als gelezen 2**. U moet mogelijk **Meer weergeven** selecteren om het token **Bericht-id** te vinden. Hiermee wordt de id weergegeven van het bericht dat wordt gemarkeerd als gelezen:
+     ![de actie markeren als gelezen toevoegen](./media/apply-to-each/foreach-12.png)
+17. Voeg het token **bericht-id** toe aan de kaart **markeren als gelezen 2** . U moet mogelijk **meer weer geven** selecteren om het token **bericht-id** te vinden. Hiermee wordt de id aangegeven van het bericht dat als gelezen wordt gemarkeerd:
     
-     ![actie markeren als gelezen configureren](./media/apply-to-each/foreach-mark-as-read2.png)
-18. Geef de stroom een naam en maak de stroom:
+     ![de actie markeren als gelezen configureren](./media/apply-to-each/foreach-mark-as-read2.png)
+18. Geef uw stroom een naam en maak deze vervolgens:
     
-     ![geef de stroom een naam en sla de stroom op](./media/apply-to-each/foreach-14.png)
+     ![Geef uw stroom een naam en sla deze op](./media/apply-to-each/foreach-14.png)
 
-Als u de instructies hebt gevolgd, ziet uw stroom er uit zoals in dit diagram:
+Als u de vervolg actie hebt gevolgd, moet uw stroom er ongeveer als volgt uitzien:
 
 ![overzicht van de stroom die is gemaakt](./media/apply-to-each/foreach-flow-finished.png)
 
 ## <a name="run-the-flow"></a>De stroom uitvoeren
-1. Stuur uzelf een e-mail met hoge urgentie met **Nu vergaderen** in het onderwerp (of laat iemand in uw organisatie u een dergelijke e-mail sturen).
-2. Controleer of u de e-mail in uw postvak IN hebt ontvangen en dat de e-mail nog niet gelezen is.
-3. Meld u aan bij Microsoft Flow, selecteer **Mijn stromen** en selecteer vervolgens **Nu uitvoeren**:
+1. Stuur uzelf een e-mail bericht met een hoge prioriteit die **nu aan** het onderwerp is voldaan (of dat iemand in uw organisatie u een dergelijk e-mail bericht moet sturen).
+2. Bevestig dat het e-mail bericht zich in uw postvak in bevindt en niet is gelezen.
+3. Meld u aan bij Microsoft Flow, selecteer **mijn stromen**en selecteer **nu uitvoeren**:
    
     ![nu uitvoeren](./media/apply-to-each/foreach-run-1.png)
-4. Selecteer **Stroom uitvoeren** om te bevestigen dat u de stroom echt wilt uitvoeren:
+4. Selecteer **stroom uitvoeren** om te bevestigen dat u de stroom echt wilt uitvoeren:
    
-    ![uitvoeren bevestigen](./media/apply-to-each/foreach-run-2.png)
-5. Als het goed is, ziet u na enkele ogenblikken de resultaten van het uitvoeren van de stroom:
+    ![uitvoering bevestigen](./media/apply-to-each/foreach-run-2.png)
+5. Na enkele ogen blikken ziet u de resultaten van de geslaagde uitvoering:
    
     ![resultaten uitvoeren](./media/apply-to-each/foreach-run-3.png)
 
-## <a name="view-results-of-the-run"></a>Resultaten van het uitvoeren weergeven
-Nu dat de stroom is uitgevoerd, ontvangt u als het goed is een pushmelding op uw mobiele apparaat.
+## <a name="view-results-of-the-run"></a>Resultaten van de uitvoering weer geven
+Nu u de stroom hebt uitgevoerd, ontvangt u een push melding op uw mobiele apparaat.
 
-1. Open de app Microsoft Flow op uw mobiele apparaat en selecteer vervolgens het tabblad **Activiteit**. De pushmelding over de vergadering wordt weergegeven:
+1. Open de Microsoft Flow-app op uw mobiele apparaat en selecteer vervolgens het tabblad **activiteit** . U ziet de push melding over de vergadering:
    
-    ![Het tabblad Activiteit selecteren](./media/apply-to-each/foreach-notification-1.png)
-2. Als u de volledige inhoud van de melding wilt weergeven, moet u de melding mogelijk selecteren. De volledige melding ziet er ongeveer als volgt uit:
+    ![het tabblad activiteit selecteren](./media/apply-to-each/foreach-notification-1.png)
+2. Als u de volledige inhoud van de melding wilt weer geven, moet u de melding mogelijk selecteren. De volledige melding ziet er ongeveer als volgt uit:
    
-    ![details van melding](./media/apply-to-each/foreach-notification-2.png)
+    ![Details van melding](./media/apply-to-each/foreach-notification-2.png)
    
    > [!NOTE]
-   > Als u geen pushmelding hebt ontvangen, controleert u of uw mobiele apparaat een werkende gegevensverbinding heeft.
+   > Als u het push bericht niet ontvangt, controleert u of het mobiele apparaat een werkende gegevens verbinding heeft.
    > 
    > 
 

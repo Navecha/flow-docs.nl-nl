@@ -1,6 +1,6 @@
 ---
-title: Werken met bedrijfsprocesstromen met behulp van code | Microsoft Docs
-description: Leer hoe u programmatisch kunt werken met bedrijfsprocesstromen om efficiëntere en beter gestroomlijnde bedrijfsprocessen te maken.
+title: Werken met bedrijfs proces stromen met behulp van code | MicrosoftDocs
+description: Meer informatie over hoe u via programma code kunt werken met zakelijke proces stromen om efficiënter en gestroomlijnde bedrijfs processen te maken.
 ms.custom: ''
 ms.date: 07/09/2018
 ms.reviewer: ''
@@ -14,78 +14,79 @@ search.app:
 - Flow
 search.audienceType:
 - developer
-ms.openlocfilehash: dde9b4328319e0cbfec7df1ba0bb52f403901989
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.openlocfilehash: 5ce11084cb9a430899fd0a4b672e009c0dc22d25
+ms.sourcegitcommit: 510706f5699b6cf9dda9dcafbed715f9f6d559e8
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "65054083"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73547734"
 ---
-# <a name="work-with-business-process-flows-using-code"></a>Werken met bedrijfsprocesstromen met behulp van code
+# <a name="work-with-business-process-flows-using-code"></a>Werken met bedrijfs proces stromen met behulp van code
+[!INCLUDE [view-pending-approvals](../includes/cc-rebrand.md)]
 
-Een *bedrijfsprocesstroom* stelt u in staat om efficiëntere en meer gestroomlijnde verkoop-, service- en andere bedrijfsprocessen te maken. U maakt een visualisatie van het bedrijfsproces door speciale besturingselementen aan de bovenzijde van de entiteitsformulieren te plaatsen. Gebruikers worden door verschillende fasen van verkoop, marketing of service geleid om tot afronding van het proces te komen. Elk proces biedt ondersteuning voor meerdere fasen en stappen. U kunt stappen toevoegen of verwijderen, de volgorde van fasen wijzigen of nieuwe entiteiten toevoegen aan de bedrijfsprocesstroom.  
+Met een *bedrijfs proces stroom* kunt u efficiënter en gestroomlijnde verkoop-, service-en bedrijfs processen maken. Er wordt een visualisatie van uw bedrijfs proces gemaakt door speciale besturings elementen boven aan de entiteit formulieren te plaatsen. Gebruikers worden begeleid door verschillende stadia van de verkoop-, marketing-of service processen tot aan de voltooiing. Elk proces ondersteunt meerdere fasen en stappen. U kunt stappen toevoegen of verwijderen, de volg orde van de stadia wijzigen of nieuwe entiteiten toevoegen aan de stroom van het bedrijfs proces.  
   
-Er kunnen tegelijkertijd verschillende exemplaren van bedrijfsprocesstromen worden uitgevoerd op basis van dezelfde entiteitsrecord. Gebruikers kunnen schakelen tussen gelijktijdige exemplaren van bedrijfsprocessen en hun werk in een huidige fase in het proces hervatten. 
+Verschillende instanties voor bedrijfsproces stromen kunnen gelijktijdig worden uitgevoerd op dezelfde entiteits record. Gebruikers kunnen scha kelen tussen gelijktijdige exemplaren van bedrijfs processen en hun werk hervatten in een huidige fase van het proces. 
 
-Dit onderwerp bevat informatie over hoe u programmatisch kunt werken met bedrijfsprocesstromen.
+In dit onderwerp vindt u informatie over hoe u programmatisch kunt werken met bedrijfsproces stromen.
 
 > [!NOTE]
-> U hoeft geen code te schrijven om te werken met bedrijfsprocesstromen. Zie [Overzicht bedrijfsprocesstromen](../business-process-flows-overview.md) voor meer informatie over het gebruik van de gebruikersinterface voor het maken en beheren van bedrijfsprocesstromen.  
+> U hoeft geen code te schrijven voor het werken met bedrijfsproces stromen. Zie [overzicht van bedrijfsproces stromen](../business-process-flows-overview.md) voor meer informatie over het gebruik van de gebruikers interface voor het maken en beheren van bedrijfs processen.  
 
 <a name="PrereqsBPF"></a>   
-## <a name="prerequisites-for-business-process-flow"></a>Vereisten voor bedrijfsprocesstromen 
+## <a name="prerequisites-for-business-process-flow"></a>Vereisten voor bedrijfsproces stroom 
 
-Aangepaste entiteiten en entiteiten met bijgewerkte gebruikersinterfaceformulieren kunnen deelnemen aan de bedrijfsprocesstroom. Bijgewerkte gebruikersinterface entiteiten hebben de waarde `true` voor de eigenschap <xref:Microsoft.Xrm.Sdk.Metadata.EntityMetadata.IsAIRUpdated>. 
+Aangepaste entiteiten en entiteiten die bijgewerkte UI-formulieren hebben, kunnen deel uitmaken van de bedrijfs proces stroom. De eigenschap <xref:Microsoft.Xrm.Sdk.Metadata.EntityMetadata.IsAIRUpdated> van de bijgewerkte gebruikers interface-entiteiten is ingesteld op `true`. 
 
-Als u een entiteit wilt inschakelen voor de bedrijfsprocesstroom, stelt u de eigenschap <xref:Microsoft.Xrm.Sdk.Metadata.EntityMetadata.IsBusinessProcessEnabled> in op `true`.
+Als u een entiteit wilt inschakelen voor de stroom van bedrijfs processen, stelt u de eigenschap <xref:Microsoft.Xrm.Sdk.Metadata.EntityMetadata.IsBusinessProcessEnabled> in op `true`.
 
 > [!IMPORTANT]
->  Het inschakelen van een entiteit voor een bedrijfsprocesstroom is een onomkeerbare handeling. U kunt de entiteit niet meer uitschakelen voor de stroom.
+>  Het inschakelen van een entiteit voor een bedrijfs proces stroom is een eenrichtings proces. U kunt deze niet omkeren.
 
    
 <a name="DefineBPF"></a>   
-## <a name="define-business-process-flow"></a>Bedrijfsprocesstroom definiëren
+## <a name="define-business-process-flow"></a>Bedrijfs proces stroom definiëren
   
-Gebruik de ontwerpfunctie voor het visueel samenstellen van een bedrijfsprocesstroom. Meer informatie: [Een bedrijfsprocesstroom maken](../create-business-process-flow.md)
+Gebruik de ontwerp functie voor bedrijfs processen om een bedrijfs proces stroom te definiëren. Meer informatie: [een bedrijfs proces stroom maken](../create-business-process-flow.md)
 
-Een record met een bedrijfsprocesstroom wordt standaard gemaakt met de status `Draft`.  
+Een bedrijfs proces stroom record wordt standaard gemaakt in de `Draft` status.  
 
-De definitie van een bedrijfsprocesstroom wordt opgeslagen in de entiteit <xref:Microsoft.Dynamics.CRM.workflow> en de fase-informatie voor de bedrijfsprocesstroom wordt opgeslagen in de entiteit <xref:Microsoft.Dynamics.CRM.processstage>.
+Een definitie van een bedrijfs proces stroom wordt opgeslagen in de entiteit <xref:Microsoft.Dynamics.CRM.workflow> en de fase-informatie voor de bedrijfs proces stroom wordt opgeslagen in de <xref:Microsoft.Dynamics.CRM.processstage> entiteit.
   
 <a name="ActivateBPF"></a>   
-## <a name="activate-business-process-flow"></a>Bedrijfsprocesstroom activeren  
- U kunt een processtroom pas gebruiken nadat u de stroom hebt geactiveerd. Hiervoor moet u over de bevoegdheid `prvActivateBusinessProcessFlow` beschikken voor de entiteit `Workflow`. Gebruik het bericht <xref:Microsoft.Xrm.Sdk.Messages.UpdateRequest> om de status van de record van de `Workflow`-entiteit in te stellen op `Activated`. Meer informatie: [Gespecialiseerde bewerkingen uitvoeren met Update](/dynamics365/customer-engagement/developer/org-service/perform-specialized-operations-using-update) 
+## <a name="activate-business-process-flow"></a>Bedrijfs proces stroom activeren  
+ Voordat u de proces stroom kunt gebruiken, moet u deze activeren. Als u deze wilt activeren, moet u beschikken over de `prvActivateBusinessProcessFlow` bevoegdheid voor de `Workflow` entiteit. Gebruik het <xref:Microsoft.Xrm.Sdk.Messages.UpdateRequest> bericht om de status van de entiteits record `Workflow` in te stellen op `Activated`. Meer informatie: [gespecialiseerde bewerkingen uitvoeren met update](/dynamics365/customer-engagement/developer/org-service/perform-specialized-operations-using-update) 
 
  > [!NOTE]
- > U kunt ook de ontwerpfunctie voor bedrijfsprocesstromen gebruiken om een bedrijfsprocesstroom te activeren. 
+ > U kunt ook de ontwerp functie voor bedrijfs processen gebruiken om een bedrijfs proces stroom te activeren. 
 
 <a name="BPFEntity"></a>   
-## <a name="business-process-flow-entity"></a>Entiteit van bedrijfsprocesstroom 
- Nadat u de definitie van een bedrijfsprocesstroom hebt geactiveerd door de status van de bijbehorende record van de `Workflow`-entiteit te wijzigen of met behulp van de ontwerpfunctie voor bedrijfsprocesstromen, wordt er automatisch een aangepaste entiteit met de volgende naam gemaakt voor het opslaan van de geactiveerde exemplaren van de bedrijfsprocesstroom: '*\<activesolutionprefix>*_*\<uniquename>*', waarbij de waarde voor uniquename wordt afgeleid van de naam die u opgeeft.  
+## <a name="business-process-flow-entity"></a>Entiteit bedrijfs proces stroom 
+ Wanneer u een definitie van een bedrijfsproces stroom hebt geactiveerd door de status van de bijbehorende `Workflow` entiteits record te wijzigen of door de ontwerp functie voor bedrijfs processen te gebruiken, wordt er automatisch een aangepaste entiteit met de volgende naam gemaakt om het geactiveerde bedrijf op te slaan proces flow-instanties: ' *\<activesolutionprefix >* _ *\<unieke naam >* ', waarbij de uniekheid wordt afgeleid van de door u opgegeven locatie.  
   
- Als u bijvoorbeeld 'Mijn aangepaste BPF' hebt opgegeven als de naam van de definitie van de bedrijfsprocesstroom en u de standaarduitgever (nieuw) gebruikt voor uw actieve oplossing, is 'nieuw_mijnaangepastebpf' de naam van de aangepaste entiteit die wordt gemaakt voor het opslaan van procesexemplaren.  
+ Als u bijvoorbeeld ' mijn aangepaste BPF ' hebt opgegeven als de naam van de stroom definitie van het bedrijfs proces en de standaard Uitgever (nieuw) gebruikt voor uw actieve oplossing, is de naam van de aangepaste entiteit die is gemaakt voor het opslaan van proces instanties ' new_mycustombpf '.  
   
- Als de waarde `uniquename` niet beschikbaar is voor de definitie van een bedrijfsprocesstroom, bijvoorbeeld als de bedrijfsprocesstroom is geïmporteerd als onderdeel van de oplossing van een eerdere versie, wordt de standaardnaam van de aangepaste entiteit `\<activesolutionprefix>_bpf_<GUID_BPF_Definition>`:  
+ Als de `uniquename` waarde niet beschikbaar is voor een definitie van een bedrijfs proces stroom, bijvoorbeeld als de bedrijfs proces stroom is geïmporteerd als onderdeel van de oplossing uit een eerdere versie, wordt de standaard naam van de aangepaste entiteit '`\<activesolutionprefix>_bpf_<GUID_BPF_Definition>`:  
   
 > [!IMPORTANT]
->  De voorbeeldrecords van bedrijfsprocesstromen gebruiken systeementiteiten voor het opslaan van de bijbehorende records van exemplaren van de bedrijfsprocesstromen.  
+>  De voorbeeld records voor bedrijfs processen gebruiken systeem entiteiten voor het opslaan van de bijbehorende instantie records van de bedrijfs proces stroom.  
 >   
->  Nieuwe definities van bedrijfsprocesstromen die u maakt, gebruiken echter aangepaste entiteiten gebruiken voor het opslaan van de records van het exemplaar, zoals eerder is beschreven. 
+>  Nieuwe bedrijfsproces stroom definities die u maakt, gebruiken echter aangepaste entiteiten om de instantie records op te slaan zoals eerder is uitgelegd. 
 
-U kunt de naam van de entiteit van uw bedrijfsprocesstroom op de volgende manieren ophalen:
+U kunt de naam van uw bedrijfs proces stroom-entiteit ophalen met behulp van een van de volgende manieren:
 
-- **Met de gebruikersinterface**: Gebruik de aanpassingsinterface om naar uw bedrijfsprocesstroomentiteit te bladeren:
+- **Met behulp van de gebruikers interface**: gebruik de aanpassings interface om naar uw bedrijfs proces stroom entiteit te bladeren:
 
     ![](media/bpf-entity-name.png)
-- **Met de web-API**: Gebruik de volgende aanvraag:
+- **De Web-API**gebruiken: gebruik de volgende aanvraag:
 
-    **Aanvraag**
+    **Schot**
 
     ```
     GET [Organization URI]/api/data/v9.0/workflows?$filter=name eq 'My Custom BPF'&$select=uniquename HTTP/1.1
     ```
 
-    **Respons**
+    **Beantwoord**
     ```
     {  
     "@odata.context":"[Organization URI]/api/data/v9.0/$metadata#workflows(uniquename)",
@@ -98,7 +99,7 @@ U kunt de naam van de entiteit van uw bedrijfsprocesstroom op de volgende manier
       ]
     }
     ```
-- **Met de Organisatieservice**: Gebruik het volgende codevoorbeeld:
+- **De organisatie service**gebruiken: gebruik het volgende code voorbeeld:
 
     ```c#
     QueryExpression query = new QueryExpression
@@ -121,60 +122,60 @@ U kunt de naam van de entiteit van uw bedrijfsprocesstroom op de volgende manier
     Workflow Bpf = (Workflow)_serviceProxy.RetrieveMultiple(query).Entities[0]; 
     ```
 > [!NOTE]
-> De eigenschap <xref:Microsoft.Xrm.Sdk.Metadata.EntityMetadata.IsBPFEntity> is `true` voor bedrijfsprocesstroomentiteiten. U kunt alle bedrijfsprocesstroomentiteiten in uw instantie ophalen door de volgende web-API-aanvraag uit te voeren:
+> De eigenschap <xref:Microsoft.Xrm.Sdk.Metadata.EntityMetadata.IsBPFEntity> is `true` voor bedrijfs proces stroom-entiteiten. U kunt alle bedrijfs proces stroom entiteiten in uw exemplaar ophalen door de volgende Web API-aanvraag uit te voeren:
 > ```http
 > GET [Organization URI]/api/data/v9.0/EntityDefinitions?$select=SchemaName,LogicalName,DisplayName&$filter=IsBPFEntity eq true HTTP/1.1
 > ```
 
 <a name="BPFSecurity"></a>   
-## <a name="manage-security-for-business-process-flows"></a>Uw beveiliging voor bedrijfsprocesstromen beheren
+## <a name="manage-security-for-business-process-flows"></a>Beveiliging voor bedrijfs proces stromen beheren
 
-De aangepaste entiteit die automatisch wordt gemaakt bij het activeren van een bedrijfsprocesstroom voor het opslaan van bedrijfsprocesstroominstanties voldoet aan het standaardbeveiligingsmodel voor elke andere aangepaste entiteit in Customer Engagement. Dit betekent dat de runtime-machtigingen voor gebruikers voor bedrijfsprocesstromen worden gedefinieerd door de machtigingen die voor deze entiteiten worden verleend.
+De aangepaste entiteit die automatisch wordt gemaakt bij het activeren van een bedrijfsproces stroom voor het opslaan van bedrijfs processen, voldoet aan het standaard beveiligings model als voor een andere aangepaste entiteit in Common Data Service. Dit betekent dat de bevoegdheden die voor deze entiteiten zijn verleend, de runtime machtigingen definiëren voor gebruikers voor bedrijfsproces stromen.
 
-De aangepaste bedrijfsprocesstroomentiteit heeft organisatiebereik. De reguliere maken, ophalen, bijwerken en verwijderen van de bevoegdheden voor deze entiteit definieert de machtiging gebruikers zou hebben op basis van hun rollen. Bij het maken van de aangepaste bedrijfsprocesstroomentiteit krijgen standaard alleen de beveiligingsrollen **systeembeheerder** en **systeemaanpasser** er toegang toe en moet u zo nodig expliciet machtigingen verlenen aan de nieuwe bedrijfsprocesstroomentiteit (bijvoorbeeld **My Custom BPF**) voor andere beveiligingsrollen.
+De entiteit voor de aangepaste bedrijfs proces stroom heeft een organisatie bereik. Met de normale bevoegdheden Create, retrieve, update en Delete voor deze entiteit definieert u de machtigings gebruikers op basis van hun toegewezen rollen. Wanneer de aangepaste entiteit bedrijfs proces stroom is gemaakt, worden alleen de beveiligings rollen **systeem beheerder** **en Systeemaanpasser verleend** aan de groep, en moet u expliciet machtigingen verlenen aan de nieuwe entiteit bedrijfs proces stroom (voor voor beeld van **Mijn aangepaste BPF**) voor andere beveiligings rollen zoals vereist.
 
 ![](media/bpf-privileges.png)
 
 <a name="ManageBPF"></a>   
-## <a name="create-retrieve-update-and-delete-business-process-flow-entity-records-process-instances"></a>Entiteitsrecords voor bedrijfsprocesstromen maken, ophalen, bijwerken en verwijderen (procesexemplaren)  
- In de aangepaste entiteit die automatisch wordt gemaakt bij het activeren van een bedrijfsprocesstroomdefinitie, worden alle procesexemplaren voor de bedrijfsprocesstroomdefinitie opgeslagen. De aangepaste entiteit biedt ondersteuning voor het standaard programmatisch maken en beheren van records (procesexemplaren) met behulp van de web-API en het CRM 2011-eindpunt.
+## <a name="create-retrieve-update-and-delete-business-process-flow-entity-records-process-instances"></a>Entiteit records voor een bedrijfs proces stroom maken, ophalen, bijwerken en verwijderen (proces exemplaren)  
+ De aangepaste entiteit die automatisch wordt gemaakt bij het activeren van een bedrijfs proces stroom definitie, slaat alle proces exemplaren voor de definitie van de bedrijfs proces stroom op. De aangepaste entiteit ondersteunt het standaard programmatisch maken en beheren van records (proces exemplaren) met behulp van Web API en CRM 2011-eind punt.
 
 > [!IMPORTANT]
-> Overschakelen naar een ander procesexemplaar voor een entiteitsrecord wordt alleen ondersteund via de gebruikersinterface (client) of programmatisch met behulp van de informatie die beschikbaar is in deze sectie. U kunt niet meer gebruikmaken van het bericht `SetProcess` (<xref href="Microsoft.Dynamics.CRM.SetProcess?text=SetProcess Action" /> of <xref:Microsoft.Crm.Sdk.Messages.SetProcessRequest>) om programmatisch van proces te wisselen (een andere bedrijfsprocesstroom instellen als het actieve procesexemplaar) voor het doelentiteitsrecord. 
+> Overschakelen naar een ander proces exemplaar voor een entiteits record wordt alleen ondersteund via de gebruikers interface (client) of via een programma met behulp van de informatie die beschikbaar is in deze sectie. U kunt het `SetProcess` bericht (<xref href="Microsoft.Dynamics.CRM.SetProcess?text=SetProcess Action" /> of <xref:Microsoft.Crm.Sdk.Messages.SetProcessRequest>) niet meer gebruiken om processen programmatisch te scha kelen (Stel een andere bedrijfs proces stroom in als het actieve proces exemplaar) voor de doel entiteits record. 
 
- Hier volgt een voorbeeld van een entiteitsoverschrijdende bedrijfsprocesstroom, 'My Custom BPF', die uit drie fasen bestaat: S1:Account, S2:Account en S3:Contact. 
+ In het volgende voor beeld ziet u dat er sprake is van een bedrijfsproces stroom voor een cross-entiteit, ' My Custom BPF ', met 3 fasen: S1: account, S2: account en S3: contact. 
 
  ![](media/sample-bpf.png)
  
-### <a name="retrieve-all-the-records-instances-for-a-business-process-flow-entity"></a>Alle records (instanties) ophalen voor een bedrijfsprocesstroomentiteit
- Als de naam van uw bedrijfprocesstroomentiteit new_mycustombpf is, gebruikt u de volgende query om alle records (procesexemplaren) op te halen voor uw bedrijfsprocesstroomentiteit:  
+### <a name="retrieve-all-the-records-instances-for-a-business-process-flow-entity"></a>Alle records (instanties) ophalen voor een entiteit van een bedrijfs proces stroom
+ Als de naam van de entiteit bedrijfs proces stroom ' new_mycustombpf ' is, gebruikt u de volgende query om alle records (proces exemplaren) op te halen voor de entiteit bedrijfs proces stroom:  
   
 ```http
 GET [Organization URI]/api/data/v9.0/new_mycustombpfs HTTP/1.1 
 ```
 
-Het is mogelijk dat er op dit moment geen exemplaren worden vermeld in de respons omdat die er niet zijn. Voer deze aanvraag uit nadat u verderop in dit onderwerp een exemplaar van uw definitie van de bedrijfsprocesstroom hebt gemaakt.
+U kunt op dit moment geen instanties in uw antwoord ontvangen, omdat er geen is. Voer deze aanvraag uit nadat u een exemplaar van de bedrijfs proces stroom definitie hebt gemaakt verderop in dit onderwerp.
 
 > [!NOTE]
-> Zie de eerdere sectie [Entiteit van bedrijfsprocesstroom](#business-process-flow-entity) om te lezen hoe u de naam van de entiteit van uw bedrijfsprocesstroom kunt ophalen.
+> Zie de vorige sectie [bedrijfs proces stroom](#business-process-flow-entity)als u wilt weten hoe u de naam van de entiteit bedrijfs proces stroom kunt ophalen.
   
-### <a name="create-a-business-process-flow-entity-record-process-instance"></a>Entiteitsrecord voor bedrijfsprocesstroom (procesexemplaar) maken 
+### <a name="create-a-business-process-flow-entity-record-process-instance"></a>Een entiteits record voor een bedrijfs proces stroom maken (proces exemplaar) 
 
-U kunt via een programma een entiteitsrecord voor een bedrijfsprocesstroom (procesexemplaar) maken als u wilt overschakelen naar een andere bedrijfsprocesstroom voor een entiteitsrecord zonder de gebruikersinterface te hoeven gebruiken. 
+Maak een bedrijfsproces stroom entiteits record (proces exemplaar) programmatisch als u wilt overschakelen naar een andere bedrijfs proces stroom voor een entiteits record zonder de gebruikers interface te gebruiken. 
 
-Om een entiteitsrecord voor een bedrijfsprocesstroom te maken, moet u de volgende waarden opgeven: 
-- Koppel de entiteitsrecord voor de bedrijfsprocesstroom aan een primair entiteitsrecord door de navigatie-eigenschap met één waarde in te stellen met de annotatie `@odata.bind`. Als u de naam wilt opvragen van de navigatie-eigenschap die verwijst naar de primaire entiteitsrecord voor de definitie van uw bedrijfsprocesstroom, raadpleegt u het document [CSDL $metadata](/dynamics365/customer-engagement/developer/webapi/web-api-types-operations.md#csdl-metadata-document). 
-- Koppel de entiteitsrecord voor de bedrijfsprocesstroom aan een geldige fase die is opgegeven in de definitie van de bedrijfsprocesstroom door de navigatie-eigenschap met één waarde in te stellen met de annotatie `@odata.bind`. Als u de naam (meestal `activestageid`) wilt opvragen van de navigatie-eigenschap die verwijst naar de faserecord voor de definitie van uw bedrijfsprocesstroom, raadpleegt u het document [CSDL $metadata](/dynamics365/customer-engagement/developer/webapi/web-api-types-operations.md#csdl-metadata-document).
+Als u een entiteits record voor een bedrijfs proces stroom wilt maken, moet u de volgende waarden opgeven: 
+- Koppel de entiteits record van de bedrijfs proces stroom aan een primaire entiteits record door de navigatie-eigenschap met één waarde in te stellen met behulp van de `@odata.bind` aantekening. Als u wilt weten welke naam van de navigatie-eigenschap verwijst naar de record van de primaire entiteit voor de stroom definitie van uw bedrijfs proces, gebruikt u het [CSDL $metadata-document](/dynamics365/customer-engagement/developer/webapi/web-api-types-operations.md#csdl-metadata-document). 
+- Koppel de entiteits record van de bedrijfs proces stroom aan een geldige fase die is opgegeven in de definitie van de bedrijfs proces stroom door de navigatie-eigenschap met één waarde in te stellen met behulp van de `@odata.bind` annotatie. Als u wilt weten hoe de naam van de navigatie-eigenschap (meestal `activestageid`) die verwijst naar de fase record voor de definitie van uw bedrijfs proces stroom, gebruikt u het [CSDL $metadata-document](/dynamics365/customer-engagement/developer/webapi/web-api-types-operations.md#csdl-metadata-document).
 
-    U kunt ook informatie over alle fasen voor de definitie van een bedrijfsprocesstroom opvragen met behulp van de volgende web-API-aanvragen, ervan uitgaande dat de id van de definitie van uw bedrijfsprocesstroom 2669927e-8ad6-4f95-8a9a-f1008af6956f is:
+    U kunt ook informatie over alle fasen voor een bedrijfs proces stroom definitie ophalen met behulp van de volgende Web API-aanvraag, ervan uitgaande dat de ID van de bedrijfs proces stroom definitie 2669927e-8ad6-4f95-8a9a-f1008af6956f is:
 
-    **Aanvraag**
+    **Schot**
 
     ```http
     GET [Organization URI]/api/data/v9.0/processstages?$select=stagename&$filter=processid/workflowid eq 2669927e-8ad6-4f95-8a9a-f1008af6956f HTTP/1.1
     ```
 
-    **Respons**
+    **Beantwoord**
 
     ```http
     {
@@ -199,9 +200,9 @@ Om een entiteitsrecord voor een bedrijfsprocesstroom te maken, moet u de volgend
     }
     ```
 
-Gebruik daarna de volgende aanvraag om een exemplaar van de definitie van uw bedrijf bedrijfsprocesstroom te maken voor een accountrecord (id=a176be9e-9a68-e711-80e7-00155d41e206) en de actieve fase ingesteld als de eerste fase van het procesexemplaar, S1 (id=9a9185f5-b75b-4bbb-9c2b-a6626683b99b):
+Gebruik vervolgens de volgende aanvraag om een exemplaar te maken van de definitie van de bedrijfs proces stroom voor een account record (ID = a176be9e-9a68-e711-80e7-00155d41e206) en de actieve fase ingesteld als de eerste fase van het proces exemplaar, S1 (ID = 9a9185f5-b75b-4bbb-9c2b-a6626683b99b):
 
-**Aanvraag**
+**Schot**
 
 ```http
 POST [Organization URI]/api/data/v9.0/new_mycustombpfs HTTP/1.1 
@@ -216,7 +217,7 @@ Accept: application/json
 }
 ```
 
-**Respons**
+**Beantwoord**
 
 ```http
 HTTP/1.1 204 No Content
@@ -224,7 +225,7 @@ OData-Version: 4.0
 OData-EntityId: [Organization URI]/api/data/v9.0/new_mycustombpfs(cc3f721b-026e-e811-80ff-00155d513100)
 ```
 
-Als u een exemplaar van de definitie van uw bedrijfsprocesstroom wilt maken met de actieve fase ingesteld als een ***andere*** fase dan de eerste fase, moet u ook `traversedpath` opgeven in uw aanvraag. Dit argument bestaat uit een tekenreeks van door komma's gescheiden id's van procesfasen die uitgevoerde fasen van het exemplaar van het bedrijfsprocesstroom aangeven. Met de volgende aanvraag wordt een exemplaar gemaakt voor een accountrecord (id=679b2464-71b5-e711-80f5-00155d513100) en de actieve fase ingesteld als de tweede fase, S2 (id=19a11fc0-3398-4214-8522-cb2a97f66e4b).
+Houd er rekening mee dat als u een exemplaar van de bedrijfs proces stroom definitie wilt maken en de actieve fase is ingesteld als een ***andere*** fase dan de eerste fase, moet u ook `traversedpath` in uw aanvraag opgeven. Doorlopend pad is de door komma's gescheiden teken reeks van proces fase-id's die de bezochte fasen van het exemplaar van de bedrijfs proces stroom vertegenwoordigen. Met de volgende aanvraag wordt een exemplaar gemaakt voor een account record (ID = 679b2464-71b5-e711-80f5-00155d513100) en een actieve fase ingesteld als de tweede fase, S2 (ID = 19a11fc0-3398-4214-8522-cb2a97f66e4b).
 
 ```http
 POST [Organization URI]/api/data/v9.0/new_mycustombpfs HTTP/1.1 
@@ -240,17 +241,17 @@ Accept: application/json
 }
 ```
 
-### <a name="update-a-business-process-flow-entity-record-process-instance"></a>Entiteitsrecord voor bedrijfsprocesstroom (procesexemplaar) bijwerken
+### <a name="update-a-business-process-flow-entity-record-process-instance"></a>Een entiteits record voor een bedrijfs proces stroom bijwerken (proces exemplaar)
 
-U kunt een procesexemplaar bijwerken om het te verplaatsen naar de volgende of vorige fase, of om een procesexemplaar af te breken, opnieuw te activeren of te voltooien. 
+U kunt een proces exemplaar bijwerken om naar het volgende of vorige stadium te gaan, een proces exemplaar te verlaten, een proces exemplaar opnieuw te activeren of een proces exemplaar te volt ooien. 
 
-#### <a name="stage-navigation"></a>Fasenavigatie
+#### <a name="stage-navigation"></a>Fase navigatie
 
-Als u naar een andere fase wilt navigeren, moet u een record voor een procesexemplaar bijwerken om de id van de actieve fase te wijzigen en het betreffende traversalpad dienovereenkomstig bij te werken. U mag alleen naar de volgende of vorige fase gaan tijdens het bijwerken van een exemplaar van een bedrijfsprocesstroom.
+Als u naar een andere fase wilt gaan, moet u een record van het proces exemplaar bijwerken om de actieve fase-ID te wijzigen en het doorlopende pad bij te werken. Houd er rekening mee dat u alleen moet overstappen op het volgende of vorige stadium tijdens het bijwerken van een exemplaar van een bedrijfs proces stroom.
 
-Om fasenavigatie uit te voeren, hebt u de id nodig van het exemplaar van de bedrijfsprocesstroom die u wilt bijwerken. Als u alle exemplaren van de bedrijfsprocesstroom wilt ophalen, raadpleegt u [Alle records (exemplaren) voor de entiteit van een bedrijfsprocesstroom ophalen](#retrieve-all-the-records-instances-for-a-business-process-flow-entity) eerder in dit artikel.
+Als u de fase navigatie wilt uitvoeren, hebt u de ID nodig van het exemplaar van de bedrijfsproces stroom dat u wilt bijwerken. Als u alle exemplaren van uw bedrijfsproces stroom wilt ophalen, raadpleegt u [alle records (instanties) voor een bedrijfsproces stroom entiteit eerder ophalen](#retrieve-all-the-records-instances-for-a-business-process-flow-entity) .
 
-Ervan uitgaande dat de id van het procesexemplaar dat u wilt bijwerken dc2ab599-306d-e811-80ff-00155d 513100 is, gebruikt u de volgende aanvraag om de actieve fase bij te werken van S1 naar S2:
+Ervan uitgaande dat de ID van het proces exemplaar dat u wilt bijwerken dc2ab599-306d-e811-80ff-00155d513100 is, gebruikt u de volgende aanvraag om de actieve fase bij te werken van S1 naar S2:
 
 ```http
 PATCH [Organization URI]/api/data/v9.0/new_mycustombpfs(dc2ab599-306d-e811-80ff-00155d513100) HTTP/1.1
@@ -264,26 +265,26 @@ OData-Version: 4.0
 }
 ```
 
-#### <a name="change-the-state-of-a-process-instance-abort-reactivate-or-finish"></a>Wijzig de status van het procesexemplaar: Afbreken, Opnieuw activeren, of Voltooien 
+#### <a name="change-the-state-of-a-process-instance-abort-reactivate-or-finish"></a>De status van een proces exemplaar wijzigen: afbreken, opnieuw activeren of volt ooien 
 
-Een procesexemplaar kan een van de volgende statussen hebben: **Actief**, **Voltooid** of **Afgebroken**. De status wordt bepaald door de volgende kenmerken in de record voor het procesexemplaar:
+Een proces exemplaar kan een van de volgende statussen hebben: **actief**, **voltooid**of **afgebroken**. De status wordt bepaald door de volgende kenmerken van de record van het proces exemplaar:
 
-- **statuscode**: Toont de status van het procesexemplaar.
+- **State**code: hier wordt de status van het proces exemplaar weer gegeven.
 
-    |Waarde|Label|
+    |Value|adres|
     |-----|-----|
-    |0    |Active|
-    |1    |Inactive|
+    |0,3    |Actief|
+    |i    |Inactieve|
 
-- **statuscode**: Toont informatie over de status van het procesexemplaar.
+- **status**code: geeft informatie weer over de status van het proces exemplaar.
 
-    |Waarde|Label|
+    |Value|adres|
     |-----|-----|
-    |1    |Active|
-    |2    |Finished|
-    |3    |Aborted|
+    |i    |Actief|
+    |twee    |Geïnstalleerd|
+    |3D    |Afgebroken|
 
-Als u een procesexemplaar **afbreken**, gebruikt u de volgende aanvraag om de waarden voor `statecode` en `statuscode` op de gewenste manier in te stellen:
+Als u een proces exemplaar wilt **afbreken** , gebruikt u de volgende aanvraag om de `statecode` en `statuscode` waarden op de juiste wijze in te stellen:
 
 ```http
 PATCH [Organization URI]/api/data/v9.0/new_mycustombpfs(dc2ab599-306d-e811-80ff-00155d513100) HTTP/1.1   
@@ -298,15 +299,15 @@ OData-Version: 4.0
 ```
  
 > [!NOTE]
-> U kunt een procesexemplaar tijdens elke fase afbreken.
+> U kunt een proces exemplaar in elk stadium afbreken.
 
-Op dezelfde manier kunt u een procesexemplaar opnieuw activeren. U vervangt de waarden voor `statecode` en `statuscode` in de bovenstaande code dan door respectievelijk **0** en **1**.
+Als u een proces exemplaar opnieuw wilt activeren, moet u de `statecode` en `statuscode` waarden in de bovenstaande code vervangen door respectievelijk **0** en **1** .
 
-Ten slotte kunt u de status van een procesexemplaar instellen op **Finished**. Dit is alleen mogelijk in de laatste fase van een procesexemplaar. Vervang hiervoor de waarden voor `statecode` en `statuscode` in de bovenstaande code door respectievelijk **0** en **2**.
+Ten slotte kunt u de status van een proces exemplaar zo instellen dat deze is **voltooid**. Dit is alleen mogelijk in de laatste fase van een proces exemplaar. vervang de `statecode` en `statuscode` waarden in de bovenstaande code respectievelijk **0** en **2** .
 
-#### <a name="cross-entity-navigation"></a>Navigatie tussen entiteiten
+#### <a name="cross-entity-navigation"></a>Navigatie in meerdere entiteiten
 
-Voor navigatie tussen entiteiten in dit voorbeeld moet u de actieve fase van het procesexemplaar instellen op de laatste fase, S3 (id=a107e2fd-7543-4c1a-b6b4-b8060ecb1a1a), het traversalpad dienovereenkomstig bijwerken en de record van een contactpersoon instellen als de primaire entiteitsrecord zoals in de definitie van de bedrijfsprocesstroom.
+Voor navigatie in meerdere entiteiten in dit voor beeld moet u het actieve stadium van het proces exemplaar instellen op de laatste fase, S3 (ID = a107e2fd-7543-4c1a-b6b4-b8060ecb1a1a), het overlopende pad bijwerken en een contact record als primaire entiteits record instellen zoals per de definitie van de bedrijfs proces stroom.
 
 ```http
 PATCH [Organization URI]/api/data/v9.0/new_mycustombpfs(dc2ab599-306d-e811-80ff-00155d513100) HTTP/1.1   
@@ -321,72 +322,72 @@ OData-Version: 4.0
 }
 ``` 
 
-### <a name="delete-a-business-process-flow-entity-record-process-instance"></a>Entiteitsrecord voor bedrijfsprocesstroom (procesexemplaar) verwijderen
+### <a name="delete-a-business-process-flow-entity-record-process-instance"></a>Een entiteits record voor een bedrijfs proces stroom verwijderen (proces exemplaar)
 
-Gebruik de volgende web-API-aanvraag:
+Gebruik de volgende Web API-aanvraag:
 
-**Aanvraag**
+**Schot**
 
 ```http
 DELETE [Organization URI]/api/data/v9.0/new_mycustombpfs(dc2ab599-306d-e811-80ff-00155d513100) HTTP/1.1
 ```  
 
-**Respons**
+**Beantwoord**
 
-Als de record bestaat, krijgt u een normale respons met de status 204 om aan te geven dat het verwijderen is gelukt. Als de entiteit niet wordt gevonden, krijgt u een respons met de status 404.
+Als de record bestaat, krijgt u een normaal antwoord met de status 204 om aan te geven dat het verwijderen is voltooid. Als de entiteit niet wordt gevonden, ontvangt u een antwoord met de status 404.
 
-## <a name="use-retrieveprocessinstances-and-retrieveactivepath-messages"></a>RetrieveProcessInstances- en RetrieveActivePath-berichten gebruiken
+## <a name="use-retrieveprocessinstances-and-retrieveactivepath-messages"></a>RetrieveProcessInstances-en RetrieveActivePath-berichten gebruiken
 
-Gebruik het bericht `RetrieveProcessInstances` (<xref href="Microsoft.Dynamics.CRM.RetrieveProcessInstances?text=RetrieveActivePath Function" /> of <xref:Microsoft.Crm.Sdk.Messages.RetrieveProcessInstancesRequest>) om alle exemplaren van een bedrijfsprocesstroom op te halen voor een entiteitsrecord van alle definities van bedrijfsprocessen. De exemplaren van een bedrijfsprocesstroom die worden geretourneerd voor een entiteit worden gerangschikt op basis van het kenmerk `modifiedon` voor het exemplaar. Zo zal het meest recent gewijzigde exemplaar van de bedrijfsprocesstroom de *eerste* record zijn in de geretourneerde verzameling. Het meest recent gewijzigde exemplaar van de bedrijfsprocesstroom is het exemplaar dat in de gebruikersinterface actief is voor een entiteitsrecord.  
+Gebruik het `RetrieveProcessInstances` bericht (<xref href="Microsoft.Dynamics.CRM.RetrieveProcessInstances?text=RetrieveActivePath Function" /> of <xref:Microsoft.Crm.Sdk.Messages.RetrieveProcessInstancesRequest>) om alle bedrijfsproces stroom exemplaren voor een entiteits record op te halen voor alle bedrijfsproces definities. De bedrijfsproces stroom instanties die voor een entiteit worden geretourneerd, worden geordend op basis van het `modifiedon` kenmerk voor het exemplaar. Zo is het meest recent gewijzigde exemplaar van de bedrijfs proces stroom de *eerste* record in de geretourneerde verzameling. Het meest recent gewijzigde exemplaar van de bedrijfs proces stroom is de instantie die actief is op de gebruikers interface voor een entiteits record.  
   
-Elke record voor het exemplaar van een bedrijfsprocesstroom die wordt geretourneerd voor een entiteitsrecord als gevolg van het gebruik van het bericht `RetrieveProcessInstances` slaat de id van de actieve fase op in het kenmerk `processstageid`, dat kan worden gebruikt voor het vinden van de actieve fase, waarna naar de vorige of volgende fase wordt overgeschakeld. Hiervoor moet u eerst het actieve pad van het exemplaar van een bedrijfsprocesstroom vinden en de fasen die beschikbaar zijn in het exemplaar van de processtroom. Dit kan met behulp van het bericht `RetrieveActivePath` (<xref href="Microsoft.Dynamics.CRM.RetrieveActivePath?text=RetrieveActivePath Function" /> of <xref:Microsoft.Crm.Sdk.Messages.RetrieveActivePathRequest>).   
+Elke instantie record van een bedrijfsproces stroom die wordt geretourneerd voor een entiteits record als gevolg van het gebruik van het `RetrieveProcessInstances` bericht slaat de ID van de actieve fase op in het `processstageid` kenmerk dat kan worden gebruikt om het actieve stadium te vinden en vervolgens naar het vorige of volgende stadium te gaan. Als u dit wilt doen, moet u eerst het actieve pad van een exemplaar van een bedrijfsproces stroom en de beschik bare fasen in het proces stroom exemplaar zoeken met behulp van het `RetrieveActivePath` bericht (<xref href="Microsoft.Dynamics.CRM.RetrieveActivePath?text=RetrieveActivePath Function" /> of <xref:Microsoft.Crm.Sdk.Messages.RetrieveActivePathRequest>).   
   
- Als u weet wat de actieve fase is en beschikt over gegevens van het actieve pad voor een exemplaar van een bedrijfsprocesstroom, kunt u aan de hand van deze gegevens naar een vorige of volgende fase in het actieve pad gaan. Voorwaartse navigatie van fasen moet op volgorde gebeuren. Dit houdt in dat u alleen naar de volgende fase in het actieve pad mag overschakelen.   
+ Zodra u de actieve fase en de gegevens van het actieve pad voor een exemplaar van een bedrijfsproces stroom hebt, kunt u de informatie gebruiken om over te stappen op een vorige of volgende fase in het actieve pad. Voorwaartse navigatie van fasen moet worden uitgevoerd, dat wil zeggen, dat wil zeggen dat u alleen naar de volgende fase in het actieve pad moet gaan.   
   
- Voor het volledige codevoorbeeld waarin het gebruik van deze twee methoden en fasenavigatie met behulp van de [Organisatieservice](/dynamics365/customer-engagement/developer/org-service/use-organization-service-read-write-data-metadata) wordt gedemonstreerd, raadpleegt u [Voorbeeld: Werken met bedrijfsprocesstromen](sample-work-business-process-flows.md). 
+ Zie voor [Beeld: werken met bedrijfsproces stromen](sample-work-business-process-flows.md)voor het volledige voor beeld van het gebruik van deze twee methoden en voor het navigeren met fase ring met behulp van de [organisatie service](/dynamics365/customer-engagement/developer/org-service/use-organization-service-read-write-data-metadata). 
 
 <a name="ApplyBPF"></a>   
-## <a name="apply-business-process-flow-while-creating-an-entity-record"></a>Bedrijfsprocesstroom toepassen tijdens het maken van een entiteitsrecord
+## <a name="apply-business-process-flow-while-creating-an-entity-record"></a>Bedrijfs proces stroom Toep assen tijdens het maken van een entiteits record
 
-Deze sectie bevat informatie over het standaardgedrag voor het automatisch toepassen van bedrijfsprocesstromen op nieuwe entiteitsrecords die zijn gemaakt in Customer Engagement en hoe u dit gedrag kunt overschrijven om een bedrijfsprocesstroom van uw keuze toe te passen voor nieuwe entiteitsrecords.
+Deze sectie bevat informatie over het standaard gedrag voor het Toep assen van bedrijfs proces stromen naar nieuwe entiteits records die zijn gemaakt in Common Data Service, en hoe u deze kunt negeren om een bedrijfsproces stroom van uw keuze toe te passen op nieuwe entiteits records.
 
-De standaardinstelling is dat voor een entiteit waarvoor meerdere bedrijfsprocesstromen zijn gedefinieerd, een bedrijfsprocesstroom op de nieuwe entiteitsrecord wordt toegepast door het systeem die wordt bepaald door de volgende multistapslogica:
-1. Identificeer alle bedrijfsprocesstromen die van toepassing zijn op de nieuwe entiteitsrecord, op basis van het kenmerk **Workflow.PrimaryEntity** van de records met de definitie van de bedrijfsprocesstromen.
-2. Identificeer de definities van de bedrijfsprocesstromen waartoe de huidige gebruiker toegang heeft. Zie [Beveiliging beheren voor bedrijfsprocesstromen](#BPFSecurity) eerder in dit onderwerp voor informatie over hoe de toegang tot een bedrijfsprocesstroom wordt bepaald en beheerd.<br/>  
-3. Alle definities van bedrijfsprocesstromen in het systeem zijn onderhevig aan een globale volgorde per entiteit. De volgorde van de bedrijfsprocesstromen wordt opgeslagen in het kenmerk **Workflow.ProcessOrder**. De definities van de bedrijfsprocesstroom voor een entiteit worden op basis van deze volgorde gesorteerd en de definitie met de laagste positie wordt geselecteerd.
-4. Als de entiteitsrecord wordt gemaakt van een bedrijfs-app (app-module), is het zo dat er nog één filterniveau wordt toegepast om de bedrijfsprocesstroom te kiezen die automatisch wordt toegepast op de nieuwe entiteitsrecord. Als gebruikers werken in een app, hebben ze alleen toegang tot relevante entiteiten, bedrijfsprocesstromen, weergaven en formulieren waartoe ze toegang hebben op basis van de beveiligingsrollen die aan de bedrijfs-app zijn toegewezen. 
-    - Als de bedrijfs-app geen bedrijfsprocesstroom bevat, wordt een bedrijfsprocesstroom toegepast zoals wordt beschreven tot stap 3.
-    - Als de bedrijfs-app een of meer bedrijfsprocesstromen heeft, zijn alleen de bedrijfsprocesstromen die aanwezig zijn in de app van toepassing. Wanneer de gebruiker werkt in de context van een bedrijfs-app, wordt de lijst met bedrijfsprocesstromen uit stap 3 in dit geval verder gefilterd op de stromen die deel uitmaken van de bedrijfs-app die aanwezig zijn in de app-module, en worden deze gesorteerd op de procesvolgorde. 
-    - Als in een bedrijfs-app geen bedrijfsprocesstroom beschikbaar is voor de entiteit of alleen een stroom waartoe de gebruiker geen toegang heeft, wordt er geen bedrijfsprocesstroom toegepast voor de nieuwe entiteitsrecord.
+Voor een entiteit waarvoor meerdere bedrijfsproces stromen zijn gedefinieerd, past het systeem standaard een bedrijfsproces stroom toe op de nieuwe entiteits record met behulp van de volgende logica voor meerdere stappen:
+1. Identificeer alle bedrijfsproces stromen die van toepassing zijn op de nieuwe entiteit record op basis van het **werk stroom. PrimaryEntity** -kenmerk van de definitie records van de bedrijfs proces stroom.
+2. Identificeer de bedrijfsproces stroom definities waartoe de huidige gebruiker toegang heeft. Zie [beveiliging voor bedrijfsproces stromen beheren](#BPFSecurity) eerder in dit onderwerp voor meer informatie over hoe toegang tot een bedrijfs proces stroom wordt bepaald en beheerd.<br/>  
+3. Voor alle bedrijfsproces stroom definities in het systeem gelden globale orders per entiteit. De volg orde van de bedrijfs proces stroom wordt opgeslagen in het kenmerk **workflow. ProcessOrder** . De definities van de bedrijfs proces stroom voor een entiteit worden gesorteerd op basis van deze volg orde en de waarde met de laagste volg orde wordt gekozen.
+4. Ten slotte, als de entiteits record wordt gemaakt op basis van een zakelijke app (app-module), wordt er nog één filter niveau toegepast om de bedrijfs proces stroom te kiezen die automatisch moet worden toegepast op de nieuwe entiteits record. Wanneer gebruikers in een app werken, kunnen ze alleen toegang krijgen tot relevante entiteiten, bedrijfs proces stromen, weer gaven en formulieren waartoe ze toegang hebben op basis van de beveiligings rollen die aan de zakelijke app zijn toegewezen. 
+    - Als de zakelijke app geen bedrijfsproces stroom bevat, wordt bedrijfs proces stroom toegepast, zoals wordt uitgelegd tot stap 3.
+    - Als de bedrijfs-app een of meer bedrijfs processen heeft, zijn alleen de bedrijfs proces stromen die in de app aanwezig zijn, van toepassing. In dit geval, wanneer de gebruiker binnen een context van een zakelijke app werkt, wordt de lijst met bedrijfsproces stromen uit stap 3 verder gefilterd naar de processen die deel uitmaken van de zakelijke app die aanwezig zijn in de app-module en worden gesorteerd op basis van de volg orde van het proces. 
+    - Als er geen bedrijfsproces stroom beschikbaar is in een bedrijfs-app voor de entiteit, of een bedrijf waartoe de gebruiker toegang heeft, wordt er geen bedrijfs proces stroom toegepast voor de nieuwe entiteits record.
 
-U kunt de standaardlogica voor het automatisch toepassen van bedrijfsprocesstromen op nieuwe entiteitsrecords uitschakelen. Om dit te doen, stelt u het kenmerk **ProcessId** van de entiteit in op een van de volgende waarden tijdens het maken van een nieuwe entiteitsrecord:
-- Stel het kenmerk in op **Guid.Empty** om het instellen van een bedrijfsprocesstroom voor nieuwe entiteitsrecords over te slaan. Dit is bijvoorbeeld handig als u bulksgewijs entiteitsrecords maakt, maar geen bedrijfsprocesstroom op de records wilt toepassen.
-- Stel het kenmerk in op een specifieke entiteit van een bedrijfsprocesstroom (als een verwijzing naar een entiteit). In dit geval geldt past het systeem de opgegeven bedrijfsprocesstroom toe in plaats van de standaardlogica.
+U kunt de standaard logica van bedrijfs proces stromen die automatisch worden toegepast, overschrijven naar nieuwe entiteits records. Als u dit wilt doen, stelt u het kenmerk **ProcessID** van de entiteit in op een van de volgende waarden bij het maken van een nieuwe entiteits record:
+- Stel in op **GUID. empty** om het instellen van een bedrijfs proces stroom voor nieuwe entiteits records over te slaan. U kunt dit doen als u bulksgewijze entiteits records maakt, maar u niet wilt dat bedrijfsproces stroom hierop wordt toegepast.
+- Stel deze in op een specifieke bedrijfs proces stroom-entiteit (als entiteits verwijzing). In dit geval wordt de opgegeven bedrijfs proces stroom toegepast in plaats van de standaard logica.
 
-Als u geen waarde instelt voor het kenmerk **ProcessId** tijdens het maken van een nieuwe entiteitsrecord, past het systeem de standaardlogica toe, zoals die eerder is beschreven.
+Als u geen waarde voor het kenmerk **ProcessID** instelt tijdens het maken van een nieuwe entiteits record, wordt de standaard logica toegepast zoals eerder is uitgelegd.
 
 > [!NOTE]
-> U kunt de standaardlogica voor het automatisch toepassen van bedrijfsprocesstromen op nieuwe entiteitsrecords uitschakelen, maar dit kan alleen programmatisch. Dit kan dus niet via de gebruikersinterface.
+> Het overschrijven van de standaard logica van bedrijfs proces stromen die automatisch worden toegepast op nieuwe entiteits records wordt alleen programmatisch ondersteund. U kunt dit niet doen met behulp van de gebruikers interface.
 
-## <a name="legacy-process-related-attributes-in-entities"></a>Verouderde procesgerelateerde kenmerken in entiteiten
+## <a name="legacy-process-related-attributes-in-entities"></a>Verouderde proces-gerelateerde kenmerken in entiteiten
 
-De verouderde procesgerelateerde kenmerken (zoals **ProcessId**, **StageId** en **TraversedPath**) voor entiteiten die zijn ingeschakeld voor bedrijfsprocesstromen zijn al afgeschaft. Het manipuleren van deze verouderde procesgerelateerde kenmerken voor doelentiteitsrecords is dan ook geen garantie voor consistentie van de status van de bedrijfsprocesstroom en is ***geen*** ondersteund scenario. De aanbevolen manier is om de kenmerken van de entiteit voor de bedrijfsprocesstroom te gebruiken, zoals eerder is uitgelegd in de sectie [Entiteitsrecords voor bedrijfsprocesstromen maken, ophalen, bijwerken en verwijderen (procesexemplaren)](#create-retrieve-update-and-delete-business-process-flow-entity-records-process-instances).
+De verouderde aan het proces gerelateerde kenmerken (zoals **ProcessID**, **StageId**en **TraversedPath**) op entiteiten die zijn ingeschakeld voor bedrijfsproces stromen, zijn al afgeschaft. Het bewerken van deze verouderde proces kenmerken voor de doel entiteit records biedt geen garantie voor de consistentie van de status van de bedrijfs processen en is ***geen*** ondersteund scenario. De aanbevolen manier is de kenmerken van de entiteit bedrijfs proces stroom te gebruiken zoals eerder is uitgelegd in de sectie [records voor bedrijfs proces stroom maken, ophalen, bijwerken en verwijderen (proces exemplaren)](#create-retrieve-update-and-delete-business-process-flow-entity-records-process-instances)
 
-De enige uitzondering hierop is het programmatisch wijzigen van het kenmerk **ProcessId** tijdens het maken van een entiteitsrecord om de standaardtoepassing van de bedrijfsprocesstroom te overschrijven met het nieuwe record. Dit wordt uitgelegd in de vorige sectie: [Bedrijfsprocesstroom toepassen tijdens het maken van een entiteitsrecord](#ApplyBPF).
+De enige uitzonde ring hierop is het programmatisch wijzigen van het kenmerk **ProcessID** tijdens het maken van een entiteits record om de standaard toepassing van de bedrijfs proces stroom te overschrijven naar de nieuwe record, zoals wordt uitgelegd in de vorige sectie: [bedrijf Toep assen proces stroom tijdens het maken van een entiteits record](#ApplyBPF).
 
 <a name="BKMK_clientSideScript"></a>   
-## <a name="client-side-programmability-support-for-business-process-flows"></a>Programmeerondersteuning aan clientzijde voor bedrijfsprocesstromen  
- Er is een object dat u aan de clientzijde kunt gebruiken voor interactie met bedrijfsprocesstromen in uw formulierscripts. Bedrijfsprocesstromen activeren gebeurtenissen aan de clientzijde telkens wanneer er een proces wordt toegepast op een record, de fase wordt gewijzigd of de status van de fase wordt gewijzigd in `Active`, `Finished` of `Aborted`. Meer informatie: [formContext.data.process (naslag voor client-API)](/dynamics365/customer-engagement/developer/clientapi/reference/formcontext-data-process.md)  
+## <a name="client-side-programmability-support-for-business-process-flows"></a>Programmeer bare ondersteuning aan de client zijde voor bedrijfsproces stromen  
+ Er is een client-side-object dat u kunt gebruiken om te communiceren met bedrijfsproces stromen in uw formulier scripts. Bedrijfs proces stromen activeren client-side-gebeurtenissen telkens wanneer een proces wordt toegepast op een record, het stadium wordt gewijzigd of de status wordt gewijzigd in `Active`, `Finished`of `Aborted`. Meer informatie: [formContext. data. Process (API-verwijzing van client)](/dynamics365/customer-engagement/developer/clientapi/reference/formcontext-data-process.md)  
   
 <a name="BKMK_MaxSettings"></a>   
 ## <a name="maximum-number-of-processes-stages-and-steps"></a>Maximum aantal processen, fasen en stappen  
- Per entiteit is de standaardwaarde voor het maximum aantal geactiveerde bedrijfsprocesstromen 10. U kunt een andere waarde opgeven met behulp van het kenmerk `Organization.MaximumActiveBusinessProcessFlowsAllowedPerEntity`. Als de waarde echter groter is dan 10, heeft dit mogelijk gevolgen voor de prestaties van uw systeem wanneer u schakelt tussen processen of een record opent waaraan een bedrijfsprocesstroom is toegewezen. Dit kan met name zo zijn als processen meerdere entiteiten omspannen.  
+ Per entiteit is de standaard waarde voor het maximum aantal actieve proces stromen van het bedrijf 10. U kunt een andere waarde opgeven met behulp van het kenmerk `Organization.MaximumActiveBusinessProcessFlowsAllowedPerEntity`. Als de waarde echter groter is dan 10, wordt er mogelijk een afname van de prestaties van uw systeem weer gegeven wanneer u overschakelt naar een ander proces of een record opent met een toegewezen bedrijfsproces stroom. Dit kan bijzonder merkbaar zijn als processen meerdere entiteiten omvatten.  
   
- De volgende instellingen kunnen niet worden aangepast:  
+ De volgende instellingen zijn niet aanpasbaar:  
   
 -   Het maximum aantal fasen per entiteit in het proces is 30.  
   
 -   Het maximum aantal stappen in elke fase is 30.  
   
--   Het maximum aantal entiteiten dat kan deelnemen in de processtroom is 5.  
+-   Het maximum aantal entiteiten dat kan deel nemen aan de proces stroom is 5.  
 

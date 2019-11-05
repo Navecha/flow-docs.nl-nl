@@ -1,6 +1,6 @@
 ---
-title: Uw knoppen delen met anderen. | Microsoft Docs
-description: Deel uw knoppen met anderen, zodat ze uw knoppen kunnen gebruiken en zo tijd kunnen besparen.
+title: Deel uw knoppen met anderen. | Microsoft Docs
+description: Deel uw knoppen met anderen, zodat ze uw knoppen kunnen gebruiken en Bespaar tijd.
 services: ''
 suite: flow
 documentationcenter: na
@@ -20,127 +20,128 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 77b46d10ec3856054dcc8e1734b327bac9a01596
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.openlocfilehash: 098ebf9d8e02ede22a7914a2458375eb3641544a
+ms.sourcegitcommit: 510706f5699b6cf9dda9dcafbed715f9f6d559e8
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "64465700"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73548414"
 ---
-# <a name="share-button-flows-in-microsoft-flow"></a>Knopstromen delen met anderen in Microsoft Flow
-In de mobiele app van Microsoft Flow kunt u [knopstromen](introduction-to-button-flows.md) (knoppen) delen met andere gebruikers of groepen in uw organisatie. Wanneer u een knop deelt, kan de persoon of groep met wie u deelt, uw knop op dezelfde manier gebruiken als de eigen knoppen. U kunt ook [een koppeling delen](share-buttons.md#re-share-a-button) naar knoppen die een andere persoon met u heeft gedeeld. U kunt op elk gewenst moment [stoppen met het delen](share-buttons.md#stop-sharing-a-button) van uw knoppen.
+# <a name="share-button-flows-in-microsoft-flow"></a>Knop stromen delen in Microsoft Flow
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+In de mobiele app van Microsoft Flow kunt u [knop stromen](introduction-to-button-flows.md) (knoppen) delen met andere gebruikers of groepen in uw organisatie. Wanneer u een knop deelt, kan de persoon of groep met wie u deelt uw knop uitvoeren, op dezelfde manier als waarop ze hun eigen knoppen uitvoeren. U kunt ook [een koppeling delen](share-buttons.md#re-share-a-button) met knoppen die een andere persoon met u heeft gedeeld. U kunt het delen van uw knoppen op elk gewenst moment [beëindigen](share-buttons.md#stop-sharing-a-button) .
 
-> De schermafbeeldingen in dit document zijn gemaakt op een Android-apparaat. Als u een iPhone hebt, zien de afbeeldingen er mogelijk anders uit, maar de functionaliteit is hetzelfde.
+> De scherm afbeeldingen in dit document zijn afkomstig van een Android-apparaat. Als u een iPhone gebruikt, worden de afbeeldingen mogelijk anders weer gegeven, maar de functionaliteit is hetzelfde.
 > 
 > 
 
 Volg [deze stappen](share-buttons.md#use-shared-buttons) om een knop te gebruiken die iemand met u heeft gedeeld.
 
 ## <a name="prerequisites"></a>Vereisten
-U hebt het volgende nodig om knoppen te delen:
+Als u knoppen wilt delen, hebt u het volgende nodig:
 
-* Een account met toegang tot [Microsoft Flow](https://flow.microsoft.com).
+* Een account met toegang tot [Microsoft flow](https://flow.microsoft.com).
 * Een stroom om te delen.
-* Een mobiel apparaat met de Microsoft Flow-app voor [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios) of [Windows Phone](https://aka.ms/flowmobilewindows).
-* Een groep of gebruiker binnen uw organisatie met wie de knop moet worden gedeeld.
+* Een mobiel apparaat met de mobiele app Microsoft Flow voor [Android](https://aka.ms/flowmobiledocsandroid), [IOS](https://aka.ms/flowmobiledocsios)of [Windows Phone](https://aka.ms/flowmobilewindows).
+* Een groep of gebruiker binnen uw organisatie met wie u de knop wilt delen.
 
 ## <a name="share-a-button"></a>Een knop delen
-U kunt een knop delen vanaf het tabblad **Knoppen** van de mobiele app van Microsoft Flow.
+U kunt een knop delen via het tabblad **knoppen** van de mobiele app van Microsoft flow.
 
 1. Tik op het kleine pictogram naast de knop die u wilt delen.
    
     ![knop delen](./media/share-buttons/share-button-flows-buttons-tab.png)
-2. Tik op **Anderen uitnodigen** op de pagina **Knopgebruikers**.
+2. Tik op **anderen uitnodigen** op de pagina **knop gebruikers** .
    
     ![knop delen](./media/share-buttons/share-button-flows-button-users.png)
-3. Zoek de groep of gebruiker met wie u de knop wilt delen en selecteer de groep of gebruiker.
+3. Zoek naar en selecteer de groep of persoon met wie u de knop wilt delen.
    
     ![knop delen](./media/share-buttons/share-button-flows-invite-others-select.png)
-4. Tik op **VERZENDEN** op de pagina **Anderen uitnodigen**.
+4. Tik op de pagina **anderen uitnodigen** op **verzenden** .
    
     ![knop delen](./media/share-buttons/share-button-flows-invite-others-send.png)
-5. Tik op **GEREED** op de pagina waarop wordt aangegeven dat het delen van de knop is voltooid.
+5. Tik op **gereed** op de pagina waarop wordt aangegeven dat de bewerking voor het delen van de knop is voltooid.
    
     ![knop delen](./media/share-buttons/share-button-flows-invite-others-done.png)
 
-## <a name="require-users-to-use-their-own-connections"></a>Vereisen dat gebruikers hun eigen verbindingen gebruiken
+## <a name="require-users-to-use-their-own-connections"></a>Gebruikers moeten hun eigen verbindingen gebruiken
 > [!NOTE]
-> Wanneer u een knop deelt, kunt u toestaan dat personen met wie u de knop hebt gedeeld, alle verbindingen gebruiken die uw knop gebruikt. U kunt ook vereisen dat ze hun eigen verbindingen gebruiken. Als u anderen uw verbindingen laat gebruiken, hebben ze geen toegang tot de referenties in de verbinding en kunnen ze deze niet opnieuw gebruiken voor een andere stroom.
+> Wanneer u een knop deelt, kunt u personen met wie u de knop hebt gedeeld, toestaan om alle verbindingen te gebruiken die door de knop worden gebruikt. U kunt er ook voor zorgen dat ze hun eigen verbindingen gebruiken. Als u toestaat dat anderen uw verbindingen gebruiken, hebben ze geen toegang tot de referenties in uw verbinding of kunnen ze niet opnieuw worden gebruikt in een andere stroom.
 > 
 > 
 
-Volg deze stappen om te vereisen dat personen met wie u de knoppen hebt gedeeld, hun eigen verbindingen gebruiken.
+Volg deze stappen om te vereisen dat personen met wie u uw knoppen hebt gedeeld, hun eigen verbindingen gebruiken.
 
-1. Selecteer **VERBINDINGEN BEHEREN** op het scherm dat meteen na het delen van een knop wordt weergegeven.
-2. Selecteer **BEWERKEN** op de knop die u wilt beheren.
-3. Selecteer **Door gebruiker opgegeven** of uw e-mailadres.
+1. Selecteer **verbindingen beheren** op het scherm dat direct na het delen van een knop wordt weer gegeven.
+2. Selecteer **bewerken** op de knop die u wilt beheren.
+3. Selecteer de **door de gebruiker** of uw e-mail adres gegeven.
    
-    Met uw keuze geeft u aan welke verbindingen moeten worden gebruikt voor de gedeelde knop.
+    Uw keuze geeft aan welke verbindingen moeten worden gebruikt op de knop gedeeld.
    
     ![knop delen](./media/share-buttons/share-button-select-connection-provided-by-user.png)
    
-    U kunt uw keuze op elk gewenst moment weergeven of wijzigen. Hiervoor selecteert u achtereenvolgens het tabblad **Stromen** > de stroom die u hebt gedeeld > **Gebruikers/verbindingen** > het tabblad **VERBINDINGEN** > **BEWERKEN** voor de knop die u wilt beheren.
+    U kunt uw keuze op elk gewenst moment weer geven of wijzigen. Hiertoe selecteert u het tabblad **stromen** > de stroom die u hebt gedeeld > **gebruikers en verbindingen** > het tabblad **verbindingen** > **bewerken** op de knop die u wilt beheren.
    
     ![knop delen](./media/share-buttons/share-button-flows-conn-provided-by-user.png)
 
-## <a name="view-the-list-of-button-users"></a>De lijst met knopgebruikers weergeven
-U kunt alle groepen of gebruikers weergeven met wie een knop is gedeeld door de volgende stappen uit te voeren op het tabblad **Knoppen**:
+## <a name="view-the-list-of-button-users"></a>De lijst met knop gebruikers weer geven
+U kunt alle groepen of gebruikers met wie een knop wordt gedeeld weer geven door de volgende stappen uit te voeren op het tabblad **knoppen** :
 
 1. Tik op het kleine pictogram naast de knop waarin u geïnteresseerd bent.
-2. Bekijk op de pagina **Knopgebruikers** alle groepen of gebruikers met wie de knop wordt gedeeld.
+2. Bekijk op de pagina **knop gebruikers** alle groepen of gebruikers met wie de knop wordt gedeeld.
    
-    ![knopgebruikers weergeven](./media/share-buttons/share-button-flows-button-users-list.png)
+    ![knop gebruikers weer geven](./media/share-buttons/share-button-flows-button-users-list.png)
 
-## <a name="stop-sharing-a-button"></a>Stoppen met het delen van een knop
-U kunt het delen van een knop stoppen door de volgende stappen te volgen op het tabblad **Knoppen**:
+## <a name="stop-sharing-a-button"></a>Stoppen met delen van een knop
+U kunt het delen van een knop beëindigen door de volgende stappen uit te voeren op het tabblad **knoppen** :
 
 1. Tik op het kleine pictogram naast de knop die u niet meer wilt delen.
-2. Tik op de pagina **Knopgebruikers** op de gebruiker of groep met wie u het delen van de knop wilt stoppen.
+2. Op de pagina **knop gebruikers** tikt u op de gebruiker of groep met wie u wilt stoppen met het delen van de knop.
    
-    ![knop voor stoppen van het delen van een knop](./media/share-buttons/share-button-flows-remove-user-list.png)
-3. Tik op **Gebruiker verwijderen** wanneer de pagina van de gebruiker wordt weergegeven.
+    ![knop delen stoppen](./media/share-buttons/share-button-flows-remove-user-list.png)
+3. Tik op **gebruiker verwijderen** wanneer de pagina van de gebruiker wordt weer gegeven.
    
-    ![knop voor stoppen van het delen van een knop](./media/share-buttons/share-button-flows-remove-user.png)
-4. Wacht totdat het verwijderen is voltooid. De lijst met **knopgebruikers** wordt vernieuwd en de gebruiker of groep die u hebt verwijderd, wordt niet meer weergegeven.
+    ![knop delen stoppen](./media/share-buttons/share-button-flows-remove-user.png)
+4. Wacht tot de bewerking verwijderen is voltooid. U ziet dat de lijst met **knop gebruikers** wordt vernieuwd en de gebruiker of groep die u hebt verwijderd, wordt niet meer weer gegeven.
    
-    ![knop voor stoppen van het delen van een knop](./media/share-buttons/share-button-flows-remove-user-result.png)
+    ![knop delen stoppen](./media/share-buttons/share-button-flows-remove-user-result.png)
 
-## <a name="monitor-the-run-history"></a>De uitvoeringsgeschiedenis controleren
-De volledige uitvoeringsgeschiedenis, inclusief de uitvoeringen die zijn gestart door iemand met wie een knop is gedeeld, wordt alleen weergegeven op het tabblad **Activiteiten** van de mobiele app van Microsoft Flow van de maker van de knop.
+## <a name="monitor-the-run-history"></a>De uitvoerings geschiedenis controleren
+Alle uitvoerings geschiedenis, inclusief de uitvoeringen die zijn gestart door iemand met wie een knop wordt gedeeld, wordt alleen weer gegeven op het tabblad **activiteit** van de Microsoft flow mobiele app van de knop.
 
 ## <a name="use-shared-buttons"></a>Gedeelde knoppen gebruiken
-Voordat u een knop kunt uitvoeren die iemand met u heeft gedeeld, moet u de knop toevoegen aan uw tabblad **Knoppen** van de pagina **Knoppen toevoegen**.
+Voordat u een knop kunt uitvoeren die iemand met u heeft gedeeld, moet u deze toevoegen aan het tabblad **knoppen** op de pagina **knoppen toevoegen** .
 
-1. Tik op **MEER OPHALEN** (of de banner **Er zijn nieuwe knoppen beschikbaar** als deze wordt weergegeven) op het tabblad **Knoppen**.
+1. Tik op **meer ophalen** (of de **nieuwe knoppen zijn beschikbaar** banner als deze wordt weer gegeven) op het tabblad **knoppen** .
    
-    ![er is een nieuwe knop met mij gedeeld](./media/share-buttons/share-button-flows-banner.png)
+    ![nieuwe knop gedeeld met mij](./media/share-buttons/share-button-flows-banner.png)
 2. Tik op de knop die u wilt gebruiken.
    
-    De knop waarop u hebt getikt, wordt direct toegevoegd aan het tabblad **Knoppen** van de Microsoft Flow-app. Vervolgens kunt u de knop op het tabblad **Knoppen** op dezelfde manier gebruiken als alle andere knoppen die hier worden weergegeven.
+    De knop getikt wordt direct toegevoegd aan het tabblad **knoppen** van de app Microsoft flow. U kunt de knop vervolgens op het tabblad **knoppen** gebruiken, net als elke andere knop die daar wordt vermeld.
    
-    ![er is een nieuwe knop met mij gedeeld](./media/share-buttons/share-button-flows-buttons-shared-with-me.png)
+    ![nieuwe knop gedeeld met mij](./media/share-buttons/share-button-flows-buttons-shared-with-me.png)
 
 ## <a name="re-share-a-button"></a>Een knop opnieuw delen
-U kunt een koppeling naar een knop die met u wordt gedeeld, delen.
+U kunt een koppeling delen naar een knop die met u is gedeeld.
 
 1. Selecteer **...** naast de knop die u wilt delen.
-2. Selecteer **Knop met koppeling delen**.
+2. Selecteer de **koppeling knop delen**.
    
-    ![koppeling voor knop opnieuw delen](./media/share-buttons/re-share-button.png)
-3. Selecteer de app die u wilt gebruiken om de knop te delen en volg de stappen om de knop te verzenden naar de persoon met wie u deze wilt delen.
+    ![knop koppeling opnieuw delen](./media/share-buttons/re-share-button.png)
+3. Selecteer de app die u wilt gebruiken om de knop te delen en volg de stappen om de knop te verzenden naar de persoon met wie u wilt delen.
 
 ## <a name="stop-using-a-shared-button"></a>Een gedeelde knop niet meer gebruiken
-Als u een knop die met u is gedeeld niet meer wilt gebruiken, gaat u naar het tabblad **Knoppen** en voert u de volgende stappen uit:
+Als u een knop die met u is gedeeld niet meer wilt gebruiken, verwijdert u deze uit het tabblad **knoppen** door de volgende stappen uit te voeren:
 
-1. Tik op het tabblad **Knoppen** op **...**  naast de knop die u niet meer wilt gebruiken.
+1. Tik op het tabblad **knoppen** op **...** naast de knop die u niet meer wilt gebruiken.
    
     ![knop verwijderen](./media/share-buttons/share-button-flows-added-shared-button.png)
-2. Tik op **Verwijderen** in het menu dat wordt geopend.
+2. Tik op **verwijderen** in het menu dat wordt weer gegeven.
 
-Dat is alles. De knop wordt niet meer weergegeven op het tabblad **Knoppen** van de Microsoft Flow-app.
+Dat is alles. De knop wordt niet meer weer gegeven op het tabblad **knoppen** van de app Microsoft flow.
 
 > [!NOTE]
-> Nadat u een gedeelde knop hebt verwijderd, kunt u deze later zo nodig opnieuw toevoegen door **MEER OPHALEN** op het tabblad **Knoppen** te selecteren.
+> Nadat u een gedeelde knop hebt verwijderd, kunt u deze opnieuw toevoegen door **meer ophalen** te selecteren op het tabblad **knoppen** .
 > 
 > 
 

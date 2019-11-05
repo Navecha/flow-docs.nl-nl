@@ -1,11 +1,12 @@
 ---
-title: Samenvatting van aanvragen door betrokkenen in het kader van de AVG voor Microsoft-accounts (MSA) | Microsoft Docs
-description: Informatie over hoe u moet reageren op AVG-verzoeken van betrokkenen voor Microsoft Flow.
+title: Samen vatting van AVG-gegevens aanvragen voor micro soft-accounts (MSA) | Microsoft Docs
+description: Meer informatie over hoe u kunt reageren op aanvragen voor AVG betrokkenen-gegevens voor Microsoft Flow.
 services: ''
 suite: flow
 documentationcenter: na
-author: KentWeareMSFT
-manager: KFile
+author: MSFTMAN
+manager: KVIVEK
+ms.author: Deonhe
 editor: ''
 tags: ''
 ms.service: flow
@@ -14,54 +15,54 @@ ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 5/16/2018
-ms.author: keweare
 search.app:
 - Flow
 - Powerplatform
 search.audienceType:
 - admin
-ms.openlocfilehash: 3742ac7afed24b0a1523a6038978589d293ba00b
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.openlocfilehash: bff3e050db40c60622496202a092f94cc1d36fca
+ms.sourcegitcommit: 510706f5699b6cf9dda9dcafbed715f9f6d559e8
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "64460295"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73548161"
 ---
-# <a name="respond-to-gdpr-data-subject-rights-dsrs-requests"></a>Reageren op aanvragen van betrokkenen in het kader van de AVG
+# <a name="respond-to-gdpr-data-subject-rights-dsrs-requests"></a>Reageren op DSRs-aanvragen (AVG data subject Rights)
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
-In dit artikel wordt de Algemene verordening gegevensbescherming (AVG) van de Europese Unie beschreven en vindt u stappen die u kunt ondernemen om naleving van de AVG te ondersteunen voor Microsoft Flow-gebruikers die worden geverifieerd met Microsoft-accounts (MSA).
+In dit artikel worden de AVG (AVG) van de Europese Unie beschreven en vindt u stappen die u kunt nemen om AVG-naleving te ondersteunen voor Microsoft Flow gebruikers die verifiëren met micro soft-accounts (MSA).
 
 ## <a name="prerequisites"></a>Vereisten
 
-U hebt een Microsoft-account met een [gratis Microsoft Flow-licentie](https://flow.microsoft.com/pricing/) nodig om de stappen in dit artikel uit te voeren.
+U hebt een MSA met een [gratis Microsoft flow-licentie](https://flow.microsoft.com/pricing/) nodig om de stappen in dit artikel uit te voeren.
 
 >[!TIP]
-> Informatie over naleving van de AVG is ook beschikbaar voor gebruikers die worden geverifieerd met [Azure Active Directory-accounts](gdpr-dsr-summary.md).
+> AVG-compatibiliteits informatie is ook beschikbaar voor gebruikers die zich verifiëren met [Azure Active Directory accounts](gdpr-dsr-summary.md).
 >
 >
 
-## <a name="respond-to-dsrs-for-microsoft-flow-customer-data"></a>Reageren op aanvragen van betrokkenen voor klantgegevens in Microsoft Flow
+## <a name="respond-to-dsrs-for-microsoft-flow-customer-data"></a>Reageren op DSRs voor Microsoft Flow klant gegevens
 
-Een formele aanvraag door betrokkenen aan een verwerkingsverantwoordelijke om actie te ondernemen op de persoonsgegevens van de betrokkene wordt een verzoek van betrokkene genoemd. Persoonsgegevens zijn in de AVG gedefinieerd als **alle gegevens die betrekking hebben op een geïdentificeerde of identificeerbare natuurlijke persoon**. De AVG verleent personen (aangeduid als betrokkenen) rechten voor het beheren van de persoonsgegevens die zijn verzameld door een werkgever, bureau of organisatie (bekend als de verwerkingsverantwoordelijke, of gewoon verantwoordelijke). Het gaat om de volgende rechten:
+De formele aanvraag van een ondertekenaar naar een controller om een actie op hun persoons gegevens uit te voeren, wordt een DSR-aanvraag (data subject Rights) genoemd. AVG definieert persoons gegevens als **gegevens die betrekking hebben op een geïdentificeerde of Identificeer bare natuurlijke persoon**. De AVG biedt personen (ook wel bekend als betrokkene) rechten voor het beheren van de persoons gegevens die door een werk gever, instantie of organisatie worden verzameld (ook wel bekend als de gegevens controller of de controller). Deze rechten zijn onder andere:
 
-* Het ophalen van kopieën van persoonsgegevens.
-* Het aanvragen van verbeteringen in persoonsgegevens.
-* Het beperken van de verwerking van persoonsgegevens.
-* Het verwijderen van persoonsgegevens.
-* Het ontvangen van persoonsgegevens in een digitale indeling zodat de gegevens naar een andere verwerkingsverantwoordelijke kunnen worden verplaatst.
+* Het verkrijgen van kopieën van persoons gegevens.
+* Correcties aanvragen voor persoons gegevens.
+* Het beperken van de verwerking van persoons gegevens.
+* De persoonlijke gegevens worden verwijderd.
+* Het ontvangen van persoons gegevens in een elektronische indeling zodat deze kan worden verplaatst naar een andere controller.
 
-Microsoft biedt producten, services en hulpprogramma's om verwerkingsverantwoordelijken te helpen bij het zoeken naar en verwerken van persoonsgegevens als reactie op een verzoek van een betrokkene betreffende gegevens die in de cloud zijn opgeslagen.
+Micro soft biedt-producten,-services en-hulpprogram ma's om te helpen bij het zoeken naar en reageren op persoonlijke gegevens bij het reageren op DSRs-aanvragen voor gegevens die zich in de cloud bevinden.
 
-Hier volgt een kort overzicht van de processen die in deze handleiding worden beschreven:
+Hier volgt een overzicht van de processen die in deze hand leiding worden beschreven:
 
-1. **Ontdek**: Zoek- en detectieprogramma's gebruiken om eenvoudig zoeken naar klantgegevens die mogelijk het onderwerp van een DSR-aanvraag. Als u vaststelt dat u conform de richtlijnen van uw verwerkingsverantwoordelijke stappen moet ondernemen met betrekking tot de documenten die u verzamelt, kunt u een of meer van de acties voor aanvragen van betrokkenen uitvoeren die in de volgende stappen worden beschreven. Raadpleeg de [Microsoft Flow DSR Discovery-documentatie voor Microsoft-accounts](gdpr-dsr-discovery-msa.md) voor meer informatie. U kunt ook vaststellen dat de aanvraag niet voldoet aan de richtlijnen van uw verwerkingsverantwoordelijke voor het reageren op aanvragen van betrokkenen.
+1. **Ontdekken**: gebruik Zoek-en detectie hulpprogramma's om eenvoudig klant gegevens te vinden die het onderwerp van een DSR-aanvraag kunnen zijn. Als u vaststelt dat de documenten die u verzamelt voldoen aan de richt lijnen voor het nemen van de actie, kunt u een of meer van de DSR-acties uitvoeren die in de volgende stappen worden beschreven. Meer informatie vindt u in de [Microsoft flow DSR-detectie documentatie voor micro soft-accounts](gdpr-dsr-discovery-msa.md). U kunt ook bepalen dat de aanvraag niet voldoet aan de richt lijnen van uw controller voor het reageren op DSR-aanvragen.
 
-1. **Toegang tot**: Ophalen persoonlijke gegevens die zich in de Microsoft cloud bevinden en, indien aangevraagd, maakt u een kopie van deze, zodat die gesteld aan de betrokkene worden kan.
+1. **Toegang**: persoons gegevens ophalen die zich in de micro soft-cloud bevinden en, indien aangevraagd, een kopie hiervan maken, zodat deze beschikbaar is voor de betrokkene.
 
-1. **Rectificatie**: Breng waar van toepassing wijzigingen aan of implementeer andere aangevraagde acties voor de persoonsgegevens.
+1. **Corrigeren**: Breng wijzigingen aan of implementeer andere aangevraagde acties op de persoons gegevens, indien van toepassing.
 
-1. **Beperken**: Beperk de verwerking van persoonsgegevens, hetzij door het verwijderen van licenties voor verschillende onlineservices, hetzij door het waar mogelijk uitschakelen van de gewenste services. U kunt ook gegevens uit de Microsoft-cloud verwijderen en deze lokaal of op een andere locatie bewaren.
+1. **Beperken**: de verwerking van persoons gegevens beperken door licenties voor verschillende onlineservices te verwijderen of de gewenste services waar mogelijk uit te scha kelen. U kunt ook gegevens uit de micro soft-Cloud verwijderen en deze on-premises of op een andere locatie bewaren.
 
-1. **Verwijder**: Verwijder definitief persoonsgegevens in de Microsoft-cloud. Meer informatie over het [verwijderen van persoonsgegevens voor Microsoft-accounts](gdpr-dsr-delete-msa.md). Meer informatie over [het sluiten van een Microsoft-account](gdpr-dsr-accountclose-msa.md).
+1. **Verwijderen**: persoons gegevens die zich in de cloud van micro soft bevinden permanent verwijderen. Meer informatie over het [verwijderen van persoonlijke gegevens voor micro soft-accounts](gdpr-dsr-delete-msa.md). Meer informatie over [het sluiten van een micro soft-account](gdpr-dsr-accountclose-msa.md).
 
-1. **Exporteren**: Verstrek een digitale kopie (in een machineleesbare indeling) van persoonsgegevens. [Meer informatie over het exporteren van persoonsgegevens voor Microsoft-accounts](gdpr-dsr-export-msa.md).
+1. **Exporteren**: een elektronisch exemplaar (in een door de machine Lees bare indeling) persoonlijke gegevens opgeven. [Meer informatie over het exporteren van persoonlijke gegevens voor micro soft-accounts](gdpr-dsr-export-msa.md).

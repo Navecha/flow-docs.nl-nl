@@ -1,6 +1,6 @@
 ---
-title: Vragen over facturering en betaling naar gebruik | Microsoft Docs
-description: Antwoorden op veelgestelde vragen over facturering en betaling naar gebruik in Microsoft Flow
+title: Vragen over facturering en meting | Microsoft Docs
+description: Antwoorden op veelgestelde vragen over facturering en meting in Microsoft Flow
 services: ''
 suite: flow
 documentationcenter: na
@@ -13,81 +13,85 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 11/21/2017
+ms.date: 08/30/2019
 ms.author: deonhe
 search.app:
 - Flow
 - Powerplatform
 search.audienceType:
 - admin
-ms.openlocfilehash: 65f2776af5b0219ea887302d5cfa9e101f62c309
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.openlocfilehash: 69fecb42ba2b89f7a3f5b7541f62a4ee984832ea
+ms.sourcegitcommit: 510706f5699b6cf9dda9dcafbed715f9f6d559e8
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "64460645"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73546201"
 ---
-# <a name="billing-and-metering-questions"></a>Vragen over facturering en betaling naar gebruik
+# <a name="billing-and-metering-questions"></a>Vragen over facturering en meting
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
-In dit artikel vindt u antwoorden op veelgestelde vragen over facturering en betaling naar gebruik in Microsoft Flow.
+In dit artikel vindt u antwoorden op veelgestelde vragen over facturering en meting in Microsoft Flow.
 
-## <a name="where-can-i-find-out-what-pricing-plans-are-available"></a>Waar vind ik welke prijsstellingen beschikbaar zijn?
+>[!NOTE]
+> PowerApps en Microsoft Flow gebruiken een [Nieuw licentie model](https://docs.microsoft.com/power-platform/admin/powerapps-flow-licensing-faq) dat wordt gestart op 1 oktober 2019. 
+
+## <a name="where-can-i-find-out-what-pricing-plans-are-available"></a>Waar kan ik zien welke prijs plannen er beschikbaar zijn?
 
 Zie de [pagina met prijzen](https://flow.microsoft.com/pricing/).
 
-## <a name="where-can-i-find-out-what-my-plan-is"></a>Waar vind ik wat mijn abonnement is?
+## <a name="where-can-i-find-out-what-my-plan-is"></a>Waar kan ik zien wat mijn plan is?
 
 Zie de [pagina met prijzen](https://flow.microsoft.com/pricing/).
 
-## <a name="how-do-i-switch-plans"></a>Hoe verander ik van abonnement?
+## <a name="how-do-i-switch-plans"></a>Hoe kan ik switch-plannen?
 
-Selecteer **Meer** > **prijzen** in de bovenste navigatiemenu en selecteer vervolgens het plan waarnaar u wilt overschakelen.
+Selecteer in het bovenste navigatie menu **meer informatie** > **prijzen**en selecteer vervolgens het plan dat u wilt overschakelen.
 
-![Meer > Prijzen](./media/billing-questions/learn-pricing.png)
+![Meer informatie > prijzen](./media/billing-questions/learn-pricing.png)
 
-## <a name="how-do-i-know-how-much-ive-used"></a>Hoe weet ik hoeveel ik heb gebruikt?
+## <a name="how-do-i-know-how-much-ive-used"></a>Hoe kan ik weet ik hoeveel ik heb gebruikt?
 
-Als u een gratis abonnement of proefabonnement hebt, klikt of tikt u op het tandwielpictogram in de bovenste navigatiebalk om uw huidige gebruik ten opzichte van uw abonnement weer te geven. 
+Als u een gratis abonnement of proef abonnement hebt, klikt of tikt u op het tandwiel pictogram in de bovenste navigatie balk om uw huidige gebruik op basis van uw abonnement weer te geven. 
 
-![De knop Instellingen](./media/billing-questions/settings.png)
+![Knop instellingen](./media/billing-questions/settings.png)
 
-Als u een betaald abonnement hebt, worden uitvoeringsbewerkingen voor alle gebruikers in uw organisatie gegroepeerd. We werken aan functies om de beschikbare quota en het gebruik voor een volledige organisatie zichtbaar te maken.
+Als u een betaald abonnement hebt, worden uitvoeringen gegroepeerd op alle gebruikers in uw organisatie. We werken aan functies om beschik bare quota en gebruik beschikbaar te maken binnen een organisatie.
 
-## <a name="what-happens-if-my-usage-exceeds-the-limits"></a>Wat gebeurt er als mijn gebruik de limiet overschrijdt?
+## <a name="what-happens-if-my-usage-exceeds-the-limits"></a>Wat gebeurt er als mijn gebruik de limieten overschrijdt?
 
-Microsoft Flow beperkt uw stroomuitvoeringen.
+Microsoft Flow beperkt uw stroom uitvoeringen.
 
-## <a name="where-can-i-find-more-information-regarding-the-usage-limits"></a>Waar vind ik meer informatie over de gebruikslimieten?
+## <a name="where-can-i-find-more-information-regarding-the-usage-limits"></a>Waar vind ik meer informatie over de gebruiks limieten?
 
-Zie de sectie **Veelgestelde vragen** op de [pagina met prijzen](https://flow.microsoft.com/pricing/).
+Op de [pagina met prijzen](https://flow.microsoft.com/pricing/)raadpleegt u de sectie **Veelgestelde vragen** .
 
-## <a name="what-happens-if-i-try-to-execute-runs-too-frequently"></a>Wat gebeurt er als ik uitvoeringsbewerkingen te vaak probeer uit te voeren?
+## <a name="what-happens-if-i-try-to-execute-runs-too-frequently"></a>Wat gebeurt er als ik de uitvoering te vaak probeer uit te voeren?
 
-Uw abonnement bepaalt hoe vaak uw stromen worden uitgevoerd. Als u een gratis abonnement hebt, worden uw stromen bijvoorbeeld slechts één keer per vijftien minuten uitgevoerd. Als een stroom minder dan vijftien minuten nadat deze de laatste keer is uitgevoerd, opnieuw wordt geactiveerd, wordt de stroom in de wachtrij geplaatst tot de 15 minuten zijn verstreken.
+Uw abonnement bepaalt hoe vaak uw stromen worden uitgevoerd. Uw stromen kunnen bijvoorbeeld om de 15 minuten worden uitgevoerd als u zich op het gratis abonnement bevindt. Als een stroom minder dan 15 minuten na de laatste uitvoering wordt geactiveerd, wordt deze in de wachtrij geplaatst tot 15 minuten zijn verstreken.
 
-## <a name="what-counts-as-a-run"></a>Wat wordt tot een uitvoeringsbewerking gerekend?
+## <a name="what-counts-as-a-run"></a>Wat is het aantal uitvoer?
 
-Wanneer een stroom wordt geactiveerd, of dit nu door een automatische trigger plaatsvindt of handmatig wordt gestart, wordt dit als een uitvoeringsbewerking geteld. Controleren op nieuwe gegevens wordt niet gerekend als een uitvoeringsbewerking.
+Wanneer een stroom wordt geactiveerd, hetzij door een automatische trigger of door deze hand matig te starten, wordt dit beschouwd als een run. Controleren op nieuwe gegevens wordt niet geteld als uitvoeringen.
 
-## <a name="are-there-differences-between-microsoft-accounts-and-work-or-school-accounts-for-billing"></a>Zijn er voor facturering verschillen tussen Microsoft-accounts en werk- of schoolaccounts?
+## <a name="are-there-differences-between-microsoft-accounts-and-work-or-school-accounts-for-billing"></a>Zijn er verschillen tussen micro soft-accounts en werk-of school accounts voor facturering?
 
-Ja. Als u zich met een Microsoft-account aanmeldt (zoals een account dat eindigt op @outlook.com of @gmail.com), kunt u alleen het gratis abonnement gebruiken. Als u de mogelijkheden van het betaalde abonnement wilt gebruiken, meldt u zich aan met een e-mailadres van een werk- of schoolaccount.
+Klikt. Als u zich aanmeldt met een micro soft-account (zoals een account dat eindigt op @outlook.com of @gmail.com), kunt u alleen het gratis abonnement gebruiken. Als u wilt profiteren van de functies in het betaalde abonnement, meldt u zich aan met een werk-of school-e-mail adres.
 
-## <a name="im-trying-to-upgrade-but-im-told-my-account-isnt-eligible"></a>Ik probeer een upgrade uit te voeren, maar ik krijg bericht dat mijn account hiervoor niet in aanmerking komt
+## <a name="im-trying-to-upgrade-but-im-told-my-account-isnt-eligible"></a>Ik probeer een upgrade uit te voeren, maar mijn account komt niet in aanmerking.
 
-Als u wilt bijwerken, gebruikt u een account voor werk of school of maakt u een [Office 365-proefaccount](https://powerbi.microsoft.com/documentation/powerbi-admin-signing-up-for-power-bi-with-a-new-office-365-trial/) aan.
+Als u een upgrade wilt uitvoeren, gebruikt u een werk-of school account of maakt u een [proef account voor Office 365](https://powerbi.microsoft.com/documentation/powerbi-admin-signing-up-for-power-bi-with-a-new-office-365-trial/).
 
-## <a name="why-did-i-run-out-of-runs-when-my-flow-only-ran-a-few-times"></a>Waarom heb ik geen uitvoeringsbewerkingen meer terwijl ik mijn stroom slechts een paar keer heb uitgevoerd?
+## <a name="why-did-i-run-out-of-runs-when-my-flow-only-ran-a-few-times"></a>Waarom is er geen uitvoering meer meer wanneer mijn stroom slechts enkele keren is uitgevoerd?
 
-Bepaalde stromen worden mogelijk vaker uitgevoerd dan u verwacht. U kunt bijvoorbeeld een stroom maken die u telkens een pushmelding stuurt als uw manager u een e-mailbericht stuurt. Deze stroom moet telkens worden uitgevoerd als u een e-mailbericht (van wie dan ook) ontvangt, omdat de stroom moet controleren of het e-mailadres van uw manager afkomstig is. Deze actie wordt geteld als een uitvoeringsbewerking.
+Bepaalde stromen kunnen vaker worden uitgevoerd dan u verwacht. U kunt bijvoorbeeld een stroom maken die u een push melding stuurt wanneer uw manager u een e-mail stuurt. Deze stroom moet worden uitgevoerd elke keer dat u een e-mail ontvangt (van iedereen), omdat de stroom moet controleren of de e-mail afkomstig is van uw manager. Deze actie telt als een uitvoering.
 
-U kunt dit probleem omzeilen door alle filters die u nodig hebt in de trigger op te nemen. Vouw in het voorbeeld van de pushmelding het menu **Geavanceerde opties** uit en geef het e-mailadres van uw manager op in het veld **Van**.
+U kunt dit probleem omzeilen door alle filters te plaatsen die u nodig hebt in de trigger. Vouw in het voor beeld van een push melding het menu **Geavanceerde opties** uit en geef het e-mail adres van uw manager op in het veld **van** .
 
-## <a name="other-limits-and-caveats"></a>Andere limieten en voorbehouden
+## <a name="other-limits-and-caveats"></a>Andere beperkingen en voor behoud
 
-* Per account zijn de volgende aantallen toegestaan:
+* Elk account kan zoveel zijn als:
   * 250 stromen.
-  * Vijftien aangepaste connectors.
-  * 20 verbindingen per API en totaal 100 verbindingen.
-* Een gateway kunt u alleen in de standaardomgeving installeren.
-* Bepaalde externe connectors, zoals Twitter, implementeren bandbreedtebeperking van de verbinding om QoS (Quality-of-Service) te beheren. Wanneer bandbreedtebeperking van kracht is, mislukken uw stromen. Als uw stromen mislukken, moet u de details van de mislukte uitvoering controleren in de uitvoeringsgeschiedenis van de stroom.
+  * 15 aangepaste connectors.
+  * 20 verbindingen per API en 100 verbindingen totaal.
+* U kunt alleen een gateway in de standaard omgeving installeren.
+* Bepaalde externe connectors, zoals Twitter, implementeren beperking van de verbinding om de kwaliteit van de service te bepalen. Uw stromen mislukken wanneer beperking van kracht is. Als uw stromen mislukken, controleert u de details van de uitvoering die is mislukt in de uitvoerings geschiedenis van de stroom.

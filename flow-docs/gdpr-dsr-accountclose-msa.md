@@ -1,11 +1,12 @@
 ---
-title: Aanvragen van betrokkenen voor het sluiten van accounts in het kader van de AVG met Microsoft Flow voor Microsoft-accounts (MSA) | Microsoft Docs
-description: Ontdek hoe u Microsoft Flow kunt gebruiken om te reageren op aanvragen van betrokkenen voor het sluiten van accounts in het kader van de AVG voor Microsoft-accounts.
+title: AVG voor micro soft-accounts (MSA) voor het account van de gegevens van het object Microsoft Flow Microsoft Docs
+description: Meer informatie over het gebruik van Microsoft Flow om te reageren op aanvragen voor het sluiten van AVG betrokkenen-gegevens van een micro soft-account.
 services: ''
 suite: flow
 documentationcenter: na
-author: KentWeareMSFT
-manager: KFile
+author: MSFTMAN
+manager: KVIVEK
+ms.author: Deonhe
 editor: ''
 tags: ''
 ms.service: flow
@@ -14,56 +15,56 @@ ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 5/25/2018
-ms.author: keweare
 search.app:
 - Flow
 - Powerplatform
 search.audienceType:
 - admin
-ms.openlocfilehash: 6480fe6a7e6ca26a7dbad3952b6608a9e0a880ae
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.openlocfilehash: 8665148baf4d752f1f384670b296a66bbfca6163
+ms.sourcegitcommit: 510706f5699b6cf9dda9dcafbed715f9f6d559e8
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "65035066"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73548002"
 ---
-# <a name="responding-to-gdpr-data-subject-account-close-requests-for-microsoft-flow"></a>Reageren op AVG-verzoeken van betrokkenen voor het sluiten van accounts in Microsoft Flow
+# <a name="responding-to-gdpr-data-subject-account-close-requests-for-microsoft-flow"></a>Reageren op aanvragen voor het sluiten van een AVG-gegevens account voor Microsoft Flow
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
-Het **recht op vergetelheid**, het recht om persoonsgegevens te laten verwijderen, is een belangrijke beschermingsmaatregel in de AVG. Dit recht omvat het verwijderen van alle persoonsgegevens, behalve gegevens van auditlogboeken. Wanneer gebruikers besluiten hun Microsoft-Account (MSA) sluiten, wordt de onderliggende gegevens van de gebruiker ook verwijderd.
+Het **recht op** het verwijderen van persoonlijke gegevens is een belang rijke beveiliging in de AVG. Dit recht omvat het verwijderen van alle persoons gegevens, met uitzonde ring van audit logboek gegevens. Wanneer gebruikers besluiten hun micro soft-account (MSA) te sluiten, worden de onderliggende gegevens van de gebruiker ook verwijderd.
 
-Deze resources bevatten persoonsgegevens die automatisch worden verwijderd wanneer een gebruiker een MSA sluit:
+Deze resources bevatten persoonlijke gegevens die automatisch worden verwijderd wanneer een gebruiker een MSA sluit:
 
-|Resources met persoonsgegevens|
+|Resources met persoons gegevens|
 |------|
-|Activiteit van producten en services|
-|Uitvoeringsgeschiedenis|
-|Stromen|
+|Product-en service activiteit|
+|uitvoerings geschiedenis|
+|Terugloop|
 |Activiteitsfeed|
-|Gebruikersdetails|
-|Verbindingen|
+|Gebruikers Details|
+|Inbel|
 
-## <a name="account-close-requests"></a>Aanvragen voor het sluiten van accounts
+## <a name="account-close-requests"></a>Aanvragen voor account sluiten
 
-In de onderstaande stappen wordt beschreven hoe u aanvragen voor het sluiten van accounts kunt uitvoeren in het kader van de AVG.
+In deze stappen wordt beschreven hoe u zelf aanvragen voor het sluiten van accounts voor AVG kunt gebruiken.
 
-1. Meld u aan bij de [portal voor het sluiten van Microsoft-accounts](http://go.microsoft.com/fwlink/?LinkId=523898) met uw Microsoft-account en selecteer vervolgens **Volgende**.
+1. Meld u aan bij het [micro soft-account sluit Portal](https://go.microsoft.com/fwlink/?LinkId=523898) met uw micro soft-account en selecteer **volgende**.
 
     > [!NOTE]
-    > U krijgt een herinnering dat u bestaande abonnementen moet annuleren of gegevens uit bestaande services waarop u bent geabonneerd moet exporteren.
+    > U wordt gevraagd om bestaande abonnementen te annuleren of om gegevens te exporteren uit bestaande services waarop u zich hebt geabonneerd.
     >
     >
 
     ![Abonnementen annuleren](./media/gdpr-dsr-delete-msa/accountclose.png)
 
-1. Bevestig dat u begrijpt welke invloed het sluiten van uw MSA heeft en selecteer vervolgens **Account markeren voor sluiting**.
+1. Erken dat u weet wat de gevolgen zijn van het sluiten van uw MSA en selecteer vervolgens **account markeren voor sluiting**.
 
-    Er wordt een melding weergegeven om aan te geven dat uw account over 30 dagen wordt gesloten. U kunt dit account tijdens deze periode van 30 dagen op elk gewenst moment opnieuw openen.
+    Er wordt een melding weer gegeven dat aangeeft dat uw account binnen 30 dagen wordt gesloten. U kunt dit account op elk gewenst moment opnieuw openen tijdens deze periode van 30 dagen.
 
     ![Account gesloten](./media/gdpr-dsr-delete-msa/accountclosed.png)
 
-    Aan het eind van deze periode van 30 dagen wordt het proces voor het verwijderen van alle Microsoft Flow-resources voor dit MSA gestart.
+    Aan het einde van dit venster van 30 dagen wordt het proces voor het verwijderen van alle Microsoft Flow resources voor deze MSA gestart.
 
 ## <a name="learn-more"></a>Meer informatie
 
-* Aan de slag met [Microsoft Flow](getting-started.md)
-* Meer informatie over [nieuwe functies](release-notes.md) met Microsoft-Flow
+* Aan de slag met [Microsoft flow](getting-started.md)
+* Meer informatie over [de nieuwe functies](release-notes.md) van Microsoft flow

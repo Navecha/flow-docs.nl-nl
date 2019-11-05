@@ -1,6 +1,6 @@
 ---
-title: Stromen uitvoeren op basis van een schema | Microsoft Docs
-description: U kunt terugkerende taken automatiseren door stromen op basis van een schema uit te voeren, bijvoorbeeld elke dag of elk uur.
+title: Stromen uitvoeren volgens een schema | Microsoft Docs
+description: Automatiseer terugkerende taken door stromen uit te voeren op basis van een schema, bijvoorbeeld elke dag of elk uur.
 services: ''
 suite: flow
 documentationcenter: na
@@ -20,72 +20,73 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: af18e8caae8e74bb12d274c6e5cb0d94a0e0471b
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.openlocfilehash: b737f416c927e7d7d8a7ea28ec81e268aa59b51d
+ms.sourcegitcommit: 510706f5699b6cf9dda9dcafbed715f9f6d559e8
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "64468513"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73548831"
 ---
-# <a name="run-flows-on-a-schedule"></a>Stromen op basis van een schema uitvoeren
+# <a name="run-flows-on-a-schedule"></a>Stromen uitvoeren volgens een schema
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 Een stroom maken waarmee een of meer taken worden uitgevoerd (zoals het verzenden van een rapport per e-mail):
 
-* eenmaal per dag, elk uur of elke minuut
+* eenmaal per dag, uur of minuut
 * op een datum die u opgeeft
 * na een aantal dagen, uren of minuten dat u opgeeft
 
 ## <a name="create-a-recurring-flow"></a>Een terugkerende stroom maken
-1. Meld u aan bij [Microsoft Flow](https://flow.microsoft.com) en selecteer vervolgens **Mijn stromen** in de bovenste navigatiebalk.
+1. Meld u aan bij [Microsoft flow](https://flow.microsoft.com)en selecteer vervolgens **mijn stromen** in de bovenste navigatie balk.
    
-    ![De optie Mijn stromen](./media/run-scheduled-tasks/create-flow.png)
-2. Selecteer **Maken van lege**.
+    ![De optie mijn stromen](./media/run-scheduled-tasks/create-flow.png)
+2. Selecteer **leeg item maken**.
    
-    ![Een volledig nieuwe stroom maken](./media/run-scheduled-tasks/create-from-blank.png)
-3. Typ **Terugkeerpatroon** in het vak **Alle connectors en triggers doorzoeken** en selecteer vervolgens **Schema: terugkeerpatroon**.
+    ![Een lege stroom maken](./media/run-scheduled-tasks/create-from-blank.png)
+3. Typ **terugkeer patroon**in het vak **alle connectors en triggers doorzoeken** en selecteer vervolgens **schema-terugkeer patroon**.
    
-    ![Trigger voor terugkeerpatroon vinden](./media/run-scheduled-tasks/select-recurrence.png)
-4. Geef in het dialoogvenster **Terugkeerpatroon** op hoe vaak de stroom moet worden uitgevoerd.
+    ![Terugkeer patroon trigger zoeken](./media/run-scheduled-tasks/select-recurrence.png)
+4. Geef in het dialoog venster **terugkeer patroon** op hoe vaak u de stroom wilt uitvoeren.
    
-    Geef bijvoorbeeld **2** op bij **Interval** en **Week** bij **Frequentie** als u de stroom elke twee weken wilt uitvoeren.
+    Geef bijvoorbeeld **2** op onder **interval** en **week** onder **frequentie** als u wilt dat de stroom elke twee weken wordt uitgevoerd.
    
-    ![Terugkeerpatroon opgeven](./media/run-scheduled-tasks/specify-recurrence.png)
+    ![Terugkeer patroon opgeven](./media/run-scheduled-tasks/specify-recurrence.png)
 
 ## <a name="specify-advanced-options"></a>Geavanceerde opties opgeven
-1. Volg de stappen in de vorige sectie en selecteer vervolgens **Geavanceerde opties weergeven**.
+1. Volg de stappen in de vorige sectie en selecteer vervolgens **Geavanceerde opties weer geven**.
    
-    **Opmerking**: Deze opties veranderen op basis van de waarden voor **Interval** en **Frequentie**. Als uw scherm niet overeenkomt met de onderstaande afbeelding, controleert u of **Interval** en **Frequentie** zijn ingesteld op dezelfde waarden als in de afbeelding.
-2. Selecteer een **tijdzone** om op te geven of de **begintijd** uit een lokale tijdzone komt, een UTC-tijd (Universal Coordinated Time) is, enzovoort.
-3. Geef een **begintijd** op in deze notatie:
-   <br>JJJJ-MM-DDTHH:MM:SSZ
-4. Als u **Dag** hebt gekozen bij **Frequentie**, geeft u de tijd van de dag op wanneer de stroom moet worden uitgevoerd.
-5. Als u **Week** hebt opgegeven bij **Frequentie**, geeft u de dag of dagen van de week op waarop de stroom moet worden uitgevoerd en de tijd of tijden van de dag waarop de stroom moet worden uitgevoerd.
+    **Opmerking**: deze opties worden gewijzigd op basis van de waarden waarvoor **interval** en **frequentie** zijn ingesteld. Als uw scherm niet overeenkomt met de onderstaande afbeelding, controleert u of het **interval** en de **frequentie** zijn ingesteld op dezelfde waarden die in de afbeelding worden weer gegeven.
+2. Selecteer een **tijd zone** om op te geven of de **Start tijd** een lokale tijd zone, UTC (Universal Coordinated Time), enzovoort weerspiegelt.
+3. Geef een **begin tijd** op in deze notatie:
+   <br>JJJJ-MM-DDTUU: MM: SSZ
+4. Als u **dag** onder **frequentie**hebt opgegeven, geeft u het tijdstip van de dag op waarop de stroom moet worden uitgevoerd.
+5. Als u **week** onder **frequentie**hebt opgegeven, geeft u de dag of dagen van de week op waarop de stroom moet worden uitgevoerd en de tijd of tijden van de dag waarop de stroom moet worden uitgevoerd.
    
-    Neem bijvoorbeeld de weergegeven opties over om in te stellen dat een stroom niet eerder start dan twaalf uur 's middags (Pacific-tijd) op maandag 1 januari 2018 en elke twee weken op dinsdag om 17:30 (Pacific-tijd) wordt uitgevoerd.
+    Configureer bijvoorbeeld de opties zoals weer gegeven om een stroom te starten die niet eerder is dan 12:00 uur (Pacific Time) op maandag, 1 januari 2018, en voer deze elke twee weken uit op dinsdag om 5:30p (Pacific Time).
    
     ![Geavanceerde opties opgeven](./media/run-scheduled-tasks/advanced-options.png)
-6. Voeg de acties toe die met de stroom moeten worden uitgevoerd, zoals u kunt lezen in [Een volledig nieuwe stroom maken](get-started-logic-flow.md).
+6. Voeg de actie of acties toe die u de stroom wilt laten uitvoeren, zoals wordt beschreven in [een volledig nieuwe stroom maken](get-started-logic-flow.md) .
 
 ## <a name="delay-a-flow"></a>Een stroom vertragen
-1. Meld u aan bij [Microsoft Flow](https://flow.microsoft.com) en selecteer vervolgens **Mijn stromen** in de bovenste navigatiebalk.
+1. Meld u aan bij [Microsoft flow](https://flow.microsoft.com)en selecteer vervolgens **mijn stromen** in de bovenste navigatie balk.
    
-    ![Een volledig nieuwe stroom maken](./media/run-scheduled-tasks/create-flow.png)
-2. Selecteer **Maken van lege**.
+    ![Een lege stroom maken](./media/run-scheduled-tasks/create-flow.png)
+2. Selecteer **leeg item maken**.
    
-    ![Een volledig nieuwe stroom maken](./media/run-scheduled-tasks/create-from-blank.png)
-3. Geef een gebeurtenis op, zoals wordt beschreven in [Een volledig nieuwe stroom maken](get-started-logic-flow.md).
-4. Selecteer de knop **Nieuwe stap** en vervolgens **Een actie toevoegen**.
+    ![Een lege stroom maken](./media/run-scheduled-tasks/create-from-blank.png)
+3. Geef een gebeurtenis [op als een volledig nieuwe stroom maken](get-started-logic-flow.md) beschrijft.
+4. Selecteer **nieuwe stap**en selecteer vervolgens **een actie toevoegen**.
    
     ![Optie voor het toevoegen van een actie aan een stroom](./media/run-scheduled-tasks/add-action.png)
-5. Ga op een van de volgende manieren te werk in de lijst met acties:
+5. Voer een van de volgende handelingen uit in de lijst met acties:
    
-   * Selecteer **Vertraging**, en geef een waarde op voor **Aantal** en **Eenheid**, zoals seconde, minuut of uur.
-   * Selecteer **Uitstellen tot** en geef een datum op in deze notatie.<br>JJJJ-MM-DDTHH:MM:SSZ
+   * Selecteer **vertraging**, geef een **aantal**op en geef een tijds **eenheid** op, zoals seconde, minuut of uur.
+   * Selecteer **vertraging tot**en geef een datum op in deze notatie.<br>JJJJ-MM-DDTUU: MM: SSZ
      
-     ![Een vertraging toevoegen](./media/run-scheduled-tasks/add-delay.png)
-     ![Een vertraging opgeven in tijdseenheden](./media/run-scheduled-tasks/delay.png)
-     ![Vertraging tot een bepaald moment opgeven](./media/run-scheduled-tasks/delay-until.png)
+     ![een vertraging toevoegen](./media/run-scheduled-tasks/add-delay.png)
+     ![een vertraging opgeven in tijds eenheden](./media/run-scheduled-tasks/delay.png)
+     ![een vertraging opgeven tot](./media/run-scheduled-tasks/delay-until.png)
 
 ## <a name="learn-more"></a>Meer informatie
 
-Meer informatie over de [geavanceerde opties](https://docs.microsoft.com/azure/connectors/connectors-native-recurrence) en het configureren hiervan.
+Meer informatie over de [Geavanceerde opties](https://docs.microsoft.com/azure/connectors/connectors-native-recurrence) en hoe u deze kunt configureren.
 

@@ -1,6 +1,6 @@
 ---
-title: Aanbevolen procedures voor het gebruik van entiteitskenmerken voor bedrijfsprocesstromen| Microsoft Docs
-description: Lees hier alles over de aanbevolen procedures voor het gebruik van entiteitskenmerken voor bedrijfsprocesstromen.
+title: Aanbevolen procedures voor het gebruik van entiteits kenmerken van de bedrijfs proces stroom | MicrosoftDocs
+description: Meer informatie over de aanbevolen procedures voor het gebruik van entiteits kenmerken van de bedrijfs proces stroom.
 ms.custom: ''
 ms.date: 04/23/2019
 ms.reviewer: ''
@@ -19,95 +19,96 @@ helpviewer_keywords:
 author: msftman
 ms.author: deonhe
 manager: kvivek
-ms.openlocfilehash: 950f03d78e708f00f28b68daf7c1012fae231c95
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.openlocfilehash: b46eac7317db8f5b63ebcd7b8b1fe8c79109bc11
+ms.sourcegitcommit: 510706f5699b6cf9dda9dcafbed715f9f6d559e8
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "64472967"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73545292"
 ---
-# <a name="best-practices-in-using-business-process-flow-attributes"></a>Aanbevolen procedures voor het gebruik van kenmerken voor bedrijfsprocesstromen
+# <a name="best-practices-in-using-business-process-flow-attributes"></a>Aanbevolen procedures voor het gebruik van stroom kenmerken van bedrijfs processen
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
 
-Verouderde procesgerelateerde kenmerken in entiteiten zijn afgeschaft. Hier volgen enkele aanbevolen procedures voor het gebruik van het kenmerk *Actieve fase* (activestageid) voor de entiteit van de bedrijfsprocesstroom. 
+Verouderde proces-gerelateerde kenmerken in entiteiten worden afgeschaft. Hier volgen enkele aanbevolen procedures voor het gebruik van het kenmerk *Active stage* (activestageid) in de entiteit bedrijfs proces stroom. 
 
-## <a name="reporting-on-the-active-stage-of-a-business-process-flow"></a>Rapporteren over de actieve fase van een bedrijfsprocesstroom
+## <a name="reporting-on-the-active-stage-of-a-business-process-flow"></a>Rapportage over de actieve fase van een bedrijfs proces stroom
 
-Stel dat u een weergave van uw verkooppijplijn wilt ophalen door te rapporteren over de actieve fase waarin **Verkoopproces van potentiële klant naar verkoopkans** zich bevindt.
+Stel dat u een weer gave van uw verkoop pijplijn wilt krijgen door te rapporteren over de actieve fase waarin het **verkoop proces van leads** op verkoop kansen is ingeschakeld.
 
-Eerder was het mogelijk om per fase te rapporteren over bedrijfsprocessen door voor elke gerelateerde entiteit van de bedrijfsprocesstroom een weergave te definiëren en vervolgens te rapporteren over het veld *Actieve fase* (activestageid).
+Als u voorheen wilt rapporteren over bedrijfs processen per fase, kunt u een weer gave definiëren voor elke gerelateerde entiteit van de bedrijfs proces stroom en vervolgens rapporteren over het veld *Active stage* (activestageid).
 
-Met de afschaffing van het veld *Actieve fase* (activestageid) voor gerelateerde entiteiten zijn er twee manieren om te rapporteren over bedrijfsprocesstromen.
+Met de afschaffing van het veld *Active stage* (activestageid) op gerelateerde entiteiten zijn er twee manieren om te rapporteren over bedrijfsproces stromen.
 
-### <a name="option-1-views-and-charts-on-business-process-flow-entity-recommended"></a>Optie 1: Weergaven en grafieken van de entiteit van de bedrijfsprocesstroom **(aanbevolen)**
+### <a name="option-1-views-and-charts-on-business-process-flow-entity-recommended"></a>Optie 1: weer gaven en grafieken van de entiteit bedrijfs proces stroom **(aanbevolen)**
 
-In versie 9.0 en hoger wordt voor elke bedrijfsprocesstroom een eigen Common Data Service-entiteit gemaakt, meestal met dezelfde naam als de bedrijfsprocesstroom. Als u wilt rapporteren over een bedrijfsprocesstroom, selecteert u de entiteit voor de bedrijfsprocesstroom waarover u wilt rapporteren en maakt u vervolgens weergaven en grafieken, net als in de oude situatie.
+In versies 9,0 en hoger maakt elke bedrijfs proces stroom een eigen Common Data Service entiteit, meestal met dezelfde naam als de bedrijfs proces stroom. Als u wilt rapporteren over de stroom van het bedrijfs proces, selecteert u de entiteit voor de bedrijfsproces stroom die u wilt rapporteren en maakt u vervolgens weer gaven en grafieken, net zoals u dat eerder hebt gedaan.
 
-In ons voorbeeld volgt u deze stappen om naar de entiteit **Verkoopproces van potentiële klant naar verkoopkans** te gaan:
+In ons voor beeld gaat u als volgt te werk om naar de entiteit **lead to verkoop proces** te gaan:
 1. Ga naar https://web.powerapps.com.
-1. Selecteer **Gegevens** aan de linkerkant.
-1. Selecteer **Entiteiten** aan de linkerkant.
-1. Stel het filter in op **Alle**.
-1. Zoek de entiteit **Verkoopproces van potentiële klant naar verkoopkans** en selecteer deze vervolgens.
+1. Selecteer de **gegevens**.
+1. Selecteer de **entiteiten**.
+1. Stel het filter in op **alle**.
+1. Zoek naar en selecteer de entiteit **lead to verkoop proces** .
 
-   ![De entiteit Verkoopproces van potentiële klant naar verkoopkans](media/best-practices-entity-attributes/lead-opportunity-process.png)
+   ![entiteit verkoop proces lead naar verkoop kans](media/best-practices-entity-attributes/lead-opportunity-process.png)
 
-Hier kunt u weergaven en grafieken definiëren, net zoals voor elke andere entiteit.
+Hier kunt u weer gaven en grafieken definiëren op dezelfde manier als voor andere entiteiten.
 
-![details van entiteit](media/best-practices-entity-attributes/lead-to-opportunity-sales-process-details.png)
+![Details van entiteit Vertaal proces](media/best-practices-entity-attributes/lead-to-opportunity-sales-process-details.png)
 
-Een voordeel van deze aanpak is dat u met één weergave of grafiek kunt rapporteren over bedrijfsprocesstromen die meerdere entiteiten omvatten.
+Een voor deel van deze benadering is dat u een enkele weer gave of grafiek kunt gebruiken om te rapporteren over bedrijfs proces stromen die meerdere entiteiten omvatten.
 
-Aangezien de entiteit van de bedrijfsprocesstroom niet verschilt van andere aangepaste entiteiten in Common Data Service, kunt u aangepaste velden toevoegen aan de entiteit om aanvullende informatie bij te houden die u nodig hebt.
+Als de entiteit bedrijfs proces stroom niet anders is dan een andere aangepaste entiteit in Common Data Service, kunt u aangepaste velden aan de entiteit toevoegen om eventuele aanvullende informatie die u nodig hebt bij te houden.
 
-### <a name="option-2-copy-active-stage-to-a-related-entity"></a>Optie 2: Actieve fase kopiëren naar een gerelateerde entiteit
+### <a name="option-2-copy-active-stage-to-a-related-entity"></a>Optie 2: actieve fase kopiëren naar een gerelateerde entiteit
 
-Om te blijven rapporteren over de gerelateerde entiteit, kunt u ook een stroom maken om het veld *Actieve fase* (activestageid) van de entiteit van de bedrijfsprocesstroom te kopiëren naar een aangepast veld in de gerelateerde entiteiten van Common Data Service.
+Als u wilt door gaan met de rapportage van de gerelateerde entiteit, maakt u een stroom om het veld *Active stage* (activestageid) van de entiteit bedrijfs proces stroom te kopiëren naar een aangepast veld op de gerelateerde common data service entiteiten.
 
-Houd rekening met de volgende punten als u kiest voor deze aanpak:
+Hier volgen enkele dingen die u moet onthouden wanneer u deze aanpak gebruikt:
 
-1.  Er kan meer dan één bedrijfsprocesstroom worden uitgevoerd op een entiteit. Met deze aanpak is het raadzaam om één aangepast veld te gebruiken voor het opslaan van de actieve fase voor elke bedrijfsprocesstroom die op de entiteit wordt uitgevoerd. Deze aanpak zorgt voor de integriteit van de rapportage.
+1.  Het is mogelijk om meer dan één proces stroom op één entiteit uit te voeren. Met deze methode kunt u het beste één aangepast veld hebben waarin de actieve fase wordt opgeslagen voor elke bedrijfsproces stroom die wordt uitgevoerd op de entiteit. Deze aanpak zorgt voor de integriteit van de rapportage.
 
-1.  Als rapportage wordt aangestuurd vanuit de gerelateerde entiteit, is het niet mogelijk om met één weergave te rapporteren over bedrijfsprocesstromen die meerdere entiteiten omvatten.
+1.  Als rapportage is gebaseerd op de gerelateerde entiteit, is het niet mogelijk om één weer gave te maken die rapporteert over bedrijfs proces stromen die meerdere entiteiten omvatten.
 
-## <a name="using-the-active-stage-to-run-logic"></a>De actieve fase gebruiken voor het uitvoeren van logica
+## <a name="using-the-active-stage-to-run-logic"></a>De actieve fase gebruiken om logica uit te voeren
 
-Hier volgen enkele gevallen waarin het handig kan zijn om logica uit te voeren die is gebaseerd op de actieve fase:
+Hier volgen enkele gevallen waarin u mogelijk logica wilt uitvoeren die is gebaseerd op de actieve fase:
 
-### <a name="using-the-active-stage-to-run-client-side-logic"></a>De actieve fase gebruiken voor het uitvoeren van logica aan de clientzijde
+### <a name="using-the-active-stage-to-run-client-side-logic"></a>De actieve fase gebruiken om logica aan de client zijde uit te voeren
 
-Als u het bedrijfsproces gebruikt, zijn er veel dingen die u automatisch kunt doen. Bijvoorbeeld:
+Wanneer u het bedrijfs proces gebruikt, zijn er veel dingen die u mogelijk automatisch wilt uitvoeren. Bijvoorbeeld:
 
--   De actieve bedrijfsprocesstroom wijzigen op basis van nieuw beschikbare informatie over het formulier of de bedrijfsprocesstroom.
+-   Wijzig de actieve bedrijfsproces stroom op basis van nieuw beschik bare informatie over de formulier-of bedrijfsproces stroom.
 
--   De actieve fase verplaatsen naar de volgende of vorige fase, op basis van waarden die de gebruikers hebben ingevoerd voor stappen of formuliervelden.
+-   Verplaats de actieve fase naar het volgende of vorige stadium, op basis van de waarden die door de gebruikers zijn ingevoerd voor stappen of formulier velden.
 
--   Formuliertabbladen en -velden verbergen of weergeven op basis van de geselecteerde fase.
+-   Formulier tabbladen en-velden weer geven of verbergen op basis van de geselecteerde fase.
 
--   Informatieve berichten weergeven en berekeningen uitvoeren op basis van de actieve bedrijfsprocesstromen, de actieve of geselecteerde fase, of gebeurtenissen zoals het verplaatsen van de actieve fase.
+-   Geef informatieve berichten weer en voer calulations uit op basis van de actieve bedrijfs proces stromen, het actieve of geselecteerde stadium of gebeurtenissen zoals het verplaatsen van de actieve fase.
 
 > [!TIP]
-> Voor scenario's zoals deze gebruikt u de ondersteunde set [client-API's](https://docs.microsoft.com/dynamics365/customer-engagement/developer/clientapi/reference/formcontext-data-process) voor bedrijfsprocesstromen.
+> Gebruik voor scenario's als deze de ondersteunde set client- [api's](https://docs.microsoft.com/dynamics365/customer-engagement/developer/clientapi/reference/formcontext-data-process) voor bedrijfsproces stromen.
 >
 
-### <a name="using-the-active-stage-to-run-server-side-logic"></a>De actieve fase gebruiken voor het uitvoeren van logica aan de serverzijde
+### <a name="using-the-active-stage-to-run-server-side-logic"></a>De actieve fase gebruiken om logica aan de server zijde uit te voeren
 
-Mogelijk zijn er situaties waarbij automatisering op basis van de bedrijfsprocesstroom moet worden uitgevoerd aan de serverzijde. Bijvoorbeeld:
+Er zijn mogelijk situaties waarin automatisering op basis van de bedrijfs proces stroom aan de server zijde moet worden uitgevoerd. Bijvoorbeeld:
 
--   Een e-mailbericht verzenden naar een gebruiker als de fase **Kwalificeren** van **Verkoopproces verkoopkans** langer dan 15 dagen actief is.
+-   Een e-mail verzenden naar een gebruiker als de fase van het **verkoop proces voor verkoop kansen** **in aanmerking komt** langer dan 15 dagen actief is.
 
--   Automatisch een set activiteiten maken die relevant zijn voor de actieve fase van **Verkoopproces verkoopkans** telkens wanneer deze verandert.
+-   Automatisch een set activiteiten maken die relevant zijn voor het actieve stadium van het **verkoop proces van verkoop kansen** telkens wanneer het wordt gewijzigd.
 
--   **Verkoopproces verkoopkans** automatisch voltooien wanneer de activiteit Telefoongesprek voor afsluiting is voltooid.
+-   Het **verkoop proces voor verkoop kansen** automatisch volt ooien wanneer de telefoon oproep activiteit is voltooid.
 
 > [!TIP]
-> Gebruik klassieke Common Data Service-werkstromen of stromen die u voor de entiteit voor de bedrijfsprocesstroom definieert.
+> Gebruik klassieke Common Data Service werk stromen of stromen die u definieert voor de entiteit voor de bedrijfs proces stroom.
 > 
 
-Een klassieke Common Data Service werkstroom bouwen die activiteiten maakt voor interne beoordeling van de oplossing en voor vervolgacties voor de klant in de fase **Voorstellen** van **Verkoopproces verkoopkans**:
+Voor het bouwen van een klassieke Common Data Service werk stroom die activiteiten maakt voor interne beoordelingen van oplossingen en de klant moet opvolgen in de fase Voorst **Ellen** van het **verkoop proces**voor verkoop kansen:
 
-1. Maak de stroom voor de entiteit **Verkoopproces verkoopkans** en geef aan dat de stroom moet worden uitgevoerd wanneer het veld **Actieve fase** van de entiteit verandert. 
-1. Definieer een voorwaarde om te controleren of het veld **Actieve fase** gelijk is aan **Voorstellen**. 
-1. Maak een record voor een afspraak en telefoongesprek voor respectievelijk de interne beoordeling van de oplossing en het gesprek met de klant om de oplossing te bespreken.
+1. Maak het op de entiteit **verkoop proces verkoop kans** en stel deze in op elke keer dat het veld **actieve fase** van de entiteit wordt gewijzigd. 
+1. Definieer een voor waarde om te controleren of het veld van de **actieve fase** gelijk is aan Voorst **Ellen**. 
+1. Maak een afspraak en telefoon oproep record voor de interne beoordeling van de oplossing en de klant oproep om respectievelijk de oplossing te bekijken.
 
-   ![vervolgactie voor afrondende fase](media/best-practices-entity-attributes/close-stage-followup.png)
+   ![vervolg fase sluiten](media/best-practices-entity-attributes/close-stage-followup.png)

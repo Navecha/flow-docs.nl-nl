@@ -1,6 +1,6 @@
 ---
 title: Problemen met een stroom oplossen | Microsoft Docs
-description: Veelvoorkomende problemen voor stromen oplossen
+description: Een aantal van de meest voorkomende oorzaken voor het mislukken van stromen oplossen
 services: ''
 suite: flow
 documentationcenter: na
@@ -20,86 +20,87 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 0e151f3c5cd69fe07263e5fa36d46eb3b8be19f5
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.openlocfilehash: 2981c125d722cb766a1cc840f404d84dfa57ac96
+ms.sourcegitcommit: 510706f5699b6cf9dda9dcafbed715f9f6d559e8
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "64992741"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73547877"
 ---
 # <a name="troubleshooting-a-flow"></a>Problemen met een stroom oplossen
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
-## <a name="repair-tips-in-email"></a>Tips voor herstel in e-mailbericht
+## <a name="repair-tips-in-email"></a>Tips voor het oplossen van problemen in e-mail
 
-Tips voor herstel worden verzonden naar de eigenaars van stromen via e-mail wanneer een stroom mislukt. Deze e-mailberichten herstellen tips bevatten specifieke, bruikbare feedback over bepaalde fouten. Bijvoorbeeld, een veelvoorkomende fout is instellen van een stroom die probeert op te halen van de manager van een persoon in Office 365, maar er geen manager geconfigureerd in Azure Active Directory (Azure AD is). Als dit of verschillende andere voorwaarden ertoe leiden de stroom dat mislukt, krijgt u een e-mailadres tips herstellen als volgt:
+Herstel tips worden via e-mail naar flow-eigen aren verzonden wanneer een stroom mislukt. Deze e-mails met reparatie tips bevatten specifieke, actie bare feedback over bepaalde fouten. Er is bijvoorbeeld een gemeen schappelijke fout opgetreden bij het instellen van een stroom die een persoons manager in Office 365 probeert te krijgen, maar er is geen manager geconfigureerd in Azure Active Directory (Azure AD). Als deze of andere voor waarden ervoor zorgen dat uw stroom mislukt, ontvangt u een e-mail bericht over de reparatie tips, zoals hieronder:
 
-![Tips voor herstel](media/fix-flow-failures/repair-tips-email.png)
+![Tips voor herstellen](media/fix-flow-failures/repair-tips-email.png)
 
-Het herstel tips e-mailbericht bevat de volgende secties:
+Het e-mail bericht met reparatie tips bevat de volgende secties:
 
-Naam|Beschrijving
+Naam|Beschrijvingen
 ---|---
-tijd|Geeft de tijd die de stroom voor het eerst is mislukt.
-Wat is er gebeurd|Bevat een beschrijving van het probleem dat de fout in de stroom heeft veroorzaakt.
-Hoe los ik|Tips biedt voor het oplossen van het probleem dat ertoe leiden dat de fout in de stroom.
-Tips voor probleemoplossing|Meer informatie, waaronder het aantal keren dat de stroom is mislukt en een koppeling om opnieuw te proberen de stroom met de dezelfde invoergegevens bevat.
+Tegelijk|Geeft de tijd weer waarop de stroom voor het eerst is mislukt.
+Wat is er gebeurd|Hierin wordt een beschrijving gegeven van het probleem dat de fout in de stroom heeft veroorzaakt.
+Hoe kan ik oplossen|Bevat tips voor het oplossen van het probleem dat de stroom veroorzaakt.
+Tips voor probleem oplossing|Bevat details, inclusief het aantal keren dat de stroom is mislukt en een koppeling om de stroom opnieuw uit te voeren met dezelfde invoer gegevens.
 
-Selecteren om op te lossen de gerapporteerde fouten, **mijn stroom oplossen** en volg de stappen in het e-mailbericht herstellen tips.
+Als u de gerapporteerde fouten wilt verhelpen, selecteert u **mijn stroom corrigeren** en volgt u de stappen in het e-mail bericht met reparatie tips.
 
-Herstel tips e-mailberichten zijn optioneel. Als u niet wilt ontvangen, alleen deze uitschakelen via het menu eigenschappen voor de specifieke stroom.
+E-mails met reparatie tips zijn optioneel. Als u deze niet wilt ontvangen, schakelt u deze uit in het menu eigenschappen voor de specifieke stroom.
 
-Als de stroom is mislukt, kunt u deze ook rechtstreeks in Microsoft Flow oplossen.  Hier volgen enkele veelvoorkomende foutscenario's en tips over hoe u deze kunt oplossen.
+Als uw stroom uitvalt, kunt u deze ook rechtstreeks in Microsoft Flow oplossen.  Hier volgen enkele veelvoorkomende fout scenario's en tips voor het oplossen ervan.
 
 ## <a name="identify-the-error"></a>De fout identificeren
-Voordat u een probleem met een stroom kunt oplossen, moet u achterhalen waarom de stroom is mislukt. Klik of tik op het meldingenpictogram boven aan de webportal (of open het tabblad **Activiteit** in de mobiele app) en klik of tik vervolgens op uw stroom in de lijst die wordt weergegeven.
+Voordat u een stroom kunt oplossen, moet u aangeven waarom deze is mislukt. Klik of tik op het pictogram meldingen boven aan de webportal (of open het tabblad **activiteit** in de mobiele app) en klik of tik vervolgens op de stroom in de lijst die wordt weer gegeven.
 
 ![Meldingen](./media/fix-flow-failures/notifications-toolbar.png)
 
-De details voor de stroom worden weergegeven en er wordt voor minimaal één stap een rood uitroepteken weergegeven. Open deze stap en bekijk het foutbericht.
+Details over de stroom worden weer gegeven en ten minste één stap ziet u een rood uitroep teken. Open die stap en Bekijk het fout bericht.
 
-![Foutbericht](./media/fix-flow-failures/flow-run-failure.png)
+![Fout bericht](./media/fix-flow-failures/flow-run-failure.png)
 
 
-## <a name="authentication-failures"></a>Verificatiefouten
-In veel gevallen mislukken stromen vanwege een verificatiefout. Als u dit type foutbericht ontvangt, bevat het foutbericht de tekst **Niet gemachtigd** of wordt de foutcode **401** of **403** weergegeven. U kunt een verificatiefout doorgaans oplossen door de verbinding bij te werken.
+## <a name="authentication-failures"></a>Verificatie fouten
+In veel gevallen mislukken stromen vanwege een verificatie fout. Als u dit type fout hebt, wordt het fout bericht niet **toegestaan** of wordt de fout code **401** of **403** weer gegeven. U kunt een verificatie fout doorgaans oplossen door de verbinding bij te werken:
 
-1. Aan de bovenkant van de web-portal, klik of tik op het tandwielpictogram te openen de **instellingen** in het menu en klik of tik **verbindingen**.
-2. Schuif naar de verbinding waarvoor het foutbericht **Niet gemachtigd** wordt weergegeven.
-3. Klik of tik naast de verbinding op de koppeling **Bevestig uw wachtwoord** in het bericht waarin wordt aangegeven dat de verbinding niet kan worden geverifieerd.
-4. Controleer uw referenties door de instructies te volgen die worden weergegeven. Keer terug naar de fout voor de stroomuitvoering en klik of tik vervolgens op **Opnieuw verzenden**.
+1. Klik of Tik boven aan de webportal op het tandwiel pictogram om het menu **instellingen** te openen en klik of tik vervolgens op **verbindingen**.
+2. Ga naar de verbinding waarvoor u het niet- **geautoriseerde** fout bericht hebt gezien.
+3. Klik of tik naast de verbinding op de koppeling **wacht woord verifiëren** in het bericht over de verbinding die niet wordt geverifieerd.
+4. Verifieer uw referenties door de instructies te volgen die worden weer gegeven, keer terug naar uw stroom-run-fout en klik of tik vervolgens op **opnieuw verzenden**.
    
     De stroom moet nu volgens verwachting worden uitgevoerd.
 
-## <a name="action-configuration"></a>Actieconfiguratie
-Stromen mislukken ook wanneer een instelling in een actie van de stroom niet werkt zoals verwacht. In dit geval bevat het foutbericht de tekst **Ongeldige aanvraag** of **Niet gevonden** of wordt de foutcode **400** of **404** weergegeven.
+## <a name="action-configuration"></a>Actie configuratie
+Stromen mislukken ook als een instelling in een actie van de stroom niet werkt zoals verwacht. In dit geval bevat het fout bericht een **Ongeldige aanvraag** of **niet gevonden**of wordt de fout code **400** of **404** weer gegeven.
 
-In het foutbericht moet worden aangegeven hoe de fout kan worden verholpen. U moet op de knop **Bewerken** klikken of tikken en het probleem in de stroomdefinitie verhelpen. Sla de bijgewerkte stroom op en klik of tik op **Opnieuw verzenden** om de stroom nogmaals uit te voeren met de bijgewerkte configuratie.
+In het fout bericht moet worden aangegeven hoe u de fout wilt corrigeren. U moet op de knop **bewerken** klikken of tikken en vervolgens het probleem in de stroom definitie corrigeren. Sla de bijgewerkte stroom op en klik of tik op opnieuw **verzenden** om de bewerking opnieuw uit te voeren met de bijgewerkte configuratie.
 
 ## <a name="other-failures"></a>Andere fouten
-Als de foutcode **500** of **502** wordt weergegeven, betreft het een tijdelijke fout. Klik of tik op **Opnieuw verzenden** om de stroom opnieuw uit te voeren.
+Als de fout code **500** of **502** wordt weer gegeven, is de fout tijdelijk of tijdelijk. Klik of tik op opnieuw **verzenden** om de stroom opnieuw te proberen.
 
-## <a name="getting-help-from-support-or-the-community"></a>Hulp krijgen van de ondersteuning of de community
+## <a name="getting-help-from-support-or-the-community"></a>Hulp krijgen van ondersteuning of de Community
 
-Als u hulp nodig hebt, kunt u onze **Self Help** opties, of u kunt **om hulp vragen** van anderen.
+Wanneer u hulp nodig hebt, kunt u de opties voor **zelf ondersteuning** gebruiken of kunt u **hulp vragen** aan anderen.
 
-### <a name="self-help"></a>Zelfondersteuning 
+### <a name="self-help"></a>Zelf hulp 
 
-1. Ga naar de [ondersteuningssite](https://flow.microsoft.com/support/).
-1. Ga naar de **Self Help** categorie en selecteert u een van de opties voor zelfhulp.
+1. Ga naar de [ondersteunings site](https://flow.microsoft.com/support/).
+1. Ga naar de categorie **zelf ondersteuning** en selecteer een van de opties voor zelf ondersteuning.
 
-    ![Vragen om help-sectie. Neem contact op met ondersteuning.](media/fix-flow-failures/self-help-section.png)
-### <a name="ask-for-help-from-others"></a>Vragen om hulp van anderen
+    ![Vragen om hulp. Neem contact op met ondersteuning.](media/fix-flow-failures/self-help-section.png)
+### <a name="ask-for-help-from-others"></a>Hulp vragen aan anderen
 
-1. Ga naar de [ondersteuningssite](https://flow.microsoft.com/support/).
-1. Selecteer **contact opnemen met ondersteuning** in de **om hulp vragen** sectie.
+1. Ga naar de [ondersteunings site](https://flow.microsoft.com/support/).
+1. Selecteer **contact opnemen met ondersteuning** in het gedeelte **vragen om hulp** .
     
-    ![Vragen om help-sectie. Neem contact op met ondersteuning.](media/fix-flow-failures/ask-for-help.png)
+    ![Vragen om hulp. Neem contact op met ondersteuning.](media/fix-flow-failures/ask-for-help.png)
 
-1. Voltooid de **probleemtype**, **categorie**, en de **laat ons weten wat u nodig hebt bij het** velden en selecteer vervolgens **oplossingen**. 
+1. Voltooi het **probleem type**, de **categorie**en de **vertel ons wat u hulp nodig hebt bij** velden en selecteer vervolgens **oplossingen weer geven**. 
 
-1. U ziet dat de **oplossingen** sectie wordt weergegeven nadat u hebt geselecteerd **oplossingen**. Het bevat een lijst met resultaten die u gebruiken kunt om het probleem dat u ondervindt. 
+1. U ziet dat de sectie **oplossingen** wordt weer gegeven nadat u de optie **oplossingen weer geven**hebt geselecteerd. Het bevat een lijst met resultaten die u kunt gebruiken om te helpen bij het oplossen van het probleem dat u hebt. 
 
-    ![Details van de geïntegreerde hulpprogramma](media/fix-flow-failures/integrated-helper-details.png)
+    ![Details van geïntegreerde helper](media/fix-flow-failures/integrated-helper-details.png)
 
-Als u hulp nodig met een probleem, Help-informatie is beschikbaar via onze [community](https://go.microsoft.com/fwlink/?LinkID=787467) en Microsoft. 
+Als u hulp nodig hebt bij een probleem, is Help beschikbaar vanuit onze [Community](https://go.microsoft.com/fwlink/?LinkID=787467) en micro soft. 
 

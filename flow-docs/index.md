@@ -2,31 +2,30 @@
 layout: HubPage
 hide_bc: true
 title: Documentatie voor Microsoft Flow | Microsoft Docs
-description: Microsoft Flow is een service die u helpt om geautomatiseerde werkstromen tussen uw favoriete apps en services te maken om onder andere bestanden te synchroniseren, meldingen te ontvangen en gegevens te verzamelen.
+description: Microsoft Flow is een service waarmee u geautomatiseerde werk stromen tussen uw favoriete apps en services kunt maken om bestanden te synchroniseren, meldingen te ontvangen, gegevens te verzamelen en nog veel meer.
 keywords:
 - Microsoft Flow
-- werkstroom
-- stroom
-- werkstroom voor goedkeuring
-- sharepoint-werkstroom
+- Workflowconfiguraties
+- richting
+- goedkeurings werk stroom
+- share point-werk stroom
 author: msftman
 ms.author: deonhe
-manager: kfile
+manager: kvivek
 ms.date: 03/28/2018
 ms.topic: hub-page
-ms.reviewer:
-- karann-msft
+ms.reviewer: karann-msft
 search.app:
 - Flow
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 6032b608719e01407395113cec40b554e7a945c8
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.openlocfilehash: 0340b92072cf320e143db89fd5e96236e3fd60c6
+ms.sourcegitcommit: 510706f5699b6cf9dda9dcafbed715f9f6d559e8
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "64462977"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73547496"
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -42,7 +41,7 @@ ms.locfileid: "64462977"
                                     </div>
                                 </div>
                                 <div class="cardText">
-                                    <span class="likeAnH3">Alle documenten weergeven</span>
+                                    <span class="likeAnH3">alle docs weer geven</span>
                                 </div>
                             </div>
                         </div>
@@ -52,7 +51,7 @@ ms.locfileid: "64462977"
         </ul>
     </div>
 <div class="container">
-    <h1>Documentatie voor Microsoft Flow</h1>
+    <h1>Documentatie over Microsoft Flow</h1>
     <ul class="pivots">
         <li>
             <a href="#start">Ik ben een beginner</a>
@@ -70,8 +69,8 @@ ms.locfileid: "64462977"
                                                 <img src="media/index/guidedlearningtour.svg" alt="Learn Microsoft Flow" /><br/>                                            </div>
                                         </div>
                                         <div class="cardText">
-                                            <h3>Informatie over Microsoft Flow</h3>
-                                            <p>Start uw trainingstraject met deze reeks cursussen om inzicht te krijgen in de uitgebreide en krachtige mogelijkheden van Microsoft Flow.</p>
+                                            <h3>Meer informatie Microsoft Flow</h3>
+                                            <p>Start uw leer traject met deze reeks cursussen om inzicht te krijgen in de uitgebreide en krachtige mogelijkheden van Microsoft Flow.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -89,33 +88,14 @@ ms.locfileid: "64462977"
                                             </div>
                                         </div>
                                         <div class="cardText">
-                                            <h3>Aan de slag met de basis</h3>
-                                            <p>Snelle manieren om uw taken en werkzaamheden met Microsoft Flow te automatiseren.</p>
+                                            <h3>Aan de slag met de basis beginselen</h3>
+                                            <p>Snelle manieren om uw werk en leven met Microsoft Flow te automatiseren.</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             </a>
-                        </li>
-                        <li>
-                            <a href="mobile-create-flow.md">
-                            <div class="cardSize">
-                                <div class="cardPadding">
-                                    <div class="card">
-                                        <div class="cardImageOuter">
-                                            <div class="cardImage  bgdAccent1">
-                                                <img src="media/index/get_to_know_mobile_app1.svg" alt="Get to know the mobile app." />
-                                            </div>
-                                        </div>
-                                        <div class="cardText">
-                                            <h3>Kennismaking met de mobiele app</h3>
-                                            <p>Beheer, verken en volg uw geautomatiseerde werkstromen, altijd en overal.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            </a>
-                        </li>
+                        </li>                        
                         <li>
                             <a href="introduction-to-button-flows.md">
                             <div class="cardSize">
@@ -127,8 +107,27 @@ ms.locfileid: "64462977"
                                             </div>
                                         </div>
                                         <div class="cardText">
-                                            <h3>Een knopstroom maken in 2 minuten tijd</h3>
-                                            <p>Leer hoe u terugkerende taken automatiseert en uitvoert met knopstromen.</p>
+                                            <h3>Een knop stroom maken in twee minuten</h3>
+                                            <p>Meer informatie over het automatiseren en uitvoeren van terugkerende taken met knop stromen.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/flow/ui-flows/overview">
+                            <div class="cardSize">
+                                <div class="cardPadding">
+                                    <div class="card">
+                                        <div class="cardImageOuter">
+                                            <div class="cardImage  bgdAccent1">
+                                                <img src="media/index/ui_flows.svg" alt="Get started with UI flows (Preview)" />
+                                            </div>
+                                        </div>
+                                        <div class="cardText">
+                                            <h3>Aan de slag met UI-stromen (preview-versie)</h3>
+                                            <p>Automatiseer terugkerende taken in toepassingen die geen gebruiks vriendelijke of beschik bare Api's hebben.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -146,8 +145,8 @@ ms.locfileid: "64462977"
                                             </div>
                                         </div>
                                         <div class="cardText">
-                                            <h3>Tips van de 'Flow of the Week'-blog</h3>
-                                            <p>Doe uw voordeel met handige tips, rechtstreeks van het Microsoft Flow-team.</p>
+                                            <h3>Bekijk de stroom van de week</h3>
+                                            <p>Leer nieuwe trucs rechtstreeks vanuit het Microsoft Flow-team.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -166,7 +165,7 @@ ms.locfileid: "64462977"
                                         </div>
                                         <div class="cardText">
                                             <h3>Hulp vragen</h3>
-                                            <p>We staan altijd voor u klaar. Wat kunnen we voor u doen?</p>
+                                            <p>We&#39;helpen u nu altijd opnieuw. Wat&#39;zijn de bedenkingen?</p>
                                         </div>
                                     </div>
                                 </div>
@@ -178,7 +177,7 @@ ms.locfileid: "64462977"
             </ul>
         </li>
         <li>
-            <a href="#intermediate">Ik ben een gevorderde gebruiker</a>
+            <a href="#intermediate">Ik ben een tussenliggend</a>
             <ul id="intermediate">
                 <li>
                     <a href="#intermediate-all"></a>
@@ -194,8 +193,8 @@ ms.locfileid: "64462977"
                                             </div>
                                         </div>
                                         <div class="cardText">
-                                            <h3>Een stroom maken met een sjabloon</h3>
-                                            <p>Maak een stroom op basis van een van de vooraf gedefinieerde sjablonen.</p>
+                                            <h3>Een stroom maken op basis van een sjabloon</h3>
+                                            <p>Maak een stroom op basis van een of meer van de vooraf gedefinieerde sjablonen.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -214,7 +213,7 @@ ms.locfileid: "64462977"
                                         </div>
                                         <div class="cardText">
                                             <h3>Een volledig nieuwe stroom maken</h3>
-                                            <p>Ontwerp geheel naar eigen inzicht de meest effectieve stromen.</p>
+                                            <p>Laat uw creatieve proces vertragen u leiden naar verbluffende stromen.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -232,8 +231,8 @@ ms.locfileid: "64462977"
                                             </div>
                                         </div>
                                         <div class="cardText">
-                                            <h3>Goedkeuringsstromen maken</h3>
-                                            <p>Leer hoe u stromen maakt om de goedkeuring van documenten of processen in verschillende services te beheren.</p>
+                                            <h3>Goedkeurings stromen maken</h3>
+                                            <p>Meer informatie over het maken van stromen die de goed keuring van documenten of processen in verschillende services beheren.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -251,8 +250,8 @@ ms.locfileid: "64462977"
                                             </div>
                                         </div>
                                         <div class="cardText">
-                                            <h3>Samenwerken aan een teamstroom</h3>
-                                            <p>Met Microsoft Flow kunt u terugkerende taken eenvoudig automatiseren. U kunt gebruikers of groepen toevoegen als eigenaren en vervolgens gezamenlijk stromen ontwerpen en beheren.</p>
+                                            <h3>Samen werken aan een team stroom</h3>
+                                            <p>Microsoft Flow maakt het eenvoudig om terugkerende taken te automatiseren. U kunt gebruikers of groepen toevoegen als eigen aren en vervolgens met hen samen werken om stromen te ontwerpen en te beheren.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -270,7 +269,7 @@ ms.locfileid: "64462977"
                                             </div>
                                         </div>
                                         <div class="cardText">
-                                            <h3>Anderen met uw knopstromen laten werken</h3>
+                                            <h3>Laat anderen uw knop stromen gebruiken</h3>
                                             <p>Deel uw knoppen met anderen, zodat ze deze kunnen gebruiken om tijd te besparen.</p>
                                         </div>
                                     </div>
@@ -290,7 +289,7 @@ ms.locfileid: "64462977"
                                         </div>
                                         <div class="cardText">
                                             <h3>Problemen met uw stromen oplossen</h3>
-                                            <p>Een aantal tips voor wanneer er iets fout gaat en u het probleem niet meteen weet op te lossen.</p>
+                                            <p>Hier volgen enkele tips voor wanneer er iets mis gaat. u moet er wel eens op letten.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -302,7 +301,7 @@ ms.locfileid: "64462977"
             </ul>
         </li>
         <li>
-            <a href="#expert">Ik ben expert</a>
+            <a href="#expert">Ik ben een expert</a>
             <ul id="expert">
                 <li>
                     <a href="#expert-all"></a>
@@ -318,8 +317,8 @@ ms.locfileid: "64462977"
                                             </div>
                                         </div>
                                         <div class="cardText">
-                                            <h3>Uw stromen optimaliseren met expressies</h3>
-                                            <p>Leer hoe u expressies en voorwaarden kunt gebruiken om meerdere waarden te vergelijken.</p>
+                                            <h3>Uw stromen nauw keurig afstemmen met expressies</h3>
+                                            <p>Meer informatie over het gebruik van expressies en voor waarden om meerdere waarden te vergelijken.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -338,7 +337,7 @@ ms.locfileid: "64462977"
                                         </div>
                                         <div class="cardText">
                                             <h3>Microsoft Flow voor uw organisatie beheren</h3>
-                                            <p>Leer hoe u in Microsoft Flow omgevingen maakt, gebruikt en beheert.</p>
+                                            <p>Meer informatie over het maken, gebruiken en beheren van omgevingen in Microsoft Flow.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -356,7 +355,7 @@ ms.locfileid: "64462977"
                                             </div>
                                         </div>
                                         <div class="cardText">
-                                            <h3>REST-API's gebruiken met uw stromen</h3>
+                                            <h3>Meer informatie over het gebruik van REST-Api's met uw stromen</h3>
                                             <p>Roep Microsoft Flow aan vanuit uw eigen toepassingen.</p>
                                         </div>
                                     </div>
@@ -395,7 +394,7 @@ ms.locfileid: "64462977"
                                         </div>
                                         <div class="cardText">
                                             <h3>Uw stromen uitbreiden met Logic Apps</h3>
-                                            <p>Azure Logic Apps biedt een uitgebreidere set mogelijkheden dan wat er in Microsoft Flow is inbegrepen. U kunt een stroom opslaan als Logic Apps-sjabloon en deze vervolgens beheren als elke andere Logic Apps-resource.</p>
+                                            <p>Azure Logic Apps biedt een uitgebreidere reeks mogelijkheden dan is opgenomen in Microsoft Flow. Sla gewoon elke stroom op als Logic Apps sjabloon en beheer deze zoals elke andere Logic Apps resource.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -413,8 +412,8 @@ ms.locfileid: "64462977"
                                             </div>
                                         </div>
                                         <div class="cardText">
-                                            <h3>De consistentie van gegevensverzameling en werkstromen vergroten</h3>
-                                            <p>Vergroot de consistentie van gegevensverzameling en werkstromen door gebruik te maken van zakelijke processtromen.</p>
+                                            <h3>Gegevensverzameling en werk stroom consistentie van station</h3>
+                                            <p>Het verzamelen van gegevens en de consistentie van werk stromen met behulp van bedrijfs processen.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -433,7 +432,7 @@ ms.locfileid: "64462977"
                                         </div>
                                         <div class="cardText">
                                             <h3>Common Data Service gebruiken</h3>
-                                            <p>Gebruik Common Data Service met werkstroomprocessen.</p>
+                                            <p>Gebruik Common Data Service met werk stroom processen.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -445,7 +444,7 @@ ms.locfileid: "64462977"
             </ul>
         </li>
         <li>
-            <a href="#admin">Ik ben beheerder</a>
+            <a href="#admin">Ik ben een beheerder</a>
             <ul id="admin">
                 <li>
                     <a href="#admin-all"></a>
@@ -462,7 +461,7 @@ ms.locfileid: "64462977"
                                         </div>
                                         <div class="cardText">
                                             <h3>Omgevingen beheren</h3>
-                                            <p>Beheer de omgevingen van uw organisatie.</p>
+                                            <p>De omgevingen van uw organisatie beheren.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -480,8 +479,8 @@ ms.locfileid: "64462977"
                                             </div>
                                         </div>
                                         <div class="cardText">
-                                            <h3>Preventie van gegevensverlies</h3>
-                                            <p>Definieer beleid om de gegevens van uw organisatie te beveiligen.</p>
+                                            <h3>Gegevens verlies voor komen</h3>
+                                            <p>Beleids regels definiëren om de gegevens van uw organisatie te beveiligen.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -499,8 +498,8 @@ ms.locfileid: "64462977"
                                             </div>
                                         </div>
                                         <div class="cardText">
-                                            <h3>Stroomuitvoeringen beheren</h3>
-                                            <p>Onderzoek en beheer elke uitvoering van uw stromen.</p>
+                                            <h3>Stroom uitvoeringen beheren</h3>
+                                            <p>Alle uitvoeringen van uw stromen onderzoeken en beheren.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -519,7 +518,7 @@ ms.locfileid: "64462977"
                                         </div>
                                         <div class="cardText">
                                             <h3>Inzicht verkrijgen in uw stromen</h3>
-                                            <p>Krijg inzicht in de status van uw stromen via het analysedashboard.</p>
+                                            <p>Krijg inzicht in de status van uw stromen in het dash board van Analytics.</p>
                                         </div>
                                     </div>
                                 </div>

@@ -1,7 +1,7 @@
 ---
-title: Klassieke Common Data Service-werkstromen | MicrosoftDocs
+title: Klassieke Common Data Service-werk stromen | MicrosoftDocs
 ms.custom: ''
-ms.date: 08/06/2018
+ms.date: 08/27/2019
 ms.reviewer: matp
 ms.service: flow
 ms.topic: article
@@ -14,140 +14,144 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: b48fd51fcdf5ea85b564f7e422f72afa3f318060
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.openlocfilehash: 42ac7bd75268010a8d7e2bf88a600621504dda39
+ms.sourcegitcommit: 510706f5699b6cf9dda9dcafbed715f9f6d559e8
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "64463479"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73548341"
 ---
-# <a name="classic-common-data-service-workflows"></a>Klassieke Common Data Service-werkstromen 
+# <a name="classic-common-data-service-workflows"></a>Klassieke Common Data Service-werk stromen 
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
-Werkstromen automatiseren bedrijfsprocessen zonder gebruikersinterface. Werkstroomprocessen worden meestal gebruikt om automatisering te initiëren waarvoor geen tussenkomst van de gebruiker vereist is.  
+Werk stromen automatiseren bedrijfs processen zonder gebruikers interface. Personen gebruiken meestal werk stroom processen om Automation te initiëren waarvoor geen interactie van de gebruiker is vereist.
+
+> [!IMPORTANT]
+> Gebruik stromen in plaats van klassieke werk stromen om uw bedrijfs processen te automatiseren. Meer informatie: [klassieke common data service-werk stromen vervangen door stromen](replace-workflows-with-flows.md)  
   
- Elk werkstroomproces is gekoppeld aan één entiteit. Er zijn bij het configureren van werkstromen vier belangrijke gebieden waarmee u rekening moet houden:  
+ Elk werk stroom proces is gekoppeld aan één entiteit. Bij het configureren van werk stromen moet u rekening houden met vier belang rijke gebieden:  
   
 -   Wanneer moet u deze starten?  
   
--   Moeten deze worden uitgevoerd als realtimewerkstroom of achtergrondwerkstroom?  
+-   Moeten ze worden uitgevoerd als een real-time werk stroom of een werk stroom op de achtergrond?  
   
--   Welke acties moeten deze uitvoeren?  
+-   Welke acties moet er worden uitgevoerd?  
   
--   Onder welke voorwaarden moeten acties worden uitgevoerd?  
+-   Onder welke voor waarden moeten acties worden uitgevoerd?  
   
- In dit onderwerp wordt behandeld hoe u naar werkstroomprocessen kunt zoeken en wordt beschreven wanneer deze moeten worden gestart en of ze als realtime- of achtergrondwerkstroom uitgevoerd moeten worden. Zie [Werkstroomprocessen configureren](configure-workflow-steps.md) voor informatie over de acties die deze moeten uitvoeren en de voorwaarden.  
+ In dit onderwerp wordt beschreven hoe u werk stroom processen kunt vinden en hoe u deze kunt starten en of ze als realtime of achtergrond moeten worden uitgevoerd. Zie [werk stroom processen configureren](configure-workflow-steps.md)voor meer informatie over de acties die ze moeten uitvoeren en de voor waarden.  
   
 <a name="BKMK_WhereToCustomizeWorkflows"></a>   
-## <a name="where-do-you-customize-workflow-processes"></a>Waar past u werkstroomprocessen aan?  
- U kunt de werkstromen in uw organisatie bekijken via het knooppunt **Processen** in de **standaardoplossing**, en deze filteren op processen uit de **categorie** **Werkstroom**.  
+## <a name="where-do-you-customize-workflow-processes"></a>Waar kunt u werk stroom processen aanpassen?  
+ U kunt de werk stromen in uw organisatie zien door het knoop punt **processen** te bekijken in de **standaard oplossing** en te filteren op processen met de **werk stroom** **categorie** .  
   
- ![Processen die zijn gefilterd op werkstroom in Dynamics 365](media/workflow-processes-filtered.PNG "Processen die zijn gefilterd op werkstroom in Dynamics 365")  
+ ![Processen gefilterd op werk stroom in Dynamics 365](media/workflow-processes-filtered.PNG "Processen gefilterd op werk stroom in Dynamics 365")  
   
- Afhankelijk van de samenstelling van de app kunnen gebruikers hun werkstromen in de app maken of wijzigen. 
+ Afhankelijk van hoe de app is gebouwd, kunnen gebruikers hun werk stromen in de app maken of wijzigen. 
  
-Ontwikkelaars kunnen werkstromen maken met behulp van gegevens in de [Dynamics 365 Customer Engagement-handleiding voor ontwikkelaars](https://docs.microsoft.com/dynamics365/customer-engagement/developer/developer-guide) en oplossingen die u koopt kunnen werkstromen bevatten die u kunt aanpassen.  
+Ontwikkel aars kunnen werk stromen maken met behulp van informatie in de [common data service ontwikkelaars gids](https://docs.microsoft.com/powerapps/developer/common-data-service/workflow/workflow-extensions) en oplossingen die u aanschaft, werk stromen kunnen bevatten die u kunt wijzigen.  
   
 <a name="BKMK_WorkflowProperties"></a>   
-## <a name="workflow-properties"></a>Werkstroomeigenschappen  
- Selecteer in de Oplossingsverkenner **Processen** en klik op **Nieuw**.  
+## <a name="workflow-properties"></a>Eigenschappen van werk stroom  
+ Selecteer in de Solution Explorer **processen** en klik op **Nieuw**.  
   
- Wanneer u een werkstroom maakt, wordt u in het dialoogvenster **Proces maken** gevraagd om drie eigenschappen in te stellen waarover alle processen beschikken:  
+ Wanneer u in het dialoog venster **proces maken** een werk stroom maakt, moet u drie eigenschappen instellen die alle processen hebben:  
   
- ![Een werkstroom maken in Dynamics 365](media/create-workflow.PNG "Een werkstroom maken in Dynamics 365")  
+ ![Een werk stroom maken in Dynamics 365](media/create-workflow.PNG "Een werk stroom maken in Dynamics 365")  
   
- **Procesnaam**  
- De naam van het werkstroomproces hoeft niet uniek te zijn, maar als u verwacht een groot aantal werkstromen te krijgen, wordt aanbevolen om een naamconventie te gebruiken om duidelijk onderscheid te maken in uw processen. Mogelijk wilt u standaardvoorvoegsels op de naam van de werkstroom toepassen. Het voorvoegsel kan de functie van de werkstroom of de afdeling binnen het bedrijf beschrijven. Hierdoor kunt u gelijksoortige items in de lijst van werkstromen groeperen.  
+ **Proces naam**  
+ De naam van het werk stroom proces hoeft niet uniek te zijn, maar als u verwacht dat u veel werk stromen hebt, wilt u mogelijk een naamgevings Conventie gebruiken om uw processen duidelijk te onderscheiden. Mogelijk wilt u standaard voorvoegsels Toep assen op de naam van de werk stroom. Het voor voegsel kan de functie van de werk stroom of de afdeling binnen het bedrijf beschrijven. Dit helpt u bij het groeperen van vergelijk bare items in de lijst met werk stromen.  
   
- **Categorie**  
- Deze eigenschap bepaalt dat dit een werkstroomproces is.  
+ **Rubriek**  
+ Deze eigenschap bepaalt dat dit een werk stroom proces is.  
   
- **Entiteit**  
- Elk werkstroomproces moet worden ingesteld op één entiteit. U kunt de entiteit niet wijzigen nadat het werkstroomproces is gemaakt.  
+ **Vennootschap**  
+ Elk werk stroom proces moet worden ingesteld op één entiteit. U kunt de entiteit niet wijzigen nadat het werk stroom proces is gemaakt.  
   
- **Deze werkstroom op de achtergrond uitvoeren (aanbevolen)**  
- Deze optie wordt weergegeven wanneer u Werkstroom als categorie selecteert. Deze instelling bepaalt of de werkstroom een realtime- of achtergrondwerkstroom is. Realtimewerkstromen worden onmiddellijk uitgevoerd (synchroon) en achtergrondwerkstromen worden asynchroon uitgevoerd. De beschikbare configuratieopties is afhankelijk van uw keuze voor deze instelling. Achtergrondwerkstromen maken wachtvoorwaarden mogelijk die niet beschikbaar zijn voor realtimewerkstromen. Zolang u die wachtvoorwaarden niet gebruikt, kunt u op een later tijdstip achtergrondwerkstromen omzetten in realtimewerkstromen en vice versa. Zie [Voorwaarden instellen voor werkstroomacties](configure-workflow-steps.md#BKMK_SettingConditionsForWorkflowActions) voor meer informatie over wachtvoorwaarden.  
+ **Deze werk stroom op de achtergrond uitvoeren (aanbevolen)**  
+ Deze optie wordt weer gegeven wanneer u werk stroom als categorie selecteert. Met deze instelling wordt bepaald of de werk stroom in realtime of op een achtergrond werk stroom is. Realtime werk stromen worden direct uitgevoerd (synchroon) en werk stromen die op de achtergrond asynchroon worden uitgevoerd. Welke configuratie opties er beschikbaar zijn, is afhankelijk van uw keuze voor deze instelling. Met achtergrond werk stromen kunnen wacht voorwaarden worden opgegeven die niet beschikbaar zijn voor realtime werk stromen. Als u deze voor waarden niet gebruikt, kunt u op een later tijdstip achtergrond werk stromen omzetten in realtime werk stromen en realtime werk stromen naar achtergrond werk stromen. Zie voor [waarden instellen voor werk stroom acties](configure-workflow-steps.md#BKMK_SettingConditionsForWorkflowActions)voor meer informatie over wachtende voor waarden.  
   
- U hebt ook de optie **Type** om op te geven of u een geheel nieuwe werkstroom wilt maken of ervoor wilt kiezen om te beginnen met een bestaande sjabloon. Als u kiest voor **Nieuw proces vanuit een bestaande sjabloon (selecteer in de lijst)**, kunt u kiezen uit de beschikbare werkstroomprocessen die eerder als sjabloon zijn opgeslagen.  
+ U hebt ook de optie **type** om op te geven of u een nieuwe werk stroom wilt maken of dat u wilt beginnen met een bestaande sjabloon. Wanneer u **nieuw proces kiest op basis van een bestaande sjabloon (selecteren in de lijst),** kunt u kiezen uit de beschik bare werk stroom processen die eerder als een proces sjabloon zijn opgeslagen.  
   
- Wanneer u de werkstroom maakt, of als u een bestaande bewerkt, beschikt u de volgende aanvullende eigenschappen:  
+ Nadat u de werk stroom hebt gemaakt of als u een bestaand item bewerkt, hebt u de volgende aanvullende eigenschappen:  
   
- ![Tabblad Algemeen in een werkstroom](media/create-workflow-general-tab.PNG "Tabblad Algemeen in een werkstroom")  
+ ![Tabblad Algemeen in een werk stroom](media/create-workflow-general-tab.PNG "Tabblad Algemeen in een werk stroom")  
   
  **Activeren als**  
- U kunt kiezen voor **Processjabloon** om een geavanceerd startpunt te maken voor andere sjablonen. Als u deze optie kiest na activering van de werkstroom, wordt deze niet toegepast. De optie kan wel worden geselecteerd in het dialoogvenster **Proces maken** als u het volgende selecteert: **Type**: **Nieuw proces van een bestaande sjabloon (selecteer in de lijst)**  
+ U kunt **proces sjabloon** kiezen om een geavanceerd uitgangs punt voor andere sjablonen te maken. Als u deze optie kiest, wordt de werk stroom pas toegepast nadat u deze hebt geactiveerd, maar in plaats daarvan beschikbaar is in het dialoog venster **proces maken** als u **type**: **nieuw proces van een bestaande sjabloon selecteert (Selecteer in de lijst)**  
   
- Processjablonen zijn handig wanneer u een aantal soortgelijke werkstroomprocessen hebt en deze zonder dezelfde logica te dupliceren wilt definiëren.  
+ Proces sjablonen zijn handig wanneer u een aantal vergelijk bare werk stroom processen hebt en deze wilt definiëren zonder dezelfde logica te dupliceren.  
   
 > [!NOTE]
->  Het bewerken van een processjabloon verandert niet het gedrag van andere werkstroomprocessen die eerder met behulp ervan als sjabloon zijn gemaakt. Een nieuwe werkstroom die is gemaakt met behulp van een sjabloon is een kopie van de inhoud in de sjabloon.  
+>  Het bewerken van een proces sjabloon heeft geen invloed op het gedrag van andere werk stroom processen die eerder zijn gemaakt als sjabloon. Een nieuwe werk stroom die is gemaakt met behulp van een sjabloon, is een kopie van de inhoud in de sjabloon.  
   
  **Beschikbaar voor uitvoering**  
- Deze sectie bevat opties waarmee wordt beschreven hoe de werkstroom kan worden uitgevoerd.  
+ Deze sectie bevat opties die beschrijven hoe de werk stroom beschikbaar moet worden uitgevoerd.  
   
- **Deze werkstroom op de achtergrond uitvoeren (aanbevolen)**  
- Dit selectievakje geeft de optie weer die u hebt geselecteerd tijdens het maken van de werkstroom. Deze optie is uitgeschakeld, maar u kunt het wijzigen vanuit het menu **Acties** door **Converteren naar een realtimewerkstroom** of **Converteren naar een werkstroomachtergrond** te kiezen.  
+ **Deze werk stroom op de achtergrond uitvoeren (aanbevolen)**  
+ Dit selectie vakje weerspiegelt de optie die u hebt geselecteerd tijdens het maken van de werk stroom. Deze optie is uitgeschakeld, maar u kunt deze wijzigen in het menu **acties** door ofwel **converteren naar een realtime werk stroom** te kiezen of **converteren naar een werk stroom op de achtergrond**.  
   
  **Als een proces op aanvraag**  
- Kies deze optie als u wilt toestaan dat gebruikers deze werkstroom uitvoeren vanuit de opdracht **Werkstroom uitvoeren**.  
+ Kies deze optie als u wilt toestaan dat gebruikers deze werk stroom uitvoeren via de opdracht **werk stroom uitvoeren** .  
   
- **Als een onderliggend proces**  
- Kies deze optie als u toestaan dat u wilt dat de werkstroom kan worden gestart vanuit een andere werkstroom.  
+ **Als onderliggend proces**  
+ Kies deze optie als u wilt toestaan dat de werk stroom beschikbaar is om te worden gestart vanuit een andere werk stroom.  
   
- **Vasthouden van werkstroomtaken**  
- Deze sectie bevat een optie voor het verwijderen van een werkstroom nadat deze is uitgevoerd.  
+ **Bewaren van werk stroom taken**  
+ Deze sectie bevat een optie voor het verwijderen van een werk stroom nadat de uitvoering van de werk stroom is voltooid.  
   
- **Automatisch voltooide werkstroomtaken verwijderen (om schijfruimte te besparen)**  
- Kies deze optie als u wilt dat een voltooide werkstroomtaak automatisch moeten worden verwijderd.  
-  
-> [!NOTE]
->  De werkstroomtaken worden niet onmiddellijk na voltooiing verwijderd, maar even erna, via een batchproces.  
-  
- **Bereik**  
- Voor entiteiten waarvan de gebruiker eigenaar is, zijn de opties **Organisatie**, **Bovenliggend item: onderliggende business units**, **Business unit** of **Gebruiker**. Voor entiteiten die eigendom zijn van een organisatie is de enige optie **Organisatie**.  
-  
- Als het bereik **Organisatie** is, kan de werkstroomlogica worden toegepast op elk record in de organisatie. Anders kan de werkstroom alleen worden toegepast op een subset van de records die binnen het bereik vallen.  
+ **Voltooide werk stroom taken automatisch verwijderen (om schijf ruimte te besparen)**  
+ Kies deze optie als u wilt dat een voltooide werk stroom taak automatisch wordt verwijderd.  
   
 > [!NOTE]
->  De standaardwaarde van het bereik is **Gebruiker**. Zorg ervoor dat u controleert of de waarde voor het bereik juist is voordat u de werkstroom activeert.  
+>  De werk stroom taken worden niet onmiddellijk verwijderd na voltooiing, maar na een batch proces.  
+  
+ **Ligt**  
+ Voor entiteiten die eigendom zijn van een gebruiker, zijn de opties **organisatie**, **bovenliggend item: onderliggende Business Units**, **bedrijfs eenheid**of **gebruiker**. Voor entiteiten die eigendom zijn van een organisatie is de enige optie **organisatie**.  
+  
+ Als de scope **organisatie**is, kan de werk stroom logica worden toegepast op elke record in de organisatie. Anders kan de werk stroom alleen worden toegepast op een subset records die binnen het bereik vallen.  
+  
+> [!NOTE]
+>  De standaard waarde voor het bereik is **gebruiker**. Zorg ervoor dat u controleert of de bereik waarde juist is voordat u de werk stroom activeert.  
   
  **Starten wanneer**  
- Gebruik de opties in deze sectie om op te geven wanneer een werkstroom automatisch moet worden gestart. U kunt een realtimewerkstroom zo configureren dat deze wordt uitgevoerd voorafgaand aan bepaalde gebeurtenissen. Dit is een zeer krachtige functie, omdat de werkstroom de actie kan stoppen voordat deze plaatsvindt. Meer informatie: [Realtime-werkstromen gebruiken](configure-workflow-steps.md#BKMK_SynchronousWorkflows). De opties zijn:  
+ Gebruik de opties in dit gedeelte om op te geven wanneer een werk stroom automatisch moet worden gestart. U kunt een real-time werk stroom zo configureren dat deze wordt uitgevoerd vóór bepaalde gebeurtenissen. Dit is een zeer krachtige functie, omdat de werk stroom de actie kan stoppen voordat deze wordt uitgevoerd. Meer informatie: het [gebruik van real-time werk stromen](configure-workflow-steps.md#BKMK_SynchronousWorkflows). De opties zijn:  
   
 - **Record wordt gemaakt**  
   
-- **Recordstatus wordt gewijzigd**  
+- **Record status wijzigingen**  
   
 - **Record wordt toegewezen**  
   
-- **Recordvelden worden gewijzigd**  
+- **Record velden wijzigen**  
   
-- **Record wordt verwijderd**  
+- **Record is verwijderd**  
   
 > [!NOTE]
->  Houd er rekening mee dat bij de acties en voorwaarden die u voor de werkstroom definieert niet bekend is wanneer de werkstroom wordt uitgevoerd. Als u een werkstroom definieert voor het bijwerken van het record, kan deze actie bijvoorbeeld niet worden uitgevoerd door een realtimewerkstroom voordat het record is gemaakt. Een record dat niet bestaat, kan niet worden bijgewerkt. Op deze manier kan een achtergrondwerkstroom niet een record bijwerken dat is verwijderd, ook al kunt u deze actie voor de werkstroom definiëren. Als u een werkstroom zo configureert dat deze een actie uitvoert die niet kan worden uitgevoerd, zal deze mislukken en zal de volledige werkstroom mislukken.  
+>  Houd er rekening mee dat de acties en voor waarden die u voor de werk stroom definieert, niet weten wanneer de werk stroom wordt uitgevoerd. Als u bijvoorbeeld een werk stroom definieert om de record bij te werken, kan deze actie niet worden uitgevoerd door een realtime werk stroom voordat de record wordt gemaakt. Een record die niet bestaat, kan niet worden bijgewerkt. Op dezelfde manier kan een record die is verwijderd door een werk stroom op de achtergrond niet worden bijgewerkt, ook al kunt u deze actie voor de werk stroom definiëren. Als u een werk stroom configureert om een actie uit te voeren die niet kan worden uitgevoerd, mislukt dit en wordt de hele werk stroom mislukt.  
   
  **Uitvoeren als**  
- Deze optie is alleen beschikbaar als u de optie **Deze werkstroom op de achtergrond uitvoeren (aanbevolen)** uitschakelt wanneer u de werkstroom hebt gemaakt of als u later een achtergrondwerkstroom naar een realtimewerkstroom converteert.  
+ Deze optie is alleen beschikbaar als u de optie **deze werk stroom uitvoeren op de achtergrond (aanbevolen)** hebt uitgeschakeld tijdens het maken van de werk stroom of als u later een werk stroom op de achtergrond hebt geconverteerd om een realtime werk stroom te zijn.  
   
 <a name="BKMK_SecurityContextOfWorkflowProcesses"></a>   
-## <a name="security-context-of-workflow-processes"></a>De beveiligingscontext van de werkstroomprocessen  
- Wanneer een achtergrondwerkstroom is geconfigureerd als een proces op aanvraag en wordt gestart door een gebruiker met behulp van de opdracht **Werkstroom uitvoeren**, zijn de acties die door de werkstroom kunnen worden uitgevoerd beperkt tot de acties die de gebruiker kan uitvoeren op basis van de bevoegdheden en toegangsniveaus die zijn gedefinieerd door de beveiligingsrol(len) die zijn ingesteld voor het gebruikersaccount.  
+## <a name="security-context-of-workflow-processes"></a>Beveiligings context van werk stroom processen  
+ Wanneer een werk stroom op de achtergrond is geconfigureerd als een on-demand proces en door een gebruiker wordt gestart met de opdracht **werk stroom uitvoeren** , zijn de acties die de werk stroom kan uitvoeren beperkt tot die welke de gebruiker kan uitvoeren op basis van de bevoegdheden en toegangs niveaus die zijn gedefinieerd door de beveiligingsrol (s) die zijn ingesteld voor hun gebruikers account.  
   
- Wanneer een achtergrondwerkstroom wordt gestart op basis van een gebeurtenis, functioneert de werkstroom in de context van de persoon die de eigenaar ervan is. Dit is doorgaans degene die de werkstroom heeft gemaakt.  
+ Wanneer een werk stroom op de achtergrond wordt gestart op basis van een gebeurtenis, werkt de werk stroom in de context van de persoon die de werk stroom heeft gemaakt.  
   
- Voor realtimewerkstromen beschikt u over de optie **Uitvoeren als** en kunt u kiezen of de beveiligingscontext van de eigenaar van de werkstroom of de gebruiker die wijzigingen in het record heeft aangebracht, moet worden toegepast door de werkstroom. Als uw werkstroom acties bevat die niet door alle gebruikers kunnen worden uitgevoerd op basis van veiligheidsbeperkingen, moet u ervoor kiezen om de werkstroom uit te voeren als eigenaar van de werkstroom.  
+ Voor realtime werk stromen hebt u de optie **uitvoeren als** en kunt u kiezen of de werk stroom de beveiligings context moet Toep assen van de eigenaar van de werk stroom of de gebruiker die wijzigingen heeft aangebracht in de record. Als uw werk stroom acties bevat die alle gebruikers niet kunnen uitvoeren op basis van beveiligings beperkingen, moet u ervoor kiezen om de werk stroom uit te voeren als de eigenaar van de werk stroom.  
   
 <a name="BKMK_ActivatingWorkflows"></a>   
-## <a name="activate-a-workflow"></a>Een werkstroom activeren  
- Werkstromen kunnen alleen worden bewerkt wanneer ze zijn gedeactiveerd. Voordat een werkstroom handmatig kan worden gebruikt of op basis van gebeurtenissen kan worden toegepast, moet deze worden geactiveerd. Een werkstroom moet ten minste één stap bevatten voordat deze kan worden geactiveerd. Zie [Werkstroomprocessen configureren](configure-workflow-steps.md) voor meer informatie over het configureren van stappen  
+## <a name="activate-a-workflow"></a>Een werk stroom activeren  
+ Werk stromen kunnen alleen worden bewerkt wanneer ze worden gedeactiveerd. Vóór een werk stroom kan hand matig worden gebruikt of worden toegepast als gevolg van gebeurtenissen die moeten worden geactiveerd. Voordat een werk stroom kan worden geactiveerd, moet deze ten minste één stap bevatten. Zie [werk stroom processen configureren](configure-workflow-steps.md) voor meer informatie over het configureren van stappen.  
   
- Een werkstroom kan alleen worden in- of uitgeschakeld door de eigenaar van de werkstroom of door iemand met de bevoegdheid **Handelen namens een andere gebruiker**, zoals de systeembeheerder.  De reden hiervoor is dat een kwaadwillende gebruiker iemands werkstroom kan wijzigen zonder dat deze op de hoogte is van de wijziging. U kunt een werkstroom in uw eigendom opnieuw toewijzen door deze van eigenaar te laten veranderen. Dit veld bevindt zich op het tabblad **Beheer**. Als u geen systeembeheerder bent en u een werkstroom wilt bewerken die eigendom is van een andere gebruiker, moet u deze eerst deactiveren en aan u toewijzen. Nadat u klaar bent met het bewerken van de werkstroom, kunt u deze weer aan de andere gebruiker toewijzen, zodat deze de werkstroom kan activeren.  
+ Een werk stroom kan alleen worden geactiveerd of gedeactiveerd door de eigenaar van de werk stroom of door iemand die namens **een andere gebruikers** bevoegdheid heeft, zoals de systeem beheerder.  De reden hiervoor is dat een kwaadwillende gebruiker de werk stroom van iemand kan wijzigen zonder dat ze op de hoogte zijn van de wijziging. U kunt een werk stroom die u bezit opnieuw toewijzen door de eigenaar te wijzigen. Dit veld bevindt zich op het tabblad **beheer** . Als u niet de systeem beheerder bent en u een werk stroom wilt bewerken die eigendom is van een andere gebruiker, moet u deze eerst deactiveren en toewijzen aan u. Nadat u klaar bent met het bewerken van de werk stroom, kunt u deze weer toewijzen zodat deze kan worden geactiveerd.  
   
- Voor realtimewerkstromen is vereist dat de gebruiker over de bevoegdheid **Realtimeprocessen activeren** beschikt. Omdat met realtimewerkstromen het risico dat de systeemprestaties worden beïnvloed groter is, moet deze bevoegdheid alleen worden gegeven aan de personen die het mogelijke risico kunnen beoordelen.  
+ Voor realtime-werk stromen moet de gebruiker de bevoegdheid **realtime-processen activeren** hebben. Omdat realtime werk stromen een grotere kans hebben om de systeem prestaties te beïnvloeden, moeten alleen mensen die het potentiële risico kunnen evalueren, deze bevoegdheid krijgen.  
   
- Werkstromen worden opgeslagen wanneer ze worden geactiveerd. Het is dus niet nodig om ze op te slaan voordat u ze activeert.  
+ Werk stromen worden opgeslagen wanneer ze zijn geactiveerd. het is dus niet nodig ze op te slaan voordat ze worden geactiveerd.  
   
 ## <a name="next-steps"></a>Volgende stappen  
- [Werkstroomprocessen configureren](configure-workflow-steps.md)  <br/>
-[Een werkstroom op aanvraag toevoegen aan een bedrijfsprocesstroom](bpf-add-on-demand-workflow.md) 
+ [Werk stroom processen configureren](configure-workflow-steps.md)  <br/>
+[Een werk stroom op aanvraag toevoegen aan een bedrijfs proces stroom](bpf-add-on-demand-workflow.md) 
 

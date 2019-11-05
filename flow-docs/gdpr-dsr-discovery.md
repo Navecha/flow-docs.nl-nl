@@ -1,11 +1,12 @@
 ---
-title: 'Microsoft Flow: AVG-verzoeken van betrokkenen - detectie | Microsoft Docs'
-description: Ontdek hoe u Microsoft Flow kunt gebruiken om te reageren op inzageverzoeken van betrokkenen in het kader van de AVG.
+title: Detectie van Microsoft Flow AVG-gegevens aanvragen | Microsoft Docs
+description: Meer informatie over het gebruik van Microsoft Flow om te reageren op aanvragen voor AVG betrokkenen-gegevens voor het onderwerp.
 services: ''
 suite: flow
 documentationcenter: na
-author: KentWeareMSFT
-manager: anneta
+author: MSFTMAN
+manager: KVIVEK
+ms.author: Deonhe
 editor: ''
 tags: ''
 ms.service: flow
@@ -14,37 +15,37 @@ ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 4/17/2018
-ms.author: keweare
 search.app:
 - Flow
 - Powerplatform
 search.audienceType:
 - admin
-ms.openlocfilehash: 9ec66eefdbf2f6b6a9047678e9c29cb66900eda2
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.openlocfilehash: 197d9ebfc38fc4f5b52bf674aef61d419530f439
+ms.sourcegitcommit: 510706f5699b6cf9dda9dcafbed715f9f6d559e8
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "64454095"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73548129"
 ---
-# <a name="responding-to-gdpr-data-subject-discovery-requests-for-microsoft-flow"></a>Met Microsoft Flow reageren op inzageverzoeken van betrokkenen in het kader van de AVG
+# <a name="responding-to-gdpr-data-subject-discovery-requests-for-microsoft-flow"></a>Reageren op aanvragen voor detectie van AVG-gegevens voor Microsoft Flow
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
-De eerste stap om te reageren op een verzoek van een betrokkene, is het vinden van de persoonlijke gegevens waarop het verzoek betrekking heeft. Deze eerste stap helpt u om te bepalen of een verzoek voldoet aan de vereisten van uw organisatie voor het inwilligen of afwijzen van een verzoek van een betrokkene. Nadat de betreffende persoonsgegevens zijn gevonden en bekeken, kunt u bijvoorbeeld vaststellen dat het verzoek niet voldoet aan de vereisten van uw organisatie omdat het inwilligen ervan nadelige gevolgen zou kunnen hebben voor de rechten en vrijheden van anderen.
+De eerste stap bij het reageren op een DSR is het vinden van persoons gegevens die het onderwerp van de aanvraag zijn. Deze eerste stap helpt u om te bepalen of een DSR voldoet aan de vereisten van uw organisatie om een DSR-aanvraag te respecteren of te weigeren. Nadat u bijvoorbeeld de persoons gegevens hebt gevonden en bekeken, kunt u bepalen dat de aanvraag niet voldoet aan de vereisten van uw organisatie, omdat dit de rechten en vrijheden van anderen nadelig kan beïnvloeden.
 
-Hieronder volgt een samenvatting van de typen Microsoft Flow-resources die persoonsgegevens voor een specifieke gebruiker bevatten.
+Hieronder volgt een samen vatting van de typen Microsoft Flow resources die persoonlijke gegevens voor een specifieke gebruiker bevatten.
 
-|**Resources met persoonsgegevens**|**Doel**|
+|**Resources met persoons gegevens**|**Doel**|
 |-----|-----|
-|Door het systeem gegenereerde logboeken|Telemetrie waarmee systeemgebeurtenissen en de geschiedenis worden vastgelegd.|
-|Uitvoeringsgeschiedenis|De geschiedenis van elke uitvoering van een stroom gedurende de afgelopen 28 dagen. Deze gegevens omvatten de begintijd, eindtijd, status en alle i/o-informatie voor de stroom. [Meer informatie](https://flow.microsoft.com/blog/download-history-recurrence/)|
-|Activiteitsfeed| Geeft een samenvatting van stroomactiviteiten, waaronder de uitvoeringsstatus, fouten en meldingen.|
-|Gebruikerstaken|Systeemtaken (niet zichtbaar voor de gebruiker) die worden uitgevoerd namens een gebruiker zodat stromen kunnen worden uitgevoerd.|
-|Stromen|De werkstroomlogica die voor een stroom bestaat. [Meer informatie](https://docs.microsoft.com/flow/get-started-logic-flow)|
-|Stroommachtigingen|Stromen kunnen worden gedeeld en opnieuw worden toegewezen aan andere gebruikers. Er zijn lijsten met machtigingen voor alle stromen. [Meer informatie](https://docs.microsoft.com/flow/frequently-asked-questions#can-i-share-the-flows-i-create)|
-|Gebruikersdetails|Gegevens (niet zichtbaar voor de gebruiker) die ondersteuning bieden voor uitvoering van de stroom.|
-|Verbindingen|Gebruikt door connectors en toegestaan voor verbindingen met API's, systemen, databases, enzovoort. [Meer informatie](https://docs.microsoft.com/flow/add-manage-connections)|
-|Verbindingsmachtigingen|Machtigingen voor een specifieke verbinding. [Meer informatie](https://docs.microsoft.com/flow/add-manage-connections)|
-|Aangepaste connectors|Aangepaste connectors die een gebruiker heeft gemaakt en gepubliceerd, en waarmee verbinding met aangepaste systemen of systemen van derden kan worden gemaakt. [Meer informatie](https://docs.microsoft.com/connectors/custom-connectors/)|
-|Machtigingen voor aangepaste connectors|Lijst met machtigingen voor aangepaste connectors. [Meer informatie](https://docs.microsoft.com/connectors/custom-connectors/share)|
-|Gateway|Gateways zijn lokale gegevensservices die door een gebruiker kunnen worden geïnstalleerd om gegevens snel en veilig over te dragen tussen Microsoft Flow en een gegevensbron die zich niet in de cloud bevindt. [Meer informatie](https://docs.microsoft.com/flow/gateway-manage)|
-|Gatewaymachtigingen|Gateways kunnen worden gedeeld met gebruikers binnen een organisatie. [Meer informatie](https://go.microsoft.com/fwlink/?linkid=872249)|
+|Door het systeem gegenereerde logboeken|Telemetrie waarmee systeem gebeurtenissen en geschiedenis worden vastgelegd.|
+|uitvoerings geschiedenis|De geschiedenis van elke stroom uitvoering gedurende de afgelopen 28 dagen. Deze gegevens omvatten de begin tijd, eind tijd, status en alle invoer-en uitvoer gegevens voor de stroom. [Meer informatie](https://flow.microsoft.com/blog/download-history-recurrence/)|
+|Activiteitsfeed| Biedt een samen vatting aan stroom activiteiten, waaronder uitvoerings status, fouten en meldingen.|
+|Gebruikers taken|Systeem taken die namens een gebruiker worden uitgevoerd, zijn niet zichtbaar voor de gebruiker, zodat stromen kunnen worden uitgevoerd.|
+|Terugloop|De werk stroom logica die voor een stroom bestaat. [Meer informatie](https://docs.microsoft.com/flow/get-started-logic-flow)|
+|Stroom machtigingen|Stromen kunnen worden gedeeld en opnieuw worden toegewezen aan andere gebruikers. Voor alle stromen bestaan machtigingen lijsten. [Meer informatie](https://docs.microsoft.com/flow/frequently-asked-questions#can-i-share-the-flows-i-create)|
+|Gebruikers Details|Details die niet worden weer gegeven door de gebruiker en die de uitvoering van stromen ondersteunen.|
+|Inbel|Wordt gebruikt door connectors en biedt connectiviteit met Api's, systemen, data bases, enzovoort. [Meer informatie](https://docs.microsoft.com/flow/add-manage-connections)|
+|Verbindings machtigingen|Machtigingen voor een specifieke verbinding. [Meer informatie](https://docs.microsoft.com/flow/add-manage-connections)|
+|Aangepaste connectors|Aangepaste connectors die een gebruiker heeft gemaakt en gepubliceerd, die verbinding kunnen maken met aangepaste of systemen van derden. [Meer informatie](https://docs.microsoft.com/connectors/custom-connectors/)|
+|Machtigingen voor aangepaste connectors|Machtigings lijsten voor aangepaste connectors. [Meer informatie](https://docs.microsoft.com/connectors/custom-connectors/share)|
+|#B0|Gateways zijn on-premises gegevens services die door een gebruiker kunnen worden geïnstalleerd om gegevens snel en veilig over te dragen tussen Microsoft Flow en een gegevens bron die zich niet in de Cloud bevindt. [Meer informatie](https://docs.microsoft.com/flow/gateway-manage)|
+|Gateway machtigingen|Gateways kunnen worden gedeeld met gebruikers binnen een organisatie. [Meer informatie](https://go.microsoft.com/fwlink/?linkid=872249)|

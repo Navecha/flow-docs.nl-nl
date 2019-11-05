@@ -1,10 +1,11 @@
 ---
-title: Dialoogvensters van Common Data Service gebruiken voor begeleide processen (afgeschaft) | Microsoft Docs
-description: Dialoogvensters zijn de synchrone of interactieve processen die gegevens verzamelen en verwerken met behulp van stapsgewijze scripts om gebruikers door een proces te leiden
+title: Common Data Service-dialoog vensters gebruiken voor begeleide processen (afgeschaft) | MicrosoftDocs
+description: Dialoog vensters zijn de synchrone of interactieve processen die informatie verzamelen en verwerken door gebruik te maken van Step-by-Step-scripts om gebruikers via een proces door te sturen
 ms.custom: ''
 ms.date: 10/31/2017
 ms.reviewer: ''
 ms.topic: article
+ms.service: flow
 ms.assetid: d17f8ae2-854b-4f67-a115-5a03d4f0b8ce
 caps.latest.revision: 25
 author: msftman
@@ -15,30 +16,31 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 90bdbc0ecf9b778ec6da3e4cac2b32b44e361fb0
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.openlocfilehash: 05f0b9b72f2f9e2d7f02356ec40eeb520214a0cb
+ms.sourcegitcommit: 510706f5699b6cf9dda9dcafbed715f9f6d559e8
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "64463664"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73548744"
 ---
-# <a name="use-common-data-service-dialogs-for-guided-processes-deprecated"></a>Dialoogvensters van Common Data Service gebruiken voor begeleide processen (afgeschaft)
+# <a name="use-common-data-service-dialogs-for-guided-processes-deprecated"></a>Common Data Service-dialoog vensters gebruiken voor begeleide processen (afgeschaft)
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
-[Dialoogvensters zijn afgeschaft](/dynamics365/get-started/whats-new/customer-engagement/important-changes-coming#dialogs-are-deprecated). U moet dialoogvensters vervangen door bedrijfsprocesstromen of canvas-apps Meer informatie: [Dialoogvensters vervangen door bedrijfsprocesstromen of canvas-apps](replace-dialogs.md) 
+[Dialoog vensters zijn afgeschaft](/dynamics365/get-started/whats-new/customer-engagement/important-changes-coming#dialogs-are-deprecated). U dient dialoog vensters te vervangen door bedrijfs proces stromen of canvas-apps. Meer informatie: [dialoog vensters vervangen met bedrijfs proces stromen of canvas-apps](replace-dialogs.md) 
 
-Dialoogvensters zijn de synchrone of interactieve processen in Common Data Service die gegevens verzamelen en verwerken met behulp van stapsgewijze scripts om gebruikers door een proces te leiden. U kunt bijvoorbeeld dialoogvensters maken als richtlijn voor servicemedewerkers om incidenten op te lossen of te escaleren. Een vergelijkbare toepassing is het maken van dialoogvensters voor het standaardiseren van verkoopprocessen, zoals de kwalificatie van verkoopkansen en het beoordelen van potentiële klanten. Zie voor meer informatie [Use dialogs for guided processes](/dynamics365/customer-engagement/developer/use-dialogs-guided-processes) (Dialoogvensters gebruiken voor begeleide processen) in de handleiding voor ontwikkelaars van Dynamics 365 Customer Engagement.
+Dialoog vensters zijn de synchrone of interactieve processen in Common Data Service die informatie verzamelen en verwerken door gebruik te maken van Step-by-Step-scripts om gebruikers via een proces te leiden. U kunt bijvoorbeeld dialoog vensters maken die fungeren als richt lijn voor uw service vertegenwoordigers voor het oplossen van problemen en het aansturen van aanvragen. Op dezelfde manier kunt u dialoog vensters maken voor het standaardiseren van verkoop processen, zoals opportuniteits kwalificatie en lead Score.
 
-## <a name="differences-between-workflows-and-dialogs"></a>Verschillen tussen werkstromen en dialoogvensters
+## <a name="differences-between-workflows-and-dialogs"></a>Verschillen tussen werk stromen en dialoog vensters
 
-De volgende tabel bevat informatie over de verschillen tussen werkstromen en dialoogvensters van Common Data Service.  
+De volgende tabel bevat informatie over de verschillen tussen Common Data Service werk stromen en dialoog vensters.  
 
 
-| Werkstromen     |    Dialoogvensters      |
+| stroom     |    Dialoog vensters      |
 |---------------|--------------|
-|                                                                                                  Kunnen worden gestart door een gebruiker of automatisch.                                                                                                   |                                                                                          Moeten worden gestart door een gebruiker.                                                                                          |
-|                                  Zijn asynchrone of realtime-processen die geen invoer van de gebruiker vereisen voor voltooiing. Asynchrone processen worden op de achtergrond uitgevoerd, terwijl realtime-processen onmiddellijk worden uitgevoerd.                                   | Zijn realtime-processen die invoer van de gebruiker vereisen voor voltooiing. Wanneer u deze processen uitvoert, wordt er een interface in de vorm van een wizard gepresenteerd zodat u de gewenste selecties kunt doen om de processen uit te voeren. |
-|                                                    De entiteit waarin de details worden opgeslagen van een actieve asynchrone werkstroom is `AsyncOperation`, terwijl er een `Process` wordt gebruikt voor een realtime-werkstroom.                                                     |                                                       De entiteit waarin gegevens worden opgeslagen die worden gegenereerd door een actief dialoogvenster is `ProcessSession`.                                                       |
-|                  Triggers worden ondersteund voor werkstromen. Een lijst met ondersteunde triggers vindt u in [Ondersteunde typen, triggers en entiteiten voor processen](/dynamics365/customer-engagement/developer/supported-types-triggers-entities-actions-processes).                   |                                                                                   Triggers worden niet ondersteund voor dialoogvensters.                                                                                    |
+|                                                                                                  Kan worden gestart door een gebruiker of kan worden geautomatiseerd.                                                                                                   |                                                                                          Moet door een gebruiker worden gestart.                                                                                          |
+|                                  Zijn asynchrone of realtime processen en vereisen niet dat gebruikers invoer wordt uitgevoerd om te worden voltooid. Asynchrone processen worden op de achtergrond uitgevoerd terwijl realtime processen direct worden uitgevoerd.                                   | Zijn realtime processen waarvoor gebruikers invoer moet worden uitgevoerd om te worden voltooid. Wanneer u deze processen uitvoert, wordt een wizard-achtige interface weer gegeven, zodat u de juiste selecties kunt maken om de processen uit te voeren. |
+|                                                    De entiteit die de details van een actieve asynchrone werk stroom opslaat, wordt `AsyncOperation` terwijl een `Process` wordt gebruikt voor een realtime werk stroom.                                                     |                                                       De entiteit die gegevens opslaat die zijn gegenereerd door een actief dialoog venster is de entiteit `ProcessSession`.                                                       |
+|                  Triggers worden ondersteund voor werk stromen. Zie [ondersteunde typen, triggers en entiteiten voor processen](/dynamics365/customer-engagement/developer/supported-types-triggers-entities-actions-processes)voor een lijst met ondersteunde triggers.                   |                                                                                   Triggers worden niet ondersteund voor dialoog vensters.                                                                                    |
   
 ### <a name="see-also"></a>Zie ook
-[Dialoogvensters vervangen door bedrijfsprocesstromen of canvas-apps](replace-dialogs.md)
+[Dialoog vensters vervangen door bedrijfs proces stromen of canvas-apps](replace-dialogs.md)

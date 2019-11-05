@@ -1,6 +1,6 @@
 ---
-title: Aangepaste acties vanuit een werkstroom aanroepen | MicrosoftDocs
-description: Meer informatie over het aanroepen van een aangepaste actie vanuit een werkstroom
+title: Aangepaste acties vanuit een werk stroom aanroepen | MicrosoftDocs
+description: Meer informatie over het aanroepen van een aangepaste actie vanuit een werk stroom
 ms.custom: ''
 ms.date: 11/22/2018
 ms.reviewer: ''
@@ -22,52 +22,53 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 938410cf4484f8bed6509beee1d36c8cb3718e6f
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.openlocfilehash: 9ed3c2114bfb167eb8d4d6a5670ccec8050ee9d0
+ms.sourcegitcommit: 510706f5699b6cf9dda9dcafbed715f9f6d559e8
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "64461291"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73547414"
 ---
-# <a name="invoke-custom-actions-from-a-workflow"></a>Aangepaste acties vanuit een werkstroom aanroepen
+# <a name="invoke-custom-actions-from-a-workflow"></a>Aangepaste acties vanuit een werk stroom aanroepen
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
-Werkstromen hebben talloze mogelijkheden voor de ondersteuning bedrijfsscenario's. Elementaire gegevensbewerkingsacties aanroepen voor een record, zoals Maken, Bijwerken en Verwijderen, vanuit een werkstroom zorgt voor een oplossing voor een groot aantal bedrijfsscenario's. Als u de mogelijkheden van de werkstromen koppelt aan de kracht van de aangepaste acties die rechtstreeks vanuit de werkstroom worden aangeroepen, voegt u echter een geheel nieuwe serie bedrijfsscenario's aan uw toepassing toe zonder code te hoeven schrijven.  
+Werk stromen hebben talloze mogelijkheden om bedrijfs scenario's te ondersteunen. Bij het aanroepen van elementaire gegevens bewerkingen voor een record, zoals maken, bijwerken en verwijderen, kunt u vanuit een werk stroom een aantal zakelijke scenario's oplossen. Als u echter de mogelijkheden van de werk stromen koppelt aan de kracht van de aangepaste acties die rechtstreeks vanuit een werk stroom worden aangeroepen, voegt u een geheel nieuwe bedrijfs scenario's toe aan uw toepassing zonder dat u code hoeft te schrijven.  
   
- Bekijk het scenario waarin een aangepaste actie wordt aangeroepen vanuit een werkstroom. Er wordt een aangepaste actie aangeroepen voor het aanvragen van goedkeuring van de manager wanneer de korting voor een specifieke verkoopkans groter is dan 20%.  
+ Laten we eens kijken naar het scenario waarin een aangepaste actie wordt aangeroepen vanuit een werk stroom. Er wordt een aangepaste actie aangeroepen om de goed keuring van de Manager aan te vragen wanneer een korting voor een bepaalde kans groter is dan 20%.  
   
 <a name="action"></a>   
-## <a name="dynamics-365-customer-engagement-example-create-a-custom-action-using-the-opportunity-entity"></a>Voorbeeld van Dynamics 365 Customer Engagement: Een aangepaste actie maken met de entiteit Verkoopkans
+## <a name="example-create-a-custom-action-using-the-opportunity-entity"></a>Voor beeld: een aangepaste actie maken met de entiteit verkoop kans
   
-1. Selecteer in [Oplossingsverkenner](/powerapps/maker/model-driven-apps/advanced-navigation#solution-explorer) **Processen**.  
+1. Selecteer [](/powerapps/maker/model-driven-apps/advanced-navigation#solution-explorer) in Solution Explorer **processen**selecteren.  
   
-2.  Kies op de navigatiebalk **Nieuw**. Geef een naam op voor het proces en kies de categorie **Actie**.  
+2.  Kies **Nieuw**in de navigatie balk. Geef het proces een naam en kies de **actie** categorie.  
   
- Voor het aanvragen van goedkeuring voor de korting gebruiken wij een aangepaste actie met de naam **Goedkeuringsproces**. Er is een invoerparameter toegevoegd **SpecialNotes** en een stap **E-mailbericht verzenden** voor het maken van een nieuw bericht en het verzenden van een aanvraag voor goedkeuring van de manager, zoals hier wordt weergegeven.  
+ Als u een goed keuring voor de korting wilt aanvragen, wordt een aangepaste actie met de naam **goedkeurings proces**gebruikt. We hebben een invoer parameter, **SpecialNotes**en een stap **e-mail verzenden** toegevoegd om een nieuw bericht te maken en een aanvraag voor goed keuring van de Manager te verzenden, zoals hier wordt weer gegeven.  
   
- ![Een stap toevoegen &#45; e-mailbericht verzenden](media/enable-custom-action-approval-proces-sadd-email.png "Een stap toevoegen - e-mailbericht verzenden")  
+ ![Een stap &#45; toevoegen e-mail verzenden](media/enable-custom-action-approval-proces-sadd-email.png "Een stap toevoegen-e-mail verzenden")  
   
- Kies voor het configureren van het e-mailbericht **Eigenschappen instellen**. Wanneer het formulier wordt geopend, gebruikt u de **Formulierassistent** om opmerkingen en andere informatie aan het e-mailbericht toe te voegen, zoals is gemarkeerd op de schermafbeelding. Plaats voor het toevoegen van de speciale notities de cursor op de locatie waar u ze in het bericht wilt weergeven en kies daarna in de **Formulierassistent** onder **Zoeken naar** **Argumenten** in de eerste vervolgkeuzelijst en kies **SpecialNotes** in de tweede vervolgkeuzelijst. Kies vervolgens **OK**.  
+ Als u het e-mail bericht wilt configureren, kiest u **Eigenschappen instellen**. Wanneer het formulier wordt geopend, gebruikt **u de Formulierenassistent** om speciale notities en andere informatie toe te voegen aan het e-mail bericht, zoals gemarkeerd op de scherm opname. Als u de speciale notities wilt toevoegen, plaatst u de cursor waar u deze wilt weer geven in het bericht en kiest u **in de Formulierenassistent, onder** **zoeken naar**, de optie **argumenten** in de eerste vervolg keuzelijst en kiest u **SpecialNotes** in de tweede en klik vervolgens op **OK**.  
   
- ![E-mailbericht instellen](media/enable-custom-action-approval-process-setup-email.png "E-mailbericht instellen")  
+ ![E-mail instellen](media/enable-custom-action-approval-process-setup-email.png "E-mail instellen")  
   
- Voordat u de actie vanuit een werkstroom kunt aanroepen, moet u deze activeren. Nadat u de actie hebt geactiveerd, kunt u de eigenschappen ervan bekijken door **Eigenschappen weergeven** te kiezen.  
+ Voordat u de actie vanuit een werk stroom kunt aanroepen, moet u deze activeren. Nadat u de actie hebt geactiveerd, kunt u de eigenschappen ervan weer geven door **weer gave-eigenschappen**te kiezen.  
   
- ![Aangepaste actie activeren &#45; goedkeuringsproces](media/enable-custom-action-approval-process-activate-action.png "Aangepaste actie activeren - goedkeuringsproces")  
+ ![Goedkeurings proces &#45; van aangepaste actie activeren](media/enable-custom-action-approval-process-activate-action.png "Goedkeurings proces voor aangepaste actie activeren")  
   
 <a name="workflow"></a>   
-## <a name="invoke-a-custom-action-from-a-workflow"></a>Een aangepaste actie vanuit een werkstroom aanroepen  
+## <a name="invoke-a-custom-action-from-a-workflow"></a>Een aangepaste actie aanroepen vanuit een werk stroom  
   
-1. Selecteer in [Oplossingsverkenner](/powerapps/maker/model-driven-apps/advanced-navigation#solution-explorer) **Processen**.   
+1. Selecteer [](/powerapps/maker/model-driven-apps/advanced-navigation#solution-explorer) in Solution Explorer **processen**selecteren.   
   
-2.  Kies op de navigatiebalk **Nieuw**. Geef een naam op voor het proces en kies de categorie **Werkstroom**.  
+2.  Kies **Nieuw**in de navigatie balk. Geef het proces een naam en kies de categorie **werk stroom** .  
   
- We hebben een werkstroom gemaakt waarmee de aangepaste actie **Goedkeuringsproces** steeds wordt aangeroepen wanneer de goedkeuring van de manager vereist is voor een korting van meer dan 20% op een verkoopkans.  
+ We hebben een werk stroom gemaakt die de aangepaste actie voor het **goedkeurings proces** aanroept wanneer de goed keuring van de Manager voor een korting van meer dan 20% voor een verkoop kans is vereist.  
   
- ![Actie-eigenschappen instellen vanuit de werkstroom](media/enable-custom-action-from-workflow.png "Actie eigenschappen van werkstroom instellen")  
+ ![Actie-eigenschappen van werk stroom instellen](media/enable-custom-action-from-workflow.png "Actie-eigenschappen van werk stroom instellen")  
   
- U kunt de invoereigenschappen van de actie instellen door **Eigenschappen instellen** te kiezen. We hebben in de speciale notities een naam van het account toegevoegd dat betrekking heeft op de verkoopkans. Kies in de **Formulierassistent** onder **Zoeken naar** **Account** in de eerste vervolgkeuzelijst, kies **Accountnaam** in de tweede vervolgkeuzelijst en kies vervolgens **OK**. De eigenschap **Doel** is vereist en wordt door het systeem gevuld. De **{Opportunity(Opportunity)}** in de eigenschap **Doel** is de dezelfde verkoopkans als die waarop de aanroepende werkstroom wordt uitgevoerd. U kunt ook een specifieke verkoopkans voor de eigenschap Doel kiezen met behulp van opzoeken.  
+ U kunt de invoer eigenschappen van de actie instellen door **Eigenschappen instellen**te kiezen. We hebben in de speciale notities een naam toegevoegd van het account dat aan de opportuniteit is gerelateerd. Kies in **de Formulierenassistent**, onder **zoeken naar**, **account** in de eerste vervolg keuzelijst, selecteer **account naam** in de tweede vervolg keuzelijst en kies vervolgens **OK**. De **doel** eigenschap is vereist en wordt ingevuld door het systeem. De **{Opportunity (opportunity)}** in de **doel** eigenschap is dezelfde mogelijkheid als waarop de werk stroom voor aanroepen wordt uitgevoerd. U kunt ook een specifieke mogelijkheid voor de doel eigenschap kiezen met behulp van zoeken.  
   
- ![Invoerparameters voor actie ApprovalProcess instellen](media/enable-customaction-workflow-set-properties.png "Invoerparameters voor actie ApprovalProcess instellen")  
+ ![Invoer parameters voor ApprovalProcess-actie instellen](media/enable-customaction-workflow-set-properties.png "Invoer parameters voor ApprovalProcess-actie instellen")  
   
 
 

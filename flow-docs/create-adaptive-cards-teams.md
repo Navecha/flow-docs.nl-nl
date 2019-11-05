@@ -1,6 +1,6 @@
 ---
-title: Meer informatie over het maken van stromen die adaptieve kaarten in Microsoft Teams plaatsen | Microsoft Docs
-description: Informatie over het maken van stromen die tekstvakken met opmaak inhoud met adaptieve kaarten in Microsoft Teams plaatsen.
+title: Meer informatie over het maken van stromen die adaptieve kaarten in micro soft teams plaatsen | Microsoft Docs
+description: Meer informatie over het maken van stromen die inhouds opgemaakte inhoud met adaptieve kaarten naar micro soft teams kunnen verzenden.
 services: ''
 suite: flow
 documentationcenter: na
@@ -15,49 +15,50 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 04/29/2019
 ms.author: deonhe
-ms.openlocfilehash: d6bb4bb55fe876db1d8b64c157d3b4967e5d067f
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.openlocfilehash: 0aa5b4727bea569732fe5b76f717a87d8d7ddb02
+ms.sourcegitcommit: 510706f5699b6cf9dda9dcafbed715f9f6d559e8
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "65061567"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73546502"
 ---
 <!--from editor: I notice that adaptive cards is capitalized on the page opened by the link in the first paragraph. But the screenshots in this file don't show it being capitalized. So I'm unsure if it should change.-->
 
 
-# <a name="use-adaptive-cards-in-microsoft-teams"></a>Adaptieve kaarten gebruiken in Microsoft Teams
+# <a name="use-adaptive-cards-in-microsoft-teams"></a>Adaptieve kaarten gebruiken in micro soft teams
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
-U kunt een stroom maken die berichten [adaptieve kaarten](https://adaptivecards.io) aan een Microsoft Teams-kanaal. Met adaptieve kaarten, kunt u opmaak voor het maken van uw berichten duidelijker, aantrekkelijke en interactieve. Adaptieve kaarten kunnen onderdelen, zoals afbeeldingen, grafieken en tekstvakken met opmaak bevatten.
+U kunt een stroom maken die [adaptieve kaarten](https://adaptivecards.io) naar een micro soft teams-kanaal verzendt. Met adaptieve kaarten kunt u uitgebreide opmaak gebruiken om uw berichten duidelijker, interactief en aantrekkelijker te maken. Adaptieve kaarten kunnen onderdelen bevatten zoals afbeeldingen, grafieken, tekst met opmaak en meer.
 
-## <a name="create-a-flow-that-posts-adaptive-cards-to-a-team"></a>Een stroom maken waarmee adaptieve kaarten aan een team berichten
+## <a name="create-a-flow-that-posts-adaptive-cards-to-a-team"></a>Een stroom maken waarmee u adaptieve kaarten naar een team kunt posten
 
-Volg deze stappen voor het maken van een stroom die een adaptieve kaart aan het algemene kanaal in het team van strategie en Planning plaatst. De stroom die we maken maakt gebruik van de **uw eigen adaptieve kaart plaatsen als de bot stroom aan een kanaal (preview)** actie van de adaptieve kaart om inhoud te publiceren naar van het team-kanaal wekelijks.
+Volg deze stappen om een stroom te maken die een adaptieve kaart naar het algemene kanaal in het strategie-en plannings team post. De stroom die we maken, maakt gebruik van de **post uw eigen adaptieve kaart als de bot naar een kanaal (preview)** -actie om de inhoud van de adaptieve kaart wekelijks te plaatsen naar het kanaal van het team.
 
-1. Meld u aan bij Microsoft Teams.
-1. Selecteer de **Teams** pictogram in de navigatiebalk aan de linkerkant van de balk en selecteer vervolgens de **strategie en Planning** team.
+1. Meld u aan bij micro soft teams.
+1. Selecteer het pictogram **teams** in de navigatie balk aan de linkerkant en selecteer vervolgens de **strategie en het plannings** team.
 
-    ![Selecteer teams](media/create-adaptive-cards-teams/select-teams-team.png)
+    ![Teams selecteren](media/create-adaptive-cards-teams/select-teams-team.png)
 
-1. Selecteer de **Flow** tabblad aan de bovenkant van het scherm.
-1. Selecteer de **+** pictogram (leeg item maken).
-1. Zoeken naar **terugkeerpatroon**, en selecteer vervolgens de **terugkeerpatroon** trigger.
+1. Selecteer het tabblad **stroom** boven aan het scherm.
+1. Selecteer het pictogram **+** (leeg item maken).
+1. Zoek naar **terugkeer patroon**en selecteer vervolgens de trigger **terugkeer patroon** .
 
-    ![Terugkeerpatroon-kaart](media/create-adaptive-cards-teams/select-recurrence.png)
+    ![Terugkerende kaart](media/create-adaptive-cards-teams/select-recurrence.png)
 
-1. Stel de planning als volgt om te herhalen elke week op een tijd en tijdzone van uw keuze:
+1. Stel de planning als volgt in om elke week te herhalen, op een tijdstip en tijd zone van uw keuze:
     
-    ![Terugkeerpatroon-kaart](media/create-adaptive-cards-teams/recurrence-card.png)
+    ![Terugkerende kaart](media/create-adaptive-cards-teams/recurrence-card.png)
     
-1. Selecteer **Nieuwe stap**.
-1. Zoeken naar **adaptieve**, selecteer **Microsoft Teams**, en selecteer vervolgens de **uw eigen adaptieve kaart plaatsen als de bot stroom aan een kanaal (preview)** actie.
+1. Selecteer **nieuwe stap**.
+1. Zoek naar **adaptief**, selecteer **micro soft teams**en selecteer vervolgens het item **uw eigen adaptieve kaart plaatsen als de stroom van een kanaal (Preview-actie)** .
 
    ![Adaptieve kaart](media/create-adaptive-cards-teams/select-adaptive-post-message-action.png)
 
-1. Geef een **Team**, **kanaal**, en **bericht** op de **uw eigen adaptieve kaart plaatsen als de bot stroom aan een kanaal (Preview)** kaart om aan te geven het team en het kanaal waaraan de adaptieve kaart **bericht** wordt gepost.
+1. Geef een **team**, een **kanaal**en een **bericht** op de plaats **waar u uw eigen adaptieve kaart kunt plaatsen als de bot naar een kanaal kaart (preview)** om het team en het kanaal aan te geven waarop het adaptieve kaart **bericht** wordt geplaatst.
 
    ![Adaptieve kaart](media/create-adaptive-cards-teams/adaptive-card-message.png)
 
-   U kunt deze voorbeeld-JSON-inhoud voor de **bericht**:
+   U kunt deze voor beeld-JSON-inhoud gebruiken voor het **bericht**:
 
     ````
         {
@@ -134,14 +135,14 @@ Volg deze stappen voor het maken van een stroom die een adaptieve kaart aan het 
 
 ## <a name="run-the-flow"></a>De stroom uitvoeren
 
-U ziet dat, nadat de terugkeerpatroon tijd is verstreken, de stroom berichten van de adaptieve kaart inhoud naar het teamkanaal dat u hebt gedefinieerd.
+Nadat de tijd van het terugkeer patroon is verstreken, wordt de inhoud van de adaptieve kaart door de stroom naar het door u opgegeven team kanaal gepost.
 
 ![De stroom uitvoeren](media/create-adaptive-cards-teams/flow-run-result.png)
 
 ## <a name="learn-more"></a>Meer informatie
 
-- Aan de slag met [adaptieve kaart voorbeelden](https://adaptivecards.io/samples/).
-- Maak [inhoud adaptieve kaart](https://adaptivecards.io) de eenvoudige manier.
+- Aan de slag met voor [beelden van adaptieve kaarten](https://adaptivecards.io/samples/).
+- U kunt op eenvoudige wijze een [adaptieve kaart inhoud](https://adaptivecards.io) maken.
 
 
 

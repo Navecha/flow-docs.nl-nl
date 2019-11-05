@@ -1,6 +1,6 @@
 ---
 title: Aan de slag | Microsoft Docs
-description: Snelle manieren om uw werkzaamheden en leven met Microsoft Flow te automatiseren
+description: Snelle manieren om te beginnen met het automatiseren van uw werk en leven met automatische energie
 services: ''
 suite: flow
 documentationcenter: na
@@ -10,7 +10,7 @@ editor: ''
 tags: ''
 ms.service: flow
 ms.devlang: na
-ms.topic: hero-article
+ms.topic: conceptual
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/31/2017
@@ -20,117 +20,134 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: f667401774e49505009cd416f6975ff38683a5c7
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.openlocfilehash: 54d1478f34743b6059692b927da8baf2c49a35a7
+ms.sourcegitcommit: 53f049dc7e7cad652e728941ee426b7ad2a116da
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "65035240"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73589839"
 ---
-# <a name="get-started-with-microsoft-flow"></a>Aan de slag met Microsoft Flow #
+# <a name="get-started-with-power-automate"></a>Aan de slag met automatische energie
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/iMteXfAvDSE?list=PL8nfc9haGeb55I9wL9QnWyHp3ctU2_ThF" frameborder="0" allowfullscreen></iframe>
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
-Welkom! Microsoft Flow is een service die u helpt om geautomatiseerde werkstromen tussen uw favoriete apps en services te maken om onder andere bestanden te synchroniseren, meldingen te ontvangen en gegevens te verzamelen.
+<br>
+<iframe width="1129" height="635" src="https://www.youtube.com/embed/hCuxuUaGC6Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-De belangrijkste typen stromen zijn [geautomatiseerde stromen](get-started-logic-flow.md), [knopstromen](introduction-to-button-flows.md), [geplande stromen](run-scheduled-tasks.md) en [bedrijfsprocesstromen](business-process-flows-overview.md).
+Bij! Energie automatisering is een service waarmee u geautomatiseerde werk stromen tussen uw favoriete apps en services kunt maken om bestanden te synchroniseren, meldingen te ontvangen, gegevens te verzamelen en meer.
 
-Als u een aanpasser voor Dynamics 365 voor klantcontacten bent, bent u mogelijk ook bekend met klassieke Common Data Service-processen met onder andere, [werkstromen](configure-workflow-steps.md), [acties](create-actions.md), [mobiele taakstromen](create-mobile-task-flow.md) en [dialoogvensters](use-cds-for-apps-dialogs.md).
+De belangrijkste soorten stromen zijn [geautomatiseerde](get-started-logic-flow.md), [knop](introduction-to-button-flows.md)-, [geplande](run-scheduled-tasks.md)en [bedrijfsproces](business-process-flows-overview.md) stromen.
 
-De eerste stap is u [registreren](sign-up-sign-in.md). Als u al een account bij Microsoft Flow hebt, [meldt u zich aan](https://flow.microsoft.com/signin) op uw tablet, computer of zelfs uw telefoon.
+## <a name="types-of-flows"></a>Typen stromen
 
-## <a name="check-out-the-start-page"></a>Bekijk de startpagina ##
+Energie automatisering is een van de drie pijlers van het kracht platform. Het biedt een laag code platform voor werk stromen en proces automatisering. Hier volgt een lijst met de verschillende soorten stromen:
 
-[Op de startpagina](https://flow.microsoft.com) van Microsoft Flow kunt u [allerlei sjabloonverzamelingen verkennen](https://flow.microsoft.com/templates) en komt u meer te weten over de belangrijkste functies van Microsoft Flow. U krijgt een idee van de mogelijkheden en ziet wat Microsoft Flow voor u kan betekenen, zowel persoonlijk als uw onderneming.
+| **Stroom type**                                                                       | **Use-case**                                                                                  | **Stemming**                                                                             |
+|-------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------|
+| [Automatische stromen](get-started-logic-flow.md)                 | Een stroom maken waarmee een of meer taken automatisch worden uitgevoerd nadat deze is geactiveerd door een gebeurtenis. | [Connectors](https://docs.microsoft.com/connectors/) voor Cloud-en on-premises Services. |
+| [Knop stromen](introduction-to-button-flows.md)              | Voer op elk gewenst moment terugkerende taken uit vanaf elke wille keurige computer via uw mobiele apparaat.                        |                                                                                        |
+| [Geplande stromen](run-scheduled-tasks.md)                    | Een stroom maken waarmee een of meer taken volgens een planning worden uitgevoerd.             |                                                                                        |
+| [Bedrijfs proces stromen](business-process-flows-overview.md) | Definieer een reeks stappen die gebruikers kunnen volgen om ze naar een gewenst resultaat te brengen.                 | Menselijke processen                                                                        |
+| [UI-stromen (preview-versie)](ui-flows/overview.md)                                                | Registreer en Automatiseer het afspelen van hand matige stappen op verouderde software.                    | Bureau blad-en webtoepassingen waarvoor geen Api's beschikbaar zijn voor Automation.    |
 
-Met Microsoft Flow kunt u:
+U kunt alle stromen maken en beheren op het tabblad **mijn stromen** in energie automatisering.
+
+Als u een Dynamics 365-gebruiker bent, kunt u ook bekend zijn met klassieke Common Data Service processen met inbegrip van [werk stromen](configure-workflow-steps.md), [acties](create-actions.md), [mobiele taak stromen](create-mobile-task-flow.md)en [dialoog vensters](use-cds-for-apps-dialogs.md).
+
+De eerste stap is om u aan te [melden](sign-up-sign-in.md), of als u al een account hebt met automatische energie, [meldt u zich](https://flow.microsoft.com/signin) aan bij uw Tablet, desktop computer of zelfs op uw telefoon.
+
+## <a name="check-out-the-start-page"></a>De start pagina bekijken ##
+
+[Op de start pagina](https://flow.microsoft.com) voor het automatisch uitvoeren van energie kunt u [een verscheidenheid aan sjablonen verkennen](https://flow.microsoft.com/templates) en meer informatie over de belangrijkste functies voor automatische energie automatisering. U kunt een korte indruk krijgen van wat er mogelijk is en hoe energie automatisering uw bedrijf en uw leven kan helpen.
+
+Met het automatiseren van energie kunt u het volgende doen:
 
 - Eenvoudig zoeken naar sjablonen en services.
 
-    ![Startpagina 1 Flow](./media/getting-started/flowhome1.png)
+    ![Start pagina 1 van de stroom](./media/getting-started/flowhome1.png)
 
-- Kies uit de populairste services.
+- Kies uit de populairste Services.
 
-    ![Startpagina 2 Flow](./media/getting-started/flowhome2.png)
+    ![Start pagina 2 van de stroom](./media/getting-started/flowhome2.png)
 
-- Een overzicht van elke stroom bekijken.
+- Bekijk een overzicht van elke stroom.
 
-    ![Startpagina 3 Flow](./media/getting-started/flowhome3.png)
+    ![Start pagina van stroom 3](./media/getting-started/flowhome3.png)
 
-Elke sjabloon is ontworpen voor een bepaald doel. Er zijn bijvoorbeeld sjablonen om u een tekstbericht te sturen wanneer uw baas u een e-mail stuurt, leads op Twitter aan Dynamics 365 toe te voegen of een back-up te maken van uw bestanden. Deze sjablonen zijn slechts het topje van de ijsberg. Ze zijn bedoeld om uw te inspireren om aangepaste stromen te maken voor de processen die u nodig hebt.
+Elke sjabloon is ontworpen voor een bepaald doel. Er zijn bijvoorbeeld sjablonen om u een tekst bericht te sturen wanneer uw baas u een e-mail stuurt, het toevoegen van Twitter-leads aan Dynamics 365 of het maken van een back-up van uw bestanden. Deze sjablonen zijn slechts de tip van de ijsberg. Ze zijn bedoeld om u te inspireren voor het maken van aangepaste stromen voor de exacte processen die u nodig hebt.
 
 ## <a name="create-your-first-flow"></a>Uw eerste stroom maken ##
 
-1. Selecteer een sjabloon dat voor u nuttig is. Een eenvoudige sjabloon is [**Dagelijkse herinneringen ontvangen in e-mail**](https://flow.microsoft.com/galleries/public/templates/45a3399aa29345308f08b6db0a9c85b9/):
+1. Selecteer een sjabloon die nuttig is voor u. Een eenvoudige sjabloon [**ontvangt dagelijkse herinneringen per e-mail**](https://flow.microsoft.com/galleries/public/templates/45a3399aa29345308f08b6db0a9c85b9/):
 
     ![sjabloon dagelijkse herinnering](./media/getting-started/template-details.png)
 
-1. Selecteer **Doorgaan**.
+1. Selecteer **door gaan**.
 
     ![Verbinding maken](./media/getting-started/create-connection.png)
 
-1. Voer het e-mailadres in waarnaar de dagelijkse herinnering wordt verzonden. Voer vervolgens het herinneringsbericht in. Selecteer ten slotte **Stroom maken** en controleer of de stroom op de verwachte manier wordt uitgevoerd.
+1. Voer de e-mail adressen in waarnaar de dagelijkse herinnering wordt verzonden. Voer vervolgens het herinnerings bericht in. Selecteer ten slotte **stroom maken**en controleer vervolgens of de stroom wordt uitgevoerd zoals verwacht.
 
-    ![Geef referenties op voor de verbinding](./media/getting-started/configure-email-details.png)
+    ![Referenties opgeven voor de verbinding](./media/getting-started/configure-email-details.png)
 
     > [!NOTE]
-    > U kunt nu de voorwaarden bekijken waarmee de stroom en de actie worden geactiveerd die het gevolg zijn van die gebeurtenis. U kunt experimenteren met de instellingen om de stroom aan te passen. U kunt zelfs acties toevoegen of verwijderen.
+    > U kunt de voor waarden bekijken waarmee de stroom en de actie worden geactiveerd die het gevolg zijn van die gebeurtenis. Speel met de instellingen om de stroom zelf te maken. U kunt zelfs acties toevoegen of verwijderen.
 
-1. Selecteer **Gereed**.
+1. Selecteer **gereed**.
 
-[Volg deze zelfstudie](get-started-logic-template.md) om meer te weten te komen over stromen maken vanuit sjablonen.
+[Volg deze zelf studie](get-started-logic-template.md) voor meer informatie over het maken van stromen van sjablonen.
 
-## <a name="get-creative"></a>Creatief aan de slag ##
+## <a name="get-creative"></a>Creatief krijgen ##
 
-Nu u uw eerste stroom vanuit een sjabloon hebt gemaakt, kunt u één van de meer dan [150 gegevensbronnen](https://flow.microsoft.com/connectors/) gebruiken die door Microsoft Flow worden ondersteund om [uw eigen, volledige nieuwe stromen te maken](get-started-logic-flow.md).
+Nu u uw eerste stroom hebt gemaakt op basis van een sjabloon, gebruikt u een van de meer dan [150 gegevens bronnen](https://flow.microsoft.com/connectors/) die automatisch worden geautomatiseerd om [uw eigen stromen helemaal](get-started-logic-flow.md)zelf te maken.
 
 ![Een stroom bouwen](./media/getting-started/build-a-flow.png)
 
-Wanneer u een volledig nieuwe stroom maakt, hebt u controle over de gehele werkstroom. Hier zijn een aantal ideeën om u op weg te helpen:
+Wanneer u een volledig nieuwe stroom maakt, bepaalt u de volledige werk stroom. Hier volgen enkele tips om aan de slag te gaan:
 
 - [Stromen met veel stappen](multi-step-logic-flow.md).
-- [Taken op basis van een schema uitvoeren](run-scheduled-tasks.md).
-- [Een goedkeuringsstroom maken](wait-for-approvals.md).
-- [Een stroom in actie bekijken](see-a-flow-run.md).
+- [Taken uitvoeren volgens een schema](run-scheduled-tasks.md).
+- [Een goedkeurings stroom maken](wait-for-approvals.md).
+- [Bekijk een stroom in actie](see-a-flow-run.md).
 - [Een sjabloon publiceren](publish-a-template.md).
-- [Stromen maken op basis van een Microsoft Teams-sjabloon](https://flow.microsoft.com/connectors/shared_teams/microsoft-teams/).
+- [Stromen maken op basis van een micro soft teams-sjabloon](https://flow.microsoft.com/connectors/shared_teams/microsoft-teams/).
 
 
 ## <a name="peek-at-the-code"></a>De code bekijken
 
-U hoeft te worden van een ontwikkelaar van het maken van stromen, maar Microsoft Flow biedt een **code bekijken** -functie waarmee iedereen kan een nader bekijken de code die wordt gegenereerd voor alle acties en triggers in een stroom. De code inzien kan geven u een beter begrip van de gegevens die wordt gebruikt door triggers en acties. Volg deze stappen voor het bekijken van de code die wordt gegenereerd voor uw stromen in de ontwerpfunctie voor Microsoft Flow: 
+U hoeft geen ontwikkel aars te zijn voor het maken van stromen, maar energie automatisering biedt echter een functie voor het bekijken van de **code** waarmee iedereen de code die wordt gegenereerd voor alle acties en triggers in een stroom, kan bekijken. Door de code te bekijken, kunt u een duidelijker beeld krijgen van de gegevens die worden gebruikt door triggers en acties. Volg deze stappen om de code die voor uw stromen wordt gegenereerd, te bekijken in de ontwerp functie voor het automatiseren van de Power: 
 
-1. Selecteer de **...**  menu-item in de rechterbovenhoek van een **actie** of **trigger**. 
-1. Selecteer **code bekijken**.
+1. Selecteer de menu opdracht **..** . in de rechter bovenhoek van elke **actie** of **trigger**. 
+1. Selecteer weer geven **code**.
 
     ![Code bekijken](media/getting-started/peek-code.png)
 
-1. U ziet de volledige JSON-weergave van de acties en triggers. Dit omvat alle invoer, zoals de tekst die u rechtstreeks invoeren en expressies die worden gebruikt. U kunt hier expressies selecteert en plak deze in de **dynamische inhoud** expressie-editor. Dit kan ook geven u een manier om te controleren of de verwachte gegevens aanwezig zijn in de stroom is.
+1. Let op de volledige JSON-weer gave van de acties en triggers. Dit omvat alle invoer, zoals de tekst die u rechtstreeks invoert en de expressies die worden gebruikt. U kunt hier expressies selecteren en deze vervolgens plakken in de expressie-editor voor **dynamische inhoud** . Dit kan u ook een manier geven om te controleren of de gegevens die u verwacht aanwezig zijn in de stroom.
 
     ![Code bekijken](media/getting-started/peek-code-details.png)
    
 
-## <a name="find-your-flows-easily"></a>Uw stromen gemakkelijk kunt vinden
+## <a name="find-your-flows-easily"></a>Uw stromen eenvoudig vinden
 
-Wanneer uw creative sappen start *stromen*, kunt u veel stromen maken. Geen zorgen, zoeken naar uw stromen is eenvoudig: u kunt het zoekvak van gebruiken de **mijn stromen**, **Teamstromen**, **verbindingen**, of **oplossingen** scherm om weer te geven stromen alleen die overeenkomen met de zoektermen die u invoert.
+Wanneer uw creatieve SAPS gaan *stromen*, kunt u veel stromen maken. Het is niet eenvoudig om uw stromen te vinden, maar u kunt ook het zoekvak op het scherm **mijn stromen**, **team stromen**, **verbindingen**of **oplossingen** gebruiken om alleen stromen weer te geven die overeenkomen met de zoek termen die u invoert.
 
 ![Stromen filteren of zoeken](media/getting-started/filter-search-box.png)
  
 > [!NOTE]
-> Het zoekfilter vindt alleen stromen die op de pagina zijn geladen. Als u de stroom niet kunt vinden, probeert u **meer laden** aan de onderkant van de pagina.
+> Het zoek filter zoekt alleen stromen die in de pagina zijn geladen. Als u uw stroom niet vindt, kunt u onder aan de pagina **laden meer** selecteren.
 
-## <a name="get-notifications-when-somethings-wrong"></a>Meldingen ontvangen wanneer er iets mis is
+## <a name="get-notifications-when-somethings-wrong"></a>Meldingen ontvangen als er iets mis is
 
-Het meldingencentrum van Microsoft Flow gebruiken (bevindt in de rechterbovenhoek van de designer) om te snel Zie een lijst met stromen zijn mislukt onlangs. Het meldingencentrum wordt een getal dat aangeeft van het aantal stromen die niet recent weergegeven.
+Gebruik het hulp programma voor het automatiseren van meldingen (in de rechter bovenhoek van de ontwerp functie) om snel een lijst met stromen weer te geven die onlangs zijn mislukt. In het meldingen centrum wordt het aantal stromen weer gegeven dat onlangs is mislukt.
 
-In het meldingencentrum, u kunt navigeren naar de **activiteit** pagina van Microsoft Flow om te zien van al uw stromen die onlangs is uitgevoerd, meldingen of is mislukt.
+Vanuit het meldingen centrum kunt u navigeren naar de pagina **activiteit** van automatische stroom om alle stromen weer te geven die onlangs zijn uitgevoerd, verzonden meldingen of mislukt.
 
-![Meldingencentrum](media/getting-started/notification-center.png)
+![Meldingen centrum](media/getting-started/notification-center.png)
 
 ## <a name="use-the-mobile-app"></a>De mobiele app gebruiken ##
 
-Download de mobiele app voor Microsoft Flow voor [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios) of [Windows Phone](https://aka.ms/flowmobilewindows). Met deze app kunt u [stroomactiviteit bewaken](mobile-monitor-activity.md), [uw stromen beheren](mobile-manage-flows.md) en [stromen maken vanuit sjablonen](mobile-create-flow.md).
+Down load de mobiele app voor het automatiseren van de Power voor [Android](https://aka.ms/flowmobiledocsandroid), [IOS](https://aka.ms/flowmobiledocsios)of [Windows Phone](https://aka.ms/flowmobilewindows). Met deze app kunt u [stroom activiteiten bewaken](mobile-monitor-activity.md), [stromen beheren](mobile-manage-flows.md) en [stromen maken op basis van sjablonen](mobile-create-flow.md).
 
-## <a name="were-here-to-help"></a>We zijn er om u te helpen ##
+## <a name="were-here-to-help"></a>We helpen u graag ##
 
-We vinden het geweldig te zien wat u allemaal doet met Microsoft Flow en willen er zeker van zijn dat u een fantastische ervaring hebt. Bekijk onze [begeleide](https://flow.microsoft.com/guided-learning/) zelfstudies en [word lid van onze community](http://go.microsoft.com/fwlink/?LinkID=787467) om vragen te stellen en uw ideeën te delen. [Neem contact op met ondersteuning](http://go.microsoft.com/fwlink/?LinkID=787479) als u tegen problemen aanloopt.
+We zijn enthousiast om te zien wat u met automatische energie kunt doen en we willen er zeker van zijn dat u een fantastische ervaring hebt. Bekijk onze zelf studies voor [begeleide training](https://flow.microsoft.com/guided-learning/) en [Neem deel aan onze community](https://go.microsoft.com/fwlink/?LinkID=787467) om vragen te stellen en uw ideeën te delen. [Neem contact op met de ondersteuning](https://go.microsoft.com/fwlink/?LinkID=787479) als u problemen ondervindt.

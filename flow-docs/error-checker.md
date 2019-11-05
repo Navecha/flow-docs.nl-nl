@@ -1,6 +1,6 @@
 ---
-title: Zoek en corrigeer de fouten met de Microsoft Flow-vereisten | Microsoft Docs
-description: Zoek en snel herstellen van fouten met de vereisten voor Microsoft Flow.
+title: Fouten vinden en oplossen met de Microsoft Flow controle | Microsoft Docs
+description: Snel fouten opsporen en oplossen met de Microsoft Flow Checker.
 services: ''
 suite: flow
 documentationcenter: na
@@ -20,35 +20,36 @@ search.app:
 - Powerplatform
 search.audienceType:
 - flowmaker
-ms.openlocfilehash: a6a7acd464131cebaa692d72a9a0a44a572b2470
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.openlocfilehash: 2751b914c9f1afcab9cc5eee8c55e3b85ea07716
+ms.sourcegitcommit: 510706f5699b6cf9dda9dcafbed715f9f6d559e8
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "65060854"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73547928"
 ---
-# <a name="the-microsoft-flow-checker"></a>De vereisten voor Microsoft Flow
+# <a name="the-microsoft-flow-checker"></a>De Microsoft Flow-controle
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
-De vereisten voor Microsoft Flow de energiestatus van hogere kwaliteit stromen door ervoor te zorgen dat u Volg de aanbevolen procedures bij het ontwerpen van stromen. Als u de vereisten uitvoert, u krijgt zoals inzicht in vragen "welke gebieden van mijn stroom uitvoering van een bedreiging prestaties of betrouwbaarheid?"
+Met de Microsoft Flow Checker worden hogere kwaliteits stromen gepromoot door de aanbevolen procedures voor het ontwerpen van stromen te volgen. Wanneer u de controle uitvoert, krijgt u inzicht in vragen als ' welke gebieden van de implementatie van mijn stroom een prestatie-of betrouwbaarheids risico vormen? '
 
-Voor elk probleem de schijf aangegeven, de checker verwijst naar specifieke instanties binnen de stroom waar u moet rekening houden met verbeteringen aanbrengen. Daarnaast leert u hoe u voor het implementeren van deze verbeteringen door de volgende gedetailleerde informatie.
+Voor elk probleem dat door de schijf wordt geïdentificeerd, wordt door de controle naar specifieke instanties in de stroom verwezen, waar u moet overwegen verbeteringen aan te brengen. En u leert hoe u deze verbeteringen kunt implementeren door gedetailleerde richt lijnen te volgen.
 
-De schijf is altijd actief is, wordt weergegeven in de opdrachtbalk in de ontwerpfunctie. De checker ziet u een rode stip weergegeven wanneer er een of meer fouten of potentiële fouten in de stroom gevonden.
+De schijf is altijd actief en wordt weer gegeven in de opdracht balk in de ontwerp functie. De schijf bevat een rode stip wanneer er een of meer fouten of mogelijke fouten in uw stroom worden gevonden.
 
-![Checker](media/checker/checker-in-designer.png "Checker")
+![Blok](media/checker/checker-in-designer.png "Blok")
 
 
-## <a name="view-errors-in-the-checker"></a>Fouten weergeven in de vereisten
+## <a name="view-errors-in-the-checker"></a>Fouten in de schijf weer geven
 
-Tijdens het ontwerpen van uw stroom, kunt u de knop stroom Checker voor het openen van de vereisten om fouten en waarschuwingen weer te geven. 
+Tijdens het ontwerpen van uw stroom kunt u de knop stroom controle selecteren om de schijf te openen om fouten en waarschuwingen weer te geven. 
 
-De schijf ook wordt automatisch geopend wanneer u de stroom opslaan als er fouten of waarschuwingen zijn.  Zodra de schijf wordt geopend, wordt alle fouten en waarschuwingen in de stroom. In elke sectie roept de vereisten van de acties waar de fout of waarschuwing optreedt. 
+De schijf wordt ook automatisch geopend wanneer u de stroom opslaat als er fouten of waarschuwingen zijn.  Zodra de schijf is geopend, worden alle fouten en waarschuwingen in uw stroom weer gegeven. In elke sectie roept de-controle de acties aan waar de fout of waarschuwing zich voordoet. 
 
 ## <a name="learn-to-fix-errors-and-warnings"></a>Meer informatie over het oplossen van fouten en waarschuwingen
 
-Vouw de sectie voor meer informatie over het oplossen van een fout.
+Vouw elke sectie uit voor meer informatie over het oplossen van een fout.
 
-![Details worden](media/checker/checker-detail.png "worden details")
+![Details van de controle](media/checker/checker-detail.png "Details van de controle")
 
 ## <a name="learn-more"></a>Meer informatie
 

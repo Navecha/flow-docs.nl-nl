@@ -1,12 +1,12 @@
 ---
-title: Dialoogvensters vervangen door bedrijfsprocesstromen of canvas-apps | Microsoft Docs
+title: Dialoog vensters vervangen door bedrijfs proces stromen of canvas-apps | MicrosoftDocs
 ms.custom: ''
 ms.date: 08/02/2018
 ms.reviewer: ''
 ms.service: flow
 ms.suite: ''
 ms.tgt_pltfrm: ''
-ms.topic: get-started-article
+ms.topic: conceptual
 applies_to:
 - Dynamics 365 (online)
 - Dynamics 365 Version 9.x
@@ -21,111 +21,112 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 498efb98a4c89ca6c2a01e345f5593beae4dbcca
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.openlocfilehash: a7e8bac3c33fa5bb8cfb0501b981af65115036ea
+ms.sourcegitcommit: 510706f5699b6cf9dda9dcafbed715f9f6d559e8
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "64464596"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73548820"
 ---
-# <a name="replace-dialogs-with-business-process-flows-or-canvas-apps"></a>Dialoogvensters vervangen door bedrijfsprocesstromen of canvas-apps
+# <a name="replace-dialogs-with-business-process-flows-or-canvas-apps"></a>Dialoog vensters vervangen door bedrijfs proces stromen of canvas-apps
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
-[Dialoogvensters zijn afgeschaft](https://docs.microsoft.com/dynamics365/get-started/whats-new/customer-engagement/important-changes-coming#dialogs-are-deprecated) en moet worden vervangen door bedrijfsprocesstromen of canvas-apps. In dit onderwerp worden de verschillende mogelijkheden van deze opties beschreven.Ook worden situaties behandeld waarbij een bedrijfsprocesstroom of canvas-app die is ingesloten in een modelgestuurd formulier kan worden gebruikt om een bestaand dialoogvenster te vervangen.
+[Dialoog vensters zijn afgeschaft](https://docs.microsoft.com/dynamics365/get-started/whats-new/customer-engagement/important-changes-coming#dialogs-are-deprecated)en moeten worden vervangen door bedrijfs proces stromen of canvas-apps. In dit onderwerp worden verschillende mogelijkheden van deze opties beschreven, evenals situaties waarbij een bedrijfs proces stroom-of canvas-app die is inge sloten in een model formulier kan worden gebruikt om een bestaand dialoog venster te vervangen.
 
-## <a name="feature-capability-comparison"></a>Vergelijking van functies
+## <a name="feature-capability-comparison"></a>Vergelijking functie functies
 
-Deze tabel bevat de set met dialoogvensterfuncties en de equivalente functies in bedrijfsprocesstromen en canvas-apps.
+Deze tabel bevat een lijst met de mogelijkheden van het dialoog venster en de equivalente mogelijkheden van bedrijfs processen en op canvas-apps.
 
 
-|Mogelijkheid in dialoogvenster  | Mogelijkheid in bedrijfsprocesstromen?  | Mogelijkheid in canvas-apps?  |
+|Dialoog mogelijkheid  | Mogelijkheden van bedrijfs proces stromen  | Mogelijkheden in canvas-apps?  |
 |---------|---------|---------|
-|Pagina     | Ja <br/> (bedrijfsprocesfase)    | Ja <br/> (appscherm)        |
-|Alleen prompt   |  Nee    |  Ja <br/> (labels)        |
-|Vraag en antwoord     |  Ja <br/> (alleen entiteitskenmerken)    | Ja <br/> (labels en invoervelden)    |
-|Invoerargumenten     |  Beperkt <br/> (stappen in bedrijfsprocesfase)    | Ja <br/> (parameters voor querytekenreeksen)     |
-|Variabelen   |  Nee     |  Ja       |
-|Queryvariabelen    |  Nee     |  Ja     |
-|Voorwaardelijke vertakkingslogica    |  Ja     | Ja <br/>  (navigeren naar elk scherm in de app)    |
-|Opnieuw gebruiken <br/> (starten als een onderliggend dialoogvenster)   |  Nee     | Ja <br/> (navigeren naar elk scherm in de app en een andere app in een nieuw venster starten)     |
-|Werkstromen aan begin/einde uitvoeren    |   Ja      |  Nee <br/> (in plaats daarvan kan een stroom worden gebruikt)  |
-|Werkstromen bij invoer uitvoeren    | Ja    | Nee <br/> (in plaats daarvan kan een stroom worden gebruikt)   |
-|Werkstromen bij paginaovergang uitvoeren   |  Ja       | Nee <br/> (in plaats daarvan kan een stroom worden gebruikt)    |
-|Starten via een URL  |   Nee      |  Ja     |
-|Sessie registreren in logboek    |  Ja       |  Nee     |
-|SDK-ondersteuning   |  Ja     |  Ja     |
+|Faxvoorblad     | Klikt <br/> (fase van het bedrijfs proces)    | Klikt <br/> (app-scherm)        |
+|Alleen prompt   |  Geen    |  Klikt <br/> Labels        |
+|Vraag en antwoord     |  Klikt <br/> (alleen entiteits kenmerken)    | Klikt <br/> (labels en invoer velden)    |
+|Invoer argumenten     |  Aantal <br/> (stappen in de fase van het bedrijfs proces)    | Klikt <br/> (query reeks parameters)     |
+|Variabelen   |  Geen     |  Klikt       |
+|Query variabelen    |  Geen     |  Klikt     |
+|Voorwaardelijke vertakkings logica    |  Klikt     | Klikt <br/>  (Navigeer naar elk scherm in de app)    |
+|Gebruikt <br/> (starten als onderliggend dialoog venster)   |  Geen     | Klikt <br/> (Ga naar een scherm in de app, start een andere app in een nieuw venster)     |
+|Werk stromen uitvoeren bij begin/einde    |   Klikt      |  Geen <br/> (gebruik in plaats daarvan een stroom)  |
+|Werk stromen uitvoeren op invoer    | Klikt    | Geen <br/> (gebruik in plaats daarvan een stroom)   |
+|Werk stromen uitvoeren op pagina overgang   |  Klikt       | Geen <br/> (gebruik in plaats daarvan een stroom)    |
+|Beginnen met het gebruik van een URL  |   Geen      |  Klikt     |
+|Sessie logboek registratie    |  Klikt       |  Geen     |
+|SDK-ondersteuning   |  Klikt     |  Klikt     |
 
-### <a name="additional-capabilities-with-business-process-flows"></a>Aanvullende mogelijkheden met bedrijfsprocesstromen
-- Analyse van proces (weergaven, diagrammen en bestede tijd in een fase)
-- Aangepaste besturingselementen
+### <a name="additional-capabilities-with-business-process-flows"></a>Aanvullende mogelijkheden met bedrijfs proces stromen
+- Proces analyse (weer gaven, grafieken en tijd die aan een fase zijn besteed)
+- Aangepaste besturings elementen
 
 ### <a name="additional-capabilities-with-canvas-apps"></a>Aanvullende mogelijkheden met canvas-apps
-- Analyse van apps (app-gebruik en -prestaties)
-- Pagina met meerdere entiteiten samenstellen
+- App-analyse (app-gebruik & prestaties)
+- Pagina samenstelling met meerdere entiteiten
 - Stromen uitvoeren
-- Gegevensconnectoren (standaard en aangepast)
+- Gegevens connectors (standaard en aangepast)
 - Starten als zelfstandige app
-- Configureerbare indeling
+- Configureer bare indeling
 
-## <a name="choosing-between-a-business-process-flow-or-canvas-app"></a>Kiezen tussen bedrijfsprocesstroom of canvas-app
-Als u de vervanging voor dialoogvensters gaat kiezen, is het belangrijk dat u nadenkt over de gebruikerservaring die u wilt leveren. Vergeet niet dat bijna elk dialoogvenster kan worden gemodelleerd met behulp van een canvas-app.
+## <a name="choosing-between-a-business-process-flow-or-canvas-app"></a>Kiezen tussen een bedrijfs proces stroom of een canvas-app
+Wanneer u de vervanging van het dialoog venster kiest, is het belang rijk dat u rekening moet doen met de gebruikers ervaring die u wilt leveren. Houd er ook rekening mee dat bijna elk dialoog venster kan worden gemodelleerd met behulp van een canvas-app.
 
-Bedrijfsprocesstromen zijn bij uitstek geschikt om dialoogvensters te vervangen die processen modelleren die richtlijnen bieden voor een overkoepelende werkstroom die samenwerking vereist tussen groepen personen en binnen de context van de Dynamics 365-app. Bijvoorbeeld: prijsopgave en routering. 
+Bedrijfs proces stromen zijn het meest geschikt voor het vervangen van dialoog vensters waarin processen worden geboden over een overkoepelend-workstream waarvoor samen werking tussen groepen personen en Dynamics 365-app-context is vereist. Bijvoorbeeld: offerte beoordeling en route ring. 
 
-U kunt canvas-apps ook gebruiken om dialoogvensters te vervangen die voorgeschreven taken modelleren, zoals een belscript voor leads, of voor het vereenvoudigen van de gebruikerservaring voor andere taken, zoals het bijwerken van een verkoopkans. Voor deze scenario's kan een zelfstandige canvas-app ook een goede keuze zijn. 
+Canvas-apps kunnen ook worden gebruikt om dialoog vensters te vervangen die een model maken van voorscriptieve taken, zoals een aanroep script voor potentiële klanten of de gebruikers ervaring voor andere taken te vereenvoudigen, zoals het bijwerken van een verkoop kans. Houd er rekening mee dat deze scenario's zelfs kunnen profiteren van een zelfstandige canvas-app. 
 
-## <a name="dialog-replacement-using-business-process-flow-scenario"></a>Scenario voor vervanging van een dialoogvenster met behulp van bedrijfsprocesstroom
-Stel dat u een dialoogvenster hebt waarmee voor een reeks pagina's belangrijke informatie wordt aangevraagd bij de gebruiker, een prijsopgave wordt gegenereerd, een e-mail naar revisoren wordt verzonden om de prijsopgave goed of af te keuren, waarna de offerte per e-mail naar de klant wordt verzonden. Dit type proces kan effectiever worden gemodelleerd met behulp van een bedrijfsprocesstroom. 
+## <a name="dialog-replacement-using-business-process-flow-scenario"></a>Vervanging van dialoog vensters met scenario voor bedrijfs processen stroom
+Stel dat u een dialoog venster hebt dat, op een reeks pagina's, belang rijke gegevens van de gebruiker opvraagt, een offerte genereert, een e-mail verzendt naar revisoren om de offerte te accepteren of afwijzen, voordat deze naar de klant wordt verzonden. Dit type proces wordt effectiever gemodelleerd met behulp van een bedrijfs proces stroom. 
 
-Voor het vervangen van het dialoogvenster moet u eerst de belangrijkste stappen in het proces bepalen. Denk hierbij bijvoorbeeld aan de fase *Inhoud voorbereiden* waarmee ervoor wordt gezorgd dat alle producten worden vermeld en kortingen zijn toegepast, de fase *Prijsopgave genereren* om de prijsopgave te maken en te beoordelen op nauwkeurigheid en indeling, de fase *Primaire beoordeling* waarin de prijsopgave wordt verzonden ter controle en goedkeuring, de fase *Secundaire beoordeling* waarin de prijsopgave wordt beoordeeld onder bepaalde omstandigheden en ten slotte de fase *Prijsopgave leveren* waarin de prijsopgave naar de klant wordt verzonden.
+Om het dialoog venster te vervangen, moet u eerst de belangrijkste fasen in het proces identificeren. Dit kan een *voorbereidings inhouds* fase omvatten om ervoor te zorgen dat alle producten worden weer gegeven en kortingen worden toegepast, een *offerte fase genereren* om de offerte te maken en deze te controleren op nauw keurigheid van de indeling, een *primaire beoordelings* fase voor het verzenden van de offerte voor beoordeling en goed keuring, een *tweede beoordelings* fase voor het controleren van de offerte onder bepaalde omstandigheden en tot slot, een *aflever* fase om de offerte naar de klant te verzenden.
 
-Daarna bepaalt u de belangrijkste stappen die gebruikers moeten volgen in het proces. Zo kan de fase *Inhoud voorbereiden* kan een eenvoudige waar/niet waar-stap omvatten waarbij de gebruiker de producten op de prijsopgave nogmaals controleert, een verplichte zoekstap om een prijslijst te selecteren en een numerieke stap om een korting in te voeren voordat de gebruiker doorgaat naar de volgende fase. De fase *Prijsopgave maken* kan een [actiestap](create-business-process-flow.md#add-an-on-demand-action-to-a-business-process-flow) bevatten om een prijsopgave te maken op basis van alle informatie die eerder is vastgelegd in de fase *Inhoud voorbereiden* en de bijbehorende Dynamics 365-record. De fasen *Primaire beoordeling* en *Secundaire beoordeling* bevatten mogelijk verschillende waar/niet waar-stappen alsook een vereiste stap voor het vastleggen van de goedkeuringsstatus. Tevens wordt ervoor gezorgd dat het proces alleen naar de volgende fase kan worden verplaatst als er goedkeuring is ontvangen. Configureer [beveiliging op veldniveau](/customer-engagement/admin/field-level-security) voor deze stap om ervoor te zorgen dat alleen bevoegde revisoren goedkeuring kunnen geven voor de prijsopgave.  Daarnaast kunt u een werkstroom toevoegen aan de fasen *Primaire beoordeling* en *Secundaire beoordeling*, zodat er bij invoer een e-mail wordt verzonden naar alle revisoren. 
+Bepaal vervolgens de belangrijkste stappen die gebruikers in het proces moeten volgen. De voor *bereide inhouds* fase kan bijvoorbeeld een eenvoudige waar-of onwaar-stap bevatten voor de gebruiker om te controleren of de producten moeten worden genoteerd, een verplichte Zoek stap om een prijs lijst te selecteren en een numerieke stap om een korting in te voeren voordat u doorgaat naar de volgende fase. De fase *offerte genereren* kan een [actie stap](create-business-process-flow.md#add-an-on-demand-action-to-a-business-process-flow) bevatten voor het maken van een offerte op basis van alle gegevens die eerder zijn vastgelegd in de inhouds fase voor het *voorbereiden* en de gerelateerde Dynamics 365-record. De *primaire beoordeling* en *secundaire controle* fasen kunnen verschillende waar of onwaare stappen hebben om de offerte beoordeling te begeleiden, samen met een vereiste stap voor het vastleggen van de goedkeurings status en ervoor te zorgen dat het proces alleen kan worden verplaatst naar de volgende fase zodra goed keuring is Ontvangen. Configureer [beveiliging op veld niveau](/customer-engagement/admin/field-level-security) voor deze stap om ervoor te zorgen dat alleen geautoriseerde revisoren goed keuring kunnen bieden op de offerte.  Daarnaast kan een werk stroom aan de *primaire beoordeling* en *secundaire controle* fasen worden toegevoegd, zoals bij invoer, een e-mail melding wordt verzonden naar alle revisoren. 
 
-Configureer ten slotte uw bedrijfsprocesstroomfasen en -stappen in combinatie met de voorwaardelijke logica voor de processtroom. In dit voorbeeld kunt u een [voorwaardelijke vertakking](enhance-business-process-flows-branching.md) toevoegen na de *Primaire beoordeling* zodat als een stap aangeeft dat een tweede beoordelingsniveau nodig is, de volgende fase in het proces de *Secundaire beoordeling* is of anders de fase *Prijsopgave leveren*.
+Configureer tot slot uw bedrijfsproces stroom fasen en stappen, samen met de voorwaardelijke logica, om de proces stroom te begeleiden. Voor dit voor beeld kunt u een [voorwaardelijke vertakking](enhance-business-process-flows-branching.md) toevoegen die volgt op de *primaire beoordelings* fase, zodat, als een stap aangeeft dat er een tweede beoordelings niveau nodig is, de volgende fase in het proces de *secundaire revisie* fase is, anders, *het Aflever* fase van de offerte.
 
-Als u wilt dat deze bedrijfsprocesstroom beschikbaar is voor gebruikers, moet u ervoor zorgen dat de juiste gebruikers de bevoegdheden hebben voor de bedrijfsprocesstroom en moet u deze vervolgens activeren.
+Als u deze bedrijfsproces stroom beschikbaar wilt maken voor gebruikers, zorg er dan voor dat de juiste gebruikers bevoegdheden hebben voor de stroom van het bedrijfs proces en vervolgens te activeren.
 
-Zie voor meer informatie over het maken van een bedrijfsprocesstroom [Zelfstudie: Een bedrijfsprocesstroom maken om processen te standaardiseren](create-business-process-flow.md).
+Zie [zelf studie: een bedrijfsproces stroom maken om processen te standaardiseren](create-business-process-flow.md)voor meer informatie over het maken van een bedrijfs proces stroom.
 
-## <a name="dialog-replacement-using-canvas-app-scenario"></a>Scenario voor vervanging van een dialoogvenster met behulp van canvas-app
+## <a name="dialog-replacement-using-canvas-app-scenario"></a>Vervanging van dialoog vensters met het canvas-app-scenario
 
-Stelt u zich eens voor dat u een dialoogvenster hebt dat een belscript volgt dat vertegenwoordigers begeleidt bij cold calls naar leads. Dit proces kan eenvoudig worden vastgelegd met behulp van een canvas-app.
+Stel dat u een dialoog venster hebt dat een aanroepend script volgt dat verkoop medewerkers begeleidt via koude aanroepen van leads. Dit proces kan eenvoudig worden vastgelegd met behulp van een canvas-app.
 
-Begin met verbinding maken met de gegevensbronnen die u nodig hebt om gegevens te kunnen lezen en schrijven. In dit voorbeeld wordt een [verbinding met Dynamics 365](/powerapps/maker/canvas-apps/connections/connection-dynamics-crmonline) gebruikt voor lead-, account- en contactgegevens.
+Begin met het maken van verbinding met de gegevens bronnen die u nodig hebt om gegevens te lezen en te schrijven. In dit voor beeld wordt een [verbinding met Dynamics 365](/powerapps/maker/canvas-apps/connections/connection-dynamics-crmonline) gebruikt voor lead-, account-en contact gegevens.
 
-Begin met het vaststellen van het aantal benodigde schermen. In dit voorbeeld besluit u vijf schermen te gebruiken. 
--   Scherm 1. Een lead in een lijst selecteren die u gaat bellen.
--   Scherm 2. Kennismaking, beschikbaarheid voor een gesprek controleren en terugbelmoment op een later tijdstip plannen. 
--   Scherm 3. Budget, bevoegdheid, behoefte en tijdlijn (BANT) bepalen. 
--   Scherm 4. Volgende stappen vastleggen en follow-upgesprekken plannen. 
--   Scherm 5. Lead bedanken voor zijn/haar tijd aan het einde van het gesprek.
+Begin met het identificeren van het aantal schermen dat nodig is. Voor dit voor beeld kunt u besluiten om vijf schermen te hebben. 
+-   Scherm 1. Een lead selecteren in een lijst om aan te roepen.
+-   Scherm 2. Voor introducties, het controleren van de beschik baarheid voor een gesprek en het plannen van een terugbellen op een later tijdstip. 
+-   Scherm 3. Voor het bepalen van BANT (budget, instantie, behoefte en tijd lijn). 
+-   Scherm 4. Volgende stappen vastleggen en opvolgings aanroepen plannen. 
+-   Scherm 5. Hartelijk dank dat u aan het einde van de oproep de potentiële klant hebt.
 
-Vervolgens gat u elke scherm maken. In het eerste scherm [maakt u een galerie](/powerapps/maker/canvas-apps/customize-layout-sharepoint) met leads die moeten worden gebeld. In het tweede scherm gebruikt u labels om het scherm een naam te geven en het belscript op te geven. Gebruik besturingselementen zoals keuzerondjes om vast te leggen of het een goed moment is voor de persoon om te praten. Als dit het geval is, gebruikt u voorwaardelijke logica om een knop in te schakelen om naar het volgende scherm te navigeren. Als het niet het geval is, toont u een script op hetzelfde scherm om te proberen een terugbelmoment te plannen met de klant. Zo kunt u ook uw belscript voor de hierop volgende schermen definiëren.
+Vervolgens bouwt u elk scherm. Bouw in het eerste scherm [een galerie](/powerapps/maker/canvas-apps/customize-layout-sharepoint) met leads die moeten worden aangeroepen. In de tweede gebruikt u labels voor de titel van het scherm en geeft u het aanroepende script op, terwijl u besturings elementen als keuze rondjes gebruikt om vast te leggen of het een goede tijd is voor de communicatie van de persoon. Als dat het geval is, gebruikt u voorwaardelijke logica om een knop in te scha kelen naar het volgende scherm. als dat niet zo is, onthult u een script op hetzelfde scherm om te proberen een oproep terug te plannen met de klant. Op dezelfde manier kunt u het aanroepen van scripts op volgende schermen definiëren.
 
-En als laatste [definieert u navigatie voor meerdere schermen](/powerapps/maker/canvas-apps/functions/function-navigate). In dit voorbeeld kunt u, naast achtereenvolgende navigatie door de schermen, de gebruiker van het tweede scherm naar het laatste scherm laten navigeren (het einde van het script waarbij de lead voor zijn/haar tijd wordt bedankt) als de lead niet geïnteresseerd is in een gesprek.
+Definieer ten slotte [Navigatie op verschillende schermen](/powerapps/maker/canvas-apps/functions/function-navigate). In dit voor beeld is het mogelijk dat u, naast het volgen van de schermen, de gebruiker wilt navigeren van het tweede scherm naar het laatste scherm (het einde van het script dat de lead voor hun tijd verdankt) als de lead niet geïnteresseerd is in een gesprek.
 
-Als u deze app beschikbaar wilt stellen voor gebruikers, publiceert u de app. Overweeg hoe een dergelijk scenario kan worden getransformeerd met een zelfstandige app die belscripts levert en ondersteuning biedt voor snelle gegevensinvoer.
+Als u deze app beschikbaar wilt maken voor gebruikers, publiceert u de app. Denk na over de manier waarop een scenario kan worden omgezet via de beschik baarheid van een zelfstandige app die aanroepende scripts biedt en snelle gegevens invoer ondersteunt.
 
-Stel dat u deze ervaring wilt insluiten in Dynamics 365 for Sales. U doet dit door eerst een iframe in een Dynamics 365 for Sales-formulier te maken. Vervolgens gaat u naar de sectie **Apps** in het menu PowerApps, selecteert u de app die u zojuist hebt gepubliceerd, kopieert u de koppeling op het tabblad **Details** en plakt u deze als de URL voor het iframe. 
+Stel dat u deze ervaring wilt insluiten in Dynamics 365-omzet. Als u dit wilt doen, begint u met het maken van een iframe op een Dynamics 365-verkoop formulier. Ga vervolgens naar het gedeelte **apps** in het PowerApps-menu, selecteer de app die u zojuist hebt gepubliceerd, kopieer de webkoppeling onder het tabblad **Details** en plak deze als de URL voor de IFRAME. 
 
-We gaan nog een stapje verder. Stel dat u wilt dat deze app rechtstreeks vanuit het leadhoofdformulier beschikbaar is en in de context van de lead wordt geplaatst, zodat de app niet vereist dat de gebruiker een lead op het eerste scherm selecteert. Als u relevante informatie wilt doorgeven aan de app, past u gewoon de URL voor het iframe aan om een querytekenreeks met deze informatie bij te voegen, zoals lead- of account-id's, met behulp van JavaScript dat voor een specifieke gebeurtenis wordt uitgevoerd, bijvoorbeeld het laden van het formulier. Werk vervolgens de app bij om het eerste scherm (voor selectie van lead) te verwijderen en open in plaats daarvan de waarden die via de querytekenreeks met behulp van de [Param-functie](/powerapps/maker/canvas-apps/functions/function-param) zijn doorgegeven aan de app.
+Als u deze stap verder uitvoert, wilt u dat deze app beschikbaar is in het hoofd formulier Lead en zich in de context van de lead bevindt, zodat de gebruiker in het eerste scherm geen lead hoeft te selecteren. Als u relevante informatie wilt door geven aan de app, wijzigt u eenvoudigweg de iframe-URL om een query reeks toe te voegen die deze informatie bevat, zoals lead-of account-Id's, met behulp van Java script dat wordt uitgevoerd op een bepaalde gebeurtenis, zoals bij het laden van formulieren. Werk vervolgens de app bij om het eerste scherm (voor het selecteren van leads) te verwijderen en in plaats daarvan toegang te krijgen tot de waarden die worden door gegeven aan de app via de query reeks met behulp van de [functie param](/powerapps/maker/canvas-apps/functions/function-param).
 
-## <a name="dialog-replacement-faq"></a>Veelgestelde vragen over vervanging van dialoogvensters
+## <a name="dialog-replacement-faq"></a>Veelgestelde vragen over dialoogvenster vervanging
 
-Worden afhankelijkheden van canvas-apps bijgehouden? 
-- Afhankelijkheden van canvas-apps worden op dezelfde manier bijgehouden als afhankelijkheden in Dynamics 365 for Customer Engagement.
+Zijn afhankelijkheden op canvas-apps te volgen? 
+- Afhankelijkheden van canvas-apps worden op dezelfde manier bijgehouden als afhankelijkheden in Dynamics 365-apps.
 
-Kan ik een canvas-app starten als een pop-upvenster met een knop in de opdrachtbalk?
-- Ja. Dit doet u door de doel-URL in te stellen op die van de canvas-app. Dit is de waarde die is verkregen uit de sectie **Details** van de app, zoals eerder beschreven.
+Kan ik een canvas-app starten als een pop-upvenster van een knop op de opdracht balk?
+- Klikt. U doet dit door eenvoudigweg de doel-URL in te stellen op die van uw canvas-app, die u hebt verkregen in de sectie **Details** van de app, zoals eerder beschreven.
 
-Kunnen werkstromen worden aangeroepen vanuit een canvas-app?
-- Dit wordt niet ondersteund. Hiervoor kunt u beter een stroom gebruiken. Meer informatie: [Inleiding voor knopstromen met gebruikersinvoer](button-flow-with-user-input-tokens.md)
+Kunnen werk stromen worden aangeroepen vanuit een canvas-app?
+- Dit wordt niet ondersteund. Het is raadzaam om in plaats daarvan een stroom te gebruiken. Meer informatie: [introductie van knop stromen met gebruikers invoer](button-flow-with-user-input-tokens.md)
 
-Kan ik dialoogvensters automatisch omzetten in bedrijfsprocesstromen of canvas-apps?
-- Er bestaat geen geautomatiseerde manier om dialoogvensters om te zetten in bedrijfsprocesstromen of canvas-apps.
+Kan ik automatisch dialoog vensters converteren naar stromen voor bedrijfs processen of op canvas-apps?
+- Er is geen geautomatiseerde manier om dialoog vensters te converteren naar bedrijfs proces stromen of canvas-apps.
 
 
 ## <a name="see-also"></a>Zie ook
-[Zelfstudie: Een bedrijfsprocesstroom maken om processen te standaardiseren](create-business-process-flow.md) </br>
+[Zelf studie: een bedrijfs proces stroom maken om processen te standaardiseren](create-business-process-flow.md) </br>
 [Wat zijn canvas-apps in PowerApps?](/powerapps/maker/canvas-apps/getting-started)
 
 

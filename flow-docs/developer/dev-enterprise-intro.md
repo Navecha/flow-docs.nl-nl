@@ -1,11 +1,11 @@
 ---
-title: Microsoft Flow voor ontwikkelaars in organisaties, ISV's en partners | Microsoft Docs
+title: Microsoft Flow voor Enter prise-ontwikkel aars, Isv's en partners | Microsoft Docs
 description: Een inleiding tot het ontwikkelen van oplossingen voor Microsoft Flow.
 services: ''
 suite: flow
 documentationcenter: na
-author: mgblythe
-manager: anneta
+author: MSFTMan
+manager: KVivek
 editor: ''
 tags: ''
 ms.service: flow
@@ -14,76 +14,77 @@ ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 01/31/2018
-ms.author: mblythe
+ms.author: Deonhe
 search.app:
 - Flow
 search.audienceType:
 - developer
-ms.openlocfilehash: f510d387b594bb11306f8bc2530573b775e5f08e
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.openlocfilehash: f26143533e84bc3ea8bc0784fef3c56eeb0551e1
+ms.sourcegitcommit: 510706f5699b6cf9dda9dcafbed715f9f6d559e8
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "64455912"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73547837"
 ---
-# <a name="microsoft-flow-for-enterprise-developers-isvs-and-partners"></a>Microsoft Flow voor ontwikkelaars in organisaties, ISV's en partners
+# <a name="microsoft-flow-for-enterprise-developers-isvs-and-partners"></a>Microsoft Flow voor bedrijfs ontwikkelaars, Isv's en partners
+[!INCLUDE [view-pending-approvals](../includes/cc-rebrand.md)]
 
-Als ontwikkelaar kunt u Microsoft Flow uitbreiden zodat u nog krachtigere oplossingen kunt ontwikkelen voor organisaties en klanten.
+Als ontwikkelaar kunt u Microsoft Flow uitbreiden, waardoor er nog krachtiger oplossingen voor organisaties en klanten mogelijk zijn.
 
-## <a name="microsoft-flow-for-enterprise-developers"></a>Microsoft Flow voor ontwikkelaars in organisaties
+## <a name="microsoft-flow-for-enterprise-developers"></a>Microsoft Flow voor bedrijfs ontwikkelaars
 
-Als ontwikkelaar in een organisatie kunt u uw organisatie in staat stellen om robuuste, op maat gemaakte oplossingen te maken met Microsoft Flow:
+Als bedrijfs ontwikkelaar kunt u uw organisatie in staat stellen om robuuste oplossingen op basis van Microsoft Flow te bouwen:
 
-- **Aangepaste connectors bouwen**: Maak aangepaste connectors op een wijze dat de gegevens en webservices van uw organisatie met elkaar zijn verbonden via Microsoft Flow. [Meer informatie](https://docs.microsoft.com/connectors/custom-connectors/)
+- **Bouw aangepaste connectors**: ontwikkel aangepaste connectors om verbinding te maken met de gegevens en webservices van uw organisatie via Microsoft flow. [Meer informatie](https://docs.microsoft.com/connectors/custom-connectors/)
 
-- **Azure Functions bouwen**: Ontwikkel Azure Functions als u apps wilt uitbreiden met aangepaste serverlogica. [Meer informatie](https://docs.microsoft.com/azure/azure-functions/functions-flow-scenario)
+- **Bouw Azure functions**: Craft Azure functions om apps uit te breiden met aangepaste logica aan de server zijde. [Meer informatie](/azure/azure-functions/app-service-export-api-to-powerapps-and-flow)
 
-- **Microsoft Flow insluiten**: Maak geïntegreerde oplossingen door Microsoft Flow rechtstreeks in de website-ervaring in te sluiten, en maak duidelijk zichtbaar bij welke werkstromen of processen mensen in uw organisatie met hun werk betrokken zijn. [Meer informatie](embed-flow-dev.md)
+- **Insluiten Microsoft flow**: u kunt Microsoft flow rechtstreeks insluiten in uw website-ervaring om geïntegreerde oplossingen, halen werk stromen of processen te maken waarbij personen in uw organisatie al hun werk doen. [Meer informatie](embed-flow-dev.md)
 
-## <a name="microsoft-flow-for-isvs-and-microsoft-partners"></a>Microsoft Flow voor ISV's en Microsoft-partners
+## <a name="microsoft-flow-for-isvs-and-microsoft-partners"></a>Microsoft Flow voor Isv's en micro soft-partners
 
-Als Microsoft-partner of Independent Software Vendor (ISV) kunt u een snellere acceptatie door de klant bewerkstelligen door uw producten zo uit te breiden dat deze worden geïntegreerd met de gegevens en bedrijfsprocessen van uw klanten en door werkstromen toe te voegen en aan te passen om bedrijfsprocessen als onderdeel van de toepassing te automatiseren. Nadat u de onderstaande zeven stappen hebt voltooid, kan uw toepassing gebruikmaken van een robuuste engine voor werkstromen op cloudschaal waarmee verbinding met meer dan 200 verschillende services kan worden gemaakt.
+Als een micro soft-partner of Independent Software Vendor (ISV) kunt u de acceptatie van klanten versnellen door uw producten uit te breiden om te integreren met de gegevens en bedrijfs processen van uw klanten en om werk stromen toe te voegen en aan te passen om bedrijfs processen te automatiseren als onderdeel van uw modules. Nadat u de onderstaande zeven stappen hebt voltooid, kan uw toepassing gebruikmaken van een robuuste werk stroom engine voor de Cloud schaal die verbinding kan maken met 200 en verschillende services.
 
-| Fase | Stap | Wanneer nodig? |
+| Partition | Wizardstap | Wanneer dit nodig is? |
 | --- | --- | --- |
-| Ontwikkeling | 1. Een aangepaste connector ontwikkelen voor uw gegevens | Als u uw ISV-gegevens beschikbaar wilt maken voor PowerApps of Microsoft Flow |
-| Ontwikkeling | 2. Ondersteuning voor uw toepassing toevoegen om gebruikers met Azure Active Directory (Azure AD) te verifiëren | Als u de Microsoft Flow-gebruikersinterface wilt insluiten of wilt vermelden in Microsoft AppSource | 
-| Ontwikkeling | 3. De Microsoft Flow-gebruikersinterface insluiten in uw toepassing met behulp van onze web-iframe | Als u het maken of beheren van stromen wilt opnemen in uw toepassing | 
-| Ontwikkeling | 4. Stroomsjablonen maken en publiceren | Als u vooraf stromen voor uw klanten wilt maken | 
-| Ontwikkeling | 5. Toepassingslogica toevoegen om programmatisch stromen te implementeren | Als u automatisch vooraf gemaakte stromen voor uw klanten wilt implementeren | 
-| Distributie | 6. Uw klanten licenties verlenen voor Microsoft Flow via het Microsoft Cloud Solution Provider-programma | Als uw klanten niet beschikken over Office 365- of Dynamics 365-licenties |
-| Distributie | 7. Uw oplossing op Microsoft AppSource vermelden | Aanbevolen om de zichtbaarheid van uw ISV-oplossing te verhogen |
+| Softwareontwikkeling | 1. een aangepaste connector maken voor uw gegevens | Als u uw eigen ISV-gegevens beschikbaar wilt maken voor PowerApps of Microsoft Flow |
+| Softwareontwikkeling | 2. Voeg ondersteuning toe voor uw toepassing om gebruikers te verifiëren met Azure Active Directory (Azure AD) | Als u de Microsoft Flow gebruikers interface of lijst in Microsoft AppSource wilt insluiten | 
+| Softwareontwikkeling | 3. de Microsoft Flow gebruikers interface insluiten in uw toepassing met behulp van onze op het web gebaseerde IFRAME | Als u het maken van een stroom of het beheer wilt toevoegen aan uw toepassing | 
+| Softwareontwikkeling | 4. stroom sjablonen maken en publiceren | Als u stromen vooraf wilt maken voor uw klanten | 
+| Softwareontwikkeling | 5. toepassings logica toevoegen om programmatische stromen te implementeren | Als u uw vooraf gemaakte stromen automatisch wilt implementeren voor uw klanten | 
+| Deel | 6. Verleen uw klanten licenties voor Microsoft Flow via het Microsoft Cloud Solution Provider-programma | Als uw klanten geen Office 365-of Dynamics 365-licenties hebben |
+| Deel | 7. vermeld uw oplossing op Microsoft AppSource | Aanbevolen om de zicht baarheid van uw ISV-oplossing te verg Roten |
 
-### <a name="1-connecting-to-your-apis-or-enabling-customers-to-connect-to-your-apis"></a>1. Verbinding maken met uw API's OF inschakelen dat klanten verbinding kunnen maken met uw API's
+### <a name="1-connecting-to-your-apis-or-enabling-customers-to-connect-to-your-apis"></a>1. verbinding maken met uw Api's of klanten in staat stellen verbinding te maken met uw Api's
 
-Als ISV hebt u vaak eigen gegevens waartoe klanten toegang moeten krijgen via uw stromen. U kunt toegang tot uw gegevens beschikbaar maken door middel van een aangepaste connector. [Meer informatie](https://docs.microsoft.com/connectors/custom-connectors/)
+Als ISV maakt u vaak eigen gegevens die klanten via uw stromen kunnen benaderen. U kunt toegang tot uw gegevens beschikbaar maken via een aangepaste connector. [Meer informatie](https://docs.microsoft.com/connectors/custom-connectors/)
 
-Als de connector is gemaakt, kan deze op twee manieren beschikbaar worden gemaakt voor uw klanten:
-- De connector kan worden geïmplementeerd in de tenant van de klant via REST API's of PowerShell.
+Nadat u een connector hebt gemaakt, kunt u deze op twee manieren beschikbaar maken voor uw klanten:
+- De connector kan worden geïmplementeerd in de Tenant van de klant via REST Api's of Power shell.
 - Als u de aangepaste connector openbaar beschikbaar wilt maken voor alle gebruikers, kunt u uw connector voor certificering indienen. [Meer informatie](https://docs.microsoft.com/connectors/custom-connectors/submit-certification)
 
-### <a name="2-authentication"></a>2. Verificatie 
+### <a name="2-authentication"></a>2. verificatie 
 
-Voor het aanroepen van REST API's en insluiten van een geverifieerde gebruikersinterface moet uw toepassing federatieve eenmalige aanmelding van Azure AD gebruiken om eindgebruikers en klanten te verifiëren. [Hier](https://identity.microsoft.com/) vindt u informatie over het inschakelen van federatieve SSO van AAD. We bieden geen ondersteuning voor niet-geverifieerde toegang of toegang met andere identiteitsproviders dan Azure AD. 
+Voor het aanroepen van REST Api's en het insluiten van geverifieerde gebruikers interface, moet uw toepassing gebruikmaken van de federatieve eenmalige aanmelding van Azure AD om eind gebruikers en klanten te verifiëren. [Hier](https://identity.microsoft.com/) vindt u informatie over het inschakelen van Aad Federated SSO. We bieden geen ondersteuning voor niet-geverifieerde toegang of toegang tot andere id-providers dan Azure AD. 
 
-### <a name="3-embedding-ui-components"></a>3. Onderdelen van de gebruikersinterface insluiten
+### <a name="3-embedding-ui-components"></a>3. UI-onderdelen insluiten
 
-Sluit Microsoft Flow in uw app in om een diepgaande integratie binnen de context in te schakelen tussen uw app en alle andere services die Microsoft Flow ondersteunt. [Meer informatie](embed-flow-dev.md)
+Sluit Microsoft Flow in uw app in om een diep gaande integratie binnen de context in te scha kelen tussen uw app en alle andere services die Microsoft Flow ondersteunt. [Meer informatie](embed-flow-dev.md)
 
-### <a name="4-create-and-publish-flow-templates"></a>4. Stroomsjablonen maken en publiceren
+### <a name="4-create-and-publish-flow-templates"></a>4. stroom sjablonen maken en publiceren
 
-Zodra u over een connector beschikt, moet u sjablonen publiceren die laten zien hoe uw service moet worden gebruikt. Deze sjablonen dienen als voorbeelden die door gebruikers gebruikt kunnen worden, en vervolgens kunnen worden uitgebreid naar hun eigen unieke werkstromen. [Meer informatie](../publish-a-template.md)
+Zodra u een connector hebt, moet u sjablonen publiceren die laten zien hoe u uw service kunt gebruiken. Deze sjablonen dienen als voor beelden die gebruikers kunnen gebruiken om te leren en vervolgens uit te breiden naar hun eigen unieke werk stromen. [Meer informatie](../publish-a-template.md)
 
-### <a name="5-deployment"></a>5. Implementatie
+### <a name="5-deployment"></a>5. implementatie
 
-Als u eindgebruikers toegang wilt verlenen voor stromen die automatisch kunnen worden gebruikt, implementeert u de stromen in de Azure AD-tenant van de gebruiker. Gebruik een implementatiepakket dat u implementeert met onze REST API's of PowerShell. [Meer informatie](https://docs.microsoft.com/powerapps/export-import-packages)
+Als u eind gebruikers toegang wilt geven tot stromen die ze automatisch kunnen gebruiken, implementeert u de stromen in de Azure AD-Tenant van de gebruiker. Gebruik een implementatie pakket dat u implementeert met behulp van onze REST Api's of Power shell. [Meer informatie](https://docs.microsoft.com/powerapps/export-import-packages)
 
-### <a name="6-licensing"></a>6. Licentieverlening
+### <a name="6-licensing"></a>6. licentie verlening
 
-Als uw klanten al werken met Office 365 of Dynamics 365 en de licenties zijn gekoppeld aan de identiteiten die worden gebruikt om met Azure AD aan te melden, hoeft u niet aan aanvullende licentievereisten te voldoen. Als uw klanten echter niet met Office 365 of Dynamics 365 werken, moet u namens uw klanten gebruiksrechten voor Microsoft Flow verkrijgen, zodat ze een licentie hebben om die ingesloten onderdelen in uw toepassing te gebruiken.
+Als uw klanten al beschikken over Office 365 of Dynamics 365 en deze licenties zijn gekoppeld aan de identiteiten die gebruikers aanmelden met Azure AD, zijn er geen aanvullende licentie vereisten voor u. Als uw klanten echter geen gebruikmaken van Office 365 of Dynamics 365, moet u voor Microsoft Flow gebruik rechten verwerven, zodat ze een licentie hebben om de Inge sloten onderdelen in uw toepassing te gebruiken.
 
-Wij bieden het [Microsoft Cloud Solution Provider](https://partner.microsoft.com/cloud-solution-provider)-programma om licenties namens uw klanten te verkrijgen. Er zijn twee verschillende [prijsplannen](https://flow.microsoft.com/pricing/) beschikbaar voor Microsoft Flow. Raadpleeg deze voor informatie over de plannen en functies.
+We bieden het [Microsoft Cloud Solution Provider](https://partner.microsoft.com/cloud-solution-provider) -programma om licenties te verkrijgen namens uw klanten. Er zijn twee verschillende [prijs plannen](https://flow.microsoft.com/pricing/) beschikbaar voor Microsoft flow, die u moet controleren op plan-en functie gegevens.
 
-### <a name="7-list-on-appsource"></a>7. Vermelden op AppSource
+### <a name="7-list-on-appsource"></a>7. lijst op AppSource
 
-Nadat u Microsoft Flow in uw toepassing hebt geïntegreerd, kunt u het vermelden op AppSource. Met AppSource kunt u nieuwe leads voor uw bedrijf genereren door een app te bouwen en deze naar AppSource te publiceren om door nieuwe klanten te worden uitgeprobeerd. [Meer informatie](dev-appsource-test-drive.md)
+Zodra u Microsoft Flow in uw toepassing hebt geïntegreerd, kunt u deze weer geven op AppSource. Met AppSource kunt u nieuwe leads voor uw bedrijf genereren door een app te bouwen en deze te publiceren naar AppSource voor nieuwe klanten om de schijf te testen. [Meer informatie](dev-appsource-test-drive.md)

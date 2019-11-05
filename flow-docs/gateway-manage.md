@@ -1,6 +1,6 @@
 ---
-title: Meer informatie over het beheren van on-premises gegevensgateways | Microsoft Docs
-description: Een on-premises gegevensgateway in Microsoft Flow weergeven en installeren
+title: Meer informatie over het beheren van on-premises gegevens gateways | Microsoft Docs
+description: Een on-premises gegevens gateway in Microsoft Flow weer geven en installeren.
 services: ''
 suite: flow
 documentationcenter: na
@@ -13,89 +13,84 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 02/05/2018
+ms.date: 10/16/2019
 ms.author: deonhe
 search.app:
 - Flow
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: b8b14f720736a60b04cbd9ae23dec5c0524ff03c
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.openlocfilehash: 3991e739178f86bbea3ae1b68b9d3337c42b4727
+ms.sourcegitcommit: 510706f5699b6cf9dda9dcafbed715f9f6d559e8
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "65054071"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73547670"
 ---
-# <a name="manage-an-on-premises-data-gateway-in-microsoft-flow"></a>Een on-premises gegevensgateway beheren in Microsoft Flow
+# <a name="manage-an-on-premises-data-gateway-in-microsoft-flow"></a>Een on-premises gegevens gateway beheren in Microsoft Flow
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
-U kunt een on-premises gegevensgateway installeren en beheren zodat u verschillende cloud-apps via Microsoft Flow veilig kunt integreren met uw on-premises gegevens en apps.
+Een on-premises gegevens gateway installeren en beheren om verschillende Cloud-apps veilig te integreren met uw on-premises gegevens en apps via Microsoft Flow.
 
-Met een gateway kunt u verbinding maken met on-premises gegevens via de volgende verbindingen:
+Met een gateway kunt u verbinding maken met on-premises gegevens via deze verbindingen:
 
 * Apache Impala
 * Aangepaste connectors die u maakt
 * DB2
-* Bestandssysteem
-* HTTP met Azure AD
+* Bestands systeem
+* Http met Azure AD
 * Informix
 * MySQL
 * Oracle Database
 * PostgreSQL
-* SharePoint
+* Point
 * SQL Server
-* Teradata (preview)
+* Teradata (preview-versie)
 
 > [!IMPORTANT]
-> Microsoft SharePoint-gegevensgateways ondersteunen nu zowel HTTP- als HTTPS-verkeer.
+> Micro soft share point-gegevens gateways bieden nu ondersteuning voor HTTP-en HTTPS-verkeer.
 
 ## <a name="prerequisites"></a>Vereisten
 
-* De gebruikersnaam die en het wachtwoord dat u gebruikt om u [aan te melden](sign-up-sign-in.md) bij Microsoft Flow.
-* Beheerdersbevoegdheden op een gateway.
+* De gebruikers naam en het wacht woord die u hebt gebruikt om u te [registreren](sign-up-sign-in.md) voor Microsoft flow.
+* Beheerders machtigingen op een gateway.
 
-  Standaard hebt u deze machtigingen voor elke gateway die u installeert. Een beheerder van een andere gateway kan u deze machtigingen ook verlenen voor die gateway.
-* Een licentie die ondersteuning biedt voor gateways. Zie de sectie 'Connectiviteit' van de [pagina met prijzen](https://flow.microsoft.com/pricing/) voor meer informatie.
+  U hebt deze machtigingen standaard voor elke gateway die u installeert. Een beheerder van een andere gateway kan u ook deze machtigingen voor die gateway verlenen.
+* Een licentie die ondersteuning biedt voor gateways. Zie de sectie ' connectiviteit ' van de [pagina met prijzen](https://flow.microsoft.com/pricing/)voor meer informatie.
 
 > [!NOTE]
-> U kunt een gateway en een on-premises verbinding alleen maken in uw [standaardomgeving](environments-overview-maker.md).
+> U kunt een gateway en een on-premises verbinding alleen in uw [standaard omgeving](environments-overview-maker.md)maken.
 
 ## <a name="install-a-gateway"></a>Een gateway installeren
 
-1. Download de [wizard voor gatewayinstallatie](https://go.microsoft.com/fwlink/?LinkID=820580&clcid=0x409).
+Als u een gateway wilt installeren, volgt u de stappen in [een on-premises gegevens gateway installeren](/data-integration/gateway/service-gateway-install). Installeer de gateway in de standaard modus omdat de _on-premises gegevens gateway (persoonlijke modus)_ alleen beschikbaar is voor Power bi.
 
-1. Voer de wizard uit en geef de referenties op waarmee u zich ook bij Microsoft Flow aanmeldt.
+## <a name="view-your-gateways"></a>Uw gateways weer geven
 
-    Als u de gateway hebt geregistreerd en geconfigureerd, wordt deze weergegeven in de lijst **Gateways** in Microsoft Flow.
+Selecteer in de rechter bovenhoek van de [Microsoft flow website](https://flow.microsoft.com)het tandwiel pictogram en selecteer vervolgens **gateways**.
 
-## <a name="view-your-gateways"></a>Uw gateways weergeven
-
-Selecteer rechtsboven in de hoek van de [Microsoft Flow-website](https://flow.microsoft.com) het tandwielpictogram en selecteer vervolgens **Gateways**.
-
-![Gateway onder beheer][1]
+![Gateway onder beheren][1]
 
 > [!NOTE]
-> Als u een gateway hebt gemaakt in PowerApps of toegang tot een dergelijke gateway hebt gekregen, wordt die gateway weergegeven in de lijst **Mijn gateways** in Microsoft Flow.
+> Als u toegang tot een gateway in PowerApps hebt gemaakt of gekregen, wordt die gateway weer gegeven in de lijst **mijn gateways** in Microsoft flow.
 
+## <a name="cluster-your-gateways"></a>Uw gateways clusteren
 
-## <a name="cluster-your-gateways"></a>Uw gateways van cluster
+U kunt [clusters met een hoge Beschik baarheid van on-premises gegevens gateways](/data-integration/gateway/service-gateway-high-availability-clusters) maken om afzonderlijke toegangs punten te voor komen bij het openen van on-premises gegevens bronnen.
 
-U kunt maken *clusters met hoge beschikbaarheid van on-premises data gateway installaties* om te voorkomen dat single point of failure bij het openen van on-premises gegevensbronnen. 
+Microsoft Flow maakt standaard gebruik van de primaire gateway in het cluster. Als de primaire gateway niet beschikbaar is, wordt de service overgeschakeld naar de volgende gateway in het cluster, enzovoort.
 
-Microsoft Flow maakt standaard gebruik van de primaire gateway in het cluster. Als de primaire gateway niet beschikbaar is, wordt de service schakelt over naar de volgende gateway in het cluster, enzovoort.
+Zodra u een gateway cluster hebt ingesteld, kunt u toestaan dat verkeer over alle gateways in het cluster wordt gedistribueerd.
 
-Wanneer u een gateway-cluster hebt ingesteld, kunt u verkeer wordt verdeeld over alle gateways in het cluster. 
+Volg deze stappen om uw verkeer over uw gateways te verdelen:
 
-Volg deze stappen voor het verkeer verdelen over uw gateways:
-
-1. Selecteer **gegevens** op de navigatiebalk aan de linkerkant.
-1. Selecteer **Gateways**.
+1. Selecteer **gegevens** op de navigatie balk aan de linkerkant.
+1. Selecteer **gateways**.
 1. Selecteer een van uw gateways.
-1. Selecteer **aanvragen verdelen over alle actieve gateways in dit cluster**.
-1. Selecteer **toepassen** uw wijzigingen op te slaan.
+1. Selecteer **distributie aanvragen op alle actieve gateways in dit cluster**.
+1. Selecteer **Toep assen** om uw wijzigingen op te slaan.
 
-
-Zie [Gateways](gateway-reference.md) voor meer informatie.
+Zie [gateways begrijpen](gateway-reference.md)voor meer informatie.
 
 <!-- Image references -->
 [1]: ./media/manage-gateway/view-gateways.png

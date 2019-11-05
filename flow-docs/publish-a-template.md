@@ -1,6 +1,6 @@
 ---
-title: Een stroomsjabloon indienen | Microsoft Docs
-description: Dien uw stroom in als een sjabloon, zodat andere organisaties deze in de sjabloongalerie kunnen vinden en de stroom die u hebt gemaakt kunnen gebruiken.
+title: Een stroom sjabloon indienen | Microsoft Docs
+description: Dien uw stroom in als een sjabloon zodat andere organisaties deze in de sjabloon galerie kunnen vinden en de stroom gebruiken die u hebt gemaakt.
 services: ''
 suite: flow
 documentationcenter: na
@@ -20,31 +20,32 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 693874ae7876b7c91fa55c45a656b3b76c52a517
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.openlocfilehash: 20edec6203ef1d5919bbdb9553e3a58a587f7f66
+ms.sourcegitcommit: 510706f5699b6cf9dda9dcafbed715f9f6d559e8
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "64465103"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73548879"
 ---
-# <a name="submit-a-template-to-the-microsoft-flow-gallery"></a>Een sjabloon indienen bij de Microsoft Flow-galerie
+# <a name="submit-a-template-to-the-microsoft-flow-gallery"></a>Een sjabloon verzenden naar de Microsoft Flow galerie
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
-Dien een stroomsjabloon in bij de galerie met sjablonen voor Microsoft Flow. Sjablonen helpen gebruikers niet alleen om gemakkelijker stromen te maken, maar ook om aanvullende scenario's te bedenken die profiteren van een stroom.
+Een stroom sjabloon verzenden naar de galerie met sjablonen voor Microsoft Flow. Met sjablonen kunnen gebruikers niet alleen gemakkelijker stromen maken, maar ook extra scenario's die van een stroom kunnen profiteren.
 
-1. Selecteer op de pagina **Mijn stromen** het beletselteken (...) bij een stroom.
+1. Selecteer op de pagina **mijn stromen** het weglatings teken (...) voor een stroom.
 
-    ![Knop met het beletselteken](./media/publish-a-template/ellipsis-button.png)
-1. Selecteer **Details** in het menu dat wordt weergegeven.
-1. Selecteer **Meer** en vervolgens **Indienen als een sjabloon** in het menu dat wordt weergegeven.
+    ![Knop met weglatings tekens](./media/publish-a-template/ellipsis-button.png)
+1. Selecteer **Details** in het menu dat wordt weer gegeven.
+1. Selecteer **meer**en selecteer vervolgens **verzenden als sjabloon** in het menu dat wordt weer gegeven.
 
-    ![Contextmenu](./media/publish-a-template/context-menu.png)
+    ![Context menu](./media/publish-a-template/context-menu.png)
 
-   U kunt alleen stromen indienen die ten minste één keer correct zijn uitgevoerd sinds ze voor het laatst zijn opgeslagen:
+   U kunt alleen stromen verzenden die ten minste één keer zijn uitgevoerd sinds de laatste keer opslaan:
 
-     ![Knop met het beletselteken](./media/publish-a-template/need-successful-run-warning.png)
-1. Geef een betekenisvolle naam op, evenals een duidelijke beschrijving van het scenario dat uw sjabloon gaat automatiseren, het belangrijkste voordeel, het aantal gebruikers, het aantal stroomuitvoeringen en de categorieën die op de sjabloon van toepassing zijn.
+     ![Knop met weglatings tekens](./media/publish-a-template/need-successful-run-warning.png)
+1. Geef een zinvolle titel op, een duidelijke beschrijving van het scenario dat uw sjabloon helpt automatiseren, het grootste voor deel, het aantal gebruikers, het aantal uitvoeringen en de categorieën die van toepassing zijn op de sjabloon.
 
-    ![Sjabloonopties](./media/publish-a-template/template-options.png)
-1. Selecteer **Indienen**.
+    ![Sjabloon opties](./media/publish-a-template/template-options.png)
+1. Selecteer **verzenden**.
 
-     Het Microsoft Flow-team verifieert uw sjabloon en *past dit mogelijk aan*. Als het team uw sjabloon goedkeurt, wordt deze in de galerie met sjablonen voor Microsoft Flow opgenomen.
+     Het Microsoft Flow-team controleert of *wijzigt mogelijk* uw sjabloon. Als het team uw sjabloon goedkeurt, wordt deze weer gegeven in de galerie met sjablonen voor Microsoft Flow.
