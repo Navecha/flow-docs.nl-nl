@@ -1,6 +1,6 @@
 ---
-title: Een voorwaarde toevoegen aan een stroom | Microsoft Docs
-description: Stel in dat een stroom een of meer taken alleen uitvoert als er aan een voorwaarde wordt voldaan.
+title: Een voor waarde toevoegen aan een stroom | Microsoft Docs
+description: Opgeven dat een stroom een of meer taken alleen uitvoert als een voor waarde waar is.
 services: ''
 suite: flow
 documentationcenter: na
@@ -20,65 +20,66 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: b4407238f9d1782db802b47060b156b8b77c328b
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.openlocfilehash: 3c67991a008047b2c8c58de3b9ae8833a5874543
+ms.sourcegitcommit: 510706f5699b6cf9dda9dcafbed715f9f6d559e8
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "64456330"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73544721"
 ---
-# <a name="add-a-condition-to-a-flow"></a>Een voorwaarde toevoegen aan een stroom
+# <a name="add-a-condition-to-a-flow"></a>Een voor waarde toevoegen aan een stroom
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
-Stel in dat een stroom een of meer taken alleen uitvoert als er aan een voorwaarde wordt voldaan. Stel bijvoorbeeld in dat u alleen een e-mail ontvangt als een tweet met een trefwoord ten minste tien keer wordt geretweet.
+Opgeven dat een stroom een of meer taken alleen uitvoert als een voor waarde waar is. Geef bijvoorbeeld op dat u alleen een e-mail bericht ontvangt als een tweet dat een sleutel woord bevat, ten minste tien keer is geretweet.
 
 ## <a name="prerequisites"></a>Vereisten
 
-* [Een stroom maken](get-started-logic-template.md) op basis van een sjabloon: in deze zelfstudie [wordt deze sjabloon gebruikt](https://flow.microsoft.com/galleries/public/templates/e78571e5c70e4806a18eeacba5a897c8/) als voorbeeld
+* [Een stroom maken](get-started-logic-template.md) op basis van een sjabloon: in deze zelf studie [wordt deze sjabloon gebruikt](https://flow.microsoft.com/galleries/public/templates/e78571e5c70e4806a18eeacba5a897c8/) als voor beeld
 
-## <a name="add-a-condition"></a>Een voorwaarde toevoegen
+## <a name="add-a-condition"></a>Een voor waarde toevoegen
 
-1. Ga naar [Microsoft Flow](https://flow.microsoft.com) en selecteer **Mijn stromen** in de navigatiebalk bovenin.
+1. Selecteer in [Microsoft flow](https://flow.microsoft.com) **mijn stromen** in de bovenste navigatie balk.
 
-    Als u nog niet bent aangemeld, doet u dat nu.
+    U moet zich mogelijk aanmelden als u nog niet bent aangemeld.
 
-1. Selecteer in de lijst met stromen een van de stromen die u hebt gemaakt.
+1. Selecteer een van de stromen die u hebt gemaakt in de lijst met stromen.
 
-    In deze zelfstudie wordt een voorbeeld gebruikt met een Twitter-trigger en een SharePoint-actie.
+    In deze zelf studie wordt een voor beeld met een Twitter-trigger en een share point-actie gebruikt.
 
-1. Selecteer **Stroom bewerken**.
+1. Selecteer **stroom bewerken**.
 
-1. Selecteer **Nieuwe stap** onder de laatste actie.
+1. Selecteer **nieuwe stap**onder de laatste actie.
 
-1. Selecteer **Een voorwaarde toevoegen**.
+1. Selecteer **een voor waarde toevoegen**.
 
-    ![Voorwaardeknop](./media/add-condition/add-condition.png)
+    ![Knop voor waarde](./media/add-condition/add-condition.png)
 
-1. In de kaart **Voorwaarde** selecteert u een leeg gebied in het vak aan de linkerkant.
+1. Selecteer op de kaart **voor waarde** een leeg gebied in het vak aan de linkerkant.
 
-    De lijst **Dynamische inhoud** wordt geopend.
+    De lijst met **dynamische inhoud** wordt geopend.
 
-1. Selecteer de parameter **Aantal retweets** om deze toe te voegen aan het vak.
+1. Selecteer de para meter **aantal retweets** om deze toe te voegen aan het vak.
 
-1. In het vak in het midden van de kaart **Voorwaarde** selecteert u **is groter dan of gelijk aan**.
+1. Selecteer in het vak midden van de kaart **voor waarde** de optie **is groter dan of gelijk aan**.
 
-1. Typ **10** in het vak aan de rechterkant.
+1. Voer in het vak aan de rechter kant **10**in.
 
-    ![Het vak OBJECTNAAM met een parameter](./media/add-condition/specify-condition.png)
+    ![Het vak OBJECT naam met een para meter](./media/add-condition/specify-condition.png)
 
-1. Selecteer de kop van de actie die u in de voorwaarde wilt gebruiken (zoals **Item maken**) en sleep dit tot onder de tekst **Indien ja**.
+1. Selecteer de koptekst van de actie die u in de voor waarde wilt gebruiken (zoals **item maken**) en sleep deze onder de tekst die gelezen wordt **als ja**.
 
-    Wanneer u de cursor loslaat, wordt de actie naar dat vak verplaatst.
+    Wanneer u de cursor loslaat, wordt de actie verplaatst naar dat vak.
 
     ![Actie slepen](./media/add-condition/drag-action.png)
 
-1. Configureer de actie naar wens.
+1. Configureer de actie als dat nodig is.
 
 1. Sla de stroom op.
 
-## <a name="edit-in-advanced-mode"></a>Bewerken in de geavanceerde modus
+## <a name="edit-in-advanced-mode"></a>Bewerken in geavanceerde modus
 
-U kunt ook **Bewerken in geavanceerde modus** selecteren om geavanceerdere voorwaarden te schrijven. U kunt hier elke expressie van de *Definitietaal van de werkstroom* in de geavanceerde modus gebruiken. Informatie over alle beschikbare [expressies](https://msdn.microsoft.com/library/azure/mt643789.aspx).
+U kunt ook **bewerken in geavanceerde modus** selecteren om meer geavanceerde voor waarden te schrijven. U kunt elke expressie uit de *werk stroom definitie taal* in de geavanceerde modus gebruiken. Meer informatie over alle beschik bare [expressies](https://msdn.microsoft.com/library/azure/mt643789.aspx).
 
 ## <a name="next-steps"></a>Volgende stappen
 
-Informatie over hoe u [expressies gebruikt](use-expressions-in-conditions.md) in voorwaarden in de geavanceerde modus.
+Meer informatie over het [gebruik van expressies](use-expressions-in-conditions.md) in voor waarden in de geavanceerde modus.

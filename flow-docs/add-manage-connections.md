@@ -1,6 +1,6 @@
 ---
-title: Meer informatie over het beheren van uw gegevens via verbindingen en on-premises gegevensgateways | Microsoft-Docs
-description: U kunt verbindingen toevoegen en beheren met SharePoint, SQL Server, OneDrive voor Bedrijven, Salesforce, Office 365, OneDrive, Dropbox, Twitter, Google Drive en meer.
+title: Meer informatie over verbinding maken met uw gegevens via verbindingen en on-premises gegevens gateways | Microsoft Docs
+description: Verbindingen toevoegen of beheren met share point, SQL Server, OneDrive voor bedrijven, Sales Force, Office 365, OneDrive, Dropbox, Twitter, Google Drive en meer
 services: ''
 suite: flow
 documentationcenter: na
@@ -20,84 +20,85 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: bdfa1072bca2afc7c608a4dbf68b8f598dff89f1
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.openlocfilehash: 1de8602cc573e800d721b6b70222df49cf1577e3
+ms.sourcegitcommit: 510706f5699b6cf9dda9dcafbed715f9f6d559e8
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "64456887"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73544754"
 ---
-# <a name="manage-connections-in-microsoft-flow"></a>Verbindingen beheren in Microsoft Flow
-Als u een verbinding maakt in Microsoft Flow, kunt u tijdens het maken van een stroom eenvoudig toegang krijgen tot uw gegevens. Microsoft Flow bevat veelgebruikte verbindingen, waaronder SharePoint, SQL Server, Office 365, OneDrive voor Bedrijven, Salesforce, Excel, Dropbox en Twitter. Verbindingen worden gedeeld met PowerApps. Als u een verbinding maakt in het ene product, wordt de verbinding ook weergegeven in het andere.
+# <a name="manage-connections-in-microsoft-flow"></a>Verbindingen in Microsoft Flow beheren
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+Als u een verbinding maakt in Microsoft Flow, kunt u eenvoudig toegang krijgen tot uw gegevens terwijl u een stroom bouwt. Microsoft Flow bevat veelgebruikte verbindingen, waaronder share point, SQL Server, Office 365, OneDrive voor bedrijven, Sales Force, Excel, Dropbox, Twitter en meer. Verbindingen worden gedeeld met PowerApps, dus wanneer u een verbinding maakt in één product, wordt de verbinding weer gegeven in de andere.
 
-U kunt een verbinding bijvoorbeeld gebruiken om deze taken uit te voeren:
+U kunt bijvoorbeeld een verbinding gebruiken om deze taken uit te voeren:
 
-* Een SharePoint-lijst bijwerken.
-* Gegevens ophalen uit een Excel-bestand in uw OneDrive voor Bedrijven- of Dropbox-account.
+* Een share point-lijst bijwerken.
+* Gegevens ophalen uit een Excel-bestand in uw OneDrive voor bedrijven-of Dropbox-account.
 * E-mail verzenden in Office 365.
-* Een tweet verzenden.
+* Een Tweet verzenden.
 
-U kunt in meerdere scenario's verbindingen maken, zoals de volgende:
+U kunt in meerdere scenario's een verbinding maken, zoals:
 
-* Een stroom maken [op basis van een sjabloon](get-started-logic-template.md)
-* Een [volledig nieuwe stroom](get-started-logic-flow.md) maken of een bestaande stroom bijwerken
-* Rechtstreeks op de [Microsoft Flow-website][1] een verbinding maken
+* Een [stroom maken op basis van een sjabloon](get-started-logic-template.md)
+* Een [stroom van leeg](get-started-logic-flow.md) maken of een bestaande stroom bijwerken
+* Rechtstreeks een verbinding maken op de [Microsoft flow-website][1]
 
-In dit onderwerp ziet u hoe u verbindingen beheert op de [Microsoft Flow-website][1].
+In dit onderwerp wordt beschreven hoe u verbindingen beheert op de [website van Microsoft flow][1].
 
 ## <a name="add-a-connection"></a>Een verbinding toevoegen
-1. Meld u op de [Microsoft Flow-website][1] aan met uw werk- of organisatieaccount.
-2. Selecteer het tandwielpictogram in de rechterbovenhoek en selecteer vervolgens **Verbindingen**.
+1. Meld u op de [Microsoft flow-website][1]aan met uw werk-of organisatie account.
+2. Selecteer in de rechter bovenhoek het tandwiel pictogram en selecteer vervolgens **verbindingen**.
    
     ![Verbindingen selecteren](./media/add-manage-connections/connections-menu.png)
-3. Selecteer **Verbinding maken**.
-4. Selecteer in de lijst **Beschikbare verbindingen** de verbinding die u wilt instellen, bijvoorbeeld SharePoint.
-5. Selecteer de knop **Verbinding maken** en voer uw referenties in voor het instellen van de verbinding.
+3. Selecteer **verbinding maken**.
+4. Selecteer in de lijst met **beschik bare verbindingen**de verbinding die u wilt instellen, zoals share point.
+5. Selecteer de knop **verbinding maken** en voer vervolgens uw referenties in om de verbinding in te stellen.
 
-Als de verbinding is ingesteld, wordt deze weergegeven bij **Mijn verbindingen**.
+Wanneer de verbinding is ingesteld, wordt deze weer gegeven in **Mijn verbindingen**.
 
-## <a name="connect-to-your-data-through-an-on-premises-data-gateway"></a>Verbinding maken met uw gegevens via een on-premises gegevensgateway
-Op het moment dat deze tekst wordt geschreven, bieden SQL Server en SharePoint Server ondersteuning voor de on-premises gegevensgateway. Ga als volgt te werk om een verbinding te maken waarin gebruik wordt gemaakt van een gateway:
+## <a name="connect-to-your-data-through-an-on-premises-data-gateway"></a>Verbinding maken met uw gegevens via een on-premises gegevens gateway
+Vanaf dit schrijven ondersteunen SQL Server en share Point server de on-premises gegevens gateway. Een verbinding maken die gebruikmaakt van een gateway:
 
 1. Volg de stappen eerder in dit onderwerp om een verbinding toe te voegen.
-2. Selecteer **SQL Server** in de lijst met **beschikbare verbindingen** en schakel het selectievakje **Verbinding maken via een on-premises gegevensgateway** in.
+2. Selecteer **SQL Server**in de lijst met **beschik bare verbindingen**en schakel vervolgens het selectie vakje **verbinding maken via on-premises gegevens gateway** in.
    
     ![Gateway selecteren](./media/add-manage-connections/select-gateway.png)
    
    > [!IMPORTANT]
-   > Microsoft SharePoint-gegevensgateways ondersteunen wel HTTP-verkeer, maar geen HTTPS-verkeer.
+   > Micro soft share point-gegevens gateways ondersteunen HTTP-verkeer, maar geen HTTPS-verkeer.
    > 
    > 
 3. Geef de referenties voor de verbinding op en selecteer vervolgens de gateway die u wilt gebruiken.
    
-    Zie de Engelstalige artikelen [Manage gateways](gateway-manage.md) (Gateways beheren) en [Understand gateways](gateway-reference.md) (Gateways) voor meer informatie.
+    Zie [gateways beheren](gateway-manage.md) en [gateways begrijpen](gateway-reference.md)voor meer informatie.
    
-    Als de verbinding is ingesteld, wordt deze weergegeven bij **Mijn verbindingen**.
+    Wanneer de verbinding is ingesteld, wordt deze weer gegeven in **Mijn verbindingen**.
 
 ## <a name="delete-a-connection"></a>Een verbinding verwijderen
-1. Ga naar de pagina **Mijn verbindingen** en selecteer het prullenbakpictogram voor de verbinding die u wilt verwijderen.
+1. Ga naar de pagina **Mijn verbindingen** en selecteer het prullenbak pictogram voor de verbinding die u wilt verwijderen.
    
     ![Verbinding verwijderen](./media/add-manage-connections/delete-connection.png)
 2. Selecteer **OK** om te bevestigen dat u de verbinding wilt verwijderen.
    
-    ![Verwijderen bevestigen](./media/add-manage-connections/delete-confirmation.png)
+    ![Verwijdering bevestigen](./media/add-manage-connections/delete-confirmation.png)
 
-Als u een verbinding verwijdert, wordt deze verwijderd uit PowerApps en uit Microsoft Flow.
+Wanneer u een verbinding verwijdert, wordt deze verwijderd uit PowerApps en Microsoft Flow.
 
 ## <a name="update-a-connection"></a>Een verbinding bijwerken
-Als een verbinding niet werkt omdat er wijzigingen zijn opgetreden in uw accountdetails of uw wachtwoord, kunt u de verbinding bijwerken.
+U kunt een verbinding bijwerken die niet werkt omdat uw account Details of uw wacht woord is gewijzigd.
 
-1. Selecteer op de pagina **Verbindingen** de koppeling **Wachtwoord bevestigen** voor de verbinding die u wilt bijwerken.
+1. Selecteer op de pagina **Mijn verbindingen** de koppeling **wacht woord verifiëren** voor de verbinding die u wilt bijwerken.
    
-    ![Wachtwoord bevestigen](./media/add-manage-connections/verify-password.png)
-2. Werk uw verbinding bij met de nieuwe referenties als u hierom wordt gevraagd.
+    ![Wacht woord bevestigen](./media/add-manage-connections/verify-password.png)
+2. Wanneer u hierom wordt gevraagd, werkt u de verbinding bij met de nieuwe referenties.
 
-Als u een verbinding bijwerkt, wordt deze bijgewerkt voor PowerApps en voor Microsoft Flow.
+Wanneer u een verbinding bijwerkt, wordt deze bijgewerkt voor zowel PowerApps als Microsoft Flow.
 
 ## <a name="troubleshoot-a-connection"></a>Problemen met een verbinding oplossen
-Afhankelijk van het beleid van uw organisatie moet u mogelijk hetzelfde account gebruiken om u aan te melden bij Microsoft Flow en om een verbinding te maken met SharePoint, Office 365 of OneDrive voor Bedrijven.
+Afhankelijk van het beleid van uw organisatie moet u mogelijk hetzelfde account gebruiken om u aan te melden bij Microsoft Flow en een verbinding te maken met share point, Office 365 of OneDrive voor bedrijven.
 
-Mogelijk moet u zich bij Microsoft Flow bijvoorbeeld aanmelden met *yourname@outlook.com*, maar wordt u geblokkeerd als u probeert verbinding maken met SharePoint met *yourname@contoso.com*. U kunt zich in plaats daarvan bij Microsoft Flow aanmelden met *yourname@contoso.com* en dan verbinding maken met SharePoint.
+U kunt zich bijvoorbeeld aanmelden bij Microsoft Flow met *yourname@outlook.com* , maar worden geblokkeerd wanneer u verbinding probeert te maken met share point met *yourname@contoso.com* . U kunt zich in plaats daarvan aanmelden bij Microsoft Flow met *yourname@contoso.com* en u kunt verbinding maken met share point.
 
 <!--Reference links in article-->
 [1]: https://flow.microsoft.com

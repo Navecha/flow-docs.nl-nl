@@ -1,6 +1,6 @@
 ---
-title: Vragen en antwoorden over registreren voor Flow in uw organisatie | Microsoft Docs
-description: Veelgestelde vragen en antwoorden over licenties, beheer en registratie van gebruikers voor Flow in uw Office 365-tenant
+title: Registratie Q & van de stroom in uw organisatie | Microsoft Docs
+description: Veelgestelde vragen en antwoorden over licenties, beheer en gebruikers die zich registreren voor flow in uw Office 365-Tenant
 services: ''
 suite: flow
 documentationcenter: na
@@ -20,150 +20,151 @@ search.app:
 - Powerplatform
 search.audienceType:
 - admin
-ms.openlocfilehash: 6e05c24aa00c29dff4ca07432277ca7b907ebbb0
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.openlocfilehash: 750386a4a90a0b8dfb0f1e1f4320de3afee8db6f
+ms.sourcegitcommit: 510706f5699b6cf9dda9dcafbed715f9f6d559e8
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "64468812"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73548909"
 ---
-# <a name="flow-in-your-organization-qa"></a>Vragen en antwoorden over Flow in uw organisatie
-In dit onderwerp wordt beschreven hoe gebruikers in uw organisatie Flow kunnen gebruiken en hoe u de Flow-service kunt beheren.
+# <a name="flow-in-your-organization-qa"></a>De stroom in uw organisatie Q & A
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+In dit onderwerp wordt beschreven hoe gebruikers in uw organisatie flow kunnen gebruiken en hoe u de flow-service kunt beheren.
 
-## <a name="signing-up-for-flow"></a>Registreren voor Flow
+## <a name="signing-up-for-flow"></a>Aanmelden voor flow
 ### <a name="what-is-microsoft-flow"></a>Wat is Microsoft Flow?
-Microsoft Flow is een openbare cloudservice waarmee personen en teams geautomatiseerde werkstromen tussen hun favoriete apps en services kunnen instellen om onder andere te synchroniseren, meldingen te ontvangen en gegevens te verzamelen. 
+Microsoft Flow is een open bare Cloud service waarmee individuen en teams automatische werk stromen kunnen instellen tussen hun favoriete apps en services om te synchroniseren, meldingen te ontvangen, gegevens te verzamelen en meer. 
 
-### <a name="how-do-people-sign-up-for-flow"></a>Hoe registreren mensen zich voor Flow?
-Er zijn twee manieren waarop personen zich voor Flow kunnen registreren via de webportal:
+### <a name="how-do-people-sign-up-for-flow"></a>Hoe kunnen gebruikers zich registreren voor flow?
+Er zijn twee mogelijke manieren waarop gebruikers zich kunnen registreren voor flow via de webportal:
 
-#### <a name="option-1"></a>Mogelijkheid 1
-Iedereen kan zich registreren op [flow.microsoft.com](https://flow.microsoft.com). Klik daarvoor op **Registreer u gratis** en voltooi vervolgens het registratieproces voor Flow via [admin.microsoft.com](https://admin.microsoft.com/Start?sku=flow_free) of [signup.live.com](https://signup.live.com).
+#### <a name="option-1"></a>Optie 1
+Iedereen kan zich registreren door naar [flow.Microsoft.com](https://flow.microsoft.com)te gaan, **registratie gratis**te selecteren en vervolgens het registratie proces voor flow via [admin.Microsoft.com](https://admin.microsoft.com/Start?sku=flow_free) of [signup.live.com](https://signup.live.com)uit te voeren.
 
-#### <a name="option-2"></a>Mogelijkheid 2
-Iedereen kan zich registreren op [flow.microsoft.com](https://flow.microsoft.com). Klik daarvoor op **Aanmelden**, meld u aan met uw werk-, school- of persoonlijke e-mailadres en accepteer de gebruiksvoorwaarden van Flow.    
+#### <a name="option-2"></a>Optie 2
+Iedereen kan zich aanmelden door te gaan naar [flow.Microsoft.com](https://flow.microsoft.com), **Aanmelden**te selecteren, zich aan te melden met hun werk, school of persoonlijk e-mail adres en de gebruiks voorwaarden van de stroom te accepteren.    
 
-Wanneer een gebruiker in uw organisatie zich voor Flow registreert met optie 2, wordt aan deze gebruiker automatisch een gratis Flow-licentie toegewezen.
+Wanneer een gebruiker in uw organisatie zich aanmeldt voor de stroom met optie 2, wordt aan deze gebruiker automatisch een Microsoft Flow gratis licentie toegewezen.
 
-[Aanmelden voor Flow](sign-up-sign-in.md) bevat meer details.
+[Aanmelden voor flow](sign-up-sign-in.md) bevat meer informatie.
 
-### <a name="what-is-the-microsoft-flow-free-plan"></a>Wat is het gratis Microsoft Flow-abonnement?
+### <a name="what-is-the-microsoft-flow-free-plan"></a>Wat is het Microsoft Flow gratis abonnement?
 
-Het gratis Microsoft Flow-abonnement wordt alleen gebruikt voor volgdoeleinden. Activeren of deactiveren van het abonnement heeft geen invloed op het vermogen van de gebruiker om stromen te maken. Als u het gratis Microsoft Flow-abonnement deactiveert, wordt het weer geactiveerd wanneer een gebruiker zich aanmeldt. Dit is normaal gedrag.
+Het Microsoft Flow gratis plan wordt alleen gebruikt voor het bijhouden van de doel einden. Als u deze functie inschakelt of uitschakelt, heeft dit geen invloed op de mogelijkheid van een gebruiker om stromen te maken. Als u het gratis abonnement Microsoft Flow uitschakelt, wordt het opnieuw ingeschakeld wanneer een gebruiker zich aanmeldt. Dit is het verwachte gedrag.
 
-### <a name="can-i-block-another-person-from-signing-up-for-flow"></a>Kan ik ervoor zorgen dat bepaalde personen zich niet kunnen registreren voor Flow?
-Microsoft Flow is een volledig openbare cloudservice. Iedereen in de hele wereld kan zich registreren en Flow gebruiken om de dagelijkse taken te automatiseren. Voor het gebruik van Microsoft Flow is het niet vereist dat gebruikers een Office 365-account hebben of gebruiken. Daarom is er op dit moment geen manier om te voorkomen dat een persoon Flow gebruikt (iedereen in de hele wereld kan Flow gebruiken, ongeacht het e-mailadres).
+### <a name="can-i-block-another-person-from-signing-up-for-flow"></a>Kan ik de registratie van een persoon voor flow blok keren?
+Microsoft Flow is een volledig open bare Cloud service en iedereen in de wereld kan zich registreren en gebruiken om hun dagelijkse taken te automatiseren. Als u Microsoft Flow wilt gebruiken, zijn er geen vereisten voor gebruikers die een Office 365-account hebben of gebruiken. Daarom is er op dit moment geen mechanisme om te voor komen dat een andere persoon stroom kan gebruiken (net als bij iedereen in de wereld), ongeacht hun e-mail adres.
 
-Als iemand zich echter registreert voor Microsoft Flow en u ervoor kiest om deze persoon niet te ondersteunen binnen uw organisatie, kan deze persoon niet leiden tot extra kosten voor uw bedrijf. Wanneer iemand zich aanmeldt bij Microsoft Flow, is de relatie tussen deze persoon en Microsoft, net zoals bij veel andere cloudservices van Microsoft zoals Bing, Wunderlist, OneDrive of Outlook.com. Het gebruik van Microsoft Flow door een persoon impliceert in geen geval dat de service wordt geleverd door uw organisatie.
+Als iemand zich echter aanmeldt voor Microsoft Flow en u ervoor kiest om deze niet te ondersteunen binnen uw organisatie, kunnen ze op geen enkele manier kosten in rekening brengen aan uw bedrijf. Wanneer een persoon zich aanmeldt voor Microsoft Flow, is de relatie tussen die persoon en micro soft, net als bij veel andere Cloud Services van micro soft, zoals Bing, Wunderlist, OneDrive of Outlook.com. Het gebruik van Microsoft Flow van een gebruiker is op geen enkele manier het impliceert dat de service wordt verschaft door uw organisatie.
 
-Als uw bedrijf ten slotte het gebruik van zakelijke gegevens binnen Microsoft Flow wilt beperken, kan dat worden gedaan met beleid voor preventie van gegevensverlies (DLP).
+Ten slotte, als uw bedrijf het gebruik van alleen organisatie gegevens binnen Microsoft Flow wil beperken, is dat mogelijk via beleid voor preventie van gegevens verlies (DLP).
 
-### <a name="how-can-people-gain-access-to-the-paid-features-of-microsoft-flow"></a>Hoe krijgen mensen toegang tot de betaalde functies van Microsoft Flow?
-Mensen kunnen op drie verschillende manieren toegang krijgen tot de betaalde functies van Microsoft Flow:
+### <a name="how-can-people-gain-access-to-the-paid-features-of-microsoft-flow"></a>Hoe kunnen mensen toegang krijgen tot de betaalde functies van Microsoft Flow?
+Personen kunnen op drie verschillende manieren toegang krijgen tot de betaalde functies van Microsoft Flow:
 
-1. Ze kunnen zich afzonderlijk registreren voor een gratis Flow-proefversie van 90 dagen voor abonnement 1 of 2
-2. U kunt ze Flow-licenties toewijzen via de Office 365-beheerportal.
-3. Aan de gebruiker zijn Office 365- en Dynamics 365-abonnementen toegewezen die ook toegang tot de Flow-service omvatten. Zie de [Flow-prijzenpagina](https://flow.microsoft.com/pricing/) voor de lijst met Office 365- en Dynamics 365-abonnementen die ook Flow-mogelijkheden omvatten.
+1. Ze kunnen zich afzonderlijk aanmelden voor een 90 proef abonnement van 1 of 2 dagen gratis
+2. U kunt een stroom licentie aan hen toewijzen binnen de Office 365-beheer Portal.
+3. De gebruiker is toegewezen aan een Office 365-en Dynamics 365-abonnement dat toegang tot de flow-service omvat. Zie de [pagina met prijzen voor flow](https://flow.microsoft.com/pricing/) voor de lijst met Office 365-en Dynamics 365-abonnementen die stroom mogelijkheden omvatten.
 
-### <a name="can-i-block-another-person-from-using-the-paid-features-of-flow"></a>Kan ik ervoor zorgen dat bepaalde personen de betaalde functies van Flow niet gebruiken?
-Iedereen kan de betaalde functies van Microsoft Flow gedurende 90 dagen gratis uitproberen. U kunt het toewijzen van doorlopende betaalde licenties binnen uw organisatie echter volledig beheren via de Office 365-beheerportal.
+### <a name="can-i-block-another-person-from-using-the-paid-features-of-flow"></a>Kan ik voor komen dat een andere persoon de betaalde functies van Flow gebruikt?
+Elke persoon kan de betaalde functies van Microsoft Flow gedurende 90 dagen uitproberen en er geen kosten in rekening worden gebracht. U kunt de toewijzing van de permanente betaalde licenties binnen uw organisatie echter volledig beheren via de Office 365-beheer Portal.
 
-Net als bij de gratis opties is het zo dat, wanneer een persoon zich registreert voor de proefversie, er een directe relatie ontstaat tussen de persoon en Microsoft en dat deze niet per se hoeft te worden goedgekeurd door uw bedrijf.
+Net als bij de gratis aanbiedingen moet u, als een persoon zich aanmeldt, zich aanmelden voor de proef versie die een rechtstreekse relatie is tussen de persoon en micro soft, niet noodzakelijkerwijs goedgekeurd door uw bedrijf.
 
-## <a name="administration-of-flow"></a>Beheer van Flow
-### <a name="why-has-the-flow-icon-appeared-in-the-office-365-app-launcher"></a>Waarom wordt het Flow-pictogram weergegeven in het Office 365-startprogramma voor apps.
-Zoals in augustus is aangekondigd, maakt Microsoft Flow nu standaard onderdeel uit van het Office 365-pakket. Drie maanden na deze aankondiging is Microsoft Flow ingeschakeld als service als onderdeel van alle bestaande Office 365 SKU's. Als gebruikers overal ter wereld kunnen Microsoft Flow nu gebruiken. De service staat nu namelijk in het startprogramma voor apps.
+## <a name="administration-of-flow"></a>Beheer van de stroom
+### <a name="why-has-the-flow-icon-appeared-in-the-office-365-app-launcher"></a>Waarom is het stroom pictogram in het start programma voor Office 365-apps weer gegeven?
+Zoals in augustus is aangekondigd, is Microsoft Flow nu een fundamenteel onderdeel van het Office 365-pakket. Drie maanden nadat deze aankondiging Microsoft Flow is ingeschakeld als een service als onderdeel van alle bestaande Office 365-SKU'S. Gebruikers overal ter wereld kunnen nu Microsoft Flow gebruiken, maar dit is in het start programma voor apps.
 
-Zie de volgende sectie als u de Flow-tegel standaard wilt verwijderen uit het startprogramma voor apps.
+Raadpleeg de volgende sectie als u de stroom tegel standaard wilt verwijderen uit het start programma voor apps.
 
-### <a name="how-do-i-remove-microsoft-flow-from-the-app-launcher-for-my-organization"></a>Hoe verwijder ik Microsoft Flow uit het startprogramma voor apps van mijn organisatie?
-Als aan een gebruiker een licentie voor Flow-abonnement 1 of 2 is toegewezen, volgt u deze stappen om de Flow-licentie voor die gebruiker te verwijderen. Hiermee wordt ook het Flow-pictogram uit het startprogramma voor apps verwijderd:
+### <a name="how-do-i-remove-microsoft-flow-from-the-app-launcher-for-my-organization"></a>Microsoft Flow Hoe kan ik verwijderen uit het start programma voor apps?
+Als aan een gebruiker een licentie voor flow plan 1 of een stroom abonnement 2 is toegewezen, kunt u de volgende stappen uitvoeren om de stroom licentie voor die gebruiker te verwijderen, waardoor het stroom pictogram wordt verwijderd uit het start programma voor apps:
 
-1. Ga naar de [Office 365-beheerportal](https://portal.microsoftonline.com/).
-2. Selecteer in de navigatiebalk links de optie **Gebruikers** en selecteer vervolgens **Actieve gebruikers**.
-3. Zoek de gebruiker voor wie u de licentie wilt verwijderen en selecteer zijn of haar naam.
-4. In het deelvenster Gebruikersgegevens selecteert u in de sectie **Productlicenties** de optie **Bewerken**.
-5. Zoek de licentie met de naam **Microsoft Flow-abonnement 1** of **Microsoft Flow-abonnement 2** en stel de schakelaar in op **Uit**. Selecteer vervolgens **Opslaan**.
+1. Ga naar de [Office 365-beheer Portal](https://portal.microsoftonline.com/).
+2. Selecteer in de linkernavigatiebalk de optie **gebruikers**en selecteer vervolgens **actieve gebruikers**.
+3. Zoek de gebruiker waarvoor u de licentie wilt verwijderen en selecteer vervolgens hun naam.
+4. Selecteer in het deel venster gebruikers gegevens in de sectie **product licenties** de optie **bewerken**.
+5. Zoek de licentie **Microsoft flow plan 1** of **Microsoft flow abonnement 2**, stel de schakel optie in op **uit** en selecteer vervolgens **Opslaan**.
    
    ![](./media/organization-q-and-a/remove-license.png)
 
-Als een gebruiker via de Office 365- en Dynamics 365-abonnementslicentie toegang heeft tot Flow, kunt u de toegang tot de aanvullende functies in dit abonnement uitschakelen. Volg daarvoor de volgende stappen:
+Als een gebruiker toegang heeft tot stroom via hun Office 365 en Dynamics 365-plan licentie, kunt u de toegang tot de extra functies in dit abonnement uitschakelen door de volgende stappen uit te voeren:
 
-1. Ga naar de [Office 365-beheerportal](https://portal.microsoftonline.com/).
-2. Selecteer in de navigatiebalk links de optie **Gebruikers** en selecteer vervolgens **Actieve gebruikers**.
-3. Zoek de gebruiker waarvoor u toegang wilt verwijderen en selecteer zijn of haar naam.
-4. In het deelvenster Gebruikersgegevens selecteert u in de sectie **Productlicenties** de optie **Bewerken**.
-5. Vouw de Office 365- of Dynamics 365-licentie van de gebruiker uit, schakel toegang tot de service **Flow voor Office 365** of **Flow voor Dynamics 365** uit en selecteer vervolgens **Opslaan**.
+1. Ga naar de [Office 365-beheer Portal](https://portal.microsoftonline.com/).
+2. Selecteer in de linkernavigatiebalk de optie **gebruikers**en selecteer vervolgens **actieve gebruikers**.
+3. Zoek de gebruiker waarvoor u de toegang wilt verwijderen en selecteer vervolgens hun naam.
+4. Selecteer in het deel venster gebruikers gegevens in de sectie **product licenties** de optie **bewerken**.
+5. Vouw de Office 365-of Dynamics 365-licentie van de gebruiker uit, Schakel toegang tot de service met de naam **flow voor Office 365** of **flow voor Dynamics 365** uit en selecteer vervolgens **Opslaan**.
    
    ![](./media/organization-q-and-a/remove-service-plan.png)
 
-Via PowerShell kunt u in bulk licenties verwijderen. Zie [Remove licenses from user accounts with Office 365 PowerShell](https://technet.microsoft.com/library/dn771774.aspx) (Met Office 365 PowerShell licenties van gebruikersaccounts verwijderen) voor een gedetailleerd voorbeeld.   In [Disable access to services with Office 365 PowerShell](https://technet.microsoft.com/library/dn771769.aspx) (Met Office 365 PowerShell toegang tot services uitschakelen) vindt u tot slot meer informatie over het in bulk verwijderen van services binnen een licentie.
+Het bulksgewijs verwijderen van licenties is ook mogelijk via Power shell. Zie [licenties verwijderen uit gebruikers accounts met Office 365 Power shell](https://technet.microsoft.com/library/dn771774.aspx) voor een gedetailleerd voor beeld.   Ten slotte kunt u meer informatie over het bulksgewijs verwijderen van services binnen een licentie vinden op [toegang tot services uitschakelen met Office 365 Power shell](https://technet.microsoft.com/library/dn771769.aspx).
 
-Als u de Flow-licentie of -service van een gebruiker in uw organisatie verwijdert, wordt het Flow-pictogram van de volgende locaties verwijderd voor die gebruiker:
+Het verwijderen van de stroom licentie of-service voor een gebruiker in uw organisatie leidt ertoe dat het stroom pictogram wordt verwijderd uit de volgende locaties voor die gebruiker:
 
 1. [Office.com](https://office.com)
    
    ![](./media/organization-q-and-a/office-home.png)
-2. Het Office 365-startprogramma voor apps
+2. Office 365-start programma voor apps
    
    ![](./media/organization-q-and-a/office-waffle.png)
 
-Hiermee wordt standaard alleen de Flow-tegel verwijderd. Gebruikers kunnen er nog wel voor kiezen om Microsoft Flow persoonlijk te gebruiken.
+Houd er rekening mee dat hiermee alleen de stroom tegel standaard wordt verwijderd. Een gebruiker kan er nog steeds voor kiezen om Microsoft Flow als individu te gebruiken.
 
-### <a name="why-did-10000-licenses-for-microsoft-flow-show-up-in-my-office-365-tenant"></a>Waarom worden er 10.000 licenties voor Microsoft Flow weergegeven in mijn Office 365-tenant?
-Iedereen kan 90 dagen gratis gebruikmaken van de proefversie voor Microsoft Flow-abonnement 1 of 2. Tijdens deze proefperiode is de capaciteit hetzelfde als voor nieuwe Flow-gebruikers in uw tenant. Er worden geen kosten doorberekend voor deze licenties. Er zijn twee mogelijke redenen waarom u ziet dat er 10.000 beschikbare (proef)licenties voor Flow worden weergegeven in de Office 365-beheerportal:
+### <a name="why-did-10000-licenses-for-microsoft-flow-show-up-in-my-office-365-tenant"></a>Waarom zijn er 10.000 licenties voor Microsoft Flow weer gegeven in mijn Office 365-Tenant?
+Elke persoon kan Microsoft Flow plan 1 of 2 voor 90 dagen uitproberen en deze proef licenties vertegenwoordigen de beschik bare capaciteit voor nieuwe flow-gebruikers in uw Tenant. Er worden geen kosten in rekening gebracht voor deze licenties. Er zijn twee mogelijke redenen waarom u een capaciteit van 10.000 (proef versie) kunt zien voor de stroom die wordt weer gegeven in de Office 365-beheer portal:
 
-1. Als ten minste één gebruiker in uw tenant heeft gebruikgemaakt van de openbare previewversie van Flow in de periode van april 2016 tot oktober 2016, ziet u 10.000 licenties met de aanduiding Microsoft PowerApps and Logic flows (Microsoft PowerApps- en logische stromen)
+1. Als ten minste één gebruiker in uw Tenant heeft deel genomen aan de open bare preview-fase van de stroom die van 2016 april tot oktober 2016, dan ziet u 10.000 licenties met het label ' Microsoft PowerApps en logica stromen '
    
     ![](./media/organization-q-and-a/licenses2.png)
-2. Als ten minste één gebruiker in uw tenant zich heeft geregistreerd voor een Flow-proefversie voor abonnement 2 via **optie 1**, zoals beschreven in de sectie [Hoe registreren gebruikers zich voor PowerApps?](#how-do-people-sign-up-for-flow), ziet u 10.000 licenties met de aanduiding Microsoft Power Apps & Flow (Microsoft PowerApps en Flow)
+2. Als ten minste één gebruiker in uw Tenant zich heeft aangemeld voor een proef abonnement 2 van de proef versie door te gaan met de optie voor het aanmelden van een abonnement **1** , zoals beschreven in de sectie [Hoe kunnen gebruikers zich registreren voor PowerApps?](#how-do-people-sign-up-for-flow) , ziet u 10.000 licenties met het label ' micro soft power apps & Flow '.
    
     ![](./media/organization-q-and-a/licenses1.png)
 
-U kunt ervoor kiezen om zelf aanvullende licenties toe te wijzen aan uw gebruikers via de Office 365-beheerportal, maar dit zijn licenties voor proefversies voor Microsoft Flow-abonnement 2. De licenties verlopen 90 dagen nadat ze zijn toegewezen aan een gebruiker.
+U kunt zelf aanvullende licenties toewijzen aan gebruikers via de Office 365-beheer Portal, maar houd er rekening mee dat dit een proef licentie voor Microsoft Flow abonnement 2 is en dat deze na 90 dagen na toewijzing aan een gebruiker verlopen.
 
-### <a name="is-this-free-will-i-be-charged-for-these-licenses"></a>Is dit gratis? Worden er voor deze licenties kosten in rekening gebracht?
-Gebruikers kunnen geen aanvullende kosten veroorzaken voor uw bedrijf zonder uw expliciete toestemming. Gratis licenties en licenties voor proefversies kunnen dus niet leiden tot het in rekening brengen van kosten. Bovendien maken ze geen gebruik van offertes, zoals uitvoeringsoffertes.
+### <a name="is-this-free-will-i-be-charged-for-these-licenses"></a>Is dit gratis? Worden er kosten in rekening gebracht voor deze licenties?
+Geen enkele gebruiker kan zonder uw uitdrukkelijke toestemming kosten in rekening brengen voor uw organisatie, zodat er geen kosten in rekening kunnen worden gebracht voor uw organisatie. Daarnaast gebruiken ze ook geen quota's, zoals uitvoerings quota's.
 
-### <a name="i-removed-the-microsoft-flow-free-license-and-users-can-still-access-flow"></a>Ik heb de gratis Microsoft Flow-licentie verwijderd, maar gebruikers hebben wel nog toegang tot Flow?
-De gratis Microsoft Flow-licentie wordt alleen meegeleverd voor volgdoeleinden. Zoals in de eerste sectie is beschreven, is het niet mogelijk om te voorkomen dat anderen Microsoft Flow voor persoonlijke doeleinden gebruiken. Dat er een gratis Microsoft Flow-licentie aanwezig is, betekent dus niet dat er mogelijkheden worden toegekend of verwijderd.
+### <a name="i-removed-the-microsoft-flow-free-license-and-users-can-still-access-flow"></a>Ik heb de Microsoft Flow gratis licentie verwijderd en gebruikers hebben nog steeds toegang tot flow?
+De gratis licentie voor Microsoft Flow is alleen opgenomen voor tracking doeleinden. Zoals in de eerste sectie wordt besproken, is het niet mogelijk om te voor komen dat een andere persoon Microsoft Flow voor individuele doel einden gebruikt. De aanwezigheid van een Microsoft Flow gratis licentie biedt daarom geen mogelijkheden voor het verlenen of verwijderen van een functie.
 
-### <a name="why-cant-i-see-all-flow-licenses-in-the-office-365-admin-portal"></a>Waarom zie ik niet alle Flow-licenties in de Office 365-beheerportal?
-Gebruikers kunnen Microsoft Flow gebruiken als individu of als deel van hun organisatie. Licenties op het organisatieniveau van de worden altijd weergegeven in de Office 365-portal. De licentie wordt echter niet beheerd door de Office 365-beheerder als een gebruiker zich aanmeldt voor een proefversie als een individu en dan wordt de licentie ook niet weergegeven in de portal.
+### <a name="why-cant-i-see-all-flow-licenses-in-the-office-365-admin-portal"></a>Waarom zie ik niet alle flow-licenties in de Office 365-beheer Portal?
+Gebruikers kunnen Microsoft Flow gebruiken als individuen of als onderdeel van hun organisatie. Licenties op organisatie niveau worden altijd weer gegeven in de Office 365-Portal. Als een gebruiker zich echter aanmeldt voor een proef versie als individu, wordt deze niet beheerd door de Office 365-beheerder en wordt deze niet weer gegeven in de portal.
 
-### <a name="how-does-an-individual-find-out-what-plan-they-are-on"></a>Waar kan een individu vonden welk abonnement ze hebben?
-Iedereen kan het abonnement dat ze hebben zien via de pagina met Flow-prijzen op [https://flow.microsoft.com/pricing](https://flow.microsoft.com/pricing). Het abonnement of de proefversie die ze op dat moment hebben wordt daar weergegeven.
+### <a name="how-does-an-individual-find-out-what-plan-they-are-on"></a>Hoe weet een individu op welk abonnement ze zich bevinden?
+Iedereen kan het plan zien dat ze hebben door op [https://flow.microsoft.com/pricing](https://flow.microsoft.com/pricing)de pagina met prijzen voor stromen te bezoeken. Het plan of de proef versie die ze momenteel hebben, wordt daar weer gegeven.
 
-### <a name="will-microsoft-flow-sign-up-impact-the-identities-in-my-organization"></a>Heeft de registratie bij Microsoft Flow invloed op de id’s in mijn organisatie?
-Als uw organisatie al een bestaande Office 365-omgeving heeft en alle gebruikers in uw organisatie een Office 365-account hebben, verandert er niets op het gebied van identiteitsbeheer.
+### <a name="will-microsoft-flow-sign-up-impact-the-identities-in-my-organization"></a>Geldt Microsoft Flow registratie gevolgen voor de identiteiten in mijn organisatie?
+Als uw organisatie al een bestaande Office 365-omgeving heeft en alle gebruikers in uw organisatie Office 365-accounts hebben, heeft dit geen invloed op het identiteits beheer.
 
-Als uw organisatie al een bestaande Office 365-omgeving heeft, maar niet alle gebruikers in uw organisatie een Office 365-account hebben, wordt een gebruiker gemaakt in de tenant en worden licenties toegewezen op basis van het e-mailadres voor werk of school van de gebruiker. Dit betekent dat het aantal gebruikers dat u beheert op een bepaald moment zal toenemen, omdat gebruikers in uw organisatie zich aanmelden voor de service.
+Als uw organisatie al een bestaande Office 365-omgeving heeft, maar niet alle gebruikers in uw organisatie een Office 365-account hebben, maken we een gebruiker in de Tenant en wijzen we licenties toe op basis van het werk-of school-e-mail adres van de gebruiker. Dit betekent dat het aantal gebruikers dat u beheert op een bepaald moment zal groeien wanneer gebruikers in uw organisatie zich aanmelden voor de service.
 
-Als uw organisatie geen Office 365-omgeving heeft die is verbonden met uw e-maildomein, verandert er niets aan de manier waarop identiteiten beheert. Gebruikers worden toegevoegd aan een nieuwe gebruikerslijst die zich alleen in de bevindt. U hebt de mogelijkheid deze over te nemen als tenantbeheerder en ze te beheren.
+Als uw organisatie geen Office 365-omgeving heeft die is verbonden met uw e-mail domein, is er geen wijziging in de manier waarop u identiteit beheert. Gebruikers worden toegevoegd aan een nieuwe gebruikers Directory die alleen in de Cloud wordt uitgevoerd en u hebt de mogelijkheid om de Tenant beheerder te nemen en deze te beheren.
 
-### <a name="a-new-tenant-was-created-by-microsoft-flow-how-do-i-manage-this"></a>Er is een nieuwe tenant gemaakt door Microsoft Flow, hoe beheer ik deze?
-Als er een nieuwe tenant is gemaakt door Microsoft Flow, voert u de volgende stappen uit om die tenant te claimen en beheren:
+### <a name="a-new-tenant-was-created-by-microsoft-flow-how-do-i-manage-this"></a>Er is een nieuwe Tenant gemaakt door Microsoft Flow, hoe kan ik dit beheren?
+Als er een nieuwe Tenant is gemaakt door Microsoft Flow, kunt u die Tenant claimen en beheren met behulp van de volgende stappen:
 
-1. Word lid van de tenant door u aan te melden voor Flow met een e-mailadresdomein dat overeenkomt met het tenantdomein dat u wilt beheren. Als Microsoft bijvoorbeeld de tenant contoso.com heeft gemaakt, wordt u lid van de tenant met een e-mailadres dat eindigt op @contoso.com.
-2. Claim de controle over het beheer door het domeineigendom te verifiëren: zodra u bent aangemeld bij de tenant, kunt u aan uzelf de rol van beheerder toewijzen door het domeineigendom te verifiëren. Volg hiervoor de onderstaande stappen:    
+1. Meld u aan bij de Tenant door u aan te melden voor stroom met behulp van een e-mailadres domein dat overeenkomt met het Tenant domein dat u wilt beheren. Als micro soft bijvoorbeeld de contoso.com-Tenant heeft gemaakt, moet u lid worden van de Tenant met een e-mail adres dat eindigt op @contoso.com.
+2. Beheer beheer claimen door het eigendom van het domein te verifiëren: Zodra u zich in de Tenant bevindt, kunt u de rol van de beheerder verhogen door het eigendom van het domein te verifiëren. Voer hiertoe de volgende stappen uit:    
    
    1. Ga naar [https://admin.microsoft.com](https://admin.microsoft.com/Start?sku=flow_free).
-   2. Selecteer het startpictogram voor de app in de linkerbovenhoek en kies Admin (Beheer).
-   3. Lees de instructies op de pagina **Become the admin** (Beheerder worden) en kies vervolgens **Yes, I want to be the admin** (Ja, ik wil beheerder worden).  
+   2. Selecteer het pictogram voor het starten van de app in de linkerbovenhoek en kies vervolgens beheerder.
+   3. Lees de instructies op de pagina **beheerder worden** en kies vervolgens **Ja, ik wil de beheerder zijn**.  
       
-       **OPMERKING**: Als deze optie niet wordt weergegeven, is er al een Office 365-beheerder aangewezen.
+       **Opmerking**: als deze optie niet wordt weer gegeven, is er al een Office 365-beheerder aanwezig.
 
-### <a name="if-i-have-multiple-domains-can-i-control-the-office-365-tenant-that-users-are-added-to"></a>Als ik meerdere domeinen heb, kan ik dan de Office 365-tenant beheren waaraan gebruikers worden toegevoegd?
-Als u niets doet, wordt voor elk e-maildomein en -subdomein voor gebruikers een tenant gemaakt.
+### <a name="if-i-have-multiple-domains-can-i-control-the-office-365-tenant-that-users-are-added-to"></a>Als ik meerdere domeinen heb, kan ik dan de Office 365-Tenant beheren waaraan gebruikers worden toegevoegd?
+Als u niets doet, wordt er een Tenant gemaakt voor elk e-mail domein en subdomein van de gebruiker.
 
-Als u wilt dat alle gebruikers aan dezelfde tenant worden toegevoegd, ongeacht de extensie van hun e-mailadres:  
+Als u wilt dat alle gebruikers zich in dezelfde Tenant behoren, ongeacht hun e-mail adres extensies:  
 
-* Maak vooraf een doeltenant of gebruik een bestaande tenant. Voeg alle bestaande domeinen en subdomeinen toe die u binnen deze tenant wilt consolideren. Vervolgens worden alle gebruikers met een e-mailadres dat eindigt op deze domeinen en subdomeinen wanneer zij zich aanmelden automatisch lid van de doeltenant.
+* Maak vooraf een doel-Tenant of gebruik een bestaande Tenant. Voeg alle bestaande domeinen en subdomeinen toe die u in die Tenant wilt samennemen. Alle gebruikers met een e-mail adres dat eindigt op deze domeinen en subdomeinen worden dan automatisch lid van de doel-Tenant wanneer ze zich registreren.
 
-**BELANGRIJK:** Er bestaat geen ondersteunde geautomatiseerde methode om gebruikers van de ene tenant naar de andere te verplaatsen nadat ze zijn gemaakt. Zie [Add your users and domain to Office 365](https://support.office.com/article/Add-your-users-and-domain-to-Office-365-ffdb2216-330d-4d73-832b-3e31bcb5b2a7) (Uw gebruikers en domein toevoegen aan Office 365) voor meer informatie over het toevoegen van domeinen aan een enkele Office 365-tenant.
+**Belang rijk**: er is geen ondersteund geautomatiseerd mechanisme om gebruikers te verplaatsen naar andere tenants nadat ze zijn gemaakt. Zie [uw gebruikers en domein toevoegen aan office 365](https://support.office.com/article/Add-your-users-and-domain-to-Office-365-ffdb2216-330d-4d73-832b-3e31bcb5b2a7)voor meer informatie over het toevoegen van domeinen aan één Office 365-Tenant.
 
-### <a name="how-can-i-restrict-my-users-ability-to-access-my-organizations-business-data"></a>Hoe kan ik instellen dat mijn gebruikers beperkt toegang hebben tot de zakelijke gegevens van mijn bedrijf?
-Met Microsoft Flow kunt u gegevenszones maken voor zakelijke en niet-zakelijke gegevens, zoals hieronder wordt weergegeven. Zodra het beleid voor het voorkomen van gegevensverlies is geïmplementeerd, kunnen gebruikers geen stromen meer ontwerpen of uitvoeren waarin zowel zakelijke als niet-zakelijke gegevens worden gebruikt. Zie [Beleid voor preventie van gegevensverlies (DLP)](prevent-data-loss.md) voor meer informatie.
+### <a name="how-can-i-restrict-my-users-ability-to-access-my-organizations-business-data"></a>Hoe kan ik de mogelijkheid van mijn gebruikers voor het openen van Bedrijfs gegevens van mijn organisatie beperken?
+Met Microsoft Flow kunt u gegevens zones maken voor zakelijke en niet-zakelijke gegevens, zoals hieronder wordt weer gegeven. Zodra deze beleids regels voor preventie van gegevens verlies zijn geïmplementeerd, kunnen gebruikers geen stroom ontwerpen of uitvoeren die zakelijke en niet-zakelijke gegevens combi neren. Zie beleid voor preventie van [gegevens verlies (DLP)](prevent-data-loss.md)voor meer informatie.
 
   ![](./media/organization-q-and-a/data-loss-prevention-policy.png)
 

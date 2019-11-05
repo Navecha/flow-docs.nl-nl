@@ -1,6 +1,6 @@
 ---
-title: Overzicht van oplossingsbewuste stromen | Microsoft Docs
-description: Hier vindt u informatie over de voordelen van stromen in oplossingen maken.
+title: Overzicht van oplossingen die geschikt zijn voor de oplossing | Microsoft Docs
+description: Meer informatie over de voor delen van het maken van stromen in oplossingen.
 services: ''
 suite: flow
 documentationcenter: na
@@ -20,37 +20,38 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: cee250718b65deaa5d8472eb4eb90965a555674b
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.openlocfilehash: 3722c0702d21799f63098cb3d8fac619f933aff4
+ms.sourcegitcommit: 510706f5699b6cf9dda9dcafbed715f9f6d559e8
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "64456249"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73544410"
 ---
-# <a name="edit-a-solution-aware-flow"></a>Een oplossingsbewuste stroom bewerken
+# <a name="edit-a-solution-aware-flow"></a>Een stroom die geschikt is voor oplossingen bewerken
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
-Volg deze stappen om een oplossingsbewuste stroom te bewerken.
+Volg deze stappen om een oplossings bewuste stroom te bewerken.
 
 > [!IMPORTANT]
-> Schakel uw stroom uit voordat u deze bewerkt, anders verliest u mogelijk wijzigingen.
+> Stop uw stroom voordat u deze gaat bewerken of u kunt uw wijzigingen kwijt raken.
 
-1. Meld u aan bij Microsoft Flow en selecteer vervolgens **Oplossingen** uit de navigatiebalk.
-1. Selecteer de oplossing met de stroom die u wilt bewerken.
+1. Meld u aan bij Microsoft Flow en selecteer vervolgens **oplossingen** in de navigatie balk.
+1. Selecteer de oplossing die de stroom bevat die u wilt bewerken.
 
    ![](./media/edit-solution-aware-flow/new-flow-inside-solution.png)
 
-1. Selecteer **...** (Meer opdrachten) voor uw stroom en selecteer vervolgens **Uitschakelen**.
-1. Selecteer **...** (Meer opdrachten) voor uw stroom en selecteer vervolgens **Bewerken**.
+1. Selecteer **...** (meer opdrachten) voor uw stroom **en selecteer vervolgens uitschakelen.**
+1. Selecteer **...** (meer opdrachten) voor uw stroom en selecteer vervolgens **bewerken**.
 
    ![](./media/edit-solution-aware-flow/edit-flow.png)
    
-1. Breng uw wijzigingen aan in de Microsoft Flow Designer, test uw wijzigingen en sla uw stroom vervolgens op.
-1. Schakel uw stroom in als u deze wilt uitvoeren.
+1. Breng de gewenste wijzigingen aan in de Microsoft Flow Designer, test uw veranderingen en sla de stroom op.
+1. Schakel uw stroom in als u wilt dat deze wordt uitgevoerd.
 
 ## <a name="learn-more"></a>Meer informatie
 
 * [Een oplossing maken](./overview-solution-flows.md)
-* [Een stroom maken in een oplossing](./create-flow-solution.md)
+* [Een stroom in een oplossing maken](./create-flow-solution.md)
 * [Een oplossing exporteren](./export-flow-solution.md)
 * [Een oplossing importeren](./import-flow-solution.md)
-* [Een oplossingsbewuste stroom verwijderen](./remove-solution-aware-flow.md)
+* [Een oplossings bewuste stroom verwijderen](./remove-solution-aware-flow.md)

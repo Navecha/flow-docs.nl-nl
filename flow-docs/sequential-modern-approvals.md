@@ -1,6 +1,6 @@
 ---
-title: Een moderne goedkeuringswerkstroom maken met meerdere goedkeurders | Microsoft Docs
-description: 'Een moderne goedkeuringswerkstroom maken met meerdere goedkeurders '
+title: Een moderne goedkeurings werk stroom maken met meerdere goed keurders | Microsoft Docs
+description: 'Een moderne goedkeurings werk stroom maken met meerdere goed keurders '
 services: ''
 suite: flow
 documentationcenter: na
@@ -20,178 +20,179 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: dd30051425906fdc305be536342eeb7e1762d1eb
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.openlocfilehash: 269239bd3fbb07c78bf316f9e58003690c63d878
+ms.sourcegitcommit: 510706f5699b6cf9dda9dcafbed715f9f6d559e8
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "65019870"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73548987"
 ---
-# <a name="manage-sequential-approvals-with-microsoft-flow"></a>Opeenvolgende goedkeuringen beheren met Microsoft Flow
-Bij bepaalde werkstromen moet vooraf goedkeuring worden gegeven voordat de definitieve goedkeurder zijn goedkeuring geeft. Een bedrijf kan bijvoorbeeld een beleid voor opeenvolgende goedkeuring instellen waarbij facturen van meer dan € 1000,00 vooraf moeten worden goedgekeurd, voordat ze worden goedgekeurd door de financiële afdeling.
+# <a name="manage-sequential-approvals-with-microsoft-flow"></a>Sequentiële goed keuringen beheren met Microsoft Flow
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+Voor sommige werk stromen moet vooraf goed keuring worden ingesteld voordat de definitieve goed keurder is vereist voor het afmelden. Het is bijvoorbeeld mogelijk dat een bedrijf een sequentieel goedkeurings beleid heeft dat vooraf goed keuring vereist voor facturen van $1000,00 voordat ze door de afdeling Financiën worden goedgekeurd.
 
-In dit scenario maken we een werkstroom met opeenvolgende goedkeuring voor vakantieaanvragen van werknemers.
+In dit scenario maken we een sequentiële goedkeurings stroom waarmee vakantie aanvragen van werk nemers worden beheerd.
 
 > [!NOTE]
-> SharePoint wordt hier alleen als voorbeeld. het is niet vereist om goedkeuringsstromen te maken. U kunt een van de meer dan 200 services waarmee Microsoft Flow kan worden geïntegreerd om uw stromen gebruiken.
+> Share point wordt hier alleen als voor beeld gebruikt. het is niet vereist om goedkeurings stromen te maken. U kunt een van de meer dan 200 Services gebruiken waarmee Microsoft Flow integreert om uw stromen te bezorgen.
 
 
 ## <a name="detailed-steps-in-the-flow"></a>Gedetailleerde stappen in de stroom
 De stroom:
 
-1. Start wanneer een werknemer een vakantieaanvraag maakt in een [SharePoint Online-lijst](https://support.office.com/article/Introduction-to-lists-0a1c3ace-def0-44af-b225-cfa8d92c52d7).
-2. Voegt de vakantieaanvraag toe aan het goedkeuringscentrum en verzendt de aanvraag per e-mail naar degene die vooraf goedkeuring moet geven.
-3. Stuurt de beslissing van degene die vooraf goedkeuring moet geven via e-mail naar de werknemer.
-4. Werkt de SharePoint Online-lijst bij met de beslissing en eventuele opmerkingen van degene die vooraf goedkeuring moet geven.
+1. Wordt gestart wanneer een werk nemer vakantie aanvragen maakt in een [share point online-lijst](https://support.office.com/article/Introduction-to-lists-0a1c3ace-def0-44af-b225-cfa8d92c52d7).
+2. Voegt de vakantie aanvraag toe aan het goedkeurings centrum en verzendt de aanvraag per e-mail naar de vooraf-fiatteur.
+3. E-mailt de beslissing vooraf goed keuring aan de werk nemer.
+4. Werkt de share point online-lijst bij met de beslissing en opmerkingen van de vooraf-fiatteur.
    
-   Opmerking: Als de aanvraag goedgekeurd is, wordt de stroom wordt voortgezet met deze stappen:
-5. Stuurt de aanvraag naar de definitieve goedkeurder.
-6. Stuurt het definitieve besluit via e-mail naar de werknemer.
-7. Werkt de SharePoint-lijst bij met de definitieve beslissing.
+   Opmerking: als de aanvraag vooraf is goedgekeurd, wordt de stroom voortgezet met de volgende stappen:
+5. De aanvraag wordt verzonden naar de definitieve goed keurder.
+6. E-mailt de definitieve beslissing voor de werk nemer.
+7. Hiermee wordt de share point-lijst bijgewerkt met de definitieve beslissing.
 
-Deze afbeelding bevat een overzicht van de voorgaande stappen:
+In deze afbeelding vindt u een overzicht van de voor gaande stappen:
 
-   ![visio-diagram van de stroom](./media/sequential-modern-approvals/visio-overview.png)
+   ![Visio-diagram van de stroom](./media/sequential-modern-approvals/visio-overview.png)
 
 ## <a name="prerequisites"></a>Vereisten
 [!INCLUDE [prerequisites-for-modern-approvals](includes/prerequisites-for-modern-approvals.md)]
 
-Voor het doel van dit scenario, moet de SharePoint Online-lijst die u maakt de volgende kolommen bevatten:
+Voor de doel einden van dit scenario moet de share point online-lijst die u maakt, de volgende kolommen bevatten:
 
-   ![Kolommen van de SharePoint-lijst](./media/sequential-modern-approvals/sharepoint-columns.png)
+   ![Share point-lijst kolommen](./media/sequential-modern-approvals/sharepoint-columns.png)
 
-Noteer de naam en de URL van de SharePoint Online-lijst. We gebruiken deze items later om de trigger **SharePoint: Wanneer een nieuw item wordt gemaakt** te configureren.
+Noteer de naam en de URL van de share point online-lijst. We gebruiken deze items later wanneer u de trigger **share point-wanneer een nieuw item wordt gemaakt** configureert.
 
-## <a name="create-your-flow-from-the-blank-template"></a>De stroom maken op basis van een lege sjabloon
+## <a name="create-your-flow-from-the-blank-template"></a>Uw stroom maken op basis van de lege sjabloon
 [!INCLUDE [sign-in-and-create-flow-from-blank-template](includes/sign-in-and-create-flow-from-blank-template.md)]
 
 ## <a name="add-a-trigger"></a>Een trigger toevoegen
 [!INCLUDE [add-trigger-when-sharepoint-item-created](includes/add-trigger-when-sharepoint-item-created.md)]
 
-   ![sharepoint-gegevens](./media/sequential-modern-approvals/select-sharepoint-site-info.png)
+   ![share point-info](./media/sequential-modern-approvals/select-sharepoint-site-info.png)
 
-## <a name="get-the-manager-for-the-person-who-created-the-vacation-request"></a>De manager van degene die de vakantieaanvraag heeft ingediend ophalen
+## <a name="get-the-manager-for-the-person-who-created-the-vacation-request"></a>De manager ophalen voor degene die de vakantie aanvraag heeft gemaakt
 [!INCLUDE [add-get-manager-action](includes/add-get-manager-action.md)]
 
-1. Geef een naam voor de stroom op en selecteer vervolgens **Stroom maken** om het werk op te slaan dat u tot nu toe hebt gedaan.
+1. Geef een naam op voor uw stroom en selecteer **stroom maken** om het werk dat we tot nu toe hebben gedaan, op te slaan.
    
     ![stroom opslaan](./media/sequential-modern-approvals/save.png)
    
    > [!NOTE]
-   > Selecteer regelmatig **Stroom bijwerken** bovenaan in het scherm om de wijzigingen aan uw stroom op te slaan.
+   > Selecteer regel matige **stroom bijwerken** van de bovenkant van het scherm om de wijzigingen in uw stroom op te slaan.
    > 
    > 
    
-    ![bijwerkactie selecteren](./media/sequential-modern-approvals/update.png)
+    ![Update-actie selecteren](./media/sequential-modern-approvals/update.png)
 
-Nadat u alle bewerkingen hebt opgeslagen, selecteert u **Stroom bewerken** bovenaan in het scherm. Hierna kunt u doorgaan met wijzigingen aanbrengen.
+Na elke opslag bewerking selecteert u **stroom bewerken** vanaf de bovenkant van het scherm en gaat u verder met het maken van wijzigingen.
 
-## <a name="add-an-approval-action-for-pre-approvals"></a>Een goedkeuringsactie voor goedkeuring vooraf toevoegen
+## <a name="add-an-approval-action-for-pre-approvals"></a>Een goedkeurings actie voor voorafgaande goed keuringen toevoegen
 [!INCLUDE [add-an-approval-action](includes/add-an-approval-action.md)]
 
-Opmerking: Deze actie wordt de voorafgaande goedkeuring aanvraag verzonden naar e-mailadres in de **toegewezen aan** vak.
+Opmerking: met deze actie wordt de aanvraag vóór goed keuring verzonden naar het e-mail adres in het vak **toegewezen aan** .
 
-## <a name="add-a-condition"></a>Een voorwaarde toevoegen
+## <a name="add-a-condition"></a>Een voor waarde toevoegen
 [!INCLUDE [add-approval-condition-response](includes/add-approval-condition-response.md)]
 
 > [!NOTE]
-> Deze voorwaarde controleert de reactie van de actie **Een goedkeuring starten**.
+> Deze voor waarde controleert de reactie van de actie **een goed keuring starten** .
 > 
 > 
 
-## <a name="add-an-email-action-for-pre-approvals"></a>Een e-mailactie voor voorafgaande goedkeuringen toevoegen
+## <a name="add-an-email-action-for-pre-approvals"></a>Een e-mail actie toevoegen voor voorafgaande goed keuringen
 [!INCLUDE [add-action-to-send-email-when-vacation-approved](includes/add-action-to-send-email-when-vacation-approved.md)]
 
-   ![vooraf goedgekeurde e-mailsjabloon configureren](./media/sequential-modern-approvals/yes-email-config.png)
+   ![vooraf goedgekeurde e-mail sjabloon configureren](./media/sequential-modern-approvals/yes-email-config.png)
 
-## <a name="add-an-update-action-for-pre-approved-requests"></a>Een bijwerkactie voor vooraf goedgekeurde aanvragen toevoegen
+## <a name="add-an-update-action-for-pre-approved-requests"></a>Een bijwerk actie voor vooraf goedgekeurde aanvragen toevoegen
 [!INCLUDE [add-action-to-update-sharepoint-with-approval](includes/add-action-to-update-sharepoint-with-approval.md)]
 
-   ![configuratie van item bijwerken](./media/sequential-modern-approvals/configure-update-item.png)
+   ![artikel configuratie bijwerken](./media/sequential-modern-approvals/configure-update-item.png)
 
-## <a name="get-the-pre-approvers-manager"></a>De manager van degene die vooraf toestemming heeft gegeven ophalen
-1. Gebruik de stappen die we eerder hebben gedaan bij [De manager van degene die de vakantieaanvraag heeft ingediend ophalen](sequential-modern-approvals.md#get-the-manager-for-the-person-who-created-the-vacation-request) om een nieuwe **Manager ophalen**-actie toe te voegen en te configureren. Deze keer halen we de manager op van degene die vooraf toestemming heeft gegeven
-2. De kaart **Manager ophalen 2** moet er, wanneer u klaar bent, uitzien zoals weergegeven in deze afbeelding. Zorg ervoor dat u het **e-mail**-token van de categorie **Manager ophalen** gebruikt in de kaart **Voeg dynamische inhoud toe van de apps en services in deze stroom**.
+## <a name="get-the-pre-approvers-manager"></a>De Manager van de vooraf-fiatteur ophalen
+1. Gebruik de stappen [voor het ophalen van de Manager voor de persoon die de vakantie-aanvraag heeft gemaakt](sequential-modern-approvals.md#get-the-manager-for-the-person-who-created-the-vacation-request) , en stel vervolgens een andere actie voor **Get Manager** in. Deze keer wordt de Manager van de vooraf-fiatteur opgehaald.
+2. De kaart **Manager ophalen 2** moet er als volgt uitzien wanneer u klaar bent. Zorg ervoor dat u het **e-mail** token van de categorie **Manager ophalen** gebruikt voor het **toevoegen van dynamische inhoud van de apps en services die worden gebruikt in deze stroom** kaart.
    
-   ![manager van degene die vooraf toestemming heeft gegeven ophalen](includes/media/modern-approvals/get-pre-approver-manager.png)
+   ![Manager van vooraf-fiatteur ophalen](includes/media/modern-approvals/get-pre-approver-manager.png)
 
-## <a name="add-the-final-approval-action"></a>De actie voor definitieve goedkeuring toevoegen
-1. Gebruik de stappen die we eerder bij [Een goedkeuringsactie voor goedkeuring vooraf toevoegen](sequential-modern-approvals.md#add-an-approval-action-for-pre-approvals) hebben doorlopen om een nieuwe **Een goedkeuring starten**-actie toe te voegen en te configureren. Met deze actie wordt een aanvraag voor definitieve goedkeuring verzonden via e-mail.
-2. Wanneer u klaar bent, moet de kaart lijken op deze afbeelding:
+## <a name="add-the-final-approval-action"></a>De definitieve goedkeurings actie toevoegen
+1. Gebruik de stappen [voor het toevoegen van een goed keuring voor voorafgaande goed keuringen](sequential-modern-approvals.md#add-an-approval-action-for-pre-approvals) die we eerder hebben gedaan en configureer vervolgens een andere actie voor **het starten van een goed keuring** . Met deze actie wordt een e-mail verzoek verzonden voor definitieve goed keuring.
+2. Wanneer u klaar bent, moet de kaart eruitzien als deze afbeelding:
    
-    ![de goedkeuring configureren](./media/sequential-modern-approvals/provide-approval-config-info.png)
+    ![de goed keuring configureren](./media/sequential-modern-approvals/provide-approval-config-info.png)
 
-## <a name="add-the-final-approval-condition"></a>De voorwaarde voor definitieve goedkeuring toevoegen
-1. Herhaal de stappen bij [Een voorwaarde toevoegen](sequential-modern-approvals.md#add-a-condition) om een **Voorwaarde** toe te voegen die het besluit van de definitieve goedkeurder controleert.
+## <a name="add-the-final-approval-condition"></a>De uiteindelijke goedkeurings voorwaarde toevoegen
+1. Herhaal de stappen in [toevoegen om een voor waarde](sequential-modern-approvals.md#add-a-condition) toe te voegen en configureer vervolgens een **voor waarde** die de beslissing van de definitieve goed keurder controleert.
 
-## <a name="send-email-with-final-approval"></a>E-mailbericht met de definitieve goedkeuring verzenden
-1. Gebruik de stappen bij [Een e-mailactie voor voorafgaande goedkeuringen toevoegen](sequential-modern-approvals.md#add-an-email-action-for-pre-approvals) om een actie toe te voegen en te configureren waarbij een e-mailbericht wordt verzonden wanneer vakantieaanvragen worden goedgekeurd.
-2. Wanneer u klaar bent, moet uw kaart lijken op deze afbeelding:
+## <a name="send-email-with-final-approval"></a>E-mail met definitieve goed keuring verzenden
+1. Gebruik de stappen voor het toevoegen van [een e-mail actie voor het toevoegen van voorafgaande goed keuringen](sequential-modern-approvals.md#add-an-email-action-for-pre-approvals) en configureer vervolgens een actie die een e-mail bericht verzendt wanneer vakantie aanvragen worden goedgekeurd.
+2. Wanneer u klaar bent, moet uw kaart eruitzien als deze afbeelding:
    
-   ![e-mailsjabloon voor definitieve goedkeuring](./media/sequential-modern-approvals/vacatioin-request-approved-email-template.png)
+   ![e-mail sjabloon voor definitieve goed keuring](./media/sequential-modern-approvals/vacatioin-request-approved-email-template.png)
 
-## <a name="update-sharepoint-with-approval"></a>SharePoint bijwerken met goedkeuring
-1. Gebruik de stappen bij [Een bijwerkactie voor vooraf goedgekeurde aanvragen toevoegen](sequential-modern-approvals.md#add-an-update-action-for-pre-approved-requests) om een actie toe te voegen en te configureren die SharePoint bijwerkt wanneer de vakantieaanvraag is goedgekeurd.
-2. Wanneer u klaar bent, moet de kaart lijken op deze afbeelding:
+## <a name="update-sharepoint-with-approval"></a>Share point bijwerken met goed keuring
+1. Gebruik de stappen voor het toevoegen van [een update-actie voor vooraf goedgekeurde aanvragen](sequential-modern-approvals.md#add-an-update-action-for-pre-approved-requests) om toe te voegen en configureer vervolgens een actie die share point bijwerkt wanneer de vakantie aanvraag is goedgekeurd.
+2. Wanneer u klaar bent, moet de kaart eruitzien als deze afbeelding:
    
-    ![configuratie van item bijwerken](./media/sequential-modern-approvals/configure-update-item-approved.png)
+    ![artikel configuratie bijwerken](./media/sequential-modern-approvals/configure-update-item-approved.png)
 
-## <a name="send-email-with-pre-approval-rejection"></a>E-mailbericht met afwijzing van voorafgaande goedkeuring verzenden
+## <a name="send-email-with-pre-approval-rejection"></a>E-mail met toestemming voor goed keuring verzenden
 [!INCLUDE [add-action-to-send-email-when-vacation-rejected](includes/add-action-to-send-email-when-vacation-rejected.md)]
 
    ![configuratie voor geweigerde aanvragen](./media/sequential-modern-approvals/configure-rejected-email.png)
 
-Opmerking: Deze actie moet worden toegevoegd aan de **indien Nee, niets doen** vertakking hieronder de **voorwaarde** kaart.
+Opmerking: deze actie moet worden toegevoegd aan de vertakking **Indien nee, niets doen** onder de kaart **voor waarde** .
 
-## <a name="update-sharepoint-with-pre-approval-rejection"></a>SharePoint bijwerken met afwijzing van voorafgaande goedkeuring
+## <a name="update-sharepoint-with-pre-approval-rejection"></a>Share point bijwerken met afwijzing vóór goed keuring
 [!INCLUDE [add-action-to-update-sharepoint-with-rejection](includes/add-action-to-update-sharepoint-with-rejection.md)]
 
-   ![sharepoint bijwerken bij geweigerde aanvragen](./media/sequential-modern-approvals/update-sharepoint-with-rejection.png)
+   ![share point bijwerken voor geweigerde aanvragen](./media/sequential-modern-approvals/update-sharepoint-with-rejection.png)
 
-## <a name="send-email-with-final-rejection"></a>E-mailbericht met de definitieve afwijzing verzenden
-1. Gebruik de stappen bij [E-mailbericht met afwijzing van voorafgaande goedkeuring verzenden](sequential-modern-approvals.md#send-email-with-pre-approval-rejection) om een actie toe te voegen en te configureren waarbij een e-mailbericht wordt verzonden wanneer de vakantieaanvraag is afgewezen door de definitieve goedkeurder.
+## <a name="send-email-with-final-rejection"></a>E-mail met definitieve afwijzing verzenden
+1. Gebruik de stappen in [E-mail verzenden met toestemming voor goed keuring](sequential-modern-approvals.md#send-email-with-pre-approval-rejection) voor toevoegen en vervolgens een actie configureren die een e-mail verzendt wanneer de vakantie aanvraag wordt afgewezen door de definitieve goed keurder.
    
-    Opmerking: Deze actie moet worden toegevoegd aan de **indien Nee, niets doen** vertakking hieronder de **voorwaarde 2** kaart.
-2. Wanneer u klaar bent, moet de kaart lijken op deze afbeelding:
+    Opmerking: deze actie moet worden toegevoegd aan de vertakking **Indien nee, niets doen** onder de kaart **voor waarde 2** .
+2. Wanneer u klaar bent, moet de kaart eruitzien als deze afbeelding:
    
    ![configuratie voor geweigerde aanvragen](./media/sequential-modern-approvals/final-rejection-email-card.png)
 
-## <a name="update-sharepoint-with-final-rejection"></a>SharePoint bijwerken met definitieve afwijzing
-1. Gebruik de stappen bij [SharePoint bijwerken met afwijzing van voorafgaande goedkeuring](sequential-modern-approvals.md#update-sharepoint-with-pre-approval-rejection) om een actie toe te voegen en te configureren waarbij SharePoint wordt bijgewerkt wanneer de vakantieaanvraag is afgewezen door de definitieve goedkeurder.
-2. Wanneer u klaar bent, moet de kaart lijken op deze afbeelding:
+## <a name="update-sharepoint-with-final-rejection"></a>Share point bijwerken met definitieve afwijzing
+1. Volg de stappen in [share point bijwerken met toestemming voor goed keuring](sequential-modern-approvals.md#update-sharepoint-with-pre-approval-rejection) voor toevoegen en vervolgens een actie configureren die share point bijwerkt als de definitieve goed keurder de vakantie aanvraag afwijst.
+2. Wanneer u klaar bent, moet de kaart eruitzien als deze afbeelding:
    
-   ![de kaart item bijwerken](./media/sequential-modern-approvals/final-rejection-update-sharepoint.png)
-3. Selecteer **Stroom bijwerken** om uw werk op te slaan.
+   ![artikel kaart bijwerken](./media/sequential-modern-approvals/final-rejection-update-sharepoint.png)
+3. Selecteer **stroom bijwerken** om het werk dat we hebben uitgevoerd, op te slaan.
    
-   ![bijwerkactie selecteren](./media/sequential-modern-approvals/update.png)
+   ![Update-actie selecteren](./media/sequential-modern-approvals/update.png)
 
-Als u de stappen tot zover hebt gevolgd, moet uw stroom eruitzien als deze afbeelding:
+Als u de bewerking hebt gevolgd, moet uw stroom eruitzien als deze afbeelding:
 
-![overzicht van stroom](./media/sequential-modern-approvals/completed-flow.png)
+![overzicht van flow](./media/sequential-modern-approvals/completed-flow.png)
 
-Nu we de stroom hebt gemaakt, gaan we bekijken hoe deze werkt.
+Nu u de stroom hebt gemaakt, wordt deze in actie weer gegeven.
 
-## <a name="request-an-approval"></a>Een goedkeuring aanvragen
+## <a name="request-an-approval"></a>Een goed keuring aanvragen
 [!INCLUDE [request-vacation-approval](includes/request-vacation-approval.md)]
 
-Uw aanvraag moet eruitzien als deze afbeelding:
+Uw aanvraag moet er ongeveer als volgt uitzien:
 
-![vakantieaanvraag](./media/sequential-modern-approvals/vacation-request.png)
+![vakantie aanvraag](./media/sequential-modern-approvals/vacation-request.png)
 
-## <a name="view-pending-approval-requests"></a>Goedkeuringsaanvragen in behandeling weergeven
+## <a name="view-pending-approval-requests"></a>Goedkeurings aanvragen in behandeling weer geven
 [!INCLUDE [view-pending-approvals](includes/view-pending-approvals.md)]
 
-## <a name="pre-approve-a-request"></a>Een aanvraag vooraf goedkeuren
+## <a name="pre-approve-a-request"></a>Een aanvraag vooraf goed keuren
 [!INCLUDE [approve-request-from-different-locations](includes/approve-request-from-different-locations.md)]
 
-## <a name="approve-the-request"></a>De aanvraag goedkeuren
-De stappen voor het goedkeuren van een aanvraag zijn identiek aan de stappen voor het [Vooraf goedkeuren van een aanvraag](sequential-modern-approvals.md#pre-approve-a-request)
+## <a name="approve-the-request"></a>De aanvraag goed keuren
+De stappen voor het goed keuren van een aanvraag zijn identiek aan de stappen voor het [vooraf goed keuren van een aanvraag](sequential-modern-approvals.md#pre-approve-a-request)
 
-Opmerking: De definitieve goedkeurder haalt de vakantieaanvraag pas nadat de aanvraag goedgekeurd is.
+Opmerking: de definitieve goed keurder haalt de vakantie aanvraag pas op nadat de aanvraag vooraf is goedgekeurd.
 
-## <a name="reject-a-request"></a>Een aanvraag weigeren
+## <a name="reject-a-request"></a>Een aanvraag afwijzen
 [!INCLUDE [reject-a-request](includes/reject-a-request.md)]
 
 ## <a name="more-information"></a>Meer informatie
-[Scenario voor één goedkeurder bij moderne goedkeuringen](modern-approvals.md)
+[Overzicht van de moderne goed keuringen voor één goed keurder](modern-approvals.md)
 

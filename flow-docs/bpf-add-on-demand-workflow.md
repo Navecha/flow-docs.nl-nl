@@ -1,11 +1,12 @@
 ---
-title: Een werkstroom op aanvraag toevoegen aan een bedrijfsprocesstroom
+title: Een werk stroom op aanvraag toevoegen aan een bedrijfs proces stroom
 description: ''
-author: Mattp123
-ms.author: matp
+author: MSFTMAN
+ms.author: Deonhe
 manager: kvivek
 ms.date: 07/12/2018
 ms.topic: article
+ms.service: flow
 applies_to:
 - Dynamics 365 (online)
 - Dynamics 365 Version 9.x
@@ -16,55 +17,56 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: aa061d5e2f668e8950a6cdab89992996f64c6fe8
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.openlocfilehash: ab30f745d6465cff9551854034c25130697144ba
+ms.sourcegitcommit: 510706f5699b6cf9dda9dcafbed715f9f6d559e8
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "64460972"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73546121"
 ---
-# <a name="add-an-on-demand-workflow-to-a-business-process-flow"></a>Een werkstroom op aanvraag toevoegen aan een bedrijfsprocesstroom
+# <a name="add-an-on-demand-workflow-to-a-business-process-flow"></a>Een werk stroom op aanvraag toevoegen aan een bedrijfs proces stroom
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
-U kunt werkstromen op aanvraag activeren vanuit een bedrijfsprocesstroom. U kunt bijvoorbeeld een werkstroom op aanvraag toevoegen aan een bedrijfsprocesstroom, zodat een activiteit, zoals een taak of e-mail, wordt gemaakt wanneer er een fase is voltooid. 
+U kunt werk stromen op aanvraag activeren vanuit een bedrijfs proces stroom. U kunt bijvoorbeeld een werk stroom op aanvraag toevoegen aan een bedrijfs proces stroom, zodat een activiteit, zoals een taak of e-mail bericht, wordt gemaakt wanneer een fase wordt voltooid. 
 
-Een werkstroom wordt geactiveerd op basis van waar u de werkstroom neerzet in de ontwerpfunctie voor bedrijfsprocesstromen.
-- Faseprocessen voor werkstromen op aanvraag. Wanneer de werkstroom wordt toegevoegd aan een fase van een bedrijfsprocesstroom, wordt de werkstroom geactiveerd bij het betreden of verlaten van de fase. 
-- Algemene processen voor werkstromen op aanvraag. Wanneer de werkstroom wordt toegevoegd aan het gebied **Algemene werkstromen**, wordt de werkstroom geactiveerd op het moment van procesactivering of procesarchivering (wanneer de status verandert in toegepast, voltooid, opnieuw geactiveerd of afgebroken). 
+Er wordt een werk stroom geactiveerd op basis van waar u de werk stroom op de ontwerp functie voor bedrijfs processen neerzet.
+- Fase ring op aanvraag. Wanneer de werk stroom naar een fase van een bedrijfs proces stroom wordt verwijderd, wordt de werk stroom geactiveerd bij het inbrengen of afsluiten van het stadium. 
+- Globale processen op aanvraag. Wanneer de werk stroom wordt neergezet op het gebied **globale werk stromen** , wordt de werk stroom geactiveerd tijdens proces activering of archivering van processen (wanneer de status wordt gewijzigd in een toegepaste, voltooide, opnieuw geactiveerde of afgebroken status). 
 
-Let op de volgende vereisten bij het toevoegen van een werkstroom aan een bedrijfsprocesstroom.
-- Voor werkstromen die zijn toegevoegd aan een fase: U kunt alleen gebruiken bij actieve en on-demand werkstromen die zijn gemaakt voor dezelfde entiteit van de fase waarin u de werkstroom toevoegen.  
-- Voor algemene werkstromen: U kunt alleen op aanvraag, actieve werkstromen die zijn gemaakt voor de primaire entiteit van de zakelijke processtroom gebruiken.
+Let op de volgende vereisten wanneer u een werk stroom toevoegt aan een bedrijfs proces stroom.
+- Voor werk stromen die zijn toegevoegd aan een fase: u kunt alleen actieve werk stromen op aanvraag gebruiken die zijn gemaakt voor dezelfde entiteit van de fase waarin u de werk stroom toevoegt.  
+- Voor algemene werk stromen: u kunt alleen actieve werk stromen op aanvraag gebruiken die zijn gemaakt voor de primaire entiteit van de stroom van het bedrijfs proces.
 
-## <a name="add-an-on-demand-workflow-to-a-business-process-flow-stage"></a>Een werkstroom op aanvraag toevoegen aan een fase van een bedrijfsprocesstroom
+## <a name="add-an-on-demand-workflow-to-a-business-process-flow-stage"></a>Een werk stroom op aanvraag toevoegen aan een fase van een bedrijfs proces stroom
 
-U voegt een werkstroom op aanvraag toe in de ontwerpfunctie voor bedrijfsprocesstromen door het werkstroomonderdeel naar een procesfase te slepen of naar de sectie Algemene werkstromen. 
+U voegt een werk stroom op aanvraag van de ontwerp functie voor bedrijfs processen toe door de werk stroom component naar een proces fase of naar het gedeelte algemene werk stromen te slepen. 
 
-Selecteer op de site van [PowerApps](https://web.powerapps.com) de optie **Modelgestuurd** (linksonder in het navigatiedeelvenster). 
+Selecteer op de [PowerApps](https://web.powerapps.com) -site **model-aangedreven** (linksonder in het navigatie deel venster). 
 
-Open de ontwerpfunctie voor bedrijfsprocesstromen. Dit kan op twee manieren.
-- Als de bedrijfsprocesstroom al is toegevoegd aan een app, gaat u naar **Apps**, selecteert u **...**  naast de app die u wilt selecteren en selecteert u vervolgens **Bewerken**. Selecteer in de ontwerpfunctie voor apps de bedrijfsprocesstroom en selecteer vervolgens![ ](media/dynamics365-open-designer.PNG)de optie voor het openen van de ontwerpfunctie voor bedrijfsprocesstromen.  
-- Anders opent u [Solution Explorer](/powerapps/maker/model-driven-apps/advanced-navigation.md#solution-explorer), selecteert u in het navigatiedeelvenster aan de linkerkant **Processen** en selecteert u vervolgens de gewenste bedrijfsprocesstroom. 
+Open de ontwerp functie voor bedrijfs processen. U kunt dit op een van de volgende twee manieren doen.
+- Als de bedrijfs proces stroom al aan een app is toegevoegd, gaat u naar **apps**, naast de app die u wilt selecteren **...** en selecteert u vervolgens **bewerken**. Selecteer in de ontwerp functie voor apps de bedrijfs proces stroom en selecteer vervolgens ![open flow Designer voor bedrijfs processen](media/dynamics365-open-designer.PNG).  
+- Als dat niet het geval is, opent u [Solution Explorer](/powerapps/maker/model-driven-apps/advanced-navigation.md#solution-explorer)in het navigatie deel venster links selecteert u de optie **processen**en selecteert u vervolgens de gewenste bedrijfs proces stroom. 
 
-Bepaal of de werkstroom op aanvraag moet worden geactiveerd door een van de volgende gebeurtenissen voor bedrijfsprocesstromen. 
-- Faseprocessen voor werkstromen op aanvraag. Hiermee wordt de werkstroom geactiveerd bij het betreden of verlaten van de fase. 
-- Algemene processen voor werkstromen op aanvraag. De werkstroom wordt geactiveerd op het moment van procesactivering of procesarchivering (wanneer de status verandert in toegepast, voltooid, opnieuw geactiveerd of afgebroken). 
+Bepaal of u wilt dat de werk stroom op aanvraag wordt geactiveerd door een van de volgende activiteiten voor bedrijfsproces stromen. 
+- Fase ring op aanvraag. Hiermee wordt de werk stroom geactiveerd of op het moment dat het stadium wordt afgesloten. 
+- Globale processen op aanvraag. Hiermee wordt de werk stroom geactiveerd bij proces activering of proces archivering (wanneer de status wordt gewijzigd in een toegepaste, voltooide, opnieuw geactiveerde of afgebroken status). 
 
-In het volgende voorbeeld wordt een werkstroom op aanvraag met de naam **My on demand workflow** toegevoegd aan **Stage 1** van de bedrijfsprocesstroom. 
+In het onderstaande voor beeld wordt een werk stroom op aanvraag met **de naam mijn op aanvraag werk** stroom toegevoegd aan **fase 1** van de bedrijfs proces stroom. 
 
-1. Vouw fase 1 uit om de sectie **Triggered Process** weer te geven. 
-2. Selecteer het tabblad **Onderdelen** en sleep **Workflow** naar de sectie **Triggered Process**.
-    ![Werkstroom toevoegen aan een fase](media/add-workflow-to-bpf-1.png) U kunt ook **Workflow** naar de sectie **Algemene werkstromen** slepen, waardoor de werkstroom wordt geactiveerd bij procesactivering of procesarchivering.
- ![Werkstroom toevoegen aan procesactivering of procesarchivering](media/add-workflow-to-bpf-global.png)
-3. Typ in het zoekvak van het tabblad **Eigenschappen** de naam van de werkstroom op aanvraag die u wilt toevoegen aan de fase van de bedrijfsprocesstroom en selecteer vervolgens **Toepassen**.
-    ![Naam invoeren en Toepassen selecteren](media/add-workflow-to-bpf-2.png)
-4. Ga op het tabblad **Eigenschappen** naar **Trigger** en selecteer **Fase-invoer** of **Afsluiten van fase**.  
-    ![Trigger voor werkstroom selecteren](media/workflow-trigger.png)
+1. Vouw fase 1 uit om de sectie **geactiveerd proces** weer te geven. 
+2. Selecteer het tabblad **onderdelen** en sleep de **werk stroom** naar het gedeelte **geactiveerd proces** .
+    ![werk stroom toe te voegen aan een fase](media/add-workflow-to-bpf-1.png) u kunt ook de **werk** stroom slepen naar het gedeelte **algemene werk stromen** , waardoor de werk stroom wordt geactiveerd door proces activering of proces archivering.
+ ![Worfklow toevoegen aan proces activering of archiverings](media/add-workflow-to-bpf-global.png)
+3. Typ en zoek in het zoekvak van het tabblad **Eigenschappen** de naam van de werk stroom op aanvraag die u wilt toevoegen aan de fase bedrijfs proces stroom en selecteer vervolgens **Toep assen**.
+    ![Voer een naam in en selecteer Toep assen](media/add-workflow-to-bpf-2.png)
+4. Selecteer op het tabblad **Eigenschappen** onder **trigger** de optie **fase-item** of **stadium afsluiten**.  
+    ![werk stroom trigger selecteren](media/workflow-trigger.png)
    
-    Wanneer u de werkstroom naar de sectie **Algemene werkstromen** sleept, kunt u kiezen uit de trigger-opties **Proces toegepast**, **Proces opnieuw geactiveerd**,  **Proces verlaten** en **Proces voltooid**.
+    Als u de werk stroom op de sectie **algemene werk stromen** verwijdert, worden de trigger opties **toegepast**, wordt het proces **opnieuw geactiveerd**, wordt het **proces afgebroken**en **is het proces voltooid**.
 
-5. Selecteer **Bijwerken** op de werkbalk van de ontwerpfunctie voor bedrijfsprocesstromen.
+5. Selecteer **bijwerken** op de werk balk van de bedrijfsproces stroom ontwerper.
  
 ## <a name="next-steps"></a>Volgende stappen
-[Werkstroomprocessen gebruiken voor het automatiseren van processen die geen tussenkomst van de gebruiker vereisen](workflow-processes.md) <br/>
-[Zelfstudie: Een bedrijfsprocesstroom maken om processen te standaardiseren](create-business-process-flow.md) <br/>
-[Automatisering van bedrijfsprocesstromen in Dynamics 365](https://blogs.msdn.microsoft.com/crm/2017/03/28/business-process-flow-automation-in-dynamics-365/)
+[Werk stroom processen gebruiken om processen te automatiseren waarvoor geen gebruikers interactie is vereist](workflow-processes.md) <br/>
+[Zelf studie: een bedrijfs proces stroom maken om processen te standaardiseren](create-business-process-flow.md) <br/>
+[Automatisering van bedrijfs processen in Dynamics 365](https://blogs.msdn.microsoft.com/crm/2017/03/28/business-process-flow-automation-in-dynamics-365/)

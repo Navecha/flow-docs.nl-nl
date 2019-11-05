@@ -1,6 +1,6 @@
 ---
 title: Stromen starten met Flic-knoppen | Microsoft Docs
-description: U kunt eenvoudig stromen starten met fysieke Flic-knoppen van Shortcut Labs.
+description: Met de knoppen van Flic van de werk balk kunt u eenvoudig stromen op de knop starten.
 services: ''
 suite: flow
 documentationcenter: na
@@ -20,131 +20,132 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: bbcb6c8950e8ac5959880727604e0355b3150c6f
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.openlocfilehash: e6430f78ad2eccecc5af7f6606bb56e1a7eb4599
+ms.sourcegitcommit: 510706f5699b6cf9dda9dcafbed715f9f6d559e8
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "64455342"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73544811"
 ---
-# <a name="run-your-flows-by-pressing-a-flic-smart-button-preview"></a>Stromen starten door op een slimme Flic-knop te drukken (preview)
-Activeer uw stromen door op een fysieke knop, ook wel een Flic, van Shortcut Labs te drukken. Druk bijvoorbeeld op een Flic om de werkuren bij te houden, uw agenda te blokkeren, bezoekers van een evenement te tellen of om geografische locaties op te slaan.
+# <a name="run-your-flows-by-pressing-a-flic-smart-button-preview"></a>Voer uw stromen uit door op de slimme knop Flic (preview) te drukken
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+Activeer uw stromen door te drukken op een fysieke knop, ook wel een Flic genoemd, vanuit shortcut Labs. Druk bijvoorbeeld op een Flic om uw werk uren bij te houden, uw agenda te blok keren, bezoekers bij een gebeurtenis te tellen of geografische locaties op te slaan.
 
 > [!IMPORTANT]
-> Configureer alle Flic-eigenschappen door de mobiele app van Flic voor [Android](https://play.google.com/store/apps/details?id=io.flic.app) of [iOS](https://itunes.apple.com/us/app/flic-app/id977593793?ls=1&mt=8) te gebruiken voordat u de stroom maakt.
+> Configureer alle Flic-eigenschappen met behulp van de mobiele app van Flic voor [Android](https://play.google.com/store/apps/details?id=io.flic.app) of [IOS](https://itunes.apple.com/us/app/flic-app/id977593793?ls=1&mt=8) voordat u uw stroom maakt.
 > 
 > 
 
 ## <a name="prerequisites"></a>Vereisten
-Voor het gebruik van Flics met Microsoft Flow zijn de volgende vereisten van toepassing:
+Als u Flics met Microsoft Flow wilt gebruiken, hebt u het volgende nodig:
 
-* U moet toegang hebben tot [Microsoft Flow](https://flow.microsoft.com).
-* U moet de mobiele app van Flic voor [Android](https://play.google.com/store/apps/details?id=io.flic.app) of [iOS](https://itunes.apple.com/us/app/flic-app/id977593793?ls=1&mt=8) downloaden en een of meer Flics met de app koppelen.
+* Toegang tot [Microsoft flow](https://flow.microsoft.com).
+* De mobiele app voor [Android](https://play.google.com/store/apps/details?id=io.flic.app) of [IOS](https://itunes.apple.com/us/app/flic-app/id977593793?ls=1&mt=8) van Flic is gedownload en deze wordt gebruikt om een of meer Flics te koppelen.
 
-## <a name="configure-flic-properties"></a>Flic-eigenschappen configureren
-Gebruik de mobiele app van Flic om de gebeurtenissen van de Flic te programmeren. De gebeurtenissen zijn:
+## <a name="configure-flic-properties"></a>Eigenschappen van Flic configureren
+Gebruik de mobiele app van Flic om de gebeurtenissen van de Flic te Program meren. De gebeurtenissen zijn:
 
-* klikken (één keer snel drukken)
-* dubbelklikken (twee keer snel drukken)
-* ingedrukt houden (één keer lang ingedrukt houden)
+* Klik (één kort ingedrukt)
+* dubbel klik (twee snelle persen)
+* bewaren (één lang ingedrukt)
 
-Deze schermopname bevat een voorbeeld van een Flic-configuratieproces:
+In deze scherm afbeelding ziet u een voor beeld van wat uw Flic-configuratie proces kan zijn:
 
 ![Flics configureren](./media/flic-button-flows/configure-flic-actions.png)
 
-Zodra u een Flic-gebeurtenis aan Microsoft Flow hebt gekoppeld, kunt u die Flic selecteren als een trigger voor uw stromen. Verderop in dit scenario zult u triggers selecteren.
+Nadat u een Flic-gebeurtenis aan Microsoft Flow hebt gekoppeld, kunt u die Flic selecteren als trigger voor uw stromen. Verderop in dit overzicht kunt u triggers selecteren.
 
 ## <a name="create-a-flow-thats-triggered-by-a-flic"></a>Een stroom maken die wordt geactiveerd door een Flic
-In dit scenario wordt er een stroom met de Flic uitgevoerd die registreert hoeveel tijd een consultant bij een klant doorbrengt. De consultant drukt bij aankomst één keer op de Flic en vlak voor vertrek nogmaals. Telkens wanneer op de Flic wordt gedrukt, wordt de gekoppelde stroom uitgevoerd. Zodra de stroom wordt gestart, wordt de huidige tijd opgeslagen in Google Spreadsheets en wordt er vervolgens een e-mailmelding verzonden. De e-mail bevat informatie over de stroomuitvoering.
+In dit scenario gebruiken we een Flic om een stroom uit te voeren die de tijd registreert die een consultant op elke client doorbrengt. De consultant drukt één keer op de Flic en drukt deze opnieuw, net vóór vertrek van de client. Bij elke pers van de Flic wordt een uitvoering van de stroom gestart waarmee de verbinding tot stand is gebracht. De stroom slaat de huidige tijd op in Google spread sheets en verzendt vervolgens een e-mail melding. Het e-mail bericht bevat details over de uitvoering van de stroom.
 
-Opmerking: Zorg ervoor dat u bekend bent met de mobiele app van Flic te koppelen, en configureert ten minste één **klikt u op** actie aan Microsoft Flow-trigger. In deze schermopname is de **klikactie** geconfigureerd om Microsoft Flow te openen. Verderop in dit scenario zullen we de stroom zodanig configureren dat deze wordt geactiveerd wanneer de Flic één keer wordt ingedrukt (klikken).
+Opmerking: Zorg ervoor dat u de mobiele Flic-app hebt gebruikt om te koppelen en configureer ten minste één **Klik** actie om Microsoft flow te activeren. In deze scherm afbeelding heb ik de **Klik** actie geconfigureerd om Microsoft flow te activeren. Verderop in dit scenario wordt de stroom geconfigureerd om te activeren wanneer de Flic eenmaal wordt ingedrukt (geklikt).
 
-   ![flic configureren](./media/flic-button-flows/flic-configured-for-flow.png)
+   ![Flic-configuratie](./media/flic-button-flows/flic-configured-for-flow.png)
 
-Laten we de stroom maken.
+Laten we beginnen met het maken van onze stroom.
 
-### <a name="start-with-a-template"></a>Begin met een sjabloon
-1. Meld u aan bij [Microsoft Flow](https://flow.microsoft.com).
+### <a name="start-with-a-template"></a>Beginnen met een sjabloon
+1. Meld u aan bij [Microsoft flow](https://flow.microsoft.com).
    
-    ![aanmelden](./media/flic-button-flows/sign-into-flow.png)
-2. Typ **flic** in het zoekvak en selecteer het zoekpictogram.
+    ![Aanmelden](./media/flic-button-flows/sign-into-flow.png)
+2. Voer **Flic** in het zoekvak in en selecteer vervolgens het zoek pictogram.
    
-    ![flic zoeken](./media/flic-button-flows/search-flic.png)
-3. Selecteer de sjabloon **Track your working hours with Flic smart button**.
+    ![Flic zoeken](./media/flic-button-flows/search-flic.png)
+3. Selecteer de sjabloon **uw werk tijden met Flic slimme knop bijhouden** .
    
     ![sjabloon selecteren](./media/flic-button-flows/flic-templates.png)
 
-### <a name="create-a-spreadsheet-in-google-sheets"></a>Een spreadsheet in Google Spreadsheets maken
-1. Controleer de details van de sjabloon. Zoals u kunt zien, is voor deze sjabloon een spreadsheet in Google Spreadsheets vereist.
+### <a name="create-a-spreadsheet-in-google-sheets"></a>Een werk blad maken in Google spread sheets
+1. Controleer de details van de sjabloon en houd er rekening mee dat voor deze sjabloon een werk blad in Google spread sheets is vereist.
    
-   ![de sjabloondetails controleren](./media/flic-button-flows/flic-template-details.png)
-2. Maak een spreadsheet in Google Spreadsheets met de kolommen **ClickType** en **TimeStamp**.
+   ![Details van sjabloon controleren](./media/flic-button-flows/flic-template-details.png)
+2. In Google spread sheets maakt u een werk blad dat een blad bevat met kolommen met de naam **Click type** en **Time Stamp**.
    
-      Tip: U naam kolommen in Google spreadsheets door in te voeren van de naam van de kolom aan de bovenkant van de kolom. Uw sheet moet overeenkomen met deze schermopname:
+      Tip: u kunt kolommen in Google spread sheets een naam geven door de kolom naam boven aan de kolom in te voeren. Uw blad moet er nu als volgt uitzien:
    
-   ![Google-spreadsheet](./media/flic-button-flows/flic-google-sheet.png)
+   ![Google-spread sheet](./media/flic-button-flows/flic-google-sheet.png)
    
-   Opmerking: U gebruikt dit blad verderop in dit scenario.
+   Opmerking: u kunt dit blad later in dit overzicht gebruiken.
 
-### <a name="add-the-flic-trigger-to-your-flow"></a>De Flic-trigger toevoegen aan uw stroom
-1. Meld u aan bij de services van de sjabloon en selecteer vervolgens **Doorgaan**.
+### <a name="add-the-flic-trigger-to-your-flow"></a>De trigger Flic toevoegen aan uw stroom
+1. Meld u aan bij de services van de sjabloon en selecteer vervolgens **door gaan**.
    
-     **Doorgaan** wordt ingeschakeld zodra u zich hebt aangemeld bij alle vereiste services voor de sjabloon.
+     **Door gaan** is ingeschakeld nadat u zich hebt aangemeld bij alle vereiste services voor de sjabloon.
    
     ![referenties opgeven](./media/flic-button-flows/flic-template-services-sign-in.png)
-2. Typ **flic** in het zoekvak en selecteer vervolgens de trigger **Flic - When a Flic is pressed**.
+2. Voer **Flic** in het zoekvak in en selecteer het **Flic-wanneer een Flic wordt ingedrukt** .
    
-    ![flic-trigger zoeken](./media/flic-button-flows/flic-search-trigger.png)
-3. Selecteer in de lijst **Flic button** op de kaart **Flic - When a Flic is pressed** de Flic die u wilt gebruiken.
-4. Selecteer **klikken** in de lijst **Gebeurtenissen** om aan te geven dat u de stroom wilt activeren wanneer er één keer op de Flic wordt gedrukt.
+    ![zoeken naar Flic-trigger](./media/flic-button-flows/flic-search-trigger.png)
+3. Selecteer de Flic die u wilt gebruiken in de lijst met **Flic-knoppen** op de kaart **Flic-wanneer een Flic wordt ingedrukt** .
+4. Selecteer **klikken** in de lijst **gebeurtenissen** om aan te geven dat u de stroom wilt activeren wanneer de Flic eenmaal wordt ingedrukt.
    
-    ![flic-actie selecteren](./media/flic-button-flows/select-flic.png)
+    ![Flic-actie selecteren](./media/flic-button-flows/select-flic.png)
    
-   U kunt eventueel **any** selecteren om aan te geven dat de stroom voor elke Flic-gebeurtenis (klikken, dubbelklikken of ingedrukt houden) wordt geactiveerd.
+   U kunt **eventueel een wille keurige** selecteren om aan te geven dat elke Flic-gebeurtenis (klikken, dubbel klikken of vasthouden) de stroom activeert.
    
-   **Dubbelklikken** geeft aan dat de stroom wordt geactiveerd wanneer er snel twee keer op de Flic wordt gedrukt. **Ingedrukt houden** geeft aan dat de Flic ingedrukt moet worden gehouden om de stroom te activeren.
+   **Dubbel klik** geeft aan dat de stroom wordt geactiveerd wanneer de Flic snel twee keer wordt ingedrukt. **Hold** geeft aan dat een lange pers op de Flic de stroom activeert.
    
-   U kunt naar wens andere stromen maken en deze activeren met de andere gebeurtenissen in de lijst **Gebeurtenissen**. U kunt bijvoorbeeld de gebeurtenis **dubbelklikken** gebruiken om te registreren op welk tijdstip u bij een klant vertrekt.
+   U kunt andere stromen maken en deze activeren met behulp van de andere gebeurtenissen in de lijst met **gebeurtenissen** . U kunt bijvoorbeeld de gebeurtenis voor **dubbel klikken** gebruiken om de tijd vast te leggen waarop u een-client verlaat.
 
-### <a name="configure-the-sheet"></a>De sheet configureren
-   Op de kaart **Rij invoegen**:
+### <a name="configure-the-sheet"></a>Het blad configureren
+   Op de kaart **rij invoegen** :
 
-1. Selecteer de spreadsheet die u eerder op basis van de lijst **Bestand** hebt gemaakt.
-2. Selecteer de sheet in de lijst **Werkblad**.
+1. Selecteer het werk blad dat u eerder hebt gemaakt in de lijst met **bestanden** .
+2. Selecteer het blad in de lijst met **werk bladen** .
    
-   Opmerking: Twee extra vakken op de **rij invoegen** kaart nadat u deze sheet hebt geselecteerd. Deze vakken vertegenwoordigen de twee kolommen in de sheet die u eerder hebt gemaakt.
-3. Selecteer het vak **ClickType** en selecteer vervolgens het token **Click type**.
-4. Selecteer het vak **Timestamp** en selecteer vervolgens het token **Click time**.
+   Opmerking: er worden twee extra vakken weer gegeven op de kaart **rij invoegen** nadat u het blad hebt geselecteerd. Deze vakken vertegenwoordigen de twee kolommen in het blad dat u eerder hebt gemaakt.
+3. Selecteer het vak **Click type** en selecteer vervolgens het token **type Klik** .
+4. Selecteer het vak **tijds tempel** en selecteer vervolgens het token **Klik tijd** .
    
-    ![Google Spreadsheets-gegevens configureren](./media/flic-button-flows/flick-insert-row-card.png)
+    ![Google spread sheet-gegevens configureren](./media/flic-button-flows/flick-insert-row-card.png)
 
-### <a name="confirm-the-email-settings-are-correct"></a>Controleren of de e-mailinstellingen juist zijn
-1. Controleer of de kaart **Ik wil een e-mailmelding ontvangen** eruitziet als deze schermopname.
+### <a name="confirm-the-email-settings-are-correct"></a>Controleren of de e-mail instellingen juist zijn
+1. Bevestig de kaart **Ik wil een e-mail melding verzenden** als deze scherm afbeelding.
    
-    ![e-mailmelding bevestigen](./media/flic-button-flows/email-settings.png)
+    ![e-mail melding bevestigen](./media/flic-button-flows/email-settings.png)
 
-### <a name="save-your-flow-and-test-it"></a>De stroom opslaan en testen
-1. Geef de stroom een naam en sla deze vervolgens op.
+### <a name="save-your-flow-and-test-it"></a>Sla de stroom op en test deze
+1. Geef uw stroom een naam en sla deze op.
    
-    ![de stroom opslaan](./media/flic-button-flows/save.png)
+    ![uw stroom opslaan](./media/flic-button-flows/save.png)
 
-Als u de stappen hebt gevolgd, wordt de stroom geactiveerd wanneer u één keer op de Flic drukt. Vervolgens worden het type klik en de huidige tijd in de sheet geregistreerd en ontvangt u vervolgens een e-mail.
+Als u klaar bent, drukt u op de Flic zodra de stroom wordt geactiveerd. De stroom registreert vervolgens het type Klik en de huidige tijd in het werk blad en stuurt vervolgens een e-mail bericht naar u.
 
-1. Druk één keer op uw Flic.
-2. Open de sheet in Google Spreadsheets. Als het goed is, bevatten de kolommen **ClickType** en **Timestamp** respectievelijk de 'klik' en de tijd.
+1. Druk eenmaal op uw Flic.
+2. Open uw werk blad in Google spread sheets. U ziet dat de **Click type** en de **Time Stamp** -kolommen worden gevuld met respectievelijk ' Klik ' en de tijd.
    
-    ![resultaten van de uitvoering weergeven](./media/flic-button-flows/flic-google-sheet-after-run.png)
-3. U kunt de resultaten van de stroomuitvoering ook bekijken op de Microsoft Flow-website of in de mobiele app van Microsoft Flow. Hier volgt een schermopname van mijn testuitvoering.
+    ![resultaten van de uitvoering bekijken](./media/flic-button-flows/flic-google-sheet-after-run.png)
+3. U kunt ook de resultaten van de uitvoering van de Microsoft Flow website of van de mobiele app van Microsoft Flow weer geven. Hier volgt een scherm opname van mijn test uitvoering.
    
-    ![de stroom opslaan](./media/flic-button-flows/flic-test-run-results-portal.png)
-4. De hoofdtekst van de e-mailmelding die ik naar aanleiding van de uitgevoerde stroom heb ontvangen, ziet er als volgt uit.
+    ![uw stroom opslaan](./media/flic-button-flows/flic-test-run-results-portal.png)
+4. Hier ziet u de hoofd tekst van de meldings-e-mail die ik heb ontvangen van de uitvoering van de stroom.
    
-    ![de stroom opslaan](./media/flic-button-flows/flic-email-body.png)
+    ![uw stroom opslaan](./media/flic-button-flows/flic-email-body.png)
 
-U kunt overwegen om de stroom zodanig uit te breiden dat ook automatisch uw locatie (breedtegraad en lengtegraad) wordt geregistreerd wanneer op de Flic wordt gedrukt.
+Voor extra tegoed kunt u de stroom uitbreiden om automatisch uw locatie (breedte graad en lengte graad) vast te leggen wanneer de Flic wordt ingedrukt.
 
 ## <a name="more-information"></a>Meer informatie
-* [Knopstromen delen](share-buttons.md).
-* Leer hoe u [knoptriggertokens](introduction-to-button-trigger-tokens.md) kunt gebruiken om de huidige gegevens te verzenden wanneer uw knopstromen worden uitgevoerd.
-* Installeer de mobiele app voor Microsoft Flow voor [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios) of [Windows Phone](https://aka.ms/flowmobilewindows).
+* [Knop stromen delen](share-buttons.md).
+* Leer hoe u [knop trigger tokens](introduction-to-button-trigger-tokens.md) kunt gebruiken om de huidige gegevens te verzenden wanneer uw knop stromen worden uitgevoerd.
+* Installeer de mobiele app voor Microsoft Flow voor [Android](https://aka.ms/flowmobiledocsandroid), [IOS](https://aka.ms/flowmobiledocsios)of [Windows Phone](https://aka.ms/flowmobilewindows).
 

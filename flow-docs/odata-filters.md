@@ -1,6 +1,6 @@
 ---
 title: Gegevens filteren en kopiëren | Microsoft Docs
-description: Informatie over het filteren en kopiëren van gegevens van een bron naar een doel met Microsoft Flow
+description: Meer informatie over het filteren en kopiëren van gegevens van een bron naar een doel met Microsoft Flow
 services: ''
 suite: flow
 documentationcenter: na
@@ -20,158 +20,159 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 702fd695a91fdf267f166d5162570b39505dbc91
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.openlocfilehash: be5863c51e17bdba32d79891725a81b386ec2e90
+ms.sourcegitcommit: 510706f5699b6cf9dda9dcafbed715f9f6d559e8
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "64465964"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73548933"
 ---
 # <a name="filter-and-copy-data-with-microsoft-flow"></a>Gegevens filteren en kopiëren met Microsoft Flow
-In deze procedure ziet u hoe u een stroom kunt maken waarmee een bron wordt gecontroleerd op nieuwe of gewijzigde items en deze wijzigingen naar een doel worden gekopieerd. U kunt een dergelijke stroom maken als uw gebruikers gegevens op één locatie invoeren, maar uw team deze nodig hebben op een andere locatie of in een andere indeling.
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+In dit scenario ziet u hoe u een stroom maakt waarmee een bron wordt gecontroleerd op nieuwe of gewijzigde items en die wijzigingen vervolgens naar een doel worden gekopieerd. U kunt een stroom zoals deze maken als uw gebruikers gegevens invoeren op één locatie, maar uw team dit op een andere locatie of in een andere indeling nodig heeft.
 
-In deze procedure worden gegevens gekopieerd van een Microsoft SharePoint-[lijst](https://support.office.com/article/SharePoint-lists-I-An-introduction-f11cd5fe-bc87-4f9e-9bfe-bbd87a22a194) (bron) naar een [Azure SQL Database](https://docs.microsoft.com/azure/sql-database/sql-database-technical-overview)-tabel (doel), maar u kunt gegevens kopiëren tussen de meer dan [150 services](https://flow.microsoft.com/connectors/) die Microsoft Flow ondersteunt.
+Hoewel in dit overzicht gegevens worden gekopieerd van een micro soft share point- [lijst](https://support.office.com/article/SharePoint-lists-I-An-introduction-f11cd5fe-bc87-4f9e-9bfe-bbd87a22a194) (de bron) naar een [Azure SQL database](https://docs.microsoft.com/azure/sql-database/sql-database-technical-overview) tabel (de bestemming), kunt u gegevens kopiëren tussen de meer dan [150 Services](https://flow.microsoft.com/connectors/) die Microsoft flow ondersteunt.
 
 > [!IMPORTANT]
-> Wijzigingen die u in het doel aanbrengt, worden niet gekopieerd naar de bron omdat synchronisatie in twee richtingen niet wordt ondersteund. Als u toch synchronisatie in twee richtingen instelt, maakt u een oneindige lus waarin wijzigingen eindeloos worden verzonden tussen de bron en het doel.
+> Wijzigingen die u in de bestemming aanbrengt, worden niet gekopieerd naar de bron omdat synchronisatie in twee richtingen niet wordt ondersteund. Als u een synchronisatie in twee richtingen probeert in te stellen, maakt u een oneindige lus waar wijzigingen oneindig tussen de bron en de bestemming worden verzonden.
 > 
 > 
 
 ## <a name="prerequisites"></a>Vereisten
-* Toegang tot een gegevensbron en een doel. Deze procedure bevat geen stappen voor het maken van de bron en het doel.
-* U moet toegang hebben tot [Microsoft Flow](https://flow.microsoft.com).
-* Basiskennis van hoe uw gegevens worden opgeslagen.
-* Bekendheid met de basisprincipes van het maken van stromen. U kunt nalezen hoe u [acties, triggers](multi-step-logic-flow.md#add-another-action) en [voorwaarden](add-condition.md) maakt. In de volgende stappen wordt ervan uitgegaan dat u weet hoe u deze acties uitvoert.
+* Toegang tot een gegevens bron en een bestemming. Dit scenario bevat geen stappen voor het maken van de bron en het doel.
+* Toegang tot [Microsoft flow](https://flow.microsoft.com).
+* Basis informatie over hoe uw gegevens worden opgeslagen.
+* Vertrouwd met de basis beginselen van het maken van stromen. U kunt controleren hoe [acties, triggers](multi-step-logic-flow.md#add-another-action)en [voor waarden](add-condition.md)worden toegevoegd. Bij de volgende stappen wordt ervan uitgegaan dat u weet hoe u deze acties moet uitvoeren.
 
 > [!TIP]
-> Niet alle kolomnamen in de bron en het doel hoeven overeen te komen, maar u moet gegevens opgeven voor alle *vereiste* kolommen wanneer u een item invoegt of bijwerkt. In Microsoft Flow worden de vereiste velden voor u geïdentificeerd.
+> Elke kolom naam in de bron-en doel locatie hoeft niet overeen te komen, maar u moet gegevens opgeven voor alle *vereiste* kolommen wanneer u een item invoegt of bijwerkt. Microsoft Flow de vereiste velden voor u worden geïdentificeerd.
 > 
 > 
 
 ## <a name="quick-overview-of-the-steps"></a>Snel overzicht van de stappen
-Als u vertrouwd bent met Microsoft Flow, gebruikt u deze stappen om gegevens te kopiëren van de ene gegevensbron naar de andere:
+Als u vertrouwd bent met Microsoft Flow, kunt u deze snelle stappen gebruiken om gegevens te kopiëren van de ene gegevens bron naar de andere:
 
-1. Identificeer de bron die u wilt bewaken en het doel waarnaar u gewijzigde gegevens kopieert. Controleer of u toegang tot beide hebt.
-2. Geef ten minste één kolom aan die een unieke identificatie van de items bevat in de bron en het doel. In het volgende voorbeeld gebruiken we de kolom **Titel**, maar u kunt elke gewenste kolom gebruiken.
+1. Identificeer de bron die u wilt bewaken en het doel waarnaar u de gewijzigde gegevens wilt kopiëren. Controleer of u toegang hebt tot beide.
+2. Identificeer ten minste één kolom waarmee items in de bron en bestemming uniek worden geïdentificeerd. In het volgende voor beeld gebruiken we de kolom **title** , maar u kunt elke gewenste kolom (men) gebruiken.
 3. Stel een trigger in waarmee de bron wordt gecontroleerd op wijzigingen.
-4. Doorzoek het doel om te bepalen of het gewijzigde item bestaat.
-5. Gebruik een **voorwaarde** zoals deze:
-   * Als het nieuwe of gewijzigde item niet in het doel bestaat, moet dit worden gemaakt.
-   * Als het nieuwe of gewijzigde item wel in het doel bestaat, moet dit worden bijgewerkt.
-6. Activeer de stroom en bevestig dat nieuwe of gewijzigde items worden gekopieerd van de bron naar het doel.
+4. Zoek het doel om te bepalen of het gewijzigde item bestaat.
+5. Gebruik een **voor waarde** zoals deze:
+   * Als het nieuwe of gewijzigde item niet bestaat in het doel, maakt u het.
+   * Als het nieuwe of gewijzigde item zich in het doel bevindt, werkt u het bij.
+6. Activeer uw stroom en bevestig dat er nieuwe of gewijzigde items van de bron naar het doel worden gekopieerd.
 
 > [!NOTE]
-> Als u nog niet eerder een verbinding met SharePoint of Azure SQL Database hebt gemaakt, volgt u de instructies wanneer u wordt gevraagd u aan te melden.
+> Als u nog geen verbinding met share point of Azure SQL Database hebt gemaakt, volgt u de instructies wanneer u wordt gevraagd om u aan te melden.
 > 
 > 
 
 Hier volgen de gedetailleerde stappen voor het maken van de stroom.
 
 ## <a name="monitor-the-source-for-changes"></a>De bron controleren op wijzigingen
-1. Meld u aan bij [Microsoft Flow](https://flow.microsoft.com) en selecteer **Mijn stromen** > **Leeg item maken**.
-2. Zoek naar **SharePoint** > selecteer de trigger **SharePoint: wanneer een item is gemaakt of gewijzigd** in de lijst met triggers.
-3. Voer het **Siteadres** in en selecteer de **Lijstnaam** op de kaart **Wanneer een item is gemaakt of gewijzigd**.
+1. Meld u aan bij [Microsoft flow](https://flow.microsoft.com), selecteer **mijn stromen** > **leeg maken**.
+2. Zoek naar **share point** > Selecteer de trigger **share point-wanneer een item is gemaakt of gewijzigd** in de lijst met triggers.
+3. Voer het **site adres** in en selecteer de **lijst naam** op de kaart **Wanneer een item is gemaakt of gewijzigd** .
    
-    Geef het **Siteadres** en de **Lijstnaam** op van de SharePoint-lijst die door uw stroom wordt gecontroleerd op nieuwe of bijgewerkte items.
+    Geef het **site adres** en de **lijst naam** op voor de share point-lijst die wordt bewaakt door de stroom voor nieuwe of bijgewerkte items.
    
-    ![sharepoint-trigger configureren](media/odata-filters/configure-sharepoint-trigger.png)
+    ![share point-trigger configureren](media/odata-filters/configure-sharepoint-trigger.png)
 
-## <a name="search-the-destination-for-the-new-or-changed-item"></a>Het doel doorzoeken op het nieuwe of gewijzigde item
-We gebruiken de actie **SQL Server - Rijen ophalen** om in het doel te zoeken naar het nieuwe of gewijzigde item.
+## <a name="search-the-destination-for-the-new-or-changed-item"></a>De bestemming voor het nieuwe of gewijzigde item zoeken
+We gebruiken SQL Server de actie **rijen ophalen** om de bestemming voor het nieuwe of gewijzigde item te zoeken.
 
-1. Selecteer **Nieuwe stap** > **Een actie toevoegen**.
-2. Zoek naar **Rijen ophalen**, selecteer **SQL Server - Rijen ophalen** en selecteer de tabel die u wilt controleren in de lijst **Tabelnaam**.
-3. Selecteer **Geavanceerde opties weergeven**.
-4. Typ **Titel eq '** in het vak **Filterquery**, selecteer het token **Titel** in de lijst met dynamische inhoud en typ **'**.
+1. Selecteer **nieuwe stap** > **een actie toe te voegen**.
+2. Zoek naar **rijen ophalen**, selecteer **SQL Server-rijen ophalen**en selecteer vervolgens in de lijst **tabel naam** de tabel die u wilt bewaken.
+3. Selecteer **Geavanceerde opties weer geven**.
+4. Voer in het vak **filter query** de **titel EQ**in, selecteer het token **titel** in de lijst met dynamische inhoud en voer vervolgens **'** in.
    
-    In de vorige stap wordt ervan uitgegaan dat u zoekt op de titels van de rijen in de bron en het doel.
+    In de vorige stap wordt ervan uitgegaan dat u de titels van de rijen in de bron en het doel gebruikt.
    
-    De kaart **Rijen ophalen** moet er nu uitzien als deze afbeelding:
+    De kaart **rijen ophalen** moet er nu uitzien als de volgende afbeelding:
    
-    ![het item ophalen uit de doeldatabase](media/odata-filters/configure-sql-get-rows-action.png)
+    ![Probeer het item op te halen uit de doel database](media/odata-filters/configure-sql-get-rows-action.png)
 
 ## <a name="check-if-the-new-or-changed-item-was-found"></a>Controleren of het nieuwe of gewijzigde item is gevonden
-Selecteer **Nieuwe stap** > **Een voorwaarde toevoegen** om de kaart **Voorwaarde** te openen.
+Selecteer **nieuwe stap** > **een voor waarde toe te voegen** om de kaart **voor waarde** te openen.
 
-Op de voorwaardekaart:
+Op de kaart voor waarde:
 
 1. Selecteer het vak aan de linkerkant.
    
-    De lijst **Voeg dynamische inhoud toe van de apps en connectors in deze stroom** wordt geopend.
-2. Selecteer **waarde** in de categorie **Rijen ophalen**.
+    De **dynamische inhoud toevoegen van de apps en connectors die in deze stroom lijst worden gebruikt,** wordt geopend.
+2. Selecteer de **waarde** in de categorie **rijen ophalen** .
    
    > [!TIP]
-   > Bevestig dat u **waarde** hebt geselecteerd in de categorie **Rijen ophalen**. Selecteer **waarde** niet in de categorie **Wanneer een item is gemaakt of gewijzigd**.
+   > Bevestig dat u de **waarde** hebt geselecteerd in de categorie **rijen ophalen** . Selecteer geen **waarde** in de categorie **Wanneer een item is gemaakt of gewijzigd** .
    > 
    > 
 3. Selecteer **is gelijk aan** in de lijst in het middelste vak.
-4. Typ **0** (nul) in het vak aan de rechterkant.
+4. Geef **0** (nul) op in het vak aan de rechter kant.
    
-    De **Voorwaarde**-kaart lijkt nu op deze afbeelding:
+    De **voorwaarde** kaart lijkt nu op deze afbeelding:
    
-    ![een voorwaarde configureren](media/odata-filters/configure-condition.png)
-5. Selecteer **Bewerken in geavanceerde modus**.
+    ![een voor waarde configureren](media/odata-filters/configure-condition.png)
+5. Selecteer **bewerken in geavanceerde modus**.
    
-    Wanneer de geavanceerde modus wordt geopend, ziet u de expressie **\@equals(body('Get_rows')?['value'], 0)** in het vak. Bewerk deze expressie door **length()** toe te voegen rond de functie **body('Get_items')?['value']**. De hele expressie ziet er nu als volgt uit: **@equals(length(body('Get_rows')?['value']), 0)**
+    Wanneer de geavanceerde modus wordt geopend, ziet u **\@gelijk is aan (Body (' Get_rows ')? [' waarde '], 0)** in het vak. Bewerk deze expressie door **Length ()** toe te voegen rondom de **hoofd tekst (' Get_items ')? [' Value ']** -functie. De volledige expressie ziet er nu als volgt uit: **@equals(length (hoofd tekst (' Get_rows ')? [' waarde ']), 0)**
    
-    De **Voorwaarde**-kaart lijkt nu op deze afbeelding:
+    De **voorwaarde** kaart lijkt nu op deze afbeelding:
    
-    ![een voorwaarde configureren](media/odata-filters/configure-condition-add-length.png)
+    ![een voor waarde configureren](media/odata-filters/configure-condition-add-length.png)
    
    > [!TIP]
-   > Door de functie **length()** toe te voegen, kan de lijst **waarde** worden gecontroleerd via de stroom en kan worden bepaald of deze items bevat.
+   > Als u de functie **Length ()** toevoegt, kan de stroom de lijst met **waarden** controleren en bepalen of deze items bevat.
    > 
    > 
 
-Wanneer via uw stroom items worden 'opgehaald' van het doel, zijn er twee mogelijke resultaten.
+Wanneer de stroom items van de bestemming haalt, zijn er twee mogelijke resultaten.
 
-| Resultaat | Volgende stap |
+| Daarvan | Volgende stap |
 | --- | --- |
-| Het item bestaat |[Werk het item bij](odata-filters.md#update-the-item-in-the-destination) |
-| Het item bestaat niet |[Maak een nieuw item](odata-filters.md#create-the-item-in-the-destination) |
+| Het item bestaat |[Het item bijwerken](odata-filters.md#update-the-item-in-the-destination) |
+| Het item bestaat niet |[Een nieuw item maken](odata-filters.md#create-the-item-in-the-destination) |
 
 > [!NOTE]
-> De afbeeldingen van de kaarten **Rij invoegen** en **Rij bijwerken** die u hierna ziet, kunnen afwijken van uw kaarten omdat deze kaarten de namen bevatten van de kolommen in de Azure SQL Database-tabel die in de stroom wordt gebruikt.
+> De afbeeldingen in de **rij invoegen** en **rij bijwerken** die hieronder worden weer gegeven, kunnen afwijken van u omdat deze kaarten de namen van de kolommen in de Azure SQL database tabel weer geven die in de stroom worden gebruikt.
 > 
 > 
 
-## <a name="create-the-item-in-the-destination"></a>Het item maken in het doel
-Als het item niet bestaat in het doel, maakt u dit met de actie **SQL Server - Rij invoegen**.
+## <a name="create-the-item-in-the-destination"></a>Het item maken in de doel locatie
+Als het item zich niet in de doel locatie bevinden, maakt u dit met behulp van de actie voor het invoegen van een **rij SQL Server** .
 
-Op de vertakking**Zo ja** van de **Voorwaarde**:
+Op de vertakking **Indien ja** van de **voor waarde**:
 
-1. Selecteer **Een actie toevoegen**, zoek naar **rij invoegen** en selecteer **SQL Server - Rij invoegen**.
+1. Selecteer **een actie toevoegen**, zoek naar **rij invoegen**en selecteer vervolgens **SQL Server-invoegrij**.
    
-    De kaart **Rij invoegen** wordt geopend.
-2. Selecteer in de lijst **Tabelnaam** de tabel waarin het nieuwe item wordt ingevoegd.
+    De kaart **rij invoegen** wordt geopend.
+2. Selecteer in de lijst **tabel naam** de tabel waarin het nieuwe item moet worden ingevoegd.
    
-    De kaart **Rij invoegen** wordt uitgevouwen, zodat u alle velden in de geselecteerde tabel kunt zien. Velden met een sterretje (*) zijn vereist en moeten worden ingevuld om een geldige rij te maken.
+    De kaart **rij invoegen** wordt uitgebreid en alle velden in de geselecteerde tabel worden weer gegeven. Velden met een asterisk (*) zijn vereist en moeten worden ingevuld om de rij geldig te maken.
 3. Selecteer elk veld dat u wilt vullen en voer de gegevens in.
    
-    U kunt gegevens handmatig invoeren, een of meer tokens selecteren bij **Dynamische inhoud** of een combinatie van tekst en tokens in de velden gebruiken.
+    U kunt de gegevens hand matig invoeren, een of meer tokens uit de **dynamische inhoud**selecteren of een wille keurige combi natie van tekst en tokens in de velden invoeren.
    
-    De kaart **Rij invoegen** lijkt nu op deze afbeelding:
+    De kaart voor het **invoegen van rijen** lijkt nu op deze afbeelding:
    
-    ![een voorwaarde configureren](media/odata-filters/insert-row.png)
+    ![een voor waarde configureren](media/odata-filters/insert-row.png)
 
-## <a name="update-the-item-in-the-destination"></a>Het item bijwerken in het doel
-Als het item in het doel bestaat, werkt u dit bij met de wijzigingen.
+## <a name="update-the-item-in-the-destination"></a>Het item in het doel bijwerken
+Als het item zich in het doel bevindt, moet u het bijwerken met de wijzigingen.
 
-1. Voeg de actie **SQL Server - Rij bijwerken** toe aan de vertakking **Zo nee** van de **Voorwaarde**.
-2. Volg de stappen in de sectie [Het item maken](odata-filters.md#create-the-item-in-the-destination) van dit document om de velden van de tabel te vullen.
+1. Voeg de actie voor het bijwerken van de **rij SQL Server** toe aan de vertakking **if no** van de **voor waarde**.
+2. Volg de stappen in de sectie [het item maken](odata-filters.md#create-the-item-in-the-destination) van dit document om de velden van de tabel in te vullen.
    
-    ![omgevingen weergeven](media/odata-filters/update-row.png)
-3. Typ bovenaan de pagina een naam voor de stroom in het vak **Stroomnaam** en selecteer **Stroom maken** om deze op te slaan.
+    ![omgevingen weer geven](media/odata-filters/update-row.png)
+3. Voer boven aan de pagina een naam in voor de stroom in het vak **stroom naam** en selecteer **stroom maken** om deze op te slaan.
    
-    ![uw stroom een naam geven](media/odata-filters/give-the-flow-a-name.png)
+    ![uw stroom een naam gegeven](media/odata-filters/give-the-flow-a-name.png)
 
-Wanneer er nu een item wordt gewijzigd in uw SharePoint-lijst (bron), wordt de stroom geactiveerd en wordt er een nieuw item ingevoegd of wordt een bestaand item in de Azure SQL Database (doel) bijgewerkt.
+Wanneer een item in uw share point-lijst (bron) wordt gewijzigd, wordt de stroom nu geactiveerd en wordt een nieuw item ingevoegd of een bestaand item in uw Azure SQL Database (bestemming) bijgewerkt.
 
 > [!NOTE]
-> De stroom wordt niet geactiveerd wanneer een item wordt verwijderd uit de bron. Als dit een belangrijk scenario is, kunt u een afzonderlijke kolom toevoegen waarin wordt aangegeven wanneer een item niet meer nodig is.
+> Uw stroom wordt niet geactiveerd wanneer een item uit de bron wordt verwijderd. Als dit een belang rijk scenario is, kunt u overwegen een afzonderlijke kolom toe te voegen die aangeeft wanneer een item niet meer nodig is.
 > 
 > 
 
 ## <a name="learn-more"></a>Meer informatie
-Gebruik [gegevensbewerkingen](data-operations.md) in uw stromen.
+Gebruik [gegevens bewerkingen](data-operations.md) in uw stromen.
 
