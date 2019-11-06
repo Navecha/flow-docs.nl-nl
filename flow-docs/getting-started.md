@@ -34,33 +34,33 @@ ms.locfileid: "73589839"
 <br>
 <iframe width="1129" height="635" src="https://www.youtube.com/embed/hCuxuUaGC6Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Bij! Energie automatisering is een service waarmee u geautomatiseerde werk stromen tussen uw favoriete apps en services kunt maken om bestanden te synchroniseren, meldingen te ontvangen, gegevens te verzamelen en meer.
+Welkom! Power Automate is een service waarmee u geautomatiseerde werk stromen tussen uw favoriete apps en services kunt maken om bestanden te synchroniseren, meldingen te ontvangen, gegevens te verzamelen en meer.
 
 De belangrijkste soorten stromen zijn [geautomatiseerde](get-started-logic-flow.md), [knop](introduction-to-button-flows.md)-, [geplande](run-scheduled-tasks.md)en [bedrijfsproces](business-process-flows-overview.md) stromen.
 
-## <a name="types-of-flows"></a>Typen stromen
+## <a name="types-of-flows"></a>Types stromen
 
-Energie automatisering is een van de drie pijlers van het kracht platform. Het biedt een laag code platform voor werk stromen en proces automatisering. Hier volgt een lijst met de verschillende soorten stromen:
+Power Automate is een van de drie pijlers van het Power platform. Het biedt een laag code platform voor werkstromen en proces automatisering. Hier volgt een lijst met de verschillende soorten stromen:
 
-| **Stroom type**                                                                       | **Use-case**                                                                                  | **Stemming**                                                                             |
+| **Stroom type**                                                                       | **Use-case**                                                                                  | **Doel**                                                                             |
 |-------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------|
 | [Automatische stromen](get-started-logic-flow.md)                 | Een stroom maken waarmee een of meer taken automatisch worden uitgevoerd nadat deze is geactiveerd door een gebeurtenis. | [Connectors](https://docs.microsoft.com/connectors/) voor Cloud-en on-premises Services. |
 | [Knop stromen](introduction-to-button-flows.md)              | Voer op elk gewenst moment terugkerende taken uit vanaf elke wille keurige computer via uw mobiele apparaat.                        |                                                                                        |
 | [Geplande stromen](run-scheduled-tasks.md)                    | Een stroom maken waarmee een of meer taken volgens een planning worden uitgevoerd.             |                                                                                        |
 | [Bedrijfs proces stromen](business-process-flows-overview.md) | Definieer een reeks stappen die gebruikers kunnen volgen om ze naar een gewenst resultaat te brengen.                 | Menselijke processen                                                                        |
-| [UI-stromen (preview-versie)](ui-flows/overview.md)                                                | Registreer en Automatiseer het afspelen van hand matige stappen op verouderde software.                    | Bureau blad-en webtoepassingen waarvoor geen Api's beschikbaar zijn voor Automation.    |
+| [UI-stromen (preview-versie)](ui-flows/overview.md)                                                | Registreer en Automatiseer het herhalen van handmatige stappen op verouderde software.                    | Bureaublad- en webtoepassingen waarvoor geen Api's beschikbaar zijn voor automatisering.    |
 
-U kunt alle stromen maken en beheren op het tabblad **mijn stromen** in energie automatisering.
+U kan alle stromen maken en beheren op het tabblad **mijn stromen** in Power Automate.
 
 Als u een Dynamics 365-gebruiker bent, kunt u ook bekend zijn met klassieke Common Data Service processen met inbegrip van [werk stromen](configure-workflow-steps.md), [acties](create-actions.md), [mobiele taak stromen](create-mobile-task-flow.md)en [dialoog vensters](use-cds-for-apps-dialogs.md).
 
 De eerste stap is om u aan te [melden](sign-up-sign-in.md), of als u al een account hebt met automatische energie, [meldt u zich](https://flow.microsoft.com/signin) aan bij uw Tablet, desktop computer of zelfs op uw telefoon.
 
-## <a name="check-out-the-start-page"></a>De start pagina bekijken ##
+## <a name="check-out-the-start-page"></a>De startpagina bekijken ##
 
-[Op de start pagina](https://flow.microsoft.com) voor het automatisch uitvoeren van energie kunt u [een verscheidenheid aan sjablonen verkennen](https://flow.microsoft.com/templates) en meer informatie over de belangrijkste functies voor automatische energie automatisering. U kunt een korte indruk krijgen van wat er mogelijk is en hoe energie automatisering uw bedrijf en uw leven kan helpen.
+[Op de start pagina](https://flow.microsoft.com) voor Power Automate kunt u [een verscheidenheid aan sjablonen verkennen](https://flow.microsoft.com/templates) en meer informatie over de belangrijkste functies voor Power Automate. U kunt een korte indruk krijgen van wat er mogelijk is en hoe Power Automate uw bedrijf en uw leven kan helpen.
 
-Met het automatiseren van energie kunt u het volgende doen:
+Met Power Automate kunt u het volgende doen:
 
 - Eenvoudig zoeken naar sjablonen en services.
 
@@ -91,7 +91,7 @@ Elke sjabloon is ontworpen voor een bepaald doel. Er zijn bijvoorbeeld sjablonen
     ![Referenties opgeven voor de verbinding](./media/getting-started/configure-email-details.png)
 
     > [!NOTE]
-    > U kunt de voor waarden bekijken waarmee de stroom en de actie worden geactiveerd die het gevolg zijn van die gebeurtenis. Speel met de instellingen om de stroom zelf te maken. U kunt zelfs acties toevoegen of verwijderen.
+    > U kunt de voorwaarden bekijken waarmee de stroom en de actie worden geactiveerd die het gevolg zijn van die gebeurtenis. Speel met de instellingen om de stroom zelf te maken. U kunt zelfs acties toevoegen of verwijderen.
 
 1. Selecteer **gereed**.
 
@@ -115,7 +115,7 @@ Wanneer u een volledig nieuwe stroom maakt, bepaalt u de volledige werk stroom. 
 
 ## <a name="peek-at-the-code"></a>De code bekijken
 
-U hoeft geen ontwikkel aars te zijn voor het maken van stromen, maar energie automatisering biedt echter een functie voor het bekijken van de **code** waarmee iedereen de code die wordt gegenereerd voor alle acties en triggers in een stroom, kan bekijken. Door de code te bekijken, kunt u een duidelijker beeld krijgen van de gegevens die worden gebruikt door triggers en acties. Volg deze stappen om de code die voor uw stromen wordt gegenereerd, te bekijken in de ontwerp functie voor het automatiseren van de Power: 
+U hoeft geen ontwikkelaar te zijn voor het maken van stromen, maar Power Automate biedt een functie voor het bekijken van de **code** waarmee iedereen de code die wordt gegenereerd, kan bekijken. Dit oor alle acties en triggers in een stroom. Door de code te bekijken, kunt u een duidelijker beeld krijgen van de gegevens die worden gebruikt door triggers en acties. Volg deze stappen om de code die voor uw stromen wordt gegenereerd, te bekijken in de ontwerp functie voor Power Automate: 
 
 1. Selecteer de menu opdracht **..** . in de rechter bovenhoek van elke **actie** of **trigger**. 
 1. Selecteer weer geven **code**.
@@ -134,7 +134,7 @@ Wanneer uw creatieve SAPS gaan *stromen*, kunt u veel stromen maken. Het is niet
 ![Stromen filteren of zoeken](media/getting-started/filter-search-box.png)
  
 > [!NOTE]
-> Het zoek filter zoekt alleen stromen die in de pagina zijn geladen. Als u uw stroom niet vindt, kunt u onder aan de pagina **laden meer** selecteren.
+> Het zoekfilter zoekt alleen stromen die in de pagina zijn geladen. Als u uw stroom niet vindt, kunt u onder aan de pagina **meer laden ** selecteren.
 
 ## <a name="get-notifications-when-somethings-wrong"></a>Meldingen ontvangen als er iets mis is
 
@@ -146,8 +146,8 @@ Vanuit het meldingen centrum kunt u navigeren naar de pagina **activiteit** van 
 
 ## <a name="use-the-mobile-app"></a>De mobiele app gebruiken ##
 
-Down load de mobiele app voor het automatiseren van de Power voor [Android](https://aka.ms/flowmobiledocsandroid), [IOS](https://aka.ms/flowmobiledocsios)of [Windows Phone](https://aka.ms/flowmobilewindows). Met deze app kunt u [stroom activiteiten bewaken](mobile-monitor-activity.md), [stromen beheren](mobile-manage-flows.md) en [stromen maken op basis van sjablonen](mobile-create-flow.md).
+Download de mobiele app voor Power Automate voor [Android](https://aka.ms/flowmobiledocsandroid), [IOS](https://aka.ms/flowmobiledocsios)of [Windows Phone](https://aka.ms/flowmobilewindows). Met deze app kunt u [stroom activiteiten bewaken](mobile-monitor-activity.md), [stromen beheren](mobile-manage-flows.md) en [stromen maken op basis van sjablonen](mobile-create-flow.md).
 
 ## <a name="were-here-to-help"></a>We helpen u graag ##
 
-We zijn enthousiast om te zien wat u met automatische energie kunt doen en we willen er zeker van zijn dat u een fantastische ervaring hebt. Bekijk onze zelf studies voor [begeleide training](https://flow.microsoft.com/guided-learning/) en [Neem deel aan onze community](https://go.microsoft.com/fwlink/?LinkID=787467) om vragen te stellen en uw ideeën te delen. [Neem contact op met de ondersteuning](https://go.microsoft.com/fwlink/?LinkID=787479) als u problemen ondervindt.
+We zijn enthousiast om te zien wat u met Power Automate kunt doen en we willen er zeker van zijn dat u een fantastische ervaring hebt. Bekijk onze zelf studies voor [begeleide training](https://flow.microsoft.com/guided-learning/) en [Neem deel aan onze community](https://go.microsoft.com/fwlink/?LinkID=787467) om vragen te stellen en uw ideeën te delen. [Neem contact op met de ondersteuning](https://go.microsoft.com/fwlink/?LinkID=787479) als u problemen ondervindt.
